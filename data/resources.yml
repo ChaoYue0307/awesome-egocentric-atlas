@@ -1,7 +1,8 @@
 meta:
   title: EgoScape Atlas
+  description: "EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
   last_major_audit: "2026-06-14"
-  scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo resources.
+  scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
     request: Public project exists, but dataset access requires license, form, approval, or institutional agreement.

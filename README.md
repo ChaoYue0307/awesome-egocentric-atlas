@@ -5,17 +5,17 @@
 <h1 align="center">EgoScape Atlas</h1>
 
 <p align="center">
-  <strong>A reader-first atlas of egocentric, first-person, wearable-camera, AR-glasses, and ego-exo AI resources.</strong>
+  <strong>Curated egocentric AI datasets, benchmarks, models, and tools.</strong>
 </p>
 
 <p align="center">
   <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-100-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
-  <a href="README.md#models-toolkits-and-baselines"><img alt="models" src="https://img.shields.io/badge/models-and%20toolkits-F5A623"></a>
+  <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
 </p>
 
-**EgoScape Atlas** is a curated map of egocentric AI for computer vision, embodied AI, robotics, video-language learning, long-context memory, AR/VR, and human-object interaction.
+**EgoScape Atlas**: curated egocentric AI datasets, benchmarks, models, and tools for computer vision, embodied AI, robotics, video-language learning, long-context memory, AR/VR, and human-object interaction.
 
 **Updated:** 2026-06-14.  
 **Scope:** human or animal first-person capture from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs. Pure autonomous-driving dashcam datasets are out of the main table unless the resource explicitly targets wearable or embodied egocentric perception.
@@ -34,7 +34,7 @@
 - [Fast Task Map](#fast-task-map)
 - [Dataset Atlas](#dataset-atlas)
 - [Benchmarks and Derived Annotations](#benchmarks-and-derived-annotations)
-- [Models, Toolkits, and Baselines](#models-toolkits-and-baselines)
+- [Models, Tools, and Baselines](#models-tools-and-baselines)
 - [Surveys, Papers, and Context](#surveys-papers-and-context)
 - [Workshops and Challenges](#workshops-and-challenges)
 - [Watchlist](#watchlist)
@@ -266,7 +266,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 | [EgoMemReason](https://arxiv.org/abs/2605.09874) | Week-long egocentric video | Entity, event, and behavior memory reasoning | watch |
 | [EgoEsportsQA](https://arxiv.org/abs/2604.12320) | First-person esports video | Fast virtual first-person perception and reasoning | watch |
 
-## Models, Toolkits, and Baselines
+## Models, Tools, and Baselines
 
 ### Video-Language and Long-Video Models
 

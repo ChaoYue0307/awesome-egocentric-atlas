@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
   <title id="title">EgoScape Atlas system map</title>
-  <desc id="desc">A deterministic overview of the egocentric AI landscape: capture sources, sensor signals, research tasks, and repository artifacts.</desc>
+  <desc id="desc">EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools.</desc>
   <defs>
     <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#f8fbff"/>
@@ -27,7 +27,7 @@
   </defs>
   <rect class="bg" width="1200" height="520"/>
   <text class="title" x="60" y="62">EgoScape Atlas</text>
-  <text class="subtitle" x="60" y="88">A curated map of egocentric datasets, benchmarks, models, and tools</text>
+  <text class="subtitle" x="60" y="88">Curated egocentric AI datasets, benchmarks, models, and tools</text>
 
   <rect class="panel" x="58" y="130" width="240" height="260" rx="16"/>
   <text class="h" x="86" y="168">Capture Sources</text>
@@ -86,4 +86,3 @@
   <circle class="dot" cx="1060" cy="420" r="6"/>
   <text class="small" x="390" y="472">From first-person capture to multimodal signals, task families, and reusable research artifacts.</text>
 </svg>
-

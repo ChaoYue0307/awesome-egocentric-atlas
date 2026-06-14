@@ -2,14 +2,14 @@
 
 ## `egoscape-atlas-cover.png`
 
-Cover image provenance: created for EgoScape Atlas with the built-in ChatGPT image tool.
+Cover image provenance: created with the built-in ChatGPT image tool for EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools.
 
 Prompt:
 
 ```text
 Use case: infographic-diagram
 Asset type: GitHub README cover image
-Brief: polished wide hero illustration for an open-source "egocentric AI atlas" repository.
+Brief: polished wide hero illustration for "EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools."
 Scene/backdrop: clean light technical workspace with a subtle world-map grid and dataset-network lines.
 Subject: first-person / wearable-camera perspective shown through transparent AR glasses; visible hands interacting with everyday objects; nearby visual motifs for robotics manipulation, video-language reasoning, memory QA, hand-object tracking, and ego-exo multi-view capture.
 Style/medium: modern editorial technical illustration, crisp semi-flat 3D look, high detail but uncluttered.
