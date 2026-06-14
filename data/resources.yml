@@ -389,6 +389,15 @@ resources:
     paper: https://arxiv.org/abs/2506.05787
     tasks: [scene-graph-qa, relation-reasoning, temporal-reasoning]
 
+  - name: MyEgo
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://github.com/Ryougetsu3606/MyEgo
+    paper: https://arxiv.org/abs/2604.01966
+    scale: "541 long videos, 5K personalized questions"
+    tasks: [personalized-qa, ego-grounding, long-range-memory]
+
   - name: Causal-Plan-1M
     kind: benchmark
     year: 2026
@@ -424,6 +433,57 @@ resources:
     scale: "507 conversations, 6,636 QA pairs, 24 hours"
     modalities: [egocentric-video, dialogue, qa]
     tasks: [procedural-task-assistance, instructional-dialogue, egocentric-qa]
+
+  - name: EgoThink
+    kind: benchmark
+    year: 2023
+    status: benchmark
+    url: https://arxiv.org/abs/2311.15596
+    paper: https://arxiv.org/abs/2311.15596
+    tasks: [first-person-vqa, vlm-evaluation, embodied-reasoning]
+
+  - name: VidEgoThink
+    kind: benchmark
+    year: 2024
+    status: benchmark
+    url: https://arxiv.org/abs/2410.11623
+    paper: https://arxiv.org/abs/2410.11623
+    derived_from: Ego4D
+    tasks: [video-qa, hierarchy-planning, visual-grounding, reward-modeling]
+
+  - name: EgoCoT-Bench
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://dstardust.github.io/EgoCoT/
+    paper: https://arxiv.org/abs/2605.19559
+    scale: "3,172 QA pairs over 351 egocentric videos"
+    tasks: [grounded-cot, operation-centric-reasoning, evidence-consistency]
+
+  - name: NoRA
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.04806
+    paper: https://arxiv.org/abs/2606.04806
+    scale: "1,420 first-person video clips"
+    tasks: [normative-action-reasoning, grounded-reasonableness, safety]
+
+  - name: Ego2Web
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.22529
+    paper: https://arxiv.org/abs/2603.22529
+    tasks: [web-agents, egocentric-grounding, physical-digital-assistance]
+
+  - name: Pause and Think
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.00616
+    paper: https://arxiv.org/abs/2606.00616
+    tasks: [assistive-action-suggestion, grounded-reasoning, temporal-consistency]
 
   - name: GTEA / GTEA Gaze / EGTEA Gaze+
     kind: dataset
