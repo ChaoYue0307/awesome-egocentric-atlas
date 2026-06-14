@@ -10,10 +10,12 @@
 
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
+  <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-101-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
+  <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-22A06B"></a>
 </p>
 
 **Awesome Egocentric Atlas**: curated egocentric AI datasets, benchmarks, models, and tools for computer vision, embodied AI, robotics, video-language learning, long-context memory, AR/VR, and human-object interaction.
@@ -41,6 +43,8 @@
 - [Workshops and Challenges](#workshops-and-challenges)
 - [Watchlist](#watchlist)
 - [Inclusion Rules](#inclusion-rules)
+- [Contributing](#contributing)
+- [Cite This Atlas](#cite-this-atlas)
 
 ## How to Use This Atlas
 
@@ -387,4 +391,27 @@ These entries are promising but should be rechecked before treating them as stab
 6. Exclude pure dashcam/autonomous-driving data unless the task is explicitly egocentric/wearable/embodied rather than vehicle-only.
 7. Keep figures text-light. Exact resource names and labels should remain in Markdown/SVG so readers can inspect them directly.
 
-Contributions are welcome through pull requests. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+## Contributing
+
+Contributions are welcome through pull requests and issues. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the inclusion policy, status rules, and style.
+
+The catalog is machine-checked. Before opening a pull request, run the validator:
+
+```bash
+ruby scripts/validate_catalog.rb
+```
+
+It verifies the catalog shape, statuses, kinds, README local links and assets, and that the resources badge and "Updated" date stay in sync with [`data/resources.yml`](data/resources.yml). The same check runs in CI on every push and pull request.
+
+## Cite This Atlas
+
+If this atlas helps your research or project, a citation or a link back is appreciated. Machine-readable metadata lives in [`CITATION.cff`](CITATION.cff).
+
+```bibtex
+@misc{yue_awesome_egocentric_atlas,
+  author       = {Yue, Chao},
+  title        = {Awesome Egocentric Atlas: Curated Egocentric AI Datasets, Benchmarks, Models, and Tools},
+  year         = {2026},
+  howpublished = {\url{https://github.com/ChaoYue0307/awesome-egocentric-atlas}}
+}
+```

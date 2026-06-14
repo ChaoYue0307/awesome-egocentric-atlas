@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this atlas in your research, please cite it as below."
+title: "Awesome Egocentric Atlas"
+abstract: >-
+  A curated atlas of egocentric AI datasets, benchmarks, models, and tools for
+  computer vision, embodied AI, robotics, video-language learning, long-context
+  memory, AR/VR, and human-object interaction.
+type: dataset
+authors:
+  - family-names: Yue
+    given-names: Chao
+repository-code: "https://github.com/ChaoYue0307/awesome-egocentric-atlas"
+url: "https://github.com/ChaoYue0307/awesome-egocentric-atlas"
+license: MIT
+keywords:
+  - egocentric vision
+  - first-person video
+  - embodied AI
+  - robot learning
+  - vision-language-action
+  - video-language
+  - benchmark
+  - dataset
+  - awesome list
+date-released: "2026-06-14"

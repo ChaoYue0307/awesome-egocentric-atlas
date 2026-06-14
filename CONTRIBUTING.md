@@ -20,6 +20,16 @@ Update both:
 1. `README.md`
 2. `data/resources.yml`
 
+## Validate Before You Open a PR
+
+The catalog is machine-checked. Run the validator locally (Ruby 2.6+, no gems needed):
+
+```bash
+ruby scripts/validate_catalog.rb
+```
+
+It checks the catalog shape, allowed `kind` and `status` values, that every README local link and asset exists, and that the resources count badge and the `Updated` date stay in sync with `data/resources.yml`. The same check runs automatically in CI on every push and pull request, so a green check means your entry is structurally consistent.
+
 ## Inclusion Policy
 
 - Prefer official sources over secondary blog posts.
@@ -34,3 +44,7 @@ Update both:
 - Keep tables scannable.
 - Avoid marketing language.
 - Keep figures text-free or nearly text-free; exact resource names should be written in Markdown/SVG.
+
+## Code of Conduct
+
+By participating, you agree to uphold the [Code of Conduct](CODE_OF_CONDUCT.md).

@@ -1,0 +1,61 @@
+name: "Add a resource"
+description: "Suggest a new egocentric dataset, benchmark, model, toolkit, survey, or challenge."
+title: "[Add] <resource name>"
+labels: ["new-resource"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: "e.g. EgoSchema"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      description: "Project page, GitHub, Hugging Face, arXiv, or university dataset page."
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - dataset
+        - benchmark
+        - model
+        - toolkit
+        - survey
+        - challenge
+        - collection
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Public status
+      description: "Be conservative. See the Status Legend in the README."
+      options:
+        - "open — public download / annotations / code / application access"
+        - "request — exists but needs license, form, approval, or agreement"
+        - "benchmark — mainly a benchmark / challenge / labels over existing video"
+        - "partial — only a subset, annotations, or code are public"
+        - "watch — release state still needs verification"
+    validations:
+      required: true
+  - type: textarea
+    id: scale
+    attributes:
+      label: Scale, modalities, and tasks
+      description: "Use numbers reported by the official source. Note modalities and primary tasks."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Access notes (optional)
+      description: "License/access friction, raw-video dependency, or anything affecting the status."
+    validations:
+      required: false
