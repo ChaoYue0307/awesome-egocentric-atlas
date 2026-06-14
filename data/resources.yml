@@ -10,6 +10,32 @@ meta:
     watch: Recent or important resource whose release state still needs verification.
 
 resources:
+  - name: Xperience-10M
+    kind: dataset
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/ropedia-ai/xperience-10m
+    scale: "10M experiences, 10K hours, six video streams, audio, stereo depth, camera pose, hand/body mocap, IMU, hierarchical language, about 1 PB total"
+    modalities: [fisheye-video, stereo-video, audio, stereo-depth, camera-pose, hand-mocap, full-body-mocap, imu, hierarchical-language]
+    tasks: [embodied-ai, world-modeling, robot-learning, sensor-fusion, 3d-4d-understanding, imitation-learning]
+    created_by: Ropedia
+    released_by: ropedia-ai on Hugging Face
+    publisher: Hugging Face
+    access: controlled non-commercial access; external agreement-signing step may be required
+    license: other
+
+  - name: Xperience-10M Sample
+    kind: dataset
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample
+    scale: "Public sample episode; Hugging Face viewer reports 6 rows"
+    modalities: [video, hdf5-annotations]
+    tasks: [sample-data, loader-testing, visualization, task-suite-prototyping]
+    created_by: Ropedia
+    released_by: ropedia-ai on Hugging Face
+    license: cc-by-nc-4.0
+
   - name: Ego4D
     kind: dataset
     year: 2021
@@ -90,6 +116,18 @@ resources:
     modalities: [video, object-boxes, instance-labels]
     tasks: [object-detection, instance-understanding, continual-learning]
 
+  - name: EgoBlind
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.08221
+    paper: https://arxiv.org/abs/2503.08221
+    scale: "1,392 first-person videos from blind and visually impaired users; 5,311 questions"
+    modalities: [first-person-video, qa]
+    tasks: [assistive-videoqa, blind-assistance, egocentric-vqa]
+    created_by: Junbin Xiao, Nanxin Huang, Hao Qiu, Zhulin Tao, Xun Yang, Richang Hong, Meng Wang, Angela Yao
+    release_note: arXiv paper; verify stable dataset download and terms before benchmark use
+
   - name: EgoDex
     kind: dataset
     year: 2025
@@ -150,6 +188,16 @@ resources:
     modalities: [egocentric-video, exocentric-video, human-motion, object-motion, verbal-commands]
     tasks: [vla, human-object-human-interaction, motion-estimation, interaction-prediction]
 
+  - name: EgoPAT3D / EgoPAT3Dv2
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://arxiv.org/abs/2403.05046
+    paper: https://arxiv.org/abs/2403.05046
+    scale: "Original EgoPAT3D reports 1M+ RGB-D and IMU frames; v2 expands 3D action-target prediction"
+    modalities: [rgb, depth, imu, 3d-target-labels]
+    tasks: [3d-action-target-prediction, hri, anticipation, manipulation-safety]
+
   - name: HOT3D
     kind: dataset
     year: 2024
@@ -169,6 +217,25 @@ resources:
     scale: "2.4M RGB-D egocentric frames, 4,000+ sequences, 800 objects"
     modalities: [rgbd, point-clouds, 3d-hand-pose, object-pose, segmentation]
     tasks: [4d-hoi, pose-tracking, action-segmentation]
+
+  - name: H2O
+    kind: dataset
+    year: 2021
+    status: open
+    url: https://arxiv.org/abs/2104.11181
+    paper: https://arxiv.org/abs/2104.11181
+    modalities: [multiview-rgbd, 3d-hand-pose, object-pose, camera-pose, object-meshes, scene-point-clouds]
+    tasks: [first-person-interaction-recognition, two-hand-pose, hand-object-pose]
+
+  - name: ARCTIC
+    kind: dataset
+    year: 2022
+    status: request
+    url: https://arctic.is.tue.mpg.de/
+    paper: https://arxiv.org/abs/2204.13662
+    scale: "2.1M frames"
+    modalities: [video, hand-meshes, object-meshes, contact, articulated-objects]
+    tasks: [bimanual-manipulation, reconstruction, interaction-field-estimation]
 
   - name: EgoHands
     kind: dataset
@@ -224,6 +291,25 @@ resources:
     modalities: [hololens2, rgb, depth, gaze, head-pose, hand-pose, body-pose]
     tasks: [3d-human-pose, body-shape, motion]
 
+  - name: GIMO
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://github.com/y-zheng18/GIMO
+    paper: https://arxiv.org/abs/2204.09443
+    modalities: [egocentric-video, gaze, body-pose, scene-scans]
+    tasks: [gaze-informed-motion-prediction, human-motion, scene-context]
+
+  - name: EgoHumans
+    kind: benchmark
+    year: 2023
+    status: partial
+    url: https://arxiv.org/abs/2305.16487
+    paper: https://arxiv.org/abs/2305.16487
+    scale: "125K+ egocentric images"
+    modalities: [egocentric-video, multiview-video, 2d-pose, 3d-pose, mesh]
+    tasks: [multi-human-tracking, 3d-pose, mesh-recovery]
+
   - name: UnrealEgo
     kind: dataset
     year: 2022
@@ -240,6 +326,15 @@ resources:
     url: https://github.com/facebookresearch/xR-EgoPose
     modalities: [synthetic-egocentric, 3d-human-pose]
     tasks: [xr-pose-estimation]
+
+  - name: EgoGTA / EgoPW-Scene
+    kind: dataset
+    year: 2022
+    status: partial
+    url: https://arxiv.org/abs/2212.11684
+    paper: https://arxiv.org/abs/2212.11684
+    modalities: [synthetic-egocentric, scene-depth, human-pose]
+    tasks: [scene-aware-3d-human-pose, egocentric-depth, human-scene-interaction]
 
   - name: EgoTracks
     kind: benchmark
@@ -335,6 +430,38 @@ resources:
     scale: "5K+ multiple-choice QA pairs, 250+ hours"
     tasks: [long-video-qa, temporal-reasoning]
 
+  - name: X-LeBench
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2501.06835
+    paper: https://arxiv.org/abs/2501.06835
+    scale: "432 simulated life logs, 23 minutes to 16.4 hours"
+    derived_from: Ego4D
+    tasks: [extremely-long-video-understanding, lifelogging, long-context-qa]
+
+  - name: TeleEgo
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.23981
+    paper: https://arxiv.org/abs/2510.23981
+    scale: "3,291 human-verified QA items in streaming setting"
+    modalities: [egocentric-video, audio, text, timeline]
+    tasks: [streaming-assistant, memory, real-time-understanding, cross-memory-reasoning]
+
+  - name: EgoMemReason
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.09874
+    paper: https://arxiv.org/abs/2605.09874
+    derived_from: week-long egocentric video
+    scale: "500 questions across entity, event, and behavior memory; average 25.9 hours of memory backtracking"
+    tasks: [long-horizon-memory, entity-memory, event-memory, behavior-memory, egocentric-video-reasoning]
+    created_by: Ziyang Wang, Yue Zhang, Shoubin Yu, Ce Zhang, Zengqi Zhao, Jaehong Yoon, Hyunji Lee, Gedas Bertasius, Mohit Bansal
+    release_note: arXiv paper; verify public data/code release before benchmark use
+
   - name: EgoClip
     kind: dataset
     year: 2022
@@ -344,6 +471,18 @@ resources:
     derived_from: Ego4D
     scale: "3.8M clip-text pairs"
     tasks: [video-language-pretraining, retrieval]
+
+  - name: RefEgo
+    kind: benchmark
+    year: 2023
+    status: open
+    url: https://github.com/shuheikurita/RefEgo
+    paper: https://arxiv.org/abs/2308.12035
+    derived_from: Ego4D
+    scale: "12K+ clips and 41 hours for video-based referring-expression comprehension"
+    tasks: [referring-expression-comprehension, object-grounding, referred-object-tracking]
+    created_by: Shuhei Kurita, Naoki Katsura, Eri Onami
+    released_by: shuheikurita/RefEgo on GitHub
 
   - name: EgoBench
     kind: benchmark
@@ -397,6 +536,41 @@ resources:
     paper: https://arxiv.org/abs/2604.01966
     scale: "541 long videos, 5K personalized questions"
     tasks: [personalized-qa, ego-grounding, long-range-memory]
+
+  - name: EgoToM
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.22152
+    paper: https://arxiv.org/abs/2503.22152
+    derived_from: Ego4D
+    tasks: [theory-of-mind, goal-reasoning, belief-reasoning, next-action]
+    created_by: Yuxuan Li, Vijay Veerabadran, Michael L. Iuzzolino, Brett D. Roads, Asli Celikyilmaz, Karl Ridgeway
+    release_note: arXiv paper; verify public release route before benchmark use
+
+  - name: EgoSound
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.14122
+    paper: https://arxiv.org/abs/2602.14122
+    derived_from: [Ego4D, EgoBlind]
+    scale: "7,315 validated QA pairs across 900 videos"
+    tasks: [sound-understanding, audio-visual-reasoning, spatial-localization, causal-reasoning]
+    created_by: Bingwen Zhu, Yuqian Fu, Qiaole Dong, Guolei Sun, Tianwen Qian, Yuzheng Wu, Danda Pani Paudel, Xiangyang Xue, Yanwei Fu
+    release_note: arXiv paper; verify public release route before benchmark use
+
+  - name: EgoEsportsQA
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.12320
+    paper: https://arxiv.org/abs/2604.12320
+    scale: "1,745 QA pairs from professional matches across three first-person shooter games"
+    modalities: [first-person-video, qa]
+    tasks: [first-person-qa, virtual-egocentric-reasoning, esports-perception, tactical-reasoning]
+    created_by: Jianzhe Ma, Zhonghao Cao, Shangkui Chen, Yichen Xu, Wenxuan Wang, Qin Jin
+    release_note: arXiv paper; virtual first-person setting, not wearable-camera capture
 
   - name: Causal-Plan-1M
     kind: benchmark
@@ -485,6 +659,28 @@ resources:
     paper: https://arxiv.org/abs/2606.00616
     tasks: [assistive-action-suggestion, grounded-reasoning, temporal-consistency]
 
+  - name: Ego-R1
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.13654
+    paper: https://arxiv.org/abs/2506.13654
+    scale: "Ego-CoTT-25K, Ego-QA-4.4K, and Ego-R1 Bench"
+    tasks: [ultra-long-video-qa, chain-of-tool-thought, temporal-retrieval]
+
+  - name: EgoTrigger / HME-QA
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.01915
+    paper: https://arxiv.org/abs/2508.01915
+    derived_from: Ego4D
+    scale: "340 human-annotated first-person QA pairs from full-length Ego4D videos curated for audio"
+    modalities: [first-person-video, audio, qa]
+    tasks: [memory-assistance, audio-triggered-capture, energy-efficient-smart-glasses, episodic-memory]
+    created_by: Akshay Paruchuri, Sinan Hersek, Lavisha Aggarwal, Qiao Yang, Xin Liu, Achin Kulshrestha, Andrea Colaco, Henry Fuchs, Ishan Chatterjee
+    release_note: arXiv paper; accepted to ISMAR 2025 as TVCG journal paper
+
   - name: GTEA / GTEA Gaze / EGTEA Gaze+
     kind: dataset
     status: open
@@ -519,6 +715,16 @@ resources:
     paper: https://arxiv.org/abs/2207.10883
     scale: "62 hours, 130 subjects, 16 tasks"
     tasks: [procedure-learning, key-step-localization]
+
+  - name: EGO-CH
+    kind: dataset
+    year: 2020
+    status: partial
+    url: https://arxiv.org/abs/2002.00899
+    paper: https://arxiv.org/abs/2002.00899
+    scale: "27+ hours, 70 subjects, 2 cultural sites, 26 environments, 200+ points of interest"
+    modalities: [egocentric-video, location-labels, poi-labels, surveys]
+    tasks: [cultural-heritage, localization, object-recognition, retrieval, survey-prediction]
 
   - name: EgoExoLearn
     kind: dataset
@@ -643,6 +849,80 @@ resources:
     paper: https://arxiv.org/abs/2602.23709
     tasks: [temporal-knowledge-graph, ultra-long-video-qa]
 
+  - name: Ropedia Xperience-10M Task Suite
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://huggingface.co/spaces/cy0307/ropedia-xperience-10m-task-suite
+    derived_from: Xperience-10M Sample
+    scale: "12 embodied-AI task contracts over one public Xperience-10M sample episode"
+    modalities: [video, audio, depth, camera-pose, hand-mocap, full-body-mocap, imu, language]
+    tasks: [task-design, sample-evaluation, multimodal-baselines, embodied-ai]
+    created_by: cy0307
+    released_by: cy0307 on Hugging Face Spaces
+    access: public Space and related artifacts
+
+  - name: Ropedia Xperience-10M Task Baselines
+    kind: model
+    year: 2026
+    status: open
+    url: https://huggingface.co/cy0307/ropedia-xperience-10m-task-baselines
+    derived_from: [Xperience-10M, Xperience-10M Sample]
+    scale: "Public task definitions, baseline artifacts, metrics, and scale-up notes for Xperience-10M"
+    modalities: [video, audio, depth, camera-pose, mocap, imu, language]
+    tasks: [baseline-evaluation, task-suite, multimodal-representation, qwen3-omni, cosmos]
+    created_by: cy0307
+    released_by: cy0307 on Hugging Face
+    license: mit
+
+  - name: GroundVQA
+    kind: model
+    year: 2023
+    status: open
+    url: https://github.com/Becomebright/GroundVQA
+    paper: https://arxiv.org/abs/2312.06505
+    tasks: [long-video-qa, temporal-grounding, ego4d-nlq]
+
+  - name: HiERO
+    kind: model
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.12911
+    paper: https://arxiv.org/abs/2505.12911
+    tasks: [hierarchical-activity-reasoning, egomcq, egonlq, procedure-learning]
+
+  - name: EgoAgent
+    kind: model
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2502.05857
+    paper: https://arxiv.org/abs/2502.05857
+    tasks: [joint-predictive-agent, future-state-prediction, action-prediction]
+
+  - name: StillFast
+    kind: model
+    year: 2023
+    status: open
+    url: https://iplab.dmi.unict.it/stillfast/
+    paper: https://arxiv.org/abs/2304.03959
+    tasks: [short-term-object-interaction-anticipation, next-active-object, ego4d]
+
+  - name: CONE
+    kind: model
+    year: 2022
+    status: watch
+    url: https://arxiv.org/abs/2211.08776
+    paper: https://arxiv.org/abs/2211.08776
+    tasks: [natural-language-query, video-language-grounding, ego4d-nlq]
+
+  - name: EgoHandTrajPred / USST
+    kind: model
+    year: 2023
+    status: open
+    url: https://actionlab-cv.github.io/EgoHandTrajPred
+    paper: https://arxiv.org/abs/2307.08243
+    tasks: [3d-hand-trajectory-forecasting, anticipation, h2o, egopat3d]
+
   - name: Project Aria Tools
     kind: toolkit
     status: open
@@ -654,3 +934,14 @@ resources:
     status: open
     url: https://github.com/epic-kitchens/action-models
     tasks: [action-recognition-baselines]
+
+  - name: HOMIE-toolkit
+    kind: toolkit
+    year: 2026
+    status: open
+    url: https://github.com/Ropedia/HOMIE-toolkit
+    derived_from: Xperience-10M
+    tasks: [xperience-10m-loading, hdf5-annotations, visualization, rerun, calibration, depth, mocap, imu]
+    created_by: Ropedia
+    released_by: Ropedia on GitHub
+    license: MIT

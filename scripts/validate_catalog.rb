@@ -32,7 +32,9 @@ resources.each do |entry|
 end
 
 readme = File.read(README)
-local_links = readme.scan(/\]\(([^)]+)\)/).flatten.select do |link|
+markdown_links = readme.scan(/\]\(([^)]+)\)/).flatten
+html_links = readme.scan(/\b(?:href|src)="([^"]+)"/).flatten
+local_links = (markdown_links + html_links).uniq.select do |link|
   !link.start_with?("http://", "https://", "mailto:", "#")
 end
 
@@ -47,6 +49,7 @@ end
 required_assets = %w[
   assets/egoscape-atlas-cover.png
   assets/egoscape-atlas-map.svg
+  assets/egoscape-task-matrix.svg
 ]
 
 required_assets.each do |asset|

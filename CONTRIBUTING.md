@@ -18,7 +18,7 @@ Update both:
 1. `README.md`
 2. `data/resources.yml`
 
-## Curation Policy
+## Inclusion Policy
 
 - Prefer official sources over secondary blog posts.
 - Mark a resource `watch` if a paper says data will be released but the public download is not clearly available.
@@ -31,5 +31,4 @@ Update both:
 - Use concise task labels.
 - Keep tables scannable.
 - Avoid marketing language.
-- Keep generated images text-free or nearly text-free; exact resource names should be written in Markdown/SVG.
-
+- Keep figures text-free or nearly text-free; exact resource names should be written in Markdown/SVG.

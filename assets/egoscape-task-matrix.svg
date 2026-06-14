@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Egocentric AI task matrix</title>
+  <desc id="desc">A six-lane map showing foundation video, procedure and action, hand-object 3D, memory and reasoning, robotics and VLA, and AR wearable sensing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#eef8f7"/>
+    </linearGradient>
+    <style>
+      .bg { fill: url(#bg); }
+      .axis { stroke: #c9d7dd; stroke-width: 2; }
+      .card { fill: #ffffff; stroke: #d5e1e6; stroke-width: 1.5; }
+      .card-a { fill: #edfafa; stroke: #8ed1d3; stroke-width: 1.5; }
+      .card-b { fill: #fff7e7; stroke: #f0c66f; stroke-width: 1.5; }
+      .title { font: 750 30px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #17202a; }
+      .label { font: 700 16px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #102a33; }
+      .text { font: 500 13px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #46525f; }
+      .tiny { font: 600 11px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #667085; letter-spacing: .03em; }
+      .pill { fill: #0b8f98; }
+      .pill2 { fill: #f5a623; }
+      .pill3 { fill: #5b6b73; }
+      .pillText { font: 700 11px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
+    </style>
+  </defs>
+  <rect class="bg" width="1280" height="560" rx="0"/>
+  <text class="title" x="54" y="62">Egocentric AI Landscape</text>
+  <text class="text" x="54" y="90">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
+
+  <line class="axis" x1="86" y1="144" x2="1194" y2="144"/>
+  <line class="axis" x1="86" y1="306" x2="1194" y2="306"/>
+  <line class="axis" x1="86" y1="468" x2="1194" y2="468"/>
+
+  <g transform="translate(64 118)">
+    <rect class="card-a" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill" x="24" y="22" width="82" height="22" rx="11"/>
+    <text class="pillText" x="43" y="37">VIDEO</text>
+    <text class="label" x="24" y="68">Foundation Ego Video</text>
+    <text class="text" x="24" y="94">Ego4D, Ego-Exo4D, EPIC, EgoClip</text>
+  </g>
+
+  <g transform="translate(460 118)">
+    <rect class="card" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill3" x="24" y="22" width="94" height="22" rx="11"/>
+    <text class="pillText" x="43" y="37">ACTION</text>
+    <text class="label" x="24" y="68">Procedure and Anticipation</text>
+    <text class="text" x="24" y="94">Assembly101, HoloAssist, MECCANO</text>
+  </g>
+
+  <g transform="translate(856 118)">
+    <rect class="card-b" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill2" x="24" y="22" width="76" height="22" rx="11"/>
+    <text class="pillText" x="44" y="37">3D</text>
+    <text class="label" x="24" y="68">Hands, Objects, Pose</text>
+    <text class="text" x="24" y="94">HOT3D, HOI4D, H2O, ARCTIC</text>
+  </g>
+
+  <g transform="translate(64 280)">
+    <rect class="card" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill3" x="24" y="22" width="94" height="22" rx="11"/>
+    <text class="pillText" x="43" y="37">MEMORY</text>
+    <text class="label" x="24" y="68">Long-Context Reasoning</text>
+    <text class="text" x="24" y="94">EgoSchema, EgoLife, TeleEgo, MyEgo</text>
+  </g>
+
+  <g transform="translate(460 280)">
+    <rect class="card-a" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill" x="24" y="22" width="92" height="22" rx="11"/>
+    <text class="pillText" x="42" y="37">ROBOT</text>
+    <text class="label" x="24" y="68">Robotics and VLA</text>
+    <text class="text" x="24" y="94">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
+  </g>
+
+  <g transform="translate(856 280)">
+    <rect class="card" x="0" y="0" width="360" height="118" rx="14"/>
+    <rect class="pill3" x="24" y="22" width="86" height="22" rx="11"/>
+    <text class="pillText" x="43" y="37">SENSOR</text>
+    <text class="label" x="24" y="68">AR and Wearable Sensing</text>
+    <text class="text" x="24" y="94">Aria, ADT, AEA, Nymeria, EasyCom</text>
+  </g>
+
+  <text class="tiny" x="64" y="510">READING RULE</text>
+  <text class="text" x="190" y="510">Start with mature open/request resources for experiments; track watchlist entries for frontier research and future releases.</text>
+</svg>

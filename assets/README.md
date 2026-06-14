@@ -2,14 +2,14 @@
 
 ## `egoscape-atlas-cover.png`
 
-Generated with the built-in ChatGPT image tool for this repository.
+Cover image provenance: created for EgoScape Atlas with the built-in ChatGPT image tool.
 
 Prompt:
 
 ```text
 Use case: infographic-diagram
 Asset type: GitHub README cover image
-Primary request: A polished wide hero illustration for an open-source "egocentric AI atlas" repository.
+Brief: polished wide hero illustration for an open-source "egocentric AI atlas" repository.
 Scene/backdrop: clean light technical workspace with a subtle world-map grid and dataset-network lines.
 Subject: first-person / wearable-camera perspective shown through transparent AR glasses; visible hands interacting with everyday objects; nearby visual motifs for robotics manipulation, video-language reasoning, memory QA, hand-object tracking, and ego-exo multi-view capture.
 Style/medium: modern editorial technical illustration, crisp semi-flat 3D look, high detail but uncluttered.
@@ -19,3 +19,6 @@ Color palette: white, graphite, cyan, teal, amber accents; avoid one-note purple
 Constraints: no logos, no watermarks, no readable text, no fake UI text, no brand names.
 ```
 
+## `egoscape-atlas-map.svg` and `egoscape-task-matrix.svg`
+
+Hand-authored SVG overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
