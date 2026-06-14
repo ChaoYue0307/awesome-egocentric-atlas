@@ -1,0 +1,596 @@
+meta:
+  title: EgoScape Atlas
+  last_major_audit: "2026-06-14"
+  scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo resources.
+  status_legend:
+    open: Public download, public annotations, public code, or application-based access is clearly documented.
+    request: Public project exists, but dataset access requires license, form, approval, or institutional agreement.
+    benchmark: Mainly a benchmark, challenge, labels, or evaluation over existing videos.
+    partial: Some assets are public, but full raw data, license, or long-term availability is unclear.
+    watch: Recent or important resource whose release state still needs verification.
+
+resources:
+  - name: Ego4D
+    kind: dataset
+    year: 2021
+    status: request
+    url: https://ego4d-data.org/
+    paper: https://arxiv.org/abs/2110.07058
+    scale: "3,670+ hours, 900+ camera wearers, 74 locations, 9 countries"
+    modalities: [video, audio, gaze, stereo, 3d, narrations]
+    tasks: [episodic-memory, nlq, moment-query, hand-object, forecasting, social, audio-visual]
+
+  - name: Ego-Exo4D
+    kind: dataset
+    year: 2023
+    status: request
+    url: https://ego-exo4d-data.org/
+    paper: https://arxiv.org/abs/2311.18259
+    scale: "1,286 hours, 740 participants, synchronized ego/exo views"
+    modalities: [video, audio, gaze, imu, 3d-point-clouds, camera-poses, language]
+    tasks: [ego-exo, skilled-activity, cross-view, proficiency, pose]
+
+  - name: EPIC-KITCHENS-100
+    kind: dataset
+    year: 2020
+    status: open
+    url: https://epic-kitchens.github.io/
+    paper: https://arxiv.org/abs/2006.13256
+    scale: "100 hours, 20M frames, 90K action segments, 45 kitchens"
+    modalities: [video, audio, narrations, object-boxes]
+    tasks: [action-recognition, action-detection, anticipation, retrieval, domain-adaptation]
+
+  - name: HD-EPIC
+    kind: dataset
+    year: 2025
+    status: open
+    url: https://arxiv.org/abs/2502.04144
+    paper: https://arxiv.org/abs/2502.04144
+    scale: "41 hours, 9 kitchens, 59K fine-grained actions, 26K VQA questions"
+    modalities: [video, audio, gaze, object-masks, digital-twins, 3d]
+    tasks: [vqa, action-recognition, audio-events, object-motion, gaze-reasoning]
+
+  - name: HoloAssist
+    kind: dataset
+    year: 2023
+    status: open
+    url: https://holoassist.github.io/
+    paper: https://arxiv.org/abs/2309.17024
+    scale: "166 hours, 350 instructor-performer pairs"
+    modalities: [rgb, depth, gaze, hand, head, imu, audio]
+    tasks: [interactive-assistance, mistake-detection, intervention-prediction, hand-forecasting]
+
+  - name: Assembly101
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://assembly-101.github.io/
+    paper: https://arxiv.org/abs/2203.14712
+    scale: "4,321 videos, 8 static plus 4 egocentric views, 1M fine-grained action segments"
+    modalities: [multiview-video, egocentric-video, 3d-hand-pose]
+    tasks: [procedural-action, anticipation, temporal-segmentation, mistake-detection]
+
+  - name: Ego-1K
+    kind: dataset
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/facebook/ego-1k
+    paper: https://arxiv.org/abs/2603.13741
+    scale: "Nearly 1,000 synchronized multiview egocentric videos"
+    modalities: [multiview-video, calibration]
+    tasks: [dynamic-scene-understanding, novel-view-synthesis, 3d-reconstruction]
+
+  - name: EgoObjects
+    kind: dataset
+    year: 2023
+    status: open
+    url: https://github.com/facebookresearch/EgoObjects
+    paper: https://arxiv.org/abs/2309.08816
+    scale: "9K+ videos, 650K annotations, 368 categories in pilot release"
+    modalities: [video, object-boxes, instance-labels]
+    tasks: [object-detection, instance-understanding, continual-learning]
+
+  - name: EgoDex
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.11709
+    paper: https://arxiv.org/abs/2505.11709
+    scale: "829 hours, 194 tabletop tasks, Apple Vision Pro capture"
+    modalities: [egocentric-video, 3d-hand-pose, head-pose]
+    tasks: [dexterous-manipulation, imitation-learning, vla]
+
+  - name: EgoVerse
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://egoverse.ai/
+    paper: https://arxiv.org/abs/2604.07607
+    scale: "1,362 hours, 80K episodes, 1,965 tasks, 2,087 demonstrators"
+    modalities: [egocentric-video, annotations, tooling]
+    tasks: [robot-learning, vla, human-demonstrations]
+
+  - name: OpenEgo
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2509.05513
+    paper: https://arxiv.org/abs/2509.05513
+    scale: "1,107 hours across six public datasets, 290 manipulation tasks"
+    modalities: [egocentric-video, hand-pose, action-primitives]
+    tasks: [dexterous-manipulation, standardized-pretraining, vla]
+
+  - name: EgoLive
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.23570
+    paper: https://arxiv.org/abs/2604.23570
+    scale: "Large-scale real-world task-oriented egocentric routines"
+    modalities: [egocentric-video, multimodal-annotations]
+    tasks: [robot-manipulation, real-world-routines]
+
+  - name: World In Your Hands
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.24310
+    paper: https://arxiv.org/abs/2512.24310
+    scale: "Reported 1,000+ hours of multimodal human-centric manipulation data"
+    modalities: [egocentric-video, multiview, depth, hand-pose, wrist-trajectory]
+    tasks: [dexterous-manipulation, vla, human-centric-policy-learning]
+
+  - name: InterVLA
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.04681
+    paper: https://arxiv.org/abs/2508.04681
+    scale: "11.4 hours, 1.2M frames, 2 egocentric and 5 exocentric videos"
+    modalities: [egocentric-video, exocentric-video, human-motion, object-motion, verbal-commands]
+    tasks: [vla, human-object-human-interaction, motion-estimation, interaction-prediction]
+
+  - name: HOT3D
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://facebookresearch.github.io/hot3d/
+    paper: https://arxiv.org/abs/2406.09598
+    scale: "833+ minutes, 3.7M+ images, 19 subjects, 33 objects"
+    modalities: [aria, quest3, gaze, point-clouds, 3d-hand-pose, object-pose, camera-pose]
+    tasks: [3d-hand-object-tracking, ar-vr, pose]
+
+  - name: HOI4D
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://hoi4d.github.io/
+    paper: https://arxiv.org/abs/2203.01577
+    scale: "2.4M RGB-D egocentric frames, 4,000+ sequences, 800 objects"
+    modalities: [rgbd, point-clouds, 3d-hand-pose, object-pose, segmentation]
+    tasks: [4d-hoi, pose-tracking, action-segmentation]
+
+  - name: EgoHands
+    kind: dataset
+    year: 2015
+    status: open
+    url: http://vision.soic.indiana.edu/projects/egohands/
+    scale: "48 Google Glass videos, 4,800 annotated images"
+    modalities: [rgb, hand-masks]
+    tasks: [hand-detection, hand-segmentation]
+
+  - name: FPHA
+    kind: dataset
+    year: 2017
+    status: open
+    url: https://guiggh.github.io/publications/first-person-hands/
+    scale: "100K+ RGB-D frames, 45 action classes, 26 objects"
+    modalities: [rgbd, 3d-hand-pose, object-pose]
+    tasks: [hand-action-recognition, 3d-hand-pose]
+
+  - name: EgoHOS
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://github.com/owenzlz/EgoHOS
+    paper: https://arxiv.org/abs/2208.03826
+    scale: "11,243 egocentric images"
+    modalities: [rgb, hand-object-contact-masks]
+    tasks: [hand-object-segmentation, contact-understanding]
+
+  - name: Ego2Hands
+    kind: dataset
+    year: 2020
+    status: open
+    url: https://arxiv.org/abs/2011.07252
+    paper: https://arxiv.org/abs/2011.07252
+    modalities: [rgb, synthetic-composited-masks]
+    tasks: [two-hand-segmentation, hand-detection]
+
+  - name: Ego2HandsPose
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://arxiv.org/abs/2206.04927
+    paper: https://arxiv.org/abs/2206.04927
+    modalities: [rgb, 3d-hand-pose]
+    tasks: [two-hand-3d-pose]
+
+  - name: EgoBody
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://sanweiliti.github.io/egobody/egobody.html
+    modalities: [hololens2, rgb, depth, gaze, head-pose, hand-pose, body-pose]
+    tasks: [3d-human-pose, body-shape, motion]
+
+  - name: UnrealEgo
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://4dqv.mpi-inf.mpg.de/UnrealEgo/
+    paper: https://arxiv.org/abs/2208.01633
+    modalities: [synthetic-stereo, 3d-human-pose]
+    tasks: [egocentric-3d-pose]
+
+  - name: xR-EgoPose
+    kind: dataset
+    year: 2019
+    status: open
+    url: https://github.com/facebookresearch/xR-EgoPose
+    modalities: [synthetic-egocentric, 3d-human-pose]
+    tasks: [xr-pose-estimation]
+
+  - name: EgoTracks
+    kind: benchmark
+    year: 2023
+    status: open
+    url: https://arxiv.org/abs/2301.03213
+    paper: https://arxiv.org/abs/2301.03213
+    derived_from: Ego4D
+    tasks: [long-term-object-tracking, redetection]
+
+  - name: TREK-150
+    kind: benchmark
+    year: 2021
+    status: open
+    url: https://machinelearning.uniud.it/datasets/trek150/
+    derived_from: EPIC-KITCHENS
+    tasks: [single-object-tracking]
+
+  - name: Project Aria Datasets
+    kind: collection
+    status: open
+    url: https://www.projectaria.com/datasets/
+    modalities: [aria, vrs, calibration, gaze, imu, mps]
+    tasks: [ar-perception, scene-understanding, wearable-sensing]
+
+  - name: Aria Digital Twin
+    kind: dataset
+    year: 2023
+    status: open
+    url: https://www.projectaria.com/datasets/adt/
+    paper: https://arxiv.org/abs/2306.06362
+    scale: "200 sequences, 398 object instances"
+    modalities: [aria, rgb, monochrome, imu, 6dof, depth, segmentation, synthetic-rendering]
+    tasks: [3d-machine-perception, object-tracking, scene-reconstruction]
+
+  - name: Aria Everyday Activities
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://www.projectaria.com/datasets/aea/
+    paper: https://arxiv.org/abs/2402.13349
+    scale: "143 daily activity sequences across five indoor locations"
+    modalities: [aria, trajectory, point-cloud, gaze, speech]
+    tasks: [everyday-activity, neural-scene-reconstruction, prompted-segmentation]
+
+  - name: Nymeria
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://www.projectaria.com/datasets/nymeria/
+    paper: https://arxiv.org/abs/2406.09905
+    scale: "300 hours, 264 participants, 50 locations"
+    modalities: [aria, eye-tracking, imu, body-motion, language, observer-view]
+    tasks: [motion-language, body-tracking, action-recognition]
+
+  - name: Digital Twin Catalog
+    kind: dataset
+    year: 2025
+    status: open
+    url: https://www.projectaria.com/datasets/dtc/
+    paper: https://arxiv.org/abs/2504.08541
+    scale: "2,000 scanned digital-twin objects"
+    modalities: [3d-objects, dslr-images, aria-images]
+    tasks: [object-reconstruction, digital-twin-evaluation]
+
+  - name: EgoLife
+    kind: dataset
+    year: 2025
+    status: partial
+    url: https://arxiv.org/abs/2503.03803
+    paper: https://arxiv.org/abs/2503.03803
+    scale: "300 hours, 6 participants, one week daily life"
+    modalities: [meta-aria, video, audio, third-person-reference, qa]
+    tasks: [life-assistant, long-context-qa, memory]
+
+  - name: Ego-EXTRA
+    kind: dataset
+    year: 2025
+    status: open
+    url: https://fpv-iplab.github.io/Ego-EXTRA/
+    paper: https://arxiv.org/abs/2512.13238
+    scale: "50 hours, 15K+ VQA pairs"
+    modalities: [video, dialogue, qa]
+    tasks: [expert-trainee-assistance, egocentric-vqa]
+
+  - name: EgoSchema
+    kind: benchmark
+    year: 2023
+    status: open
+    url: http://egoschema.github.io/
+    paper: https://arxiv.org/abs/2308.09126
+    derived_from: Ego4D
+    scale: "5K+ multiple-choice QA pairs, 250+ hours"
+    tasks: [long-video-qa, temporal-reasoning]
+
+  - name: EgoClip
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://github.com/showlab/EgoVLP
+    paper: https://arxiv.org/abs/2206.01670
+    derived_from: Ego4D
+    scale: "3.8M clip-text pairs"
+    tasks: [video-language-pretraining, retrieval]
+
+  - name: EgoBench
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.27820
+    paper: https://arxiv.org/abs/2605.27820
+    scale: "1,045 egocentric-video-grounded interactive tasks"
+    tasks: [tool-using-agents, multimodal-reasoning, interaction]
+
+  - name: EgoIntrospect
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://ego-introspect.github.io/
+    paper: https://arxiv.org/abs/2605.17262
+    scale: "180 hours, 60 subjects"
+    modalities: [video, audio, gaze, motion, physiological-signals, self-annotations]
+    tasks: [internal-state-reasoning, affect, intent, memory]
+
+  - name: Minerva-Ego
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://github.com/google-deepmind/neptune
+    paper: https://arxiv.org/abs/2605.15342
+    tasks: [multistep-reasoning, spatiotemporal-hints, masks]
+
+  - name: MA-EgoQA
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://ma-egoqa.github.io/
+    paper: https://arxiv.org/abs/2603.09827
+    scale: "1.7K questions over multiple egocentric streams"
+    tasks: [multi-agent-memory, social-reasoning, temporal-reasoning]
+
+  - name: EASG-Bench
+    kind: benchmark
+    year: 2025
+    status: open
+    url: https://github.com/fpv-iplab/EASG-bench
+    paper: https://arxiv.org/abs/2506.05787
+    tasks: [scene-graph-qa, relation-reasoning, temporal-reasoning]
+
+  - name: Causal-Plan-1M
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.01810
+    paper: https://arxiv.org/abs/2606.01810
+    scale: "Million-scale explicit reasoning traces over egocentric videos"
+    tasks: [causal-reasoning, planning, next-state-estimation]
+
+  - name: AssistQ
+    kind: benchmark
+    year: 2022
+    status: open
+    url: https://showlab.github.io/assistq/
+    paper: https://arxiv.org/abs/2203.04203
+    scale: "531 QA samples from 100 instructional videos"
+    tasks: [task-assistance, affordance-centric-qa, action-planning]
+
+  - name: EgoTaskQA
+    kind: benchmark
+    year: 2022
+    status: benchmark
+    url: https://arxiv.org/abs/2210.03929
+    paper: https://arxiv.org/abs/2210.03929
+    tasks: [task-understanding, causal-reasoning, counterfactual-qa, belief-reasoning]
+
+  - name: HowToDIV
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.11192
+    paper: https://arxiv.org/abs/2508.11192
+    scale: "507 conversations, 6,636 QA pairs, 24 hours"
+    modalities: [egocentric-video, dialogue, qa]
+    tasks: [procedural-task-assistance, instructional-dialogue, egocentric-qa]
+
+  - name: GTEA / GTEA Gaze / EGTEA Gaze+
+    kind: dataset
+    status: open
+    url: https://cbs.ic.gatech.edu/fpv/
+    modalities: [video, gaze, action-labels]
+    tasks: [action-recognition, gaze, hand-object]
+
+  - name: Charades-Ego
+    kind: dataset
+    year: 2018
+    status: open
+    url: https://prior.allenai.org/projects/charades
+    paper: https://arxiv.org/abs/1804.09626
+    scale: "68.8 hours, 68,536 activity instances"
+    modalities: [first-person-video, third-person-video, descriptions]
+    tasks: [action-recognition, localization, captioning, domain-transfer]
+
+  - name: MECCANO
+    kind: dataset
+    year: 2020
+    status: open
+    url: https://iplab.dmi.unict.it/MECCANO/
+    paper: https://arxiv.org/abs/2010.05654
+    modalities: [rgb, depth, gaze]
+    tasks: [ehoi, active-object-detection, action-recognition, anticipation]
+
+  - name: EgoProceL
+    kind: dataset
+    year: 2022
+    status: open
+    url: https://sid2697.github.io/egoprocel/
+    paper: https://arxiv.org/abs/2207.10883
+    scale: "62 hours, 130 subjects, 16 tasks"
+    tasks: [procedure-learning, key-step-localization]
+
+  - name: EgoExoLearn
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://github.com/OpenGVLab/EgoExoLearn
+    paper: https://arxiv.org/abs/2403.16182
+    scale: "120 hours"
+    modalities: [egocentric-video, demonstration-video, gaze, annotations]
+    tasks: [cross-view-association, planning, skill-assessment]
+
+  - name: DogCentric
+    kind: dataset
+    status: open
+    url: https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/
+    modalities: [animal-egocentric-video]
+    tasks: [animal-activity-recognition]
+
+  - name: KrishnaCam / OAK
+    kind: dataset
+    year: 2021
+    status: partial
+    url: https://oakdata.github.io/
+    paper: https://arxiv.org/abs/2108.11005
+    scale: "OAK: 80 snippets, about 17.5 hours, 105 object categories from KrishnaCam"
+    modalities: [egocentric-video, object-boxes]
+    tasks: [continual-learning, object-detection, lifelogging]
+
+  - name: EgoK360
+    kind: dataset
+    year: 2020
+    status: partial
+    url: https://egok360.github.io/
+    paper: https://arxiv.org/abs/2010.08055
+    modalities: [first-person-360-video, action-labels]
+    tasks: [360-video, activity-recognition]
+
+  - name: EgoTraj
+    kind: dataset
+    year: 2026
+    status: open
+    url: https://github.com/yehiahmad/EgoTraj
+    paper: https://arxiv.org/abs/2605.19004
+    scale: "75 Meta Quest Pro navigation sequences"
+    modalities: [rgb, head-pose, gaze, scene-labels]
+    tasks: [trajectory-prediction, navigation, assistive-systems]
+
+  - name: VISOR
+    kind: benchmark
+    status: open
+    url: https://epic-kitchens.github.io/VISOR/
+    derived_from: EPIC-KITCHENS
+    tasks: [hand-segmentation, active-object-segmentation, relations]
+
+  - name: EPIC-Sounds
+    kind: benchmark
+    status: open
+    url: https://epic-kitchens.github.io/epic-sounds/
+    derived_from: EPIC-KITCHENS
+    tasks: [audio-event-recognition]
+
+  - name: EPIC-Fields
+    kind: benchmark
+    status: open
+    url: https://epic-kitchens.github.io/epic-fields/
+    derived_from: EPIC-KITCHENS
+    tasks: [3d-fields, spatial-reasoning]
+
+  - name: EgoVLP
+    kind: model
+    year: 2022
+    status: open
+    url: https://github.com/showlab/EgoVLP
+    paper: https://arxiv.org/abs/2206.01670
+    tasks: [video-language-pretraining, retrieval, ego4d-transfer]
+
+  - name: EgoVLPv2
+    kind: model
+    year: 2023
+    status: open
+    url: https://shramanpramanick.github.io/EgoVLPv2/
+    paper: https://arxiv.org/abs/2307.05463
+    tasks: [video-language-pretraining, cross-modal-fusion]
+
+  - name: LaViLa
+    kind: model
+    year: 2022
+    status: open
+    url: https://arxiv.org/abs/2212.04501
+    paper: https://arxiv.org/abs/2212.04501
+    tasks: [video-language-representation, narration-generation]
+
+  - name: EgoNCE++
+    kind: model
+    year: 2024
+    status: open
+    url: https://github.com/xuboshen/EgoNCEpp
+    paper: https://arxiv.org/abs/2405.17719
+    tasks: [open-vocabulary-hoi, video-language-pretraining]
+
+  - name: EgoDTM
+    kind: model
+    year: 2025
+    status: open
+    url: https://github.com/xuboshen/EgoDTM
+    paper: https://arxiv.org/abs/2503.15470
+    tasks: [3d-aware-vlp, depth-text-pretraining]
+
+  - name: EgoVLM
+    kind: model
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.03097
+    paper: https://arxiv.org/abs/2506.03097
+    tasks: [egocentric-video-reasoning, policy-optimization]
+
+  - name: EgoGraph
+    kind: model
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.23709
+    paper: https://arxiv.org/abs/2602.23709
+    tasks: [temporal-knowledge-graph, ultra-long-video-qa]
+
+  - name: Project Aria Tools
+    kind: toolkit
+    status: open
+    url: https://github.com/facebookresearch/projectaria_tools
+    tasks: [vrs-loading, calibration, mps, gaze, trajectory]
+
+  - name: EPIC-KITCHENS action models
+    kind: toolkit
+    status: open
+    url: https://github.com/epic-kitchens/action-models
+    tasks: [action-recognition-baselines]
