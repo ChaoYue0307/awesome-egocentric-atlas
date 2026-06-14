@@ -1,6 +1,6 @@
 meta:
-  title: EgoScape Atlas
-  description: "EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
+  title: Awesome Egocentric Atlas
+  description: "Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
   last_major_audit: "2026-06-14"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:

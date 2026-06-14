@@ -1,6 +1,6 @@
-# Contributing to EgoScape Atlas
+# Contributing to Awesome Egocentric Atlas
 
-EgoScape Atlas: curated egocentric AI datasets, benchmarks, models, and tools.
+Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools.
 
 Contributions are welcome, but please keep the atlas conservative and reviewable.
 

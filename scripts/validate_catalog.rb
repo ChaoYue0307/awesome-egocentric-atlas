@@ -47,10 +47,10 @@ local_links.each do |link|
 end
 
 required_assets = %w[
-  assets/egoscape-atlas-cover.png
-  assets/egoscape-atlas-map.svg
-  assets/egoscape-reader-route.svg
-  assets/egoscape-task-matrix.svg
+  assets/awesome-egocentric-atlas-cover.png
+  assets/awesome-egocentric-atlas-map.svg
+  assets/awesome-egocentric-reader-route.svg
+  assets/awesome-egocentric-task-matrix.svg
 ]
 
 required_assets.each do |asset|

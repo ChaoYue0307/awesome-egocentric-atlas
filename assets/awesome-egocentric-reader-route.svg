@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
-  <title id="title">EgoScape Atlas reader route</title>
-  <desc id="desc">A five-step reader route for using EgoScape Atlas: choose a goal, pick a lane, compare access, filter the catalog, then cite or contribute.</desc>
+  <title id="title">Awesome Egocentric Atlas reader route</title>
+  <desc id="desc">A five-step reader route for using Awesome Egocentric Atlas: choose a goal, pick a lane, compare access, filter the catalog, then cite or contribute.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>

@@ -1,27 +1,28 @@
 <p align="center">
-  <img src="assets/egoscape-atlas-cover.png" alt="EgoScape Atlas cover" width="100%">
+  <img src="assets/awesome-egocentric-atlas-cover.png" alt="Awesome Egocentric Atlas cover" width="100%">
 </p>
 
-<h1 align="center">EgoScape Atlas</h1>
+<h1 align="center">Awesome Egocentric Atlas</h1>
 
 <p align="center">
   <strong>Curated egocentric AI datasets, benchmarks, models, and tools.</strong>
 </p>
 
 <p align="center">
+  <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-100-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
 </p>
 
-**EgoScape Atlas**: curated egocentric AI datasets, benchmarks, models, and tools for computer vision, embodied AI, robotics, video-language learning, long-context memory, AR/VR, and human-object interaction.
+**Awesome Egocentric Atlas**: curated egocentric AI datasets, benchmarks, models, and tools for computer vision, embodied AI, robotics, video-language learning, long-context memory, AR/VR, and human-object interaction.
 
 **Updated:** 2026-06-14.  
 **Scope:** human or animal first-person capture from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs. Pure autonomous-driving dashcam datasets are out of the main table unless the resource explicitly targets wearable or embodied egocentric perception.
 
 <p align="center">
-  <img src="assets/egoscape-atlas-map.svg" alt="EgoScape Atlas system map" width="100%">
+  <img src="assets/awesome-egocentric-atlas-map.svg" alt="Awesome Egocentric Atlas system map" width="100%">
 </p>
 
 ## Contents
@@ -46,7 +47,7 @@
 Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, scale/signal, best use, and public status. For filtering by task, modality, status, or year, use the catalog in [`data/resources.yml`](data/resources.yml).
 
 <p align="center">
-  <img src="assets/egoscape-reader-route.svg" alt="EgoScape Atlas reader route" width="100%">
+  <img src="assets/awesome-egocentric-reader-route.svg" alt="Awesome Egocentric Atlas reader route" width="100%">
 </p>
 
 ## At a Glance
@@ -72,7 +73,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 ## Landscape Snapshot
 
 <p align="center">
-  <img src="assets/egoscape-task-matrix.svg" alt="Egocentric AI task matrix" width="100%">
+  <img src="assets/awesome-egocentric-task-matrix.svg" alt="Egocentric AI task matrix" width="100%">
 </p>
 
 | Lane | What to compare | Canonical anchors |
