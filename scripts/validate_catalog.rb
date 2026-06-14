@@ -108,7 +108,7 @@ resources.each do |entry|
 end
 
 # --- README local links and assets -----------------------------------------
-readme = File.read(README)
+readme = File.read(README, encoding: "UTF-8")
 markdown_links = readme.scan(/\]\(([^)]+)\)/).flatten
 html_links = readme.scan(/\b(?:href|src)="([^"]+)"/).flatten
 local_links = (markdown_links + html_links).uniq.reject do |link|

@@ -49,7 +49,7 @@
   <g>
     <rect class="chip" x="846" y="58" width="124" height="30" rx="15"/>
     <circle class="dotT" cx="868" cy="73" r="4"/>
-    <text class="chiptext" x="880" y="77">101 resources</text>
+    <text class="chiptext" x="880" y="77">162 resources</text>
     <rect class="chip" x="980" y="58" width="100" height="30" rx="15"/>
     <circle class="dotA" cx="1002" cy="73" r="4"/>
     <text class="chiptext" x="1014" y="77">6 lanes</text>

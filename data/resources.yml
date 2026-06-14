@@ -961,3 +961,472 @@ resources:
     created_by: Ropedia
     released_by: Ropedia on GitHub
     license: MIT
+
+  # --- Catalog expansion (2026-06-14): README entries reconciled into the catalog ---
+
+  - name: EgoCom / Ego audio-visual correspondence
+    kind: dataset
+    status: open
+    url: http://vision.cs.utexas.edu/projects/ego_av_corr/
+    scale: "Egocentric video with spatial audio for conversation and audio-visual correspondence tasks"
+    tasks: [foundation-video, video-language]
+
+  - name: EasyCom
+    kind: dataset
+    year: 2021
+    status: open
+    url: https://arxiv.org/abs/2107.04174
+    scale: "AR glasses egocentric multi-channel audio and wide-FOV RGB for noisy conversations"
+    tasks: [foundation-video, video-language]
+
+  - name: Look and Tell
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.22672
+    scale: "25 participants, Project Aria plus stationary cameras, gaze/speech/video, 3D reconstructions"
+    tasks: [foundation-video, video-language]
+
+  - name: EgoVLA
+    kind: model
+    status: watch
+    url: https://rchalyang.github.io/EgoVLA/
+    scale: "VLA training from egocentric human videos plus robot fine-tuning"
+    tasks: [robot-learning, manipulation, vla]
+
+  - name: EgoEngine
+    kind: model
+    status: watch
+    url: https://egoengine.github.io/
+    scale: "Framework converting egocentric human manipulation video into robot observation/action data"
+    tasks: [robot-learning, manipulation, vla]
+
+  - name: EgoAERO
+    kind: model
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.08057
+    scale: "Asset-free conversion from a single egocentric RGB-D demonstration; introduces EgoDex-R in the paper"
+    tasks: [robot-learning, manipulation, vla]
+
+  - name: HRDexDB
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.14944
+    scale: "1.4K human/robot grasping trials, tactile, multiview video, egocentric video streams"
+    tasks: [robot-learning, manipulation, vla]
+
+  - name: UnrealEgo2 / UnrealEgo-RW
+    kind: dataset
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2401.00889
+    scale: "Expanded stereo egocentric pose datasets from synthetic and real-world capture"
+    tasks: [hand-object, 3d, pose]
+
+  - name: TouchMoment
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.12343
+    scale: "4,021 egocentric videos, 8,456 annotated hand-object contact moments"
+    tasks: [hand-object, 3d, pose]
+
+  - name: EgoFun3D
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.11038
+    scale: "271 egocentric videos with 3D geometry, part segmentation, articulation and function-template annotations"
+    tasks: [hand-object, 3d, pose]
+
+  - name: EgoEMG
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.05712
+    scale: "41 participants, bilateral EMG, IMU, RGB, external RGB-D, mocap hand labels"
+    tasks: [hand-object, 3d, pose]
+
+  - name: EgoEVHands
+    kind: dataset
+    status: watch
+    url: https://github.com/ZJUWang01/EgoEV-HandPose
+    scale: "Stereo event-camera egocentric hand dataset with 5,419 sequences and 3D/2D keypoints"
+    tasks: [hand-object, 3d, pose]
+
+  - name: EventEgoHands
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.19169
+    scale: "Event-based egocentric 3D hand mesh reconstruction benchmark over N-HOT3D"
+    tasks: [hand-object, 3d, pose]
+
+  - name: A multimodal RGB/events FPV hand dataset
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10790
+    scale: "Synthetic event-based first-person hand detection from EgoHands plus v2e"
+    tasks: [hand-object, 3d, pose]
+
+  - name: EgoExoMem
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.18734
+    scale: "2.6K MCQs across synchronized ego-exo videos"
+    tasks: [memory, qa, assistant]
+
+  - name: EgoSelf
+    kind: model
+    status: watch
+    url: https://abie-e.github.io/egoself_project/
+    scale: "Personalized egocentric assistant framework with graph memory"
+    tasks: [memory, qa, assistant]
+
+  - name: EgoCross
+    kind: dataset
+    status: watch
+    url: https://github.com/MyUniverse0726/EgoCross
+    scale: "About 1,000 QA pairs over surgery, industry, extreme sports, and animal-perspective clips"
+    tasks: [memory, qa, assistant]
+
+  - name: ADL Dataset
+    kind: dataset
+    status: partial
+    url: https://www.csc.kth.se/cvap/actions/
+    scale: "Unscripted daily activity recordings with activity/object/hand annotations in classic literature"
+    tasks: [action-recognition, procedure]
+
+  - name: Wrist-mounted ADL
+    kind: dataset
+    year: 2015
+    status: open
+    url: https://arxiv.org/abs/1511.06783
+    scale: "Synchronized head and wrist wearable-camera daily activities"
+    tasks: [action-recognition, procedure]
+
+  - name: Visual Experience Dataset / VEDB
+    kind: dataset
+    status: partial
+    url: http://tamaraberg.com/visualexperience/
+    scale: "240+ hours egocentric video with gaze/head tracking in classic literature"
+    tasks: [action-recognition, procedure]
+
+  - name: UT Ego
+    kind: dataset
+    status: partial
+    url: http://vision.cs.utexas.edu/projects/egocentric/
+    scale: "Long daily egocentric videos in classic summarization work"
+    tasks: [action-recognition, procedure]
+
+  - name: HUJI EgoSeg
+    kind: dataset
+    status: partial
+    url: https://www.vision.huji.ac.il/egoseg/
+    scale: "Long egocentric videos for temporal segmentation"
+    tasks: [action-recognition, procedure]
+
+  - name: JPL First-Person Interaction
+    kind: dataset
+    status: partial
+    url: https://ieeexplore.ieee.org/document/6909626
+    scale: "First-person videos of people interacting with a humanoid observer"
+    tasks: [action-recognition, procedure]
+
+  - name: FT-HID
+    kind: dataset
+    status: open
+    url: https://github.com/ENDLICHERE/FT-HID
+    scale: "90K+ RGB-D first- and third-person human interaction samples from 109 subjects"
+    tasks: [action-recognition, procedure]
+
+  - name: LSC-ADL
+    kind: dataset
+    year: 2025
+    status: open
+    url: https://arxiv.org/abs/2504.02060
+    scale: "ADL annotations over lifelogging data generated with clustering plus human review"
+    tasks: [action-recognition, procedure]
+
+  - name: SEED4D
+    kind: dataset
+    status: open
+    url: https://seed4d.github.io/
+    scale: "Synthetic ego-exo dynamic 4D generator and driving dataset"
+    tasks: [ar, scene-understanding, slam]
+
+  - name: Ego4D Benchmarks
+    kind: benchmark
+    status: benchmark
+    url: https://ego4d-data.org/
+    scale: "Derived benchmark suite built on Ego4D; tasks: Natural Language Query, Moment Query, episodic memory, state change, long-term anticipation, social/audio, hand-object"
+    tasks: [benchmark, evaluation]
+
+  - name: Ego-Exo4D Benchmarks
+    kind: benchmark
+    status: benchmark
+    url: https://ego-exo4d-data.org/
+    scale: "Derived benchmark suite built on Ego-Exo4D; tasks: Fine-grained activity, proficiency, cross-view translation, 3D pose, object correspondence"
+    tasks: [benchmark, evaluation]
+
+  - name: EPIC-KITCHENS Challenges
+    kind: benchmark
+    status: benchmark
+    url: https://epic-kitchens.github.io/
+    scale: "Derived benchmark suite built on EPIC-KITCHENS / EPIC-KITCHENS-100; tasks: Recognition, detection, anticipation, retrieval, domain adaptation"
+    tasks: [benchmark, evaluation]
+
+  - name: HD-EPIC VQA Challenge
+    kind: benchmark
+    year: 2025
+    status: benchmark
+    url: https://arxiv.org/abs/2502.04144
+    scale: "Derived benchmark suite built on HD-EPIC; tasks: Recipe, ingredient, nutrition, fine-grained action, 3D perception, object motion, gaze"
+    tasks: [benchmark, evaluation]
+
+  - name: EgoEnv
+    kind: model
+    status: open
+    url: https://vision.cs.utexas.edu/projects/ego-env/
+    scale: "Environment-aware representation learning from egocentric video"
+    tasks: [video-language, representation-learning]
+
+  - name: EgoMAS
+    kind: model
+    status: open
+    url: https://ma-egoqa.github.io/
+    scale: "Shared-memory baseline for multi-agent egocentric video QA"
+    tasks: [video-language, representation-learning]
+
+  - name: Ego-Exo representation transfer
+    kind: model
+    year: 2021
+    status: open
+    url: https://arxiv.org/abs/2104.07905
+    scale: "Distillation from third-person video using ego-specific latent signals"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: EgoPoseFormer
+    kind: model
+    status: open
+    url: https://github.com/ChenhongyiYang/egoposeformer
+    scale: "Transformer baseline for stereo egocentric 3D human pose estimation"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: EgoSTARK
+    kind: model
+    year: 2023
+    status: open
+    url: https://arxiv.org/abs/2301.03213
+    scale: "Adapted long-term tracker baseline for EgoTracks"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: EgoHOS model
+    kind: model
+    status: open
+    url: https://github.com/owenzlz/EgoHOS
+    scale: "Context-aware hand-object segmentation and augmentation pipeline"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: AV-CONV
+    kind: model
+    status: open
+    url: https://vjwq.github.io/AV-CONV/
+    scale: "Audio-visual conversational graph prediction from ego/exo conversation"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: EgoAction
+    kind: model
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.24496
+    scale: "CVPR 2026 EPIC-KITCHENS action detection challenge pipeline"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: EgoAdapt
+    kind: model
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.24500
+    scale: "CVPR 2026 HD-EPIC VQA challenge inference-time adaptation pipeline"
+    tasks: [action, tracking, pose, hoi]
+
+  - name: Ego4D CLI and docs
+    kind: toolkit
+    status: open
+    url: https://ego4d-data.org/
+    scale: "Downloading and working with Ego4D data after license approval."
+    tasks: [tooling]
+
+  - name: Ego-Exo4D CLI and docs
+    kind: toolkit
+    status: open
+    url: https://ego-exo4d-data.org/
+    scale: "Downloading synchronized ego-exo data and annotations."
+    tasks: [tooling]
+
+  - name: VISOR API
+    kind: toolkit
+    status: open
+    url: https://github.com/epic-kitchens/VISOR
+    scale: "Loading dense EPIC-KITCHENS hand/object masks and relations."
+    tasks: [tooling]
+
+  - name: EgoObjects API
+    kind: toolkit
+    status: open
+    url: https://github.com/facebookresearch/EgoObjects
+    scale: "Working with category and instance-level egocentric object labels."
+    tasks: [tooling]
+
+  - name: HOT3D tooling
+    kind: toolkit
+    status: open
+    url: https://facebookresearch.github.io/hot3d/
+    scale: "Loading HOT3D hand/object/camera pose annotations and models."
+    tasks: [tooling]
+
+  - name: HOI4D tooling
+    kind: toolkit
+    status: open
+    url: https://hoi4d.github.io/
+    scale: "Loading RGB-D frames, point clouds, object meshes, and pose/segmentation annotations."
+    tasks: [tooling]
+
+  # --- Catalog expansion (2026-06-14): added from web research ---
+
+  - name: EgoVid-5M
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://egovid.github.io/
+    paper: https://arxiv.org/abs/2411.08380
+    scale: "5M curated egocentric clips at 1080p with fine-grained kinematic and high-level textual action annotations (NeurIPS 2025)"
+    tasks: [video-generation, world-modeling, action-conditioned-generation]
+
+  - name: AoE
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.23893
+    scale: "Always-on egocentric human video collection pipeline and corpus for embodied AI data scaling"
+    tasks: [robot-learning, data-collection, embodied-ai]
+
+  - name: Seeing Across Views
+    kind: benchmark
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.19400
+    scale: "1.7K curated QA items testing whether VLMs integrate multiple camera views for manipulation tasks (ICLR 2026)"
+    tasks: [multi-view, manipulation, vlm-evaluation]
+
+  - name: EgoGesture
+    kind: dataset
+    year: 2017
+    status: open
+    url: https://ieeexplore.ieee.org/document/8299578/
+    scale: "24K+ gesture samples, 3M RGB-D frames, 50 subjects, 83 static and dynamic gestures across six indoor/outdoor scenes"
+    tasks: [gesture-recognition, hand, wearable-interaction]
+
+  - name: EgoBrain
+    kind: dataset
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.01353
+    scale: "Synchronized EEG and egocentric video for human action understanding from minds and eyes"
+    tasks: [eeg, action-understanding, multimodal]
+
+  - name: MM-Ego
+    kind: model
+    year: 2024
+    status: open
+    url: https://arxiv.org/abs/2410.07177
+    scale: "Egocentric multimodal LLM with Memory Pointer Prompting; 7M-sample QA data engine and the EgoMemoria benchmark (629 videos, 7,026 questions)"
+    tasks: [video-language, memory, qa]
+
+  - name: EgoStream
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.31557
+    scale: "2,250 questions across seven memory dimensions with Answer Validity Windows, expanded to 8,528 recall-conditioned evaluations over streams up to 45.3 hours"
+    tasks: [streaming-memory, episodic-memory, qa]
+
+  - name: EgoMemory
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://openreview.net/forum?id=T0em4hJCQb
+    scale: "165,795 user-specific object annotations over 245 videos from 45 participants for memory-augmented personalized retrieval"
+    tasks: [personalized-retrieval, episodic-memory, long-context]
+
+  - name: EgoTextVQA
+    kind: benchmark
+    year: 2025
+    status: open
+    url: https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_EgoTextVQA_Towards_Egocentric_Scene-Text_Aware_Video_Question_Answering_CVPR_2025_paper.pdf
+    scale: "Egocentric scene-text-aware video QA across indoor housekeeping and outdoor driving scenes (CVPR 2025)"
+    tasks: [scene-text, qa, reading]
+
+  - name: Gesture-Based Egocentric Video QA
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.12533
+    scale: "Egocentric video QA grounded in the camera wearer's pointing and deictic gestures"
+    tasks: [gesture-grounding, qa, referential]
+
+  - name: EgoVQA
+    kind: benchmark
+    year: 2019
+    status: open
+    url: https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Fan_EgoVQA_-_An_Egocentric_Video_Question_Answering_Benchmark_Dataset_ICCVW_2019_paper.html
+    scale: "600+ QA pairs over egocentric videos; an early first-person video question answering benchmark"
+    tasks: [qa, action, classic]
+
+  - name: ExAct
+    kind: benchmark
+    year: 2025
+    status: open
+    url: https://arxiv.org/abs/2506.06277
+    scale: "Video-language benchmark for expert action analysis and feedback over skilled egocentric/exocentric activity"
+    tasks: [expert-feedback, skill-assessment, video-language]
+
+  - name: Home Action Genome / HOMAGE
+    kind: dataset
+    year: 2021
+    status: open
+    url: https://homeactiongenome.org/
+    paper: https://arxiv.org/abs/2105.05226
+    scale: "27 participants, multi-modal synchronized ego and third-person views with 12 sensor types and hierarchical activity/action labels in home settings"
+    tasks: [action-recognition, multi-view, compositional]
+
+  - name: EgoExo-Fitness
+    kind: dataset
+    year: 2024
+    status: open
+    url: https://github.com/iSEE-Laboratory/EgoExo-Fitness
+    paper: https://arxiv.org/abs/2406.08877
+    scale: "Synchronized ego and exo fitness videos with keypoint verification, execution comments, and action quality scores (ECCV 2024)"
+    tasks: [ego-exo, action-quality, skill-assessment]
+
+  - name: WEAR
+    kind: dataset
+    year: 2023
+    status: open
+    url: https://mariusbock.github.io/wear/
+    paper: https://arxiv.org/abs/2304.05088
+    scale: "22 participants, 18 outdoor workout activities, synchronized egocentric video and 3D acceleration across 11 locations (IMWUT 2024)"
+    tasks: [action-recognition, sensor-fusion, imu]
+
+  - name: Egocentric HOI Detection
+    kind: benchmark
+    year: 2025
+    status: open
+    url: https://arxiv.org/abs/2506.14189
+    scale: "New benchmark and method for detecting hand-object interactions in egocentric video"
+    tasks: [hand-object, detection, interaction]
