@@ -447,8 +447,8 @@ It verifies the catalog shape, statuses, kinds, README local links and assets, a
 If this atlas helps your research or project, a citation or a link back is appreciated. Machine-readable metadata lives in [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
-@misc{yue_awesome_egocentric_atlas,
-  author       = {Yue, Chao},
+@misc{he_awesome_egocentric_atlas,
+  author       = {He, Chaoyue},
   title        = {Awesome Egocentric Atlas: Curated Egocentric AI Datasets, Benchmarks, Models, and Tools},
   year         = {2026},
   howpublished = {\url{https://github.com/ChaoYue0307/awesome-egocentric-atlas}}

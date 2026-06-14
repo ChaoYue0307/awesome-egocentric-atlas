@@ -7,8 +7,8 @@ abstract: >-
   memory, AR/VR, and human-object interaction.
 type: dataset
 authors:
-  - family-names: Yue
-    given-names: Chao
+  - family-names: He
+    given-names: Chaoyue
 repository-code: "https://github.com/ChaoYue0307/awesome-egocentric-atlas"
 url: "https://github.com/ChaoYue0307/awesome-egocentric-atlas"
 license: MIT
