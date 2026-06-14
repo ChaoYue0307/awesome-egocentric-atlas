@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">EgoScape Atlas reader route</title>
+  <desc id="desc">A five-step reader route for using EgoScape Atlas: choose a goal, pick a lane, compare access, filter the catalog, then cite or contribute.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="0.55" stop-color="#f4faf9"/>
+      <stop offset="1" stop-color="#fff8eb"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-10%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#102a33" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .bg { fill: url(#bg); }
+      .kicker { font: 700 12px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0b8f98; }
+      .title { font: 750 30px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #17202a; }
+      .subtitle { font: 500 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #53606b; }
+      .step { fill: #ffffff; stroke: #d8e3e7; stroke-width: 1.5; filter: url(#softShadow); }
+      .stepAccentA { fill: #e8f7f7; stroke: #8ed1d3; stroke-width: 1.5; }
+      .stepAccentB { fill: #fff4d9; stroke: #f0c66f; stroke-width: 1.5; }
+      .numA { fill: #0b8f98; }
+      .numB { fill: #f5a623; }
+      .numC { fill: #5b6b73; }
+      .numText { font: 800 13px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
+      .label { font: 740 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #102a33; }
+      .text { font: 500 13px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4c5965; }
+      .arrow { stroke: #9bb0b8; stroke-width: 2.3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .rail { stroke: #d5e1e6; stroke-width: 2; stroke-dasharray: 6 8; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1280" height="360"/>
+  <text class="kicker" x="54" y="48">README FLOW</text>
+  <text class="title" x="54" y="82">How to enter the atlas</text>
+  <text class="subtitle" x="54" y="110">Move from intent to resources without reading every table first.</text>
+
+  <line class="rail" x1="116" y1="198" x2="1164" y2="198"/>
+
+  <g transform="translate(54 150)">
+    <rect class="stepAccentA" x="0" y="0" width="190" height="132" rx="18"/>
+    <circle class="numA" cx="30" cy="32" r="17"/>
+    <text class="numText" x="25" y="37">1</text>
+    <text class="label" x="22" y="70">Choose goal</text>
+    <text class="text" x="22" y="96">assistant, robot,</text>
+    <text class="text" x="22" y="116">benchmark, or 3D</text>
+  </g>
+
+  <path class="arrow" d="M250 216 H302 m-11 -10 11 10 -11 10"/>
+
+  <g transform="translate(318 150)">
+    <rect class="step" x="0" y="0" width="190" height="132" rx="18"/>
+    <circle class="numC" cx="30" cy="32" r="17"/>
+    <text class="numText" x="25" y="37">2</text>
+    <text class="label" x="22" y="70">Pick lane</text>
+    <text class="text" x="22" y="96">foundation, action,</text>
+    <text class="text" x="22" y="116">memory, VLA, AR</text>
+  </g>
+
+  <path class="arrow" d="M514 216 H566 m-11 -10 11 10 -11 10"/>
+
+  <g transform="translate(582 150)">
+    <rect class="stepAccentB" x="0" y="0" width="190" height="132" rx="18"/>
+    <circle class="numB" cx="30" cy="32" r="17"/>
+    <text class="numText" x="25" y="37">3</text>
+    <text class="label" x="22" y="70">Check access</text>
+    <text class="text" x="22" y="96">open, request,</text>
+    <text class="text" x="22" y="116">partial, or watch</text>
+  </g>
+
+  <path class="arrow" d="M778 216 H830 m-11 -10 11 10 -11 10"/>
+
+  <g transform="translate(846 150)">
+    <rect class="step" x="0" y="0" width="190" height="132" rx="18"/>
+    <circle class="numC" cx="30" cy="32" r="17"/>
+    <text class="numText" x="25" y="37">4</text>
+    <text class="label" x="22" y="70">Filter catalog</text>
+    <text class="text" x="22" y="96">use YAML tasks,</text>
+    <text class="text" x="22" y="116">modalities, years</text>
+  </g>
+
+  <path class="arrow" d="M1042 216 H1094 m-11 -10 11 10 -11 10"/>
+
+  <g transform="translate(1110 150)">
+    <rect class="stepAccentA" x="0" y="0" width="116" height="132" rx="18"/>
+    <circle class="numA" cx="30" cy="32" r="17"/>
+    <text class="numText" x="25" y="37">5</text>
+    <text class="label" x="22" y="70">Use it</text>
+    <text class="text" x="22" y="96">cite, build,</text>
+    <text class="text" x="22" y="116">or contribute</text>
+  </g>
+</svg>

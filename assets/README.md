@@ -19,6 +19,12 @@ Color palette: white, graphite, cyan, teal, amber accents; avoid one-note purple
 Constraints: no logos, no watermarks, no readable text, no fake UI text, no brand names.
 ```
 
-## `egoscape-atlas-map.svg` and `egoscape-task-matrix.svg`
+## SVG figures
 
-Hand-authored SVG overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
+`egoscape-atlas-map.svg`, `egoscape-reader-route.svg`, and `egoscape-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
+
+Visual system:
+
+- White-to-teal technical backgrounds with amber accents.
+- System font stack for GitHub readability.
+- Short labels inside figures; full resource details stay in Markdown tables and `data/resources.yml`.

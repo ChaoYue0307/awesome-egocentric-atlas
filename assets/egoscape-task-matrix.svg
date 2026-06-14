@@ -23,7 +23,7 @@
     </style>
   </defs>
   <rect class="bg" width="1280" height="560" rx="0"/>
-  <text class="title" x="54" y="62">Egocentric AI Landscape</text>
+  <text class="title" x="54" y="62">Egocentric AI Task Matrix</text>
   <text class="text" x="54" y="90">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
 
   <line class="axis" x1="86" y1="144" x2="1194" y2="144"/>
@@ -35,7 +35,7 @@
     <rect class="pill" x="24" y="22" width="82" height="22" rx="11"/>
     <text class="pillText" x="43" y="37">VIDEO</text>
     <text class="label" x="24" y="68">Foundation Ego Video</text>
-    <text class="text" x="24" y="94">Ego4D, Ego-Exo4D, EPIC, EgoClip</text>
+    <text class="text" x="24" y="94">Xperience-10M, Ego4D, Ego-Exo4D</text>
   </g>
 
   <g transform="translate(460 118)">
@@ -59,7 +59,7 @@
     <rect class="pill3" x="24" y="22" width="94" height="22" rx="11"/>
     <text class="pillText" x="43" y="37">MEMORY</text>
     <text class="label" x="24" y="68">Long-Context Reasoning</text>
-    <text class="text" x="24" y="94">EgoSchema, EgoLife, TeleEgo, MyEgo</text>
+    <text class="text" x="24" y="94">EgoSchema, EgoLife, Ego-R1, TeleEgo</text>
   </g>
 
   <g transform="translate(460 280)">

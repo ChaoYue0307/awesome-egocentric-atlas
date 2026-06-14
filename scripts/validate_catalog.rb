@@ -49,6 +49,7 @@ end
 required_assets = %w[
   assets/egoscape-atlas-cover.png
   assets/egoscape-atlas-map.svg
+  assets/egoscape-reader-route.svg
   assets/egoscape-task-matrix.svg
 ]
 

@@ -27,6 +27,7 @@
 ## Contents
 
 - [How to Use This Atlas](#how-to-use-this-atlas)
+- [At a Glance](#at-a-glance)
 - [Start Here](#start-here)
 - [Landscape Snapshot](#landscape-snapshot)
 - [Creator and Release Notes](#creator-and-release-notes)
@@ -43,6 +44,20 @@
 ## How to Use This Atlas
 
 Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, scale/signal, best use, and public status. For filtering by task, modality, status, or year, use the catalog in [`data/resources.yml`](data/resources.yml).
+
+<p align="center">
+  <img src="assets/egoscape-reader-route.svg" alt="EgoScape Atlas reader route" width="100%">
+</p>
+
+## At a Glance
+
+| Signal | What it means for readers |
+|---|---|
+| 100 resources | A broad map across datasets, benchmarks, models, tools, surveys, and challenge hubs. |
+| 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
+| 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before readers plan experiments. |
+| YAML catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, modalities, and provenance fields. |
+| Reader-first tables | Each entry is short enough to scan, then links out to official pages, papers, code, or dataset portals. |
 
 ## Start Here
 
