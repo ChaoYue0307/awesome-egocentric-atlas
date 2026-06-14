@@ -67,7 +67,7 @@
     <rect class="pill" x="24" y="22" width="92" height="22" rx="11"/>
     <text class="pillText" x="42" y="37">ROBOT</text>
     <text class="label" x="24" y="68">Robotics and VLA</text>
-    <text class="text" x="24" y="94">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
+    <text class="text" x="24" y="94">Open X, EgoDex, EgoVerse, EgoVLA</text>
   </g>
 
   <g transform="translate(856 280)">

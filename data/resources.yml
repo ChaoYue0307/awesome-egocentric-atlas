@@ -159,6 +159,21 @@ resources:
     modalities: [egocentric-video, hand-pose, action-primitives]
     tasks: [dexterous-manipulation, standardized-pretraining, vla]
 
+  - name: Open X-Embodiment / RT-X
+    kind: dataset
+    year: 2023
+    status: open
+    url: https://robotics-transformer-x.github.io/
+    paper: https://arxiv.org/abs/2310.08864
+    mirror: https://huggingface.co/datasets/jxu124/OpenX-Embodiment
+    scale: "1M+ real robot trajectories, 22 robot embodiments, 60 pooled robot datasets"
+    modalities: [robot-camera-video, wrist-camera-video, language-instructions, robot-actions, rlds]
+    tasks: [vla, robot-learning, cross-embodiment-transfer, imitation-learning, manipulation]
+    created_by: Open X-Embodiment Collaboration
+    released_by: Open X-Embodiment Collaboration; unofficial Hugging Face mirror by jxu124
+    license: cc-by-4.0
+    scope_note: Adjacent robot-learning dataset included for VLA and robot-camera policy learning; not a human wearable-camera dataset.
+
   - name: EgoLive
     kind: dataset
     year: 2026
