@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-162-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-158-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -20,8 +20,8 @@
 
 **Awesome Egocentric Atlas** is a curated, continuously updated map of the egocentric (first-person) AI landscape — datasets, benchmarks, models, and tools spanning computer vision, embodied AI and robotics, video-language learning, long-context memory, AR/VR, and hand-object interaction. Every entry is scored for public-access status, so you can tell what is usable today from what is still a paper promise.
 
-**Updated:** 2026-06-14.  
-**Scope:** human or animal first-person capture from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs. Adjacent robot/wrist-camera datasets are included when they are central to VLA or robot-learning research. Pure autonomous-driving dashcam datasets are out of the main table unless the resource explicitly targets wearable or embodied egocentric perception.
+**Updated:** 2026-06-15.  
+**Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
   <img src="assets/awesome-egocentric-atlas-map.svg" alt="Awesome Egocentric Atlas system map" width="100%">
@@ -39,6 +39,7 @@
 - [Dataset Atlas](#dataset-atlas)
 - [Benchmarks and Derived Annotations](#benchmarks-and-derived-annotations)
 - [Models, Tools, and Baselines](#models-tools-and-baselines)
+- [Adjacent and Related Resources](#adjacent-and-related-resources)
 - [Surveys, Papers, and Context](#surveys-papers-and-context)
 - [Workshops and Challenges](#workshops-and-challenges)
 - [Watchlist](#watchlist)
@@ -58,7 +59,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 
 | Signal | What it means for readers |
 |---|---|
-| 162 resources | 80 datasets, 44 benchmarks, 28 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. |
+| 158 egocentric resources | 78 datasets, 42 benchmarks, 28 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
@@ -70,8 +71,8 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 |---|---|---|
 | New to egocentric vision | Read Ego4D, EPIC-KITCHENS-100, Ego-Exo4D, and EgoSchema first. | Add EgoClip/EgoVLP for video-language, VISOR for masks, and HOT3D/HOI4D for 3D hand-object work. |
 | Building a benchmark table | Start from the `open` and `benchmark` entries, then inspect `request` licenses. | Use the YAML catalog to filter by task and modality. |
-| Building an assistant or agent | Start with Ego4D, Xperience-10M, EgoLife, TeleEgo, EgoSchema, MyEgo, EgoIntrospect, EgoBench, and Ego2Web. | Track Ego-R1, X-LeBench, EgoMemReason, Minerva-Ego, EgoCoT-Bench, EgoBlind, EgoSound, and NoRA for reasoning diagnostics. |
-| Building a robot/VLA system | Start with Xperience-10M, Open X-Embodiment, EgoDex, EgoVerse, Ego-Exo4D, HoloAssist, HOI4D, HOT3D, Assembly101, OpenEgo, EgoPAT3D, and WiYH. | Add EgoVLA, EgoEngine, EgoAERO, H2O, ARCTIC, HOMIE-toolkit, Xperience task baselines, and EgoHandTrajPred for policy/action supervision. |
+| Building an assistant or agent | Start with Ego4D, Xperience-10M, EgoLife, TeleEgo, EgoSchema, MyEgo, EgoIntrospect, EgoBench, and Ego2Web. | Track Ego-R1, X-LeBench, EgoMemReason, EgoCoT-Bench, EgoBlind, EgoSound, and NoRA for reasoning diagnostics. |
+| Building a robot/VLA system | Start with Xperience-10M, EgoDex, EgoVerse, Ego-Exo4D, HoloAssist, HOI4D, HOT3D, Assembly101, OpenEgo, EgoPAT3D, and WiYH. | Add EgoVLA, EgoEngine, EgoAERO, H2O, ARCTIC, HOMIE-toolkit, Xperience task baselines, and EgoHandTrajPred for policy/action supervision. For robot-only corpora see [Adjacent and Related](#adjacent-and-related-resources). |
 | Studying hands, objects, and 3D | Start with HOT3D, HOI4D, H2O, ARCTIC, FPHA, EgoHOS, EgoBody, GIMO, EgoHumans, and UnrealEgo. | Add EgoTracks/TREK-150 for tracking and EgoEMG/EgoEVHands for emerging sensors. |
 
 ## Landscape Snapshot
@@ -86,7 +87,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 | Procedure and action | action granularity, mistakes, anticipation, gaze | EPIC-KITCHENS, Assembly101, MECCANO, EgoProceL, HoloAssist |
 | Hand-object and 3D | hands, objects, contact, pose, meshes, scene geometry | HOT3D, HOI4D, H2O, ARCTIC, FPHA, EgoHOS |
 | Memory and reasoning | clip length, grounding, QA type, streaming constraints | EgoSchema, EgoLife, TeleEgo, MyEgo, X-LeBench, EgoMemReason, EgoSound, Ego-R1 |
-| Robotics and VLA | action labels, hand trajectories, robot transfer, task diversity | Open X-Embodiment, EgoDex, EgoVerse, OpenEgo, EgoPAT3D, WiYH, EgoVLA |
+| Robotics and VLA | action labels, hand trajectories, robot transfer, task diversity | Xperience-10M, EgoDex, EgoVerse, OpenEgo, EgoPAT3D, WiYH, EgoVLA |
 | AR/wearable sensing | gaze, IMU, SLAM, audio, physiological signals | Project Aria, ADT, AEA, Nymeria, EgoIntrospect, EasyCom |
 
 ## Creator and Release Notes
@@ -94,7 +95,6 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 | Resource | Created / stewarded by | Release channel and access note |
 |---|---|---|
 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | Ropedia | Released under `ropedia-ai` on Hugging Face. Full dataset uses controlled non-commercial access; the [sample](https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample) is open, [HOMIE-toolkit](https://github.com/Ropedia/HOMIE-toolkit) loads/visualizes annotations, and [Xperience task baselines](https://huggingface.co/cy0307/ropedia-xperience-10m-task-baselines) provide a public evaluation artifact. |
-| [Open X-Embodiment / RT-X](https://robotics-transformer-x.github.io/) | Open X-Embodiment Collaboration | Official project, paper, code, and data links are maintained by the collaboration. The [jxu124/OpenX-Embodiment](https://huggingface.co/datasets/jxu124/OpenX-Embodiment) Hugging Face dataset is an unofficial mirror that makes the 55-in-1 dataset easier to stream from Hugging Face. |
 | [Ego4D](https://ego4d-data.org/) | Meta AI / Facebook AI with an international academic consortium | Official data portal with license-gated downloads and benchmark tasks. |
 | [Ego-Exo4D](https://ego-exo4d-data.org/) | Meta and academic partners across the Ego-Exo4D consortium | Official data portal with application/download tooling for synchronized ego-exo data. |
 | [EPIC-KITCHENS](https://epic-kitchens.github.io/) | University of Bristol-centered EPIC-KITCHENS team | Official challenge/dataset portal with public annotations and benchmark splits. |
@@ -116,8 +116,8 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 |---|---|
 | General egocentric foundation data | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m), [Ego4D](https://ego4d-data.org/), [Ego-Exo4D](https://ego-exo4d-data.org/), [EPIC-KITCHENS-100](https://epic-kitchens.github.io/), [EgoClip](https://github.com/showlab/EgoVLP) |
 | Ego-exo and skill learning | [Ego-Exo4D](https://ego-exo4d-data.org/), [EgoExoLearn](https://github.com/OpenGVLab/EgoExoLearn), [Assembly101](https://assembly-101.github.io/), [Look and Tell](https://arxiv.org/abs/2510.22672) |
-| Robot manipulation / VLA | [Open X-Embodiment](https://robotics-transformer-x.github.io/), [EgoDex](https://arxiv.org/abs/2505.11709), [EgoVerse](https://egoverse.ai/), [OpenEgo](https://arxiv.org/abs/2509.05513), [EgoVLA](https://rchalyang.github.io/EgoVLA/), [EgoEngine](https://egoengine.github.io/) |
-| Long-context QA and memory | [EgoSchema](http://egoschema.github.io/), [EgoLife](https://arxiv.org/abs/2503.03803), [EgoMemReason](https://arxiv.org/abs/2605.09874), [Ego-EXTRA](https://fpv-iplab.github.io/Ego-EXTRA/), [Minerva-Ego](https://github.com/google-deepmind/neptune), [EgoBench](https://arxiv.org/abs/2605.27820) |
+| Robot manipulation / VLA | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m), [EgoDex](https://arxiv.org/abs/2505.11709), [EgoVerse](https://egoverse.ai/), [OpenEgo](https://arxiv.org/abs/2509.05513), [EgoVLA](https://rchalyang.github.io/EgoVLA/), [EgoEngine](https://egoengine.github.io/) |
+| Long-context QA and memory | [EgoSchema](http://egoschema.github.io/), [EgoLife](https://arxiv.org/abs/2503.03803), [EgoMemReason](https://arxiv.org/abs/2605.09874), [Ego-EXTRA](https://fpv-iplab.github.io/Ego-EXTRA/), [EgoStream](https://arxiv.org/abs/2605.31557), [EgoBench](https://arxiv.org/abs/2605.27820) |
 | Hand-object and 3D HOI | [HOT3D](https://facebookresearch.github.io/hot3d/), [HOI4D](https://hoi4d.github.io/), [EgoHOS](https://github.com/owenzlz/EgoHOS), [FPHA](https://guiggh.github.io/publications/first-person-hands/), [EgoEMG](https://arxiv.org/abs/2605.05712) |
 | Audio, speech, and social interaction | [Ego4D AV tasks](https://ego4d-data.org/), [EasyCom](https://arxiv.org/abs/2107.04174), [EgoCom / audio-visual correspondence](http://vision.cs.utexas.edu/projects/ego_av_corr/), [AV-CONV](https://vjwq.github.io/AV-CONV/) |
 | AR glasses and scene understanding | [Project Aria Datasets](https://www.projectaria.com/datasets/), [Aria Digital Twin](https://www.projectaria.com/datasets/adt/), [AEA](https://www.projectaria.com/datasets/aea/), [Nymeria](https://www.projectaria.com/datasets/nymeria/), [DTC](https://www.projectaria.com/datasets/dtc/) |
@@ -155,7 +155,6 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 | [EgoDex](https://arxiv.org/abs/2505.11709) | 829 hours of Apple Vision Pro egocentric video, 194 tabletop tasks, 3D hand/finger tracking | Dexterous manipulation, imitation learning, human-to-robot hand trajectory prediction | watch |
 | [EgoVerse](https://egoverse.ai/) | 1,362 hours, 80K episodes, 1,965 tasks, 240 scenes, 2,087 demonstrators | Human demonstration scaling for robot learning and VLA | watch |
 | [OpenEgo](https://arxiv.org/abs/2509.05513) | 1,107 hours unified across six public egocentric datasets, 290 manipulation tasks, hand-pose/action primitives | Standardized dexterous manipulation pretraining and evaluation | watch |
-| [Open X-Embodiment / RT-X](https://robotics-transformer-x.github.io/) | 1M+ real robot trajectories, 22 robot embodiments, 60 pooled robot datasets, standardized RLDS format; [unofficial Hugging Face mirror](https://huggingface.co/datasets/jxu124/OpenX-Embodiment) is available | Robot-camera and wrist-camera VLA pretraining, cross-embodiment robot policy learning, RT-X baselines | open |
 | [EgoLive](https://arxiv.org/abs/2604.23570) | Large-scale real-world task-oriented egocentric routines for robot manipulation | Home service, retail, and real-world work-task manipulation | watch |
 | [World in Your Hands / WiYH](https://arxiv.org/abs/2512.24310) | Reported 1,000-hour egocentric manipulation ecosystem with multiview/depth/hand/wrist signals | VLA, manipulation representation learning | watch |
 | [EgoPAT3D / EgoPAT3Dv2](https://arxiv.org/abs/2403.05046) | 1M+ RGB-D/IMU frames in the original task; v2 expands egocentric 3D action-target prediction | Human-robot interaction, 3D target anticipation, manipulation safety | open |
@@ -165,7 +164,6 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 | [HRDexDB](https://arxiv.org/abs/2604.14944) | 1.4K human/robot grasping trials, tactile, multiview video, egocentric video streams | Cross-domain dexterous grasp learning | watch |
 | [InterVLA](https://arxiv.org/abs/2508.04681) | 11.4 hours and 1.2M frames with 2 ego and 5 exo views, human/object motions, and verbal commands | Vision-language-action and motion estimation | watch |
 | [AoE: Always-on Egocentric](https://arxiv.org/abs/2602.23893) | Always-on egocentric human-video collection pipeline and corpus for embodied AI | Scaling human-video data for robot learning | watch |
-| [Seeing Across Views](https://arxiv.org/abs/2510.19400) | 1.7K curated QA items testing whether VLMs fuse multiple camera views for manipulation (ICLR 2026) | Multi-view manipulation reasoning for VLMs | watch |
 
 ### Hands, Objects, Pose, Tracking, and 3D
 
@@ -215,7 +213,6 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 | [EgoMemReason](https://arxiv.org/abs/2605.09874) | 500 questions over week-long egocentric video with entity, event, and behavior memory types | Memory-driven reasoning across sparse evidence over hours or days | watch |
 | [EgoBench](https://arxiv.org/abs/2605.27820) | 1,045 egocentric-video-grounded interactive tasks with tools and simulated users | Tool-using multimodal agents with dynamic interaction | watch |
 | [EgoIntrospect](https://ego-introspect.github.io/) | 180 hours from 60 subjects with synchronized video, audio, gaze, motion, physiological signals | Internal-state reasoning, affect, intent, cognitive memory for wearable assistants | watch |
-| [Minerva-Ego](https://github.com/google-deepmind/neptune) | Dense spatiotemporal reasoning traces and masks over egocentric/embodied video sources | Inspecting where/when models reason in egocentric video | open |
 | [MA-EgoQA](https://ma-egoqa.github.io/) | 1.7K questions over multiple long-horizon egocentric streams | Multi-agent egocentric memory reasoning | open |
 | [EgoExoMem](https://arxiv.org/abs/2605.18734) | 2.6K MCQs across synchronized ego-exo videos | Cross-view memory reasoning | watch |
 | [EgoSelf](https://abie-e.github.io/egoself_project/) | Personalized egocentric assistant framework with graph memory | Personalization from long-term egocentric interaction memory | watch |
@@ -287,7 +284,6 @@ AR-glasses and headset data with gaze, SLAM, and digital-twin annotations for sc
 | [Nymeria](https://www.projectaria.com/datasets/nymeria/) | 300 hours, 264 participants, 50 locations, Aria, motion, language, observer view | Egocentric motion, language grounding, body tracking, daily activity | open |
 | [Digital Twin Catalog / DTC](https://www.projectaria.com/datasets/dtc/) | 2,000 scanned objects with DSLR and egocentric AR-glasses image sequences | Digital-twin object reconstruction and evaluation | open |
 | [EgoTraj](https://github.com/yehiahmad/EgoTraj) | 75 Meta Quest Pro navigation sequences with RGB, head pose, gaze, scene labels | Egocentric human trajectory prediction and assistive navigation | open |
-| [SEED4D](https://seed4d.github.io/) | Synthetic ego-exo dynamic 4D generator and driving dataset | Synthetic 3D/4D reconstruction research with ego-exo settings | open |
 
 ## Benchmarks and Derived Annotations
 
@@ -308,7 +304,6 @@ Evaluation suites and label sets built on top of the raw datasets above.
 | [EgoSchema](http://egoschema.github.io/) | Ego4D | Very-long-form multiple-choice video QA | open |
 | [EgoHOIBench / EgoNCE++](https://github.com/xuboshen/EgoNCEpp) | Multiple egocentric HOI sources | Open-vocabulary hand-object interaction understanding | open |
 | [EASG-Bench](https://github.com/fpv-iplab/EASG-bench) | Egocentric action scene graphs | Relation and temporal QA | open |
-| [Minerva-Ego](https://github.com/google-deepmind/neptune) | Egocentric/embodied video sources | Multi-step QA with spatiotemporal reasoning traces and masks | open |
 | [MA-EgoQA](https://ma-egoqa.github.io/) | Multi-agent egocentric streams | Social, task coordination, theory-of-mind, temporal, environment QA | open |
 | [Ropedia Xperience-10M Task Suite](https://huggingface.co/spaces/cy0307/ropedia-xperience-10m-task-suite) | Xperience-10M Sample | 12 embodied-AI task contracts, sample baselines, and evaluation protocol | open |
 | [EgoBench](https://arxiv.org/abs/2605.27820) | Egocentric video tasks | Interactive multimodal tool-using agents | watch |
@@ -371,6 +366,17 @@ Open models, baselines, and loaders you can build on directly.
 | [HOI4D tooling](https://hoi4d.github.io/) | Loading RGB-D frames, point clouds, object meshes, and pose/segmentation annotations. |
 | [HOMIE-toolkit](https://github.com/Ropedia/HOMIE-toolkit) | Loading and visualizing Xperience-10M HDF5 annotations, calibration, SLAM, hand/body mocap, depth, IMU, and point clouds. |
 
+## Adjacent and Related Resources
+
+These resources are **not first-person/egocentric**, but they are close neighbors that egocentric research routinely builds on or compares against — large robot-learning corpora, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning. They are kept out of the main atlas to keep the egocentric scope clean, and are tagged `scope: adjacent` in [`data/resources.yml`](data/resources.yml).
+
+| Resource | Scale / signal | Why it is adjacent (not egocentric) | Status |
+|---|---|---|---|
+| [Open X-Embodiment / RT-X](https://robotics-transformer-x.github.io/) | 1M+ real robot trajectories, 22 robot embodiments, 60 pooled robot datasets, standardized RLDS; [unofficial Hugging Face mirror](https://huggingface.co/datasets/jxu124/OpenX-Embodiment) | Robot-mounted and wrist cameras, not human first-person; pairs with egocentric human-video VLA pretraining | open |
+| [Seeing Across Views / MV-RoboBench](https://github.com/microsoft/MV-RoboBench) | 1.7K curated QA items over eight subtasks for multi-view spatial reasoning of VLMs in robotic manipulation (ICLR 2026) | Multi-camera robot scenes, not wearable capture | open |
+| [SEED4D](https://seed4d.github.io/) | Synthetic ego-exo dynamic 4D generator and autonomous-driving dataset (16.8M images, vehicle cameras, LiDAR; WACV 2025) | Vehicle-egocentric driving data, not human/wearable | open |
+| [Minerva-Ego](https://github.com/google-deepmind/neptune) | Part of the Neptune / MINERVA long-video reasoning collection over web (YouTube) videos with manual reasoning traces | General long-video reasoning, not first-person capture | open |
+
 ## Surveys, Papers, and Context
 
 Foundational papers and recent surveys for background and citation.
@@ -426,8 +432,8 @@ These entries are promising but should be rechecked before treating them as stab
 2. Keep the public status conservative. If raw video is not clearly available, mark `partial` or `watch`.
 3. Separate raw datasets from derived annotations and benchmarks.
 4. Record modality, scale, task, license/access friction, and raw-video dependency when known.
-5. Include adjacent robot datasets only when robot/wrist-camera observations are central to VLA, robot-learning, or human-to-robot transfer.
-6. Exclude pure dashcam/autonomous-driving data unless the task is explicitly egocentric/wearable/embodied rather than vehicle-only.
+5. Keep the main atlas strictly egocentric: human or animal first-person capture, or ego-exo resources where the ego view is central. List related but non-egocentric resources (robot-only datasets, multi-view robotic benchmarks, autonomous-driving data, general long-video reasoning) under [Adjacent and Related Resources](#adjacent-and-related-resources).
+6. Keep pure dashcam/autonomous-driving and robot-embodiment data out of the main tables; surface it as context in Adjacent and Related Resources only when it is genuinely useful to egocentric work.
 7. Keep figures text-light. Exact resource names and labels should remain in Markdown/SVG so readers can inspect them directly.
 
 ## Contributing

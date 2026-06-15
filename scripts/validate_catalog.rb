@@ -21,6 +21,7 @@ README = File.join(ROOT, "README.md")
 
 ALLOWED_STATUSES = %w[open request benchmark partial watch].freeze
 ALLOWED_KINDS = %w[dataset benchmark model toolkit survey challenge collection].freeze
+ALLOWED_SCOPES = %w[egocentric adjacent].freeze
 REQUIRED_META_KEYS = %w[title description last_major_audit scope status_legend].freeze
 MIN_YEAR = 2000
 MAX_YEAR = Time.now.year + 1
@@ -105,7 +106,16 @@ resources.each do |entry|
       add(errors, "#{name}: year must be an integer in #{MIN_YEAR}..#{MAX_YEAR}, got #{year.inspect}")
     end
   end
+
+  if entry.key?("scope") && !ALLOWED_SCOPES.include?(entry["scope"])
+    add(errors, "#{name}: invalid scope #{entry['scope'].inspect} (allowed: #{ALLOWED_SCOPES.join(', ')})")
+  end
 end
+
+# Resources default to egocentric scope; "adjacent" entries are related but not first-person.
+egocentric = resources.reject { |entry| entry["scope"] == "adjacent" }
+adjacent = resources.select { |entry| entry["scope"] == "adjacent" }
+egocentric_count = egocentric.length
 
 # --- README local links and assets -----------------------------------------
 readme = File.read(README, encoding: "UTF-8")
@@ -135,11 +145,12 @@ end
 # --- README <-> catalog consistency -----------------------------------------
 resource_count = resources.length
 
+# The headline badge tracks egocentric resources; adjacent ones are listed separately.
 badge_match = readme.match(%r{badge/resources-(\d+)-})
 if badge_match
   badge_count = badge_match[1].to_i
-  if badge_count != resource_count
-    add(errors, "README resources badge says #{badge_count} but catalog has #{resource_count}")
+  if badge_count != egocentric_count
+    add(errors, "README resources badge says #{badge_count} but catalog has #{egocentric_count} egocentric resources")
   end
 else
   add(errors, "README is missing the resources count badge")
@@ -172,6 +183,6 @@ resources.each do |entry|
   status_counts[entry["status"]] += 1
 end
 
-puts "Catalog OK: #{resource_count} resources, #{local_links.length} local README links"
+puts "Catalog OK: #{resource_count} resources (#{egocentric_count} egocentric, #{adjacent.length} adjacent), #{local_links.length} local README links"
 puts "Kinds:    #{kind_counts.sort.map { |k, v| "#{k}=#{v}" }.join(', ')}"
 puts "Statuses: #{status_counts.sort.map { |k, v| "#{k}=#{v}" }.join(', ')}"

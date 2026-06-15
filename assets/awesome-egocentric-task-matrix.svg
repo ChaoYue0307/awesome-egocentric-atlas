@@ -77,7 +77,7 @@
     <text class="pillText" x="62" y="37" text-anchor="middle">ROBOT</text>
     <text class="label" x="24" y="78">Robotics &amp; VLA</text>
     <text class="compare" x="24" y="102">compare · action labels, transfer, diversity</text>
-    <text class="anchors" x="24" y="128">Open X, EgoDex, EgoVerse, EgoVLA</text>
+    <text class="anchors" x="24" y="128">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
   </g>
 
   <g transform="translate(800 330)">

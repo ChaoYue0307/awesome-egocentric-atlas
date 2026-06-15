@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
-  last_major_audit: "2026-06-14"
+  last_major_audit: "2026-06-15"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -166,7 +166,8 @@ resources:
     url: https://robotics-transformer-x.github.io/
     paper: https://arxiv.org/abs/2310.08864
     mirror: https://huggingface.co/datasets/jxu124/OpenX-Embodiment
-    scale: "1M+ real robot trajectories, 22 robot embodiments, 60 pooled robot datasets"
+    scope: adjacent
+    scale: "1M+ real robot trajectories, 22 robot embodiments, 60 pooled robot datasets (robot-mounted and wrist cameras, not human first-person)"
     modalities: [robot-camera-video, wrist-camera-video, language-instructions, robot-actions, rlds]
     tasks: [vla, robot-learning, cross-embodiment-transfer, imitation-learning, manipulation]
     created_by: Open X-Embodiment Collaboration
@@ -521,11 +522,13 @@ resources:
 
   - name: Minerva-Ego
     kind: benchmark
-    year: 2026
+    year: 2025
     status: open
+    scope: adjacent
     url: https://github.com/google-deepmind/neptune
-    paper: https://arxiv.org/abs/2605.15342
-    tasks: [multistep-reasoning, spatiotemporal-hints, masks]
+    paper: https://arxiv.org/abs/2505.00681
+    scale: "Part of the Neptune / MINERVA long-video reasoning collection over web (YouTube) videos with manually annotated reasoning traces"
+    tasks: [multistep-reasoning, long-video-qa, reasoning-traces]
 
   - name: MA-EgoQA
     kind: benchmark
@@ -1154,10 +1157,13 @@ resources:
 
   - name: SEED4D
     kind: dataset
+    year: 2024
     status: open
+    scope: adjacent
     url: https://seed4d.github.io/
-    scale: "Synthetic ego-exo dynamic 4D generator and driving dataset"
-    tasks: [ar, scene-understanding, slam]
+    paper: https://arxiv.org/abs/2412.00730
+    scale: "Synthetic ego-exo dynamic 4D generator and autonomous-driving dataset (16.8M images, vehicle inward/outward cameras, LiDAR; WACV 2025)"
+    tasks: [driving, 4d-reconstruction, multi-view]
 
   - name: Ego4D Benchmarks
     kind: benchmark
@@ -1316,13 +1322,15 @@ resources:
     scale: "Always-on egocentric human video collection pipeline and corpus for embodied AI data scaling"
     tasks: [robot-learning, data-collection, embodied-ai]
 
-  - name: Seeing Across Views
+  - name: Seeing Across Views (MV-RoboBench)
     kind: benchmark
     year: 2025
-    status: watch
-    url: https://arxiv.org/abs/2510.19400
-    scale: "1.7K curated QA items testing whether VLMs integrate multiple camera views for manipulation tasks (ICLR 2026)"
-    tasks: [multi-view, manipulation, vlm-evaluation]
+    status: open
+    scope: adjacent
+    url: https://github.com/microsoft/MV-RoboBench
+    paper: https://arxiv.org/abs/2510.19400
+    scale: "MV-RoboBench: 1.7K curated QA items over eight subtasks testing multi-view spatial reasoning of VLMs in robotic manipulation scenes (ICLR 2026)"
+    tasks: [multi-view, robot-manipulation, vlm-evaluation]
 
   - name: EgoGesture
     kind: dataset
