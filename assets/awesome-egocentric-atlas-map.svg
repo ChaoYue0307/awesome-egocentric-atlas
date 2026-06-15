@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 730" role="img" aria-labelledby="title desc">
   <title id="title">Awesome Egocentric Atlas system map</title>
   <desc id="desc">Awesome Egocentric Atlas pipeline: first-person capture sources feed multimodal signals, which feed research task families, which produce reusable, validated atlas artifacts, with a curate-verify-update feedback loop.</desc>
   <defs>
@@ -7,155 +7,155 @@
       <stop offset="0.6" stop-color="#f4faf9"/>
       <stop offset="1" stop-color="#eef7f6"/>
     </linearGradient>
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#cfe0e4" opacity="0.45"/>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#cfe0e4" opacity="0.45"/>
     </pattern>
     <filter id="shadow" x="-12%" y="-12%" width="124%" height="135%">
-      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#0f2a33" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#0f2a33" flood-opacity="0.10"/>
     </filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#8aa2ab"/>
     </marker>
     <style>
       .ink { fill: #14212b; }
       .sub { fill: #586672; }
-      .title { font: 700 30px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 14.5px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .kicker { font: 700 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .14em; }
-      .panel { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.4; filter: url(#shadow); }
-      .ph { font: 700 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
-      .row { font: 600 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
-      .rowsub { font: 500 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
-      .divider { stroke: #e6eef1; stroke-width: 1.2; }
-      .conn { stroke: #8aa2ab; stroke-width: 2.2; fill: none; }
-      .loop { stroke: #00a6b2; stroke-width: 2.2; fill: none; stroke-dasharray: 2 7; stroke-linecap: round; }
-      .chip { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.3; }
-      .chiptext { font: 600 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #3a4a54; }
+      .title { font: 700 38px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 17px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .panel { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.6; filter: url(#shadow); }
+      .ph { font: 700 20px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+      .row { font: 600 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
+      .rowsub { font: 500 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .divider { stroke: #e6eef1; stroke-width: 1.4; }
+      .conn { stroke: #8aa2ab; stroke-width: 2.6; fill: none; }
+      .loop { stroke: #00a6b2; stroke-width: 2.6; fill: none; stroke-dasharray: 2 8; stroke-linecap: round; }
+      .chip { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.4; }
+      .chiptext { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #3a4a54; }
       .dotT { fill: #00a6b2; }
       .dotA { fill: #ef9f24; }
       .dotN { fill: #7c8b94; }
-      .loopText { font: 700 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .1em; }
+      .loopText { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .12em; }
     </style>
   </defs>
 
-  <rect width="1200" height="560" fill="url(#bg)"/>
-  <rect width="1200" height="560" fill="url(#dots)"/>
+  <rect width="1280" height="730" fill="url(#bg)"/>
+  <rect width="1280" height="730" fill="url(#dots)"/>
 
-  <text class="kicker" x="65" y="52">EGOCENTRIC AI · SYSTEM MAP</text>
-  <text class="title ink" x="65" y="84">Awesome Egocentric Atlas</text>
-  <text class="subtitle sub" x="65" y="110">Curated egocentric AI datasets, benchmarks, models, and tools</text>
+  <text class="kicker" x="70" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
+  <text class="title ink" x="70" y="104">Awesome Egocentric Atlas</text>
+  <text class="subtitle sub" x="70" y="136">Curated egocentric AI datasets, benchmarks, models, and tools</text>
 
   <!-- stat chips -->
   <g>
-    <rect class="chip" x="846" y="58" width="124" height="30" rx="15"/>
-    <circle class="dotT" cx="868" cy="73" r="4"/>
-    <text class="chiptext" x="880" y="77">158 resources</text>
-    <rect class="chip" x="980" y="58" width="100" height="30" rx="15"/>
-    <circle class="dotA" cx="1002" cy="73" r="4"/>
-    <text class="chiptext" x="1014" y="77">6 lanes</text>
-    <rect class="chip" x="1090" y="58" width="46" height="30" rx="15"/>
-    <text class="chiptext" x="1102" y="77" font-size="11">5 states</text>
+    <rect class="chip" x="820" y="62" width="170" height="36" rx="18"/>
+    <circle class="dotT" cx="846" cy="80" r="5"/>
+    <text class="chiptext" x="860" y="85">173 resources</text>
+    <rect class="chip" x="1000" y="62" width="110" height="36" rx="18"/>
+    <circle class="dotA" cx="1026" cy="80" r="5"/>
+    <text class="chiptext" x="1040" y="85">6 lanes</text>
+    <rect class="chip" x="1120" y="62" width="90" height="36" rx="18"/>
+    <circle class="dotN" cx="1144" cy="80" r="5"/>
+    <text class="chiptext" x="1158" y="85">5 states</text>
   </g>
 
   <!-- connectors -->
-  <line class="conn" x1="298" y1="305" x2="340" y2="305" marker-end="url(#arrow)"/>
-  <line class="conn" x1="578" y1="305" x2="620" y2="305" marker-end="url(#arrow)"/>
-  <line class="conn" x1="858" y1="305" x2="900" y2="305" marker-end="url(#arrow)"/>
+  <line class="conn" x1="334" y1="400" x2="362" y2="400" marker-end="url(#arrow)"/>
+  <line class="conn" x1="626" y1="400" x2="654" y2="400" marker-end="url(#arrow)"/>
+  <line class="conn" x1="918" y1="400" x2="946" y2="400" marker-end="url(#arrow)"/>
 
   <!-- Panel 1: Capture Sources -->
-  <g transform="translate(65 185)">
-    <rect class="panel" width="230" height="240" rx="18"/>
-    <circle cx="34" cy="40" r="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.4"/>
-    <g stroke="#0b8f98" stroke-width="1.8" fill="none" stroke-linecap="round">
-      <circle cx="29" cy="40" r="4.4"/>
-      <circle cx="39.5" cy="40" r="4.4"/>
-      <path d="M33.4 40 q1 -1.6 2.1 0"/>
-      <path d="M24.6 39 l-2 1.4 M44 39 l2 1.4"/>
+  <g transform="translate(70 230)">
+    <rect class="panel" width="264" height="340" rx="22"/>
+    <circle cx="44" cy="52" r="24" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6"/>
+    <g stroke="#0b8f98" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <circle cx="37.5" cy="52" r="5.8"/>
+      <circle cx="50.5" cy="52" r="5.8"/>
+      <path d="M43.3 52 q1.2 -2 2.4 0"/>
+      <path d="M31.7 50.6 l-2.4 1.8 M56.3 50.6 l2.4 1.8"/>
     </g>
-    <text class="ph" x="62" y="45">Capture Sources</text>
-    <line class="divider" x1="22" y1="68" x2="208" y2="68"/>
-    <circle class="dotT" cx="30" cy="102" r="4"/>
-    <text class="row" x="46" y="100">AR glasses</text>
-    <text class="rowsub" x="46" y="117">Aria, HoloLens, Quest</text>
-    <circle class="dotT" cx="30" cy="150" r="4"/>
-    <text class="row" x="46" y="148">Wearable cameras</text>
-    <text class="rowsub" x="46" y="165">head, chest, wrist, animal</text>
-    <circle class="dotT" cx="30" cy="198" r="4"/>
-    <text class="row" x="46" y="196">Ego-exo rigs</text>
-    <text class="rowsub" x="46" y="213">synchronized multiview</text>
+    <text class="ph" x="80" y="60">Capture Sources</text>
+    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <circle class="dotT" cx="36" cy="138" r="5"/>
+    <text class="row" x="56" y="138">AR glasses</text>
+    <text class="rowsub" x="56" y="160">Aria, HoloLens, Quest</text>
+    <circle class="dotT" cx="36" cy="210" r="5"/>
+    <text class="row" x="56" y="210">Wearable cameras</text>
+    <text class="rowsub" x="56" y="232">head, chest, wrist, animal</text>
+    <circle class="dotT" cx="36" cy="282" r="5"/>
+    <text class="row" x="56" y="282">Ego-exo rigs</text>
+    <text class="rowsub" x="56" y="304">synchronized multiview</text>
   </g>
 
   <!-- Panel 2: Signals -->
-  <g transform="translate(345 185)">
-    <rect class="panel" width="230" height="240" rx="18"/>
-    <circle cx="34" cy="40" r="18" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.4"/>
-    <g stroke="#5b6b73" stroke-width="2" stroke-linecap="round">
-      <line x1="27" y1="40" x2="27" y2="40"/>
-      <line x1="27" y1="44" x2="27" y2="36"/>
-      <line x1="31.5" y1="46" x2="31.5" y2="34"/>
-      <line x1="36" y1="43" x2="36" y2="37"/>
-      <line x1="40.5" y1="47" x2="40.5" y2="33"/>
+  <g transform="translate(362 230)">
+    <rect class="panel" width="264" height="340" rx="22"/>
+    <circle cx="44" cy="52" r="24" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.6"/>
+    <g stroke="#5b6b73" stroke-width="2.6" stroke-linecap="round">
+      <line x1="35" y1="57.5" x2="35" y2="46.5"/>
+      <line x1="40" y1="61" x2="40" y2="43"/>
+      <line x1="45" y1="58.5" x2="45" y2="45.5"/>
+      <line x1="50" y1="62.5" x2="50" y2="41.5"/>
     </g>
-    <text class="ph" x="62" y="45">Signals</text>
-    <line class="divider" x1="22" y1="68" x2="208" y2="68"/>
-    <circle class="dotN" cx="30" cy="102" r="4"/>
-    <text class="row" x="46" y="100">Vision</text>
-    <text class="rowsub" x="46" y="117">RGB, RGB-D, stereo</text>
-    <circle class="dotN" cx="30" cy="150" r="4"/>
-    <text class="row" x="46" y="148">Motion &amp; attention</text>
-    <text class="rowsub" x="46" y="165">audio, IMU, gaze</text>
-    <circle class="dotN" cx="30" cy="198" r="4"/>
-    <text class="row" x="46" y="196">Geometry</text>
-    <text class="rowsub" x="46" y="213">hands, pose, 3D maps</text>
+    <text class="ph" x="80" y="60">Signals</text>
+    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <circle class="dotN" cx="36" cy="138" r="5"/>
+    <text class="row" x="56" y="138">Vision</text>
+    <text class="rowsub" x="56" y="160">RGB, RGB-D, stereo</text>
+    <circle class="dotN" cx="36" cy="210" r="5"/>
+    <text class="row" x="56" y="210">Motion &amp; attention</text>
+    <text class="rowsub" x="56" y="232">audio, IMU, gaze</text>
+    <circle class="dotN" cx="36" cy="282" r="5"/>
+    <text class="row" x="56" y="282">Geometry</text>
+    <text class="rowsub" x="56" y="304">hands, pose, 3D maps</text>
   </g>
 
   <!-- Panel 3: Research Tasks -->
-  <g transform="translate(625 185)">
-    <rect class="panel" width="230" height="240" rx="18"/>
-    <circle cx="34" cy="40" r="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.4"/>
-    <g stroke="#ef9f24" stroke-width="1.9" fill="none">
-      <circle cx="34" cy="40" r="7"/>
-      <circle cx="34" cy="40" r="2.6" fill="#ef9f24"/>
+  <g transform="translate(654 230)">
+    <rect class="panel" width="264" height="340" rx="22"/>
+    <circle cx="44" cy="52" r="24" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6"/>
+    <g stroke="#ef9f24" stroke-width="2.4" fill="none">
+      <circle cx="44" cy="52" r="9"/>
+      <circle cx="44" cy="52" r="3.4" fill="#ef9f24"/>
     </g>
-    <text class="ph" x="62" y="45">Research Tasks</text>
-    <line class="divider" x1="22" y1="68" x2="208" y2="68"/>
-    <circle class="dotA" cx="30" cy="102" r="4"/>
-    <text class="row" x="46" y="100">Perception</text>
-    <text class="rowsub" x="46" y="117">action, HOI, tracking</text>
-    <circle class="dotA" cx="30" cy="150" r="4"/>
-    <text class="row" x="46" y="148">Reasoning</text>
-    <text class="rowsub" x="46" y="165">memory, VQA, language</text>
-    <circle class="dotA" cx="30" cy="198" r="4"/>
-    <text class="row" x="46" y="196">Embodiment</text>
-    <text class="rowsub" x="46" y="213">robotics, VLA, assistance</text>
+    <text class="ph" x="80" y="60">Research Tasks</text>
+    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <circle class="dotA" cx="36" cy="138" r="5"/>
+    <text class="row" x="56" y="138">Perception</text>
+    <text class="rowsub" x="56" y="160">action, HOI, tracking</text>
+    <circle class="dotA" cx="36" cy="210" r="5"/>
+    <text class="row" x="56" y="210">Reasoning</text>
+    <text class="rowsub" x="56" y="232">memory, VQA, language</text>
+    <circle class="dotA" cx="36" cy="282" r="5"/>
+    <text class="row" x="56" y="282">Embodiment</text>
+    <text class="rowsub" x="56" y="304">robotics, VLA, assistance</text>
   </g>
 
   <!-- Panel 4: Atlas Outputs -->
-  <g transform="translate(905 185)">
-    <rect class="panel" width="230" height="240" rx="18"/>
-    <circle cx="34" cy="40" r="18" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.4"/>
+  <g transform="translate(946 230)">
+    <rect class="panel" width="264" height="340" rx="22"/>
+    <circle cx="44" cy="52" r="24" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.6"/>
     <g fill="#5b6b73">
-      <rect x="26" y="34" width="16" height="3.4" rx="1.7"/>
-      <rect x="26" y="39" width="16" height="3.4" rx="1.7"/>
-      <rect x="26" y="44" width="16" height="3.4" rx="1.7"/>
+      <rect x="34" y="45" width="20" height="4" rx="2"/>
+      <rect x="34" y="51" width="20" height="4" rx="2"/>
+      <rect x="34" y="57" width="20" height="4" rx="2"/>
     </g>
-    <text class="ph" x="62" y="45">Atlas Outputs</text>
-    <line class="divider" x1="22" y1="68" x2="208" y2="68"/>
-    <circle class="dotN" cx="30" cy="102" r="4"/>
-    <text class="row" x="46" y="100">README</text>
-    <text class="rowsub" x="46" y="117">scannable, linked tables</text>
-    <circle class="dotN" cx="30" cy="150" r="4"/>
-    <text class="row" x="46" y="148">YAML catalog</text>
-    <text class="rowsub" x="46" y="165">filterable, structured</text>
-    <circle class="dotN" cx="30" cy="198" r="4"/>
-    <text class="row" x="46" y="196">CI-validated</text>
-    <text class="rowsub" x="46" y="213">checked on every change</text>
+    <text class="ph" x="80" y="60">Atlas Outputs</text>
+    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <circle class="dotN" cx="36" cy="138" r="5"/>
+    <text class="row" x="56" y="138">README</text>
+    <text class="rowsub" x="56" y="160">scannable, linked tables</text>
+    <circle class="dotN" cx="36" cy="210" r="5"/>
+    <text class="row" x="56" y="210">YAML catalog</text>
+    <text class="rowsub" x="56" y="232">filterable, structured</text>
+    <circle class="dotN" cx="36" cy="282" r="5"/>
+    <text class="row" x="56" y="282">CI-validated</text>
+    <text class="rowsub" x="56" y="304">checked on every change</text>
   </g>
 
   <!-- feedback loop -->
-  <path class="loop" d="M1020 425 C1020 492 200 492 180 433" marker-end="url(#arrow)"/>
-  <rect x="503" y="476" width="194" height="22" rx="11" fill="#ffffff" stroke="#cfe6e8" stroke-width="1.2"/>
-  <text class="loopText" x="600" y="491" text-anchor="middle">CURATE · VERIFY · UPDATE</text>
+  <path class="loop" d="M1080 575 C1080 662 200 662 200 583" marker-end="url(#arrow)"/>
+  <rect x="518" y="643" width="244" height="28" rx="14" fill="#ffffff" stroke="#cfe6e8" stroke-width="1.3"/>
+  <text class="loopText" x="640" y="662" text-anchor="middle">CURATE · VERIFY · UPDATE</text>
 
-  <text class="rowsub" x="65" y="532" font-size="12.5">From first-person capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
+  <text class="rowsub" x="70" y="706" font-size="15">From first-person capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
 </svg>

@@ -23,17 +23,17 @@ Constraints: no logos, no watermarks, no readable text, no fake UI text, no bran
 
 `awesome-egocentric-atlas-map.svg`, `awesome-egocentric-reader-route.svg`, and `awesome-egocentric-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
 
-Visual system (shared across all three figures):
+Visual system (shared across all five figures):
 
 - White-to-teal gradient backgrounds with a faint dot-grid texture and amber accents.
-- A `1200`-unit-wide viewBox grid, soft drop shadows, and consistent `16–18px` corner radii.
-- System font stack for GitHub readability, with a shared type scale (kicker, title, label, body, small).
+- A `1280`-unit-wide viewBox at a generous scale, so the figures render large and legible at GitHub's full content width; soft drop shadows and consistent `18–22px` corner radii.
+- System font stack for GitHub readability, with a shared type scale (kicker, title, label, body, small) sized up for on-page readability.
 - Teal / amber / slate accent badges and arrow markers to show flow and grouping.
 - Short labels inside figures; full resource details stay in Markdown tables and `data/resources.yml`.
 
 ### Data-driven figures
 
-- `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026`), showing the field's acceleration. Bar heights come from the `year` counts in `data/resources.yml`; the latest era uses the amber accent.
+- `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026 (H1)`), drawn as a bar chart with a trend line through the bar tops to make the rise explicit. Bar heights come from the egocentric `year` counts in `data/resources.yml`; the latest era is amber and counts only the first half of 2026 (January to June), labelled accordingly.
 - `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
 
 When the catalog changes materially, refresh these two figures' numbers so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry and labels).

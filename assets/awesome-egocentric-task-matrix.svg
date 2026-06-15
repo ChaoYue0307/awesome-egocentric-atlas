@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric AI task matrix</title>
   <desc id="desc">A six-lane map of egocentric AI research: foundation video, procedure and action, hands and objects in 3D, memory and reasoning, robotics and VLA, and AR wearable sensing, with the comparison axis and canonical anchors for each lane and a legend of access states.</desc>
   <defs>
@@ -6,100 +6,100 @@
       <stop offset="0" stop-color="#fbfdff"/>
       <stop offset="1" stop-color="#eef7f6"/>
     </linearGradient>
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#cfe0e4" opacity="0.4"/>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#cfe0e4" opacity="0.4"/>
     </pattern>
     <filter id="shadow" x="-8%" y="-10%" width="116%" height="135%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0f2a33" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0f2a33" flood-opacity="0.09"/>
     </filter>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .14em; }
-      .title { font: 700 29px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .label { font: 700 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
-      .compare { font: 500 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
-      .anchors { font: 600 12.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
-      .pillText { font: 700 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .05em; }
-      .legendK { font: 700 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5b6b73; letter-spacing: .12em; }
-      .legendT { font: 600 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 34px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .label { font: 700 22px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
+      .compare { font: 500 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .anchors { font: 600 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .pillText { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .06em; }
+      .legendK { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5b6b73; letter-spacing: .14em; }
+      .legendT { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
     </style>
   </defs>
 
-  <rect width="1200" height="560" fill="url(#bg)"/>
-  <rect width="1200" height="560" fill="url(#dots)"/>
+  <rect width="1280" height="740" fill="url(#bg)"/>
+  <rect width="1280" height="740" fill="url(#dots)"/>
 
-  <text class="kicker" x="60" y="50">SIX RESEARCH LANES</text>
-  <text class="title ink" x="60" y="84">Egocentric AI Task Matrix</text>
-  <text class="subtitle" x="60" y="110">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
+  <text class="kicker" x="70" y="60">SIX RESEARCH LANES</text>
+  <text class="title ink" x="70" y="102">Egocentric AI Task Matrix</text>
+  <text class="subtitle" x="70" y="134">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
 
   <!-- Row 1 -->
-  <g transform="translate(60 150)">
-    <rect width="340" height="150" rx="16" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="74" height="22" rx="11" fill="#0b8f98"/>
-    <text class="pillText" x="61" y="37" text-anchor="middle">VIDEO</text>
-    <text class="label" x="24" y="78">Foundation Ego Video</text>
-    <text class="compare" x="24" y="102">compare · scale, license, modalities</text>
-    <text class="anchors" x="24" y="128">Xperience-10M, Ego4D, Ego-Exo4D</text>
+  <g transform="translate(70 170)">
+    <rect width="360" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="64" height="28" rx="14" fill="#0b8f98"/>
+    <text class="pillText" x="60" y="46" text-anchor="middle">VIDEO</text>
+    <text class="label" x="28" y="100">Foundation Ego Video</text>
+    <text class="compare" x="28" y="132">compare · scale, license, modalities</text>
+    <text class="anchors" x="28" y="166">Xperience-10M, Ego4D, Ego-Exo4D</text>
   </g>
 
-  <g transform="translate(430 150)">
-    <rect width="340" height="150" rx="16" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="80" height="22" rx="11" fill="#5b6b73"/>
-    <text class="pillText" x="64" y="37" text-anchor="middle">ACTION</text>
-    <text class="label" x="24" y="78">Procedure &amp; Anticipation</text>
-    <text class="compare" x="24" y="102">compare · granularity, mistakes, gaze</text>
-    <text class="anchors" x="24" y="128">EPIC-KITCHENS, Assembly101, HoloAssist</text>
+  <g transform="translate(460 170)">
+    <rect width="360" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="74" height="28" rx="14" fill="#5b6b73"/>
+    <text class="pillText" x="65" y="46" text-anchor="middle">ACTION</text>
+    <text class="label" x="28" y="100">Procedure &amp; Anticipation</text>
+    <text class="compare" x="28" y="132">compare · granularity, mistakes, gaze</text>
+    <text class="anchors" x="28" y="166">EPIC-KITCHENS, Assembly101, HoloAssist</text>
   </g>
 
-  <g transform="translate(800 150)">
-    <rect width="340" height="150" rx="16" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="50" height="22" rx="11" fill="#ef9f24"/>
-    <text class="pillText" x="49" y="37" text-anchor="middle">3D</text>
-    <text class="label" x="24" y="78">Hands, Objects &amp; Pose</text>
-    <text class="compare" x="24" y="102">compare · contact, pose, meshes, scene</text>
-    <text class="anchors" x="24" y="128">HOT3D, HOI4D, H2O, ARCTIC</text>
+  <g transform="translate(850 170)">
+    <rect width="360" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="46" height="28" rx="14" fill="#ef9f24"/>
+    <text class="pillText" x="51" y="46" text-anchor="middle">3D</text>
+    <text class="label" x="28" y="100">Hands, Objects &amp; Pose</text>
+    <text class="compare" x="28" y="132">compare · contact, pose, meshes, scene</text>
+    <text class="anchors" x="28" y="166">HOT3D, HOI4D, H2O, ARCTIC</text>
   </g>
 
   <!-- Row 2 -->
-  <g transform="translate(60 330)">
-    <rect width="340" height="150" rx="16" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="84" height="22" rx="11" fill="#5b6b73"/>
-    <text class="pillText" x="66" y="37" text-anchor="middle">MEMORY</text>
-    <text class="label" x="24" y="78">Long-Context Reasoning</text>
-    <text class="compare" x="24" y="102">compare · clip length, grounding, QA type</text>
-    <text class="anchors" x="24" y="128">EgoSchema, EgoLife, TeleEgo, Ego-R1</text>
+  <g transform="translate(70 400)">
+    <rect width="360" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="80" height="28" rx="14" fill="#5b6b73"/>
+    <text class="pillText" x="68" y="46" text-anchor="middle">MEMORY</text>
+    <text class="label" x="28" y="100">Long-Context Reasoning</text>
+    <text class="compare" x="28" y="132">compare · clip length, grounding, QA type</text>
+    <text class="anchors" x="28" y="166">EgoSchema, EgoLife, TeleEgo, Ego-R1</text>
   </g>
 
-  <g transform="translate(430 330)">
-    <rect width="340" height="150" rx="16" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="76" height="22" rx="11" fill="#0b8f98"/>
-    <text class="pillText" x="62" y="37" text-anchor="middle">ROBOT</text>
-    <text class="label" x="24" y="78">Robotics &amp; VLA</text>
-    <text class="compare" x="24" y="102">compare · action labels, transfer, diversity</text>
-    <text class="anchors" x="24" y="128">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
+  <g transform="translate(460 400)">
+    <rect width="360" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="66" height="28" rx="14" fill="#0b8f98"/>
+    <text class="pillText" x="61" y="46" text-anchor="middle">ROBOT</text>
+    <text class="label" x="28" y="100">Robotics &amp; VLA</text>
+    <text class="compare" x="28" y="132">compare · action labels, transfer, diversity</text>
+    <text class="anchors" x="28" y="166">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
   </g>
 
-  <g transform="translate(800 330)">
-    <rect width="340" height="150" rx="16" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="24" y="22" width="80" height="22" rx="11" fill="#ef9f24"/>
-    <text class="pillText" x="64" y="37" text-anchor="middle">SENSOR</text>
-    <text class="label" x="24" y="78">AR &amp; Wearable Sensing</text>
-    <text class="compare" x="24" y="102">compare · gaze, IMU, SLAM, audio</text>
-    <text class="anchors" x="24" y="128">Aria, ADT, AEA, Nymeria, EasyCom</text>
+  <g transform="translate(850 400)">
+    <rect width="360" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="28" y="28" width="76" height="28" rx="14" fill="#ef9f24"/>
+    <text class="pillText" x="66" y="46" text-anchor="middle">SENSOR</text>
+    <text class="label" x="28" y="100">AR &amp; Wearable Sensing</text>
+    <text class="compare" x="28" y="132">compare · gaze, IMU, SLAM, audio</text>
+    <text class="anchors" x="28" y="166">Aria, ADT, AEA, Nymeria, EasyCom</text>
   </g>
 
   <!-- access-state legend -->
-  <text class="legendK" x="60" y="524">ACCESS STATES</text>
-  <circle cx="205" cy="520" r="5" fill="#00a6b2"/>
-  <text class="legendT" x="216" y="524">open</text>
-  <circle cx="285" cy="520" r="5" fill="#ef9f24"/>
-  <text class="legendT" x="296" y="524">request</text>
-  <circle cx="392" cy="520" r="5" fill="#5b6b73"/>
-  <text class="legendT" x="403" y="524">benchmark</text>
-  <circle cx="528" cy="520" r="5" fill="#9aa7af"/>
-  <text class="legendT" x="539" y="524">partial</text>
-  <circle cx="624" cy="520" r="5" fill="#c2ccd2"/>
-  <text class="legendT" x="635" y="524">watch</text>
-  <text class="compare" x="722" y="524">Start from mature open/request lanes; track watch entries for frontier releases.</text>
+  <text class="legendK" x="70" y="668">ACCESS STATES</text>
+  <circle cx="232" cy="663" r="6" fill="#00a6b2"/>
+  <text class="legendT" x="246" y="668">open</text>
+  <circle cx="320" cy="663" r="6" fill="#ef9f24"/>
+  <text class="legendT" x="334" y="668">request</text>
+  <circle cx="432" cy="663" r="6" fill="#5b6b73"/>
+  <text class="legendT" x="446" y="668">benchmark</text>
+  <circle cx="580" cy="663" r="6" fill="#9aa7af"/>
+  <text class="legendT" x="594" y="668">partial</text>
+  <circle cx="684" cy="663" r="6" fill="#c2ccd2"/>
+  <text class="legendT" x="698" y="668">watch</text>
+  <text class="compare" x="800" y="668">Start from mature open/request lanes; track watch entries for frontier releases.</text>
 </svg>
