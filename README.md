@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-167-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-173-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -60,7 +60,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 
 | Signal | What it means for readers |
 |---|---|
-| 167 egocentric resources | 82 datasets, 47 benchmarks, 28 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
+| 173 egocentric resources | 84 datasets, 50 benchmarks, 29 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
@@ -196,6 +196,7 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 | [HRDexDB](https://arxiv.org/abs/2604.14944) | 1.4K human/robot grasping trials, tactile, multiview video, egocentric video streams | Cross-domain dexterous grasp learning | watch |
 | [InterVLA](https://arxiv.org/abs/2508.04681) | 11.4 hours and 1.2M frames with 2 ego and 5 exo views, human/object motions, and verbal commands | Vision-language-action and motion estimation | watch |
 | [AoE: Always-on Egocentric](https://arxiv.org/abs/2602.23893) | Always-on egocentric human-video collection pipeline and corpus for embodied AI | Scaling human-video data for robot learning | watch |
+| [EgoScale](https://arxiv.org/abs/2602.16710) | 20,854 hours of action-labeled egocentric human video with a human-to-robot two-stage transfer recipe and a log-linear data-scaling law | Scaling dexterous manipulation from human video | watch |
 
 ### Hands, Objects, Pose, Tracking, and 3D
 
@@ -232,6 +233,7 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 | [EgoBrain](https://arxiv.org/abs/2506.01353) | Synchronized EEG and egocentric video for human action understanding | Brain-signal plus first-person action understanding | watch |
 | [SHOW3D](https://arxiv.org/abs/2603.28760) | In-the-wild 3D hand-object interactions from a back-mounted multi-camera rig synced to a worn VR headset, with multi-view 3D shape/pose and text | In-the-wild 3D hand-object reconstruction | watch |
 | [EgoTouch / TouchAnything](https://jianyi2004.github.io/TouchAnything-Website/) | 302 tasks, 4,530 episodes with egocentric + dual wrist cameras, bimanual 3D hand pose, and dense tactile pressure maps | Tactile estimation and contact modeling from egocentric video | watch |
+| [EgoPressure](https://yiming-zhao.github.io/EgoPressure/) | 5.0 hours, 21 participants, a moving egocentric camera plus 7 stationary RGB-D cameras, hand pose meshes, and fine-grained per-contact touch pressure (CVPR 2025) | Hand pressure and pose from egocentric vision | open |
 
 ### Daily Life, Memory, Assistance, and QA
 
@@ -278,6 +280,8 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 | [EgoEverything](https://arxiv.org/abs/2604.08342) | 5,000+ MCQ pairs over 100+ hours, with gaze-attention-inspired question generation for AR | Human-behavior-inspired long-context egocentric understanding | watch |
 | [EgoNight](https://insait-institute.github.io/EgoNight/) | EgoNight-VQA (3,658 QA / 90 videos / 12 types) plus day-night retrieval and depth, with day-night aligned video | Nighttime / low-light egocentric robustness | open |
 | [EgoIntent](https://arxiv.org/abs/2603.12147) | 3,014 steps over 15 daily-life scenarios for local intent (What), global intent (Why), and next-step plan (Next) | Step-level intent and anticipatory assistance | watch |
+| [EgoTL](https://arxiv.org/abs/2604.09535) | Think-aloud (say-before-act) egocentric capture with word-level spoken reasoning and metric-scale spatial annotations over 100+ household tasks | Long-horizon reasoning for VLMs and world models | watch |
+| [SuperMemory-VQA](https://arxiv.org/abs/2606.00825) | 52.9 hours of AI-glasses activity with RGB, audio, gaze, IMU, SLAM, and 4,853 human-verified QA pairs across object/location/intent/scene memory | Long-horizon memory for AR assistants | watch |
 
 ### Action, Procedure, Lifelogging, and Classic FPV
 
@@ -351,6 +355,7 @@ Evaluation suites and label sets built on top of the raw datasets above.
 | [EgoEsportsQA](https://arxiv.org/abs/2604.12320) | First-person esports video | Fast virtual first-person perception and reasoning | watch |
 | [Audio Hallucination in Egocentric Video](https://arxiv.org/abs/2604.23860) | Egocentric audio-visual video | 300 videos / 1,000 sound-focused questions probing audio hallucination in AV-LLMs | watch |
 | [Ego2World](https://arxiv.org/abs/2605.13335) | HD-EPIC | Executable symbolic worlds from egocentric cooking video for belief-state planning | watch |
+| [EgoAVU](https://github.com/facebookresearch/EgoAVU) | Egocentric audio-visual narrations | EgoAVU-Instruct (3M QAs) and EgoAVU-Bench (3K QAs) for audio-visual understanding (CVPR 2026 highlight) | open |
 
 ## Models, Tools, and Baselines
 
@@ -392,6 +397,7 @@ Open models, baselines, and loaders you can build on directly.
 | EgoHandTrajPred / USST | Egocentric 3D hand trajectory forecasting over H2O and EgoPAT3D-style settings | [Project](https://actionlab-cv.github.io/EgoHandTrajPred) |
 | EgoAction | CVPR 2026 EPIC-KITCHENS action detection challenge pipeline | [Paper](https://arxiv.org/abs/2605.24496) |
 | EgoAdapt | CVPR 2026 HD-EPIC VQA challenge inference-time adaptation pipeline | [Paper](https://arxiv.org/abs/2605.24500) |
+| StableHand | Quality-aware flow-matching baseline for world-space dual-hand motion estimation from egocentric video | [Project](https://huajian-zeng.github.io/projects/stablehand/) |
 
 ### Practical Tooling
 

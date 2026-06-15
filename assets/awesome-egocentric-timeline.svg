@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by era</title>
-  <desc id="desc">A timeline of catalogued egocentric AI resources grouped into five eras, showing the field's acceleration from a handful of classic first-person-vision datasets to a large recent wave around 2024 to 2026.</desc>
+  <desc id="desc">A timeline of catalogued egocentric AI resources grouped into five eras, showing the field's acceleration from a handful of classic first-person-vision datasets to 2026 — already the largest era despite counting only its first half (January to June).</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -38,38 +38,38 @@
 
   <text class="kicker" x="80" y="46">GROWTH OVER TIME</text>
   <text class="title ink" x="80" y="78">Egocentric resources by era</text>
-  <text class="subtitle" x="80" y="104">Resources with a known year, grouped into five eras — the field accelerates sharply after 2023.</text>
+  <text class="subtitle" x="80" y="104">Resources with a known year, in five eras — 2026 already leads, counting only its first half (Jan&#8211;Jun).</text>
 
   <line class="axis" x1="80" y1="300" x2="1120" y2="300"/>
 
   <!-- columns: x-centers 200, 410, 620, 830, 1040 -->
   <!-- <=2018 : 5 -->
-  <rect x="155" y="282" width="90" height="18" rx="5" fill="url(#barT)" filter="url(#shadow)"/>
-  <text class="count" x="200" y="274" text-anchor="middle">5</text>
+  <rect x="155" y="284" width="90" height="16" rx="5" fill="url(#barT)" filter="url(#shadow)"/>
+  <text class="count" x="200" y="276" text-anchor="middle">5</text>
   <text class="era" x="200" y="322" text-anchor="middle">&#8804; 2018</text>
   <text class="anchor" x="200" y="340" text-anchor="middle">GTEA, EgoHands</text>
 
   <!-- 2019-2021 : 14 -->
-  <rect x="365" y="251" width="90" height="49" rx="6" fill="url(#barT)" filter="url(#shadow)"/>
-  <text class="count" x="410" y="243" text-anchor="middle">14</text>
+  <rect x="365" y="256" width="90" height="44" rx="6" fill="url(#barT)" filter="url(#shadow)"/>
+  <text class="count" x="410" y="248" text-anchor="middle">14</text>
   <text class="era" x="410" y="322" text-anchor="middle">2019&#8211;2021</text>
   <text class="anchor" x="410" y="340" text-anchor="middle">EPIC-100, Ego4D</text>
 
   <!-- 2022-2023 : 32 -->
-  <rect x="575" y="188" width="90" height="112" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
-  <text class="count" x="620" y="180" text-anchor="middle">32</text>
+  <rect x="575" y="200" width="90" height="100" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
+  <text class="count" x="620" y="192" text-anchor="middle">32</text>
   <text class="era" x="620" y="322" text-anchor="middle">2022&#8211;2023</text>
   <text class="anchor" x="620" y="340" text-anchor="middle">Ego-Exo4D, HOI4D</text>
 
-  <!-- 2024-2025 : 43 -->
-  <rect x="785" y="150" width="90" height="150" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
-  <text class="count" x="830" y="142" text-anchor="middle">43</text>
+  <!-- 2024-2025 : 41 -->
+  <rect x="785" y="172" width="90" height="128" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
+  <text class="count" x="830" y="164" text-anchor="middle">41</text>
   <text class="era" x="830" y="322" text-anchor="middle">2024&#8211;2025</text>
   <text class="anchor" x="830" y="340" text-anchor="middle">EgoLife, EgoDex</text>
 
-  <!-- 2026 : 43 -->
+  <!-- 2026 H1 : 48 -->
   <rect x="995" y="150" width="90" height="150" rx="7" fill="url(#barA)" filter="url(#shadow)"/>
-  <text class="count" x="1040" y="142" text-anchor="middle">43</text>
-  <text class="era" x="1040" y="322" text-anchor="middle">2026</text>
-  <text class="anchor" x="1040" y="340" text-anchor="middle">Xperience-10M, EgoVerse</text>
+  <text class="count" x="1040" y="142" text-anchor="middle">48</text>
+  <text class="era" x="1040" y="322" text-anchor="middle">2026 (H1)</text>
+  <text class="anchor" x="1040" y="340" text-anchor="middle">first half only &#183; EgoScale, EgoAVU</text>
 </svg>

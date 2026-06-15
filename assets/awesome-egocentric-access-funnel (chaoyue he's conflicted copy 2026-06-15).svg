@@ -35,9 +35,9 @@
   <text class="row" x="600" y="163" text-anchor="middle">open &#183; 91</text>
   <text class="gloss" x="1020" y="163">usable today</text>
 
-  <!-- watch 56 -->
-  <rect x="320" y="186" width="560" height="40" rx="9" fill="#9aa7af" filter="url(#shadow)"/>
-  <text class="row" x="600" y="211" text-anchor="middle">watch &#183; 56</text>
+  <!-- watch 60 -->
+  <rect x="312" y="186" width="576" height="40" rx="9" fill="#9aa7af" filter="url(#shadow)"/>
+  <text class="row" x="600" y="211" text-anchor="middle">watch &#183; 60</text>
   <text class="gloss" x="890" y="211">recent, verify before use</text>
 
   <!-- partial 11 -->

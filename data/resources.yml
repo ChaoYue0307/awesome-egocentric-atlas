@@ -1574,3 +1574,81 @@ resources:
     scope_note: "First-person walking-tour video editing/generation."
     verified_at: "2026-06-15"
     citation_key: egocrowds_crowderaser_2026
+
+  # --- Catalog expansion (2026-06-15): growth additions ---
+
+  - name: EgoPressure
+    kind: dataset
+    year: 2025
+    status: open
+    url: https://yiming-zhao.github.io/EgoPressure/
+    paper: https://arxiv.org/abs/2409.02224
+    scale: "5.0 hours, 21 participants, a moving egocentric camera plus 7 stationary RGB-D cameras, with hand pose meshes and fine-grained per-contact touch pressure (CVPR 2025)"
+    modalities: [egocentric-video, rgbd, 3d-hand-pose, contact]
+    tasks: [hand-object, contact-understanding, 3d-hand-pose]
+    verified_at: "2026-06-15"
+    citation_key: egopressure_2025
+
+  - name: EgoTL
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.09535
+    paper: https://arxiv.org/abs/2604.09535
+    scale: "Think-aloud (say-before-act) egocentric capture with word-level spoken reasoning and metric-scale spatial annotations over 100+ household tasks; benchmarks VLMs and world models on six task dimensions"
+    modalities: [egocentric-video, speech, annotations]
+    tasks: [long-context, planning, embodied-reasoning]
+    verified_at: "2026-06-15"
+    citation_key: egotl_2026
+
+  - name: SuperMemory-VQA
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.00825
+    paper: https://arxiv.org/abs/2606.00825
+    scale: "52.9 hours of AI-glasses daily activities with RGB, audio transcription, gaze, IMU, and SLAM; 4,853 human-verified QA pairs across object/location memory, intent recall, and scene recall"
+    modalities: [egocentric-video, audio, gaze, imu, point-clouds]
+    tasks: [episodic-memory, long-context, qa]
+    verified_at: "2026-06-15"
+    citation_key: supermemory_vqa_2026
+
+  - name: EgoAVU
+    kind: benchmark
+    year: 2026
+    status: open
+    url: https://github.com/facebookresearch/EgoAVU
+    paper: https://arxiv.org/abs/2602.06139
+    code: https://github.com/facebookresearch/EgoAVU
+    data: https://huggingface.co/datasets/facebook/EgoAVU_data
+    project: https://cs20s030.github.io/EgoAVU/
+    scale: "Scalable audio-visual data engine producing EgoAVU-Instruct (3M QAs) and the human-verified EgoAVU-Bench (3K QAs) for egocentric audio-visual understanding (CVPR 2026 highlight)"
+    modalities: [egocentric-video, audio, qa]
+    tasks: [audio-visual-reasoning, sound-understanding, evaluation]
+    verified_at: "2026-06-15"
+    citation_key: egoavu_2026
+
+  - name: EgoScale
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.16710
+    paper: https://arxiv.org/abs/2602.16710
+    scale: "20,854 hours of action-labeled egocentric human video for VLA pretraining with a human-to-robot two-stage transfer recipe; reveals a log-linear human-data scaling law"
+    modalities: [egocentric-video, action-labels]
+    tasks: [vla, robot-learning, dexterous-manipulation]
+    scope_note: "Egocentric human-video corpus for dexterous-manipulation transfer."
+    verified_at: "2026-06-15"
+    citation_key: egoscale_2026
+
+  - name: StableHand
+    kind: model
+    year: 2026
+    status: watch
+    url: https://huajian-zeng.github.io/projects/stablehand/
+    paper: https://arxiv.org/abs/2605.18553
+    scale: "Quality-aware flow-matching baseline for world-space dual-hand motion estimation from egocentric video, evaluated on HOT3D and ARCTIC"
+    modalities: [egocentric-video, 3d-hand-pose]
+    tasks: [3d-hand-pose, pose, hand-object]
+    verified_at: "2026-06-15"
+    citation_key: stablehand_2026
