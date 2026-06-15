@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-158-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-167-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -36,6 +36,7 @@
 - [Creator and Release Notes](#creator-and-release-notes)
 - [Status Legend](#status-legend)
 - [Fast Task Map](#fast-task-map)
+- [Recipes and Reference](#recipes-and-reference)
 - [Dataset Atlas](#dataset-atlas)
 - [Benchmarks and Derived Annotations](#benchmarks-and-derived-annotations)
 - [Models, Tools, and Baselines](#models-tools-and-baselines)
@@ -49,7 +50,7 @@
 
 ## How to Use This Atlas
 
-Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, scale/signal, best use, and public status. For filtering by task, modality, status, or year, use the catalog in [`data/resources.yml`](data/resources.yml).
+Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, scale/signal, best use, and public status. For filtering by task, modality, status, or year, use the catalog in [`data/resources.yml`](data/resources.yml); label meanings and filter groups are explained in [docs/taxonomy.md](docs/taxonomy.md). Task-oriented [research recipes](#recipes-and-reference) walk you from goal to experiment.
 
 <p align="center">
   <img src="assets/awesome-egocentric-reader-route.svg" alt="Awesome Egocentric Atlas reader route" width="100%">
@@ -59,11 +60,15 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 
 | Signal | What it means for readers |
 |---|---|
-| 158 egocentric resources | 78 datasets, 42 benchmarks, 28 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
+| 167 egocentric resources | 82 datasets, 47 benchmarks, 28 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
 | Reader-first tables | Each entry is short enough to scan, then links out to the official page, paper, code, or dataset portal. |
+
+<p align="center">
+  <img src="assets/awesome-egocentric-timeline.svg" alt="Egocentric resources by era" width="100%">
+</p>
 
 ## Start Here
 
@@ -110,6 +115,12 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 | `partial` | Some assets are public, but full raw data, license, or long-term availability is unclear. |
 | `watch` | Recent or important resource whose release state still needs verification. |
 
+For how each status is decided, see [docs/status_policy.md](docs/status_policy.md).
+
+<p align="center">
+  <img src="assets/awesome-egocentric-access-funnel.svg" alt="Egocentric resources by access state" width="100%">
+</p>
+
 ## Fast Task Map
 
 | Research goal | Strong starting points |
@@ -121,6 +132,26 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 | Hand-object and 3D HOI | [HOT3D](https://facebookresearch.github.io/hot3d/), [HOI4D](https://hoi4d.github.io/), [EgoHOS](https://github.com/owenzlz/EgoHOS), [FPHA](https://guiggh.github.io/publications/first-person-hands/), [EgoEMG](https://arxiv.org/abs/2605.05712) |
 | Audio, speech, and social interaction | [Ego4D AV tasks](https://ego4d-data.org/), [EasyCom](https://arxiv.org/abs/2107.04174), [EgoCom / audio-visual correspondence](http://vision.cs.utexas.edu/projects/ego_av_corr/), [AV-CONV](https://vjwq.github.io/AV-CONV/) |
 | AR glasses and scene understanding | [Project Aria Datasets](https://www.projectaria.com/datasets/), [Aria Digital Twin](https://www.projectaria.com/datasets/adt/), [AEA](https://www.projectaria.com/datasets/aea/), [Nymeria](https://www.projectaria.com/datasets/nymeria/), [DTC](https://www.projectaria.com/datasets/dtc/) |
+
+## Recipes and Reference
+
+Task-oriented starting points and the references that keep the catalog usable.
+
+**Research recipes** — each gives a goal, what to start with, what to add, benchmarks, baselines, a minimum viable experiment, common pitfalls, and a reporting checklist:
+
+- [Long-context egocentric video QA](docs/recipes/long-context-egocentric-qa.md)
+- [Robot / VLA from egocentric human video](docs/recipes/robot-vla-from-ego-video.md)
+- [Hand-object 3D HOI](docs/recipes/hand-object-3d-hoi.md)
+- [AR-glasses and wearable sensing](docs/recipes/ar-glasses-sensing.md)
+- [Audio and social egocentric understanding](docs/recipes/audio-social-egocentric.md)
+
+**Reference**
+
+- [Taxonomy](docs/taxonomy.md) — task/modality families and how to filter the catalog.
+- [Access Matrix](docs/access_matrix.md) — data, code, license, and leaderboard per key resource.
+- [Status Policy](docs/status_policy.md) — how `open`/`request`/`benchmark`/`partial`/`watch` are decided.
+- [Resource Schema](docs/resource_schema.md) — every field in `data/resources.yml`.
+- [Maintenance](docs/maintenance.md) — the add → verify → validate workflow.
 
 ## Dataset Atlas
 
@@ -145,6 +176,7 @@ Broad, large-scale first-person corpora that most egocentric pipelines pretrain 
 | [EgoBlind](https://arxiv.org/abs/2503.08221) | 1,392 first-person videos from blind and visually impaired users, 5,311 questions posed or verified by blind users | Assistive egocentric VideoQA for blind users | watch |
 | [Look and Tell](https://arxiv.org/abs/2510.22672) | 25 participants, Project Aria plus stationary cameras, gaze/speech/video, 3D reconstructions | Referential communication across ego and exo viewpoints | watch |
 | [EgoVid-5M](https://egovid.github.io/) | 5M curated egocentric clips at 1080p with fine-grained kinematic and high-level text action annotations (NeurIPS 2025) | Egocentric video generation and action-conditioned world models | open |
+| [EgoCrowds / CrowdEraser](https://arxiv.org/abs/2603.29036) | Semi-synthetic paired crowded/empty clips from real egocentric walking-tour video; CrowdEraser diffusion removes crowds for humanless walkthroughs | First-person walking-tour video editing and environment modeling | watch |
 
 ### Robotics, Manipulation, and VLA
 
@@ -198,6 +230,8 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 | [EgoGesture](https://ieeexplore.ieee.org/document/8299578/) | 24K+ gesture samples, 3M RGB-D frames, 50 subjects, 83 static and dynamic gestures across six scenes | First-person gesture recognition for wearable interaction | open |
 | [Egocentric HOI Detection](https://arxiv.org/abs/2506.14189) | New benchmark and method for detecting hand-object interactions in egocentric video | Egocentric hand-object interaction detection | open |
 | [EgoBrain](https://arxiv.org/abs/2506.01353) | Synchronized EEG and egocentric video for human action understanding | Brain-signal plus first-person action understanding | watch |
+| [SHOW3D](https://arxiv.org/abs/2603.28760) | In-the-wild 3D hand-object interactions from a back-mounted multi-camera rig synced to a worn VR headset, with multi-view 3D shape/pose and text | In-the-wild 3D hand-object reconstruction | watch |
+| [EgoTouch / TouchAnything](https://jianyi2004.github.io/TouchAnything-Website/) | 302 tasks, 4,530 episodes with egocentric + dual wrist cameras, bimanual 3D hand pose, and dense tactile pressure maps | Tactile estimation and contact modeling from egocentric video | watch |
 
 ### Daily Life, Memory, Assistance, and QA
 
@@ -241,6 +275,9 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 | [Gesture-Based Egocentric Video QA](https://arxiv.org/abs/2603.12533) | Egocentric video QA grounded in the camera wearer's pointing and deictic gestures | Gesture-grounded referential QA | watch |
 | [ExAct](https://arxiv.org/abs/2506.06277) | Video-language benchmark for expert action analysis and feedback over skilled activity | Expert feedback and skill assessment | open |
 | [EgoVQA](https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Fan_EgoVQA_-_An_Egocentric_Video_Question_Answering_Benchmark_Dataset_ICCVW_2019_paper.html) | 600+ QA pairs over egocentric videos; an early first-person VideoQA benchmark | Classic egocentric VideoQA | open |
+| [EgoEverything](https://arxiv.org/abs/2604.08342) | 5,000+ MCQ pairs over 100+ hours, with gaze-attention-inspired question generation for AR | Human-behavior-inspired long-context egocentric understanding | watch |
+| [EgoNight](https://insait-institute.github.io/EgoNight/) | EgoNight-VQA (3,658 QA / 90 videos / 12 types) plus day-night retrieval and depth, with day-night aligned video | Nighttime / low-light egocentric robustness | open |
+| [EgoIntent](https://arxiv.org/abs/2603.12147) | 3,014 steps over 15 daily-life scenarios for local intent (What), global intent (Why), and next-step plan (Next) | Step-level intent and anticipatory assistance | watch |
 
 ### Action, Procedure, Lifelogging, and Classic FPV
 
@@ -271,6 +308,7 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 | [Home Action Genome / HOMAGE](https://homeactiongenome.org/) | 27 participants, synchronized ego and third-person views, 12 sensor types, hierarchical activity/action labels | Compositional multi-view home activity understanding | open |
 | [EgoExo-Fitness](https://github.com/iSEE-Laboratory/EgoExo-Fitness) | Synchronized ego and exo fitness videos with keypoint verification, execution comments, and quality scores (ECCV 2024) | Ego-exo full-body action quality and skill assessment | open |
 | [WEAR](https://mariusbock.github.io/wear/) | 22 participants, 18 outdoor workouts, synchronized egocentric video and 3D acceleration across 11 locations (IMWUT 2024) | Vision-plus-inertial outdoor activity recognition | open |
+| [EgoMAGIC](https://arxiv.org/abs/2604.22036) | 3,355 egocentric field-medicine videos over 50 tasks from a head-mounted stereo camera with audio; 1.95M labels, 124 objects, action-detection challenge (Zenodo) | Field-medicine perception, action and object detection | open |
 
 ### Project Aria, AR/VR, and 3D Scene Resources
 
@@ -311,6 +349,8 @@ Evaluation suites and label sets built on top of the raw datasets above.
 | [EgoExoMem](https://arxiv.org/abs/2605.18734) | Synchronized ego-exo videos | Cross-view memory QA | watch |
 | [EgoMemReason](https://arxiv.org/abs/2605.09874) | Week-long egocentric video | Entity, event, and behavior memory reasoning | watch |
 | [EgoEsportsQA](https://arxiv.org/abs/2604.12320) | First-person esports video | Fast virtual first-person perception and reasoning | watch |
+| [Audio Hallucination in Egocentric Video](https://arxiv.org/abs/2604.23860) | Egocentric audio-visual video | 300 videos / 1,000 sound-focused questions probing audio hallucination in AV-LLMs | watch |
+| [Ego2World](https://arxiv.org/abs/2605.13335) | HD-EPIC | Executable symbolic worlds from egocentric cooking video for belief-state planning | watch |
 
 ## Models, Tools, and Baselines
 

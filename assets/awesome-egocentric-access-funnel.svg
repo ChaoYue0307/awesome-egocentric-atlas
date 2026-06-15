@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Egocentric resources by access state</title>
+  <desc id="desc">A funnel-style snapshot of the 167 egocentric resources by public-access state: open, watch, partial, benchmark, and request, showing how much is usable today versus still unverified.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#eef7f6"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#cfe0e4" opacity="0.4"/>
+    </pattern>
+    <filter id="shadow" x="-6%" y="-12%" width="112%" height="135%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f2a33" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .ink { fill: #14212b; }
+      .kicker { font: 700 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .14em; }
+      .title { font: 700 27px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 13.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .row { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
+      .gloss { font: 500 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+  <rect width="1200" height="380" fill="url(#dots)"/>
+
+  <text class="kicker" x="80" y="46">ACCESS REALITY</text>
+  <text class="title ink" x="80" y="78">167 egocentric resources by access state</text>
+  <text class="subtitle" x="80" y="104">A snapshot of availability (not a pipeline). Roughly half are usable now; a large share are recent and still unverified.</text>
+
+  <!-- funnel rows, centered on x=600; width scaled by count (max 89 -> 820) -->
+  <!-- open 89 -->
+  <rect x="190" y="138" width="820" height="40" rx="9" fill="#00a6b2" filter="url(#shadow)"/>
+  <text class="row" x="600" y="163" text-anchor="middle">open &#183; 89</text>
+  <text class="gloss" x="1020" y="163">usable today</text>
+
+  <!-- watch 56 -->
+  <rect x="320" y="186" width="560" height="40" rx="9" fill="#9aa7af" filter="url(#shadow)"/>
+  <text class="row" x="600" y="211" text-anchor="middle">watch &#183; 56</text>
+  <text class="gloss" x="890" y="211">recent, verify before use</text>
+
+  <!-- partial 11 -->
+  <rect x="490" y="234" width="220" height="40" rx="9" fill="#ef9f24" filter="url(#shadow)"/>
+  <text class="row" x="600" y="259" text-anchor="middle">partial &#183; 11</text>
+  <text class="gloss" x="720" y="259">subset/annotations only</text>
+
+  <!-- benchmark 7 -->
+  <rect x="510" y="282" width="180" height="40" rx="9" fill="#5b6b73" filter="url(#shadow)"/>
+  <text class="row" x="600" y="307" text-anchor="middle">benchmark &#183; 7</text>
+  <text class="gloss" x="700" y="307">eval over existing video</text>
+
+  <!-- request 4 -->
+  <rect x="525" y="330" width="150" height="40" rx="9" fill="#d98f1f" filter="url(#shadow)"/>
+  <text class="row" x="600" y="355" text-anchor="middle">request &#183; 4</text>
+  <text class="gloss" x="685" y="355">license / approval needed</text>
+</svg>

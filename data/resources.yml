@@ -46,6 +46,9 @@ resources:
     scale: "3,670+ hours, 900+ camera wearers, 74 locations, 9 countries"
     modalities: [video, audio, gaze, stereo, 3d, narrations]
     tasks: [episodic-memory, nlq, moment-query, hand-object, forecasting, social, audio-visual]
+    code: https://github.com/facebookresearch/Ego4d
+    license: Ego4D License Agreement
+    verified_at: "2026-06-15"
 
   - name: Ego-Exo4D
     kind: dataset
@@ -56,6 +59,9 @@ resources:
     scale: "1,286 hours, 740 participants, synchronized ego/exo views"
     modalities: [video, audio, gaze, imu, 3d-point-clouds, camera-poses, language]
     tasks: [ego-exo, skilled-activity, cross-view, proficiency, pose]
+    code: https://github.com/facebookresearch/projectaria_tools
+    license: Ego-Exo4D License Agreement
+    verified_at: "2026-06-15"
 
   - name: EPIC-KITCHENS-100
     kind: dataset
@@ -66,6 +72,9 @@ resources:
     scale: "100 hours, 20M frames, 90K action segments, 45 kitchens"
     modalities: [video, audio, narrations, object-boxes]
     tasks: [action-recognition, action-detection, anticipation, retrieval, domain-adaptation]
+    code: https://github.com/epic-kitchens/epic-kitchens-100-annotations
+    license: cc-by-nc-4.0
+    verified_at: "2026-06-15"
 
   - name: HD-EPIC
     kind: dataset
@@ -224,6 +233,8 @@ resources:
     scale: "833+ minutes, 3.7M+ images, 19 subjects, 33 objects"
     modalities: [aria, quest3, gaze, point-clouds, 3d-hand-pose, object-pose, camera-pose]
     tasks: [3d-hand-object-tracking, ar-vr, pose]
+    license: Project Aria dataset license
+    verified_at: "2026-06-15"
 
   - name: HOI4D
     kind: dataset
@@ -446,6 +457,8 @@ resources:
     derived_from: Ego4D
     scale: "5K+ multiple-choice QA pairs, 250+ hours"
     tasks: [long-video-qa, temporal-reasoning]
+    code: https://github.com/egoschema/EgoSchema
+    verified_at: "2026-06-15"
 
   - name: X-LeBench
     kind: benchmark
@@ -793,9 +806,12 @@ resources:
 
   - name: VISOR
     kind: benchmark
+    year: 2022
     status: open
     url: https://epic-kitchens.github.io/VISOR/
     derived_from: EPIC-KITCHENS
+    license: cc-by-nc-4.0
+    verified_at: "2026-06-15"
     tasks: [hand-segmentation, active-object-segmentation, relations]
 
   - name: EPIC-Sounds
@@ -1438,3 +1454,123 @@ resources:
     url: https://arxiv.org/abs/2506.14189
     scale: "New benchmark and method for detecting hand-object interactions in egocentric video"
     tasks: [hand-object, detection, interaction]
+
+  # --- Catalog expansion (2026-06-15): verified new resources ---
+
+  - name: SHOW3D
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.28760
+    paper: https://arxiv.org/abs/2603.28760
+    scale: "In-the-wild 3D hand-object interaction dataset captured with a back-mounted multi-camera rig synchronized to a worn VR headset, with multi-view 3D shape/pose annotations and text descriptions"
+    modalities: [multiview-video, 3d-hand-pose, object-pose, text]
+    tasks: [hand-object, 3d-hand-object-tracking, 3d-reconstruction]
+    raw_video_dependency: "self-captured in-the-wild video"
+    scope_note: "Body-worn ego/ego-exo in-the-wild HOI capture (Meta Reality Labs, Yale)."
+    verified_at: "2026-06-15"
+    citation_key: show3d_2026
+
+  - name: EgoTouch / TouchAnything
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://jianyi2004.github.io/TouchAnything-Website/
+    paper: https://arxiv.org/abs/2605.13083
+    scale: "EgoTouch: 302 manipulation tasks across 4,530 episodes with synchronized egocentric and dual wrist-camera video, bimanual 3D hand pose (42 joints), and dense tactile pressure maps; TouchAnything is the accompanying tactile-estimation framework"
+    modalities: [egocentric-video, wrist-camera-video, 3d-hand-pose, contact]
+    tasks: [hand-object, contact-understanding, bimanual-manipulation]
+    scope_note: "Egocentric plus wrist cameras with tactile pressure; emerging sensing."
+    verified_at: "2026-06-15"
+    citation_key: egotouch_touchanything_2026
+
+  - name: EgoEverything
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.08342
+    paper: https://arxiv.org/abs/2604.08342
+    scale: "5,000+ MCQ QA pairs over 100+ hours of egocentric video, with questions generated using human attention/gaze signals for AR long-context understanding"
+    modalities: [egocentric-video, gaze, qa]
+    tasks: [long-context, video-qa, gaze-reasoning]
+    verified_at: "2026-06-15"
+    citation_key: egoeverything_2026
+
+  - name: EgoNight
+    kind: benchmark
+    year: 2025
+    status: open
+    url: https://insait-institute.github.io/EgoNight/
+    paper: https://arxiv.org/abs/2510.06218
+    code: https://github.com/dehezhang2/EgoNight
+    scale: "Nighttime egocentric benchmark: EgoNight-VQA (3,658 QA over 90 videos, 12 QA types) plus day-night correspondence retrieval and egocentric depth estimation, with day-night aligned synthetic and real video"
+    modalities: [egocentric-video, qa, depth, synthetic-rendering]
+    tasks: [egocentric-vqa, egocentric-depth, retrieval]
+    scope_note: "Low-light / nighttime robustness benchmark (INSAIT)."
+    verified_at: "2026-06-15"
+    citation_key: egonight_2025
+
+  - name: EgoIntent
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.12147
+    paper: https://arxiv.org/abs/2603.12147
+    scale: "3,014 steps across 15 indoor/outdoor daily-life scenarios, evaluating local intent (What), global intent (Why), and next-step plan (Next), with future-frame leakage removed"
+    modalities: [egocentric-video, qa]
+    tasks: [intent, next-action, anticipation]
+    verified_at: "2026-06-15"
+    citation_key: egointent_2026
+
+  - name: EgoMAGIC
+    kind: dataset
+    year: 2026
+    status: open
+    url: https://arxiv.org/abs/2604.22036
+    paper: https://arxiv.org/abs/2604.22036
+    data: https://doi.org/10.5281/zenodo.19239154
+    scale: "3,355 egocentric field-medicine videos over 50 medical tasks from a head-mounted stereo camera with audio; 1.95M labels for 124 medical objects and an action-detection challenge"
+    modalities: [egocentric-video, stereo, audio, object-boxes]
+    tasks: [action-detection, object-detection, procedural-task-assistance]
+    raw_video_dependency: "self-captured field-medicine video"
+    verified_at: "2026-06-15"
+    citation_key: egomagic_2026
+
+  - name: Audio Hallucination in Egocentric Video
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.23860
+    paper: https://arxiv.org/abs/2604.23860
+    scale: "300 egocentric videos and 1,000 sound-focused questions probing audio hallucination in audio-visual LLMs that infer sounds from visual cues"
+    modalities: [egocentric-video, audio, qa]
+    tasks: [audio-visual-reasoning, sound-understanding, evaluation]
+    verified_at: "2026-06-15"
+    citation_key: audio_hallucination_ego_2026
+
+  - name: Ego2World
+    kind: benchmark
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.13335
+    paper: https://arxiv.org/abs/2605.13335
+    derived_from: HD-EPIC
+    scale: "Compiles egocentric cooking videos (built on HD-EPIC) into executable symbolic worlds with graph-transition rules for belief-state planning under partial observability"
+    modalities: [egocentric-video, annotations]
+    tasks: [planning, belief-reasoning, embodied-reasoning]
+    scope_note: "Egocentric-video-grounded executable simulator/benchmark, not a synthetic-only simulator."
+    verified_at: "2026-06-15"
+    citation_key: ego2world_2026
+
+  - name: EgoCrowds / CrowdEraser
+    kind: dataset
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.29036
+    paper: https://arxiv.org/abs/2603.29036
+    scale: "EgoCrowds: semi-synthetic paired crowded/empty clips from real egocentric walking-tour footage; CrowdEraser is a video-diffusion framework that removes crowds to produce humanless environment walkthroughs"
+    modalities: [egocentric-video, first-person-video]
+    tasks: [video-generation, scene-understanding, scene-reconstruction]
+    scope_note: "First-person walking-tour video editing/generation."
+    verified_at: "2026-06-15"
+    citation_key: egocrowds_crowderaser_2026

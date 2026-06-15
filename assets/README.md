@@ -31,4 +31,11 @@ Visual system (shared across all three figures):
 - Teal / amber / slate accent badges and arrow markers to show flow and grouping.
 - Short labels inside figures; full resource details stay in Markdown tables and `data/resources.yml`.
 
+### Data-driven figures
+
+- `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026`), showing the field's acceleration. Bar heights come from the `year` counts in `data/resources.yml`; the latest era uses the amber accent.
+- `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
+
+When the catalog changes materially, refresh these two figures' numbers so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry and labels).
+
 Each figure is plain, well-formed SVG with no external assets, so it stays diffable and renders identically wherever GitHub serves it.

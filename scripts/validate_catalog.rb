@@ -26,6 +26,13 @@ REQUIRED_META_KEYS = %w[title description last_major_audit scope status_legend].
 MIN_YEAR = 2000
 MAX_YEAR = Time.now.year + 1
 
+# Optional fields that, when present, must be http(s) URLs.
+URL_FIELDS = %w[paper project code data benchmark leaderboard mirror access_url license_url].freeze
+# Optional fields that, when present, must be YYYY-MM-DD dates.
+DATE_FIELDS = %w[verified_at].freeze
+DATE_RE = /\A\d{4}-\d{2}-\d{2}\z/.freeze
+TAXONOMY = File.join(ROOT, "data", "taxonomy.yml")
+
 REQUIRED_ASSETS = %w[
   assets/awesome-egocentric-atlas-cover.png
   assets/awesome-egocentric-atlas-map.svg
@@ -34,6 +41,7 @@ REQUIRED_ASSETS = %w[
 ].freeze
 
 errors = []
+warnings = []
 
 def add(errors, message)
   errors << message
@@ -110,6 +118,24 @@ resources.each do |entry|
   if entry.key?("scope") && !ALLOWED_SCOPES.include?(entry["scope"])
     add(errors, "#{name}: invalid scope #{entry['scope'].inspect} (allowed: #{ALLOWED_SCOPES.join(', ')})")
   end
+
+  # Optional link fields, when present, must be http(s) URLs.
+  URL_FIELDS.each do |field|
+    next unless entry.key?(field)
+
+    value = entry[field]
+    unless value.is_a?(String) && value.start_with?("http://", "https://")
+      add(errors, "#{name}: #{field} must be an http(s) URL, got #{value.inspect}")
+    end
+  end
+
+  # Optional date fields, when present, must be YYYY-MM-DD.
+  DATE_FIELDS.each do |field|
+    next unless entry.key?(field)
+
+    value = entry[field].to_s
+    add(errors, "#{name}: #{field} must be YYYY-MM-DD, got #{entry[field].inspect}") unless value =~ DATE_RE
+  end
 end
 
 # Resources default to egocentric scope; "adjacent" entries are related but not first-person.
@@ -169,11 +195,55 @@ if meta.is_a?(Hash) && meta["last_major_audit"]
   end
 end
 
+# --- taxonomy coverage (warning only) ---------------------------------------
+# If data/taxonomy.yml exists, flag task/modality tokens that are not yet in the
+# controlled vocabulary. This never fails the build; it just surfaces the long
+# tail so it can be consolidated (see docs/taxonomy.md).
+def known_tokens(taxonomy, group_key)
+  families = taxonomy[group_key]
+  return nil unless families.is_a?(Hash)
+
+  set = {}
+  families.each do |family, body|
+    set[family] = true
+    aliases = body.is_a?(Hash) ? body["aliases"] : nil
+    Array(aliases).each { |token| set[token] = true }
+  end
+  set
+end
+
+if File.file?(TAXONOMY)
+  taxonomy = YAML.load_file(TAXONOMY)
+  known_tasks = known_tokens(taxonomy, "task_families")
+  known_modalities = known_tokens(taxonomy, "modality_families")
+
+  if known_tasks
+    unknown = resources.flat_map { |e| Array(e["tasks"]) }.uniq.reject { |t| known_tasks[t] }.sort
+    unless unknown.empty?
+      sample = unknown.first(12).join(", ")
+      warnings << "#{unknown.length} task token(s) not in data/taxonomy.yml (e.g., #{sample}). See docs/taxonomy.md."
+    end
+  end
+
+  if known_modalities
+    unknown = resources.flat_map { |e| Array(e["modalities"]) }.uniq.reject { |m| known_modalities[m] }.sort
+    unless unknown.empty?
+      sample = unknown.first(12).join(", ")
+      warnings << "#{unknown.length} modality token(s) not in data/taxonomy.yml (e.g., #{sample}). See docs/taxonomy.md."
+    end
+  end
+end
+
 # --- report -----------------------------------------------------------------
 unless errors.empty?
   warn "Catalog validation failed with #{errors.length} error(s):"
   errors.each { |message| warn "  - #{message}" }
   exit 1
+end
+
+unless warnings.empty?
+  warn "Warnings (non-fatal):"
+  warnings.each { |message| warn "  - #{message}" }
 end
 
 kind_counts = Hash.new(0)

@@ -20,6 +20,13 @@ Update both:
 1. `README.md`
 2. `data/resources.yml`
 
+Reference docs:
+
+- [docs/maintenance.md](docs/maintenance.md) — the full add → verify → validate workflow and PR checklist.
+- [docs/resource_schema.md](docs/resource_schema.md) — every `data/resources.yml` field.
+- [docs/status_policy.md](docs/status_policy.md) — how each `status` is decided.
+- [docs/taxonomy.md](docs/taxonomy.md) — task/modality vocabulary; add new tokens to [`data/taxonomy.yml`](data/taxonomy.yml).
+
 ## Validate Before You Open a PR
 
 The catalog is machine-checked. Run the validator locally (Ruby 2.6+, no gems needed):

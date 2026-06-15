@@ -1,0 +1,220 @@
+# Controlled vocabulary for the Awesome Egocentric Atlas catalog.
+#
+# Purpose:
+#   * Give readers a stable way to filter resources (see docs/taxonomy.md).
+#   * Consolidate the many fine-grained `tasks:` / `modalities:` tokens used in
+#     data/resources.yml into a smaller set of canonical families and aliases.
+#
+# How it is used:
+#   * docs/taxonomy.md is the human-facing reference.
+#   * scripts/validate_catalog.rb loads this file and WARNS (never fails) when a
+#     resources.yml entry uses a task/modality token that is not listed here, so
+#     the long tail can be normalized over time.
+#
+# A token is "known" if it equals a family key or appears in that family's
+# `aliases:` list. Families are filtering groups, not mutually exclusive labels.
+
+version: 1
+
+statuses:
+  open: Public download, annotations, code, or application-based access is clearly documented.
+  request: Public project exists, but access needs a license, form, approval, or agreement.
+  benchmark: Mainly a benchmark, challenge, labels, or evaluation over existing video.
+  partial: Some assets are public, but full raw data, license, or longevity is unclear.
+  watch: Recent or important resource whose release state still needs verification.
+
+kinds:
+  dataset: Raw or annotated first-person capture.
+  benchmark: Evaluation suite, challenge, or labeled task over existing video.
+  model: Trained model, method, or baseline.
+  toolkit: Loader, API, SDK, or data tooling.
+  survey: Survey, position paper, or background reference.
+  challenge: Recurring workshop or challenge hub.
+  collection: Portal or hub that aggregates several resources.
+
+scopes:
+  egocentric: Human or animal first-person capture, or ego-exo where the ego view is central.
+  adjacent: Related but not first-person (robot-only, multi-view robotic, driving, general long-video).
+
+# --- task families ----------------------------------------------------------
+task_families:
+  foundation-and-representation:
+    label: Foundation data and representation learning
+    aliases: [foundation-video, embodied-ai, representation-learning, multimodal,
+      multimodal-representation, multimodal-baselines, cross-modal-fusion,
+      standardized-pretraining, depth-text-pretraining, 3d-aware-vlp,
+      video-language-pretraining, video-language-representation, sample-data,
+      task-suite, task-suite-prototyping, task-design, loader-testing, sample-evaluation,
+      cosmos, qwen3-omni, ego4d, ego4d-transfer, xperience-10m-loading]
+
+  video-language:
+    label: Video-language and captioning
+    aliases: [video-language, video-language-grounding, captioning,
+      narration-generation, retrieval, temporal-retrieval, reading, scene-text]
+
+  question-answering:
+    label: Question answering
+    aliases: [qa, vqa, video-qa, egocentric-vqa, egocentric-qa, first-person-vqa,
+      first-person-qa, personalized-qa, affordance-centric-qa, counterfactual-qa,
+      scene-graph-qa, assistive-videoqa, egomcq]
+
+  memory-and-long-context:
+    label: Memory and long-context reasoning
+    aliases: [memory, long-context, long-context-qa, episodic-memory,
+      memory-reasoning, long-range-memory, long-horizon-memory, streaming-memory,
+      entity-memory, event-memory, behavior-memory, cross-memory-reasoning,
+      multi-agent-memory, personalized-retrieval, reasoning-traces,
+      multistep-reasoning, extremely-long-video-understanding, ultra-long-video-qa,
+      long-video-qa, temporal-knowledge-graph, ego-grounding, personalized-retrieval]
+
+  reasoning-intent-planning:
+    label: Reasoning, intent, and planning
+    aliases: [intent, next-action, next-state-estimation, planning, action-planning,
+      belief-reasoning, goal-reasoning, embodied-reasoning, embodied-egocentric-video-understanding,
+      causal-reasoning, normative-action-reasoning, grounded-reasonableness, safety,
+      grounded-cot, grounded-reasoning, operation-centric-reasoning, evidence-consistency,
+      hierarchy-planning, hierarchical-activity-reasoning, temporal-reasoning,
+      spatial-reasoning, multimodal-reasoning, chain-of-tool-thought, theory-of-mind,
+      goal-reasoning, future-state-prediction, joint-predictive-agent, egocentric-video-reasoning,
+      virtual-egocentric-reasoning, tactical-reasoning, survey-prediction, forecasting,
+      temporal-consistency]
+
+  action-and-procedure:
+    label: Action and procedure understanding
+    aliases: [action, action-recognition, action-recognition-baselines, action-detection,
+      action-segmentation, action-understanding, action-prediction, activity-recognition,
+      anticipation, procedure, procedure-learning, procedural-action, key-step-localization,
+      mistake-detection, intervention-prediction, next-active-object, short-term-object-interaction-anticipation,
+      animal-activity-recognition, everyday-activity, real-world-routines, lifelogging,
+      temporal-segmentation, hand-action-recognition, ehoi, classic, compositional]
+
+  hand-object-interaction:
+    label: Hand-object interaction and contact
+    aliases: [hand-object, hand, hand-object-pose, hand-object-segmentation, hand-segmentation,
+      hand-detection, contact-understanding, open-vocabulary-hoi, interaction,
+      interaction-field-estimation, interaction-prediction, bimanual-manipulation,
+      two-hand-pose, two-hand-segmentation, hand-forecasting, active-object-detection,
+      active-object-segmentation, human-object-human-interaction, hoi, h2o]
+
+  pose-and-body:
+    label: Pose, body, and motion
+    aliases: [pose, pose-tracking, human-pose, human-motion, motion, body-pose, body-shape,
+      body-tracking, mesh-recovery, 3d-human-pose, egocentric-3d-pose, scene-aware-3d-human-pose,
+      xr-pose-estimation, two-hand-3d-pose, 3d-hand-pose, 3d-hand-trajectory-forecasting,
+      gaze-informed-motion-prediction, human-scene-interaction, motion-estimation, motion-language,
+      3d-pose]
+
+  tracking:
+    label: Tracking and re-detection
+    aliases: [tracking, object-tracking, single-object-tracking, long-term-object-tracking,
+      redetection, multi-human-tracking, referred-object-tracking, object-motion]
+
+  detection-segmentation:
+    label: Detection, segmentation, and recognition
+    aliases: [detection, object-detection, object-recognition, segmentation,
+      prompted-segmentation, instance-understanding, gesture-recognition, gesture-grounding,
+      relation-reasoning, relations]
+
+  three-d-and-scene:
+    label: 3D, 4D, and scene understanding
+    aliases: [3d, 3d-reconstruction, 3d-fields, 3d-4d-understanding, 4d-reconstruction,
+      4d-hoi, 3d-hand-object-tracking, 3d-machine-perception, 3d-action-target-prediction,
+      scene-reconstruction, scene-understanding, scene-context, neural-scene-reconstruction,
+      novel-view-synthesis, dynamic-scene-understanding, object-reconstruction,
+      digital-twin-evaluation, depth, egocentric-depth, reconstruction, egopat3d]
+
+  generation-and-world-models:
+    label: Generation and world models
+    aliases: [video-generation, world-modeling, action-conditioned-generation]
+
+  grounding-localization:
+    label: Grounding and localization
+    aliases: [temporal-grounding, visual-grounding, object-grounding, natural-language-query,
+      nlq, egonlq, ego4d-nlq, moment-query, referring-expression-comprehension, referential,
+      localization, spatial-localization, cross-view-association, egocentric-grounding]
+
+  robotics-and-vla:
+    label: Robotics, manipulation, and VLA
+    aliases: [vla, robot-learning, robot-manipulation, manipulation, dexterous-manipulation,
+      imitation-learning, cross-embodiment-transfer, human-demonstrations, human-centric-policy-learning,
+      manipulation-safety, policy-optimization, hri, data-collection]
+
+  audio-and-social:
+    label: Audio, speech, and social interaction
+    aliases: [audio-visual, audio-visual-reasoning, sound-understanding, audio-event-recognition,
+      audio-events, audio-triggered-capture, social, social-reasoning, first-person-interaction-recognition,
+      energy-efficient-smart-glasses]
+
+  assistance-and-agents:
+    label: Assistance and interactive agents
+    aliases: [assistant, interactive-assistance, task-assistance, task-understanding,
+      assistive-systems, assistive-action-suggestion, assistive-action-suggestions,
+      blind-assistance, streaming-assistant, life-assistant, memory-assistance,
+      tool-using-agents, web-agents, physical-digital-assistance, procedural-task-assistance,
+      expert-trainee-assistance, expert-feedback, instructional-dialogue, real-time-understanding]
+
+  ar-sensing-navigation:
+    label: AR, wearable sensing, and navigation
+    aliases: [ar-perception, ar-vr, wearable-sensing, wearable-interaction, gaze,
+      gaze-reasoning, navigation, trajectory, trajectory-prediction, sensor-fusion,
+      imu, eeg, calibration, internal-state-reasoning, affect, physiological-signals,
+      360-video, mps, vrs-loading, driving]
+
+  skills-and-quality:
+    label: Skill, proficiency, and quality
+    aliases: [skill-assessment, action-quality, proficiency, skilled-activity,
+      cultural-heritage, esports-perception]
+
+  evaluation-and-tooling:
+    label: Evaluation, benchmarks, and tooling
+    aliases: [benchmark, evaluation, baseline-evaluation, vlm-evaluation, reward-modeling,
+      tooling, visualization, rerun, hdf5-annotations, mocap, multi-view, cross-view,
+      domain-adaptation, domain-transfer, continual-learning, redetection, ego-exo]
+
+# --- modality families ------------------------------------------------------
+modality_families:
+  visual:
+    label: Visual streams
+    aliases: [rgb, video, egocentric-video, first-person-video, fisheye-video,
+      stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
+      third-person-video, third-person-reference, observer-view, demonstration-video,
+      animal-egocentric-video, first-person-360-video, aria-images, synthetic-egocentric,
+      synthetic-composited-masks, synthetic-rendering, synthetic-stereo]
+
+  depth:
+    label: Depth and RGB-D
+    aliases: [depth, rgbd, multiview-rgbd, stereo-depth, scene-depth]
+
+  audio-language:
+    label: Audio and language
+    aliases: [audio, speech, text, language, narrations, descriptions, dialogue,
+      language-instructions, hierarchical-language, verbal-commands, qa, location-labels]
+
+  gaze-motion:
+    label: Gaze, IMU, and motion
+    aliases: [gaze, eye-tracking, imu, motion, body-motion, human-motion, head, head-pose,
+      physiological-signals, trajectory, wrist-trajectory]
+
+  pose-mocap:
+    label: Pose and mocap
+    aliases: [2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
+      human-pose, camera-pose, camera-poses, object-pose, full-body-mocap, hand-mocap,
+      mocap, 6dof]
+
+  hand-object-geometry:
+    label: Hand-object geometry and contact
+    aliases: [hand, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
+      object-meshes, hand-meshes, mesh, articulated-objects, 3d-objects, object-motion]
+
+  scene-3d:
+    label: 3D scene and reconstruction
+    aliases: [3d, point-cloud, point-clouds, scene-point-clouds, 3d-point-clouds,
+      scene-scans, digital-twins, calibration, 3d-target-labels, dslr-images]
+
+  device-and-labels:
+    label: Device formats and labels
+    aliases: [aria, meta-aria, hololens2, quest3, vrs, mps, rlds, robot-actions,
+      robot-camera-video, wrist-camera-video, action-labels, action-primitives,
+      annotations, multimodal-annotations, segmentation, instance-labels, scene-labels,
+      poi-labels, self-annotations, timeline, tooling, surveys, hdf5-annotations,
+      synthetic-rendering]
