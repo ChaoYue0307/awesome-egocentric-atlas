@@ -1652,3 +1652,119 @@ resources:
     tasks: [3d-hand-pose, pose, hand-object]
     verified_at: "2026-06-15"
     citation_key: stablehand_2026
+
+  # --- Catalog expansion (2026-06-16): egocentric models / methods ---
+
+  - name: EgoVideo
+    kind: model
+    year: 2024
+    status: open
+    url: https://github.com/OpenGVLab/EgoVideo
+    paper: https://arxiv.org/abs/2406.18070
+    code: https://github.com/OpenGVLab/EgoVideo
+    scale: "Egocentric video foundation model with a slow-fast adaptation recipe; winner of multiple Ego4D / EPIC-KITCHENS challenge tracks (CVPR 2024 EgoVis)"
+    modalities: [egocentric-video, text]
+    tasks: [foundation-video, video-language, representation-learning]
+    verified_at: "2026-06-16"
+    citation_key: egovideo_2024
+
+  - name: EgoHOD
+    kind: model
+    year: 2025
+    status: open
+    url: https://github.com/InternRobotics/EgoHOD
+    paper: https://arxiv.org/abs/2503.00986
+    code: https://github.com/InternRobotics/EgoHOD
+    scale: "Fine-grained hand-object-dynamics pretraining (HOD pipeline) for egocentric video representation learning; SOTA on EK-100 retrieval/classification and EGTEA (ICLR 2025)"
+    modalities: [egocentric-video, hand, text]
+    tasks: [video-language-pretraining, hand-object, representation-learning]
+    verified_at: "2026-06-16"
+    citation_key: egohod_2025
+
+  - name: EgoM2P
+    kind: model
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.07886
+    paper: https://arxiv.org/abs/2506.07886
+    scale: "Egocentric multimodal, multitask pretraining framework over RGB, depth, gaze, and camera pose with a masked modeling objective"
+    modalities: [egocentric-video, depth, gaze, camera-pose]
+    tasks: [multimodal, representation-learning, standardized-pretraining]
+    verified_at: "2026-06-16"
+    citation_key: egom2p_2025
+
+  - name: AlanaVLM
+    kind: model
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2406.13807
+    paper: https://arxiv.org/abs/2406.13807
+    scale: "Multimodal embodied-AI foundation model trained for egocentric video understanding with an egocentric video instruction dataset"
+    modalities: [egocentric-video, text]
+    tasks: [video-language, embodied-ai, video-qa]
+    verified_at: "2026-06-16"
+    citation_key: alanavlm_2024
+
+  - name: Vinci
+    kind: model
+    year: 2025
+    status: open
+    url: https://github.com/OpenGVLab/vinci
+    paper: https://arxiv.org/abs/2412.21080
+    code: https://github.com/OpenGVLab/vinci
+    scale: "Real-time, always-on embodied smart assistant built on an egocentric vision-language model for portable devices, with historical-context QA, task planning, and step-by-step visual demonstrations"
+    modalities: [egocentric-video, audio, text]
+    tasks: [real-time-understanding, streaming-assistant, task-assistance]
+    verified_at: "2026-06-16"
+    citation_key: vinci_2025
+
+  - name: AMEGO
+    kind: model
+    year: 2024
+    status: open
+    url: https://gabrielegoletto.github.io/AMEGO/
+    paper: https://arxiv.org/abs/2409.10917
+    code: https://github.com/gabrielegoletto/AMEGO
+    scale: "Active-memory representation from a single long egocentric video, capturing key locations and object interactions for fast multi-query answering; introduces the Active Memories Benchmark (20K+ queries over EPIC-KITCHENS, ECCV 2024)"
+    modalities: [egocentric-video]
+    tasks: [long-context, memory, episodic-memory]
+    verified_at: "2026-06-16"
+    citation_key: amego_2024
+
+  - name: EgoInstructor
+    kind: model
+    year: 2024
+    status: open
+    url: https://jazzcharles.github.io/Egoinstructor/
+    paper: https://arxiv.org/abs/2401.00789
+    scale: "Retrieval-augmented egocentric video captioning that retrieves relevant third-person instructional clips, trained with an EgoExoNCE cross-view objective (CVPR 2024)"
+    modalities: [egocentric-video, exocentric-video, text]
+    tasks: [captioning, video-language, cross-view]
+    verified_at: "2026-06-16"
+    citation_key: egoinstructor_2024
+
+  - name: GroundNLQ
+    kind: model
+    year: 2023
+    status: open
+    url: https://github.com/houzhijian/GroundNLQ
+    paper: https://arxiv.org/abs/2306.15255
+    code: https://github.com/houzhijian/GroundNLQ
+    scale: "Two-stage pretrained multi-scale grounding model for Ego4D Natural Language Queries; champion of the CVPR 2023 Ego4D NLQ challenge"
+    modalities: [egocentric-video, text]
+    tasks: [natural-language-query, temporal-grounding, ego4d]
+    verified_at: "2026-06-16"
+    citation_key: groundnlq_2023
+
+  - name: OSGNet
+    kind: model
+    year: 2025
+    status: open
+    url: https://github.com/Yisen-Feng/OSGNet
+    paper: https://arxiv.org/abs/2505.04270
+    code: https://github.com/Yisen-Feng/OSGNet
+    scale: "Object-shot enhanced grounding network for egocentric video temporal grounding; top entry on Ego4D NLQ / Goal-Step moment queries (CVPR 2025)"
+    modalities: [egocentric-video, text]
+    tasks: [natural-language-query, temporal-grounding, object-grounding]
+    verified_at: "2026-06-16"
+    citation_key: osgnet_2025

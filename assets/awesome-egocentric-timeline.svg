@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by era</title>
-  <desc id="desc">A bar-and-trend-line chart of catalogued egocentric AI resources grouped into five eras. A rising trend line through the bar tops shows each era outgrowing the last, with 2026 already the largest despite counting only its first half (January to June).</desc>
+  <desc id="desc">A bar-and-trend-line chart of catalogued egocentric AI resources grouped into five eras. A rising trend line through the bar tops shows the field's relentless growth, and 2026's first half (January to June) already nearly matches the entire 2024 to 2025 era.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -52,48 +52,48 @@
 
   <text class="kicker" x="90" y="56">GROWTH OVER TIME</text>
   <text class="title ink" x="90" y="98">Egocentric resources by era</text>
-  <text class="subtitle" x="90" y="126">Resources with a known year. Each era outgrows the last — and 2026 already leads, counting only its first half (Jan&#8211;Jun).</text>
+  <text class="subtitle" x="90" y="126">Resources with a known year. Growth keeps accelerating — and 2026's first half (Jan&#8211;Jun) already nearly matches the whole 2024&#8211;2025 era.</text>
 
-  <!-- gridlines (count scale: y = 400 - count*4.375) -->
-  <line class="grid" x1="110" y1="356" x2="1210" y2="356"/>
-  <line class="grid" x1="110" y1="313" x2="1210" y2="313"/>
-  <line class="grid" x1="110" y1="269" x2="1210" y2="269"/>
-  <line class="grid" x1="110" y1="225" x2="1210" y2="225"/>
+  <!-- gridlines (count scale: y = 400 - count*4.2857) -->
+  <line class="grid" x1="110" y1="357" x2="1210" y2="357"/>
+  <line class="grid" x1="110" y1="314" x2="1210" y2="314"/>
+  <line class="grid" x1="110" y1="271" x2="1210" y2="271"/>
+  <line class="grid" x1="110" y1="229" x2="1210" y2="229"/>
   <text class="gridlabel" x="100" y="404" text-anchor="end">0</text>
-  <text class="gridlabel" x="100" y="360" text-anchor="end">10</text>
-  <text class="gridlabel" x="100" y="317" text-anchor="end">20</text>
-  <text class="gridlabel" x="100" y="273" text-anchor="end">30</text>
-  <text class="gridlabel" x="100" y="229" text-anchor="end">40</text>
+  <text class="gridlabel" x="100" y="361" text-anchor="end">10</text>
+  <text class="gridlabel" x="100" y="318" text-anchor="end">20</text>
+  <text class="gridlabel" x="100" y="275" text-anchor="end">30</text>
+  <text class="gridlabel" x="100" y="233" text-anchor="end">40</text>
   <line class="axis" x1="110" y1="400" x2="1210" y2="400"/>
 
   <!-- area under the trend line -->
-  <path d="M190 378 L430 339 L670 260 L910 221 L1150 190 L1150 400 L190 400 Z" fill="url(#area)"/>
+  <path d="M190 379 L430 340 L670 259 L910 190 L1150 194 L1150 400 L190 400 Z" fill="url(#area)"/>
 
   <!-- bars -->
-  <rect x="142" y="378" width="96" height="22" rx="5" fill="url(#barT)" filter="url(#shadow)"/>
-  <rect x="382" y="339" width="96" height="61" rx="6" fill="url(#barT)" filter="url(#shadow)"/>
-  <rect x="622" y="260" width="96" height="140" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
-  <rect x="862" y="221" width="96" height="179" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
-  <rect x="1102" y="190" width="96" height="210" rx="7" fill="url(#barA)" filter="url(#shadow)"/>
+  <rect x="142" y="379" width="96" height="21" rx="5" fill="url(#barT)" filter="url(#shadow)"/>
+  <rect x="382" y="340" width="96" height="60" rx="6" fill="url(#barT)" filter="url(#shadow)"/>
+  <rect x="622" y="259" width="96" height="141" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
+  <rect x="862" y="190" width="96" height="210" rx="7" fill="url(#barT)" filter="url(#shadow)"/>
+  <rect x="1102" y="194" width="96" height="206" rx="7" fill="url(#barA)" filter="url(#shadow)"/>
 
   <!-- trend line through bar tops, then dashed upward continuation -->
-  <polyline class="trend" points="190,378 430,339 670,260 910,221 1150,190"/>
-  <path class="proj" d="M1150 190 L1232 150" marker-end="url(#up)"/>
-  <text class="note" x="1212" y="138" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,379 430,340 670,259 910,190 1150,194"/>
+  <path class="proj" d="M1150 194 L1232 156" marker-end="url(#up)"/>
+  <text class="note" x="1212" y="144" text-anchor="end">still H1</text>
 
   <!-- markers + counts -->
   <g>
-    <circle cx="190" cy="378" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
-    <circle cx="430" cy="339" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
-    <circle cx="670" cy="260" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
-    <circle cx="910" cy="221" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
-    <circle cx="1150" cy="190" r="7" fill="#ef9f24" stroke="#ffffff" stroke-width="2.6"/>
+    <circle cx="190" cy="379" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
+    <circle cx="430" cy="340" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
+    <circle cx="670" cy="259" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
+    <circle cx="910" cy="190" r="6.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.6"/>
+    <circle cx="1150" cy="194" r="7" fill="#ef9f24" stroke="#ffffff" stroke-width="2.6"/>
   </g>
-  <text class="count" x="190" y="362" text-anchor="middle">5</text>
-  <text class="count" x="430" y="323" text-anchor="middle">14</text>
-  <text class="count" x="670" y="244" text-anchor="middle">32</text>
-  <text class="count" x="910" y="205" text-anchor="middle">41</text>
-  <text class="count" x="1150" y="174" text-anchor="middle">48</text>
+  <text class="count" x="190" y="363" text-anchor="middle">5</text>
+  <text class="count" x="430" y="324" text-anchor="middle">14</text>
+  <text class="count" x="670" y="243" text-anchor="middle">33</text>
+  <text class="count" x="910" y="174" text-anchor="middle">49</text>
+  <text class="count" x="1150" y="178" text-anchor="middle">48</text>
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="428" text-anchor="middle">&#8804; 2018</text>
@@ -103,13 +103,13 @@
   <text class="era" x="670" y="428" text-anchor="middle">2022&#8211;2023</text>
   <text class="anchor" x="670" y="448" text-anchor="middle">Ego-Exo4D, HOI4D</text>
   <text class="era" x="910" y="428" text-anchor="middle">2024&#8211;2025</text>
-  <text class="anchor" x="910" y="448" text-anchor="middle">EgoLife, EgoDex</text>
+  <text class="anchor" x="910" y="448" text-anchor="middle">EgoVideo, EgoDex</text>
   <text class="era" x="1150" y="428" text-anchor="middle">2026 (H1)</text>
   <text class="anchor" x="1150" y="448" text-anchor="middle">first half only &#183; EgoScale, EgoAVU</text>
 
   <!-- growth callout in the open upper-left space -->
   <g>
-    <rect class="callout" x="150" y="196" width="296" height="38" rx="19"/>
-    <text class="calloutText" x="172" y="220">&#8599;&#160; Each era outgrows the one before</text>
+    <rect class="callout" x="150" y="206" width="372" height="38" rx="19"/>
+    <text class="calloutText" x="172" y="230">&#8599;&#160; 2026's first half already &#8776; all of 2024&#8211;2025</text>
   </g>
 </svg>
