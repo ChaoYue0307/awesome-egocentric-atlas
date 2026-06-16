@@ -19,6 +19,12 @@ Color palette: white, graphite, cyan, teal, amber accents; avoid one-note purple
 Constraints: no logos, no watermarks, no readable text, no fake UI text, no brand names.
 ```
 
+## `awesome-egocentric-logo.png`
+
+Logo provenance: created with the built-in ChatGPT image tool as a square mark for Awesome Egocentric Atlas, then chroma-keyed to transparency and resized to `512 x 512` for site and README use. The original generated source is kept as `awesome-egocentric-logo-source.png`.
+
+Prompt summary: a polished circular atlas mark combining wearable first-person glasses, a map/grid, route nodes, and teal/amber research accents; no readable text, no watermark, and a flat chroma-key background for transparent export.
+
 ## SVG figures
 
 `awesome-egocentric-atlas-map.svg`, `awesome-egocentric-reader-route.svg`, and `awesome-egocentric-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
@@ -26,8 +32,8 @@ Constraints: no logos, no watermarks, no readable text, no fake UI text, no bran
 Visual system (shared across all five figures):
 
 - White-to-teal gradient backgrounds with a faint dot-grid texture and amber accents.
-- A `1280`-unit-wide viewBox at a generous scale, so the figures render large and legible at GitHub's full content width; soft drop shadows and consistent `18–22px` corner radii.
-- System font stack for GitHub readability, with a shared type scale (kicker, title, label, body, small) sized up for on-page readability.
+- A `1280`-unit-wide viewBox at a generous scale, so the figures render large and legible at GitHub's full content width; soft drop shadows and consistent rounded containers.
+- System font stack for GitHub readability, with a larger shared type scale (kicker, title, label, body, small) sized for on-page readability.
 - Teal / amber / slate accent badges and arrow markers to show flow and grouping.
 - Short labels inside figures; full resource details stay in Markdown tables and `data/resources.yml`.
 

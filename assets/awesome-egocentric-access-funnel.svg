@@ -14,11 +14,11 @@
     </filter>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 33px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .row { font: 700 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
-      .gloss { font: 500 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 38.9px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .row { font: 700 21.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
+      .gloss { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
     </style>
   </defs>
 

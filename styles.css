@@ -80,7 +80,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: min(1240px, calc(100% - 40px));
+  width: min(1360px, calc(100% - 40px));
   margin: 0 auto;
   padding: 16px 0;
   border-bottom: 1px solid rgba(204, 221, 225, 0.62);
@@ -101,21 +101,18 @@ img {
 }
 
 .brand {
-  gap: 10px;
+  gap: 12px;
   font-weight: 760;
   text-decoration: none;
   letter-spacing: 0;
 }
 
-.brand-mark {
-  width: 22px;
-  height: 22px;
-  border: 2px solid var(--teal);
-  border-radius: 50%;
-  background:
-    linear-gradient(90deg, transparent 45%, var(--teal) 45% 55%, transparent 55%),
-    linear-gradient(0deg, transparent 45%, var(--teal) 45% 55%, transparent 55%);
-  box-shadow: inset 0 0 0 5px #e7f5f5;
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 7px 12px rgba(6, 120, 130, 0.18));
 }
 
 .nav-links {
@@ -137,10 +134,10 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(400px, 0.98fr) minmax(440px, 1.02fr);
-  gap: 44px;
+  grid-template-columns: minmax(400px, 0.9fr) minmax(520px, 1.1fr);
+  gap: 52px;
   align-items: center;
-  width: min(1240px, calc(100% - 40px));
+  width: min(1360px, calc(100% - 40px));
   margin: 34px auto 42px;
   padding: 28px 0 12px;
 }
@@ -273,16 +270,18 @@ img {
 .visual-band,
 .section,
 .split-section {
-  width: min(1240px, calc(100% - 40px));
+  width: min(1320px, calc(100% - 40px));
   margin: 0 auto;
 }
 
 .visual-band {
-  padding: 6px 0 34px;
+  width: min(1440px, calc(100% - 40px));
+  padding: 10px 0 42px;
 }
 
 .visual-band img,
 .figure-stack img {
+  width: 100%;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper);
@@ -582,8 +581,8 @@ tbody tr:hover {
 
 .split-section {
   display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1.2fr);
-  gap: 34px;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(520px, 1.28fr);
+  gap: 42px;
   align-items: start;
 }
 
@@ -610,7 +609,7 @@ tbody tr:hover {
 
 .figure-stack {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 .maintenance {

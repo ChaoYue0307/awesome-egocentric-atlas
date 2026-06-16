@@ -14,15 +14,15 @@
     </filter>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 34px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .label { font: 700 22px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
-      .compare { font: 500 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
-      .anchors { font: 600 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
-      .pillText { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .06em; }
-      .legendK { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5b6b73; letter-spacing: .14em; }
-      .legendT { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 40.1px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .label { font: 700 26.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
+      .compare { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .anchors { font: 600 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .pillText { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .06em; }
+      .legendK { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5b6b73; letter-spacing: .14em; }
+      .legendT { font: 600 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
     </style>
   </defs>
 

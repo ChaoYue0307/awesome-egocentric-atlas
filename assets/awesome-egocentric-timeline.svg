@@ -23,20 +23,20 @@
     <clipPath id="c5"><rect x="1102" y="213" width="96" height="187" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 31px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 14.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .count { font: 800 19px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
-      .era { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
-      .anchor { font: 500 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .kicker { font: 700 14.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 36.6px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 17.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .count { font: 800 22.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+      .era { font: 700 16.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
+      .anchor { font: 500 14.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
       .grid { stroke: #e2ecef; stroke-width: 1.2; }
-      .gridlabel { font: 600 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #9aa7af; }
+      .gridlabel { font: 600 13.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #9aa7af; }
       .axis { stroke: #c2d2d8; stroke-width: 2; }
       .trend { stroke: #0f3b45; stroke-width: 2.6; fill: none; stroke-linejoin: round; stroke-linecap: round; }
       .proj { stroke: #ef9f24; stroke-width: 3; fill: none; stroke-dasharray: 3 7; stroke-linecap: round; }
-      .note { font: 700 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #c4801a; }
+      .note { font: 700 13.6px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #c4801a; }
       .seg { stroke: #ffffff; stroke-width: 1.4; }
-      .lg { font: 600 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .lg { font: 600 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
     </style>
   </defs>
 

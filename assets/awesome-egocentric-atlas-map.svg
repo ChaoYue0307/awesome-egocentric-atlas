@@ -19,22 +19,22 @@
     <style>
       .ink { fill: #14212b; }
       .sub { fill: #586672; }
-      .title { font: 700 38px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 17px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 44.8px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
       .panel { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.6; filter: url(#shadow); }
-      .ph { font: 700 20px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
-      .row { font: 600 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
-      .rowsub { font: 500 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .ph { font: 700 23.6px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+      .row { font: 600 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
+      .rowsub { font: 500 16.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
       .divider { stroke: #e6eef1; stroke-width: 1.4; }
       .conn { stroke: #8aa2ab; stroke-width: 2.6; fill: none; }
       .loop { stroke: #00a6b2; stroke-width: 2.6; fill: none; stroke-dasharray: 2 8; stroke-linecap: round; }
       .chip { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.4; }
-      .chiptext { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #3a4a54; }
+      .chiptext { font: 600 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #3a4a54; }
       .dotT { fill: #00a6b2; }
       .dotA { fill: #ef9f24; }
       .dotN { fill: #7c8b94; }
-      .loopText { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .12em; }
+      .loopText { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .12em; }
     </style>
   </defs>
 

@@ -18,15 +18,15 @@
     </marker>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 36px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .numText { font: 800 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
-      .label { font: 700 22px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
-      .text { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #4c5965; }
+      .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 42.5px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .numText { font: 800 21.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
+      .label { font: 700 26.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
+      .text { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #4c5965; }
       .arrow { stroke: #9bb0b8; stroke-width: 2.6; fill: none; }
       .rail { stroke: #cdd9de; stroke-width: 2.4; stroke-dasharray: 2 9; stroke-linecap: round; }
-      .foot { font: 500 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .foot { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
     </style>
   </defs>
 

@@ -5,6 +5,10 @@
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
 <p align="center">
+  <img src="assets/awesome-egocentric-logo.png" alt="Awesome Egocentric Atlas logo" width="118">
+</p>
+
+<p align="center">
   <strong>Curated egocentric AI datasets, benchmarks, models, and tools.</strong>
 </p>
 
