@@ -72,6 +72,7 @@ def normalize_resource(entry, task_lookup)
     "name" => entry["name"],
     "kind" => entry["kind"],
     "released" => entry["released"],
+    "venue" => entry["venue"],
     "year" => entry["year"],
     "status" => entry["status"],
     "scope" => entry["scope"] || "egocentric",
