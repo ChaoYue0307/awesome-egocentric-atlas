@@ -16,11 +16,11 @@
     <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
     </marker>
-    <clipPath id="c1"><rect x="142" y="357" width="96" height="43" rx="8"/></clipPath>
-    <clipPath id="c2"><rect x="382" y="332" width="96" height="68" rx="8"/></clipPath>
-    <clipPath id="c3"><rect x="622" y="231" width="96" height="169" rx="8"/></clipPath>
-    <clipPath id="c4"><rect x="862" y="170" width="96" height="230" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="195" width="96" height="205" rx="8"/></clipPath>
+    <clipPath id="c1"><rect x="142" y="361" width="96" height="39" rx="8"/></clipPath>
+    <clipPath id="c2"><rect x="382" y="339" width="96" height="61" rx="8"/></clipPath>
+    <clipPath id="c3"><rect x="622" y="248" width="96" height="152" rx="8"/></clipPath>
+    <clipPath id="c4"><rect x="862" y="190" width="96" height="210" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="213" width="96" height="187" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -56,65 +56,65 @@
     <rect x="1070" y="74" width="13" height="13" rx="3" fill="#b8c2c9"/><text class="lg" x="1089" y="85">collection</text>
   </g>
 
-  <!-- gridlines (scale y = 400 - count*3.594) -->
-  <line class="grid" x1="110" y1="328" x2="1210" y2="328"/>
-  <line class="grid" x1="110" y1="256" x2="1210" y2="256"/>
-  <line class="grid" x1="110" y1="184" x2="1210" y2="184"/>
+  <!-- gridlines (scale y = 400 - count*3.231) -->
+  <line class="grid" x1="110" y1="335" x2="1210" y2="335"/>
+  <line class="grid" x1="110" y1="271" x2="1210" y2="271"/>
+  <line class="grid" x1="110" y1="206" x2="1210" y2="206"/>
   <text class="gridlabel" x="100" y="404" text-anchor="end">0</text>
-  <text class="gridlabel" x="100" y="332" text-anchor="end">20</text>
-  <text class="gridlabel" x="100" y="260" text-anchor="end">40</text>
-  <text class="gridlabel" x="100" y="188" text-anchor="end">60</text>
+  <text class="gridlabel" x="100" y="339" text-anchor="end">20</text>
+  <text class="gridlabel" x="100" y="275" text-anchor="end">40</text>
+  <text class="gridlabel" x="100" y="210" text-anchor="end">60</text>
   <line class="axis" x1="110" y1="400" x2="1210" y2="400"/>
 
   <!-- stacked bars (bottom-up: dataset, benchmark, model, toolkit, collection) -->
   <g clip-path="url(#c1)" filter="url(#shadow)">
-    <rect class="seg" x="142" y="361" width="96" height="39" fill="#0b8f98"/>
-    <rect class="seg" x="142" y="357" width="96" height="4" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="365" width="96" height="35" fill="#0b8f98"/>
+    <rect class="seg" x="142" y="361" width="96" height="4" fill="#5b6b73"/>
   </g>
   <g clip-path="url(#c2)" filter="url(#shadow)">
-    <rect class="seg" x="382" y="353" width="96" height="47" fill="#0b8f98"/>
-    <rect class="seg" x="382" y="342" width="96" height="11" fill="#5b6b73"/>
-    <rect class="seg" x="382" y="339" width="96" height="3" fill="#ef9f24"/>
-    <rect class="seg" x="382" y="332" width="96" height="7" fill="#7a6ff0"/>
+    <rect class="seg" x="382" y="358" width="96" height="42" fill="#0b8f98"/>
+    <rect class="seg" x="382" y="348" width="96" height="10" fill="#5b6b73"/>
+    <rect class="seg" x="382" y="345" width="96" height="3" fill="#ef9f24"/>
+    <rect class="seg" x="382" y="339" width="96" height="6" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c3)" filter="url(#shadow)">
-    <rect class="seg" x="622" y="335" width="96" height="65" fill="#0b8f98"/>
-    <rect class="seg" x="622" y="296" width="96" height="39" fill="#5b6b73"/>
-    <rect class="seg" x="622" y="253" width="96" height="43" fill="#ef9f24"/>
-    <rect class="seg" x="622" y="235" width="96" height="18" fill="#7a6ff0"/>
-    <rect class="seg" x="622" y="231" width="96" height="4" fill="#b8c2c9"/>
+    <rect class="seg" x="622" y="342" width="96" height="58" fill="#0b8f98"/>
+    <rect class="seg" x="622" y="306" width="96" height="36" fill="#5b6b73"/>
+    <rect class="seg" x="622" y="268" width="96" height="38" fill="#ef9f24"/>
+    <rect class="seg" x="622" y="251" width="96" height="17" fill="#7a6ff0"/>
+    <rect class="seg" x="622" y="248" width="96" height="3" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
-    <rect class="seg" x="862" y="303" width="96" height="97" fill="#0b8f98"/>
-    <rect class="seg" x="862" y="246" width="96" height="57" fill="#5b6b73"/>
-    <rect class="seg" x="862" y="174" width="96" height="72" fill="#ef9f24"/>
-    <rect class="seg" x="862" y="170" width="96" height="4" fill="#7a6ff0"/>
+    <rect class="seg" x="862" y="310" width="96" height="90" fill="#0b8f98"/>
+    <rect class="seg" x="862" y="258" width="96" height="52" fill="#5b6b73"/>
+    <rect class="seg" x="862" y="193" width="96" height="65" fill="#ef9f24"/>
+    <rect class="seg" x="862" y="190" width="96" height="3" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c5)" filter="url(#shadow)">
-    <rect class="seg" x="1102" y="328" width="96" height="72" fill="#0b8f98"/>
-    <rect class="seg" x="1102" y="238" width="96" height="90" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="199" width="96" height="39" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="195" width="96" height="4" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="335" width="96" height="65" fill="#0b8f98"/>
+    <rect class="seg" x="1102" y="251" width="96" height="84" fill="#5b6b73"/>
+    <rect class="seg" x="1102" y="216" width="96" height="35" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="213" width="96" height="3" fill="#7a6ff0"/>
   </g>
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,357 430,332 670,231 910,170 1150,195"/>
-  <path class="proj" d="M1150 195 L1232 158" marker-end="url(#up)"/>
-  <text class="note" x="1212" y="146" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,361 430,339 670,248 910,190 1150,213"/>
+  <path class="proj" d="M1150 213 L1232 176" marker-end="url(#up)"/>
+  <text class="note" x="1212" y="164" text-anchor="end">still H1</text>
   <g>
-    <circle cx="190" cy="357" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="430" cy="332" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="670" cy="231" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="910" cy="170" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="195" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="190" cy="361" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="430" cy="339" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="670" cy="248" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="910" cy="190" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="1150" cy="213" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
   <!-- totals -->
-  <text class="count" x="190" y="348" text-anchor="middle">12</text>
-  <text class="count" x="430" y="323" text-anchor="middle">19</text>
-  <text class="count" x="670" y="222" text-anchor="middle">47</text>
-  <text class="count" x="910" y="161" text-anchor="middle">64</text>
-  <text class="count" x="1150" y="186" text-anchor="middle">57</text>
+  <text class="count" x="190" y="352" text-anchor="middle">12</text>
+  <text class="count" x="430" y="330" text-anchor="middle">19</text>
+  <text class="count" x="670" y="239" text-anchor="middle">47</text>
+  <text class="count" x="910" y="181" text-anchor="middle">65</text>
+  <text class="count" x="1150" y="204" text-anchor="middle">58</text>
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="428" text-anchor="middle">&#8804; 2018</text>

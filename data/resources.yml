@@ -89,7 +89,7 @@ resources:
   - name: HD-EPIC
     kind: dataset
     released: "2025-02"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2025
     status: open
     url: https://arxiv.org/abs/2502.04144
@@ -163,7 +163,7 @@ resources:
   - name: EgoDex
     kind: dataset
     released: "2025-05"
-    venue: "arXiv"
+    venue: "ICLR 2026"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2505.11709
@@ -265,7 +265,7 @@ resources:
   - name: HOT3D
     kind: dataset
     released: "2024-06"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2024
     status: open
     url: https://facebookresearch.github.io/hot3d/
@@ -513,7 +513,7 @@ resources:
   - name: EgoLife
     kind: dataset
     released: "2025-03"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2025
     status: partial
     url: https://arxiv.org/abs/2503.03803
@@ -2070,7 +2070,7 @@ resources:
   - name: Vinci
     kind: model
     released: "2024-12"
-    venue: "arXiv"
+    venue: "IMWUT 2025"
     year: 2025
     status: open
     url: https://github.com/OpenGVLab/vinci
@@ -2383,3 +2383,33 @@ resources:
     tasks: [embodied-ai, representation-learning, robot-learning]
     verified_at: "2026-06-16"
     citation_key: physbrain_2025
+
+  # --- Catalog expansion (2026-06-16): verified additions ---
+
+  - name: EgoCampus
+    kind: dataset
+    released: "2025-12"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.07668
+    paper: https://arxiv.org/abs/2512.07668
+    scale: "Egocentric pedestrian eye-gaze dataset and model over campus walking routes with synchronized first-person video and gaze"
+    modalities: [egocentric-video, gaze, scene-labels]
+    tasks: [gaze, navigation, trajectory-prediction]
+    verified_at: "2026-06-16"
+    citation_key: egocampus_2025
+
+  - name: Egocentric Clinical Intent
+    kind: benchmark
+    released: "2026-01"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2601.06750
+    paper: https://arxiv.org/abs/2601.06750
+    scale: "Benchmark for egocentric clinical intent understanding by medical multimodal LLMs over first-person clinical procedure video"
+    modalities: [egocentric-video, qa]
+    tasks: [intent, procedural-task-assistance, evaluation]
+    verified_at: "2026-06-16"
+    citation_key: egocentric_clinical_intent_2026

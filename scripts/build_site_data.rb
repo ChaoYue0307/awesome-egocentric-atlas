@@ -9,11 +9,16 @@
 
 require "json"
 require "yaml"
+require "csv"
 
 ROOT = File.expand_path("..", __dir__)
 CATALOG = File.join(ROOT, "data", "resources.yml")
 TAXONOMY = File.join(ROOT, "data", "taxonomy.yml")
 OUTPUT = File.join(ROOT, "site-data.json")
+CSV_OUTPUT = File.join(ROOT, "awesome-egocentric-atlas.csv")
+
+# Columns for the Hugging Face dataset viewer (one row per catalogued resource).
+CSV_COLUMNS = %w[name kind released venue status scope year url paper code license scale tasks modalities].freeze
 
 LANES = {
   "foundation-video" => {
@@ -132,20 +137,34 @@ payload = {
 
 json = JSON.pretty_generate(payload) + "\n"
 
+csv = CSV.generate do |out|
+  out << CSV_COLUMNS
+  resources.each do |entry|
+    out << CSV_COLUMNS.map do |column|
+      value = entry[column]
+      value.is_a?(Array) ? value.join("; ") : value
+    end
+  end
+end
+
 if ARGV.include?("--check")
-  unless File.file?(OUTPUT)
-    warn "Missing #{OUTPUT}"
+  stale = []
+  { OUTPUT => json, CSV_OUTPUT => csv }.each do |path, expected|
+    unless File.file?(path)
+      warn "Missing #{path}"
+      exit 1
+    end
+    stale << File.basename(path) if File.read(path, encoding: "UTF-8") != expected
+  end
+
+  unless stale.empty?
+    warn "#{stale.join(' and ')} out of date. Run: ruby scripts/build_site_data.rb"
     exit 1
   end
 
-  current = File.read(OUTPUT, encoding: "UTF-8")
-  if current != json
-    warn "site-data.json is out of date. Run: ruby scripts/build_site_data.rb"
-    exit 1
-  end
-
-  puts "Site data OK: #{egocentric_resources.length} egocentric resources"
+  puts "Site data OK: #{egocentric_resources.length} egocentric resources (#{resources.length} rows)"
 else
   File.write(OUTPUT, json)
-  puts "Wrote #{OUTPUT}"
+  File.write(CSV_OUTPUT, csv)
+  puts "Wrote #{OUTPUT} and #{CSV_OUTPUT}"
 end

@@ -15,13 +15,13 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 203,
-    "egocentric_resources": 199,
+    "total_resources": 205,
+    "egocentric_resources": 201,
     "adjacent_resources": 4,
     "kind_counts": {
-      "benchmark": 56,
+      "benchmark": 57,
       "collection": 1,
-      "dataset": 89,
+      "dataset": 90,
       "model": 44,
       "toolkit": 9
     },
@@ -30,7 +30,7 @@
       "open": 100,
       "partial": 11,
       "request": 4,
-      "watch": 77
+      "watch": 79
     }
   },
   "lanes": [
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 65
+      "count": 66
     },
     {
       "id": "robotics-vla",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 47
+      "count": 49
     }
   ],
   "resources": [
@@ -275,7 +275,7 @@
       "name": "HD-EPIC",
       "kind": "dataset",
       "released": "2025-02",
-      "venue": "arXiv",
+      "venue": "CVPR 2025",
       "year": 2025,
       "status": "open",
       "scope": "egocentric",
@@ -442,7 +442,7 @@
       "name": "EgoDex",
       "kind": "dataset",
       "released": "2025-05",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "year": 2025,
       "status": "watch",
       "scope": "egocentric",
@@ -658,7 +658,7 @@
       "name": "HOT3D",
       "kind": "dataset",
       "released": "2024-06",
-      "venue": "arXiv",
+      "venue": "CVPR 2025",
       "year": 2024,
       "status": "open",
       "scope": "egocentric",
@@ -1208,7 +1208,7 @@
       "name": "EgoLife",
       "kind": "dataset",
       "released": "2025-03",
-      "venue": "arXiv",
+      "venue": "CVPR 2025",
       "year": 2025,
       "status": "partial",
       "scope": "egocentric",
@@ -4233,7 +4233,7 @@
       "name": "Vinci",
       "kind": "model",
       "released": "2024-12",
-      "venue": "arXiv",
+      "venue": "IMWUT 2025",
       "year": 2025,
       "status": "open",
       "scope": "egocentric",
@@ -4794,6 +4794,57 @@
       "modalities": [
         "egocentric-video",
         "text"
+      ]
+    },
+    {
+      "name": "EgoCampus",
+      "kind": "dataset",
+      "released": "2025-12",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2512.07668",
+      "paper": "https://arxiv.org/abs/2512.07668",
+      "scale": "Egocentric pedestrian eye-gaze dataset and model over campus walking routes with synchronized first-person video and gaze",
+      "tasks": [
+        "gaze",
+        "navigation",
+        "trajectory-prediction"
+      ],
+      "task_families": [
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "scene-labels"
+      ]
+    },
+    {
+      "name": "Egocentric Clinical Intent",
+      "kind": "benchmark",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.06750",
+      "paper": "https://arxiv.org/abs/2601.06750",
+      "scale": "Benchmark for egocentric clinical intent understanding by medical multimodal LLMs over first-person clinical procedure video",
+      "tasks": [
+        "intent",
+        "procedural-task-assistance",
+        "evaluation"
+      ],
+      "task_families": [
+        "reasoning-intent-planning",
+        "assistance-and-agents",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "qa"
       ]
     }
   ]
