@@ -101,8 +101,8 @@
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
   <polyline class="trend" points="190,361 430,339 670,248 910,190 1150,122"/>
-  <path class="proj" d="M1150 122 L1232 122" marker-end="url(#up)"/>
-  <text class="note" x="1212" y="111" text-anchor="end">still H1</text>
+  <path class="proj" d="M1150 122 L1166 102 L1232 102" marker-end="url(#up)"/>
+  <text class="note" x="1212" y="92" text-anchor="end">still H1</text>
   <g>
     <circle cx="190" cy="361" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="339" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
