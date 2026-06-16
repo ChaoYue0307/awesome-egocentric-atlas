@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Egocentric Atlas</title>
+    <meta name="description" content="Curated egocentric AI datasets, benchmarks, models, and tools for computer vision, robotics, embodied AI, AR/VR, and video-language research.">
+    <meta property="og:title" content="Awesome Egocentric Atlas">
+    <meta property="og:description" content="A curated, machine-checked atlas of egocentric AI resources.">
+    <meta property="og:image" content="https://chaoyue0307.github.io/awesome-egocentric-atlas/assets/awesome-egocentric-atlas-cover.png">
+    <meta name="theme-color" content="#067882">
+    <link rel="icon" href="assets/awesome-egocentric-atlas-map.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Awesome Egocentric Atlas home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Awesome Egocentric Atlas</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#catalog">Catalog</a>
+        <a href="#lanes">Lanes</a>
+        <a href="#access">Access</a>
+        <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas#readme">README</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <h1>Awesome Egocentric Atlas</h1>
+          <p class="lead">Curated egocentric AI datasets, benchmarks, models, and tools for first-person video, embodied AI, robotics, AR/VR, and long-context reasoning.</p>
+          <div class="actions" aria-label="Project links">
+            <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas">GitHub</a>
+            <a class="button" href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas">Hugging Face</a>
+            <a class="button" href="#catalog">Browse Catalog</a>
+          </div>
+          <dl class="stat-strip" aria-label="Atlas summary">
+            <div>
+              <dt data-stat="egocentric_resources">199</dt>
+              <dd>egocentric resources</dd>
+            </div>
+            <div>
+              <dt data-kind="dataset">89</dt>
+              <dd>datasets</dd>
+            </div>
+            <div>
+              <dt data-kind="benchmark">56</dt>
+              <dd>benchmarks</dd>
+            </div>
+            <div>
+              <dt data-kind="model">44</dt>
+              <dd>models</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-media" aria-label="Atlas visual preview">
+          <img src="assets/awesome-egocentric-atlas-cover.png" alt="Technical illustration of a first-person egocentric AI atlas">
+          <div class="media-caption">
+            <span>Machine-checked catalog</span>
+            <span data-updated>Updated 2026-06-15</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-band" aria-label="Atlas overview">
+        <img src="assets/awesome-egocentric-atlas-map.svg" alt="Awesome Egocentric Atlas system map">
+      </section>
+
+      <section class="section" id="catalog">
+        <div class="section-heading">
+          <div>
+            <h2>Catalog Explorer</h2>
+            <p>Search the YAML-backed atlas by name, task, modality, status, kind, or research lane.</p>
+          </div>
+          <a class="text-link" href="data/resources.yml">Open YAML</a>
+        </div>
+
+        <form class="filters" id="filters" aria-label="Catalog filters">
+          <label>
+            <span>Search</span>
+            <input id="search" type="search" placeholder="Ego4D, VLA, hand pose, memory...">
+          </label>
+          <label>
+            <span>Kind</span>
+            <select id="kind">
+              <option value="">All kinds</option>
+            </select>
+          </label>
+          <label>
+            <span>Status</span>
+            <select id="status">
+              <option value="">All statuses</option>
+            </select>
+          </label>
+          <label>
+            <span>Lane</span>
+            <select id="lane">
+              <option value="">All lanes</option>
+            </select>
+          </label>
+        </form>
+
+        <div class="table-shell">
+          <div class="table-toolbar">
+            <strong id="result-count">Loading catalog...</strong>
+            <span>Showing up to 80 matches</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Resource</th>
+                  <th>Kind</th>
+                  <th>Released</th>
+                  <th>Status</th>
+                  <th>Best Signal</th>
+                </tr>
+              </thead>
+              <tbody id="catalog-rows"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lanes" id="lanes">
+        <div class="section-heading">
+          <div>
+            <h2>Research Lanes</h2>
+            <p>Six entry points cover the major ways researchers use first-person data.</p>
+          </div>
+          <a class="text-link" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/taxonomy.md">Taxonomy</a>
+        </div>
+        <div class="lane-grid" id="lane-grid"></div>
+      </section>
+
+      <section class="split-section" id="access">
+        <div>
+          <h2>Access Reality</h2>
+          <p>The atlas separates usable public resources from request-gated, benchmark-only, partial, and watchlist entries before you plan experiments.</p>
+          <div class="status-list" id="status-list"></div>
+        </div>
+        <div class="figure-stack">
+          <img src="assets/awesome-egocentric-access-funnel.svg" alt="Egocentric resources by access state">
+          <img src="assets/awesome-egocentric-timeline.svg" alt="Egocentric resources by era and type">
+        </div>
+      </section>
+
+      <section class="section maintenance">
+        <div class="section-heading">
+          <div>
+            <h2>Maintain the Atlas</h2>
+            <p>Contributions go through a simple add, verify, validate workflow so README tables, YAML data, and the site stay aligned.</p>
+          </div>
+          <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/issues/new/choose">Add Resource</a>
+        </div>
+        <div class="maintenance-grid">
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/CONTRIBUTING.md">Contributing guide</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/resource_schema.md">Resource schema</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/status_policy.md">Status policy</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/maintenance.md">Maintenance workflow</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Awesome Egocentric Atlas</span>
+      <span>MIT licensed, citation-ready, and synced from the canonical catalog.</span>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

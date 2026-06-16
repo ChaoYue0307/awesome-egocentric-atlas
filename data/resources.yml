@@ -2034,3 +2034,149 @@ resources:
     tasks: [spatial-reasoning, navigation, video-qa]
     verified_at: "2026-06-16"
     citation_key: sanpo_d_2026
+
+  # --- Catalog expansion (2026-06-16): exhaustive scan additions ---
+
+  - name: EgoSurgery
+    kind: dataset
+    year: 2024
+    released: "2024"
+    status: open
+    url: https://github.com/Fujiry0/EgoSurgery
+    paper: https://arxiv.org/abs/2503.18755
+    code: https://github.com/Fujiry0/EgoSurgery
+    scale: "Egocentric open-surgery video dataset family: EgoSurgery-Phase for surgical phase recognition and EgoSurgery-HTS for pixel-wise hand-tool segmentation of 14 surgical tools (MICCAI 2024)"
+    modalities: [egocentric-video, segmentation, object-boxes]
+    tasks: [action-recognition, hand-object-segmentation, procedural-task-assistance]
+    verified_at: "2026-06-16"
+    citation_key: egosurgery_2024
+
+  - name: EgoEMS
+    kind: dataset
+    year: 2025
+    released: "2025-11"
+    status: watch
+    url: https://arxiv.org/abs/2511.09894
+    paper: https://arxiv.org/abs/2511.09894
+    scale: "High-fidelity multimodal egocentric dataset for cognitive assistance in emergency medical services, capturing time-critical team actions in high-stakes scenarios"
+    modalities: [egocentric-video, audio, multimodal-annotations]
+    tasks: [procedural-task-assistance, action-recognition, real-time-understanding]
+    verified_at: "2026-06-16"
+    citation_key: egoems_2025
+
+  - name: LEMMA
+    kind: dataset
+    year: 2020
+    released: "2020-07"
+    status: open
+    url: https://arxiv.org/abs/2007.15781
+    paper: https://arxiv.org/abs/2007.15781
+    scale: "Multi-view multi-agent multi-task daily-activity dataset across 14 kitchens and living rooms, densely annotated with atomic actions and human-object interactions (ECCV 2020)"
+    modalities: [egocentric-video, third-person-video, multimodal-annotations]
+    tasks: [compositional, action-recognition, anticipation]
+    verified_at: "2026-06-16"
+    citation_key: lemma_2020
+
+  - name: EgoMe
+    kind: dataset
+    year: 2025
+    released: "2025-01"
+    status: watch
+    url: https://arxiv.org/abs/2501.19061
+    paper: https://arxiv.org/abs/2501.19061
+    scale: "Real-world dataset and challenge for following a demonstrator via egocentric view, pairing exocentric demonstrations with egocentric imitation across everyday tasks"
+    modalities: [egocentric-video, exocentric-video]
+    tasks: [imitation-learning, cross-view, action-understanding]
+    verified_at: "2026-06-16"
+    citation_key: egome_2025
+
+  - name: ENIGMA-360
+    kind: dataset
+    year: 2026
+    released: "2026-03"
+    status: watch
+    url: https://arxiv.org/abs/2603.09741
+    paper: https://arxiv.org/abs/2603.09741
+    scale: "Ego-exo dataset for human behavior understanding in industrial scenarios with 360-degree exocentric and egocentric capture"
+    modalities: [egocentric-video, exocentric-video, first-person-360-video]
+    tasks: [action-understanding, ego-exo, procedure]
+    verified_at: "2026-06-16"
+    citation_key: enigma_360_2026
+
+  - name: EgoIllusion
+    kind: benchmark
+    year: 2025
+    released: "2025-08"
+    status: watch
+    url: https://arxiv.org/abs/2508.12687
+    paper: https://arxiv.org/abs/2508.12687
+    scale: "Benchmark for hallucinations in egocentric video understanding, probing where multimodal models fabricate objects, actions, and sounds"
+    modalities: [egocentric-video, qa]
+    tasks: [evaluation, multimodal-reasoning, audio-visual-reasoning]
+    verified_at: "2026-06-16"
+    citation_key: egoillusion_2025
+
+  - name: EgoExo-Con
+    kind: benchmark
+    year: 2025
+    released: "2025-10"
+    status: watch
+    url: https://arxiv.org/abs/2510.26113
+    paper: https://arxiv.org/abs/2510.26113
+    scale: "Synchronized ego-exo video pairs with human-refined queries for view-invariant temporal verification and grounding; introduces the View-GRPO training framework"
+    modalities: [egocentric-video, exocentric-video, qa]
+    tasks: [cross-view, temporal-grounding, evaluation]
+    verified_at: "2026-06-16"
+    citation_key: egoexo_con_2025
+
+  - name: WearVQA
+    kind: benchmark
+    year: 2025
+    released: "2025-11"
+    status: watch
+    url: https://arxiv.org/abs/2511.22154
+    paper: https://arxiv.org/abs/2511.22154
+    scale: "First wearable-device VQA benchmark for smart glasses: 2,520 image-question-answer triplets across 7 image domains and 10 cognitive task types under occluded, low-light, and blurry egocentric capture (NeurIPS 2025)"
+    modalities: [egocentric-video, qa]
+    tasks: [vqa, evaluation, wearable-sensing]
+    verified_at: "2026-06-16"
+    citation_key: wearvqa_2025
+
+  - name: WearVox
+    kind: benchmark
+    year: 2026
+    released: "2026-01"
+    status: watch
+    url: https://arxiv.org/abs/2601.02391
+    paper: https://arxiv.org/abs/2601.02391
+    scale: "Egocentric multichannel voice-assistant benchmark for wearables, evaluating spoken interaction grounded in first-person audio-visual context"
+    modalities: [egocentric-video, audio, speech]
+    tasks: [audio-visual-reasoning, streaming-assistant, evaluation]
+    verified_at: "2026-06-16"
+    citation_key: wearvox_2026
+
+  - name: SuperGlasses
+    kind: benchmark
+    year: 2026
+    released: "2026-02"
+    status: watch
+    url: https://arxiv.org/abs/2602.22683
+    paper: https://arxiv.org/abs/2602.22683
+    scale: "Benchmark evaluating vision-language models as intelligent agents for AI smart glasses across realistic wearable assistant tasks"
+    modalities: [egocentric-video, qa]
+    tasks: [tool-using-agents, evaluation, task-assistance]
+    verified_at: "2026-06-16"
+    citation_key: superglasses_2026
+
+  - name: PhysBrain
+    kind: model
+    year: 2025
+    released: "2025-12"
+    status: watch
+    url: https://arxiv.org/abs/2512.16793
+    paper: https://arxiv.org/abs/2512.16793
+    scale: "Uses human egocentric data as a bridge to adapt vision-language models toward physical intelligence and embodied control"
+    modalities: [egocentric-video, text]
+    tasks: [embodied-ai, representation-learning, robot-learning]
+    verified_at: "2026-06-16"
+    citation_key: physbrain_2025

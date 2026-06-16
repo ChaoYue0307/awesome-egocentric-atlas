@@ -29,3 +29,6 @@ jobs:
 
       - name: Validate catalog and README links
         run: ruby scripts/validate_catalog.rb
+
+      - name: Validate generated site data
+        run: ruby scripts/build_site_data.rb --check

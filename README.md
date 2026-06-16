@@ -11,7 +11,9 @@
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-188-0097A7"></a>
+  <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
+  <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-199-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -52,6 +54,8 @@
 
 Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, release date (year-month, from the first public/arXiv posting where known), scale/signal, best use, and public status. For filtering by task, modality, status, or date, use the catalog in [`data/resources.yml`](data/resources.yml), where every entry carries a `released` field; label meanings and filter groups are explained in [docs/taxonomy.md](docs/taxonomy.md). Task-oriented [research recipes](#recipes-and-reference) walk you from goal to experiment.
 
+The interactive project site is published with GitHub Pages at <https://chaoyue0307.github.io/awesome-egocentric-atlas/>. The repository can also be mirrored to Hugging Face at <https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas> when the `HF_TOKEN` repository secret is configured.
+
 <p align="center">
   <img src="assets/awesome-egocentric-reader-route.svg" alt="Awesome Egocentric Atlas reader route" width="100%">
 </p>
@@ -60,7 +64,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 
 | Signal | What it means for readers |
 |---|---|
-| 188 egocentric resources | 84 datasets, 51 benchmarks, 43 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
+| 199 egocentric resources | 89 datasets, 56 benchmarks, 44 models, and 9 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
@@ -282,6 +286,9 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 | [EgoIntent](https://arxiv.org/abs/2603.12147) | 2026-03 | 3,014 steps over 15 daily-life scenarios for local intent (What), global intent (Why), and next-step plan (Next) | Step-level intent and anticipatory assistance | watch |
 | [EgoTL](https://arxiv.org/abs/2604.09535) | 2026-04 | Think-aloud (say-before-act) egocentric capture with word-level spoken reasoning and metric-scale spatial annotations over 100+ household tasks | Long-horizon reasoning for VLMs and world models | watch |
 | [SuperMemory-VQA](https://arxiv.org/abs/2606.00825) | 2026-06 | 52.9 hours of AI-glasses activity with RGB, audio, gaze, IMU, SLAM, and 4,853 human-verified QA pairs across object/location/intent/scene memory | Long-horizon memory for AR assistants | watch |
+| [WearVQA](https://arxiv.org/abs/2511.22154) | 2025-11 | 2,520 image-question-answer triplets across 7 domains and 10 task types under occluded/low-light/blurry wearable capture (NeurIPS 2025) | Smart-glasses VQA under real wearable conditions | watch |
+| [WearVox](https://arxiv.org/abs/2601.02391) | 2026-01 | Egocentric multichannel voice-assistant benchmark for spoken interaction grounded in first-person audio-visual context | Wearable voice-assistant evaluation | watch |
+| [SuperGlasses](https://arxiv.org/abs/2602.22683) | 2026-02 | Evaluates VLMs as intelligent agents for AI smart glasses across realistic wearable assistant tasks | Smart-glasses agent evaluation | watch |
 
 ### Action, Procedure, Lifelogging, and Classic FPV
 
@@ -312,6 +319,11 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 | [Home Action Genome / HOMAGE](https://homeactiongenome.org/) | 2021-05 | 27 participants, synchronized ego and third-person views, 12 sensor types, hierarchical activity/action labels | Compositional multi-view home activity understanding | open |
 | [EgoExo-Fitness](https://github.com/iSEE-Laboratory/EgoExo-Fitness) | 2024-06 | Synchronized ego and exo fitness videos with keypoint verification, execution comments, and quality scores (ECCV 2024) | Ego-exo full-body action quality and skill assessment | open |
 | [WEAR](https://mariusbock.github.io/wear/) | 2023-04 | 22 participants, 18 outdoor workouts, synchronized egocentric video and 3D acceleration across 11 locations (IMWUT 2024) | Vision-plus-inertial outdoor activity recognition | open |
+| [EgoSurgery](https://github.com/Fujiry0/EgoSurgery) | 2024 | EgoSurgery-Phase (surgical phase recognition) and EgoSurgery-HTS (pixel-wise hand-tool segmentation of 14 tools) from egocentric open-surgery video (MICCAI 2024) | Surgical phase, hand, and tool understanding | open |
+| [EgoEMS](https://arxiv.org/abs/2511.09894) | 2025-11 | High-fidelity multimodal egocentric data for cognitive assistance in emergency medical services, capturing time-critical team actions | Real-time medical procedural assistance | watch |
+| [LEMMA](https://arxiv.org/abs/2007.15781) | 2020-07 | Multi-view multi-agent multi-task daily activities across 14 kitchens/living rooms with dense atomic-action and HOI labels (ECCV 2020) | Multi-agent compositional activity understanding | open |
+| [EgoMe](https://arxiv.org/abs/2501.19061) | 2025-01 | Real-world following-me dataset pairing exocentric demonstrations with egocentric imitation across everyday tasks | Egocentric imitation and cross-view following | watch |
+| [ENIGMA-360](https://arxiv.org/abs/2603.09741) | 2026-03 | Ego-exo dataset for human behavior understanding in industrial scenarios with 360-degree and egocentric capture | Industrial ego-exo behavior understanding | watch |
 | [EgoMAGIC](https://arxiv.org/abs/2604.22036) | 2026-04 | 3,355 egocentric field-medicine videos over 50 tasks from a head-mounted stereo camera with audio; 1.95M labels, 124 objects, action-detection challenge (Zenodo) | Field-medicine perception, action and object detection | open |
 
 ### Project Aria, AR/VR, and 3D Scene Resources
@@ -357,6 +369,8 @@ Evaluation suites and label sets built on top of the raw datasets above.
 | [Ego2World](https://arxiv.org/abs/2605.13335) | 2026-05 | HD-EPIC | Executable symbolic worlds from egocentric cooking video for belief-state planning | watch |
 | [EgoAVU](https://github.com/facebookresearch/EgoAVU) | 2026-02 | Egocentric audio-visual narrations | EgoAVU-Instruct (3M QAs) and EgoAVU-Bench (3K QAs) for audio-visual understanding (CVPR 2026 highlight) | open |
 | [Sanpo-D](https://arxiv.org/abs/2601.18100) | 2026-01 | Sanpo egocentric navigation video | Spatial-conditioned reasoning over long first-person videos with fine-grained spatial re-annotation | watch |
+| [EgoIllusion](https://arxiv.org/abs/2508.12687) | 2025-08 | Egocentric video | Hallucination benchmark probing fabricated objects, actions, and sounds in multimodal models | watch |
+| [EgoExo-Con](https://arxiv.org/abs/2510.26113) | 2025-10 | Synchronized ego-exo videos | View-invariant temporal verification and grounding; introduces View-GRPO | watch |
 
 ## Models, Tools, and Baselines
 
@@ -371,6 +385,7 @@ Open models, baselines, and loaders you can build on directly.
 | EgoM2P | 2025-06 | Egocentric multimodal multitask pretraining over RGB, depth, gaze, and camera pose | [Paper](https://arxiv.org/abs/2506.07886) |
 | AlanaVLM | 2024-06 | Embodied-AI foundation model for egocentric video understanding | [Paper](https://arxiv.org/abs/2406.13807) |
 | Vinci | 2024-12 | Real-time, always-on egocentric assistant with historical-context QA, planning, and visual demos | [GitHub](https://github.com/OpenGVLab/vinci) |
+| PhysBrain | 2025-12 | Uses human egocentric data to bridge vision-language models toward physical intelligence and embodied control | [Paper](https://arxiv.org/abs/2512.16793) |
 
 ### Video-Language and Long-Video Models
 
