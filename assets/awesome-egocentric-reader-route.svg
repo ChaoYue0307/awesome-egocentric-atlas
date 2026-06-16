@@ -22,7 +22,7 @@
       .title { font: 700 42.5px system-ui, -apple-system, "Segoe UI", sans-serif; }
       .subtitle { font: 500 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
       .numText { font: 800 21.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
-      .label { font: 700 26.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
+      .label { font: 700 25.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
       .text { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #4c5965; }
       .arrow { stroke: #9bb0b8; stroke-width: 2.6; fill: none; }
       .rail { stroke: #cdd9de; stroke-width: 2.4; stroke-dasharray: 2 9; stroke-linecap: round; }
@@ -41,51 +41,51 @@
 
   <!-- 1 -->
   <g transform="translate(70 200)">
-    <rect x="0" y="0" width="200" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#0b8f98"/>
     <text class="numText" x="42" y="53" text-anchor="middle">1</text>
     <text class="label" x="28" y="108">Choose goal</text>
     <text class="text" x="28" y="138">assistant, robot,</text>
     <text class="text" x="28" y="162">benchmark, or 3D</text>
   </g>
-  <line class="arrow" x1="278" y1="290" x2="300" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="286" y1="290" x2="294" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 2 -->
-  <g transform="translate(305 200)">
-    <rect x="0" y="0" width="200" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(300 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#5b6b73"/>
     <text class="numText" x="42" y="53" text-anchor="middle">2</text>
     <text class="label" x="28" y="108">Pick lane</text>
     <text class="text" x="28" y="138">foundation, action,</text>
     <text class="text" x="28" y="162">memory, VLA, AR</text>
   </g>
-  <line class="arrow" x1="513" y1="290" x2="535" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="516" y1="290" x2="524" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 3 -->
-  <g transform="translate(540 200)">
-    <rect x="0" y="0" width="200" height="180" rx="22" fill="#fff4d9" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(530 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#fff4d9" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#ef9f24"/>
     <text class="numText" x="42" y="53" text-anchor="middle">3</text>
     <text class="label" x="28" y="108">Check access</text>
     <text class="text" x="28" y="138">open, request,</text>
     <text class="text" x="28" y="162">partial, or watch</text>
   </g>
-  <line class="arrow" x1="748" y1="290" x2="770" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="746" y1="290" x2="754" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 4 -->
-  <g transform="translate(775 200)">
-    <rect x="0" y="0" width="200" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(760 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#5b6b73"/>
     <text class="numText" x="42" y="53" text-anchor="middle">4</text>
     <text class="label" x="28" y="108">Filter catalog</text>
     <text class="text" x="28" y="138">use YAML tasks,</text>
     <text class="text" x="28" y="162">modalities, years</text>
   </g>
-  <line class="arrow" x1="983" y1="290" x2="1005" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="976" y1="290" x2="984" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 5 -->
-  <g transform="translate(1010 200)">
-    <rect x="0" y="0" width="200" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(990 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#0b8f98"/>
     <text class="numText" x="42" y="53" text-anchor="middle">5</text>
     <text class="label" x="28" y="108">Use it</text>

@@ -40,7 +40,7 @@
     <text class="pillText" x="60" y="46" text-anchor="middle">VIDEO</text>
     <text class="label" x="28" y="100">Foundation Ego Video</text>
     <text class="compare" x="28" y="132">compare · scale, license, modalities</text>
-    <text class="anchors" x="28" y="166">Xperience-10M, Ego4D, Ego-Exo4D</text>
+    <text class="anchors" x="28" y="166">Xperience-10M, Ego4D</text>
   </g>
 
   <g transform="translate(460 170)">
@@ -49,7 +49,7 @@
     <text class="pillText" x="65" y="46" text-anchor="middle">ACTION</text>
     <text class="label" x="28" y="100">Procedure &amp; Anticipation</text>
     <text class="compare" x="28" y="132">compare · granularity, mistakes, gaze</text>
-    <text class="anchors" x="28" y="166">EPIC-KITCHENS, Assembly101, HoloAssist</text>
+    <text class="anchors" x="28" y="166">EPIC-KITCHENS, Assembly101</text>
   </g>
 
   <g transform="translate(850 170)">
@@ -58,7 +58,7 @@
     <text class="pillText" x="51" y="46" text-anchor="middle">3D</text>
     <text class="label" x="28" y="100">Hands, Objects &amp; Pose</text>
     <text class="compare" x="28" y="132">compare · contact, pose, meshes, scene</text>
-    <text class="anchors" x="28" y="166">HOT3D, HOI4D, H2O, ARCTIC</text>
+    <text class="anchors" x="28" y="166">HOT3D, HOI4D, H2O</text>
   </g>
 
   <!-- Row 2 -->
@@ -67,8 +67,8 @@
     <rect x="28" y="28" width="80" height="28" rx="14" fill="#5b6b73"/>
     <text class="pillText" x="68" y="46" text-anchor="middle">MEMORY</text>
     <text class="label" x="28" y="100">Long-Context Reasoning</text>
-    <text class="compare" x="28" y="132">compare · clip length, grounding, QA type</text>
-    <text class="anchors" x="28" y="166">EgoSchema, EgoLife, TeleEgo, Ego-R1</text>
+    <text class="compare" x="28" y="132">compare · long clips, grounding, QA</text>
+    <text class="anchors" x="28" y="166">EgoSchema, EgoLife, Ego-R1</text>
   </g>
 
   <g transform="translate(460 400)">
@@ -76,8 +76,8 @@
     <rect x="28" y="28" width="66" height="28" rx="14" fill="#0b8f98"/>
     <text class="pillText" x="61" y="46" text-anchor="middle">ROBOT</text>
     <text class="label" x="28" y="100">Robotics &amp; VLA</text>
-    <text class="compare" x="28" y="132">compare · action labels, transfer, diversity</text>
-    <text class="anchors" x="28" y="166">EgoDex, EgoVerse, OpenEgo, EgoVLA</text>
+    <text class="compare" x="28" y="132">compare · transfer, actions, diversity</text>
+    <text class="anchors" x="28" y="166">EgoDex, OpenEgo, EgoVLA</text>
   </g>
 
   <g transform="translate(850 400)">
@@ -86,7 +86,7 @@
     <text class="pillText" x="66" y="46" text-anchor="middle">SENSOR</text>
     <text class="label" x="28" y="100">AR &amp; Wearable Sensing</text>
     <text class="compare" x="28" y="132">compare · gaze, IMU, SLAM, audio</text>
-    <text class="anchors" x="28" y="166">Aria, ADT, AEA, Nymeria, EasyCom</text>
+    <text class="anchors" x="28" y="166">Aria, ADT, AEA, Nymeria</text>
   </g>
 
   <!-- access-state legend -->
@@ -101,5 +101,5 @@
   <text class="legendT" x="594" y="668">partial</text>
   <circle cx="684" cy="663" r="6" fill="#c2ccd2"/>
   <text class="legendT" x="698" y="668">watch</text>
-  <text class="compare" x="800" y="668">Start from mature open/request lanes; track watch entries for frontier releases.</text>
+  <text class="compare" x="800" y="668">Start with mature lanes; track watch entries.</text>
 </svg>
