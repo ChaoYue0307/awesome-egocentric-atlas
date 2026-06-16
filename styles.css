@@ -134,10 +134,10 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(400px, 0.9fr) minmax(520px, 1.1fr);
-  gap: 52px;
+  grid-template-columns: minmax(360px, 0.8fr) minmax(500px, 1.2fr);
+  gap: 48px;
   align-items: center;
-  width: min(1360px, calc(100% - 40px));
+  width: min(1680px, calc(100vw - 24px));
   margin: 34px auto 42px;
   padding: 28px 0 12px;
 }
@@ -270,12 +270,12 @@ img {
 .visual-band,
 .section,
 .split-section {
-  width: min(1320px, calc(100% - 40px));
+  width: min(1400px, calc(100vw - 24px));
   margin: 0 auto;
 }
 
 .visual-band {
-  width: min(1440px, calc(100% - 40px));
+  width: min(1840px, calc(100vw - 24px));
   padding: 10px 0 42px;
 }
 
@@ -581,9 +581,10 @@ tbody tr:hover {
 
 .split-section {
   display: grid;
-  grid-template-columns: minmax(280px, 0.72fr) minmax(520px, 1.28fr);
-  gap: 42px;
+  grid-template-columns: minmax(230px, 0.48fr) minmax(680px, 1.52fr);
+  gap: 36px;
   align-items: start;
+  width: min(1680px, calc(100vw - 24px));
 }
 
 .status-list {
@@ -655,7 +656,7 @@ tbody tr:hover {
   font-weight: 820;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1040px) {
   .site-header {
     position: static;
     flex-direction: column;
