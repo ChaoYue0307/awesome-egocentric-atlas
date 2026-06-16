@@ -114,9 +114,9 @@
   <!-- totals -->
   <text class="count" x="190" y="352" text-anchor="middle">12</text>
   <text class="count" x="430" y="330" text-anchor="middle">19</text>
-  <text class="count" x="670" y="239" text-anchor="middle">47</text>
-  <text class="count" x="910" y="181" text-anchor="middle">65</text>
-  <text class="count" x="1150" y="151" text-anchor="middle">86</text>
+  <text class="count" x="670" y="239" text-anchor="middle">48</text>
+  <text class="count" x="910" y="181" text-anchor="middle">71</text>
+  <text class="count" x="1150" y="151" text-anchor="middle">87</text>
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="428" text-anchor="middle">&#8804; 2018</text>

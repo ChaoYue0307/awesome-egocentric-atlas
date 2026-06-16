@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
-  last_major_audit: "2026-06-16"
+  last_major_audit: "2026-06-17"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -195,6 +195,131 @@ resources:
     scale: "1,107 hours across six public datasets, 290 manipulation tasks"
     modalities: [egocentric-video, hand-pose, action-primitives]
     tasks: [dexterous-manipulation, standardized-pretraining, vla]
+
+  - name: Dobb-E / HoNY
+    kind: dataset
+    released: "2023-11"
+    venue: "arXiv"
+    year: 2023
+    status: partial
+    url: https://dobb-e.com/
+    paper: https://arxiv.org/abs/2311.16098
+    code: https://github.com/notmahi/dobb-e
+    scale: "Homes of New York dataset: 13 hours, 22 homes, 216 environments, 5,620 trajectories, 1.5M RGB-D frames collected with an iPhone-based Stick"
+    modalities: [rgb, depth, robot-actions, wrist-camera-video]
+    tasks: [robot-learning, imitation-learning, manipulation, data-collection]
+    verified_at: "2026-06-17"
+    release_note: "Public dataset, code, model, and hardware pages exist; dataset terms should be rechecked before benchmark use."
+    citation_key: dobbe_hony_2023
+
+  - name: Universal Manipulation Interface / UMI
+    kind: toolkit
+    released: "2024-02"
+    venue: "RSS 2024"
+    year: 2024
+    status: open
+    url: https://umi-gripper.github.io/
+    paper: https://arxiv.org/abs/2402.10329
+    code: https://github.com/real-stanford/universal_manipulation_interface
+    scale: "Hand-held GoPro gripper interface and policy stack for in-the-wild robot teaching, including example and cup-arrangement data workflows"
+    modalities: [wrist-camera-video, imu, robot-actions]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, bimanual-manipulation, data-collection]
+    license: MIT
+    license_url: https://github.com/real-stanford/universal_manipulation_interface/blob/main/LICENSE
+    verified_at: "2026-06-17"
+    citation_key: umi_2024
+
+  - name: FastUMI
+    kind: dataset
+    released: "2024-09"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2409.19499
+    paper: https://arxiv.org/abs/2409.19499
+    scale: "UMI redesign with a reported 10,000+ real-world demonstration trajectories across 22 everyday manipulation tasks"
+    modalities: [wrist-camera-video, robot-actions]
+    tasks: [robot-learning, imitation-learning, manipulation, data-collection]
+    verified_at: "2026-06-17"
+    release_note: "Paper reports an open-sourced dataset; verify stable repository, download path, and license."
+    citation_key: fastumi_2024
+
+  - name: FastUMI-100K
+    kind: dataset
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: open
+    url: https://huggingface.co/datasets/IPEC-COMMUNITY/FastUMI_100k_lerobot
+    paper: https://arxiv.org/abs/2510.08022
+    code: https://github.com/MrKeee/FastUMI-100K
+    scale: "100K+ UMI-style demonstration trajectories across 54 household manipulation tasks, standardized in LeRobot v2.1 with multi-view wrist-mounted fisheye images"
+    modalities: [wrist-camera-video, robot-actions, language-instructions]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, bimanual-manipulation, data-collection]
+    license: apache-2.0
+    license_url: https://github.com/MrKeee/FastUMI-100K/blob/main/LICENSE
+    verified_at: "2026-06-17"
+    citation_key: fastumi_100k_2025
+
+  - name: MV-UMI
+    kind: toolkit
+    released: "2025-09"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2509.18757
+    paper: https://arxiv.org/abs/2509.18757
+    scale: "Multi-view Universal Manipulation Interface adding third-person context to the egocentric wrist camera, evaluated across three manipulation tasks"
+    modalities: [wrist-camera-video, third-person-video, robot-actions]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, manipulation, data-collection]
+    verified_at: "2026-06-17"
+    release_note: "arXiv paper found; verify public code, data, and license before treating as a reusable package."
+    citation_key: mv_umi_2025
+
+  - name: UMIGen
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.09302
+    paper: https://arxiv.org/abs/2511.09302
+    scale: "Cloud-UMI handheld collection and visibility-aware point-cloud generation for egocentric 3D observations and cross-embodiment imitation learning"
+    modalities: [wrist-camera-video, point-clouds, robot-actions]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, 3d-reconstruction, data-collection]
+    verified_at: "2026-06-17"
+    release_note: "arXiv paper found; verify public Cloud-UMI code, generated data, and license."
+    citation_key: umigen_2025
+
+  - name: Hoi!
+    kind: dataset
+    released: "2025-12"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.04884
+    paper: https://arxiv.org/abs/2512.04884
+    scale: "3,048 force-grounded articulated-manipulation sequences over 381 objects and 38 environments, spanning human hand, wrist camera, UMI gripper, and Hoi gripper embodiments"
+    modalities: [wrist-camera-video, robot-actions, contact, articulated-objects]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, contact-understanding, hand-object]
+    verified_at: "2026-06-17"
+    release_note: "arXiv paper found; verify stable dataset download path and license."
+    citation_key: hoi_force_grounded_2025
+
+  - name: YUBI
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10244
+    paper: https://arxiv.org/abs/2606.10244
+    scale: "UMI-based bimanual dexterous manipulation stack with a reported 8,434 hours, 1.20M episodes, and 119 tasks"
+    modalities: [wrist-camera-video, robot-actions, 6dof]
+    tasks: [robot-learning, imitation-learning, cross-embodiment-transfer, bimanual-manipulation, dexterous-manipulation]
+    verified_at: "2026-06-17"
+    release_note: "Paper reports release of hardware, software, and dataset; verify stable public repository and license."
+    citation_key: yubi_2026
 
   - name: Open X-Embodiment / RT-X
     kind: dataset
