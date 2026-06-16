@@ -45,6 +45,14 @@ jobs:
         if: steps.token.outputs.available == 'true'
         run: python -m pip install --upgrade "huggingface_hub[cli]"
 
+      - name: Build Hugging Face dataset card
+        if: steps.token.outputs.available == 'true'
+        run: |
+          # The dataset-card YAML metadata lives only on Hugging Face; the GitHub
+          # README stays clean. Prepend the header to the README for the upload.
+          cat huggingface/dataset_card_header.txt README.md > README.hf.md
+          mv README.hf.md README.md
+
       - name: Create or update Hugging Face repo
         if: steps.token.outputs.available == 'true'
         env:
@@ -57,4 +65,5 @@ jobs:
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude ".DS_Store" \
-            --exclude "__pycache__/*"
+            --exclude "__pycache__/*" \
+            --exclude "huggingface/*"

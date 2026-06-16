@@ -1,28 +1,3 @@
----
-license: mit
-language:
-  - en
-pretty_name: Awesome Egocentric Atlas
-size_categories:
-  - "n<1K"
-tags:
-  - egocentric-vision
-  - first-person-video
-  - embodied-ai
-  - robot-learning
-  - video-language
-  - vision-language-action
-  - ar-vr
-  - hand-object-interaction
-  - dataset-catalog
-  - benchmark-catalog
-  - awesome-list
-configs:
-  - config_name: catalog
-    data_files: awesome-egocentric-atlas.csv
-    default: true
----
-
 <p align="center">
   <img src="assets/awesome-egocentric-atlas-cover.png" alt="Awesome Egocentric Atlas cover" width="100%">
 </p>
