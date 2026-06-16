@@ -2,21 +2,21 @@
 
 ## `awesome-egocentric-atlas-cover.png`
 
-Cover image provenance: created with the built-in ChatGPT image tool for Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools.
+Cover image provenance: created with the built-in ChatGPT image tool for Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools. The current cover is a refined replacement generated on 2026-06-17 for the README first figure, GitHub Pages hero image, and Open Graph preview. It uses a physically correct wearer POV: the smart glasses / wearable camera face outward into the scene.
 
 Prompt:
 
 ```text
 Use case: infographic-diagram
-Asset type: GitHub README cover image
-Brief: polished wide hero illustration for "Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools."
-Scene/backdrop: clean light technical workspace with a subtle world-map grid and dataset-network lines.
-Subject: first-person / wearable-camera perspective shown through transparent AR glasses; visible hands interacting with everyday objects; nearby visual motifs for robotics manipulation, video-language reasoning, memory QA, hand-object tracking, and ego-exo multi-view capture.
-Style/medium: modern editorial technical illustration, crisp semi-flat 3D look, high detail but uncluttered.
-Composition/framing: wide 16:9 banner, central AR-glasses / first-person viewpoint, balanced negative space at top for Markdown heading overlay if needed.
-Lighting/mood: bright, precise, research-grade, calm and premium.
-Color palette: white, graphite, cyan, teal, amber accents; avoid one-note purple/blue dominance.
-Constraints: no logos, no watermarks, no readable text, no fake UI text, no brand names.
+Asset type: wide 16:9 repository cover image for Awesome Egocentric Atlas
+Primary request: create a corrected first-person egocentric hero illustration. The viewer is wearing the smart glasses / wearable camera and looking outward into the world. The glasses must face outside, away from the wearer, not toward the viewer and not held in the hands.
+Scene/backdrop: a bright technical research workspace / everyday environment seen from the wearer's point of view. Foreground hands near the bottom interact with everyday objects on a desk. Beyond the hands, clean AR-style panels float in the environment representing first-person video, hand-object interaction, robot manipulation, AR/VR sensing, long-context memory, audio waveforms, and video-language reasoning.
+Subject: true wearer POV through smart glasses, with only subtle inner lens edges or a faint HUD-like rim near the image periphery. No full glasses object in the center. No glasses held by hands. Add a subtle atlas globe / map grid and graceful connecting arcs in the world ahead.
+Style/medium: high-end editorial 3D illustration with crisp scientific visualization; polished, purposeful, and elegant.
+Composition/framing: wide 16:9 landscape, central outward-looking first-person viewpoint, important content inside central 80%, generous margins, clean hero crop. Panels should be large, visual, and uncluttered.
+Lighting/mood: luminous, optimistic, precise, scholarly; soft studio light, clean depth, no dark stock-photo atmosphere.
+Color palette: balanced teal, warm amber, slate graphite, white, and restrained violet accents, matching a modern research tool.
+Constraints: physically correct egocentric POV; wearable glasses/camera faces outward; no glasses facing the viewer; no full glasses floating in the middle; no readable text, no pseudo-text, no letters, no numbers, no tiny labels, no menu text, no watermark, no logos, no faces, no brand marks, no cluttered micro-details, no malformed hands.
 ```
 
 ## `awesome-egocentric-logo.png`
