@@ -43,7 +43,10 @@
 
   <text class="kicker" x="70" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
   <text class="title ink" x="70" y="104">Awesome Egocentric Atlas</text>
-  <text class="subtitle sub" x="70" y="136">Curated egocentric AI datasets, benchmarks, models, and tools</text>
+  <text class="subtitle sub" x="70" y="136">
+    <tspan x="70" y="136">Just launched: curated first-person AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>
+    <tspan x="70" y="162">world models, WMA, memory, AR/VR, and hand-object interaction.</tspan>
+  </text>
 
   <!-- stat chips -->
   <g>

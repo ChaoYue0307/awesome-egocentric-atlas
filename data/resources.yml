@@ -1,6 +1,6 @@
 meta:
   title: Awesome Egocentric Atlas
-  description: "Awesome Egocentric Atlas: curated egocentric AI datasets, benchmarks, models, and tools"
+  description: "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
   last_major_audit: "2026-06-17"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:

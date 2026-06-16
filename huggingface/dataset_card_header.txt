@@ -12,6 +12,10 @@ tags:
   - robot-learning
   - video-language
   - vision-language-action
+  - vla
+  - world-models
+  - wma
+  - memory
   - ar-vr
   - hand-object-interaction
   - dataset-catalog
@@ -22,4 +26,3 @@ configs:
     data_files: awesome-egocentric-atlas.csv
     default: true
 ---
-
