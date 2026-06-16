@@ -1,0 +1,32 @@
+# README labels that intentionally differ from canonical data/resources.yml names.
+# The validator treats these aliases as documented README/catalog matches.
+aliases:
+  World In Your Hands:
+    - World in Your Hands / WiYH
+  AoE:
+    - "AoE: Always-on Egocentric"
+  H2O:
+    - "H2O: Two Hands and Objects"
+  FPHA:
+    - FPHA / First-Person Hand Action
+  GTEA / GTEA Gaze / EGTEA Gaze+:
+    - GTEA
+    - GTEA Gaze / EGTEA Gaze+
+  Aria Digital Twin:
+    - Aria Digital Twin / ADT
+  Aria Everyday Activities:
+    - Aria Everyday Activities / AEA
+  Digital Twin Catalog:
+    - Digital Twin Catalog / DTC
+  EgoClip:
+    - EgoClip / EgoMCQ
+  EgoNCE++:
+    - EgoHOIBench / EgoNCE++
+  Plan Watch Recover / EgoProactive:
+    - Plan, Watch, Recover / EgoProactive
+  EgoVLP:
+    - EgoVLP / EgoNCE
+  EgoLife:
+    - EgoLife / EgoButler / EgoGPT / EgoRAG
+  Seeing Across Views (MV-RoboBench):
+    - Seeing Across Views / MV-RoboBench

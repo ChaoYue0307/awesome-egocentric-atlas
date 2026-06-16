@@ -45,13 +45,15 @@ jobs:
         if: steps.token.outputs.available == 'true'
         run: python -m pip install --upgrade "huggingface_hub[cli]"
 
-      - name: Build Hugging Face dataset card
+      - name: Set up Ruby
         if: steps.token.outputs.available == 'true'
-        run: |
-          # The dataset-card YAML metadata lives only on Hugging Face; the GitHub
-          # README stays clean. Prepend the header to the README for the upload.
-          cat huggingface/dataset_card_header.txt README.md > README.hf.md
-          mv README.hf.md README.md
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Build Hugging Face package
+        if: steps.token.outputs.available == 'true'
+        run: ruby scripts/build_hf_package.rb hf-upload
 
       - name: Create or update Hugging Face repo
         if: steps.token.outputs.available == 'true'
@@ -59,11 +61,10 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           hf repos create "$HF_REPO_ID" --type "$HF_REPO_TYPE" --exist-ok
-          hf upload "$HF_REPO_ID" . \
+          hf upload "$HF_REPO_ID" hf-upload . \
             --type "$HF_REPO_TYPE" \
             --commit-message "Sync from GitHub ${GITHUB_SHA}" \
-            --exclude ".git/*" \
-            --exclude ".github/*" \
+            --delete ".github/**" \
+            --delete "huggingface/**" \
             --exclude ".DS_Store" \
-            --exclude "__pycache__/*" \
-            --exclude "huggingface/*"
+            --exclude "__pycache__/*"

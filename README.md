@@ -311,12 +311,10 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 | [EGO-CH](https://arxiv.org/abs/2002.00899) | 2020-02 | arXiv | 27+ hours, 70 subjects, two cultural sites, 26 environments, 200+ points of interest | Cultural heritage visitor behavior, localization, retrieval, preference prediction | partial |
 | [EgoProceL](https://sid2697.github.io/egoprocel/) | 2022-07 | arXiv | 62 hours, 130 subjects, 16 procedural tasks | Key-step localization and procedure learning from ego videos | open |
 | [EgoExoLearn](https://github.com/OpenGVLab/EgoExoLearn) | 2024-03 | CVPR 2024 | 120 hours of egocentric plus demonstration videos with gaze and annotations | Bridging asynchronous ego and exo procedural activity | open |
-| EPIC-Tent | 2019 | ICCV 2019 | Tent assembly with dual head-mounted cameras, action/error/gaze/self-rating annotations | Error-aware procedural learning | partial |
 | [KrishnaCam / OAK](https://oakdata.github.io/) | 2021-08 | arXiv | Long-running Google Glass daily-life stream; OAK adds 17.5 hours of object annotations | Continual object detection, summarization, personal visual memory | partial |
 | [Visual Experience Dataset / VEDB](http://tamaraberg.com/visualexperience/) | 2023 | project page | 240+ hours egocentric video with gaze/head tracking in classic literature | Lifelogging, attention modeling, visual experience statistics | partial |
 | [UT Ego](http://vision.cs.utexas.edu/projects/egocentric/) | 2012 | project page | Long daily egocentric videos in classic summarization work | Temporal segmentation and summarization | partial |
 | [HUJI EgoSeg](https://www.vision.huji.ac.il/egoseg/) | 2014 | project page | Long egocentric videos for temporal segmentation | Egocentric event segmentation | partial |
-| VINST | 2011 | — | Commute-oriented egocentric video in legacy literature | Daily commute summarization and segmentation | partial |
 | [JPL First-Person Interaction](https://ieeexplore.ieee.org/document/6909626) | 2013 | IEEE | First-person videos of people interacting with a humanoid observer | Human interaction recognition from first person | partial |
 | [DogCentric](https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/) | 2014 | project page | Dog-mounted first-person activity videos | Animal egocentric activity recognition | open |
 | [EgoK360](https://egok360.github.io/) | 2020-10 | arXiv | First-person 360-degree activity videos | 360-degree egocentric activity recognition | partial |

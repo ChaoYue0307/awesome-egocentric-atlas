@@ -10,10 +10,14 @@
 #   * The status legend in the catalog matches the allowed statuses.
 #   * Every local link/asset referenced in README.md exists on disk.
 #   * The README "Updated" date and the resources badge stay in sync with the catalog.
+#   * README resource table names resolve to data/resources.yml names, with aliases documented.
+#   * Catalog hygiene warnings surface stale verification and incomplete access metadata.
 #
 # Usage: ruby scripts/validate_catalog.rb
 
+require "date"
 require "yaml"
+require_relative "lib/catalog_artifacts"
 
 ROOT = File.expand_path("..", __dir__)
 CATALOG = File.join(ROOT, "data", "resources.yml")
@@ -45,6 +49,17 @@ warnings = []
 
 def add(errors, message)
   errors << message
+end
+
+def sample_names(entries, limit = 8)
+  entries.map { |entry| entry["name"] }.compact.first(limit).join(", ")
+end
+
+def add_warning(warnings, entries, message)
+  return if entries.empty?
+
+  suffix = entries.length > 8 ? ", ..." : ""
+  warnings << "#{entries.length} #{message} (e.g., #{sample_names(entries)}#{suffix})"
 end
 
 data = YAML.load_file(CATALOG)
@@ -147,6 +162,38 @@ egocentric = resources.reject { |entry| entry["scope"] == "adjacent" }
 adjacent = resources.select { |entry| entry["scope"] == "adjacent" }
 egocentric_count = egocentric.length
 
+# --- catalog hygiene warnings ----------------------------------------------
+today = Date.today
+stale_cutoff = today - 90
+
+missing_verified = egocentric.reject { |entry| entry.key?("verified_at") && !entry["verified_at"].to_s.empty? }
+add_warning(warnings, missing_verified, "egocentric resource(s) missing verified_at")
+
+missing_release_note = egocentric.select do |entry|
+  %w[watch partial].include?(entry["status"]) && (!entry.key?("release_note") || entry["release_note"].to_s.strip.empty?)
+end
+add_warning(warnings, missing_release_note, "watch/partial resource(s) missing release_note")
+
+open_datasets_missing_license = egocentric.select do |entry|
+  entry["kind"] == "dataset" &&
+    entry["status"] == "open" &&
+    (!entry.key?("license") || entry["license"].to_s.strip.empty? ||
+      !entry.key?("license_url") || entry["license_url"].to_s.strip.empty?)
+end
+add_warning(warnings, open_datasets_missing_license, "open dataset(s) missing license or license_url")
+
+stale_verified = egocentric.select do |entry|
+  next false unless %w[open request partial].include?(entry["status"])
+  next false unless entry.key?("verified_at")
+
+  begin
+    Date.parse(entry["verified_at"].to_s) < stale_cutoff
+  rescue Date::Error
+    false
+  end
+end
+add_warning(warnings, stale_verified, "open/request/partial resource(s) verified more than 90 days ago")
+
 # --- README local links and assets -----------------------------------------
 readme = File.read(README, encoding: "UTF-8")
 markdown_links = readme.scan(/\]\(([^)]+)\)/).flatten
@@ -197,6 +244,20 @@ if meta.is_a?(Hash) && meta["last_major_audit"]
   else
     add(errors, "README is missing the **Updated:** date line")
   end
+end
+
+coverage = CatalogArtifacts.readme_resource_consistency
+unless coverage["readme_missing_in_yaml"].empty?
+  add(errors, "README resource labels missing from data/resources.yml: #{coverage['readme_missing_in_yaml'].join(', ')}")
+end
+
+unless coverage["yaml_missing_in_readme"].empty?
+  add(errors, "catalog resources missing from expected README tables or data/readme_aliases.yml exceptions: #{coverage['yaml_missing_in_readme'].join(', ')}")
+end
+
+unknown_alias_targets = CatalogArtifacts.readme_aliases.keys - names
+unless unknown_alias_targets.empty?
+  add(errors, "data/readme_aliases.yml references unknown catalog resource(s): #{unknown_alias_targets.join(', ')}")
 end
 
 # --- taxonomy coverage (warning only) ---------------------------------------

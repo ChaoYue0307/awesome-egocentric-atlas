@@ -33,9 +33,11 @@ The catalog is machine-checked. Run the validator locally (Ruby 2.6+, no gems ne
 
 ```bash
 ruby scripts/validate_catalog.rb
+ruby scripts/build_artifacts.rb --check
+ruby scripts/build_hf_package.rb --check
 ```
 
-It checks the catalog shape, allowed `kind` and `status` values, that every README local link and asset exists, and that the resources count badge and the `Updated` date stay in sync with `data/resources.yml`. The same check runs automatically in CI on every push and pull request, so a green check means your entry is structurally consistent.
+These checks validate the catalog shape, allowed `kind` and `status` values, README local links/assets, README/catalog table coverage, generated CSV/JSON/SVG/README snippets, and the Hugging Face upload package. The same checks run automatically in CI on every push and pull request, so a green check means your entry is structurally consistent.
 
 ## Inclusion Policy
 
