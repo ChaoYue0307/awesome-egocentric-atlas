@@ -39,9 +39,16 @@ TAXONOMY = File.join(ROOT, "data", "taxonomy.yml")
 
 REQUIRED_ASSETS = %w[
   assets/awesome-egocentric-atlas-cover.png
+  assets/awesome-egocentric-atlas-map.png
+  assets/awesome-egocentric-reader-route.png
+  assets/awesome-egocentric-timeline.png
+  assets/awesome-egocentric-task-matrix.png
+  assets/awesome-egocentric-access-funnel.png
   assets/awesome-egocentric-atlas-map.svg
   assets/awesome-egocentric-reader-route.svg
+  assets/awesome-egocentric-timeline.svg
   assets/awesome-egocentric-task-matrix.svg
+  assets/awesome-egocentric-access-funnel.svg
 ].freeze
 
 errors = []

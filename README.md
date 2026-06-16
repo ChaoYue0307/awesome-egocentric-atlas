@@ -30,7 +30,7 @@
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
-  <img src="assets/awesome-egocentric-atlas-map.svg" alt="Awesome Egocentric Atlas system map" width="100%">
+  <img src="assets/awesome-egocentric-atlas-map.png" alt="Awesome Egocentric Atlas system map" width="100%">
 </p>
 
 ## Contents
@@ -61,7 +61,7 @@ Use the first two tables to orient yourself, then jump into the detailed atlas s
 The interactive project site is published with GitHub Pages at <https://chaoyue0307.github.io/awesome-egocentric-atlas/>. The repository can also be mirrored to Hugging Face at <https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas> when the `HF_TOKEN` repository secret is configured.
 
 <p align="center">
-  <img src="assets/awesome-egocentric-reader-route.svg" alt="Awesome Egocentric Atlas reader route" width="100%">
+  <img src="assets/awesome-egocentric-reader-route.png" alt="Awesome Egocentric Atlas reader route" width="100%">
 </p>
 
 ## At a Glance
@@ -75,7 +75,7 @@ The interactive project site is published with GitHub Pages at <https://chaoyue0
 | Reader-first tables | Each entry is short enough to scan, then links out to the official page, paper, code, or dataset portal. |
 
 <p align="center">
-  <img src="assets/awesome-egocentric-timeline.svg" alt="Egocentric resources by era" width="100%">
+  <img src="assets/awesome-egocentric-timeline.png" alt="Egocentric resources by era" width="100%">
 </p>
 
 ## Start Here
@@ -91,7 +91,7 @@ The interactive project site is published with GitHub Pages at <https://chaoyue0
 ## Landscape Snapshot
 
 <p align="center">
-  <img src="assets/awesome-egocentric-task-matrix.svg" alt="Egocentric AI task matrix" width="100%">
+  <img src="assets/awesome-egocentric-task-matrix.png" alt="Egocentric AI task matrix" width="100%">
 </p>
 
 | Lane | What to compare | Canonical anchors |
@@ -126,7 +126,7 @@ The interactive project site is published with GitHub Pages at <https://chaoyue0
 For how each status is decided, see [docs/status_policy.md](docs/status_policy.md).
 
 <p align="center">
-  <img src="assets/awesome-egocentric-access-funnel.svg" alt="Egocentric resources by access state" width="100%">
+  <img src="assets/awesome-egocentric-access-funnel.png" alt="Egocentric resources by access state" width="100%">
 </p>
 
 ## Fast Task Map

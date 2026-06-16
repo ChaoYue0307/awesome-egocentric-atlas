@@ -25,9 +25,19 @@ Logo provenance: created with the built-in ChatGPT image tool as a square mark f
 
 Prompt summary: a polished circular atlas mark combining wearable first-person glasses, a map/grid, route nodes, and teal/amber research accents; no readable text, no watermark, and a flat chroma-key background for transparent export.
 
-## SVG figures
+## SVG figure sources and PNG exports
 
 `awesome-egocentric-atlas-map.svg`, `awesome-egocentric-reader-route.svg`, and `awesome-egocentric-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
+
+The README and GitHub Pages site embed high-resolution PNG exports of all five SVG figures so downstream renderers show the same text layout everywhere:
+
+- `awesome-egocentric-atlas-map.png` — `3840 x 2190`
+- `awesome-egocentric-reader-route.png` — `3840 x 1380`
+- `awesome-egocentric-timeline.png` — `3840 x 1560`
+- `awesome-egocentric-task-matrix.png` — `3840 x 2220`
+- `awesome-egocentric-access-funnel.png` — `3840 x 1560`
+
+The SVG files remain the editable source of truth; regenerate the PNG exports after changing any SVG figure.
 
 Visual system (shared across all five figures):
 
@@ -44,4 +54,4 @@ Visual system (shared across all five figures):
 
 When the catalog changes materially, refresh these two figures' numbers so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry and labels).
 
-Each figure is plain, well-formed SVG with no external assets, so it stays diffable and renders identically wherever GitHub serves it.
+Each SVG figure is plain, well-formed SVG with no external assets, so it stays diffable. The matching PNG files are fixed high-resolution exports for README, Pages, and Hugging Face display.
