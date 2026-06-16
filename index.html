@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#catalog">Skip to catalog</a>
     <header class="site-header">
       <a class="brand" href="./" aria-label="Awesome Egocentric Atlas home">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -32,28 +33,37 @@
           <h1>Awesome Egocentric Atlas</h1>
           <p class="lead">Curated egocentric AI datasets, benchmarks, models, and tools for first-person video, embodied AI, robotics, AR/VR, and long-context reasoning.</p>
           <div class="actions" aria-label="Project links">
-            <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas">GitHub</a>
-            <a class="button" href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas">Hugging Face</a>
+            <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas">GitHub Repo</a>
+            <a class="button" href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas">HF Dataset Mirror</a>
             <a class="button" href="#catalog">Browse Catalog</a>
           </div>
           <dl class="stat-strip" aria-label="Atlas summary">
             <div>
-              <dt data-stat="egocentric_resources">199</dt>
+              <dt data-stat="egocentric_resources">201</dt>
               <dd>egocentric resources</dd>
             </div>
             <div>
-              <dt data-kind="dataset">89</dt>
+              <dt data-kind="dataset">90</dt>
               <dd>datasets</dd>
             </div>
             <div>
-              <dt data-kind="benchmark">56</dt>
+              <dt data-kind="benchmark">57</dt>
               <dd>benchmarks</dd>
             </div>
             <div>
               <dt data-kind="model">44</dt>
               <dd>models</dd>
             </div>
+            <div>
+              <dt data-kind="toolkit">9</dt>
+              <dd>toolkits</dd>
+            </div>
           </dl>
+          <div class="hero-proof" aria-label="Publication signals">
+            <span>Canonical YAML catalog</span>
+            <span>GitHub Pages + HF mirror</span>
+            <span>MIT licensed and citation-ready</span>
+          </div>
         </div>
         <div class="hero-media" aria-label="Atlas visual preview">
           <img src="assets/awesome-egocentric-atlas-cover.png" alt="Technical illustration of a first-person egocentric AI atlas">
@@ -100,12 +110,15 @@
               <option value="">All lanes</option>
             </select>
           </label>
+          <button class="button filter-reset" type="button" id="clear-filters">Reset</button>
         </form>
+
+        <div class="catalog-summary" id="catalog-summary" aria-label="Catalog data summary"></div>
 
         <div class="table-shell">
           <div class="table-toolbar">
             <strong id="result-count">Loading catalog...</strong>
-            <span>Showing up to 80 matches</span>
+            <span id="result-note">Showing newest matching resources first</span>
           </div>
           <div class="table-wrap">
             <table>
@@ -120,6 +133,10 @@
               </thead>
               <tbody id="catalog-rows"></tbody>
             </table>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            <strong>No resources match those filters.</strong>
+            <span>Try a broader search, remove a lane, or reset the filters.</span>
           </div>
         </div>
       </section>
