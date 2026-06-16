@@ -20,6 +20,7 @@ enforces the required fields and the format of the optional ones it understands.
 | Field | Type | Notes |
 |---|---|---|
 | `year` | integer | Release/publication year (2000–next year). |
+| `released` | `YYYY` or `YYYY-MM` | First public/arXiv release date; the exact month is taken from the arXiv id where available, otherwise the year. Shown as the README "Released" column. |
 | `scope` | enum | `egocentric` (default if absent) or `adjacent`. |
 | `scale` | string | Scale/signal summary. Use numbers from the official source; do not inflate. |
 | `modalities` | list of strings | Reuse modality tokens from [taxonomy.md](taxonomy.md). |

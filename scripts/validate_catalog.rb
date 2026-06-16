@@ -119,6 +119,10 @@ resources.each do |entry|
     add(errors, "#{name}: invalid scope #{entry['scope'].inspect} (allowed: #{ALLOWED_SCOPES.join(', ')})")
   end
 
+  if entry.key?("released") && entry["released"].to_s !~ /\A\d{4}(-(0[1-9]|1[0-2]))?\z/
+    add(errors, "#{name}: released must be YYYY or YYYY-MM, got #{entry['released'].inspect}")
+  end
+
   # Optional link fields, when present, must be http(s) URLs.
   URL_FIELDS.each do |field|
     next unless entry.key?(field)
