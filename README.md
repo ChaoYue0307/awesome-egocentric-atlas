@@ -12,6 +12,22 @@
   <strong>A curated map of first-person AI — datasets, benchmarks, models, and tools.</strong>
 </p>
 
+<!-- LANG-BAR:START -->
+<p align="center">
+  <a href="README.md"><b>English</b></a> ·
+  <a href="README.zh.md">中文</a> ·
+  <a href="README.es.md">Español</a> ·
+  <a href="README.fr.md">Français</a> ·
+  <a href="README.de.md">Deutsch</a> ·
+  <a href="README.ja.md">日本語</a> ·
+  <a href="README.ko.md">한국어</a> ·
+  <a href="README.pt.md">Português</a> ·
+  <a href="CONTRIBUTING.md">Help translate</a> ·
+  <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/">Landing page</a> ·
+  <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas">Hugging Face mirror</a>
+</p>
+<!-- LANG-BAR:END -->
+
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://awesome.re/badge-flat2.svg"></a>
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>

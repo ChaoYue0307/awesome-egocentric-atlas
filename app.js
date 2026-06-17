@@ -212,6 +212,12 @@ const I18N = {
 };
 
 function getLang() {
+  const fromUrl = new URLSearchParams(location.search).get("lang")
+    || (location.hash.match(/[#&]lang=(\w+)/) || [])[1];
+  if (fromUrl && I18N[fromUrl]) {
+    localStorage.setItem("aea-lang", fromUrl);
+    return fromUrl;
+  }
   const stored = localStorage.getItem("aea-lang");
   if (stored && I18N[stored]) return stored;
   const nav = (navigator.language || "en").slice(0, 2).toLowerCase();
