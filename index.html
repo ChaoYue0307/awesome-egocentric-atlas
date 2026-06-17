@@ -4,27 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Awesome Egocentric Atlas</title>
-    <meta name="description" content="Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.">
+    <meta name="description" content="A curated map of first-person AI: datasets, benchmarks, models, and tools for egocentric vision, embodied AI, robotics, video-language, long-context memory, AR/VR, and hand-object interaction.">
     <meta property="og:title" content="Awesome Egocentric Atlas">
-    <meta property="og:description" content="Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.">
+    <meta property="og:description" content="A curated map of first-person AI: datasets, benchmarks, models, and tools for egocentric vision, embodied AI, robotics, video-language, memory, AR/VR, and hand-object interaction.">
     <meta property="og:image" content="https://chaoyue0307.github.io/awesome-egocentric-atlas/assets/awesome-egocentric-atlas-cover.png">
     <meta name="theme-color" content="#067882">
     <link rel="icon" href="assets/awesome-egocentric-logo.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/awesome-egocentric-logo.png">
     <link rel="stylesheet" href="./styles.css">
+    <style>
+      .site-footer { display: flex; flex-direction: column; gap: 0.85rem; text-align: center; align-items: center; }
+      .lang-bar { font-size: 0.85rem; line-height: 2; color: #64748b; }
+      .lang-bar a { color: #2563eb; text-decoration: none; }
+      .lang-bar a:hover { text-decoration: underline; }
+      .lang-bar a.active { font-weight: 700; color: #0f3b45; text-decoration: underline; }
+      .footer-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: center; align-items: center; }
+    </style>
   </head>
   <body>
-    <a class="skip-link" href="#catalog">Skip to catalog</a>
+    <a class="skip-link" href="#catalog" data-i18n="skip">Skip to catalog</a>
     <header class="site-header">
       <a class="brand" href="./" aria-label="Awesome Egocentric Atlas home">
         <img class="brand-logo" src="assets/awesome-egocentric-logo.png" alt="" aria-hidden="true">
         <span>Awesome Egocentric Atlas</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#catalog">Catalog</a>
-        <a href="#lanes">Lanes</a>
-        <a href="#access">Access</a>
-        <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas#readme">README</a>
+        <a href="#catalog" data-i18n="nav.catalog">Catalog</a>
+        <a href="#lanes" data-i18n="nav.lanes">Lanes</a>
+        <a href="#access" data-i18n="nav.access">Access</a>
+        <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas#readme" data-i18n="nav.readme">README</a>
       </nav>
     </header>
 
@@ -32,44 +40,44 @@
       <section class="hero" id="top">
         <div class="hero-copy">
           <h1>Awesome Egocentric Atlas</h1>
-          <p class="lead">Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.</p>
+          <p class="lead" data-i18n="hero.lead">A curated map of first-person AI — the datasets, benchmarks, models, and tools behind egocentric vision, embodied AI and robotics, video-language, long-context memory, AR/VR, and hand-object interaction.</p>
           <div class="actions" aria-label="Project links">
-            <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas">GitHub Repo</a>
-            <a class="button" href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas">HF Dataset Mirror</a>
-            <a class="button" href="#catalog">Browse Catalog</a>
+            <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas" data-i18n="btn.github">GitHub Repo</a>
+            <a class="button" href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas" data-i18n="btn.hf">Hugging Face Mirror</a>
+            <a class="button" href="#catalog" data-i18n="btn.browse">Browse Catalog</a>
           </div>
           <dl class="stat-strip" aria-label="Atlas summary">
             <div>
-              <dt data-stat="egocentric_resources">237</dt>
-              <dd>egocentric resources</dd>
+              <dt data-stat="egocentric_resources">201</dt>
+              <dd data-i18n="stat.resources">egocentric resources</dd>
             </div>
             <div>
-              <dt data-kind="dataset">96</dt>
-              <dd>datasets</dd>
+              <dt data-kind="dataset">90</dt>
+              <dd data-i18n="stat.datasets">datasets</dd>
             </div>
             <div>
-              <dt data-kind="benchmark">67</dt>
-              <dd>benchmarks</dd>
+              <dt data-kind="benchmark">57</dt>
+              <dd data-i18n="stat.benchmarks">benchmarks</dd>
             </div>
             <div>
-              <dt data-kind="model">60</dt>
-              <dd>models</dd>
+              <dt data-kind="model">44</dt>
+              <dd data-i18n="stat.models">models</dd>
             </div>
             <div>
-              <dt data-kind="toolkit">13</dt>
-              <dd>toolkits</dd>
+              <dt data-kind="toolkit">9</dt>
+              <dd data-i18n="stat.toolkits">toolkits</dd>
             </div>
           </dl>
-          <div class="hero-proof" aria-label="Publication signals">
-            <span>Canonical YAML catalog</span>
-            <span>GitHub Pages + HF mirror</span>
-            <span>MIT licensed and citation-ready</span>
+          <div class="hero-proof" aria-label="What you get">
+            <span data-i18n="proof.1">Datasets, benchmarks, models &amp; tools</span>
+            <span data-i18n="proof.2">Filter by task, status, and date</span>
+            <span data-i18n="proof.3">Open access, MIT licensed</span>
           </div>
         </div>
         <div class="hero-media" aria-label="Atlas visual preview">
           <img src="assets/awesome-egocentric-atlas-cover.png" alt="Technical illustration of a first-person egocentric AI atlas">
           <div class="media-caption">
-            <span>Machine-checked catalog</span>
+            <span data-i18n="media.caption">First-person AI, mapped</span>
             <span data-updated>Updated 2026-06-17</span>
           </div>
         </div>
@@ -82,62 +90,62 @@
       <section class="section" id="catalog">
         <div class="section-heading">
           <div>
-            <h2>Catalog Explorer</h2>
-            <p>Search the YAML-backed atlas by name, task, modality, status, kind, or research lane.</p>
+            <h2 data-i18n="catalog.title">Catalog Explorer</h2>
+            <p data-i18n="catalog.desc">Search by name, task, modality, status, kind, or research lane.</p>
           </div>
-          <a class="text-link" href="data/resources.yml">Open YAML</a>
+          <a class="text-link" href="data/resources.yml" data-i18n="catalog.openyaml">Open YAML</a>
         </div>
 
         <form class="filters" id="filters" aria-label="Catalog filters">
           <label>
-            <span>Search</span>
-            <input id="search" type="search" placeholder="Ego4D, VLA, hand pose, memory...">
+            <span data-i18n="filter.search">Search</span>
+            <input id="search" type="search" data-i18n-ph="search.placeholder" placeholder="Ego4D, VLA, hand pose, memory...">
           </label>
           <label>
-            <span>Kind</span>
+            <span data-i18n="filter.kind">Kind</span>
             <select id="kind">
-              <option value="">All kinds</option>
+              <option value="" data-i18n="filter.allkinds">All kinds</option>
             </select>
           </label>
           <label>
-            <span>Status</span>
+            <span data-i18n="filter.status">Status</span>
             <select id="status">
-              <option value="">All statuses</option>
+              <option value="" data-i18n="filter.allstatuses">All statuses</option>
             </select>
           </label>
           <label>
-            <span>Lane</span>
+            <span data-i18n="filter.lane">Lane</span>
             <select id="lane">
-              <option value="">All lanes</option>
+              <option value="" data-i18n="filter.alllanes">All lanes</option>
             </select>
           </label>
-          <button class="button filter-reset" type="button" id="clear-filters">Reset</button>
+          <button class="button filter-reset" type="button" id="clear-filters" data-i18n="filter.reset">Reset</button>
         </form>
 
         <div class="catalog-summary" id="catalog-summary" aria-label="Catalog data summary"></div>
 
         <div class="table-shell">
           <div class="table-toolbar">
-            <strong id="result-count">Loading catalog...</strong>
-            <span id="result-note">Showing newest matching resources first</span>
+            <strong id="result-count" data-i18n="loading">Loading catalog...</strong>
+            <span id="result-note" data-i18n="note.default">Newest matches first</span>
           </div>
           <div class="table-wrap">
             <table>
               <thead>
                 <tr>
-                  <th>Resource</th>
-                  <th>Kind</th>
-                  <th>Released</th>
-                  <th>Status</th>
-                  <th>Best Signal</th>
+                  <th data-i18n="th.resource">Resource</th>
+                  <th data-i18n="th.kind">Kind</th>
+                  <th data-i18n="th.released">Released</th>
+                  <th data-i18n="th.status">Status</th>
+                  <th data-i18n="th.signal">Best Signal</th>
                 </tr>
               </thead>
               <tbody id="catalog-rows"></tbody>
             </table>
           </div>
           <div class="empty-state" id="empty-state" hidden>
-            <strong>No resources match those filters.</strong>
-            <span>Try a broader search, remove a lane, or reset the filters.</span>
+            <strong data-i18n="empty.title">No resources match those filters.</strong>
+            <span data-i18n="empty.hint">Try a broader search, remove a lane, or reset the filters.</span>
           </div>
         </div>
       </section>
@@ -145,18 +153,18 @@
       <section class="section lanes" id="lanes">
         <div class="section-heading">
           <div>
-            <h2>Research Lanes</h2>
-            <p>Six entry points cover the major ways researchers use first-person data.</p>
+            <h2 data-i18n="lanes.title">Research Lanes</h2>
+            <p data-i18n="lanes.desc">Six entry points for the main ways people use first-person data.</p>
           </div>
-          <a class="text-link" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/taxonomy.md">Taxonomy</a>
+          <a class="text-link" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/taxonomy.md" data-i18n="lanes.taxonomy">Taxonomy</a>
         </div>
         <div class="lane-grid" id="lane-grid"></div>
       </section>
 
       <section class="split-section" id="access">
         <div>
-          <h2>Access Reality</h2>
-          <p>The atlas separates usable public resources from request-gated, benchmark-only, partial, and watchlist entries before you plan experiments.</p>
+          <h2 data-i18n="access.title">Access Reality</h2>
+          <p data-i18n="access.desc">See what you can download today versus what needs a request, is benchmark-only, partial, or still unverified — before you plan experiments.</p>
           <div class="status-list" id="status-list"></div>
         </div>
         <div class="figure-stack">
@@ -168,23 +176,26 @@
       <section class="section maintenance">
         <div class="section-heading">
           <div>
-            <h2>Maintain the Atlas</h2>
-            <p>Contributions go through a simple add, verify, validate workflow so README tables, YAML data, and the site stay aligned.</p>
+            <h2 data-i18n="maintain.title">Add a Resource</h2>
+            <p data-i18n="maintain.desc">Found something we're missing? Suggest it in a few steps — open a short issue and it flows into the catalog.</p>
           </div>
-          <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/issues/new/choose">Add Resource</a>
+          <a class="button primary" href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/issues/new/choose" data-i18n="maintain.add">Add Resource</a>
         </div>
         <div class="maintenance-grid">
-          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/CONTRIBUTING.md">Contributing guide</a>
-          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/resource_schema.md">Resource schema</a>
-          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/status_policy.md">Status policy</a>
-          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/maintenance.md">Maintenance workflow</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/CONTRIBUTING.md" data-i18n="maintain.contributing">Contributing guide</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/resource_schema.md" data-i18n="maintain.schema">Resource schema</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/status_policy.md" data-i18n="maintain.status">Status policy</a>
+          <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/docs/maintenance.md" data-i18n="maintain.workflow">Maintenance workflow</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Awesome Egocentric Atlas</span>
-      <span>MIT licensed, citation-ready, and synced from the canonical catalog.</span>
+      <nav class="lang-bar" id="lang-bar" aria-label="Language"></nav>
+      <div class="footer-meta">
+        <span>Awesome Egocentric Atlas</span>
+        <span data-i18n="footer.tagline">MIT licensed and free to use. Contributions welcome.</span>
+      </div>
     </footer>
 
     <script src="./app.js" defer></script>

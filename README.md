@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources.</strong>
+  <strong>A curated map of first-person AI — datasets, benchmarks, models, and tools.</strong>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-22A06B"></a>
 </p>
 
-**Just launched Awesome Egocentric Atlas** — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction. Every entry is scored for public-access status, so you can tell what is usable today from what is still a paper promise.
+**Awesome Egocentric Atlas** maps the egocentric (first-person) AI landscape — datasets, benchmarks, models, and tools spanning egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
 
 **Updated:** 2026-06-17.
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
@@ -58,7 +58,7 @@
 
 Use the first two tables to orient yourself, then jump into the detailed atlas section that matches your task. Each entry is deliberately short: name, release date (year-month, from the first public/arXiv posting where known), venue (conference/journal where published, or `arXiv`/source for preprints), scale/signal, best use, and public status. For filtering by task, modality, status, or date, use the catalog in [`data/resources.yml`](data/resources.yml), where every entry carries a `released` field; label meanings and filter groups are explained in [docs/taxonomy.md](docs/taxonomy.md). Task-oriented [research recipes](#recipes-and-reference) walk you from goal to experiment.
 
-The interactive project site is published with GitHub Pages at <https://chaoyue0307.github.io/awesome-egocentric-atlas/>. The repository can also be mirrored to Hugging Face at <https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas> when the `HF_TOKEN` repository secret is configured.
+Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/awesome-egocentric-atlas/) lets you filter the catalog by task, status, and date in eight languages, and the same catalog is mirrored as a dataset on [Hugging Face](https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas).
 
 <p align="center">
   <img src="assets/awesome-egocentric-reader-route.png" alt="Awesome Egocentric Atlas reader route" width="100%">
