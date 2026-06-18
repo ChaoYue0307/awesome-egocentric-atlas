@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by era and type</title>
   <desc id="desc">A stacked bar chart of catalogued egocentric AI resources grouped into five eras and split by resource type (dataset, benchmark, model, toolkit, collection). Datasets dominated the early eras; benchmarks and models now make up a growing share, and 2026's first half (January to June) already exceeds the 2024 to 2025 peak. A trend line through the bar tops marks the totals.</desc>
   <defs>
@@ -16,117 +16,117 @@
     <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
     </marker>
-    <clipPath id="c1"><rect x="142" y="361" width="96" height="39" rx="8"/></clipPath>
-    <clipPath id="c2"><rect x="382" y="339" width="96" height="61" rx="8"/></clipPath>
-    <clipPath id="c3"><rect x="622" y="248" width="96" height="152" rx="8"/></clipPath>
-    <clipPath id="c4"><rect x="862" y="190" width="96" height="210" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="122" width="96" height="278" rx="8"/></clipPath>
+    <clipPath id="c1"><rect x="142" y="443" width="96" height="37" rx="8"/></clipPath>
+    <clipPath id="c2"><rect x="382" y="421" width="96" height="59" rx="8"/></clipPath>
+    <clipPath id="c3"><rect x="622" y="331" width="96" height="149" rx="8"/></clipPath>
+    <clipPath id="c4"><rect x="862" y="260" width="96" height="220" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="210" width="96" height="270" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 14.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 36.6px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 17.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .count { font: 800 22.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
-      .era { font: 700 16.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
-      .anchor { font: 500 14.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 34px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .count { font: 800 21px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+      .era { font: 700 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
+      .anchor { font: 500 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
       .grid { stroke: #e2ecef; stroke-width: 1.2; }
-      .gridlabel { font: 600 13.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #9aa7af; }
+      .gridlabel { font: 600 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #9aa7af; }
       .axis { stroke: #c2d2d8; stroke-width: 2; }
       .trend { stroke: #0f3b45; stroke-width: 2.6; fill: none; stroke-linejoin: round; stroke-linecap: round; }
       .proj { stroke: #ef9f24; stroke-width: 3; fill: none; stroke-dasharray: 3 7; stroke-linecap: round; }
-      .note { font: 700 13.6px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #c4801a; }
+      .note { font: 700 12.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #c4801a; }
       .seg { stroke: #ffffff; stroke-width: 1.4; }
-      .lg { font: 600 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .lg { font: 600 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
     </style>
   </defs>
 
-  <rect width="1280" height="520" fill="url(#bg)"/>
-  <rect width="1280" height="520" fill="url(#dots)"/>
+  <rect width="1280" height="560" fill="url(#bg)"/>
+  <rect width="1280" height="560" fill="url(#dots)"/>
 
-  <text class="kicker" x="90" y="54">GROWTH BY TYPE</text>
+  <text class="kicker" x="90" y="50">GROWTH BY TYPE</text>
   <text class="title ink" x="90" y="92">Egocentric resources by era</text>
-  <text class="subtitle" x="90" y="118">Each era's bar is split by type. 2026 (first half only) already exceeds the 2024&#8211;2025 peak.</text>
+  <text class="subtitle" x="90" y="120">Each era's bar is split by type. 2026 (first half only) already exceeds the 2024&#8211;2025 peak.</text>
 
   <!-- legend -->
   <g>
-    <rect x="700" y="74" width="13" height="13" rx="3" fill="#0b8f98"/><text class="lg" x="719" y="85">datasets</text>
-    <rect x="792" y="74" width="13" height="13" rx="3" fill="#5b6b73"/><text class="lg" x="811" y="85">benchmarks</text>
-    <rect x="905" y="74" width="13" height="13" rx="3" fill="#ef9f24"/><text class="lg" x="924" y="85">models</text>
-    <rect x="989" y="74" width="13" height="13" rx="3" fill="#7a6ff0"/><text class="lg" x="1008" y="85">toolkits</text>
-    <rect x="1070" y="74" width="13" height="13" rx="3" fill="#b8c2c9"/><text class="lg" x="1089" y="85">collection</text>
+    <rect x="90" y="145" width="14" height="14" rx="3" fill="#0b8f98"/><text class="lg" x="111" y="157">datasets</text>
+    <rect x="193" y="145" width="14" height="14" rx="3" fill="#5b6b73"/><text class="lg" x="214" y="157">benchmarks</text>
+    <rect x="316" y="145" width="14" height="14" rx="3" fill="#ef9f24"/><text class="lg" x="337" y="157">models</text>
+    <rect x="407" y="145" width="14" height="14" rx="3" fill="#7a6ff0"/><text class="lg" x="428" y="157">toolkits</text>
+    <rect x="502" y="145" width="14" height="14" rx="3" fill="#b8c2c9"/><text class="lg" x="523" y="157">collection</text>
   </g>
 
-  <!-- gridlines (scale y = 400 - count*3.231) -->
-  <line class="grid" x1="110" y1="335" x2="1210" y2="335"/>
-  <line class="grid" x1="110" y1="271" x2="1210" y2="271"/>
-  <line class="grid" x1="110" y1="206" x2="1210" y2="206"/>
-  <line class="grid" x1="110" y1="142" x2="1210" y2="142"/>
-  <text class="gridlabel" x="100" y="404" text-anchor="end">0</text>
-  <text class="gridlabel" x="100" y="339" text-anchor="end">20</text>
-  <text class="gridlabel" x="100" y="275" text-anchor="end">40</text>
-  <text class="gridlabel" x="100" y="210" text-anchor="end">60</text>
-  <text class="gridlabel" x="100" y="146" text-anchor="end">80</text>
-  <line class="axis" x1="110" y1="400" x2="1210" y2="400"/>
+  <!-- gridlines (scale: y = 480 - count*3.103) -->
+  <line class="grid" x1="110" y1="418" x2="1210" y2="418"/>
+  <line class="grid" x1="110" y1="356" x2="1210" y2="356"/>
+  <line class="grid" x1="110" y1="294" x2="1210" y2="294"/>
+  <line class="grid" x1="110" y1="232" x2="1210" y2="232"/>
+  <text class="gridlabel" x="100" y="484" text-anchor="end">0</text>
+  <text class="gridlabel" x="100" y="422" text-anchor="end">20</text>
+  <text class="gridlabel" x="100" y="360" text-anchor="end">40</text>
+  <text class="gridlabel" x="100" y="298" text-anchor="end">60</text>
+  <text class="gridlabel" x="100" y="236" text-anchor="end">80</text>
+  <line class="axis" x1="110" y1="480" x2="1210" y2="480"/>
 
   <!-- stacked bars (bottom-up: dataset, benchmark, model, toolkit, collection) -->
   <g clip-path="url(#c1)" filter="url(#shadow)">
-    <rect class="seg" x="142" y="365" width="96" height="35" fill="#0b8f98"/>
-    <rect class="seg" x="142" y="361" width="96" height="4" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="446" width="96" height="34" fill="#0b8f98"/>
+    <rect class="seg" x="142" y="443" width="96" height="3" fill="#5b6b73"/>
   </g>
   <g clip-path="url(#c2)" filter="url(#shadow)">
-    <rect class="seg" x="382" y="358" width="96" height="42" fill="#0b8f98"/>
-    <rect class="seg" x="382" y="348" width="96" height="10" fill="#5b6b73"/>
-    <rect class="seg" x="382" y="345" width="96" height="3" fill="#ef9f24"/>
-    <rect class="seg" x="382" y="339" width="96" height="6" fill="#7a6ff0"/>
+    <rect class="seg" x="382" y="440" width="96" height="40" fill="#0b8f98"/>
+    <rect class="seg" x="382" y="431" width="96" height="9" fill="#5b6b73"/>
+    <rect class="seg" x="382" y="428" width="96" height="3" fill="#ef9f24"/>
+    <rect class="seg" x="382" y="421" width="96" height="7" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c3)" filter="url(#shadow)">
-    <rect class="seg" x="622" y="342" width="96" height="58" fill="#0b8f98"/>
-    <rect class="seg" x="622" y="306" width="96" height="36" fill="#5b6b73"/>
-    <rect class="seg" x="622" y="268" width="96" height="38" fill="#ef9f24"/>
-    <rect class="seg" x="622" y="251" width="96" height="17" fill="#7a6ff0"/>
-    <rect class="seg" x="622" y="248" width="96" height="3" fill="#b8c2c9"/>
+    <rect class="seg" x="622" y="421" width="96" height="59" fill="#0b8f98"/>
+    <rect class="seg" x="622" y="387" width="96" height="34" fill="#5b6b73"/>
+    <rect class="seg" x="622" y="350" width="96" height="37" fill="#ef9f24"/>
+    <rect class="seg" x="622" y="334" width="96" height="16" fill="#7a6ff0"/>
+    <rect class="seg" x="622" y="331" width="96" height="3" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
-    <rect class="seg" x="862" y="310" width="96" height="90" fill="#0b8f98"/>
-    <rect class="seg" x="862" y="258" width="96" height="52" fill="#5b6b73"/>
-    <rect class="seg" x="862" y="193" width="96" height="65" fill="#ef9f24"/>
-    <rect class="seg" x="862" y="190" width="96" height="3" fill="#7a6ff0"/>
+    <rect class="seg" x="862" y="384" width="96" height="96" fill="#0b8f98"/>
+    <rect class="seg" x="862" y="331" width="96" height="53" fill="#5b6b73"/>
+    <rect class="seg" x="862" y="269" width="96" height="62" fill="#ef9f24"/>
+    <rect class="seg" x="862" y="260" width="96" height="9" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c5)" filter="url(#shadow)">
-    <rect class="seg" x="1102" y="332" width="96" height="68" fill="#0b8f98"/>
-    <rect class="seg" x="1102" y="219" width="96" height="113" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="132" width="96" height="87" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="122" width="96" height="10" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="412" width="96" height="68" fill="#0b8f98"/>
+    <rect class="seg" x="1102" y="303" width="96" height="109" fill="#5b6b73"/>
+    <rect class="seg" x="1102" y="219" width="96" height="84" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="210" width="96" height="9" fill="#7a6ff0"/>
   </g>
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,361 430,339 670,248 910,190 1150,122"/>
-  <path class="proj" d="M1150 122 L1166 102 L1232 102" marker-end="url(#up)"/>
-  <text class="note" x="1212" y="92" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,443 430,421 670,331 910,260 1150,210"/>
+  <path class="proj" d="M1150 210 L1232 179" marker-end="url(#up)"/>
+  <text class="note" x="1210" y="167" text-anchor="end">still H1</text>
   <g>
-    <circle cx="190" cy="361" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="430" cy="339" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="670" cy="248" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="910" cy="190" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="122" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="190" cy="443" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="430" cy="421" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="670" cy="331" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="910" cy="260" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="1150" cy="210" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
   <!-- totals -->
-  <text class="count" x="190" y="352" text-anchor="middle">12</text>
-  <text class="count" x="430" y="330" text-anchor="middle">19</text>
-  <text class="count" x="670" y="239" text-anchor="middle">48</text>
-  <text class="count" x="910" y="181" text-anchor="middle">71</text>
-  <text class="count" x="1150" y="151" text-anchor="middle">87</text>
+  <text class="count" x="190" y="431" text-anchor="middle">12</text>
+  <text class="count" x="430" y="409" text-anchor="middle">19</text>
+  <text class="count" x="670" y="319" text-anchor="middle">48</text>
+  <text class="count" x="910" y="248" text-anchor="middle">71</text>
+  <text class="count" x="1150" y="198" text-anchor="middle">87</text>
 
   <!-- era + anchor labels -->
-  <text class="era" x="190" y="428" text-anchor="middle">&#8804; 2018</text>
-  <text class="anchor" x="190" y="448" text-anchor="middle">GTEA, EgoHands</text>
-  <text class="era" x="430" y="428" text-anchor="middle">2019&#8211;2021</text>
-  <text class="anchor" x="430" y="448" text-anchor="middle">EPIC-100, Ego4D</text>
-  <text class="era" x="670" y="428" text-anchor="middle">2022&#8211;2023</text>
-  <text class="anchor" x="670" y="448" text-anchor="middle">Ego-Exo4D, HOI4D</text>
-  <text class="era" x="910" y="428" text-anchor="middle">2024&#8211;2025</text>
-  <text class="anchor" x="910" y="448" text-anchor="middle">EgoVideo, EgoDex</text>
-  <text class="era" x="1150" y="428" text-anchor="middle">2026 (H1)</text>
-  <text class="anchor" x="1150" y="448" text-anchor="middle">first half only &#183; EgoScale, EgoAVU</text>
+  <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>
+  <text class="anchor" x="190" y="531" text-anchor="middle">GTEA, EgoHands</text>
+  <text class="era" x="430" y="510" text-anchor="middle">2019&#8211;2021</text>
+  <text class="anchor" x="430" y="531" text-anchor="middle">EPIC-100, Ego4D</text>
+  <text class="era" x="670" y="510" text-anchor="middle">2022&#8211;2023</text>
+  <text class="anchor" x="670" y="531" text-anchor="middle">Ego-Exo4D, HOI4D</text>
+  <text class="era" x="910" y="510" text-anchor="middle">2024&#8211;2025</text>
+  <text class="anchor" x="910" y="531" text-anchor="middle">EgoVideo, EgoDex</text>
+  <text class="era" x="1150" y="510" text-anchor="middle">2026 (H1)</text>
+  <text class="anchor" x="1150" y="531" text-anchor="middle">first half only &#183; EgoScale, EgoAVU</text>
 </svg>

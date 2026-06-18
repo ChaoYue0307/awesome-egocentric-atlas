@@ -195,14 +195,19 @@ img {
 
 .stat-strip {
   display: grid;
-  grid-template-columns: repeat(5, minmax(92px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  align-items: stretch;
+  gap: 10px;
   margin: 32px 0 0;
   padding: 0;
 }
 
 .stat-strip div {
-  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 13px 15px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper-soft);
@@ -216,10 +221,12 @@ img {
 }
 
 .stat-strip dd {
-  margin: 2px 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 680;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
@@ -770,6 +777,10 @@ tbody tr:hover {
     font-size: 11px;
     font-weight: 820;
     text-transform: uppercase;
+  }
+
+  td > .chip {
+    justify-self: start;
   }
 
   .resource-name {
