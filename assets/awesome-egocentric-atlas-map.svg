@@ -23,7 +23,7 @@
       .subtitle { font: 500 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; }
       .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
       .panel { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.6; filter: url(#shadow); }
-      .ph { font: 700 23.6px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+      .ph { font: 700 22px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
       .row { font: 600 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
       .rowsub { font: 500 15.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
       .divider { stroke: #e6eef1; stroke-width: 1.4; }
@@ -41,11 +41,11 @@
   <rect width="1280" height="730" fill="url(#bg)"/>
   <rect width="1280" height="730" fill="url(#dots)"/>
 
-  <text class="kicker" x="70" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
-  <text class="title ink" x="70" y="104">Awesome Egocentric Atlas</text>
-  <text class="subtitle sub" x="70" y="136">
-    <tspan x="70" y="136">Just launched: curated first-person AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>
-    <tspan x="70" y="162">world models, WMA, memory, AR/VR, and hand-object interaction.</tspan>
+  <text class="kicker" x="60" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
+  <text class="title ink" x="60" y="104">Awesome Egocentric Atlas</text>
+  <text class="subtitle sub" x="60" y="136">
+    <tspan x="60" y="136">Just launched: curated first-person AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>
+    <tspan x="60" y="162">world models, WMA, memory, AR/VR, and hand-object interaction.</tspan>
   </text>
 
   <!-- stat chips -->
@@ -62,13 +62,13 @@
   </g>
 
   <!-- connectors -->
-  <line class="conn" x1="334" y1="400" x2="362" y2="400" marker-end="url(#arrow)"/>
-  <line class="conn" x1="626" y1="400" x2="654" y2="400" marker-end="url(#arrow)"/>
-  <line class="conn" x1="918" y1="400" x2="946" y2="400" marker-end="url(#arrow)"/>
+  <line class="conn" x1="336" y1="400" x2="348" y2="400" marker-end="url(#arrow)"/>
+  <line class="conn" x1="632" y1="400" x2="644" y2="400" marker-end="url(#arrow)"/>
+  <line class="conn" x1="928" y1="400" x2="940" y2="400" marker-end="url(#arrow)"/>
 
   <!-- Panel 1: Capture Sources -->
-  <g transform="translate(70 230)">
-    <rect class="panel" width="264" height="340" rx="22"/>
+  <g transform="translate(60 230)">
+    <rect class="panel" width="272" height="340" rx="22"/>
     <circle cx="44" cy="52" r="24" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6"/>
     <g stroke="#0b8f98" stroke-width="2.2" fill="none" stroke-linecap="round">
       <circle cx="37.5" cy="52" r="5.8"/>
@@ -77,7 +77,7 @@
       <path d="M31.7 50.6 l-2.4 1.8 M56.3 50.6 l2.4 1.8"/>
     </g>
     <text class="ph" x="80" y="60">Capture Sources</text>
-    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <line class="divider" x1="26" y1="90" x2="246" y2="90"/>
     <circle class="dotT" cx="36" cy="138" r="5"/>
     <text class="row" x="56" y="138">AR glasses</text>
     <text class="rowsub" x="56" y="160">Aria, HoloLens, Quest</text>
@@ -90,8 +90,8 @@
   </g>
 
   <!-- Panel 2: Signals -->
-  <g transform="translate(362 230)">
-    <rect class="panel" width="264" height="340" rx="22"/>
+  <g transform="translate(356 230)">
+    <rect class="panel" width="272" height="340" rx="22"/>
     <circle cx="44" cy="52" r="24" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.6"/>
     <g stroke="#5b6b73" stroke-width="2.6" stroke-linecap="round">
       <line x1="35" y1="57.5" x2="35" y2="46.5"/>
@@ -100,7 +100,7 @@
       <line x1="50" y1="62.5" x2="50" y2="41.5"/>
     </g>
     <text class="ph" x="80" y="60">Signals</text>
-    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <line class="divider" x1="26" y1="90" x2="246" y2="90"/>
     <circle class="dotN" cx="36" cy="138" r="5"/>
     <text class="row" x="56" y="138">Vision</text>
     <text class="rowsub" x="56" y="160">RGB, RGB-D, stereo</text>
@@ -113,15 +113,15 @@
   </g>
 
   <!-- Panel 3: Research Tasks -->
-  <g transform="translate(654 230)">
-    <rect class="panel" width="264" height="340" rx="22"/>
+  <g transform="translate(652 230)">
+    <rect class="panel" width="272" height="340" rx="22"/>
     <circle cx="44" cy="52" r="24" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6"/>
     <g stroke="#ef9f24" stroke-width="2.4" fill="none">
       <circle cx="44" cy="52" r="9"/>
       <circle cx="44" cy="52" r="3.4" fill="#ef9f24"/>
     </g>
     <text class="ph" x="80" y="60">Research Tasks</text>
-    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <line class="divider" x1="26" y1="90" x2="246" y2="90"/>
     <circle class="dotA" cx="36" cy="138" r="5"/>
     <text class="row" x="56" y="138">Perception</text>
     <text class="rowsub" x="56" y="160">action, HOI, tracking</text>
@@ -134,8 +134,8 @@
   </g>
 
   <!-- Panel 4: Atlas Outputs -->
-  <g transform="translate(946 230)">
-    <rect class="panel" width="264" height="340" rx="22"/>
+  <g transform="translate(948 230)">
+    <rect class="panel" width="272" height="340" rx="22"/>
     <circle cx="44" cy="52" r="24" fill="#eef3f5" stroke="#bcccd3" stroke-width="1.6"/>
     <g fill="#5b6b73">
       <rect x="34" y="45" width="20" height="4" rx="2"/>
@@ -143,7 +143,7 @@
       <rect x="34" y="57" width="20" height="4" rx="2"/>
     </g>
     <text class="ph" x="80" y="60">Atlas Outputs</text>
-    <line class="divider" x1="26" y1="90" x2="238" y2="90"/>
+    <line class="divider" x1="26" y1="90" x2="246" y2="90"/>
     <circle class="dotN" cx="36" cy="138" r="5"/>
     <text class="row" x="56" y="138">README</text>
     <text class="rowsub" x="56" y="160">scannable, linked tables</text>
@@ -156,9 +156,9 @@
   </g>
 
   <!-- feedback loop -->
-  <path class="loop" d="M1080 575 C1080 662 200 662 200 583" marker-end="url(#arrow)"/>
+  <path class="loop" d="M1084 575 C1084 662 196 662 196 583" marker-end="url(#arrow)"/>
   <rect x="518" y="643" width="244" height="28" rx="14" fill="#ffffff" stroke="#cfe6e8" stroke-width="1.3"/>
   <text class="loopText" x="640" y="662" text-anchor="middle">CURATE · VERIFY · UPDATE</text>
 
-  <text class="rowsub" x="70" y="706" font-size="15">From first-person capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
+  <text class="rowsub" x="60" y="706" font-size="15">From first-person capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
 </svg>

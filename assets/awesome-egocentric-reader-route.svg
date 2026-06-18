@@ -33,59 +33,59 @@
   <rect width="1280" height="460" fill="url(#bg)"/>
   <rect width="1280" height="460" fill="url(#dots)"/>
 
-  <text class="kicker" x="50" y="60">README FLOW</text>
-  <text class="title ink" x="50" y="104">How to enter the atlas</text>
-  <text class="subtitle" x="50" y="136">Move from intent to resources without reading every table first.</text>
+  <text class="kicker" x="51" y="60">README FLOW</text>
+  <text class="title ink" x="51" y="104">How to enter the atlas</text>
+  <text class="subtitle" x="51" y="136">Move from intent to resources without reading every table first.</text>
 
   <line class="rail" x1="90" y1="290" x2="1230" y2="290"/>
 
   <!-- 1 -->
-  <g transform="translate(50 200)">
-    <rect x="0" y="0" width="226" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(51 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#0b8f98"/>
     <text class="numText" x="42" y="53" text-anchor="middle">1</text>
     <text class="label" x="28" y="108">Choose goal</text>
     <text class="text" x="28" y="138">assistant, robot,</text>
     <text class="text" x="28" y="162">benchmark, or 3D</text>
   </g>
-  <line class="arrow" x1="278" y1="290" x2="286" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="271" y1="290" x2="283" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 2 -->
-  <g transform="translate(288 200)">
-    <rect x="0" y="0" width="226" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(293 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#5b6b73"/>
     <text class="numText" x="42" y="53" text-anchor="middle">2</text>
     <text class="label" x="28" y="108">Pick lane</text>
     <text class="text" x="28" y="138">foundation, action,</text>
     <text class="text" x="28" y="162">memory, VLA, AR</text>
   </g>
-  <line class="arrow" x1="516" y1="290" x2="524" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="513" y1="290" x2="525" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 3 -->
-  <g transform="translate(526 200)">
-    <rect x="0" y="0" width="226" height="180" rx="22" fill="#fff4d9" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(535 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#fff4d9" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#ef9f24"/>
     <text class="numText" x="42" y="53" text-anchor="middle">3</text>
     <text class="label" x="28" y="108">Check access</text>
     <text class="text" x="28" y="138">open, request,</text>
     <text class="text" x="28" y="162">partial, or watch</text>
   </g>
-  <line class="arrow" x1="754" y1="290" x2="762" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="755" y1="290" x2="767" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 4 -->
-  <g transform="translate(764 200)">
-    <rect x="0" y="0" width="226" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(777 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#5b6b73"/>
     <text class="numText" x="42" y="53" text-anchor="middle">4</text>
     <text class="label" x="28" y="108">Filter catalog</text>
     <text class="text" x="28" y="138">use YAML tasks,</text>
     <text class="text" x="28" y="162">modalities, years</text>
   </g>
-  <line class="arrow" x1="992" y1="290" x2="1000" y2="290" marker-end="url(#arrow)"/>
+  <line class="arrow" x1="997" y1="290" x2="1009" y2="290" marker-end="url(#arrow)"/>
 
   <!-- 5 -->
-  <g transform="translate(1002 200)">
-    <rect x="0" y="0" width="226" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(1019 200)">
+    <rect x="0" y="0" width="210" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#0b8f98"/>
     <text class="numText" x="42" y="53" text-anchor="middle">5</text>
     <text class="label" x="28" y="108">Use it</text>
@@ -93,5 +93,5 @@
     <text class="text" x="28" y="162">or contribute</text>
   </g>
 
-  <text class="foot" x="50" y="430">Each step maps to a README section; the YAML catalog backs steps 2&#8211;4 with structured filters.</text>
+  <text class="foot" x="51" y="430">Each step maps to a README section; the YAML catalog backs steps 2&#8211;4 with structured filters.</text>
 </svg>
