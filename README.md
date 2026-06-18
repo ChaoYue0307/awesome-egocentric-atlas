@@ -83,7 +83,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 ## At a Glance
 
 | Signal | What it means for readers |
-|---|---|
+| :--- | :--- |
 | 243 egocentric resources | 97 datasets, 67 benchmarks, 65 models, and 13 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
@@ -97,7 +97,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 ## Start Here
 
 | Reader | Best first move | Then go deeper |
-|---|---|---|
+| :--- | :--- | :--- |
 | New to egocentric vision | Read Ego4D, EPIC-KITCHENS-100, Ego-Exo4D, and EgoSchema first. | Add EgoClip/EgoVLP for video-language, VISOR for masks, and HOT3D/HOI4D for 3D hand-object work. |
 | Building a benchmark table | Start from the `open` and `benchmark` entries, then inspect `request` licenses. | Use the YAML catalog to filter by task and modality. |
 | Building an assistant or agent | Start with Ego4D, Xperience-10M, EgoLife, TeleEgo, EgoSchema, MyEgo, EgoIntrospect, EgoBench, UCS-Bench, and Ego2Web. | Track Ego-R1, X-LeBench, EgoMemReason, StreamMemBench, ReFocus, EgoCoT-Bench, EgoBlind, EgoSound, and NoRA for reasoning diagnostics. |
@@ -111,7 +111,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 </p>
 
 | Lane | What to compare | Canonical anchors |
-|---|---|---|
+| :--- | :--- | :--- |
 | Foundation video | scale, license, modalities, benchmark maturity | Xperience-10M, Ego4D, Ego-Exo4D, EPIC-KITCHENS-100, EgoClip |
 | Procedure and action | action granularity, mistakes, anticipation, gaze | EPIC-KITCHENS, Assembly101, MECCANO, EgoProceL, HoloAssist |
 | Hand-object and 3D | hands, objects, contact, pose, meshes, scene geometry | HOT3D, HOI4D, H2O, ARCTIC, FPHA, EgoHOS |
@@ -122,7 +122,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 ## Creator and Release Notes
 
 | Resource | Created / stewarded by | Release channel and access note |
-|---|---|---|
+| :--- | :--- | :--- |
 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | Ropedia | Released under `ropedia-ai` on Hugging Face. Full dataset uses controlled non-commercial access; the [sample](https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample) is open, [HOMIE-toolkit](https://github.com/Ropedia/HOMIE-toolkit) loads/visualizes annotations, and [Xperience task baselines](https://huggingface.co/cy0307/ropedia-xperience-10m-task-baselines) provide a public evaluation artifact. |
 | [Ego4D](https://ego4d-data.org/) | Meta AI / Facebook AI with an international academic consortium | Official data portal with license-gated downloads and benchmark tasks. |
 | [Ego-Exo4D](https://ego-exo4d-data.org/) | Meta and academic partners across the Ego-Exo4D consortium | Official data portal with application/download tooling for synchronized ego-exo data. |
@@ -132,7 +132,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 ## Status Legend
 
 | Status | Meaning |
-|---|---|
+| :---: | :--- |
 | `open` | Public download, public annotations, public code, or application-based access is clearly documented. |
 | `request` | Public project exists, but dataset access requires license, form, approval, or institutional agreement. |
 | `benchmark` | Mainly a benchmark, challenge, labels, or evaluation over existing videos. |
@@ -148,7 +148,7 @@ For how each status is decided, see [docs/status_policy.md](docs/status_policy.m
 ## Fast Task Map
 
 | Research goal | Strong starting points |
-|---|---|
+| :--- | :--- |
 | General egocentric foundation data | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m), [Ego4D](https://ego4d-data.org/), [Ego-Exo4D](https://ego-exo4d-data.org/), [EPIC-KITCHENS-100](https://epic-kitchens.github.io/), [EgoClip](https://github.com/showlab/EgoVLP) |
 | Ego-exo and skill learning | [Ego-Exo4D](https://ego-exo4d-data.org/), [EgoExoLearn](https://github.com/OpenGVLab/EgoExoLearn), [Assembly101](https://assembly-101.github.io/), [Look and Tell](https://arxiv.org/abs/2510.22672) |
 | Robot manipulation / VLA | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m), [EgoDex](https://arxiv.org/abs/2505.11709), [EgoVerse](https://egoverse.ai/), [OpenEgo](https://arxiv.org/abs/2509.05513), [UMI](https://umi-gripper.github.io/), [FastUMI-100K](https://huggingface.co/datasets/IPEC-COMMUNITY/FastUMI_100k_lerobot), [YUBI](https://arxiv.org/abs/2606.10244), [HUG](https://grasping.io/), [EgoVLA](https://rchalyang.github.io/EgoVLA/), [EgoEngine](https://egoengine.github.io/), [HumanEgo](https://humanego-ai.github.io) |
@@ -184,7 +184,7 @@ Task-oriented starting points and the references that keep the catalog usable.
 Broad, large-scale first-person corpora that most egocentric pipelines pretrain or benchmark on.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [Ego-1K](https://huggingface.co/datasets/facebook/ego-1k) | 2026-03 | CVPR 2026 | Nearly 1,000 synchronized multiview egocentric videos from a custom 12-camera plus VR-headset rig | Dynamic 3D/4D scene understanding and novel view synthesis from ego rigs | open |
 | [EgoCrowds / CrowdEraser](https://arxiv.org/abs/2603.29036) | 2026-03 | arXiv | Semi-synthetic paired crowded/empty clips from real egocentric walking-tour video; CrowdEraser diffusion removes crowds for humanless walkthroughs | First-person walking-tour video editing and environment modeling | watch |
 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | 2026 | Hugging Face | Ropedia release on Hugging Face; 10M experiences, 10K hours, six video streams, audio, stereo depth, camera pose, hand/body mocap, IMU, hierarchical language, ~1 PB total | Embodied AI, world models, robot learning from human experience, sensor fusion, 3D/4D understanding | request |
@@ -207,7 +207,7 @@ Broad, large-scale first-person corpora that most egocentric pipelines pretrain 
 Egocentric human-manipulation and wrist-camera data aimed at vision-language-action models and human-to-robot transfer.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [YUBI](https://arxiv.org/abs/2606.10244) | 2026-06 | arXiv | Reported 8,434 hours, 1.20M episodes, and 119 tasks from a finger-aligned UMI-style bimanual interface | Scalable bimanual dexterous data collection | watch |
 | [EgoEngine](https://egoengine.github.io/) | 2026-06 | arXiv | Converts egocentric human manipulation videos into high-fidelity robot observation videos and executable robot action trajectories | Human-to-robot data generation, dexterous imitation | watch |
 | [EgoAERO](https://arxiv.org/abs/2606.08057) | 2026-06 | arXiv | Asset-free conversion from a single egocentric RGB-D demonstration; introduces EgoDex-R in the paper | Single-demo dexterous robot learning | watch |
@@ -236,7 +236,7 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 Fine-grained hand, object, contact, and 3D-pose datasets, including emerging event-camera and EMG sensing.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [A multimodal RGB/events FPV hand dataset](https://arxiv.org/abs/2606.10790) | 2026-06 | arXiv | Synthetic event-based first-person hand detection from EgoHands plus v2e | Event/RGB hand detection benchmarking | watch |
 | [EgoEMG](https://arxiv.org/abs/2605.05712) | 2026-05 | arXiv | 41 participants, bilateral EMG, IMU, RGB, external RGB-D, mocap hand labels | EMG plus egocentric vision hand pose estimation | watch |
 | [EgoTouch / TouchAnything](https://jianyi2004.github.io/TouchAnything-Website/) | 2026-05 | arXiv | 302 tasks, 4,530 episodes with egocentric + dual wrist cameras, bimanual 3D hand pose, and dense tactile pressure maps | Tactile estimation and contact modeling from egocentric video | watch |
@@ -274,7 +274,7 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 Long-horizon daily-life capture and the question-answering benchmarks that probe memory, reasoning, and assistance.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [Causal-Plan-1M](https://arxiv.org/abs/2606.01810) | 2026-06 | arXiv | Reported million-scale corpus of explicit causal reasoning traces over egocentric videos | Causal and planning-oriented ego reasoning | watch |
 | [NoRA](https://arxiv.org/abs/2606.04806) | 2026-06 | arXiv | 1,420 first-person video clips for normative action reasoning with fact-reason-action support graphs | Grounded reasonableness and safety-oriented action generation | watch |
 | [Pause and Think](https://arxiv.org/abs/2606.00616) | 2026-06 | arXiv | Reasoning-centric training data and benchmark for video-grounded assistive action suggestions | Scene-grounded assistance, planning, and temporal consistency | watch |
@@ -326,7 +326,7 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 Procedural and activity datasets, from modern industrial assembly to the classic first-person-vision benchmarks that started the field.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [EgoMAGIC](https://arxiv.org/abs/2604.22036) | 2026-04 | arXiv | 3,355 egocentric field-medicine videos over 50 tasks from a head-mounted stereo camera with audio; 1.95M labels, 124 objects, action-detection challenge (Zenodo) | Field-medicine perception, action and object detection | open |
 | [ENIGMA-360](https://arxiv.org/abs/2603.09741) | 2026-03 | arXiv | Ego-exo dataset for human behavior understanding in industrial scenarios with 360-degree and egocentric capture | Industrial ego-exo behavior understanding | watch |
 | [EgoEMS](https://arxiv.org/abs/2511.09894) | 2025-11 | AAAI 2026 | High-fidelity multimodal egocentric data for cognitive assistance in emergency medical services, capturing time-critical team actions | Real-time medical procedural assistance | watch |
@@ -360,7 +360,7 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 AR-glasses and headset data with gaze, SLAM, and digital-twin annotations for scene-level perception.
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [EgoTraj](https://github.com/yehiahmad/EgoTraj) | 2026-05 | arXiv | 75 Meta Quest Pro navigation sequences with RGB, head pose, gaze, scene labels | Egocentric human trajectory prediction and assistive navigation | open |
 | [EgoCampus](https://arxiv.org/abs/2512.07668) | 2025-12 | arXiv | Egocentric pedestrian eye-gaze dataset and model over campus walking routes with synchronized first-person video and gaze | Pedestrian gaze and trajectory prediction | watch |
 | [Digital Twin Catalog / DTC](https://www.projectaria.com/datasets/dtc/) | 2025-04 | CVPR 2025 | 2,000 scanned objects with DSLR and egocentric AR-glasses image sequences | Digital-twin object reconstruction and evaluation | open |
@@ -374,7 +374,7 @@ AR-glasses and headset data with gaze, SLAM, and digital-twin annotations for sc
 Evaluation suites and label sets built on top of the raw datasets above.
 
 | Benchmark | Released | Venue | Built on | Tasks | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [UCS-Bench / DirectMe](https://github.com/cocowy1/UCS-Bench) | 2026-06 | ICML 2026 | 170+ hours of egocentric observations | 8.1K+ timestamped questions for continual spatial intelligence and streaming spatial memory | open |
 | [StreamMemBench](https://arxiv.org/abs/2606.14571) | 2026-06 | arXiv | EgoLife egocentric streams | Initial/follow-up task sequences testing evidence recall, feedback incorporation, and future assistance | watch |
 | [Plan, Watch, Recover / EgoProactive](https://arxiv.org/abs/2606.04970) | 2026-06 | arXiv | EgoProactive plus Pro2Bench over five established benchmarks | Proactive procedural assistance, out-of-plan detection, and recovery guidance | watch |
@@ -419,7 +419,7 @@ Open models, baselines, and loaders you can build on directly.
 ### Egocentric Foundation Models and Assistants
 
 | Resource | Released | Venue | What it contributes | Link |
-|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :---: |
 | PhysBrain | 2025-12 | arXiv | Uses human egocentric data to bridge vision-language models toward physical intelligence and embodied control | [Paper](https://arxiv.org/abs/2512.16793) |
 | EgoM2P | 2025-06 | ICCV 2025 | Egocentric multimodal multitask pretraining over RGB, depth, gaze, and camera pose | [Paper](https://arxiv.org/abs/2506.07886) |
 | EgoHOD | 2025-03 | ICLR 2025 | Fine-grained hand-object-dynamics pretraining for egocentric representations (ICLR 2025) | [GitHub](https://github.com/InternRobotics/EgoHOD) |
@@ -430,7 +430,7 @@ Open models, baselines, and loaders you can build on directly.
 ### Video-Language and Long-Video Models
 
 | Resource | Released | Venue | What it contributes | Link |
-|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :---: |
 | CASTLE KG Retrieval | 2026-06 | CVPR 2026 EgoVis | Agentic long-context video understanding with video knowledge graphs and hierarchical retrieval for the CASTLE challenge | [Paper](https://arxiv.org/abs/2606.01933) |
 | OSGNet + MLLM Reranking | 2026-05 | CVPR 2026 EgoVis | Champion Ego4D Episodic Memory Challenge solution for NLQ and GoalStep using MLLM reranking over OSGNet candidates | [GitHub](https://github.com/iLearn-Lab/CVPR25-OSGNet) |
 | OmniEgo-R2 | 2026-05 | CVPR 2026 EgoVis | Routed reasoning framework for EgoCross; second place in both Source-Limited and Open-Source tracks | [GitHub](https://github.com/Lee-zixu/OmniEgo-R2) |
@@ -465,7 +465,7 @@ Open models, baselines, and loaders you can build on directly.
 ### Action, Tracking, Pose, and HOI Baselines
 
 | Resource | Released | Venue | What it contributes | Link |
-|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :---: |
 | EgoGuide | 2026-06 | arXiv | Synchronized wrist/head egocentric demonstration collection with online guidance and a gated egocentric residual policy | [Project](https://silicx.github.io/EgoGuide) |
 | Ego-Pi | 2026-06 | arXiv | VLA fine-tuning study across egocentric human and robot data using pi0.5 and dexterous five-finger embodiments | [Project](https://egopipaper.github.io/) |
 | EgoTactile | 2026-06 | ICML 2026 spotlight | Egocentric video to full-hand grasp-pressure benchmark and diffusion/baseline models for everyday-object interactions | [Project](https://egotactile.github.io/) |
@@ -497,7 +497,7 @@ Open models, baselines, and loaders you can build on directly.
 ### Practical Tooling
 
 | Tool | Released | Venue | Use |
-|---|---|---|---|
+| :--- | :---: | :---: | :--- |
 | [EgoKit](https://egokit.chuange.org/) | 2026-05 | arXiv | Low-cost synchronized ego/wrist recording workflow across phones, smart glasses, and XR hosts. |
 | [MobileEgo Anywhere](https://arxiv.org/abs/2605.05945) | 2026-05 | arXiv | Commodity-phone infrastructure for hour-plus egocentric trajectories, STERA processing, and long-form VLA data collection. |
 | [HOMIE-toolkit](https://github.com/Ropedia/HOMIE-toolkit) | 2026 | GitHub | Loading and visualizing Xperience-10M HDF5 annotations, calibration, SLAM, hand/body mocap, depth, IMU, and point clouds. |
@@ -514,7 +514,7 @@ Open models, baselines, and loaders you can build on directly.
 These resources are **not first-person/egocentric**, but they are close neighbors that egocentric research routinely builds on or compares against — large robot-learning corpora, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning. They are kept out of the main atlas to keep the egocentric scope clean, and are tagged `scope: adjacent` in [`data/resources.yml`](data/resources.yml).
 
 | Resource | Released | Venue | Scale / signal | Why it is adjacent (not egocentric) | Status |
-|---|---|---|---|---|---|
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | [Seeing Across Views / MV-RoboBench](https://github.com/microsoft/MV-RoboBench) | 2025-10 | ICLR 2026 | 1.7K curated QA items over eight subtasks for multi-view spatial reasoning of VLMs in robotic manipulation (ICLR 2026) | Multi-camera robot scenes, not wearable capture | open |
 | [Minerva-Ego](https://github.com/google-deepmind/neptune) | 2025-05 | arXiv | Part of the Neptune / MINERVA long-video reasoning collection over web (YouTube) videos with manual reasoning traces | General long-video reasoning, not first-person capture | open |
 | [SEED4D](https://seed4d.github.io/) | 2024-12 | WACV 2025 | Synthetic ego-exo dynamic 4D generator and autonomous-driving dataset (16.8M images, vehicle cameras, LiDAR; WACV 2025) | Vehicle-egocentric driving data, not human/wearable | open |
@@ -525,7 +525,7 @@ These resources are **not first-person/egocentric**, but they are close neighbor
 Foundational papers and recent surveys for background and citation.
 
 | Resource | Why it matters |
-|---|---|
+| :--- | :--- |
 | [Ego4D: Around the World in 3,000 Hours of Egocentric Video](https://arxiv.org/abs/2110.07058) | Defines the modern large-scale egocentric benchmark suite. |
 | [Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives](https://arxiv.org/abs/2311.18259) | Defines the major synchronized ego-exo activity resource. |
 | [Scaling Egocentric Vision: The EPIC-KITCHENS Dataset](https://arxiv.org/abs/1804.02748) and [EPIC-KITCHENS-100](https://arxiv.org/abs/2006.13256) | Core kitchen/action-recognition benchmark lineage. |
@@ -543,7 +543,7 @@ Foundational papers and recent surveys for background and citation.
 Recurring venues and challenge hubs where new egocentric tasks and leaderboards appear.
 
 | Event / hub | Focus |
-|---|---|
+| :--- | :--- |
 | [Ego4D Challenges](https://ego4d-data.org/) | Episodic memory, forecasting, hand-object, social/audio, and other Ego4D tasks. |
 | [Ego-Exo4D Challenges](https://ego-exo4d-data.org/) | Cross-view, correspondence, pose, skill, and proficiency tasks. |
 | [EPIC-KITCHENS Challenges](https://epic-kitchens.github.io/) | Action recognition, action detection, anticipation, retrieval, and domain adaptation. |
@@ -557,7 +557,7 @@ Recurring venues and challenge hubs where new egocentric tasks and leaderboards 
 These entries are promising but should be rechecked before treating them as stable public datasets in a paper or benchmark.
 
 | Resource | Why to track | Current note |
-|---|---|---|
+| :--- | :--- | :--- |
 | EgoLive | Large real-world egocentric manipulation data for robot learning | Paper claims open-source annotated data; stable full download route needs verification. |
 | WiYH | Large manipulation corpus with rich hand/wrist/depth signals | Release and license need verification. |
 | OpenEgo | Unified manipulation platform over public ego datasets | Resources announced; verify full release state. |

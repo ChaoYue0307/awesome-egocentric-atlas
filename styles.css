@@ -425,7 +425,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   min-width: 960px;
+  table-layout: fixed;
 }
+
+/* Consistent, readable column proportions (sum = 100%). */
+.col-resource { width: 23%; }
+.col-kind { width: 10%; }
+.col-released { width: 11%; }
+.col-status { width: 11%; }
+.col-signal { width: 45%; }
 
 th,
 td {
@@ -433,6 +441,7 @@ td {
   border-bottom: 1px solid #ecf2f3;
   text-align: left;
   vertical-align: top;
+  overflow-wrap: break-word;
 }
 
 th {
