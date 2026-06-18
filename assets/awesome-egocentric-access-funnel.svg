@@ -29,28 +29,28 @@
   <text class="title ink" x="70" y="104">243 egocentric resources by access state</text>
   <text class="subtitle" x="70" y="136">A snapshot of availability (not a pipeline). Roughly half are usable now; a large share are recent and still unverified.</text>
 
-  <!-- funnel rows, centered on x=640; width scaled by count -->
-  <!-- open 107 -->
+  <!-- funnel rows, centered on x=640; counts are patched by build_artifacts.rb -->
+  <!-- open -->
   <rect x="190" y="186" width="900" height="56" rx="11" fill="#00a6b2" filter="url(#shadow)"/>
   <text class="row" x="640" y="221" text-anchor="middle">open &#183; 109</text>
   <text class="gloss" x="1104" y="221">usable today</text>
 
-  <!-- watch 111 (≈ open; drawn equal width) -->
+  <!-- watch (≈ open; drawn equal width) -->
   <rect x="190" y="252" width="900" height="56" rx="11" fill="#9aa7af" filter="url(#shadow)"/>
   <text class="row" x="640" y="287" text-anchor="middle">watch &#183; 111</text>
   <text class="gloss" x="1104" y="287">verify before use</text>
 
-  <!-- partial 11 -->
+  <!-- partial -->
   <rect x="500" y="318" width="280" height="56" rx="11" fill="#ef9f24" filter="url(#shadow)"/>
   <text class="row" x="640" y="353" text-anchor="middle">partial &#183; 12</text>
   <text class="gloss" x="794" y="353">subset / annotations only</text>
 
-  <!-- benchmark 7 -->
+  <!-- benchmark -->
   <rect x="525" y="384" width="230" height="56" rx="11" fill="#5b6b73" filter="url(#shadow)"/>
   <text class="row" x="640" y="419" text-anchor="middle">benchmark &#183; 7</text>
   <text class="gloss" x="769" y="419">eval over existing video</text>
 
-  <!-- request 4 -->
+  <!-- request -->
   <rect x="545" y="450" width="190" height="56" rx="11" fill="#d98f1f" filter="url(#shadow)"/>
   <text class="row" x="640" y="485" text-anchor="middle">request &#183; 4</text>
   <text class="gloss" x="749" y="485">license / approval needed</text>
