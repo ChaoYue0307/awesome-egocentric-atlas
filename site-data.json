@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-06-17",
+    "last_major_audit": "2026-06-18",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,14 +15,14 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 241,
-    "egocentric_resources": 237,
+    "total_resources": 247,
+    "egocentric_resources": 243,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 67,
       "collection": 1,
-      "dataset": 96,
-      "model": 60,
+      "dataset": 97,
+      "model": 65,
       "toolkit": 13
     },
     "status_counts": {
@@ -30,7 +30,7 @@
       "open": 109,
       "partial": 12,
       "request": 4,
-      "watch": 105
+      "watch": 111
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 44
+      "count": 47
     },
     {
       "id": "procedure-action",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 90
+      "count": 95
     },
     {
       "id": "memory-reasoning",
@@ -87,7 +87,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 35
+      "count": 36
     },
     {
       "id": "ar-wearables",
@@ -5863,6 +5863,152 @@
         "egocentric-video",
         "hand-pose",
         "text"
+      ]
+    },
+    {
+      "name": "ACE-Ego-0",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.17200",
+      "paper": "https://arxiv.org/abs/2606.17200",
+      "scale": "Unifies 4.53K hours of robot/sim data with 1.48K hours of pseudo-action-labeled egocentric human video via reliability-aware weighting for VLA pretraining; evaluated on RoboCasa GR1 and RoboTwin 2.0",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "imitation-learning",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "language",
+        "robot-actions"
+      ]
+    },
+    {
+      "name": "EgoXtreme",
+      "kind": "dataset",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.25135",
+      "paper": "https://arxiv.org/abs/2603.25135",
+      "scale": "Smart-glasses egocentric 6D object-pose dataset spanning industrial, sports, and rescue scenes with extreme motion blur, dynamic lighting, and heavy occlusion where current pose estimators fail",
+      "tasks": [
+        "3d-4d-understanding",
+        "pose-and-body"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "rgb"
+      ]
+    },
+    {
+      "name": "EgoForge",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.20169",
+      "paper": "https://arxiv.org/abs/2603.20169",
+      "scale": "Goal-directed egocentric world simulator that rolls out coherent first-person video from a single egocentric image and a high-level instruction",
+      "tasks": [
+        "world-modeling",
+        "video-generation",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text"
+      ]
+    },
+    {
+      "name": "EgoHOI World Model",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.13615",
+      "paper": "https://arxiv.org/abs/2603.13615",
+      "scale": "Physics-informed egocentric world model that synthesizes photorealistic, contact-consistent hand-object interactions from action signals alone, without future-state inputs",
+      "tasks": [
+        "world-modeling",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video"
+      ]
+    },
+    {
+      "name": "EgoControl",
+      "kind": "model",
+      "released": "2025-11",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2511.18173",
+      "paper": "https://arxiv.org/abs/2511.18173",
+      "scale": "Pose-controllable egocentric video diffusion model that generates temporally coherent first-person frames conditioned on sequences of 3D full-body poses",
+      "tasks": [
+        "video-generation",
+        "world-modeling",
+        "pose-and-body"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "body-pose"
+      ]
+    },
+    {
+      "name": "EgoFlow",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.01421",
+      "paper": "https://arxiv.org/abs/2604.01421",
+      "scale": "Gradient-guided flow-matching framework that generates physically plausible 6DoF object trajectories from egocentric video using differentiable collision and smoothness constraints",
+      "tasks": [
+        "3d-4d-understanding",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video"
       ]
     }
   ]

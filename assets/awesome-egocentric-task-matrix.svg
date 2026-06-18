@@ -17,9 +17,9 @@
       .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
       .title { font: 700 40.1px system-ui, -apple-system, "Segoe UI", sans-serif; }
       .subtitle { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .label { font: 700 26.0px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
-      .compare { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
-      .anchors { font: 600 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+      .label { font: 700 25px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
+      .compare { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .anchors { font: 600 18.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
       .pillText { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .06em; }
       .legendK { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5b6b73; letter-spacing: .14em; }
       .legendT { font: 600 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
@@ -29,13 +29,13 @@
   <rect width="1280" height="740" fill="url(#bg)"/>
   <rect width="1280" height="740" fill="url(#dots)"/>
 
-  <text class="kicker" x="70" y="60">SIX RESEARCH LANES</text>
-  <text class="title ink" x="70" y="102">Egocentric AI Task Matrix</text>
-  <text class="subtitle" x="70" y="134">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
+  <text class="kicker" x="58" y="60">SIX RESEARCH LANES</text>
+  <text class="title ink" x="58" y="102">Egocentric AI Task Matrix</text>
+  <text class="subtitle" x="58" y="134">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
 
   <!-- Row 1 -->
-  <g transform="translate(70 170)">
-    <rect width="360" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(58 170)">
+    <rect width="374" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="64" height="28" rx="14" fill="#0b8f98"/>
     <text class="pillText" x="60" y="46" text-anchor="middle">VIDEO</text>
     <text class="label" x="28" y="100">Foundation Ego Video</text>
@@ -43,8 +43,8 @@
     <text class="anchors" x="28" y="166">Xperience-10M, Ego4D</text>
   </g>
 
-  <g transform="translate(460 170)">
-    <rect width="360" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(453 170)">
+    <rect width="374" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="74" height="28" rx="14" fill="#5b6b73"/>
     <text class="pillText" x="65" y="46" text-anchor="middle">ACTION</text>
     <text class="label" x="28" y="100">Procedure &amp; Anticipation</text>
@@ -52,8 +52,8 @@
     <text class="anchors" x="28" y="166">EPIC-KITCHENS, Assembly101</text>
   </g>
 
-  <g transform="translate(850 170)">
-    <rect width="360" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(848 170)">
+    <rect width="374" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="46" height="28" rx="14" fill="#ef9f24"/>
     <text class="pillText" x="51" y="46" text-anchor="middle">3D</text>
     <text class="label" x="28" y="100">Hands, Objects &amp; Pose</text>
@@ -62,8 +62,8 @@
   </g>
 
   <!-- Row 2 -->
-  <g transform="translate(70 400)">
-    <rect width="360" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(58 400)">
+    <rect width="374" height="200" rx="18" fill="#ffffff" stroke="#d5e1e6" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="80" height="28" rx="14" fill="#5b6b73"/>
     <text class="pillText" x="68" y="46" text-anchor="middle">MEMORY</text>
     <text class="label" x="28" y="100">Long-Context Reasoning</text>
@@ -71,8 +71,8 @@
     <text class="anchors" x="28" y="166">EgoSchema, EgoLife, Ego-R1</text>
   </g>
 
-  <g transform="translate(460 400)">
-    <rect width="360" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(453 400)">
+    <rect width="374" height="200" rx="18" fill="#e9f7f7" stroke="#8fd2d4" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="66" height="28" rx="14" fill="#0b8f98"/>
     <text class="pillText" x="61" y="46" text-anchor="middle">ROBOT</text>
     <text class="label" x="28" y="100">Robotics &amp; VLA</text>
@@ -80,8 +80,8 @@
     <text class="anchors" x="28" y="166">EgoDex, OpenEgo, EgoVLA</text>
   </g>
 
-  <g transform="translate(850 400)">
-    <rect width="360" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
+  <g transform="translate(848 400)">
+    <rect width="374" height="200" rx="18" fill="#fff4dc" stroke="#f0c66f" stroke-width="1.6" filter="url(#shadow)"/>
     <rect x="28" y="28" width="76" height="28" rx="14" fill="#ef9f24"/>
     <text class="pillText" x="66" y="46" text-anchor="middle">SENSOR</text>
     <text class="label" x="28" y="100">AR &amp; Wearable Sensing</text>
@@ -90,16 +90,16 @@
   </g>
 
   <!-- access-state legend -->
-  <text class="legendK" x="70" y="668">ACCESS STATES</text>
-  <circle cx="232" cy="663" r="6" fill="#00a6b2"/>
-  <text class="legendT" x="246" y="668">open</text>
-  <circle cx="320" cy="663" r="6" fill="#ef9f24"/>
-  <text class="legendT" x="334" y="668">request</text>
-  <circle cx="432" cy="663" r="6" fill="#5b6b73"/>
-  <text class="legendT" x="446" y="668">benchmark</text>
-  <circle cx="580" cy="663" r="6" fill="#9aa7af"/>
-  <text class="legendT" x="594" y="668">partial</text>
-  <circle cx="684" cy="663" r="6" fill="#c2ccd2"/>
-  <text class="legendT" x="698" y="668">watch</text>
-  <text class="compare" x="800" y="668">Start with mature lanes; track watch entries.</text>
+  <text class="legendK" x="58" y="668">ACCESS STATES</text>
+  <circle cx="226" cy="663" r="6" fill="#00a6b2"/>
+  <text class="legendT" x="240" y="668">open</text>
+  <circle cx="314" cy="663" r="6" fill="#ef9f24"/>
+  <text class="legendT" x="328" y="668">request</text>
+  <circle cx="430" cy="663" r="6" fill="#5b6b73"/>
+  <text class="legendT" x="444" y="668">benchmark</text>
+  <circle cx="582" cy="663" r="6" fill="#9aa7af"/>
+  <text class="legendT" x="596" y="668">partial</text>
+  <circle cx="688" cy="663" r="6" fill="#c2ccd2"/>
+  <text class="legendT" x="702" y="668">watch</text>
+  <text class="compare" x="812" y="668">Start with mature lanes; track watch entries.</text>
 </svg>

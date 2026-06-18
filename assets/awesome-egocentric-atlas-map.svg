@@ -25,7 +25,7 @@
       .panel { fill: #ffffff; stroke: #d9e4e9; stroke-width: 1.6; filter: url(#shadow); }
       .ph { font: 700 23.6px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
       .row { font: 600 20.1px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
-      .rowsub { font: 500 16.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .rowsub { font: 500 15.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
       .divider { stroke: #e6eef1; stroke-width: 1.4; }
       .conn { stroke: #8aa2ab; stroke-width: 2.6; fill: none; }
       .loop { stroke: #00a6b2; stroke-width: 2.6; fill: none; stroke-dasharray: 2 8; stroke-linecap: round; }
@@ -50,15 +50,15 @@
 
   <!-- stat chips -->
   <g>
-    <rect class="chip" x="820" y="62" width="170" height="36" rx="18"/>
-    <circle class="dotT" cx="846" cy="80" r="5"/>
-    <text class="chiptext" x="860" y="85">237 resources</text>
-    <rect class="chip" x="1000" y="62" width="110" height="36" rx="18"/>
-    <circle class="dotA" cx="1026" cy="80" r="5"/>
-    <text class="chiptext" x="1040" y="85">6 lanes</text>
-    <rect class="chip" x="1120" y="62" width="90" height="36" rx="18"/>
-    <circle class="dotN" cx="1144" cy="80" r="5"/>
-    <text class="chiptext" x="1158" y="85">5 states</text>
+    <rect class="chip" x="806" y="62" width="176" height="36" rx="18"/>
+    <circle class="dotT" cx="832" cy="80" r="5"/>
+    <text class="chiptext" x="846" y="85">243 resources</text>
+    <rect class="chip" x="992" y="62" width="104" height="36" rx="18"/>
+    <circle class="dotA" cx="1016" cy="80" r="5"/>
+    <text class="chiptext" x="1030" y="85">6 lanes</text>
+    <rect class="chip" x="1106" y="62" width="104" height="36" rx="18"/>
+    <circle class="dotN" cx="1130" cy="80" r="5"/>
+    <text class="chiptext" x="1144" y="85">5 states</text>
   </g>
 
   <!-- connectors -->

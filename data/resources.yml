@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-17"
+  last_major_audit: "2026-06-18"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -2944,3 +2944,93 @@ resources:
     tasks: [natural-language-query, temporal-grounding, hand-object, ego4d]
     verified_at: "2026-06-16"
     citation_key: hand_trajectory_fusion_ego_nlq_2026
+
+  - name: ACE-Ego-0
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.17200
+    paper: https://arxiv.org/abs/2606.17200
+    scale: "Unifies 4.53K hours of robot/sim data with 1.48K hours of pseudo-action-labeled egocentric human video via reliability-aware weighting for VLA pretraining; evaluated on RoboCasa GR1 and RoboTwin 2.0"
+    modalities: [egocentric-video, language, robot-actions]
+    tasks: [vla, robot-learning, imitation-learning, manipulation]
+    release_note: "arXiv preprint (June 2026); watch for code and checkpoint release."
+    verified_at: "2026-06-18"
+    citation_key: ace_ego0_2026
+
+  - name: EgoXtreme
+    kind: dataset
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.25135
+    paper: https://arxiv.org/abs/2603.25135
+    scale: "Smart-glasses egocentric 6D object-pose dataset spanning industrial, sports, and rescue scenes with extreme motion blur, dynamic lighting, and heavy occlusion where current pose estimators fail"
+    modalities: [egocentric-video, rgb]
+    tasks: [3d-4d-understanding, pose-and-body]
+    release_note: "arXiv preprint (March 2026); watch for dataset and benchmark release."
+    verified_at: "2026-06-18"
+    citation_key: egoxtreme_2026
+
+  - name: EgoForge
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.20169
+    paper: https://arxiv.org/abs/2603.20169
+    scale: "Goal-directed egocentric world simulator that rolls out coherent first-person video from a single egocentric image and a high-level instruction"
+    modalities: [egocentric-video, text]
+    tasks: [world-modeling, video-generation, hand-object-interaction]
+    release_note: "arXiv preprint (March 2026); watch for code and weights."
+    verified_at: "2026-06-18"
+    citation_key: egoforge_2026
+
+  - name: EgoHOI World Model
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.13615
+    paper: https://arxiv.org/abs/2603.13615
+    scale: "Physics-informed egocentric world model that synthesizes photorealistic, contact-consistent hand-object interactions from action signals alone, without future-state inputs"
+    modalities: [egocentric-video]
+    tasks: [world-modeling, hand-object-interaction]
+    release_note: "arXiv preprint (March 2026); watch for code release."
+    verified_at: "2026-06-18"
+    citation_key: egohoi_wm_2026
+
+  - name: EgoControl
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.18173
+    paper: https://arxiv.org/abs/2511.18173
+    scale: "Pose-controllable egocentric video diffusion model that generates temporally coherent first-person frames conditioned on sequences of 3D full-body poses"
+    modalities: [egocentric-video, body-pose]
+    tasks: [video-generation, world-modeling, pose-and-body]
+    release_note: "arXiv preprint (November 2025); watch for code release."
+    verified_at: "2026-06-18"
+    citation_key: egocontrol_2025
+
+  - name: EgoFlow
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.01421
+    paper: https://arxiv.org/abs/2604.01421
+    scale: "Gradient-guided flow-matching framework that generates physically plausible 6DoF object trajectories from egocentric video using differentiable collision and smoothness constraints"
+    modalities: [egocentric-video]
+    tasks: [3d-4d-understanding, hand-object-interaction]
+    release_note: "arXiv preprint (April 2026); watch for code release."
+    verified_at: "2026-06-18"
+    citation_key: egoflow_2026
