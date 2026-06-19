@@ -3169,3 +3169,108 @@ resources:
     release_note: "arXiv preprint (June 2026); watch for code release."
     verified_at: "2026-06-19"
     citation_key: ego_nav_cotraining_2026
+
+  - name: EXPLORE-Bench
+    kind: benchmark
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.09731
+    paper: https://arxiv.org/abs/2603.09731
+    scale: "Egocentric scene-prediction benchmark over real first-person videos: predict the final scene state after long atomic-action sequences, with object, attribute, and relation annotations; large human-model gap"
+    modalities: [egocentric-video, text]
+    tasks: [reasoning-intent-planning, question-answering, world-modeling]
+    release_note: "arXiv preprint (March 2026); watch for benchmark release."
+    verified_at: "2026-06-19"
+    citation_key: explore_bench_2026
+
+  - name: Hand2World
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.09600
+    paper: https://arxiv.org/abs/2602.09600
+    scale: "Autoregressive egocentric world model that generates photorealistic first-person interaction video from free-space hand gestures using occlusion-invariant hand conditioning and Plucker-ray camera embeddings; best on ARCTIC, HOT3D, HOI4D"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [world-modeling, video-generation, hand-object-interaction]
+    release_note: "arXiv preprint (February 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: hand2world_2026
+
+  - name: EgoSim
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.01001
+    paper: https://arxiv.org/abs/2604.01001
+    scale: "Closed-loop egocentric world simulator that generates spatially consistent first-person interaction videos with explicit 3D grounding and dynamic world-state updates for multi-stage simulation and cross-embodiment transfer"
+    modalities: [egocentric-video, camera-pose]
+    tasks: [world-modeling, video-generation, robot-learning]
+    release_note: "arXiv preprint (April 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: egosim_2026
+
+  - name: EgoPush
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.18071
+    paper: https://arxiv.org/abs/2602.18071
+    scale: "End-to-end egocentric multi-object non-prehensile rearrangement for mobile robots from a single first-person camera, using object-centric relative-pose latents and teacher-student RL with zero-shot sim-to-real transfer"
+    modalities: [egocentric-video]
+    tasks: [robot-learning, manipulation, ar-sensing-navigation]
+    release_note: "arXiv preprint (February 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: egopush_2026
+
+  - name: MEgoHand
+    kind: model
+    released: "2025-05"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.16602
+    paper: https://arxiv.org/abs/2505.16602
+    scale: "Multimodal egocentric hand-object interaction motion generator pairing a VLM cerebrum with a flow-matching policy over a unified 3.35M RGB-D frame, 24K interaction, 1.2K object dataset"
+    modalities: [egocentric-video, rgb-d, text, hand-pose]
+    tasks: [hand-object-interaction, video-generation, pose-and-body]
+    release_note: "arXiv preprint (May 2025); watch for code and data release."
+    verified_at: "2026-06-19"
+    citation_key: megohand_2025
+
+  - name: EgoH4
+    kind: model
+    released: "2025-04"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2504.08654
+    paper: https://arxiv.org/abs/2504.08654
+    scale: "Diffusion transformer that forecasts both-hand 3D trajectories and poses from egocentric video and camera pose, including out-of-frame hands; trained on Ego-Exo4D (156K train / 34K eval sequences)"
+    modalities: [egocentric-video, camera-pose, hand-pose]
+    tasks: [pose-and-body, hand-object-interaction, world-modeling]
+    release_note: "arXiv preprint (April 2025); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: egoh4_2025
+
+  - name: Diff-IP2D
+    kind: model
+    released: "2024-05"
+    venue: "arXiv"
+    year: 2024
+    status: open
+    url: https://github.com/IRMVLab/Diff-IP2D
+    paper: https://arxiv.org/abs/2405.04370
+    code: https://github.com/IRMVLab/Diff-IP2D
+    scale: "Non-autoregressive diffusion model that jointly forecasts 2D hand trajectories and object affordances on egocentric video with explicit camera-egomotion conditioning"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [hand-object-interaction, pose-and-body]
+    verified_at: "2026-06-19"
+    citation_key: diff_ip2d_2024

@@ -20,7 +20,7 @@
 
 <p align="center"><strong>第一人称 AI 的精选地图——汇集自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 以及手物交互背后的数据集、基准、模型与工具。</strong></p>
 
-<p align="center"><strong>252</strong> 自我中心资源 — 98 数据集 · 67 基准 · 73 模型 · 13 工具包</p>
+<p align="center"><strong>259</strong> 自我中心资源 — 98 数据集 · 68 基准 · 79 模型 · 13 工具包</p>
 
 ## 内容概览
 
