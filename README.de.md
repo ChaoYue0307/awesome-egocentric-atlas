@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Eine kuratierte Karte der First-Person-KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.</strong></p>
 
-<p align="center"><strong>266</strong> egozentrische Ressourcen — 99 Datensätze · 69 Benchmarks · 84 Modelle · 13 Toolkits</p>
+<p align="center"><strong>269</strong> egozentrische Ressourcen — 102 Datensätze · 69 Benchmarks · 84 Modelle · 13 Toolkits</p>
 
 ## Inhalt
 

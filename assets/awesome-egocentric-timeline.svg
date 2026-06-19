@@ -16,7 +16,7 @@
     <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
     </marker>
-    <clipPath id="c1"><rect x="142" y="448" width="96" height="32" rx="8"/></clipPath>
+    <clipPath id="c1"><rect x="142" y="440" width="96" height="40" rx="8"/></clipPath>
     <clipPath id="c2"><rect x="382" y="429" width="96" height="51" rx="8"/></clipPath>
     <clipPath id="c3"><rect x="622" y="350" width="96" height="130" rx="8"/></clipPath>
     <clipPath id="c4"><rect x="862" y="248" width="96" height="232" rx="8"/></clipPath>
@@ -72,8 +72,8 @@
 
   <!-- stacked bars (bottom-up: dataset, benchmark, model, toolkit, collection) -->
   <g clip-path="url(#c1)" filter="url(#shadow)">
-    <rect class="seg" x="142" y="450" width="96" height="30" fill="#0b8f98"/>
-    <rect class="seg" x="142" y="448" width="96" height="3" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="442" width="96" height="38" fill="#0b8f98"/>
+    <rect class="seg" x="142" y="440" width="96" height="3" fill="#5b6b73"/>
   </g>
   <g clip-path="url(#c2)" filter="url(#shadow)">
     <rect class="seg" x="382" y="445" width="96" height="35" fill="#0b8f98"/>
@@ -102,11 +102,11 @@
   </g>
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,448 430,429 670,350 910,248 1150,207"/>
+  <polyline class="trend" points="190,440 430,429 670,350 910,248 1150,207"/>
   <path class="proj" d="M1150 207 L1230 189" marker-end="url(#up)"/>
   <text class="note" x="1208" y="178" text-anchor="end">still H1</text>
   <g>
-    <circle cx="190" cy="448" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="190" cy="440" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="429" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="670" cy="350" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="910" cy="248" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
@@ -114,7 +114,7 @@
   </g>
 
   <!-- totals -->
-  <text class="count" x="190" y="436" text-anchor="middle">12</text>
+  <text class="count" x="190" y="428" text-anchor="middle">15</text>
   <text class="count" x="430" y="417" text-anchor="middle">19</text>
   <text class="count" x="670" y="338" text-anchor="middle">48</text>
   <text class="count" x="910" y="236" text-anchor="middle">86</text>
@@ -122,7 +122,7 @@
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>
-  <text class="anchor" x="190" y="531" text-anchor="middle">GTEA, EgoHands</text>
+  <text class="anchor" x="190" y="531" text-anchor="middle">CMU-MMAC, GTEA</text>
   <text class="era" x="430" y="510" text-anchor="middle">2019&#8211;2021</text>
   <text class="anchor" x="430" y="531" text-anchor="middle">EPIC-100, Ego4D</text>
   <text class="era" x="670" y="510" text-anchor="middle">2022&#8211;2023</text>

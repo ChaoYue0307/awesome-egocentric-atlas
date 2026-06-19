@@ -3377,3 +3377,46 @@ resources:
     release_note: "arXiv preprint (February 2026); watch for code and data release."
     verified_at: "2026-06-19"
     citation_key: neck_gaze_glc_2026
+
+  - name: CMU-MMAC
+    kind: dataset
+    released: "2009"
+    venue: "CMU tech report 2009"
+    year: 2009
+    status: open
+    url: http://kitchen.cs.cmu.edu/
+    paper: http://kitchen.cs.cmu.edu/
+    scale: "Among the earliest egocentric datasets: a multimodal kitchen-activity database with head-mounted egocentric video plus body IMUs, motion capture, and audio for 43 subjects cooking 5 recipes"
+    modalities: [egocentric-video, imu, motion, audio]
+    tasks: [action-and-procedure, detection-segmentation]
+    scope_note: "2009 CMU Multimodal Activity database; one of the first egocentric (ego+exo) activity datasets."
+    verified_at: "2026-06-19"
+    citation_key: cmu_mmac_2009
+
+  - name: First-Person Social Interactions
+    kind: dataset
+    released: "2012"
+    venue: "CVPR 2012"
+    year: 2012
+    status: open
+    url: http://ai.stanford.edu/~alireza/publication/CVPR12.pdf
+    paper: http://ai.stanford.edu/~alireza/publication/CVPR12.pdf
+    scale: "The first egocentric social-interaction dataset: day-long head-mounted video of 8 subjects at a theme park, annotated for social interactions, roles, attention, and turn-taking"
+    modalities: [egocentric-video]
+    tasks: [audio-and-social, reasoning-intent-planning, detection-segmentation]
+    verified_at: "2026-06-19"
+    citation_key: fpsi_2012
+
+  - name: BEOID
+    kind: dataset
+    released: "2014"
+    venue: "BMVC 2014"
+    year: 2014
+    status: open
+    url: https://dimadamen.github.io/BEOID/
+    paper: https://dimadamen.github.io/BEOID/
+    scale: "Gaze-tracked egocentric video of 8 users interacting with objects across 6 everyday locations (kitchen, workspace, printer, corridor, gym) for discovering task-relevant objects and interaction modes"
+    modalities: [egocentric-video, gaze]
+    tasks: [hand-object-interaction, action-and-procedure, detection-segmentation]
+    verified_at: "2026-06-19"
+    citation_key: beoid_2014

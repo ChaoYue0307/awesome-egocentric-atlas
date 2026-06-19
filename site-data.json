@@ -15,19 +15,19 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 270,
-    "egocentric_resources": 266,
+    "total_resources": 273,
+    "egocentric_resources": 269,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 69,
       "collection": 1,
-      "dataset": 99,
+      "dataset": 102,
       "model": 84,
       "toolkit": 13
     },
     "status_counts": {
       "benchmark": 7,
-      "open": 115,
+      "open": 118,
       "partial": 12,
       "request": 4,
       "watch": 128
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 59
+      "count": 61
     },
     {
       "id": "hands-3d",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 109
+      "count": 112
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 85
+      "count": 86
     },
     {
       "id": "robotics-vla",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 65
+      "count": 66
     }
   ],
   "resources": [
@@ -6592,6 +6592,83 @@
       "task_families": [
         "ar-sensing-navigation",
         "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze"
+      ]
+    },
+    {
+      "name": "CMU-MMAC",
+      "kind": "dataset",
+      "released": "2009",
+      "venue": "CMU tech report 2009",
+      "year": 2009,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "http://kitchen.cs.cmu.edu/",
+      "paper": "http://kitchen.cs.cmu.edu/",
+      "scale": "Among the earliest egocentric datasets: a multimodal kitchen-activity database with head-mounted egocentric video plus body IMUs, motion capture, and audio for 43 subjects cooking 5 recipes",
+      "tasks": [
+        "action-and-procedure",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "imu",
+        "motion",
+        "audio"
+      ]
+    },
+    {
+      "name": "First-Person Social Interactions",
+      "kind": "dataset",
+      "released": "2012",
+      "venue": "CVPR 2012",
+      "year": 2012,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "http://ai.stanford.edu/~alireza/publication/CVPR12.pdf",
+      "paper": "http://ai.stanford.edu/~alireza/publication/CVPR12.pdf",
+      "scale": "The first egocentric social-interaction dataset: day-long head-mounted video of 8 subjects at a theme park, annotated for social interactions, roles, attention, and turn-taking",
+      "tasks": [
+        "audio-and-social",
+        "reasoning-intent-planning",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "audio-and-social",
+        "reasoning-intent-planning",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video"
+      ]
+    },
+    {
+      "name": "BEOID",
+      "kind": "dataset",
+      "released": "2014",
+      "venue": "BMVC 2014",
+      "year": 2014,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://dimadamen.github.io/BEOID/",
+      "paper": "https://dimadamen.github.io/BEOID/",
+      "scale": "Gaze-tracked egocentric video of 8 users interacting with objects across 6 everyday locations (kitchen, workspace, printer, corridor, gym) for discovering task-relevant objects and interaction modes",
+      "tasks": [
+        "hand-object-interaction",
+        "action-and-procedure",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "action-and-procedure",
+        "detection-segmentation"
       ],
       "modalities": [
         "egocentric-video",
