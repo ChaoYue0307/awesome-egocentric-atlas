@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 263,
-    "egocentric_resources": 259,
+    "total_resources": 270,
+    "egocentric_resources": 266,
     "adjacent_resources": 4,
     "kind_counts": {
-      "benchmark": 68,
+      "benchmark": 69,
       "collection": 1,
-      "dataset": 98,
-      "model": 79,
+      "dataset": 99,
+      "model": 84,
       "toolkit": 13
     },
     "status_counts": {
       "benchmark": 7,
-      "open": 112,
+      "open": 115,
       "partial": 12,
       "request": 4,
-      "watch": 124
+      "watch": 128
     }
   },
   "lanes": [
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 58
+      "count": 59
     },
     {
       "id": "hands-3d",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 102
+      "count": 109
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 84
+      "count": 85
     },
     {
       "id": "robotics-vla",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 61
+      "count": 65
     }
   ],
   "resources": [
@@ -6414,6 +6414,188 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
+      ]
+    },
+    {
+      "name": "IndEgo",
+      "kind": "dataset",
+      "released": "2025-11",
+      "venue": "NeurIPS 2025",
+      "year": 2025,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/FraunhoferIPK/IndEgo",
+      "paper": "https://arxiv.org/abs/2511.19684",
+      "scale": "~197 hours of egocentric (plus ~97 hours exocentric) industrial collaborative-work video over assembly, logistics, inspection, and repair, with gaze, narration, sound, motion, hand pose, and point clouds",
+      "tasks": [
+        "action-and-procedure",
+        "assistance-and-agents",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "assistance-and-agents",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "audio",
+        "motion",
+        "hand-pose",
+        "point-cloud"
+      ]
+    },
+    {
+      "name": "LaMAria",
+      "kind": "benchmark",
+      "released": "2025-09",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://lamaria.ethz.ch",
+      "paper": "https://arxiv.org/abs/2509.26639",
+      "scale": "City-scale egocentric visual-inertial SLAM benchmark from glasses-like wearables, hours/kilometers of trajectories with centimeter-accurate surveyed ground truth and difficulty-tiered tracks (incl. night and vehicle motion)",
+      "tasks": [
+        "three-d-and-scene",
+        "ar-sensing-navigation",
+        "tracking"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "ar-sensing-navigation",
+        "tracking"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "imu",
+        "camera-pose"
+      ]
+    },
+    {
+      "name": "EgoLifter",
+      "kind": "model",
+      "released": "2024-03",
+      "venue": "ECCV 2024",
+      "year": 2024,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/facebookresearch/egolifter",
+      "paper": "https://arxiv.org/abs/2403.18118",
+      "code": "https://github.com/facebookresearch/egolifter",
+      "scale": "Open-world 3D segmentation that decomposes natural egocentric video into individual 3D objects using 3D Gaussians and SAM weak supervision, with a transient module for dynamic objects (Aria Digital Twin benchmark)",
+      "tasks": [
+        "detection-segmentation",
+        "three-d-and-scene"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "camera-pose"
+      ]
+    },
+    {
+      "name": "EgoSplat",
+      "kind": "model",
+      "released": "2025-03",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2503.11345",
+      "paper": "https://arxiv.org/abs/2503.11345",
+      "scale": "Open-vocabulary egocentric scene understanding with language-embedded 3D Gaussian splatting, using SAM2-tracked multi-view instance features and an instance-aware spatio-temporal module (gains on Aria Digital Twin)",
+      "tasks": [
+        "detection-segmentation",
+        "three-d-and-scene"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "language"
+      ]
+    },
+    {
+      "name": "3D-Aware Ego Instance Tracking",
+      "kind": "model",
+      "released": "2024-08",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2408.09860",
+      "paper": "https://arxiv.org/abs/2408.09860",
+      "scale": "3D-aware instance segmentation and multi-object tracking in egocentric video that lifts 2D masks with scene geometry to survive rapid motion and occlusion (large ID-switch reductions on EPIC Fields)",
+      "tasks": [
+        "detection-segmentation",
+        "tracking",
+        "three-d-and-scene"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "tracking",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "camera-pose"
+      ]
+    },
+    {
+      "name": "EgoCogNav",
+      "kind": "model",
+      "released": "2025-11",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2511.17581",
+      "paper": "https://arxiv.org/abs/2511.17581",
+      "scale": "Cognition-aware egocentric navigation framework that forecasts human trajectory and head motion from perceived path uncertainty, modeling scanning, hesitation, and backtracking, with the 6-hour CEN dataset",
+      "tasks": [
+        "ar-sensing-navigation",
+        "reasoning-intent-planning",
+        "pose-and-body"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "reasoning-intent-planning",
+        "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "motion"
+      ]
+    },
+    {
+      "name": "Neck-Mounted Gaze (GLC)",
+      "kind": "model",
+      "released": "2026-02",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2602.11669",
+      "paper": "https://arxiv.org/abs/2602.11669",
+      "scale": "Transformer gaze estimator (GLC) for a shoulder-level neck-mounted camera with an out-of-bound gaze classification task and head/neck multi-view co-learning, plus a ~4-hour 8-subject dataset",
+      "tasks": [
+        "ar-sensing-navigation",
+        "pose-and-body"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze"
       ]
     }
   ]

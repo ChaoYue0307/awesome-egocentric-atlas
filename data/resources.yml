@@ -3274,3 +3274,106 @@ resources:
     tasks: [hand-object-interaction, pose-and-body]
     verified_at: "2026-06-19"
     citation_key: diff_ip2d_2024
+
+  - name: IndEgo
+    kind: dataset
+    released: "2025-11"
+    venue: "NeurIPS 2025"
+    year: 2025
+    status: open
+    url: https://huggingface.co/datasets/FraunhoferIPK/IndEgo
+    paper: https://arxiv.org/abs/2511.19684
+    scale: "~197 hours of egocentric (plus ~97 hours exocentric) industrial collaborative-work video over assembly, logistics, inspection, and repair, with gaze, narration, sound, motion, hand pose, and point clouds"
+    modalities: [egocentric-video, gaze, audio, motion, hand-pose, point-cloud]
+    tasks: [action-and-procedure, assistance-and-agents, detection-segmentation]
+    verified_at: "2026-06-19"
+    citation_key: indego_2025
+
+  - name: LaMAria
+    kind: benchmark
+    released: "2025-09"
+    venue: "arXiv"
+    year: 2025
+    status: open
+    url: https://lamaria.ethz.ch
+    paper: https://arxiv.org/abs/2509.26639
+    scale: "City-scale egocentric visual-inertial SLAM benchmark from glasses-like wearables, hours/kilometers of trajectories with centimeter-accurate surveyed ground truth and difficulty-tiered tracks (incl. night and vehicle motion)"
+    modalities: [egocentric-video, imu, camera-pose]
+    tasks: [three-d-and-scene, ar-sensing-navigation, tracking]
+    verified_at: "2026-06-19"
+    citation_key: lamaria_2025
+
+  - name: EgoLifter
+    kind: model
+    released: "2024-03"
+    venue: "ECCV 2024"
+    year: 2024
+    status: open
+    url: https://github.com/facebookresearch/egolifter
+    paper: https://arxiv.org/abs/2403.18118
+    code: https://github.com/facebookresearch/egolifter
+    scale: "Open-world 3D segmentation that decomposes natural egocentric video into individual 3D objects using 3D Gaussians and SAM weak supervision, with a transient module for dynamic objects (Aria Digital Twin benchmark)"
+    modalities: [egocentric-video, camera-pose]
+    tasks: [detection-segmentation, three-d-and-scene]
+    verified_at: "2026-06-19"
+    citation_key: egolifter_2024
+
+  - name: EgoSplat
+    kind: model
+    released: "2025-03"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.11345
+    paper: https://arxiv.org/abs/2503.11345
+    scale: "Open-vocabulary egocentric scene understanding with language-embedded 3D Gaussian splatting, using SAM2-tracked multi-view instance features and an instance-aware spatio-temporal module (gains on Aria Digital Twin)"
+    modalities: [egocentric-video, language]
+    tasks: [detection-segmentation, three-d-and-scene]
+    release_note: "arXiv preprint (March 2025); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: egosplat_2025
+
+  - name: 3D-Aware Ego Instance Tracking
+    kind: model
+    released: "2024-08"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2408.09860
+    paper: https://arxiv.org/abs/2408.09860
+    scale: "3D-aware instance segmentation and multi-object tracking in egocentric video that lifts 2D masks with scene geometry to survive rapid motion and occlusion (large ID-switch reductions on EPIC Fields)"
+    modalities: [egocentric-video, camera-pose]
+    tasks: [detection-segmentation, tracking, three-d-and-scene]
+    release_note: "arXiv preprint (August 2024); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: ego_3d_instance_tracking_2024
+
+  - name: EgoCogNav
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.17581
+    paper: https://arxiv.org/abs/2511.17581
+    scale: "Cognition-aware egocentric navigation framework that forecasts human trajectory and head motion from perceived path uncertainty, modeling scanning, hesitation, and backtracking, with the 6-hour CEN dataset"
+    modalities: [egocentric-video, motion]
+    tasks: [ar-sensing-navigation, reasoning-intent-planning, pose-and-body]
+    release_note: "arXiv preprint (November 2025); watch for dataset and code release."
+    verified_at: "2026-06-19"
+    citation_key: egocognav_2025
+
+  - name: Neck-Mounted Gaze (GLC)
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.11669
+    paper: https://arxiv.org/abs/2602.11669
+    scale: "Transformer gaze estimator (GLC) for a shoulder-level neck-mounted camera with an out-of-bound gaze classification task and head/neck multi-view co-learning, plus a ~4-hour 8-subject dataset"
+    modalities: [egocentric-video, gaze]
+    tasks: [ar-sensing-navigation, pose-and-body]
+    release_note: "arXiv preprint (February 2026); watch for code and data release."
+    verified_at: "2026-06-19"
+    citation_key: neck_gaze_glc_2026
