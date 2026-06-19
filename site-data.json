@@ -101,6 +101,85 @@
       "count": 66
     }
   ],
+  "milestones": [
+    {
+      "name": "CMU-MMAC",
+      "kind": "dataset",
+      "url": "http://kitchen.cs.cmu.edu/",
+      "year": 2009,
+      "note": "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
+    },
+    {
+      "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
+      "kind": "dataset",
+      "url": "https://cbs.ic.gatech.edu/fpv/",
+      "year": 2011,
+      "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, 2011) that seeded first-person action and attention research."
+    },
+    {
+      "name": "EPIC-KITCHENS-100",
+      "kind": "dataset",
+      "url": "https://epic-kitchens.github.io/",
+      "year": 2020,
+      "note": "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
+    },
+    {
+      "name": "Ego4D",
+      "kind": "dataset",
+      "url": "https://ego4d-data.org/",
+      "year": 2021,
+      "note": "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
+    },
+    {
+      "name": "EgoVLP",
+      "kind": "model",
+      "url": "https://github.com/showlab/EgoVLP",
+      "year": 2022,
+      "note": "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning."
+    },
+    {
+      "name": "Project Aria Datasets",
+      "kind": "collection",
+      "url": "https://www.projectaria.com/datasets/",
+      "year": 2022,
+      "note": "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
+    },
+    {
+      "name": "Ego-Exo4D",
+      "kind": "dataset",
+      "url": "https://ego-exo4d-data.org/",
+      "year": 2023,
+      "note": "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning."
+    },
+    {
+      "name": "EgoSchema",
+      "kind": "benchmark",
+      "url": "http://egoschema.github.io/",
+      "year": 2023,
+      "note": "The benchmark that exposed how far models are from long-form egocentric video reasoning."
+    },
+    {
+      "name": "HOT3D",
+      "kind": "dataset",
+      "url": "https://facebookresearch.github.io/hot3d/",
+      "year": 2024,
+      "note": "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3)."
+    },
+    {
+      "name": "EgoVLA",
+      "kind": "model",
+      "url": "https://rchalyang.github.io/EgoVLA/",
+      "year": 2025,
+      "note": "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
+    },
+    {
+      "name": "EgoScale",
+      "kind": "dataset",
+      "url": "https://arxiv.org/abs/2602.16710",
+      "year": 2026,
+      "note": "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
+    }
+  ],
   "resources": [
     {
       "name": "Xperience-10M",

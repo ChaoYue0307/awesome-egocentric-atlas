@@ -42,6 +42,8 @@ resources:
     license: cc-by-nc-4.0
 
   - name: Ego4D
+    milestone: 2021
+    milestone_note: "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
     kind: dataset
     released: "2021-10"
     venue: "CVPR 2022"
@@ -57,6 +59,8 @@ resources:
     verified_at: "2026-06-15"
 
   - name: Ego-Exo4D
+    milestone: 2023
+    milestone_note: "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning."
     kind: dataset
     released: "2023-11"
     venue: "CVPR 2024"
@@ -72,6 +76,8 @@ resources:
     verified_at: "2026-06-15"
 
   - name: EPIC-KITCHENS-100
+    milestone: 2020
+    milestone_note: "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
     kind: dataset
     released: "2020-06"
     venue: "IJCV 2022"
@@ -389,6 +395,8 @@ resources:
     tasks: [3d-action-target-prediction, hri, anticipation, manipulation-safety]
 
   - name: HOT3D
+    milestone: 2024
+    milestone_note: "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3)."
     kind: dataset
     released: "2024-06"
     venue: "CVPR 2025"
@@ -583,6 +591,8 @@ resources:
     tasks: [single-object-tracking]
 
   - name: Project Aria Datasets
+    milestone: 2022
+    milestone_note: "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
     kind: collection
     released: "2022"
     venue: "project page"
@@ -670,6 +680,8 @@ resources:
     tasks: [expert-trainee-assistance, egocentric-vqa]
 
   - name: EgoSchema
+    milestone: 2023
+    milestone_note: "The benchmark that exposed how far models are from long-form egocentric video reasoning."
     kind: benchmark
     released: "2023-08"
     venue: "NeurIPS 2023"
@@ -989,6 +1001,8 @@ resources:
     release_note: Accepted to ISMAR 2025 as TVCG journal paper
 
   - name: GTEA / GTEA Gaze / EGTEA Gaze+
+    milestone: 2011
+    milestone_note: "Foundational hand-object and gaze egocentric activity datasets (GTEA, 2011) that seeded first-person action and attention research."
     kind: dataset
     released: "2018"
     venue: "project page"
@@ -1130,6 +1144,8 @@ resources:
     tasks: [3d-fields, spatial-reasoning]
 
   - name: EgoVLP
+    milestone: 2022
+    milestone_note: "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning."
     kind: model
     released: "2022-06"
     venue: "NeurIPS 2022"
@@ -1350,6 +1366,8 @@ resources:
     tasks: [foundation-video, video-language]
 
   - name: EgoVLA
+    milestone: 2025
+    milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
     kind: model
     released: "2025"
     venue: "project page"
@@ -2117,6 +2135,8 @@ resources:
     citation_key: egoavu_2026
 
   - name: EgoScale
+    milestone: 2026
+    milestone_note: "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
     kind: dataset
     released: "2026-02"
     venue: "arXiv"
@@ -3389,6 +3409,8 @@ resources:
     citation_key: neck_gaze_glc_2026
 
   - name: CMU-MMAC
+    milestone: 2009
+    milestone_note: "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
     kind: dataset
     released: "2009"
     venue: "CMU tech report 2009"

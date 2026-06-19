@@ -9,6 +9,10 @@ First tagged release. **269 egocentric resources** (102 datasets, 69 benchmarks,
 84 models, 13 toolkits, 1 collection).
 
 ### Added
+- **Milestones:** a curated "landmark works" layer — flagged with `milestone:` in the
+  catalog and generated into both the README and the interactive site (translated in
+  all 8 languages) — from CMU-MMAC (2009) and GTEA through Ego4D, EgoSchema, EgoVLA,
+  and EgoScale's data-scaling law.
 - **Discoverability:** schema.org `DataCatalog` / `Dataset` JSON-LD and a complete
   set of social-meta tags (canonical, Open Graph, Twitter cards) generated into
   the site `<head>` by `build_artifacts.rb` and enforced by `--check`. Surfaces the

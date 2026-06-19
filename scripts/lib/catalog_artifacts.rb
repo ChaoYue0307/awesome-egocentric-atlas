@@ -149,6 +149,29 @@ module CatalogArtifacts
     end
   end
 
+  # Field-defining works, flagged with `milestone: <year>` + `milestone_note`
+  # in the catalog. Ordered chronologically by the milestone year.
+  def milestones
+    resources.select { |entry| entry["milestone"] }
+      .sort_by { |entry| [entry["milestone"].to_i, entry["name"].to_s] }
+      .map do |entry|
+        {
+          "name" => entry["name"],
+          "kind" => entry["kind"],
+          "url" => entry["url"],
+          "year" => entry["milestone"],
+          "note" => entry["milestone_note"]
+        }
+      end
+  end
+
+  def milestones_markdown(items = milestones)
+    rows = items.map do |m|
+      "| #{m['year']} | [#{m['name']}](#{m['url']}) | #{m['note']} |"
+    end
+    (["| Year | Milestone | Why it matters |", "| :---: | :--- | :--- |"] + rows).join("\n")
+  end
+
   def site_payload
     catalog_data = catalog
     normalized = site_resources
@@ -164,6 +187,7 @@ module CatalogArtifacts
       },
       "summary" => summary(normalized),
       "lanes" => lane_payload(normalized),
+      "milestones" => milestones,
       "resources" => normalized
     }
   end
@@ -236,6 +260,12 @@ module CatalogArtifacts
     replace_once!(text, %r{badge/resources-\d+-}, "badge/resources-#{summary_data.fetch('egocentric_resources')}-", "README resources badge")
     replace_once!(text, /\*\*Updated:\*\*\s*\d{4}-\d{2}-\d{2}\./, "**Updated:** #{meta.fetch('last_major_audit')}.", "README updated date")
     replace_once!(text, /^\| \d+ egocentric resources \| .+ \|$/, "| #{at_a_glance_sentence(summary_data)} |", "README at-a-glance row")
+    replace_once!(
+      text,
+      /(<!-- MILESTONES:START[^>]*-->).*?(<!-- MILESTONES:END -->)/m,
+      ->(m) { "#{m[1]}\n\n#{milestones_markdown}\n\n#{m[2]}" },
+      "README milestones section"
+    )
     text
   end
 

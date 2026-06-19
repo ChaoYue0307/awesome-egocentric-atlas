@@ -11,7 +11,8 @@ const LANGS = [
 const I18N = {
   en: {
     skip: "Skip to catalog",
-    "nav.catalog": "Catalog", "nav.lanes": "Lanes", "nav.access": "Access", "nav.readme": "README",
+    "nav.catalog": "Catalog", "nav.lanes": "Lanes", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones",
+    "milestones.title": "Milestones", "milestones.desc": "The landmark works that shaped egocentric AI — from the field's origins to its current frontier.",
     "hero.lead": "A curated map of first-person AI — the datasets, benchmarks, models, and tools behind egocentric vision, embodied AI and robotics, video-language, long-context memory, AR/VR, and hand-object interaction.",
     "btn.github": "GitHub Repo", "btn.hf": "Hugging Face Mirror", "btn.browse": "Browse Catalog",
     "stat.resources": "egocentric resources", "stat.datasets": "datasets", "stat.benchmarks": "benchmarks", "stat.models": "models", "stat.toolkits": "toolkits",
@@ -36,7 +37,8 @@ const I18N = {
   },
   zh: {
     skip: "跳到目录",
-    "nav.catalog": "目录", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README",
+    "nav.catalog": "目录", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑",
+    "milestones.title": "里程碑", "milestones.desc": "塑造自我中心 AI 的里程碑工作——从领域起源到当前前沿。",
     "hero.lead": "第一人称 AI 的精选地图——汇集自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 以及手物交互背后的数据集、基准、模型与工具。",
     "btn.github": "GitHub 仓库", "btn.hf": "Hugging Face 镜像", "btn.browse": "浏览目录",
     "stat.resources": "自我中心资源", "stat.datasets": "数据集", "stat.benchmarks": "基准", "stat.models": "模型", "stat.toolkits": "工具包",
@@ -61,7 +63,8 @@ const I18N = {
   },
   es: {
     skip: "Saltar al catálogo",
-    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README",
+    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos",
+    "milestones.title": "Hitos", "milestones.desc": "Los trabajos de referencia que dieron forma a la IA egocéntrica, desde sus orígenes hasta la frontera actual.",
     "hero.lead": "Un mapa curado de la IA en primera persona: los conjuntos de datos, benchmarks, modelos y herramientas tras la visión egocéntrica, la IA encarnada y la robótica, el aprendizaje visión-lenguaje, la memoria de largo contexto, la RA/RV y la interacción mano-objeto.",
     "btn.github": "Repositorio GitHub", "btn.hf": "Espejo en Hugging Face", "btn.browse": "Explorar catálogo",
     "stat.resources": "recursos egocéntricos", "stat.datasets": "conjuntos de datos", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "herramientas",
@@ -86,7 +89,8 @@ const I18N = {
   },
   fr: {
     skip: "Aller au catalogue",
-    "nav.catalog": "Catalogue", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README",
+    "nav.catalog": "Catalogue", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons",
+    "milestones.title": "Jalons", "milestones.desc": "Les travaux marquants qui ont façonné l'IA égocentrique, des origines du domaine à sa frontière actuelle.",
     "hero.lead": "Une carte sélective de l'IA à la première personne : les jeux de données, benchmarks, modèles et outils derrière la vision égocentrique, l'IA incarnée et la robotique, l'apprentissage vision-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.",
     "btn.github": "Dépôt GitHub", "btn.hf": "Miroir Hugging Face", "btn.browse": "Parcourir le catalogue",
     "stat.resources": "ressources égocentriques", "stat.datasets": "jeux de données", "stat.benchmarks": "benchmarks", "stat.models": "modèles", "stat.toolkits": "outils",
@@ -111,7 +115,8 @@ const I18N = {
   },
   de: {
     skip: "Zum Katalog springen",
-    "nav.catalog": "Katalog", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README",
+    "nav.catalog": "Katalog", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine",
+    "milestones.title": "Meilensteine", "milestones.desc": "Die wegweisenden Arbeiten, die egozentrische KI geprägt haben – von den Ursprüngen bis zur aktuellen Front.",
     "hero.lead": "Eine kuratierte Karte der First-Person-KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.",
     "btn.github": "GitHub-Repo", "btn.hf": "Hugging-Face-Spiegel", "btn.browse": "Katalog durchsuchen",
     "stat.resources": "egozentrische Ressourcen", "stat.datasets": "Datensätze", "stat.benchmarks": "Benchmarks", "stat.models": "Modelle", "stat.toolkits": "Toolkits",
@@ -136,7 +141,8 @@ const I18N = {
   },
   ja: {
     skip: "カタログへスキップ",
-    "nav.catalog": "カタログ", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README",
+    "nav.catalog": "カタログ", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン",
+    "milestones.title": "マイルストーン", "milestones.desc": "エゴセントリック AI を形づくった画期的な研究——分野の起源から最前線まで。",
     "hero.lead": "一人称視点 AI の厳選マップ——エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用を支えるデータセット・ベンチマーク・モデル・ツールを収録。",
     "btn.github": "GitHub リポジトリ", "btn.hf": "Hugging Face ミラー", "btn.browse": "カタログを見る",
     "stat.resources": "エゴセントリック資源", "stat.datasets": "データセット", "stat.benchmarks": "ベンチマーク", "stat.models": "モデル", "stat.toolkits": "ツールキット",
@@ -161,7 +167,8 @@ const I18N = {
   },
   ko: {
     skip: "카탈로그로 건너뛰기",
-    "nav.catalog": "카탈로그", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README",
+    "nav.catalog": "카탈로그", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표",
+    "milestones.title": "이정표", "milestones.desc": "자기중심 AI를 형성한 획기적 연구 — 분야의 기원부터 현재 최전선까지.",
     "hero.lead": "1인칭 AI의 엄선된 지도 — 자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 뒷받침하는 데이터셋·벤치마크·모델·도구를 담았습니다.",
     "btn.github": "GitHub 저장소", "btn.hf": "Hugging Face 미러", "btn.browse": "카탈로그 보기",
     "stat.resources": "자기중심 자원", "stat.datasets": "데이터셋", "stat.benchmarks": "벤치마크", "stat.models": "모델", "stat.toolkits": "툴킷",
@@ -186,7 +193,8 @@ const I18N = {
   },
   pt: {
     skip: "Ir para o catálogo",
-    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README",
+    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos",
+    "milestones.title": "Marcos", "milestones.desc": "Os trabalhos marcantes que moldaram a IA egocêntrica — das origens do campo à sua fronteira atual.",
     "hero.lead": "Um mapa curado da IA em primeira pessoa: os conjuntos de dados, benchmarks, modelos e ferramentas por trás da visão egocêntrica, da IA incorporada e da robótica, da aprendizagem visão-linguagem, da memória de longo contexto, da RA/RV e da interação mão-objeto.",
     "btn.github": "Repositório GitHub", "btn.hf": "Espelho Hugging Face", "btn.browse": "Explorar catálogo",
     "stat.resources": "recursos egocêntricos", "stat.datasets": "conjuntos de dados", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "ferramentas",
@@ -289,6 +297,7 @@ const els = {
   clear: document.querySelector("#clear-filters"),
   summary: document.querySelector("#catalog-summary"),
   lanes: document.querySelector("#lane-grid"),
+  milestones: document.querySelector("#milestone-grid"),
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
   langBar: document.querySelector("#lang-bar")
@@ -550,6 +559,25 @@ function bindFilters() {
   });
 }
 
+function renderMilestones() {
+  if (!els.milestones) return;
+  const items = state.data.milestones || [];
+  els.milestones.replaceChildren();
+  items.forEach((m) => {
+    const li = document.createElement("li");
+    li.className = "milestone";
+    li.innerHTML = `
+      <span class="milestone-year">${escapeHtml(m.year)}</span>
+      <div class="milestone-body">
+        <a class="milestone-name" href="${escapeHtml(m.url)}">${escapeHtml(m.name)}</a>
+        <span class="chip">${escapeHtml(titleize(m.kind))}</span>
+        <p class="milestone-note">${escapeHtml(m.note)}</p>
+      </div>
+    `;
+    els.milestones.appendChild(li);
+  });
+}
+
 async function init() {
   applyStaticI18n();
   buildLangBar();
@@ -557,6 +585,7 @@ async function init() {
   state.data = await response.json();
   renderStats();
   renderSummary();
+  renderMilestones();
   renderFilters();
   renderLanes();
   renderStatuses();

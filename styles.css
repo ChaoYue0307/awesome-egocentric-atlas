@@ -559,6 +559,65 @@ tbody tr:hover {
   gap: 14px;
 }
 
+.milestone-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  gap: 14px;
+}
+
+.milestone {
+  display: flex;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.milestone-year {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  font-weight: 820;
+  font-size: 14px;
+  color: var(--teal);
+  background: rgba(6, 120, 130, 0.09);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.milestone-body {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.milestone-name {
+  color: var(--ink);
+  font-weight: 760;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.milestone-name:hover {
+  color: var(--teal);
+}
+
+.milestone .chip {
+  justify-self: start;
+}
+
+.milestone-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .lane-card {
   position: relative;
   min-height: 168px;
