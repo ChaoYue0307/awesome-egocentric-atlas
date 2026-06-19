@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-18"
+  last_major_audit: "2026-06-19"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -3034,3 +3034,138 @@ resources:
     release_note: "arXiv preprint (April 2026); watch for code release."
     verified_at: "2026-06-18"
     citation_key: egoflow_2026
+
+  - name: WholeBodyVLA
+    kind: model
+    released: "2025-12"
+    venue: "ICLR 2026"
+    year: 2025
+    status: open
+    url: https://github.com/OpenDriveLab/WholebodyVLA
+    paper: https://arxiv.org/abs/2512.11047
+    code: https://github.com/OpenDriveLab/WholebodyVLA
+    scale: "Unified latent VLA that learns latent actions from action-free egocentric videos via a Latent Action Model for whole-body humanoid loco-manipulation; +21.3% over GR00T on AgiBot X2"
+    modalities: [egocentric-video, language, robot-actions]
+    tasks: [vla, robot-learning, manipulation]
+    verified_at: "2026-06-19"
+    citation_key: wholebodyvla_2025
+
+  - name: In-N-On
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.15704
+    paper: https://arxiv.org/abs/2511.15704
+    scale: "Scales egocentric manipulation with 1,000+ hours of in-the-wild human egocentric video (PHSD) plus 20+ hours on-task data to train the Human0 language-conditioned flow-matching policy"
+    modalities: [egocentric-video, language]
+    tasks: [robot-learning, manipulation, imitation-learning]
+    release_note: "arXiv preprint (November 2025); watch for code and data release."
+    verified_at: "2026-06-19"
+    citation_key: in_n_on_2025
+
+  - name: EgoZero
+    kind: model
+    released: "2025-05"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.20290
+    paper: https://arxiv.org/abs/2505.20290
+    scale: "Trains robot manipulation policies from Project Aria smart-glasses human demonstrations with zero robot training data; ~70% zero-shot success across 7 tasks on a Franka arm"
+    modalities: [egocentric-video]
+    tasks: [robot-learning, manipulation, imitation-learning]
+    release_note: "arXiv preprint (May 2025); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: egozero_2025
+
+  - name: Ego-PM
+    kind: model
+    released: "2025-08"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.19852
+    paper: https://arxiv.org/abs/2508.19852
+    scale: "Egocentric predictive world model that jointly forecasts future actions and video frames conditioned on hand trajectories via a latent diffusion model; tested on Ego4D, BridgeData, and RLBench"
+    modalities: [egocentric-video, hand-pose, text]
+    tasks: [world-modeling, video-generation, robot-learning]
+    release_note: "arXiv preprint (August 2025); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: ego_pm_2025
+
+  - name: PEDESTRIAN
+    kind: dataset
+    released: "2025-12"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.19190
+    paper: https://arxiv.org/abs/2512.19190
+    scale: "340 first-person pavement videos covering 29 urban sidewalk obstacle types, with deep-learning baselines for pedestrian-safety obstacle detection"
+    modalities: [egocentric-video, rgb]
+    tasks: [detection-segmentation, ar-sensing-navigation]
+    release_note: "arXiv preprint (December 2025); watch for dataset release."
+    verified_at: "2026-06-19"
+    citation_key: pedestrian_2025
+
+  - name: DeltaDorsal
+    kind: model
+    released: "2026-01"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://github.com/hilab-open-source/deltadorsal
+    paper: https://arxiv.org/abs/2601.15516
+    code: https://github.com/hilab-open-source/deltadorsal
+    scale: "Dual-stream delta encoder that uses dorsal hand-skin deformation features to improve egocentric hand pose under self-occlusion (~18% lower mean per-joint angle error)"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [pose-and-body, hand-object-interaction]
+    verified_at: "2026-06-19"
+    citation_key: deltadorsal_2026
+
+  - name: Edge Episodic Memory QA
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.22455
+    paper: https://arxiv.org/abs/2602.22455
+    scale: "On-device dual-thread MLLM pipeline (continuous video-to-text summarization plus asynchronous querying) for real-time egocentric episodic-memory QA on QAEgo4D-Closed"
+    modalities: [egocentric-video, text]
+    tasks: [question-answering, memory-and-long-context]
+    release_note: "arXiv preprint (February 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: edge_episodic_memory_qa_2026
+
+  - name: LOME
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.27449
+    paper: https://arxiv.org/abs/2603.27449
+    scale: "Action-conditioned egocentric world model that generates photorealistic human-object interactions from an image, text, and per-frame body/hand actions, with realistic physical consequences"
+    modalities: [egocentric-video, body-pose, hand-pose, text]
+    tasks: [world-modeling, video-generation, hand-object-interaction]
+    release_note: "arXiv preprint (March 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: lome_2026
+
+  - name: Ego-Nav Co-training
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.01951
+    paper: https://arxiv.org/abs/2606.01951
+    scale: "Converts egocentric human walking videos into robot-action datasets and co-trains a VLA with robot demonstrations for mobile navigation (fruit-search task)"
+    modalities: [egocentric-video, robot-actions, language]
+    tasks: [vla, robot-learning, ar-sensing-navigation]
+    release_note: "arXiv preprint (June 2026); watch for code release."
+    verified_at: "2026-06-19"
+    citation_key: ego_nav_cotraining_2026

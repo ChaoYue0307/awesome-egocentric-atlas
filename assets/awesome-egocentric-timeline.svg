@@ -19,8 +19,8 @@
     <clipPath id="c1"><rect x="142" y="446" width="96" height="34" rx="8"/></clipPath>
     <clipPath id="c2"><rect x="382" y="426" width="96" height="54" rx="8"/></clipPath>
     <clipPath id="c3"><rect x="622" y="343" width="96" height="137" rx="8"/></clipPath>
-    <clipPath id="c4"><rect x="862" y="275" width="96" height="205" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="218" width="96" height="262" rx="8"/></clipPath>
+    <clipPath id="c4"><rect x="862" y="261" width="96" height="219" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="206" width="96" height="274" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -87,36 +87,36 @@
     <rect class="seg" x="622" y="343" width="96" height="3" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
-    <rect class="seg" x="862" y="392" width="96" height="88" fill="#0b8f98"/>
-    <rect class="seg" x="862" y="343" width="96" height="49" fill="#5b6b73"/>
-    <rect class="seg" x="862" y="283" width="96" height="60" fill="#ef9f24"/>
-    <rect class="seg" x="862" y="275" width="96" height="8" fill="#7a6ff0"/>
+    <rect class="seg" x="862" y="389" width="96" height="91" fill="#0b8f98"/>
+    <rect class="seg" x="862" y="340" width="96" height="49" fill="#5b6b73"/>
+    <rect class="seg" x="862" y="269" width="96" height="71" fill="#ef9f24"/>
+    <rect class="seg" x="862" y="261" width="96" height="8" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c5)" filter="url(#shadow)">
     <rect class="seg" x="1102" y="414" width="96" height="66" fill="#0b8f98"/>
     <rect class="seg" x="1102" y="315" width="96" height="99" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="226" width="96" height="89" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="218" width="96" height="8" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="215" width="96" height="100" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="206" width="96" height="9" fill="#7a6ff0"/>
   </g>
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,446 430,426 670,343 910,275 1150,218"/>
-  <path class="proj" d="M1150 218 L1230 197" marker-end="url(#up)"/>
-  <text class="note" x="1208" y="184" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,446 430,426 670,343 910,261 1150,206"/>
+  <path class="proj" d="M1150 206 L1230 186" marker-end="url(#up)"/>
+  <text class="note" x="1208" y="174" text-anchor="end">still H1</text>
   <g>
     <circle cx="190" cy="446" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="426" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="670" cy="343" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="910" cy="275" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="218" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="910" cy="261" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="1150" cy="206" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
   <!-- totals -->
   <text class="count" x="190" y="434" text-anchor="middle">12</text>
   <text class="count" x="430" y="414" text-anchor="middle">19</text>
   <text class="count" x="670" y="331" text-anchor="middle">48</text>
-  <text class="count" x="910" y="263" text-anchor="middle">72</text>
-  <text class="count" x="1150" y="206" text-anchor="middle">92</text>
+  <text class="count" x="910" y="249" text-anchor="middle">77</text>
+  <text class="count" x="1150" y="194" text-anchor="middle">96</text>
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>

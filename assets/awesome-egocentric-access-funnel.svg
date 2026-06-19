@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by access state</title>
-  <desc id="desc">A funnel-style snapshot of the 243 egocentric resources by public-access state: open, watch, partial, benchmark, and request, showing how much is usable today versus still unverified.</desc>
+  <desc id="desc">A funnel-style snapshot of the 252 egocentric resources by public-access state: open, watch, partial, benchmark, and request, showing how much is usable today versus still unverified.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -26,18 +26,18 @@
   <rect width="1280" height="520" fill="url(#dots)"/>
 
   <text class="kicker" x="70" y="60">ACCESS REALITY</text>
-  <text class="title ink" x="70" y="104">243 egocentric resources by access state</text>
+  <text class="title ink" x="70" y="104">252 egocentric resources by access state</text>
   <text class="subtitle" x="70" y="136">A snapshot of availability (not a pipeline). Roughly half are usable now; a large share are recent and still unverified.</text>
 
   <!-- funnel rows, centered on x=640; counts are patched by build_artifacts.rb -->
   <!-- open -->
   <rect x="190" y="186" width="900" height="56" rx="11" fill="#00a6b2" filter="url(#shadow)"/>
-  <text class="row" x="640" y="221" text-anchor="middle">open &#183; 109</text>
+  <text class="row" x="640" y="221" text-anchor="middle">open &#183; 111</text>
   <text class="gloss" x="1104" y="221">usable today</text>
 
   <!-- watch (≈ open; drawn equal width) -->
   <rect x="190" y="252" width="900" height="56" rx="11" fill="#9aa7af" filter="url(#shadow)"/>
-  <text class="row" x="640" y="287" text-anchor="middle">watch &#183; 111</text>
+  <text class="row" x="640" y="287" text-anchor="middle">watch &#183; 118</text>
   <text class="gloss" x="1104" y="287">verify before use</text>
 
   <!-- partial -->
