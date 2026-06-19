@@ -83,7 +83,8 @@ resources:
     modalities: [video, audio, narrations, object-boxes]
     tasks: [action-recognition, action-detection, anticipation, retrieval, domain-adaptation]
     code: https://github.com/epic-kitchens/epic-kitchens-100-annotations
-    license: cc-by-nc-4.0
+    license: "CC BY-NC 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc/4.0/
     verified_at: "2026-06-15"
 
   - name: HD-EPIC
@@ -398,10 +399,13 @@ resources:
     scale: "833+ minutes, 3.7M+ images, 19 subjects, 33 objects"
     modalities: [aria, quest3, gaze, point-clouds, 3d-hand-pose, object-pose, camera-pose]
     tasks: [3d-hand-object-tracking, ar-vr, pose]
-    license: Project Aria dataset license
+    license: "CC BY-NC-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
     verified_at: "2026-06-15"
 
   - name: HOI4D
+    license: "CC BY-NC 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc/4.0/
     kind: dataset
     released: "2022-03"
     venue: "CVPR 2022"
@@ -588,6 +592,8 @@ resources:
     tasks: [ar-perception, scene-understanding, wearable-sensing]
 
   - name: Aria Digital Twin
+    license: "CC BY-NC-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
     kind: dataset
     released: "2023-06"
     venue: "arXiv"
@@ -600,6 +606,8 @@ resources:
     tasks: [3d-machine-perception, object-tracking, scene-reconstruction]
 
   - name: Aria Everyday Activities
+    license: "CC BY-NC-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
     kind: dataset
     released: "2024-02"
     venue: "arXiv"
@@ -612,6 +620,8 @@ resources:
     tasks: [everyday-activity, neural-scene-reconstruction, prompted-segmentation]
 
   - name: Nymeria
+    license: "CC BY-NC-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
     kind: dataset
     released: "2024-06"
     venue: "ECCV 2024"

@@ -224,11 +224,46 @@ function getLang() {
   return I18N[nav] ? nav : "en";
 }
 
+function readFiltersFromUrl() {
+  const p = new URLSearchParams(location.search);
+  return {
+    search: p.get("q") || "",
+    kind: p.get("kind") || "",
+    status: p.get("status") || "",
+    lane: p.get("lane") || ""
+  };
+}
+
 const state = {
   lang: getLang(),
   data: null,
-  filters: { search: "", kind: "", status: "", lane: "" }
+  filters: readFiltersFromUrl()
 };
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Keep the URL in sync with the active language + filters so any view is shareable.
+function syncUrl() {
+  const p = new URLSearchParams();
+  if (state.lang && state.lang !== "en") p.set("lang", state.lang);
+  const f = state.filters;
+  if (f.search) p.set("q", f.search);
+  if (f.kind) p.set("kind", f.kind);
+  if (f.status) p.set("status", f.status);
+  if (f.lane) p.set("lane", f.lane);
+  const qs = p.toString();
+  history.replaceState(null, "", (qs ? `?${qs}` : location.pathname) + location.hash);
+}
+
+// Reflect state.filters onto the form controls; drop any filter whose option no
+// longer exists (e.g. a stale lane id from an old shared link).
+function applyFiltersToForm() {
+  els.search.value = state.filters.search;
+  ["kind", "status", "lane"].forEach((key) => {
+    els[key].value = state.filters[key];
+    if (els[key].value !== state.filters[key]) state.filters[key] = "";
+  });
+}
 
 function t(key) {
   return (I18N[state.lang] && I18N[state.lang][key]) || I18N.en[key] || key;
@@ -333,6 +368,7 @@ function setLang(lang) {
   if (!I18N[lang]) return;
   state.lang = lang;
   localStorage.setItem("aea-lang", lang);
+  syncUrl();
   applyStaticI18n();
   buildLangBar();
   if (state.data) {
@@ -388,7 +424,7 @@ function renderRows() {
     const row = document.createElement("tr");
     const tasks = (resource.tasks || []).slice(0, 3);
     const modalities = (resource.modalities || []).slice(0, 3).map(titleize).join(" / ");
-    const sourceLine = [resource.venue, modalities].filter(Boolean).join(" / ");
+    const sourceLine = [resource.venue, modalities, resource.license].filter(Boolean).join(" / ");
 
     row.innerHTML = `
       <td data-label="${escapeHtml(t("th.resource"))}">
@@ -462,8 +498,9 @@ function renderLanes() {
     const selectLane = () => {
       els.lane.value = lane.id;
       state.filters.lane = lane.id;
+      syncUrl();
       renderRows();
-      document.querySelector("#catalog").scrollIntoView({ behavior: "smooth", block: "start" });
+      document.querySelector("#catalog").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
     };
     card.addEventListener("click", selectLane);
     card.addEventListener("keydown", (event) => {
@@ -498,6 +535,7 @@ function bindFilters() {
     state.filters.kind = els.kind.value;
     state.filters.status = els.status.value;
     state.filters.lane = els.lane.value;
+    syncUrl();
     renderRows();
   });
   els.clear.addEventListener("click", () => {
@@ -506,6 +544,7 @@ function bindFilters() {
     els.status.value = "";
     els.lane.value = "";
     state.filters = { search: "", kind: "", status: "", lane: "" };
+    syncUrl();
     renderRows();
     els.search.focus();
   });
@@ -521,6 +560,7 @@ async function init() {
   renderFilters();
   renderLanes();
   renderStatuses();
+  applyFiltersToForm();
   bindFilters();
   renderRows();
 }

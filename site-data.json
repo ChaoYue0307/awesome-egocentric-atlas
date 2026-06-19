@@ -269,7 +269,8 @@
         "narrations",
         "object-boxes"
       ],
-      "license": "cc-by-nc-4.0"
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
     },
     {
       "name": "HD-EPIC",
@@ -570,7 +571,8 @@
         "imu",
         "robot-actions"
       ],
-      "license": "MIT"
+      "license": "MIT",
+      "license_url": "https://github.com/real-stanford/universal_manipulation_interface/blob/main/LICENSE"
     },
     {
       "name": "FastUMI",
@@ -625,7 +627,8 @@
         "robot-actions",
         "language-instructions"
       ],
-      "license": "apache-2.0"
+      "license": "apache-2.0",
+      "license_url": "https://github.com/MrKeee/FastUMI-100K/blob/main/LICENSE"
     },
     {
       "name": "MV-UMI",
@@ -909,7 +912,8 @@
         "object-pose",
         "camera-pose"
       ],
-      "license": "Project Aria dataset license"
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     },
     {
       "name": "HOI4D",
@@ -938,7 +942,9 @@
         "3d-hand-pose",
         "object-pose",
         "segmentation"
-      ]
+      ],
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
     },
     {
       "name": "H2O",
@@ -1345,7 +1351,9 @@
         "depth",
         "segmentation",
         "synthetic-rendering"
-      ]
+      ],
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     },
     {
       "name": "Aria Everyday Activities",
@@ -1374,7 +1382,9 @@
         "point-cloud",
         "gaze",
         "speech"
-      ]
+      ],
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     },
     {
       "name": "Nymeria",
@@ -1403,7 +1413,9 @@
         "body-motion",
         "language",
         "observer-view"
-      ]
+      ],
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     },
     {
       "name": "Digital Twin Catalog",

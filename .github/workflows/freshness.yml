@@ -1,0 +1,36 @@
+name: Catalog freshness
+
+# Monthly nudge for curation debt (stale verifications, missing release notes,
+# open datasets without a license). Opens an issue only when something is flagged.
+
+on:
+  schedule:
+    - cron: "0 7 1 * *" # 1st of each month, 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Generate freshness report
+        id: freshness
+        run: |
+          echo "$(ruby scripts/freshness.rb freshness-report.md)" >> "$GITHUB_OUTPUT"
+
+      - name: Open an issue if there is curation debt
+        if: steps.freshness.outputs.count != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Catalog freshness report"
+          content-filepath: freshness-report.md
+          labels: maintenance, automated
