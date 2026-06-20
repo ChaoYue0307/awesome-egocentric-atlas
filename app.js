@@ -300,7 +300,7 @@ const els = {
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
   langBar: document.querySelector("#lang-bar"),
-  milestoneLinks: document.querySelector("#milestone-link-layer")
+  milestoneBoard: document.querySelector("#milestone-board")
 };
 
 function titleize(value) {
@@ -538,26 +538,58 @@ function renderStatuses() {
   });
 }
 
-function renderMilestoneLinks() {
-  if (!els.milestoneLinks || !state.data.milestone_layout) return;
-  const layout = state.data.milestone_layout;
-  const width = Number(layout.width) || 1280;
-  const height = Number(layout.height) || 2322;
-  els.milestoneLinks.replaceChildren();
+function milestoneEra(item) {
+  const year = Number(String(item.date || "").slice(0, 4));
+  if (year <= 2015) return { id: "origins", range: "2009-2015", title: "Origins", copy: "Daily-life activity, gaze, and hands become measurable first-person signals." };
+  if (year <= 2022) return { id: "scale", range: "2020-2022", title: "Modern Scale", copy: "Large benchmarks, smart-glasses sensing, geometry, and video-language pretraining mature." };
+  if (year <= 2024) return { id: "reasoning", range: "2023-2024", title: "Reasoning & Robotics", copy: "Long-form reasoning, ego-exo capture, AR hand-object tracking, and robot interfaces converge." };
+  if (year === 2025) return { id: "daily", range: "2025", title: "Daily Life to VLA", copy: "Personal memory and egocentric demonstrations begin feeding robot policies." };
+  return { id: "frontier", range: "2026", title: "World-Model Frontier", copy: "Egocentric corpora, world models, and scaling laws push embodied AI outward." };
+}
 
-  (layout.cells || []).forEach((cell) => {
-    const link = document.createElement("a");
-    link.className = "milestone-cell-link";
-    link.href = cell.url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.title = `${cell.name} (${cell.date})`;
-    link.setAttribute("aria-label", `${cell.name} (${cell.date})`);
-    link.style.left = `${(Number(cell.x) / width) * 100}%`;
-    link.style.top = `${(Number(cell.y) / height) * 100}%`;
-    link.style.width = `${(Number(cell.width) / width) * 100}%`;
-    link.style.height = `${(Number(cell.height) / height) * 100}%`;
-    els.milestoneLinks.appendChild(link);
+function renderMilestones() {
+  if (!els.milestoneBoard || !state.data.milestones) return;
+  const eras = [];
+  const eraMap = new Map();
+
+  state.data.milestones.forEach((item) => {
+    const era = milestoneEra(item);
+    if (!eraMap.has(era.id)) {
+      eraMap.set(era.id, { ...era, items: [] });
+      eras.push(eraMap.get(era.id));
+    }
+    eraMap.get(era.id).items.push(item);
+  });
+
+  els.milestoneBoard.replaceChildren();
+  eras.forEach((era, index) => {
+    const section = document.createElement("section");
+    section.className = "milestone-era";
+    section.setAttribute("aria-label", `${era.range} ${era.title}`);
+    const cards = era.items.map((item) => `
+      <a class="milestone-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(`${item.name} (${item.date})`)}">
+        <span class="milestone-card-media">
+          <img src="${escapeHtml(item.image || "assets/awesome-egocentric-logo.png")}" loading="lazy" decoding="async" alt="">
+        </span>
+        <span class="milestone-card-meta">
+          <span class="chip milestone-card-date">${escapeHtml(item.date)}</span>
+          <span class="chip milestone-card-kind">${escapeHtml(titleize(item.kind))}</span>
+        </span>
+        <strong class="milestone-card-title">${escapeHtml(item.name)}</strong>
+        <span class="milestone-card-note">${escapeHtml(item.note || "")}</span>
+      </a>
+    `).join("");
+
+    section.innerHTML = `
+      <div class="milestone-era-head">
+        <p class="milestone-era-kicker">Era ${index + 1}</p>
+        <span class="milestone-era-range">${escapeHtml(era.range)}</span>
+        <span class="milestone-era-title">${escapeHtml(era.title)}</span>
+        <p class="milestone-era-copy">${escapeHtml(era.copy)}</p>
+      </div>
+      <div class="milestone-cards">${cards}</div>
+    `;
+    els.milestoneBoard.appendChild(section);
   });
 }
 
@@ -592,7 +624,7 @@ async function init() {
   renderFilters();
   renderLanes();
   renderStatuses();
-  renderMilestoneLinks();
+  renderMilestones();
   applyFiltersToForm();
   bindFilters();
   renderRows();
