@@ -815,15 +815,9 @@ These entries are promising but should be rechecked before treating them as stab
 
 ## Contributing
 
-Contributions are welcome through pull requests and issues. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the inclusion policy, status rules, and style.
+Contributions are welcome through pull requests and issues. Please include an official source, a concise description of what the resource contributes, and any known access or license notes.
 
-The catalog is machine-checked. Before opening a pull request, run the validator:
-
-```bash
-ruby scripts/validate_catalog.rb
-```
-
-It verifies the catalog shape, statuses, kinds, README local links and assets, and that the resources badge and "Updated" date stay in sync with [`data/resources.yml`](data/resources.yml). The same check runs in CI on every push and pull request.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the inclusion policy and style. Automated checks run in CI to keep the README, catalog data, figures, and public exports consistent; contributors do not need to run local scripts before opening a PR.
 
 ## Cite This Atlas
 

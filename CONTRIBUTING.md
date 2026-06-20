@@ -27,17 +27,11 @@ Reference docs:
 - [docs/status_policy.md](docs/status_policy.md) — how each `status` is decided.
 - [docs/taxonomy.md](docs/taxonomy.md) — task/modality vocabulary; add new tokens to [`data/taxonomy.yml`](data/taxonomy.yml).
 
-## Validate Before You Open a PR
+## Automated Checks
 
-The catalog is machine-checked. Run the validator locally (Ruby 2.6+, no gems needed):
+The catalog is machine-checked in CI on every push and pull request. These checks keep the README, [`data/resources.yml`](data/resources.yml), generated figures, CSV/JSON exports, and Hugging Face package consistent.
 
-```bash
-ruby scripts/validate_catalog.rb
-ruby scripts/build_artifacts.rb --check
-ruby scripts/build_hf_package.rb --check
-```
-
-These checks validate the catalog shape, allowed `kind` and `status` values, README local links/assets, README/catalog table coverage, generated CSV/JSON/SVG/README snippets, and the Hugging Face upload package. The same checks run automatically in CI on every push and pull request, so a green check means your entry is structurally consistent.
+You do not need to run local scripts before opening a PR. If CI reports a formatting or metadata issue, maintainers can help resolve it during review.
 
 ## Inclusion Policy
 
