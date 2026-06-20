@@ -302,7 +302,8 @@
         "video",
         "hdf5-annotations"
       ],
-      "license": "cc-by-nc-4.0"
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     },
     {
       "name": "Ego4D",
@@ -442,7 +443,9 @@
         "object-masks",
         "digital-twins",
         "3d"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2502.04144"
     },
     {
       "name": "HoloAssist",
@@ -474,7 +477,9 @@
         "head",
         "imu",
         "audio"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://holoassist.github.io/"
     },
     {
       "name": "Assembly101",
@@ -500,7 +505,9 @@
         "multiview-video",
         "egocentric-video",
         "3d-hand-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://assembly-101.github.io/"
     },
     {
       "name": "Ego-1K",
@@ -524,7 +531,9 @@
       "modalities": [
         "multiview-video",
         "calibration"
-      ]
+      ],
+      "license": "fair-noncommercial-research-license",
+      "license_url": "https://huggingface.co/datasets/facebook/ego-1k"
     },
     {
       "name": "EgoObjects",
@@ -550,7 +559,9 @@
         "video",
         "object-boxes",
         "instance-labels"
-      ]
+      ],
+      "license": "MIT",
+      "license_url": "https://github.com/facebookresearch/EgoObjects/blob/main/LICENSE"
     },
     {
       "name": "EgoBlind",
@@ -1018,7 +1029,9 @@
         "depth",
         "imu",
         "3d-target-labels"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2403.05046"
     },
     {
       "name": "HOT3D",
@@ -1110,7 +1123,9 @@
         "camera-pose",
         "object-meshes",
         "scene-point-clouds"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2104.11181"
     },
     {
       "name": "ARCTIC",
@@ -1160,7 +1175,9 @@
       "modalities": [
         "rgb",
         "hand-masks"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "http://vision.soic.indiana.edu/projects/egohands/"
     },
     {
       "name": "FPHA",
@@ -1184,7 +1201,9 @@
         "rgbd",
         "3d-hand-pose",
         "object-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://guiggh.github.io/publications/first-person-hands/"
     },
     {
       "name": "EgoHOS",
@@ -1207,7 +1226,9 @@
       "modalities": [
         "rgb",
         "hand-object-contact-masks"
-      ]
+      ],
+      "license": "MIT",
+      "license_url": "https://github.com/owenzlz/EgoHOS/blob/main/LICENSE"
     },
     {
       "name": "Ego2Hands",
@@ -1229,7 +1250,9 @@
       "modalities": [
         "rgb",
         "synthetic-composited-masks"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2011.07252"
     },
     {
       "name": "Ego2HandsPose",
@@ -1250,7 +1273,9 @@
       "modalities": [
         "rgb",
         "3d-hand-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2206.04927"
     },
     {
       "name": "EgoBody",
@@ -1277,7 +1302,9 @@
         "head-pose",
         "hand-pose",
         "body-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://sanweiliti.github.io/egobody/egobody.html"
     },
     {
       "name": "GIMO",
@@ -1303,7 +1330,9 @@
         "gaze",
         "body-pose",
         "scene-scans"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://github.com/y-zheng18/GIMO"
     },
     {
       "name": "EgoHumans",
@@ -1352,7 +1381,9 @@
       "modalities": [
         "synthetic-stereo",
         "3d-human-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://4dqv.mpi-inf.mpg.de/UnrealEgo/"
     },
     {
       "name": "xR-EgoPose",
@@ -1372,7 +1403,9 @@
       "modalities": [
         "synthetic-egocentric",
         "3d-human-pose"
-      ]
+      ],
+      "license": "custom",
+      "license_url": "https://github.com/facebookresearch/xR-EgoPose/blob/HEAD/LICENSE.md"
     },
     {
       "name": "EgoGTA / EgoPW-Scene",
@@ -1578,7 +1611,9 @@
         "3d-objects",
         "dslr-images",
         "aria-images"
-      ]
+      ],
+      "license": "Project Aria DTC Dataset License Agreement",
+      "license_url": "https://www.projectaria.com/datasets/dtc/"
     },
     {
       "name": "EgoLife",
@@ -1631,7 +1666,9 @@
         "video",
         "dialogue",
         "qa"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://fpv-iplab.github.io/Ego-EXTRA/"
     },
     {
       "name": "EgoSchema",
@@ -1744,7 +1781,9 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://github.com/showlab/EgoVLP"
     },
     {
       "name": "RefEgo",
@@ -2261,7 +2300,9 @@
         "video",
         "gaze",
         "action-labels"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://cbs.ic.gatech.edu/fpv/"
     },
     {
       "name": "Charades-Ego",
@@ -2290,7 +2331,9 @@
         "first-person-video",
         "third-person-video",
         "descriptions"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://prior.allenai.org/projects/charades"
     },
     {
       "name": "MECCANO",
@@ -2316,7 +2359,9 @@
         "rgb",
         "depth",
         "gaze"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://iplab.dmi.unict.it/MECCANO/"
     },
     {
       "name": "EgoProceL",
@@ -2335,13 +2380,15 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://sid2697.github.io/egoprocel/"
     },
     {
       "name": "EGO-CH",
       "kind": "dataset",
       "released": "2020-02",
-      "venue": "arXiv",
+      "venue": "Pattern Recognition Letters 2020",
       "year": 2020,
       "status": "partial",
       "scope": "egocentric",
@@ -2395,7 +2442,9 @@
         "demonstration-video",
         "gaze",
         "annotations"
-      ]
+      ],
+      "license": "MIT",
+      "license_url": "https://github.com/OpenGVLab/EgoExoLearn/blob/main/LICENSE"
     },
     {
       "name": "DogCentric",
@@ -2414,7 +2463,9 @@
       ],
       "modalities": [
         "animal-egocentric-video"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/"
     },
     {
       "name": "KrishnaCam / OAK",
@@ -2446,7 +2497,7 @@
       "name": "EgoK360",
       "kind": "dataset",
       "released": "2020-10",
-      "venue": "arXiv",
+      "venue": "ICIP 2020",
       "year": 2020,
       "status": "partial",
       "scope": "egocentric",
@@ -2490,7 +2541,9 @@
         "head-pose",
         "gaze",
         "scene-labels"
-      ]
+      ],
+      "license": "custom",
+      "license_url": "https://github.com/yehiahmad/EgoTraj/blob/HEAD/LICENSE"
     },
     {
       "name": "VISOR",
@@ -3243,7 +3296,7 @@
       "name": "Ego-InBetween",
       "kind": "model",
       "released": "2026-04",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -3331,7 +3384,7 @@
       "name": "Personal Point of View 3DGS",
       "kind": "model",
       "released": "2026-04",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 EgoVis",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -3414,7 +3467,7 @@
       "name": "Recurrent Reasoning VLM",
       "kind": "model",
       "released": "2026-03",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -3497,7 +3550,7 @@
       "name": "HD-EPIC VQA T-CoT",
       "kind": "model",
       "released": "2026-01",
-      "venue": "arXiv",
+      "venue": "CVPR 2025 EgoVis",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -3554,7 +3607,7 @@
       "name": "V-Nutri",
       "kind": "model",
       "released": "2026-04",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 MetaFood Workshop",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -3639,7 +3692,7 @@
       "name": "Mamba Ego Action Recognition",
       "kind": "model",
       "released": "2026-05",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 EgoVis",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -4179,7 +4232,9 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "http://vision.cs.utexas.edu/projects/ego_av_corr/"
     },
     {
       "name": "EasyCom",
@@ -4198,7 +4253,9 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2107.04174"
     },
     {
       "name": "Look and Tell",
@@ -4403,7 +4460,7 @@
       "name": "EventEgoHands",
       "kind": "benchmark",
       "released": "2025-05",
-      "venue": "arXiv",
+      "venue": "ICIP 2025",
       "year": 2025,
       "status": "watch",
       "scope": "egocentric",
@@ -4536,7 +4593,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/1511.06783"
     },
     {
       "name": "Visual Experience Dataset / VEDB",
@@ -4626,7 +4685,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://github.com/ENDLICHERE/FT-HID"
     },
     {
       "name": "LSC-ADL",
@@ -4644,7 +4705,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2504.02060"
     },
     {
       "name": "SEED4D",
@@ -4726,7 +4789,7 @@
       "name": "HD-EPIC VQA Challenge",
       "kind": "benchmark",
       "released": "2025-02",
-      "venue": "arXiv",
+      "venue": "CVPR 2025",
       "year": 2025,
       "status": "benchmark",
       "scope": "egocentric",
@@ -5056,7 +5119,9 @@
       ],
       "task_families": [
         "generation-and-world-models"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://egovid.github.io/"
     },
     {
       "name": "AoE",
@@ -5118,7 +5183,9 @@
         "detection-segmentation",
         "hand-object-interaction",
         "ar-sensing-navigation"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://ieeexplore.ieee.org/document/8299578/"
     },
     {
       "name": "EgoBrain",
@@ -5302,7 +5369,9 @@
       "task_families": [
         "action-and-procedure",
         "evaluation-and-tooling"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://homeactiongenome.org/"
     },
     {
       "name": "EgoExo-Fitness",
@@ -5323,7 +5392,9 @@
       "task_families": [
         "evaluation-and-tooling",
         "skills-and-quality"
-      ]
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/iSEE-Laboratory/EgoExo-Fitness/blob/main/LICENSE"
     },
     {
       "name": "WEAR",
@@ -5344,7 +5415,9 @@
       "task_families": [
         "action-and-procedure",
         "ar-sensing-navigation"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://mariusbock.github.io/wear/"
     },
     {
       "name": "Egocentric HOI Detection",
@@ -5526,7 +5599,9 @@
         "stereo",
         "audio",
         "object-boxes"
-      ]
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://doi.org/10.5281/zenodo.20089464"
     },
     {
       "name": "Audio Hallucination in Egocentric Video",
@@ -5628,7 +5703,9 @@
         "rgbd",
         "3d-hand-pose",
         "contact"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://yiming-zhao.github.io/EgoPressure/"
     },
     {
       "name": "EgoTL",
@@ -6097,7 +6174,7 @@
       "name": "Gaze-SoM HOI Anticipation",
       "kind": "model",
       "released": "2026-04",
-      "venue": "arXiv",
+      "venue": "ICPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -6172,7 +6249,9 @@
         "egocentric-video",
         "segmentation",
         "object-boxes"
-      ]
+      ],
+      "license": "custom",
+      "license_url": "https://github.com/Fujiry0/EgoSurgery/blob/HEAD/LICENSE.txt"
     },
     {
       "name": "EgoEMS",
@@ -6223,7 +6302,9 @@
         "egocentric-video",
         "third-person-video",
         "multimodal-annotations"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://arxiv.org/abs/2007.15781"
     },
     {
       "name": "EgoMe",
@@ -6509,7 +6590,9 @@
         "rgbd",
         "hand-pose",
         "object-meshes"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://grasping.io/"
     },
     {
       "name": "EgoKit",
@@ -7304,7 +7387,7 @@
       "name": "EgoXtreme",
       "kind": "dataset",
       "released": "2026-03",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -7401,7 +7484,7 @@
       "name": "EgoFlow",
       "kind": "model",
       "released": "2026-04",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -7547,7 +7630,7 @@
       "name": "DeltaDorsal",
       "kind": "model",
       "released": "2026-01",
-      "venue": "arXiv",
+      "venue": "CHI 2026",
       "year": 2026,
       "status": "open",
       "scope": "egocentric",
@@ -7804,7 +7887,7 @@
       "name": "Diff-IP2D",
       "kind": "model",
       "released": "2024-05",
-      "venue": "arXiv",
+      "venue": "IROS 2025",
       "year": 2024,
       "status": "open",
       "scope": "egocentric",
@@ -7853,13 +7936,15 @@
         "motion",
         "hand-pose",
         "point-cloud"
-      ]
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/FraunhoferIPK/IndEgo"
     },
     {
       "name": "LaMAria",
       "kind": "benchmark",
       "released": "2025-09",
-      "venue": "arXiv",
+      "venue": "ICCV 2025",
       "year": 2025,
       "status": "open",
       "scope": "egocentric",
@@ -8031,7 +8116,9 @@
         "imu",
         "motion",
         "audio"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "http://kitchen.cs.cmu.edu/"
     },
     {
       "name": "First-Person Social Interactions",
@@ -8056,7 +8143,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "http://ai.stanford.edu/~alireza/publication/CVPR12.pdf"
     },
     {
       "name": "BEOID",
@@ -8082,7 +8171,9 @@
       "modalities": [
         "egocentric-video",
         "gaze"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://dimadamen.github.io/BEOID/"
     },
     {
       "name": "DreamDojo",
@@ -8114,7 +8205,7 @@
       "name": "UniDex",
       "kind": "model",
       "released": "2026-03",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "year": 2026,
       "status": "watch",
       "scope": "egocentric",
@@ -10427,7 +10518,9 @@
         "egocentric-video",
         "hand-pose",
         "object-pose"
-      ]
+      ],
+      "license": "not specified",
+      "license_url": "https://batfacewayne.github.io/POV_Surgery_io/"
     },
     {
       "name": "EgoPCA",

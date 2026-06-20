@@ -334,7 +334,10 @@ module CatalogArtifacts
         node = { "@type" => "Dataset", "name" => entry["name"], "url" => entry["url"] }
         node["description"] = entry["scale"].to_s[0, 240] if entry["scale"]
         node["keywords"] = Array(entry["tasks"]).join(", ") unless Array(entry["tasks"]).empty?
-        node["license"] = entry["license_url"] if entry["license_url"]
+        license_label = entry["license"].to_s.downcase
+        if entry["license_url"] && !%w[not\ specified unknown-public].include?(license_label)
+          node["license"] = entry["license_url"]
+        end
         node
       end
     }
