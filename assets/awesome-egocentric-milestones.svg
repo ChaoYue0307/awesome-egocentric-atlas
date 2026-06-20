@@ -52,7 +52,7 @@
   <rect x="40" y="24" width="1200" height="138" rx="24" fill="url(#heroGlow)"/>
   <line class="rule" x1="40" y1="150" x2="1240" y2="150"/>
 
-  <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
+  <text class="kicker" x="40" y="48">CURATED FIELD MILESTONES</text>
   <text class="title" x="40" y="101">Egocentric AI timeline</text>
   <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
 
@@ -61,11 +61,11 @@
   <text class="stat-num" x="1172" y="82" text-anchor="middle">18</text>
   <text class="stat-label" x="1172" y="106" text-anchor="middle">WORKS</text>
 
-  <path class="spine" d="M 254 242 L 254 661 L 254 1080 L 254 1472 L 254 1914"/>
+  <path class="spine" d="M 248 242 L 248 667 L 248 1092 L 248 1487 L 248 1929"/>
 <g class="era-band" transform="translate(40 188)">
-  <rect class="era-bg" width="1200" height="393" rx="22"/>
-  <circle class="era-dot" cx="214" cy="54" r="14" fill="#0b8f98"/>
-  <path class="era-rail" d="M 246 54 H 1166"/>
+  <rect class="era-bg" width="1200" height="399" rx="22"/>
+  <circle class="era-dot" cx="208" cy="54" r="14" fill="#0b8f98"/>
+  <path class="era-rail" d="M 226 54 H 1166"/>
   <text class="era-kicker" x="30" y="36">ERA 1</text>
   <text class="era-range" x="30" y="76">2009-2015</text>
   <text class="era-label" x="30" y="111">Origins</text>
@@ -74,71 +74,71 @@
 <text class="era-copy" x="30" y="176" text-anchor="start">measurable.</text>
 </g>
 <a href="http://kitchen.cs.cmu.edu/" target="_blank">
-  <g class="milestone-card" transform="translate(287.5 266)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/cmu-mmac.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2009-06</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">CMU-MMAC</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">The earliest egocentric dataset;</text>
-<text class="card-note" x="12" y="240" text-anchor="start">launched egocentric activity...</text>
+  <g class="milestone-card" transform="translate(266.0 266)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/cmu-mmac.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2009-06</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">CMU-MMAC</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">The earliest egocentric dataset;</text>
+<text class="card-note" x="12" y="250" text-anchor="start">launched egocentric activity...</text>
   </g>
 </a>
 
 <a href="https://cbs.ic.gatech.edu/fpv/" target="_blank">
-  <g class="milestone-card" transform="translate(518.5 266)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/gtea-gaze.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2011-06</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">GTEA / GTEA Gaze / EGTEA</text>
-<text class="card-title" x="12" y="218" text-anchor="start">Gaze+</text>
-    <text class="card-note" x="12" y="243" text-anchor="start">Foundational hand-object and gaze</text>
-<text class="card-note" x="12" y="257" text-anchor="start">egocentric activity datasets (GTEA,</text>
+  <g class="milestone-card" transform="translate(508.0 266)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/gtea-gaze.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2011-06</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">GTEA / GTEA Gaze / EGTEA</text>
+<text class="card-title" x="12" y="226" text-anchor="start">Gaze+</text>
+    <text class="card-note" x="12" y="254" text-anchor="start">Foundational hand-object and gaze</text>
+<text class="card-note" x="12" y="269" text-anchor="start">egocentric activity datasets (GTEA,...</text>
   </g>
 </a>
 
 <a href="https://www.csc.kth.se/cvap/actions/" target="_blank">
-  <g class="milestone-card" transform="translate(749.5 266)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/adl-dataset.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2012-06</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">ADL Dataset</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">Classic unscripted daily-life</text>
-<text class="card-note" x="12" y="240" text-anchor="start">egocentric activity corpus with...</text>
+  <g class="milestone-card" transform="translate(750.0 266)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/adl-dataset.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2012-06</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">ADL Dataset</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">Classic unscripted daily-life</text>
+<text class="card-note" x="12" y="250" text-anchor="start">egocentric activity corpus with object</text>
   </g>
 </a>
 
 <a href="http://vision.soic.indiana.edu/projects/egohands/" target="_blank">
-  <g class="milestone-card" transform="translate(980.5 266)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/egohands.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2015-12</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">EgoHands</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">The Google Glass hand-segmentation</text>
-<text class="card-note" x="12" y="240" text-anchor="start">benchmark that made hands a...</text>
+  <g class="milestone-card" transform="translate(992.0 266)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/egohands.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2015-12</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">EgoHands</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">The Google Glass hand-segmentation</text>
+<text class="card-note" x="12" y="250" text-anchor="start">benchmark that made hands a...</text>
   </g>
 </a>
 
 
-<g class="era-band" transform="translate(40 607)">
-  <rect class="era-bg" width="1200" height="393" rx="22"/>
-  <circle class="era-dot" cx="214" cy="54" r="14" fill="#0f5d68"/>
-  <path class="era-rail" d="M 246 54 H 1166"/>
+<g class="era-band" transform="translate(40 613)">
+  <rect class="era-bg" width="1200" height="399" rx="22"/>
+  <circle class="era-dot" cx="208" cy="54" r="14" fill="#0f5d68"/>
+  <path class="era-rail" d="M 226 54 H 1166"/>
   <text class="era-kicker" x="30" y="36">ERA 2</text>
   <text class="era-range" x="30" y="76">2020-2022</text>
   <text class="era-label" x="30" y="111">Modern Scale</text>
@@ -147,70 +147,70 @@
 <text class="era-copy" x="30" y="176" text-anchor="start">geometry, and video-language</text>
 </g>
 <a href="https://epic-kitchens.github.io/" target="_blank">
-  <g class="milestone-card" transform="translate(287.5 685)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/epic-kitchens-100.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2020-06</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">EPIC-KITCHENS-100</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">The defining large-scale egocentric</text>
-<text class="card-note" x="12" y="240" text-anchor="start">action-recognition benchmark and...</text>
+  <g class="milestone-card" transform="translate(266.0 691)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/epic-kitchens-100.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2020-06</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">EPIC-KITCHENS-100</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">The defining large-scale egocentric</text>
+<text class="card-note" x="12" y="250" text-anchor="start">action-recognition benchmark and...</text>
   </g>
 </a>
 
 <a href="https://ego4d-data.org/" target="_blank">
-  <g class="milestone-card" transform="translate(518.5 685)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/ego4d.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2021-10</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">Ego4D</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">The 3,670-hour massive-scale</text>
-<text class="card-note" x="12" y="240" text-anchor="start">benchmark suite that catalyzed the</text>
+  <g class="milestone-card" transform="translate(508.0 691)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/ego4d.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2021-10</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">Ego4D</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">The 3,670-hour massive-scale benchmark</text>
+<text class="card-note" x="12" y="250" text-anchor="start">suite that catalyzed the modern...</text>
   </g>
 </a>
 
 <a href="https://hoi4d.github.io/" target="_blank">
-  <g class="milestone-card" transform="translate(749.5 685)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/hoi4d.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2022-03</text>
-    <rect class="kind-pill" x="92" y="158" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">HOI4D</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">Large RGB-D 4D hand-object</text>
-<text class="card-note" x="12" y="240" text-anchor="start">interaction dataset that moved...</text>
+  <g class="milestone-card" transform="translate(750.0 691)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/hoi4d.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2022-03</text>
+    <rect class="kind-pill" x="92" y="164" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="181" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">HOI4D</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">Large RGB-D 4D hand-object interaction</text>
+<text class="card-note" x="12" y="250" text-anchor="start">dataset that moved egocentric HOI...</text>
   </g>
 </a>
 
 <a href="https://github.com/showlab/EgoVLP" target="_blank">
-  <g class="milestone-card" transform="translate(980.5 685)">
-    <rect class="card-bg" width="218" height="289" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="194" height="135" rx="10"/>
-    <image href="milestones/egovlp.png" x="12" y="12" width="194" height="135" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="158" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="175" text-anchor="middle">2022-06</text>
-    <rect class="kind-pill" x="92" y="158" width="59" height="25" rx="12.5" fill="#ef9f24"/>
-    <text class="pill-text" x="121.5" y="175" text-anchor="middle">model</text>
-    <text class="card-title" x="12" y="201" text-anchor="start">EgoVLP</text>
-    <text class="card-note" x="12" y="226" text-anchor="start">First egocentric video-language</text>
-<text class="card-note" x="12" y="240" text-anchor="start">pretraining (EgoClip, EgoNCE) and a</text>
+  <g class="milestone-card" transform="translate(992.0 691)">
+    <rect class="card-bg" width="228" height="295" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="204" height="141" rx="10"/>
+    <image href="milestones/egovlp.png" x="12" y="12" width="204" height="141" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="164" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="181" text-anchor="middle">2022-06</text>
+    <rect class="kind-pill" x="92" y="164" width="59" height="25" rx="12.5" fill="#ef9f24"/>
+    <text class="pill-text" x="121.5" y="181" text-anchor="middle">model</text>
+    <text class="card-title" x="12" y="207" text-anchor="start">EgoVLP</text>
+    <text class="card-note" x="12" y="235" text-anchor="start">First egocentric video-language</text>
+<text class="card-note" x="12" y="250" text-anchor="start">pretraining (EgoClip, EgoNCE) and a...</text>
   </g>
 </a>
 
 
-<g class="era-band" transform="translate(40 1026)">
-  <rect class="era-bg" width="1200" height="366" rx="22"/>
-  <circle class="era-dot" cx="214" cy="54" r="14" fill="#34424d"/>
-  <path class="era-rail" d="M 246 54 H 1166"/>
+<g class="era-band" transform="translate(40 1038)">
+  <rect class="era-bg" width="1200" height="369" rx="22"/>
+  <circle class="era-dot" cx="208" cy="54" r="14" fill="#34424d"/>
+  <path class="era-rail" d="M 226 54 H 1166"/>
   <text class="era-kicker" x="30" y="36">ERA 3</text>
   <text class="era-range" x="30" y="76">2023-2024</text>
   <text class="era-label" x="30" y="111">Reasoning &amp; Robotics</text>
@@ -219,86 +219,86 @@
 <text class="era-copy" x="30" y="176" text-anchor="start">tracking, and robot...</text>
 </g>
 <a href="http://egoschema.github.io/" target="_blank">
-  <g class="milestone-card" transform="translate(282.0 1104)">
-    <rect class="card-bg" width="174" height="262" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="150" height="108" rx="10"/>
-    <image href="milestones/egoschema.png" x="12" y="12" width="150" height="108" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="131" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="148" text-anchor="middle">2023-08</text>
-    <rect class="kind-pill" x="92" y="131" width="76" height="25" rx="12.5" fill="#5b6b73"/>
-    <text class="pill-text" x="130.0" y="148" text-anchor="middle">benchmark</text>
-    <text class="card-title" x="12" y="174" text-anchor="start">EgoSchema</text>
-    <text class="card-note" x="12" y="199" text-anchor="start">The benchmark that exposed</text>
-<text class="card-note" x="12" y="213" text-anchor="start">how far models are from...</text>
+  <g class="milestone-card" transform="translate(267.5 1116)">
+    <rect class="card-bg" width="179" height="265" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="155" height="111" rx="10"/>
+    <image href="milestones/egoschema.png" x="12" y="12" width="155" height="111" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="134" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="151" text-anchor="middle">2023-08</text>
+    <rect class="kind-pill" x="92" y="134" width="81" height="25" rx="12.5" fill="#5b6b73"/>
+    <text class="pill-text" x="132.5" y="151" text-anchor="middle">benchmark</text>
+    <text class="card-title" x="12" y="177" text-anchor="start">EgoSchema</text>
+    <text class="card-note" x="12" y="205" text-anchor="start">The benchmark that exposed how</text>
+<text class="card-note" x="12" y="220" text-anchor="start">far models are from long-form</text>
   </g>
 </a>
 
 <a href="https://www.projectaria.com/datasets/" target="_blank">
-  <g class="milestone-card" transform="translate(469.0 1104)">
-    <rect class="card-bg" width="174" height="262" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="150" height="108" rx="10"/>
-    <image href="milestones/project-aria.png" x="12" y="12" width="150" height="108" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="131" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="148" text-anchor="middle">2023-08</text>
-    <rect class="kind-pill" x="92" y="131" width="76" height="25" rx="12.5" fill="#b8c2c9"/>
-    <text class="pill-text" x="130.0" y="148" text-anchor="middle">collection</text>
-    <text class="card-title" x="12" y="174" text-anchor="start">Project Aria Datasets</text>
-    <text class="card-note" x="12" y="199" text-anchor="start">Meta's research smart-glasses</text>
-<text class="card-note" x="12" y="213" text-anchor="start">platform that opened the...</text>
+  <g class="milestone-card" transform="translate(460.5 1116)">
+    <rect class="card-bg" width="179" height="265" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="155" height="111" rx="10"/>
+    <image href="milestones/project-aria.png" x="12" y="12" width="155" height="111" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="134" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="151" text-anchor="middle">2023-08</text>
+    <rect class="kind-pill" x="92" y="134" width="81" height="25" rx="12.5" fill="#b8c2c9"/>
+    <text class="pill-text" x="132.5" y="151" text-anchor="middle">collection</text>
+    <text class="card-title" x="12" y="177" text-anchor="start">Project Aria Datasets</text>
+    <text class="card-note" x="12" y="205" text-anchor="start">Meta's research smart-glasses</text>
+<text class="card-note" x="12" y="220" text-anchor="start">platform that opened the...</text>
   </g>
 </a>
 
 <a href="https://ego-exo4d-data.org/" target="_blank">
-  <g class="milestone-card" transform="translate(656.0 1104)">
-    <rect class="card-bg" width="174" height="262" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="150" height="108" rx="10"/>
-    <image href="milestones/ego-exo4d.png" x="12" y="12" width="150" height="108" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="131" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="148" text-anchor="middle">2023-11</text>
-    <rect class="kind-pill" x="92" y="131" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="148" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="174" text-anchor="start">Ego-Exo4D</text>
-    <text class="card-note" x="12" y="199" text-anchor="start">Synchronized ego and exo</text>
-<text class="card-note" x="12" y="213" text-anchor="start">skilled-activity capture at</text>
+  <g class="milestone-card" transform="translate(653.5 1116)">
+    <rect class="card-bg" width="179" height="265" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="155" height="111" rx="10"/>
+    <image href="milestones/ego-exo4d.png" x="12" y="12" width="155" height="111" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="134" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="151" text-anchor="middle">2023-11</text>
+    <rect class="kind-pill" x="92" y="134" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="151" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="177" text-anchor="start">Ego-Exo4D</text>
+    <text class="card-note" x="12" y="205" text-anchor="start">Synchronized ego and exo</text>
+<text class="card-note" x="12" y="220" text-anchor="start">skilled-activity capture at...</text>
   </g>
 </a>
 
 <a href="https://umi-gripper.github.io/" target="_blank">
-  <g class="milestone-card" transform="translate(843.0 1104)">
-    <rect class="card-bg" width="174" height="262" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="150" height="108" rx="10"/>
-    <image href="milestones/umi.png" x="12" y="12" width="150" height="108" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="131" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="148" text-anchor="middle">2024-02</text>
-    <rect class="kind-pill" x="92" y="131" width="72" height="25" rx="12.5" fill="#7a6ff0"/>
-    <text class="pill-text" x="128.0" y="148" text-anchor="middle">toolkit</text>
-    <text class="card-title" x="12" y="174" text-anchor="start">Universal Manipulation</text>
-<text class="card-title" x="12" y="191" text-anchor="start">Interface / UMI</text>
-    <text class="card-note" x="12" y="216" text-anchor="start">Handheld/wrist-view</text>
-<text class="card-note" x="12" y="230" text-anchor="start">manipulation interface that</text>
+  <g class="milestone-card" transform="translate(846.5 1116)">
+    <rect class="card-bg" width="179" height="265" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="155" height="111" rx="10"/>
+    <image href="milestones/umi.png" x="12" y="12" width="155" height="111" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="134" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="151" text-anchor="middle">2024-02</text>
+    <rect class="kind-pill" x="92" y="134" width="72" height="25" rx="12.5" fill="#7a6ff0"/>
+    <text class="pill-text" x="128.0" y="151" text-anchor="middle">toolkit</text>
+    <text class="card-title" x="12" y="177" text-anchor="start">Universal Manipulation</text>
+<text class="card-title" x="12" y="196" text-anchor="start">Interface / UMI</text>
+    <text class="card-note" x="12" y="224" text-anchor="start">Handheld/wrist-view</text>
+<text class="card-note" x="12" y="239" text-anchor="start">manipulation interface that...</text>
   </g>
 </a>
 
 <a href="https://facebookresearch.github.io/hot3d/" target="_blank">
-  <g class="milestone-card" transform="translate(1030.0 1104)">
-    <rect class="card-bg" width="174" height="262" rx="14"/>
-    <rect class="image-frame" x="12" y="12" width="150" height="108" rx="10"/>
-    <image href="milestones/hot3d.png" x="12" y="12" width="150" height="108" preserveAspectRatio="xMidYMid meet"/>
-    <rect class="date-pill" x="12" y="131" width="73" height="25" rx="12.5"/>
-    <text class="pill-text" x="48.5" y="148" text-anchor="middle">2024-06</text>
-    <rect class="kind-pill" x="92" y="131" width="72" height="25" rx="12.5" fill="#0b8f98"/>
-    <text class="pill-text" x="128.0" y="148" text-anchor="middle">dataset</text>
-    <text class="card-title" x="12" y="174" text-anchor="start">HOT3D</text>
-    <text class="card-note" x="12" y="199" text-anchor="start">Reference benchmark for 3D</text>
-<text class="card-note" x="12" y="213" text-anchor="start">hand-object tracking from AR</text>
+  <g class="milestone-card" transform="translate(1039.5 1116)">
+    <rect class="card-bg" width="179" height="265" rx="14"/>
+    <rect class="image-frame" x="12" y="12" width="155" height="111" rx="10"/>
+    <image href="milestones/hot3d.png" x="12" y="12" width="155" height="111" preserveAspectRatio="xMidYMid meet"/>
+    <rect class="date-pill" x="12" y="134" width="73" height="25" rx="12.5"/>
+    <text class="pill-text" x="48.5" y="151" text-anchor="middle">2024-06</text>
+    <rect class="kind-pill" x="92" y="134" width="72" height="25" rx="12.5" fill="#0b8f98"/>
+    <text class="pill-text" x="128.0" y="151" text-anchor="middle">dataset</text>
+    <text class="card-title" x="12" y="177" text-anchor="start">HOT3D</text>
+    <text class="card-note" x="12" y="205" text-anchor="start">Reference benchmark for 3D</text>
+<text class="card-note" x="12" y="220" text-anchor="start">hand-object tracking from AR</text>
   </g>
 </a>
 
 
-<g class="era-band" transform="translate(40 1418)">
+<g class="era-band" transform="translate(40 1433)">
   <rect class="era-bg" width="1200" height="416" rx="22"/>
-  <circle class="era-dot" cx="214" cy="54" r="14" fill="#98620b"/>
-  <path class="era-rail" d="M 246 54 H 1166"/>
+  <circle class="era-dot" cx="208" cy="54" r="14" fill="#98620b"/>
+  <path class="era-rail" d="M 226 54 H 1166"/>
   <text class="era-kicker" x="30" y="36">ERA 4</text>
   <text class="era-range" x="30" y="76">2025</text>
   <text class="era-label" x="30" y="111">Daily Life to VLA</text>
@@ -307,7 +307,7 @@
 <text class="era-copy" x="30" y="176" text-anchor="start">robot policies.</text>
 </g>
 <a href="https://arxiv.org/abs/2503.03803" target="_blank">
-  <g class="milestone-card" transform="translate(450.5 1496)">
+  <g class="milestone-card" transform="translate(450.0 1511)">
     <rect class="card-bg" width="286" height="312" rx="14"/>
     <rect class="image-frame" x="12" y="12" width="262" height="158" rx="10"/>
     <image href="milestones/egolife.png" x="12" y="12" width="262" height="158" preserveAspectRatio="xMidYMid meet"/>
@@ -316,13 +316,13 @@
     <rect class="kind-pill" x="92" y="181" width="72" height="25" rx="12.5" fill="#0b8f98"/>
     <text class="pill-text" x="128.0" y="198" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="224" text-anchor="start">EgoLife</text>
-    <text class="card-note" x="12" y="249" text-anchor="start">Week-long Meta Aria daily-life corpus that</text>
-<text class="card-note" x="12" y="263" text-anchor="start">pushed egocentric research toward personalized</text>
+    <text class="card-note" x="12" y="252" text-anchor="start">Week-long Meta Aria daily-life corpus that</text>
+<text class="card-note" x="12" y="267" text-anchor="start">pushed egocentric research toward personalized</text>
   </g>
 </a>
 
 <a href="https://rchalyang.github.io/EgoVLA/" target="_blank">
-  <g class="milestone-card" transform="translate(749.5 1496)">
+  <g class="milestone-card" transform="translate(750.0 1511)">
     <rect class="card-bg" width="286" height="312" rx="14"/>
     <rect class="image-frame" x="12" y="12" width="262" height="158" rx="10"/>
     <image href="milestones/egovla.png" x="12" y="12" width="262" height="158" preserveAspectRatio="xMidYMid meet"/>
@@ -331,16 +331,16 @@
     <rect class="kind-pill" x="92" y="181" width="59" height="25" rx="12.5" fill="#ef9f24"/>
     <text class="pill-text" x="121.5" y="198" text-anchor="middle">model</text>
     <text class="card-title" x="12" y="224" text-anchor="start">EgoVLA</text>
-    <text class="card-note" x="12" y="249" text-anchor="start">Showed vision-language-action policies can be</text>
-<text class="card-note" x="12" y="263" text-anchor="start">learned from egocentric human video and...</text>
+    <text class="card-note" x="12" y="252" text-anchor="start">Showed vision-language-action policies can be</text>
+<text class="card-note" x="12" y="267" text-anchor="start">learned from egocentric human video and...</text>
   </g>
 </a>
 
 
-<g class="era-band" transform="translate(40 1860)">
+<g class="era-band" transform="translate(40 1875)">
   <rect class="era-bg" width="1200" height="416" rx="22"/>
-  <circle class="era-dot" cx="214" cy="54" r="14" fill="#5d52cf"/>
-  <path class="era-rail" d="M 246 54 H 1166"/>
+  <circle class="era-dot" cx="208" cy="54" r="14" fill="#5d52cf"/>
+  <path class="era-rail" d="M 226 54 H 1166"/>
   <text class="era-kicker" x="30" y="36">ERA 5</text>
   <text class="era-range" x="30" y="76">2026</text>
   <text class="era-label" x="30" y="111">World-Model Frontier</text>
@@ -349,7 +349,7 @@
 <text class="era-copy" x="30" y="176" text-anchor="start">push embodied AI outward.</text>
 </g>
 <a href="https://github.com/NVIDIA/DreamDojo" target="_blank">
-  <g class="milestone-card" transform="translate(301.0 1938)">
+  <g class="milestone-card" transform="translate(300.0 1953)">
     <rect class="card-bg" width="286" height="312" rx="14"/>
     <rect class="image-frame" x="12" y="12" width="262" height="158" rx="10"/>
     <image href="milestones/dreamdojo.png" x="12" y="12" width="262" height="158" preserveAspectRatio="xMidYMid meet"/>
@@ -358,13 +358,13 @@
     <rect class="kind-pill" x="92" y="181" width="59" height="25" rx="12.5" fill="#ef9f24"/>
     <text class="pill-text" x="121.5" y="198" text-anchor="middle">model</text>
     <text class="card-title" x="12" y="224" text-anchor="start">DreamDojo</text>
-    <text class="card-note" x="12" y="249" text-anchor="start">44K-hour egocentric-video robot world model with</text>
-<text class="card-note" x="12" y="263" text-anchor="start">latent actions for real-time planning.</text>
+    <text class="card-note" x="12" y="252" text-anchor="start">44K-hour egocentric-video robot world model with</text>
+<text class="card-note" x="12" y="267" text-anchor="start">latent actions for real-time planning.</text>
   </g>
 </a>
 
 <a href="https://arxiv.org/abs/2602.16710" target="_blank">
-  <g class="milestone-card" transform="translate(600.0 1938)">
+  <g class="milestone-card" transform="translate(600.0 1953)">
     <rect class="card-bg" width="286" height="312" rx="14"/>
     <rect class="image-frame" x="12" y="12" width="262" height="158" rx="10"/>
     <image href="milestones/egoscale.png" x="12" y="12" width="262" height="158" preserveAspectRatio="xMidYMid meet"/>
@@ -373,13 +373,13 @@
     <rect class="kind-pill" x="92" y="181" width="72" height="25" rx="12.5" fill="#0b8f98"/>
     <text class="pill-text" x="128.0" y="198" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="224" text-anchor="start">EgoScale</text>
-    <text class="card-note" x="12" y="249" text-anchor="start">Revealed the log-linear data-scaling law for</text>
-<text class="card-note" x="12" y="263" text-anchor="start">egocentric human-video VLA pretraining.</text>
+    <text class="card-note" x="12" y="252" text-anchor="start">Revealed the log-linear data-scaling law for</text>
+<text class="card-note" x="12" y="267" text-anchor="start">egocentric human-video VLA pretraining.</text>
   </g>
 </a>
 
 <a href="https://huggingface.co/datasets/ropedia-ai/xperience-10m" target="_blank">
-  <g class="milestone-card" transform="translate(899.0 1938)">
+  <g class="milestone-card" transform="translate(900.0 1953)">
     <rect class="card-bg" width="286" height="312" rx="14"/>
     <rect class="image-frame" x="12" y="12" width="262" height="158" rx="10"/>
     <image href="milestones/xperience-10m.png" x="12" y="12" width="262" height="158" preserveAspectRatio="xMidYMid meet"/>
@@ -388,8 +388,8 @@
     <rect class="kind-pill" x="92" y="181" width="72" height="25" rx="12.5" fill="#0b8f98"/>
     <text class="pill-text" x="128.0" y="198" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="224" text-anchor="start">Xperience-10M</text>
-    <text class="card-note" x="12" y="249" text-anchor="start">Petascale egocentric world-model corpus (10M</text>
-<text class="card-note" x="12" y="263" text-anchor="start">experiences, ~1 PB) pushing egocentric data to</text>
+    <text class="card-note" x="12" y="252" text-anchor="start">Petascale egocentric world-model corpus (10M</text>
+<text class="card-note" x="12" y="267" text-anchor="start">experiences, ~1 PB) pushing egocentric data to</text>
   </g>
 </a>
 

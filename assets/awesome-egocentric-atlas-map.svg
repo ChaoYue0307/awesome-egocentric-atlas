@@ -41,7 +41,7 @@
   <rect width="1280" height="730" fill="url(#bg)"/>
   <rect width="1280" height="730" fill="url(#dots)"/>
 
-  <text class="kicker" x="60" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
+  <text class="kicker" x="60" y="52">EGOCENTRIC AI · SYSTEM MAP</text>
   <text class="title ink" x="60" y="104">Awesome Egocentric Atlas</text>
   <text class="subtitle sub" x="60" y="136">
     <tspan x="60" y="136">Just launched: curated egocentric AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>

@@ -485,7 +485,7 @@ module CatalogArtifacts
     trend_points = points.map { |x, y| "#{x},#{fmt.call(y)}" }.join(" ")
     last_x, last_y = points.last
     projection = %(M#{last_x} #{fmt.call(last_y)} L1230 #{fmt.call(last_y - 17)})
-    note_y = [145, last_y - 25].max
+    note_y = [135, last_y - 38].max
 
     circles = points.each_with_index.map do |(x, y), idx|
       fill = idx == points.length - 1 ? "#ef9f24" : "#ffffff"
@@ -570,7 +570,7 @@ module CatalogArtifacts
 
         <polyline class="trend" points="#{trend_points}"/>
         <path class="proj" d="#{projection}" marker-end="url(#up)"/>
-        <text class="note" x="1208" y="#{fmt.call(note_y)}" text-anchor="end">still H1</text>
+        <text class="note" x="1210" y="#{fmt.call(note_y)}" text-anchor="middle">H1 only</text>
         <g>
           #{circles}
         </g>
@@ -792,10 +792,10 @@ module CatalogArtifacts
     row_gap = 26
     header_height = 188
     row_width = 1200
-    card_area_x = 286
-    card_area_width = 914
-    card_gap = 13
-    era_dot_x = card_area_x - margin_x - 32
+    card_area_x = 266
+    card_area_width = 954
+    card_gap = 14
+    era_dot_x = card_area_x - margin_x - 18
 
     row_layouts = era_specs.map do |group|
       count = group.fetch(:items).length
@@ -818,7 +818,7 @@ module CatalogArtifacts
       group.merge(card_width: card_width, image_height: image_height, card_height: card_height, row_height: row_height)
     end
 
-    height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 46
+    height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 31
 
     kind_colors = {
       "dataset" => "#0b8f98",
@@ -853,7 +853,7 @@ module CatalogArtifacts
         max_name_chars = [[(card_width / 7.7).floor, 15].max, 30].min
         max_note_chars = [[(card_width / 5.9).floor, 20].max, 48].min
         name_lines = wrap_text(item.fetch("name"), max_chars: max_name_chars, max_lines: 2)
-        note_y = image_height + 66 + (name_lines.length * 17) + 8
+        note_y = image_height + 66 + (name_lines.length * 19) + 9
         note_lines = wrap_text(item.fetch("note"), max_chars: max_note_chars, max_lines: 2)
 
         <<~CARD
@@ -866,8 +866,8 @@ module CatalogArtifacts
               <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(date)}</text>
               <rect class="kind-pill" x="#{19 + date_width}" y="#{image_height + 23}" width="#{kind_width}" height="25" rx="12.5" fill="#{kind_color}"/>
               <text class="pill-text" x="#{19 + date_width + (kind_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(kind)}</text>
-              #{svg_text_block(name_lines, x: 12, y: image_height + 66, class_name: "card-title", line_height: 17)}
-              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 14)}
+              #{svg_text_block(name_lines, x: 12, y: image_height + 66, class_name: "card-title", line_height: 19)}
+              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 15)}
             </g>
           </a>
         CARD
@@ -952,7 +952,7 @@ module CatalogArtifacts
         <rect x="40" y="24" width="1200" height="138" rx="24" fill="url(#heroGlow)"/>
         <line class="rule" x1="40" y1="150" x2="1240" y2="150"/>
 
-        <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
+        <text class="kicker" x="40" y="48">CURATED FIELD MILESTONES</text>
         <text class="title" x="40" y="101">Egocentric AI timeline</text>
         <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
 

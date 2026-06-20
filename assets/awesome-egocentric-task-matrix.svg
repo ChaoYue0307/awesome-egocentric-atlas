@@ -90,16 +90,16 @@
   </g>
 
   <!-- access-state legend -->
-  <text class="legendK" x="58" y="668">ACCESS STATES</text>
-  <circle cx="226" cy="663" r="6" fill="#00a6b2"/>
-  <text class="legendT" x="240" y="668">open</text>
-  <circle cx="314" cy="663" r="6" fill="#ef9f24"/>
-  <text class="legendT" x="328" y="668">request</text>
-  <circle cx="430" cy="663" r="6" fill="#5b6b73"/>
-  <text class="legendT" x="444" y="668">benchmark</text>
-  <circle cx="582" cy="663" r="6" fill="#9aa7af"/>
-  <text class="legendT" x="596" y="668">partial</text>
-  <circle cx="688" cy="663" r="6" fill="#c2ccd2"/>
-  <text class="legendT" x="702" y="668">watch</text>
-  <text class="compare" x="812" y="668">Start with mature lanes; track watch entries.</text>
+  <text class="legendK" x="58" y="666">ACCESS STATES</text>
+  <circle cx="226" cy="661" r="6" fill="#00a6b2"/>
+  <text class="legendT" x="240" y="666">open</text>
+  <circle cx="314" cy="661" r="6" fill="#ef9f24"/>
+  <text class="legendT" x="328" y="666">request</text>
+  <circle cx="430" cy="661" r="6" fill="#5b6b73"/>
+  <text class="legendT" x="444" y="666">benchmark</text>
+  <circle cx="582" cy="661" r="6" fill="#9aa7af"/>
+  <text class="legendT" x="596" y="666">partial</text>
+  <circle cx="688" cy="661" r="6" fill="#c2ccd2"/>
+  <text class="legendT" x="702" y="666">watch</text>
+  <text class="compare" x="58" y="708">Start with mature lanes; track watch entries separately from open resources.</text>
 </svg>

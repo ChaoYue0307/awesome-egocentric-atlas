@@ -101,7 +101,7 @@
 
   <polyline class="trend" points="190,440.8 430,417 670,354 910,316.2 1150,233.6"/>
   <path class="proj" d="M1150 233.6 L1230 216.6" marker-end="url(#up)"/>
-  <text class="note" x="1208" y="208.6" text-anchor="end">still H1</text>
+  <text class="note" x="1210" y="195.6" text-anchor="middle">H1 only</text>
   <g>
     <circle cx="190" cy="440.8" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="417" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
