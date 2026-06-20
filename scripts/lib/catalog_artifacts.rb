@@ -155,13 +155,15 @@ module CatalogArtifacts
     resources.select { |entry| entry["milestone"] }
       .sort_by { |entry| [entry["milestone"].to_s, entry["name"].to_s] }
       .map do |entry|
-        {
+        milestone = {
           "name" => entry["name"],
           "kind" => entry["kind"],
           "url" => entry["url"],
           "date" => entry["milestone"].to_s,
           "note" => entry["milestone_note"]
         }
+        milestone["image"] = entry["milestone_image"] if entry["milestone_image"]
+        milestone
       end
   end
 

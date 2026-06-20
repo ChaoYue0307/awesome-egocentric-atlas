@@ -566,13 +566,21 @@ function renderMilestones() {
   items.forEach((m) => {
     const li = document.createElement("li");
     li.className = `milestone kind-${escapeHtml(m.kind)}`;
+    const image = m.image
+      ? `<img class="milestone-thumb" src="${escapeHtml(m.image)}" alt="" loading="lazy" decoding="async">`
+      : "";
     li.innerHTML = `
       <span class="milestone-dot" aria-hidden="true"></span>
       <div class="milestone-content">
-        <span class="milestone-date">${escapeHtml(m.date)}</span>
-        <a class="milestone-name" href="${escapeHtml(m.url)}">${escapeHtml(m.name)}</a>
-        <span class="chip">${escapeHtml(titleize(m.kind))}</span>
-        <p class="milestone-note">${escapeHtml(m.note)}</p>
+        ${image}
+        <div class="milestone-copy">
+          <div class="milestone-meta">
+            <span class="milestone-date">${escapeHtml(m.date)}</span>
+            <span class="chip">${escapeHtml(titleize(m.kind))}</span>
+          </div>
+          <a class="milestone-name" href="${escapeHtml(m.url)}">${escapeHtml(m.name)}</a>
+          <p class="milestone-note">${escapeHtml(m.note)}</p>
+        </div>
       </div>
     `;
     els.milestones.appendChild(li);

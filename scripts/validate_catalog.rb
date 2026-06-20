@@ -32,6 +32,8 @@ MAX_YEAR = Time.now.year + 1
 
 # Optional fields that, when present, must be http(s) URLs.
 URL_FIELDS = %w[paper project code data benchmark leaderboard mirror access_url license_url].freeze
+# Optional fields that, when present, must point to files committed in this repo.
+LOCAL_ASSET_FIELDS = %w[milestone_image].freeze
 # Optional fields that, when present, must be YYYY-MM-DD dates.
 DATE_FIELDS = %w[verified_at].freeze
 DATE_RE = /\A\d{4}-\d{2}-\d{2}\z/.freeze
@@ -42,11 +44,13 @@ REQUIRED_ASSETS = %w[
   assets/awesome-egocentric-atlas-map.png
   assets/awesome-egocentric-reader-route.png
   assets/awesome-egocentric-timeline.png
+  assets/awesome-egocentric-milestones.png
   assets/awesome-egocentric-task-matrix.png
   assets/awesome-egocentric-access-funnel.png
   assets/awesome-egocentric-atlas-map.svg
   assets/awesome-egocentric-reader-route.svg
   assets/awesome-egocentric-timeline.svg
+  assets/awesome-egocentric-milestones.svg
   assets/awesome-egocentric-task-matrix.svg
   assets/awesome-egocentric-access-funnel.svg
 ].freeze
@@ -152,6 +156,16 @@ resources.each do |entry|
     value = entry[field]
     unless value.is_a?(String) && value.start_with?("http://", "https://")
       add(errors, "#{name}: #{field} must be an http(s) URL, got #{value.inspect}")
+    end
+  end
+
+  # Optional local asset fields must resolve inside the repository.
+  LOCAL_ASSET_FIELDS.each do |field|
+    next unless entry.key?(field)
+
+    value = entry[field].to_s
+    if value.empty? || value.start_with?("/", "..") || !File.exist?(File.join(ROOT, value))
+      add(errors, "#{name}: #{field} must point to an existing repo file, got #{entry[field].inspect}")
     end
   end
 

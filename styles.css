@@ -559,6 +559,18 @@ tbody tr:hover {
   gap: 14px;
 }
 
+.milestone-poster {
+  margin: 10px 0 24px;
+}
+
+.milestone-poster img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
 /* Milestones: a vivid vertical timeline down a gradient spine. */
 .milestone-grid {
   list-style: none;
@@ -606,9 +618,11 @@ tbody tr:hover {
 
 .milestone-content {
   display: grid;
-  gap: 7px;
+  grid-template-columns: minmax(190px, 280px) minmax(0, 1fr);
+  gap: 16px;
   align-content: start;
-  padding: 14px 16px;
+  align-items: start;
+  padding: 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper);
@@ -621,8 +635,29 @@ tbody tr:hover {
   box-shadow: 0 14px 30px rgba(15, 42, 51, 0.1);
 }
 
+.milestone-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(204, 221, 225, 0.82);
+  border-radius: calc(var(--radius) - 2px);
+  background: #eef6f6;
+  object-fit: cover;
+}
+
+.milestone-copy {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.milestone-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
 .milestone-date {
-  justify-self: start;
   font-weight: 820;
   font-size: 13px;
   color: var(--teal);
@@ -636,7 +671,8 @@ tbody tr:hover {
 .milestone-name {
   color: var(--ink);
   font-weight: 770;
-  font-size: 15.5px;
+  font-size: 17px;
+  line-height: 1.24;
   text-decoration: none;
 }
 
@@ -651,7 +687,7 @@ tbody tr:hover {
 .milestone-note {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -909,6 +945,27 @@ tbody tr:hover {
 
   .status-row {
     grid-template-columns: 82px 44px 1fr;
+  }
+
+  .milestone {
+    padding-left: 42px;
+  }
+
+  .milestone-grid::before {
+    left: 13px;
+  }
+
+  .milestone-dot {
+    left: 6px;
+  }
+
+  .milestone-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .milestone-thumb {
+    aspect-ratio: 16 / 9;
   }
 
   .hero-proof {

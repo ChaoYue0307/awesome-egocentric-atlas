@@ -29,17 +29,18 @@ Prompt summary: a polished circular atlas mark combining wearable first-person g
 
 `awesome-egocentric-atlas-map.svg`, `awesome-egocentric-reader-route.svg`, and `awesome-egocentric-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
 
-The README and GitHub Pages site embed high-resolution PNG exports of all five SVG figures so downstream renderers show the same text layout everywhere:
+The README and GitHub Pages site embed high-resolution PNG exports of the SVG figures so downstream renderers show the same text layout everywhere:
 
 - `awesome-egocentric-atlas-map.png` — `3840 x 2190`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
 - `awesome-egocentric-timeline.png` — `3840 x 1560`
+- `awesome-egocentric-milestones.png` — `3840 x 2790`
 - `awesome-egocentric-task-matrix.png` — `3840 x 2220`
 - `awesome-egocentric-access-funnel.png` — `3840 x 1560`
 
 The SVG files remain the editable source of truth; regenerate the PNG exports after changing any SVG figure.
 
-Visual system (shared across all five figures):
+Visual system (shared across the figures):
 
 - White-to-teal gradient backgrounds with a faint dot-grid texture and amber accents.
 - A `1280`-unit-wide viewBox at a generous scale, so the figures render large and legible at GitHub's full content width; soft drop shadows and consistent rounded containers.
@@ -51,7 +52,25 @@ Visual system (shared across all five figures):
 
 - `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026 (H1)`), drawn as a bar chart with a trend line through the bar tops to make the rise explicit. Bar heights come from the egocentric `year` counts in `data/resources.yml`; the latest era is amber and counts only the first half of 2026 (January to June), labelled accordingly.
 - `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
+- `awesome-egocentric-milestones.svg` — a work-specific milestone poster. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images listed in `data/resources.yml` as `milestone_image`.
 
 When the catalog changes materially, refresh these two figures' numbers so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry and labels).
 
-Each SVG figure is plain, well-formed SVG with no external assets, so it stays diffable. The matching PNG files are fixed high-resolution exports for README, Pages, and Hugging Face display.
+Each SVG figure is plain, well-formed SVG and stays diffable. Most are fully self-contained; `awesome-egocentric-milestones.svg` intentionally references committed local milestone panels so each representative work can carry a specific visual scene. The matching PNG files are fixed high-resolution exports for README, Pages, and Hugging Face display.
+
+## Milestone panel provenance
+
+`assets/milestones/*.png` were created with the built-in ChatGPT image tool as text-free scene panels for the representative works in the milestone timeline:
+
+- `cmu-mmac.png` — first-person research kitchen activity capture.
+- `gtea-gaze.png` — hand-object food preparation with gaze/attention cues.
+- `epic-kitchens-100.png` — dense kitchen action segments and benchmark panels.
+- `ego4d.png` — global-scale multimodal egocentric data graph.
+- `project-aria.png` — outward-facing smart-glasses sensing with gaze, SLAM, IMU, and audio.
+- `egovlp.png` — egocentric clips flowing into video-language embeddings.
+- `egoschema.png` — long-form first-person video reasoning and temporal memory.
+- `ego-exo4d.png` — synchronized first-person and external-camera skilled activity capture.
+- `hot3d.png` — 3D hand-object tracking from AR glasses.
+- `egovla.png` — human egocentric demonstrations transferring to robot policies.
+- `egoscale.png` — data-scaling curve for egocentric VLA pretraining.
+- `xperience-10m.png` — petascale multimodal egocentric world-model corpus.

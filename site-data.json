@@ -107,84 +107,96 @@
       "kind": "dataset",
       "url": "http://kitchen.cs.cmu.edu/",
       "date": "2009",
-      "note": "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
+      "note": "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009).",
+      "image": "assets/milestones/cmu-mmac.png"
     },
     {
       "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
       "kind": "dataset",
       "url": "https://cbs.ic.gatech.edu/fpv/",
       "date": "2011-06",
-      "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research."
+      "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research.",
+      "image": "assets/milestones/gtea-gaze.png"
     },
     {
       "name": "EPIC-KITCHENS-100",
       "kind": "dataset",
       "url": "https://epic-kitchens.github.io/",
       "date": "2020-06",
-      "note": "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
+      "note": "The defining large-scale egocentric action-recognition benchmark and annual challenge suite.",
+      "image": "assets/milestones/epic-kitchens-100.png"
     },
     {
       "name": "Ego4D",
       "kind": "dataset",
       "url": "https://ego4d-data.org/",
       "date": "2021-10",
-      "note": "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
+      "note": "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era.",
+      "image": "assets/milestones/ego4d.png"
     },
     {
       "name": "Project Aria Datasets",
       "kind": "collection",
       "url": "https://www.projectaria.com/datasets/",
       "date": "2022",
-      "note": "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
+      "note": "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data.",
+      "image": "assets/milestones/project-aria.png"
     },
     {
       "name": "EgoVLP",
       "kind": "model",
       "url": "https://github.com/showlab/EgoVLP",
       "date": "2022-06",
-      "note": "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning."
+      "note": "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning.",
+      "image": "assets/milestones/egovlp.png"
     },
     {
       "name": "EgoSchema",
       "kind": "benchmark",
       "url": "http://egoschema.github.io/",
       "date": "2023-08",
-      "note": "The benchmark that exposed how far models are from long-form egocentric video reasoning."
+      "note": "The benchmark that exposed how far models are from long-form egocentric video reasoning.",
+      "image": "assets/milestones/egoschema.png"
     },
     {
       "name": "Ego-Exo4D",
       "kind": "dataset",
       "url": "https://ego-exo4d-data.org/",
       "date": "2023-11",
-      "note": "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning."
+      "note": "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning.",
+      "image": "assets/milestones/ego-exo4d.png"
     },
     {
       "name": "HOT3D",
       "kind": "dataset",
       "url": "https://facebookresearch.github.io/hot3d/",
       "date": "2024-06",
-      "note": "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3)."
+      "note": "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3).",
+      "image": "assets/milestones/hot3d.png"
     },
     {
       "name": "EgoVLA",
       "kind": "model",
       "url": "https://rchalyang.github.io/EgoVLA/",
       "date": "2025-07",
-      "note": "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
+      "note": "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots.",
+      "image": "assets/milestones/egovla.png"
     },
     {
       "name": "EgoScale",
       "kind": "dataset",
       "url": "https://arxiv.org/abs/2602.16710",
       "date": "2026-02",
-      "note": "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
+      "note": "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining.",
+      "image": "assets/milestones/egoscale.png"
     },
     {
       "name": "Xperience-10M",
       "kind": "dataset",
       "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
       "date": "2026-03",
-      "note": "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning."
+      "note": "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning.",
+      "image": "assets/milestones/xperience-10m.png"
     }
   ],
   "resources": [

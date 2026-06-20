@@ -14,6 +14,7 @@ resources:
   - name: Xperience-10M
     milestone: "2026-03"
     milestone_note: "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning."
+    milestone_image: assets/milestones/xperience-10m.png
     kind: dataset
     released: "2026-03"
     venue: "Hugging Face"
@@ -46,6 +47,7 @@ resources:
   - name: Ego4D
     milestone: "2021-10"
     milestone_note: "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
+    milestone_image: assets/milestones/ego4d.png
     kind: dataset
     released: "2021-10"
     venue: "CVPR 2022"
@@ -63,6 +65,7 @@ resources:
   - name: Ego-Exo4D
     milestone: "2023-11"
     milestone_note: "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning."
+    milestone_image: assets/milestones/ego-exo4d.png
     kind: dataset
     released: "2023-11"
     venue: "CVPR 2024"
@@ -80,6 +83,7 @@ resources:
   - name: EPIC-KITCHENS-100
     milestone: "2020-06"
     milestone_note: "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
+    milestone_image: assets/milestones/epic-kitchens-100.png
     kind: dataset
     released: "2020-06"
     venue: "IJCV 2022"
@@ -399,6 +403,7 @@ resources:
   - name: HOT3D
     milestone: "2024-06"
     milestone_note: "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3)."
+    milestone_image: assets/milestones/hot3d.png
     kind: dataset
     released: "2024-06"
     venue: "CVPR 2025"
@@ -595,6 +600,7 @@ resources:
   - name: Project Aria Datasets
     milestone: "2022"
     milestone_note: "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
+    milestone_image: assets/milestones/project-aria.png
     kind: collection
     released: "2022"
     venue: "project page"
@@ -684,6 +690,7 @@ resources:
   - name: EgoSchema
     milestone: "2023-08"
     milestone_note: "The benchmark that exposed how far models are from long-form egocentric video reasoning."
+    milestone_image: assets/milestones/egoschema.png
     kind: benchmark
     released: "2023-08"
     venue: "NeurIPS 2023"
@@ -1005,6 +1012,7 @@ resources:
   - name: GTEA / GTEA Gaze / EGTEA Gaze+
     milestone: "2011-06"
     milestone_note: "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research."
+    milestone_image: assets/milestones/gtea-gaze.png
     kind: dataset
     released: "2018"
     venue: "project page"
@@ -1148,6 +1156,7 @@ resources:
   - name: EgoVLP
     milestone: "2022-06"
     milestone_note: "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning."
+    milestone_image: assets/milestones/egovlp.png
     kind: model
     released: "2022-06"
     venue: "NeurIPS 2022"
@@ -1370,6 +1379,7 @@ resources:
   - name: EgoVLA
     milestone: "2025-07"
     milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
+    milestone_image: assets/milestones/egovla.png
     kind: model
     released: "2025"
     venue: "project page"
@@ -2139,6 +2149,7 @@ resources:
   - name: EgoScale
     milestone: "2026-02"
     milestone_note: "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
+    milestone_image: assets/milestones/egoscale.png
     kind: dataset
     released: "2026-02"
     venue: "arXiv"
@@ -3413,6 +3424,7 @@ resources:
   - name: CMU-MMAC
     milestone: "2009"
     milestone_note: "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
+    milestone_image: assets/milestones/cmu-mmac.png
     kind: dataset
     released: "2009"
     venue: "CMU tech report 2009"
