@@ -559,8 +559,12 @@ tbody tr:hover {
   gap: 14px;
 }
 
+.section.milestones {
+  width: min(1680px, calc(100vw - 24px));
+}
+
 .milestone-poster {
-  margin: 10px 0 24px;
+  margin: 10px 0 0;
 }
 
 .milestone-poster img {
@@ -569,126 +573,6 @@ tbody tr:hover {
   border-radius: var(--radius);
   background: var(--paper);
   box-shadow: var(--shadow);
-}
-
-/* Milestones: a vivid vertical timeline down a gradient spine. */
-.milestone-grid {
-  list-style: none;
-  margin: 6px 0 0;
-  padding: 0;
-  position: relative;
-}
-
-.milestone-grid::before {
-  content: "";
-  position: absolute;
-  left: 19px;
-  top: 8px;
-  bottom: 12px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--teal), #c6dbe0 85%, transparent);
-  border-radius: 2px;
-}
-
-.milestone {
-  position: relative;
-  padding: 0 0 16px 54px;
-}
-
-.milestone:last-child {
-  padding-bottom: 0;
-}
-
-.milestone-dot {
-  position: absolute;
-  left: 12px;
-  top: 7px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--teal);
-  border: 3px solid var(--paper);
-  box-shadow: 0 0 0 1px var(--line);
-}
-
-.milestone.kind-benchmark .milestone-dot { background: #5b6b73; }
-.milestone.kind-model .milestone-dot { background: #ef9f24; }
-.milestone.kind-toolkit .milestone-dot { background: #7a6ff0; }
-.milestone.kind-collection .milestone-dot { background: #b8c2c9; }
-
-.milestone-content {
-  display: grid;
-  grid-template-columns: minmax(190px, 280px) minmax(0, 1fr);
-  gap: 16px;
-  align-content: start;
-  align-items: start;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.milestone-content:hover {
-  transform: translateX(2px);
-  box-shadow: 0 14px 30px rgba(15, 42, 51, 0.1);
-}
-
-.milestone-thumb {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border: 1px solid rgba(204, 221, 225, 0.82);
-  border-radius: calc(var(--radius) - 2px);
-  background: #eef6f6;
-  object-fit: contain;
-}
-
-.milestone-copy {
-  display: grid;
-  gap: 8px;
-  min-width: 0;
-}
-
-.milestone-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-
-.milestone-date {
-  font-weight: 820;
-  font-size: 13px;
-  color: var(--teal);
-  background: rgba(6, 120, 130, 0.09);
-  border-radius: 999px;
-  padding: 3px 11px;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.01em;
-}
-
-.milestone-name {
-  color: var(--ink);
-  font-weight: 770;
-  font-size: 17px;
-  line-height: 1.24;
-  text-decoration: none;
-}
-
-.milestone-name:hover {
-  color: var(--teal);
-}
-
-.milestone .chip {
-  justify-self: start;
-}
-
-.milestone-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .lane-card {
@@ -847,13 +731,6 @@ tbody tr:hover {
   }
 }
 
-@media (max-width: 820px) {
-  .milestone-content {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-}
-
 @media (max-width: 640px) {
   .site-header,
   .hero,
@@ -952,18 +829,6 @@ tbody tr:hover {
 
   .status-row {
     grid-template-columns: 82px 44px 1fr;
-  }
-
-  .milestone {
-    padding-left: 42px;
-  }
-
-  .milestone-grid::before {
-    left: 13px;
-  }
-
-  .milestone-dot {
-    left: 6px;
   }
 
   .hero-proof {

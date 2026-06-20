@@ -297,7 +297,6 @@ const els = {
   clear: document.querySelector("#clear-filters"),
   summary: document.querySelector("#catalog-summary"),
   lanes: document.querySelector("#lane-grid"),
-  milestones: document.querySelector("#milestone-grid"),
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
   langBar: document.querySelector("#lang-bar")
@@ -559,34 +558,6 @@ function bindFilters() {
   });
 }
 
-function renderMilestones() {
-  if (!els.milestones) return;
-  const items = state.data.milestones || [];
-  els.milestones.replaceChildren();
-  items.forEach((m) => {
-    const li = document.createElement("li");
-    li.className = `milestone kind-${escapeHtml(m.kind)}`;
-    const image = m.image
-      ? `<img class="milestone-thumb" src="${escapeHtml(m.image)}" alt="" loading="lazy" decoding="async">`
-      : "";
-    li.innerHTML = `
-      <span class="milestone-dot" aria-hidden="true"></span>
-      <div class="milestone-content">
-        ${image}
-        <div class="milestone-copy">
-          <div class="milestone-meta">
-            <span class="milestone-date">${escapeHtml(m.date)}</span>
-            <span class="chip">${escapeHtml(titleize(m.kind))}</span>
-          </div>
-          <a class="milestone-name" href="${escapeHtml(m.url)}">${escapeHtml(m.name)}</a>
-          <p class="milestone-note">${escapeHtml(m.note)}</p>
-        </div>
-      </div>
-    `;
-    els.milestones.appendChild(li);
-  });
-}
-
 async function init() {
   applyStaticI18n();
   buildLangBar();
@@ -594,7 +565,6 @@ async function init() {
   state.data = await response.json();
   renderStats();
   renderSummary();
-  renderMilestones();
   renderFilters();
   renderLanes();
   renderStatuses();

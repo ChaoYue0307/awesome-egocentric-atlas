@@ -266,7 +266,7 @@ module CatalogArtifacts
     replace_once!(
       text,
       /(<!-- MILESTONES:START[^>]*-->).*?(<!-- MILESTONES:END -->)/m,
-      ->(m) { "#{m[1]}\n\n#{milestones_markdown}\n\n#{m[2]}" },
+      ->(m) { "#{m[1]}\n\n#{m[2]}" },
       "README milestones section"
     )
     text
@@ -669,56 +669,175 @@ module CatalogArtifacts
 
   def updated_milestones_svg(_content = nil)
     items = milestones
-    card_width = 370
-    card_height = 552
-    card_gap_x = 45
-    card_gap_y = 34
-    margin_x = 40
-    grid_top = 168
-    cols = 3
-    rows = (items.length.to_f / cols).ceil
-    height = grid_top + (rows * card_height) + ([rows - 1, 0].max * card_gap_y) + 80
-    bottom_y = height - 34
     years = items.map { |item| item.fetch("date").to_s[/\d{4}/].to_i }.reject(&:zero?)
     year_span = years.empty? ? "field milestones" : "#{years.min}-#{years.max}"
+    year_for = ->(item) { item.fetch("date").to_s[/\d{4}/].to_i }
+    era_specs = [
+      {
+        label: "Origins",
+        range: "2009-2015",
+        theme: "First-person activity, gaze, hands, and daily life become measurable.",
+        color: "#0b8f98",
+        accent: "#ef9f24",
+        items: items.select { |item| year_for.call(item) <= 2018 }
+      },
+      {
+        label: "Modern Scale",
+        range: "2020-2022",
+        theme: "Large benchmarks, smart-glasses sensing, geometry, and video-language pretraining.",
+        color: "#0f5d68",
+        accent: "#7a6ff0",
+        items: items.select { |item| (2019..2022).cover?(year_for.call(item)) }
+      },
+      {
+        label: "Reasoning & Robotics",
+        range: "2023-2024",
+        theme: "Long-form reasoning, ego-exo capture, AR hand-object tracking, and robot interfaces.",
+        color: "#34424d",
+        accent: "#0b8f98",
+        items: items.select { |item| (2023..2024).cover?(year_for.call(item)) }
+      },
+      {
+        label: "Daily Life to VLA",
+        range: "2025",
+        theme: "Personal memory and first-person demonstrations begin feeding robot policies.",
+        color: "#98620b",
+        accent: "#0b8f98",
+        items: items.select { |item| year_for.call(item) == 2025 }
+      },
+      {
+        label: "World-Model Frontier",
+        range: "2026",
+        theme: "Egocentric corpora, world models, and data-scaling laws push embodied AI outward.",
+        color: "#5d52cf",
+        accent: "#ef9f24",
+        items: items.select { |item| year_for.call(item) >= 2026 }
+      }
+    ].reject { |group| group.fetch(:items).empty? }
 
-    cards = items.each_with_index.map do |item, index|
-      col = index % cols
-      row = index / cols
-      x = margin_x + (col * (card_width + card_gap_x))
-      y = grid_top + (row * (card_height + card_gap_y))
-      image = item["image"].to_s.sub(%r{\Aassets/}, "")
-      date = item.fetch("date")
-      kind = item.fetch("kind")
-      date_width = [date.length * 8 + 26, 78].max
-      kind_width = [kind.length * 8 + 32, 80].max
-      name_lines = wrap_text(item.fetch("name"), max_chars: 24, max_lines: 2)
-      note_lines = wrap_text(item.fetch("note"), max_chars: 43, max_lines: 2)
+    margin_x = 40
+    row_gap = 26
+    header_height = 166
+    row_width = 1200
+    card_area_x = 286
+    card_area_width = 914
+    card_gap = 13
 
-      <<~CARD
-        <g class="card" transform="translate(#{x} #{y})">
-          <rect class="card-bg" width="#{card_width}" height="#{card_height}" rx="18"/>
-          <rect class="image-frame" x="18" y="78" width="334" height="334" rx="14"/>
-          <image href="#{html_escape(image)}" x="18" y="78" width="334" height="334" preserveAspectRatio="xMidYMid meet"/>
-          <rect class="date-pill" x="18" y="22" width="#{date_width}" height="32" rx="16"/>
-          <text class="pill-text" x="#{18 + (date_width / 2.0)}" y="43" text-anchor="middle">#{html_escape(date)}</text>
-          <rect class="kind-pill" x="#{26 + date_width}" y="22" width="#{kind_width}" height="32" rx="16"/>
-          <text class="pill-text" x="#{26 + date_width + (kind_width / 2.0)}" y="43" text-anchor="middle">#{html_escape(kind)}</text>
-          #{svg_text_block(name_lines, x: 18, y: 448, class_name: "card-title", line_height: 25)}
-          #{svg_text_block(note_lines, x: 18, y: 502, class_name: "card-note", line_height: 19)}
+    row_layouts = era_specs.map do |group|
+      count = group.fetch(:items).length
+      card_width = [
+        [
+          ((card_area_width - (card_gap * [count - 1, 0].max)) / count.to_f).floor,
+          174
+        ].max,
+        286
+      ].min
+      image_height = [
+        [
+          (card_width * 0.62).round,
+          104
+        ].max,
+        158
+      ].min
+      card_height = image_height + 154
+      row_height = card_height + 104
+      group.merge(card_width: card_width, image_height: image_height, card_height: card_height, row_height: row_height)
+    end
+
+    height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 68
+    bottom_y = height - 32
+
+    kind_colors = {
+      "dataset" => "#0b8f98",
+      "benchmark" => "#5b6b73",
+      "model" => "#ef9f24",
+      "toolkit" => "#7a6ff0",
+      "collection" => "#b8c2c9"
+    }
+
+    current_y = header_height
+    era_nodes = []
+    bands = row_layouts.each_with_index.map do |group, group_index|
+      y = current_y
+      current_y += group.fetch(:row_height) + row_gap
+      era_nodes << [106, y + 54]
+      count = group.fetch(:items).length
+      cards_width = (count * group.fetch(:card_width)) + (card_gap * [count - 1, 0].max)
+      start_x = card_area_x + ((card_area_width - cards_width) / 2.0)
+      card_y = y + 78
+
+      cards = group.fetch(:items).each_with_index.map do |item, index|
+        card_width = group.fetch(:card_width)
+        image_height = group.fetch(:image_height)
+        card_height = group.fetch(:card_height)
+        x = start_x + (index * (card_width + card_gap))
+        image = item["image"].to_s.sub(%r{\Aassets/}, "")
+        date = item.fetch("date")
+        kind = item.fetch("kind")
+        kind_color = kind_colors.fetch(kind, group.fetch(:accent))
+        date_width = [date.length * 7.3 + 22, 66].max.round
+        kind_width = [[kind.length * 6.9 + 24, 58].max.round, card_width - date_width - 25].min
+        max_name_chars = [[(card_width / 7.7).floor, 15].max, 30].min
+        max_note_chars = [[(card_width / 5.9).floor, 20].max, 48].min
+        name_lines = wrap_text(item.fetch("name"), max_chars: max_name_chars, max_lines: 2)
+        note_y = image_height + 66 + (name_lines.length * 17) + 8
+        note_lines = wrap_text(item.fetch("note"), max_chars: max_note_chars, max_lines: 2)
+
+        <<~CARD
+          <a href="#{html_escape(item.fetch("url"))}" target="_blank">
+            <g class="milestone-card" transform="translate(#{format('%.1f', x)} #{card_y})">
+              <rect class="card-bg" width="#{card_width}" height="#{card_height}" rx="14"/>
+              <rect class="image-frame" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" rx="10"/>
+              <image href="#{html_escape(image)}" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" preserveAspectRatio="xMidYMid meet"/>
+              <rect class="date-pill" x="12" y="#{image_height + 23}" width="#{date_width}" height="25" rx="12.5"/>
+              <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(date)}</text>
+              <rect class="kind-pill" x="#{19 + date_width}" y="#{image_height + 23}" width="#{kind_width}" height="25" rx="12.5" fill="#{kind_color}"/>
+              <text class="pill-text" x="#{19 + date_width + (kind_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(kind)}</text>
+              #{svg_text_block(name_lines, x: 12, y: image_height + 66, class_name: "card-title", line_height: 17)}
+              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 14)}
+            </g>
+          </a>
+        CARD
+      end.join("\n")
+
+      label_lines = wrap_text(group.fetch(:theme), max_chars: 30, max_lines: 3)
+      <<~BAND
+        <g class="era-band" transform="translate(#{margin_x} #{y})">
+          <rect class="era-bg" width="#{row_width}" height="#{group.fetch(:row_height)}" rx="22"/>
+          <circle class="era-dot" cx="66" cy="54" r="14" fill="#{group.fetch(:color)}"/>
+          <path class="era-rail" d="M #{card_area_x - margin_x} 54 H #{row_width - 34}"/>
+          <text class="era-kicker" x="30" y="36">ERA #{group_index + 1}</text>
+          <text class="era-range" x="30" y="76">#{html_escape(group.fetch(:range))}</text>
+          <text class="era-label" x="30" y="111">#{html_escape(group.fetch(:label))}</text>
+          #{svg_text_block(label_lines, x: 30, y: 142, class_name: "era-copy", line_height: 17)}
         </g>
-      CARD
+        #{cards}
+      BAND
     end.join("\n")
+
+    spine_path = if era_nodes.length > 1
+      coords = era_nodes.map.with_index do |(x, y), index|
+        "#{index.zero? ? 'M' : 'L'} #{x} #{y}"
+      end.join(" ")
+      %(<path class="spine" d="#{coords}"/>)
+    else
+      ""
+    end
 
     <<~SVG
       <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="#{height}" viewBox="0 0 1280 #{height}" role="img" aria-labelledby="title desc">
         <title id="title">Representative egocentric AI milestones</title>
-        <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing #{items.length} representative field-defining works from #{year_span}. Card labels come from data/resources.yml and image panels are shown uncropped.</desc>
+        <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing #{items.length} representative field-defining works from #{year_span}, grouped into era bands with uncropped visual panels.</desc>
         <defs>
           <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stop-color="#fbfdff"/>
             <stop offset="0.56" stop-color="#f4faf9"/>
             <stop offset="1" stop-color="#eaf6f5"/>
+          </linearGradient>
+          <linearGradient id="heroGlow" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0b8f98" stop-opacity=".20"/>
+            <stop offset=".48" stop-color="#ef9f24" stop-opacity=".16"/>
+            <stop offset="1" stop-color="#7a6ff0" stop-opacity=".16"/>
           </linearGradient>
           <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
             <circle cx="2" cy="2" r="1.35" fill="#cfe0e4" opacity="0.38"/>
@@ -728,18 +847,28 @@ module CatalogArtifacts
           </filter>
           <style>
             .kicker { font: 800 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .18em; }
-            .title { font: 800 44px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #14212b; letter-spacing: 0; }
+            .title { font: 850 46px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #14212b; letter-spacing: 0; }
             .subtitle { font: 500 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; letter-spacing: 0; }
             .stat-num { font: 900 43px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
             .stat-range { font: 900 34px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
             .stat-label { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #61717b; letter-spacing: .08em; }
-            .card-bg { fill: #ffffff; fill-opacity: .94; stroke: #c9dde2; stroke-width: 1.4; filter: url(#softShadow); }
-            .image-frame { fill: #eef6f5; stroke: #d7e5e8; stroke-width: 1.2; }
+            .hero-card { fill: #ffffff; fill-opacity: .70; stroke: #c9dde2; stroke-width: 1.2; }
+            .era-bg { fill: #ffffff; fill-opacity: .92; stroke: #c9dde2; stroke-width: 1.25; filter: url(#softShadow); }
+            .era-rail { stroke: #c8dde2; stroke-width: 1.35; stroke-dasharray: 6 8; }
+            .era-dot { stroke: #ffffff; stroke-width: 4; filter: url(#softShadow); }
+            .era-kicker { font: 850 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+            .era-range { font: 900 27px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #122733; letter-spacing: 0; }
+            .era-label { font: 850 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #263642; letter-spacing: 0; }
+            .era-copy { font: 560 12.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #62727c; letter-spacing: 0; }
+            .spine { fill: none; stroke: #0b8f98; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; opacity: .34; }
+            .card-bg { fill: #ffffff; fill-opacity: .97; stroke: #cfe0e4; stroke-width: 1.1; }
+            .milestone-card:hover .card-bg { stroke: #0b8f98; }
+            .image-frame { fill: #eef6f5; stroke: #d7e5e8; stroke-width: 1; }
             .date-pill { fill: #0b8f98; }
             .kind-pill { fill: #ef9f24; }
-            .pill-text { font: 800 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .02em; }
-            .card-title { font: 800 21px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
-            .card-note { font: 500 14.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
+            .pill-text { font: 800 10.8px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
+            .card-title { font: 820 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
+            .card-note { font: 520 11.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
             .rule { stroke: #c8dde2; stroke-width: 1.4; }
             .foot { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #62727c; letter-spacing: 0; }
           </style>
@@ -747,18 +876,21 @@ module CatalogArtifacts
 
         <rect width="1280" height="#{height}" fill="url(#bg)"/>
         <rect width="1280" height="#{height}" fill="url(#dots)"/>
+        <rect class="hero-card" x="40" y="24" width="1200" height="118" rx="24"/>
+        <rect x="40" y="24" width="1200" height="118" rx="24" fill="url(#heroGlow)"/>
         <line class="rule" x1="40" y1="128" x2="1240" y2="128"/>
 
         <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
-        <text class="title" x="40" y="100">Egocentric AI timeline</text>
-        <text class="subtitle" x="40" y="137">Representative works that changed first-person vision, AR/wearables, robotics, VLA, memory, and hand-object understanding.</text>
+        <text class="title" x="40" y="101">Egocentric AI timeline</text>
+        <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: first-person data, scale, reasoning, robotics, and world models.</text>
 
         <text class="stat-range" x="1014" y="82" text-anchor="middle">#{year_span}</text>
         <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>
         <text class="stat-num" x="1172" y="82" text-anchor="middle">#{items.length}</text>
         <text class="stat-label" x="1172" y="106" text-anchor="middle">WORKS</text>
 
-      #{cards}
+        #{spine_path}
+      #{bands}
 
         <text class="foot" x="640" y="#{bottom_y}" text-anchor="middle">Generated from data/resources.yml milestone fields; visual panels are local text-free ChatGPT image assets.</text>
       </svg>
