@@ -34,7 +34,7 @@ The README and GitHub Pages site embed high-resolution PNG exports of the SVG fi
 - `awesome-egocentric-atlas-map.png` — `3840 x 2190`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
 - `awesome-egocentric-timeline.png` — `3840 x 1560`
-- `awesome-egocentric-milestones.png` — `3840 x 2790`
+- `awesome-egocentric-milestones.png` — `3840 x 6660`
 - `awesome-egocentric-task-matrix.png` — `3840 x 2220`
 - `awesome-egocentric-access-funnel.png` — `3840 x 1560`
 
