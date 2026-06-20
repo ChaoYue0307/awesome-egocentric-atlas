@@ -565,10 +565,11 @@ function renderMilestones() {
   els.milestones.replaceChildren();
   items.forEach((m) => {
     const li = document.createElement("li");
-    li.className = "milestone";
+    li.className = `milestone kind-${escapeHtml(m.kind)}`;
     li.innerHTML = `
-      <span class="milestone-year">${escapeHtml(m.year)}</span>
-      <div class="milestone-body">
+      <span class="milestone-dot" aria-hidden="true"></span>
+      <div class="milestone-content">
+        <span class="milestone-date">${escapeHtml(m.date)}</span>
         <a class="milestone-name" href="${escapeHtml(m.url)}">${escapeHtml(m.name)}</a>
         <span class="chip">${escapeHtml(titleize(m.kind))}</span>
         <p class="milestone-note">${escapeHtml(m.note)}</p>

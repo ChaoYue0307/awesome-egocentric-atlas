@@ -153,13 +153,13 @@ module CatalogArtifacts
   # in the catalog. Ordered chronologically by the milestone year.
   def milestones
     resources.select { |entry| entry["milestone"] }
-      .sort_by { |entry| [entry["milestone"].to_i, entry["name"].to_s] }
+      .sort_by { |entry| [entry["milestone"].to_s, entry["name"].to_s] }
       .map do |entry|
         {
           "name" => entry["name"],
           "kind" => entry["kind"],
           "url" => entry["url"],
-          "year" => entry["milestone"],
+          "date" => entry["milestone"].to_s,
           "note" => entry["milestone_note"]
         }
       end
@@ -167,9 +167,9 @@ module CatalogArtifacts
 
   def milestones_markdown(items = milestones)
     rows = items.map do |m|
-      "| #{m['year']} | [#{m['name']}](#{m['url']}) | #{m['note']} |"
+      "| #{m['date']} | [#{m['name']}](#{m['url']}) | #{m['note']} |"
     end
-    (["| Year | Milestone | Why it matters |", "| :---: | :--- | :--- |"] + rows).join("\n")
+    (["| Date | Milestone | Why it matters |", "| :---: | :--- | :--- |"] + rows).join("\n")
   end
 
   def site_payload

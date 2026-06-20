@@ -559,47 +559,84 @@ tbody tr:hover {
   gap: 14px;
 }
 
+/* Milestones: a vivid vertical timeline down a gradient spine. */
 .milestone-grid {
   list-style: none;
-  margin: 0;
+  margin: 6px 0 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
-  gap: 14px;
+  position: relative;
+}
+
+.milestone-grid::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 8px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--teal), #c6dbe0 85%, transparent);
+  border-radius: 2px;
 }
 
 .milestone {
-  display: flex;
-  gap: 14px;
-  padding: 16px 18px;
+  position: relative;
+  padding: 0 0 16px 54px;
+}
+
+.milestone:last-child {
+  padding-bottom: 0;
+}
+
+.milestone-dot {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.milestone.kind-benchmark .milestone-dot { background: #5b6b73; }
+.milestone.kind-model .milestone-dot { background: #ef9f24; }
+.milestone.kind-toolkit .milestone-dot { background: #7a6ff0; }
+.milestone.kind-collection .milestone-dot { background: #b8c2c9; }
+
+.milestone-content {
+  display: grid;
+  gap: 7px;
+  align-content: start;
+  padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper);
   box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.milestone-year {
-  flex: 0 0 auto;
-  align-self: flex-start;
+.milestone-content:hover {
+  transform: translateX(2px);
+  box-shadow: 0 14px 30px rgba(15, 42, 51, 0.1);
+}
+
+.milestone-date {
+  justify-self: start;
   font-weight: 820;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--teal);
   background: rgba(6, 120, 130, 0.09);
   border-radius: 999px;
-  padding: 4px 11px;
+  padding: 3px 11px;
   font-variant-numeric: tabular-nums;
-}
-
-.milestone-body {
-  display: grid;
-  gap: 6px;
-  align-content: start;
+  letter-spacing: 0.01em;
 }
 
 .milestone-name {
   color: var(--ink);
-  font-weight: 760;
-  font-size: 15px;
+  font-weight: 770;
+  font-size: 15.5px;
   text-decoration: none;
 }
 

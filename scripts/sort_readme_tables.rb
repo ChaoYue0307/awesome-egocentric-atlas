@@ -15,7 +15,7 @@
 ROOT = File.expand_path("..", __dir__)
 README = File.join(ROOT, "README.md")
 
-CENTER_COLUMNS = ["released", "venue", "status", "link", "year", "access"].freeze
+CENTER_COLUMNS = ["released", "venue", "status", "link", "year", "date", "access"].freeze
 
 def cells(line)
   line.strip.sub(/\A\|/, "").sub(/\|\z/, "").split("|").map(&:strip)
