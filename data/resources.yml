@@ -3541,3 +3541,34 @@ resources:
     release_note: "arXiv preprint (May 2025); watch for code release."
     verified_at: "2026-06-20"
     citation_key: h2r_2025
+
+  - name: HumanScale
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.20521
+    paper: https://arxiv.org/abs/2606.20521
+    scale: "Pretraining study and recipe showing that filtered, labeled egocentric human video can outperform teleoperated real-robot data for embodied pretraining (lower action-prediction loss; large in- and out-of-distribution success gains)"
+    modalities: [egocentric-video]
+    tasks: [robot-learning, vla, representation-learning]
+    release_note: "arXiv preprint (June 2026); watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: humanscale_2026
+
+  - name: Do as I Do
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.19333
+    paper: https://arxiv.org/abs/2606.19333
+    scale: "Reconstructs and retargets human hand-object interactions from in-the-wild monocular RGB video into executable dexterous robot manipulation trajectories"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [robot-learning, dexterous-manipulation, hand-object-interaction]
+    scope_note: "Operates on both egocentric and exocentric in-the-wild human video sources."
+    release_note: "arXiv preprint (June 2026); watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: do_as_i_do_2026

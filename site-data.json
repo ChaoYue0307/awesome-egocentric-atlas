@@ -15,14 +15,14 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 278,
-    "egocentric_resources": 274,
+    "total_resources": 280,
+    "egocentric_resources": 276,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 69,
       "collection": 1,
       "dataset": 103,
-      "model": 88,
+      "model": 90,
       "toolkit": 13
     },
     "status_counts": {
@@ -30,7 +30,7 @@
       "open": 119,
       "partial": 12,
       "request": 4,
-      "watch": 132
+      "watch": 134
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 56
+      "count": 57
     },
     {
       "id": "procedure-action",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 114
+      "count": 115
     },
     {
       "id": "memory-reasoning",
@@ -87,7 +87,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 47
+      "count": 49
     },
     {
       "id": "ar-wearables",
@@ -6906,6 +6906,55 @@
       ],
       "task_families": [
         "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose"
+      ]
+    },
+    {
+      "name": "HumanScale",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.20521",
+      "paper": "https://arxiv.org/abs/2606.20521",
+      "scale": "Pretraining study and recipe showing that filtered, labeled egocentric human video can outperform teleoperated real-robot data for embodied pretraining (lower action-prediction loss; large in- and out-of-distribution success gains)",
+      "tasks": [
+        "robot-learning",
+        "vla",
+        "representation-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video"
+      ]
+    },
+    {
+      "name": "Do as I Do",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.19333",
+      "paper": "https://arxiv.org/abs/2606.19333",
+      "scale": "Reconstructs and retargets human hand-object interactions from in-the-wild monocular RGB video into executable dexterous robot manipulation trajectories",
+      "tasks": [
+        "robot-learning",
+        "dexterous-manipulation",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction"
       ],
       "modalities": [
         "egocentric-video",

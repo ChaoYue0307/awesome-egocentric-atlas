@@ -20,7 +20,7 @@
     <clipPath id="c2"><rect x="382" y="429" width="96" height="51" rx="8"/></clipPath>
     <clipPath id="c3"><rect x="622" y="350" width="96" height="130" rx="8"/></clipPath>
     <clipPath id="c4"><rect x="862" y="242" width="96" height="238" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="199" width="96" height="281" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="194" width="96" height="286" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -97,20 +97,20 @@
   <g clip-path="url(#c5)" filter="url(#shadow)">
     <rect class="seg" x="1102" y="415" width="96" height="65" fill="#0b8f98"/>
     <rect class="seg" x="1102" y="318" width="96" height="97" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="207" width="96" height="111" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="199" width="96" height="8" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="202" width="96" height="116" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="194" width="96" height="8" fill="#7a6ff0"/>
   </g>
 
   <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,440 430,429 670,350 910,242 1150,199"/>
-  <path class="proj" d="M1150 199 L1230 181" marker-end="url(#up)"/>
-  <text class="note" x="1208" y="170" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,440 430,429 670,350 910,242 1150,194"/>
+  <path class="proj" d="M1150 194 L1230 176" marker-end="url(#up)"/>
+  <text class="note" x="1208" y="165" text-anchor="end">still H1</text>
   <g>
     <circle cx="190" cy="440" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="429" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="670" cy="350" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="910" cy="242" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="199" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="1150" cy="194" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
   <!-- totals -->
@@ -118,7 +118,7 @@
   <text class="count" x="430" y="417" text-anchor="middle">19</text>
   <text class="count" x="670" y="338" text-anchor="middle">48</text>
   <text class="count" x="910" y="230" text-anchor="middle">88</text>
-  <text class="count" x="1150" y="187" text-anchor="middle">104</text>
+  <text class="count" x="1150" y="182" text-anchor="middle">106</text>
 
   <!-- era + anchor labels -->
   <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>
