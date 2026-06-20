@@ -2233,7 +2233,7 @@ resources:
     scale: "Stereo event-camera egocentric hand dataset with 5,419 sequences and 3D/2D keypoints"
     tasks: [hand-object, 3d, pose]
     verified_at: "2026-06-20"
-    release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    release_note: "GitHub README rechecked 2026-06-20; source code, pretrained models, and EgoEVHands dataset release are still marked pending."
   - name: EventEgoHands
     kind: benchmark
     released: "2025-05"
@@ -2290,7 +2290,7 @@ resources:
     scale: "About 1,000 QA pairs over surgery, industry, extreme sports, and animal-perspective clips"
     tasks: [memory, qa, assistant]
     verified_at: "2026-06-20"
-    release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    release_note: "GitHub README rechecked 2026-06-20; evaluator code is public, but benchmark JSON/data files are expected under datasets/ and are not bundled with clear access terms."
   - name: ADL Dataset
     kind: dataset
     released: "2012-06"

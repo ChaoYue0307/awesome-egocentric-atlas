@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by access state</title>
-  <desc id="desc">A funnel-style snapshot of the 456 egocentric resources by public-access state: open, watch, partial, benchmark, and request, showing how much is usable today versus still unverified.</desc>
+  <desc id="desc">A proportional bar snapshot of the 456 egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -9,49 +9,74 @@
     <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1.6" fill="#cfe0e4" opacity="0.4"/>
     </pattern>
-    <filter id="shadow" x="-6%" y="-12%" width="112%" height="135%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0f2a33" flood-opacity="0.10"/>
+    <filter id="shadow" x="-6%" y="-18%" width="112%" height="145%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f2a33" flood-opacity="0.10"/>
     </filter>
     <style>
       .ink { fill: #14212b; }
-      .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
-      .title { font: 700 38.9px system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .subtitle { font: 500 18.9px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
-      .row { font: 700 21.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
-      .gloss { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .kicker { font: 700 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+      .title { font: 700 37px system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .subtitle { font: 500 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+      .rowlabel { font: 760 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #24323c; }
+      .value { font: 760 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #24323c; }
+      .gloss { font: 520 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+      .rail { fill: #e8f1f3; stroke: #c9dde2; stroke-width: 1.1; }
+      .fill { filter: url(#shadow); }
+      .scale { font: 620 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #85939c; }
+      .tick { stroke: #c9dde2; stroke-width: 1; }
     </style>
   </defs>
 
   <rect width="1280" height="520" fill="url(#bg)"/>
   <rect width="1280" height="520" fill="url(#dots)"/>
 
-  <text class="kicker" x="70" y="60">ACCESS REALITY</text>
-  <text class="title ink" x="70" y="104">456 egocentric resources by access state</text>
-  <text class="subtitle" x="70" y="136">A snapshot of availability (not a pipeline). Roughly half are usable now; a large share are recent and still unverified.</text>
+  <text class="kicker" x="70" y="58">ACCESS REALITY</text>
+  <text class="title ink" x="70" y="102">456 egocentric resources by access state</text>
+  <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
 
-  <!-- funnel rows, centered on x=640; counts are patched by build_artifacts.rb -->
-  <!-- open -->
-  <rect x="190" y="186" width="900" height="56" rx="11" fill="#00a6b2" filter="url(#shadow)"/>
-  <text class="row" x="640" y="221" text-anchor="middle">open &#183; 136</text>
-  <text class="gloss" x="1104" y="221">usable today</text>
+  <line class="tick" x1="300" y1="162" x2="300" y2="174"/>
+  <line class="tick" x1="860.0" y1="162" x2="860.0" y2="174"/>
+  <text class="scale" x="300" y="156" text-anchor="middle">0</text>
+  <text class="scale" x="860.0" y="156" text-anchor="middle">max 297</text>
 
-  <!-- watch (≈ open; drawn equal width) -->
-  <rect x="190" y="252" width="900" height="56" rx="11" fill="#9aa7af" filter="url(#shadow)"/>
-  <text class="row" x="640" y="287" text-anchor="middle">watch &#183; 297</text>
-  <text class="gloss" x="1104" y="287">verify before use</text>
+  <g>
+  <text class="rowlabel" x="70" y="213">open · 136</text>
+  <rect class="rail" x="300" y="186" width="560" height="40" rx="12"/>
+  <rect class="fill" x="300" y="186" width="256.4" height="40" rx="12" fill="#00a6b2"/>
+  <text class="value" x="888.0" y="213">29.8%</text>
+  <text class="gloss" x="986.0" y="213">usable today</text>
+</g>
 
-  <!-- partial -->
-  <rect x="500" y="318" width="280" height="56" rx="11" fill="#ef9f24" filter="url(#shadow)"/>
-  <text class="row" x="640" y="353" text-anchor="middle">partial &#183; 12</text>
-  <text class="gloss" x="794" y="353">subset / annotations only</text>
+<g>
+  <text class="rowlabel" x="70" y="277">watch · 297</text>
+  <rect class="rail" x="300" y="250" width="560" height="40" rx="12"/>
+  <rect class="fill" x="300" y="250" width="560" height="40" rx="12" fill="#9aa7af"/>
+  <text class="value" x="888.0" y="277">65.1%</text>
+  <text class="gloss" x="986.0" y="277">verify before use</text>
+</g>
 
-  <!-- benchmark -->
-  <rect x="525" y="384" width="230" height="56" rx="11" fill="#5b6b73" filter="url(#shadow)"/>
-  <text class="row" x="640" y="419" text-anchor="middle">benchmark &#183; 7</text>
-  <text class="gloss" x="769" y="419">eval over existing video</text>
+<g>
+  <text class="rowlabel" x="70" y="341">partial · 12</text>
+  <rect class="rail" x="300" y="314" width="560" height="40" rx="12"/>
+  <rect class="fill" x="300" y="314" width="22.6" height="40" rx="12" fill="#ef9f24"/>
+  <text class="value" x="888.0" y="341">2.6%</text>
+  <text class="gloss" x="986.0" y="341">subset / annotations only</text>
+</g>
 
-  <!-- request -->
-  <rect x="545" y="450" width="190" height="56" rx="11" fill="#d98f1f" filter="url(#shadow)"/>
-  <text class="row" x="640" y="485" text-anchor="middle">request &#183; 4</text>
-  <text class="gloss" x="749" y="485">license / approval needed</text>
+<g>
+  <text class="rowlabel" x="70" y="405">benchmark · 7</text>
+  <rect class="rail" x="300" y="378" width="560" height="40" rx="12"/>
+  <rect class="fill" x="300" y="378" width="13.2" height="40" rx="12" fill="#5b6b73"/>
+  <text class="value" x="888.0" y="405">1.5%</text>
+  <text class="gloss" x="986.0" y="405">eval over existing video</text>
+</g>
+
+<g>
+  <text class="rowlabel" x="70" y="469">request · 4</text>
+  <rect class="rail" x="300" y="442" width="560" height="40" rx="12"/>
+  <rect class="fill" x="300" y="442" width="8" height="40" rx="12" fill="#d98f1f"/>
+  <text class="value" x="888.0" y="469">0.9%</text>
+  <text class="gloss" x="986.0" y="469">license / approval needed</text>
+</g>
+
 </svg>

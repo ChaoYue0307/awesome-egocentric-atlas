@@ -582,22 +582,95 @@ module CatalogArtifacts
     SVG
   end
 
-  def updated_access_funnel_svg(content = File.read(File.join(ROOT, "assets", "awesome-egocentric-access-funnel.svg"), encoding: "UTF-8"))
+  def updated_access_funnel_svg(_content = nil)
     summary_data = summary
     total = summary_data.fetch("egocentric_resources")
     statuses = summary_data.fetch("status_counts")
-    text = content.dup
-    replace_once!(text, /A funnel-style snapshot of the \d+ egocentric resources/, "A funnel-style snapshot of the #{total} egocentric resources", "access desc total")
-    replace_once!(text, />\d+ egocentric resources by access state</, ">#{total} egocentric resources by access state<", "access title total")
-    STATUS_ORDER.each do |status|
-      replace_once!(
-        text,
-        /(>#{Regexp.escape(status)} &#183; )\d+(<\/text>)/,
-        "\\1#{statuses.fetch(status, 0)}\\2",
-        "access #{status} count"
-      )
-    end
-    text
+    max_count = STATUS_ORDER.map { |status| statuses.fetch(status, 0) }.max.to_f
+    max_count = 1.0 if max_count.zero?
+    rail_x = 300
+    rail_width = 560.0
+    row_y = 186
+    row_gap = 64
+    row_height = 40
+    colors = {
+      "open" => "#00a6b2",
+      "watch" => "#9aa7af",
+      "partial" => "#ef9f24",
+      "benchmark" => "#5b6b73",
+      "request" => "#d98f1f"
+    }
+    gloss = {
+      "open" => "usable today",
+      "watch" => "verify before use",
+      "partial" => "subset / annotations only",
+      "benchmark" => "eval over existing video",
+      "request" => "license / approval needed"
+    }
+
+    rows = STATUS_ORDER.each_with_index.map do |status, index|
+      count = statuses.fetch(status, 0)
+      percent = total.positive? ? ((count * 100.0) / total) : 0.0
+      fill_width = count.zero? ? 0.0 : [(count / max_count) * rail_width, 8.0].max
+      y = row_y + (index * row_gap)
+      label = "#{status} · #{count}"
+      pct_label = format("%.1f%%", percent)
+      <<~ROW
+        <g>
+          <text class="rowlabel" x="70" y="#{y + 27}">#{html_escape(label)}</text>
+          <rect class="rail" x="#{rail_x}" y="#{y}" width="#{timeline_number(rail_width)}" height="#{row_height}" rx="12"/>
+          <rect class="fill" x="#{rail_x}" y="#{y}" width="#{timeline_number(fill_width)}" height="#{row_height}" rx="12" fill="#{colors.fetch(status)}"/>
+          <text class="value" x="#{rail_x + rail_width + 28}" y="#{y + 27}">#{pct_label}</text>
+          <text class="gloss" x="#{rail_x + rail_width + 126}" y="#{y + 27}">#{html_escape(gloss.fetch(status))}</text>
+        </g>
+      ROW
+    end.join("\n")
+
+    <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+        <title id="title">Egocentric resources by access state</title>
+        <desc id="desc">A proportional bar snapshot of the #{total} egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
+        <defs>
+          <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#fbfdff"/>
+            <stop offset="1" stop-color="#eef7f6"/>
+          </linearGradient>
+          <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.6" fill="#cfe0e4" opacity="0.4"/>
+          </pattern>
+          <filter id="shadow" x="-6%" y="-18%" width="112%" height="145%">
+            <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f2a33" flood-opacity="0.10"/>
+          </filter>
+          <style>
+            .ink { fill: #14212b; }
+            .kicker { font: 700 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+            .title { font: 700 37px system-ui, -apple-system, "Segoe UI", sans-serif; }
+            .subtitle { font: 500 17px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+            .rowlabel { font: 760 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #24323c; }
+            .value { font: 760 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #24323c; }
+            .gloss { font: 520 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+            .rail { fill: #e8f1f3; stroke: #c9dde2; stroke-width: 1.1; }
+            .fill { filter: url(#shadow); }
+            .scale { font: 620 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #85939c; }
+            .tick { stroke: #c9dde2; stroke-width: 1; }
+          </style>
+        </defs>
+
+        <rect width="1280" height="520" fill="url(#bg)"/>
+        <rect width="1280" height="520" fill="url(#dots)"/>
+
+        <text class="kicker" x="70" y="58">ACCESS REALITY</text>
+        <text class="title ink" x="70" y="102">#{total} egocentric resources by access state</text>
+        <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
+
+        <line class="tick" x1="#{rail_x}" y1="162" x2="#{rail_x}" y2="174"/>
+        <line class="tick" x1="#{rail_x + rail_width}" y1="162" x2="#{rail_x + rail_width}" y2="174"/>
+        <text class="scale" x="#{rail_x}" y="156" text-anchor="middle">0</text>
+        <text class="scale" x="#{rail_x + rail_width}" y="156" text-anchor="middle">max #{max_count.to_i}</text>
+
+        #{rows}
+      </svg>
+    SVG
   end
 
   def updated_atlas_map_svg(content = File.read(File.join(ROOT, "assets", "awesome-egocentric-atlas-map.svg"), encoding: "UTF-8"))
