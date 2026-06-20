@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>A curated map of first-person AI — datasets, benchmarks, models, and tools.</strong>
+  <strong>A curated map of egocentric AI — datasets, benchmarks, models, and tools.</strong>
 </p>
 
 <!-- LANG-BAR:START -->

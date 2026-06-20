@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 730" role="img" aria-labelledby="title desc">
   <title id="title">Awesome Egocentric Atlas system map</title>
-  <desc id="desc">Awesome Egocentric Atlas pipeline: first-person capture sources feed multimodal signals, which feed research task families, which produce reusable, validated atlas artifacts, with a curate-verify-update feedback loop.</desc>
+  <desc id="desc">Awesome Egocentric Atlas pipeline: egocentric capture sources feed multimodal signals, which feed research task families, which produce reusable, validated atlas artifacts, with a curate-verify-update feedback loop.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -44,7 +44,7 @@
   <text class="kicker" x="60" y="60">EGOCENTRIC AI · SYSTEM MAP</text>
   <text class="title ink" x="60" y="104">Awesome Egocentric Atlas</text>
   <text class="subtitle sub" x="60" y="136">
-    <tspan x="60" y="136">Just launched: curated first-person AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>
+    <tspan x="60" y="136">Just launched: curated egocentric AI resources for egocentric vision, embodied AI, robotics, VLA,</tspan>
     <tspan x="60" y="162">world models, WMA, memory, AR/VR, and hand-object interaction.</tspan>
   </text>
 
@@ -160,5 +160,5 @@
   <rect x="518" y="643" width="244" height="28" rx="14" fill="#ffffff" stroke="#cfe6e8" stroke-width="1.3"/>
   <text class="loopText" x="640" y="662" text-anchor="middle">CURATE · VERIFY · UPDATE</text>
 
-  <text class="rowsub" x="60" y="706" font-size="15">From first-person capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
+  <text class="rowsub" x="60" y="706" font-size="15">From egocentric capture to multimodal signals, task families, and reusable, validated research artifacts.</text>
 </svg>

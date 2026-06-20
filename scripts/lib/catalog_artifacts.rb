@@ -676,7 +676,7 @@ module CatalogArtifacts
       {
         label: "Origins",
         range: "2009-2015",
-        theme: "First-person activity, gaze, hands, and daily life become measurable.",
+        theme: "Egocentric activity, gaze, hands, and daily life become measurable.",
         color: "#0b8f98",
         accent: "#ef9f24",
         items: items.select { |item| year_for.call(item) <= 2018 }
@@ -700,7 +700,7 @@ module CatalogArtifacts
       {
         label: "Daily Life to VLA",
         range: "2025",
-        theme: "Personal memory and first-person demonstrations begin feeding robot policies.",
+        theme: "Personal memory and egocentric demonstrations begin feeding robot policies.",
         color: "#98620b",
         accent: "#0b8f98",
         items: items.select { |item| year_for.call(item) == 2025 }
@@ -882,7 +882,7 @@ module CatalogArtifacts
 
         <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
         <text class="title" x="40" y="101">Egocentric AI timeline</text>
-        <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: first-person data, scale, reasoning, robotics, and world models.</text>
+        <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
 
         <text class="stat-range" x="1014" y="82" text-anchor="middle">#{year_span}</text>
         <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>

@@ -55,7 +55,7 @@
 
   <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
   <text class="title" x="40" y="101">Egocentric AI timeline</text>
-  <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: first-person data, scale, reasoning, robotics, and world models.</text>
+  <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
 
   <text class="stat-range" x="1014" y="82" text-anchor="middle">2009-2026</text>
   <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>
@@ -70,7 +70,7 @@
   <text class="era-kicker" x="30" y="36">ERA 1</text>
   <text class="era-range" x="30" y="76">2009-2015</text>
   <text class="era-label" x="30" y="111">Origins</text>
-  <text class="era-copy" x="30" y="142" text-anchor="start">First-person activity, gaze,</text>
+  <text class="era-copy" x="30" y="142" text-anchor="start">Egocentric activity, gaze,</text>
 <text class="era-copy" x="30" y="159" text-anchor="start">hands, and daily life become</text>
 <text class="era-copy" x="30" y="176" text-anchor="start">measurable.</text>
 </g>
@@ -85,7 +85,7 @@
     <text class="pill-text" x="128.0" y="175" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="201" text-anchor="start">CMU-MMAC</text>
     <text class="card-note" x="12" y="226" text-anchor="start">The earliest egocentric dataset;</text>
-<text class="card-note" x="12" y="240" text-anchor="start">launched first-person activity...</text>
+<text class="card-note" x="12" y="240" text-anchor="start">launched egocentric activity...</text>
   </g>
 </a>
 
@@ -303,9 +303,9 @@
   <text class="era-kicker" x="30" y="36">ERA 4</text>
   <text class="era-range" x="30" y="76">2025</text>
   <text class="era-label" x="30" y="111">Daily Life to VLA</text>
-  <text class="era-copy" x="30" y="142" text-anchor="start">Personal memory and</text>
-<text class="era-copy" x="30" y="159" text-anchor="start">first-person demonstrations</text>
-<text class="era-copy" x="30" y="176" text-anchor="start">begin feeding robot policies.</text>
+  <text class="era-copy" x="30" y="142" text-anchor="start">Personal memory and egocentric</text>
+<text class="era-copy" x="30" y="159" text-anchor="start">demonstrations begin feeding</text>
+<text class="era-copy" x="30" y="176" text-anchor="start">robot policies.</text>
 </g>
 <a href="https://arxiv.org/abs/2503.03803" target="_blank">
   <g class="milestone-card" transform="translate(450.5 1474)">
@@ -390,7 +390,7 @@
     <text class="pill-text" x="128.0" y="198" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="224" text-anchor="start">Xperience-10M</text>
     <text class="card-note" x="12" y="249" text-anchor="start">Petascale egocentric world-model corpus (10M</text>
-<text class="card-note" x="12" y="263" text-anchor="start">experiences, ~1 PB) pushing first-person data to</text>
+<text class="card-note" x="12" y="263" text-anchor="start">experiences, ~1 PB) pushing egocentric data to</text>
   </g>
 </a>
 

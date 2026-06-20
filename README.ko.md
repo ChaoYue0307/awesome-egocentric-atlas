@@ -18,9 +18,9 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>1인칭 AI의 엄선된 지도 — 자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 뒷받침하는 데이터셋·벤치마크·모델·도구를 담았습니다.</strong></p>
+<p align="center"><strong>자기중심 AI의 엄선된 지도 — 자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 뒷받침하는 데이터셋·벤치마크·모델·도구를 담았습니다.</strong></p>
 
-<p align="center"><strong>277</strong> 자기중심 자원 — 104 데이터셋 · 69 벤치마크 · 90 모델 · 13 툴킷</p>
+<p align="center"><strong>456</strong> 자기중심 자원 — 125 데이터셋 · 81 벤치마크 · 226 모델 · 23 툴킷</p>
 
 ## 구성
 

@@ -1,6 +1,6 @@
 meta:
   title: Awesome Egocentric Atlas
-  description: "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
+  description: "Just launched Awesome Egocentric Atlas — a curated collection of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
   last_major_audit: "2026-06-20"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
@@ -14,7 +14,7 @@ resources:
   - name: Xperience-10M
     verified_at: "2026-06-20"
     milestone: "2026-03"
-    milestone_note: "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning."
+    milestone_note: "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing egocentric data to internet scale for embodied AI and robot learning."
     milestone_image: assets/milestones/xperience-10m.png
     kind: dataset
     released: "2026-03"
@@ -1095,7 +1095,7 @@ resources:
     license_url: "https://cbs.ic.gatech.edu/fpv/"
     verified_at: "2026-06-20"
     milestone: "2011-06"
-    milestone_note: "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research."
+    milestone_note: "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded egocentric action and attention research."
     milestone_image: assets/milestones/gtea-gaze.png
     kind: dataset
     released: "2018"
@@ -2303,7 +2303,7 @@ resources:
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified."
     milestone: "2012-06"
-    milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition."
+    milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition."
     milestone_image: assets/milestones/adl-dataset.png
 
   - name: Wrist-mounted ADL
@@ -4320,7 +4320,7 @@ resources:
     license: "not specified"
     license_url: "http://kitchen.cs.cmu.edu/"
     milestone: "2009-06"
-    milestone_note: "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
+    milestone_note: "The earliest egocentric dataset; launched egocentric activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
     milestone_image: assets/milestones/cmu-mmac.png
     kind: dataset
     released: "2009-06"

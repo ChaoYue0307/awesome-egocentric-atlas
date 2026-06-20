@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Awesome Egocentric Atlas",
-    "description": "Just launched Awesome Egocentric Atlas — a curated collection of first-person AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
+    "description": "Just launched Awesome Egocentric Atlas — a curated collection of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
     "last_major_audit": "2026-06-20",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
@@ -107,7 +107,7 @@
       "kind": "dataset",
       "url": "http://kitchen.cs.cmu.edu/",
       "date": "2009-06",
-      "note": "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009).",
+      "note": "The earliest egocentric dataset; launched egocentric activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009).",
       "image": "assets/milestones/cmu-mmac.png"
     },
     {
@@ -115,7 +115,7 @@
       "kind": "dataset",
       "url": "https://cbs.ic.gatech.edu/fpv/",
       "date": "2011-06",
-      "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research.",
+      "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded egocentric action and attention research.",
       "image": "assets/milestones/gtea-gaze.png"
     },
     {
@@ -123,7 +123,7 @@
       "kind": "dataset",
       "url": "https://www.csc.kth.se/cvap/actions/",
       "date": "2012-06",
-      "note": "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition.",
+      "note": "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition.",
       "image": "assets/milestones/adl-dataset.png"
     },
     {
@@ -243,7 +243,7 @@
       "kind": "dataset",
       "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
       "date": "2026-03",
-      "note": "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning.",
+      "note": "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing egocentric data to internet scale for embodied AI and robot learning.",
       "image": "assets/milestones/xperience-10m.png"
     }
   ],
