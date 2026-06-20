@@ -790,11 +790,12 @@ module CatalogArtifacts
 
     margin_x = 40
     row_gap = 26
-    header_height = 166
+    header_height = 188
     row_width = 1200
     card_area_x = 286
     card_area_width = 914
     card_gap = 13
+    era_dot_x = card_area_x - margin_x - 32
 
     row_layouts = era_specs.map do |group|
       count = group.fetch(:items).length
@@ -817,8 +818,7 @@ module CatalogArtifacts
       group.merge(card_width: card_width, image_height: image_height, card_height: card_height, row_height: row_height)
     end
 
-    height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 68
-    bottom_y = height - 32
+    height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 46
 
     kind_colors = {
       "dataset" => "#0b8f98",
@@ -833,7 +833,7 @@ module CatalogArtifacts
     bands = row_layouts.each_with_index.map do |group, group_index|
       y = current_y
       current_y += group.fetch(:row_height) + row_gap
-      era_nodes << [106, y + 54]
+      era_nodes << [margin_x + era_dot_x, y + 54]
       count = group.fetch(:items).length
       cards_width = (count * group.fetch(:card_width)) + (card_gap * [count - 1, 0].max)
       start_x = card_area_x + ((card_area_width - cards_width) / 2.0)
@@ -877,7 +877,7 @@ module CatalogArtifacts
       <<~BAND
         <g class="era-band" transform="translate(#{margin_x} #{y})">
           <rect class="era-bg" width="#{row_width}" height="#{group.fetch(:row_height)}" rx="22"/>
-          <circle class="era-dot" cx="66" cy="54" r="14" fill="#{group.fetch(:color)}"/>
+          <circle class="era-dot" cx="#{era_dot_x}" cy="54" r="14" fill="#{group.fetch(:color)}"/>
           <path class="era-rail" d="M #{card_area_x - margin_x} 54 H #{row_width - 34}"/>
           <text class="era-kicker" x="30" y="36">ERA #{group_index + 1}</text>
           <text class="era-range" x="30" y="76">#{html_escape(group.fetch(:range))}</text>
@@ -943,15 +943,14 @@ module CatalogArtifacts
             .card-title { font: 820 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
             .card-note { font: 520 11.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
             .rule { stroke: #c8dde2; stroke-width: 1.4; }
-            .foot { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #62727c; letter-spacing: 0; }
           </style>
         </defs>
 
         <rect width="1280" height="#{height}" fill="url(#bg)"/>
         <rect width="1280" height="#{height}" fill="url(#dots)"/>
-        <rect class="hero-card" x="40" y="24" width="1200" height="118" rx="24"/>
-        <rect x="40" y="24" width="1200" height="118" rx="24" fill="url(#heroGlow)"/>
-        <line class="rule" x1="40" y1="128" x2="1240" y2="128"/>
+        <rect class="hero-card" x="40" y="24" width="1200" height="138" rx="24"/>
+        <rect x="40" y="24" width="1200" height="138" rx="24" fill="url(#heroGlow)"/>
+        <line class="rule" x1="40" y1="150" x2="1240" y2="150"/>
 
         <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
         <text class="title" x="40" y="101">Egocentric AI timeline</text>
@@ -964,8 +963,6 @@ module CatalogArtifacts
 
         #{spine_path}
       #{bands}
-
-        <text class="foot" x="640" y="#{bottom_y}" text-anchor="middle">Generated from data/resources.yml milestone fields; visual panels are local text-free ChatGPT image assets.</text>
       </svg>
     SVG
   end
