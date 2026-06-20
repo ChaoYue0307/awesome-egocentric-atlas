@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 273,
-    "egocentric_resources": 269,
+    "total_resources": 278,
+    "egocentric_resources": 274,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 69,
       "collection": 1,
-      "dataset": 102,
-      "model": 84,
+      "dataset": 103,
+      "model": 88,
       "toolkit": 13
     },
     "status_counts": {
       "benchmark": 7,
-      "open": 118,
+      "open": 119,
       "partial": 12,
       "request": 4,
-      "watch": 128
+      "watch": 132
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 54
+      "count": 56
     },
     {
       "id": "procedure-action",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 112
+      "count": 114
     },
     {
       "id": "memory-reasoning",
@@ -87,7 +87,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 43
+      "count": 47
     },
     {
       "id": "ar-wearables",
@@ -6783,6 +6783,133 @@
       "modalities": [
         "egocentric-video",
         "gaze"
+      ]
+    },
+    {
+      "name": "DreamDojo",
+      "kind": "model",
+      "released": "2026-02",
+      "venue": "ICML 2026",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/NVIDIA/DreamDojo",
+      "paper": "https://arxiv.org/abs/2602.06949",
+      "code": "https://github.com/NVIDIA/DreamDojo",
+      "scale": "Generalist robot world model pretrained on 44K hours of egocentric human video using continuous latent actions; distilled to real-time (10.8 FPS) for teleoperation, policy evaluation, and model-based planning",
+      "tasks": [
+        "world-modeling",
+        "robot-learning",
+        "video-generation"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "latent-actions"
+      ]
+    },
+    {
+      "name": "UniDex",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.22264",
+      "paper": "https://arxiv.org/abs/2603.22264",
+      "scale": "Robot foundation suite for universal dexterous hand control learned from egocentric human videos, transferring human manipulation priors to multi-fingered robot hands",
+      "tasks": [
+        "robot-learning",
+        "dexterous-manipulation",
+        "vla"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose"
+      ]
+    },
+    {
+      "name": "DexGloveHOI",
+      "kind": "dataset",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.21714",
+      "paper": "https://arxiv.org/abs/2605.21714",
+      "scale": "100K+ synchronized egocentric vision and on-glove IMU samples with marker-based mocap ground-truth 3D hand pose across dexterous daily object manipulation (introduced with the AVI-HT vision-IMU fusion method)",
+      "tasks": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "3d-4d-understanding"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "imu",
+        "hand-pose"
+      ]
+    },
+    {
+      "name": "DexWM",
+      "kind": "model",
+      "released": "2025-12",
+      "venue": "CVPR 2026",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2512.13644",
+      "paper": "https://arxiv.org/abs/2512.13644",
+      "scale": "Dexterous interaction world model that learns fine-grained hand-object manipulation from finger keypoints in 900+ hours of egocentric human and robot video, with zero-shot transfer to a Franka-Allegro hand",
+      "tasks": [
+        "world-modeling",
+        "hand-object-interaction",
+        "robot-learning"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose"
+      ]
+    },
+    {
+      "name": "H2R",
+      "kind": "model",
+      "released": "2025-05",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2505.11920",
+      "paper": "https://arxiv.org/abs/2505.11920",
+      "scale": "Human-to-robot data augmentation that turns egocentric human videos into robot-centric training data by retargeting hand pose, inpainting human limbs, and compositing rendered robot arms for manipulation pre-training",
+      "tasks": [
+        "robot-learning",
+        "imitation-learning",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose"
       ]
     }
   ]

@@ -3466,3 +3466,78 @@ resources:
     tasks: [hand-object-interaction, action-and-procedure, detection-segmentation]
     verified_at: "2026-06-19"
     citation_key: beoid_2014
+
+  - name: DreamDojo
+    kind: model
+    released: "2026-02"
+    venue: "ICML 2026"
+    year: 2026
+    status: open
+    url: https://github.com/NVIDIA/DreamDojo
+    paper: https://arxiv.org/abs/2602.06949
+    code: https://github.com/NVIDIA/DreamDojo
+    scale: "Generalist robot world model pretrained on 44K hours of egocentric human video using continuous latent actions; distilled to real-time (10.8 FPS) for teleoperation, policy evaluation, and model-based planning"
+    modalities: [egocentric-video, latent-actions]
+    tasks: [world-modeling, robot-learning, video-generation]
+    verified_at: "2026-06-20"
+    citation_key: dreamdojo_2026
+
+  - name: UniDex
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.22264
+    paper: https://arxiv.org/abs/2603.22264
+    scale: "Robot foundation suite for universal dexterous hand control learned from egocentric human videos, transferring human manipulation priors to multi-fingered robot hands"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [robot-learning, dexterous-manipulation, vla]
+    release_note: "arXiv preprint (March 2026); watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: unidex_2026
+
+  - name: DexGloveHOI
+    kind: dataset
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.21714
+    paper: https://arxiv.org/abs/2605.21714
+    scale: "100K+ synchronized egocentric vision and on-glove IMU samples with marker-based mocap ground-truth 3D hand pose across dexterous daily object manipulation (introduced with the AVI-HT vision-IMU fusion method)"
+    modalities: [egocentric-video, imu, hand-pose]
+    tasks: [pose-and-body, hand-object-interaction, 3d-4d-understanding]
+    release_note: "arXiv preprint (May 2026); watch for dataset release."
+    verified_at: "2026-06-20"
+    citation_key: dexglovehoi_2026
+
+  - name: DexWM
+    kind: model
+    released: "2025-12"
+    venue: "CVPR 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.13644
+    paper: https://arxiv.org/abs/2512.13644
+    scale: "Dexterous interaction world model that learns fine-grained hand-object manipulation from finger keypoints in 900+ hours of egocentric human and robot video, with zero-shot transfer to a Franka-Allegro hand"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [world-modeling, hand-object-interaction, robot-learning]
+    release_note: "arXiv preprint (December 2025); watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: dexwm_2025
+
+  - name: H2R
+    kind: model
+    released: "2025-05"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2505.11920
+    paper: https://arxiv.org/abs/2505.11920
+    scale: "Human-to-robot data augmentation that turns egocentric human videos into robot-centric training data by retargeting hand pose, inpainting human limbs, and compositing rendered robot arms for manipulation pre-training"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [robot-learning, imitation-learning, manipulation]
+    release_note: "arXiv preprint (May 2025); watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: h2r_2025
