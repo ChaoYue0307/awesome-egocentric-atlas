@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 416,
-    "egocentric_resources": 412,
+    "total_resources": 460,
+    "egocentric_resources": 456,
     "adjacent_resources": 4,
     "kind_counts": {
-      "benchmark": 78,
+      "benchmark": 81,
       "collection": 1,
-      "dataset": 123,
-      "model": 189,
-      "toolkit": 21
+      "dataset": 125,
+      "model": 226,
+      "toolkit": 23
     },
     "status_counts": {
       "benchmark": 7,
       "open": 136,
       "partial": 12,
       "request": 4,
-      "watch": 253
+      "watch": 297
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 99
+      "count": 118
     },
     {
       "id": "procedure-action",
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 117
+      "count": 134
     },
     {
       "id": "hands-3d",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 185
+      "count": 200
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 122
+      "count": 142
     },
     {
       "id": "robotics-vla",
@@ -87,7 +87,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 63
+      "count": 68
     },
     {
       "id": "ar-wearables",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 121
+      "count": 134
     }
   ],
   "milestones": [
@@ -2887,6 +2887,1240 @@
         "three-d-and-scene"
       ],
       "license": "MIT"
+    },
+    {
+      "name": "ActiveMimic",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.06194",
+      "paper": "https://arxiv.org/abs/2606.06194",
+      "scale": "Egocentric human-video pretraining framework that recovers synchronized hand-object and viewpoint dynamics from active perception",
+      "tasks": [
+        "robot-learning",
+        "vla",
+        "egocentric-pretraining",
+        "active-perception",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-object-motion",
+        "camera-motion"
+      ]
+    },
+    {
+      "name": "EgoPriMo",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.08495",
+      "paper": "https://arxiv.org/abs/2606.08495",
+      "scale": "Egocentric motion prior for interactive humanoid control learned from egocentric human demonstrations",
+      "tasks": [
+        "humanoid-control",
+        "robot-learning",
+        "vla",
+        "motion-generation",
+        "imitation-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "human-demonstrations",
+        "humanoid-motion"
+      ]
+    },
+    {
+      "name": "FEEL",
+      "kind": "dataset",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.15847",
+      "paper": "https://arxiv.org/abs/2603.15847",
+      "scale": "About 3M force-synchronized egocentric frames from kitchen manipulation, using custom piezoresistive gloves",
+      "tasks": [
+        "physical-action-understanding",
+        "contact-understanding",
+        "hand-object",
+        "robot-learning"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "force",
+        "glove-sensors",
+        "hand-object-contact"
+      ]
+    },
+    {
+      "name": "IMPACT",
+      "kind": "dataset",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.10409",
+      "paper": "https://arxiv.org/abs/2604.10409",
+      "scale": "Synchronized five-view RGB-D industrial assembly dataset with ego-exo capture, bimanual annotations, state tracking, and anomaly-recovery supervision",
+      "tasks": [
+        "industrial-assembly",
+        "procedural-action",
+        "anomaly-detection",
+        "ego-exo",
+        "skill-assessment"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling",
+        "skills-and-quality"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "rgbd",
+        "bimanual-annotations",
+        "state-labels"
+      ]
+    },
+    {
+      "name": "MM-Conv",
+      "kind": "benchmark",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.21796",
+      "paper": "https://arxiv.org/abs/2605.21796",
+      "scale": "Referential-communication benchmark from 6.7 hours of egocentric VR interaction with synchronized speech, motion, gaze, and 3D scene geometry",
+      "tasks": [
+        "referential-grounding",
+        "3d-dialogue",
+        "multimodal-conversation",
+        "situated-assistance"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "three-d-and-scene",
+        "audio-and-social",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-vr",
+        "speech",
+        "motion",
+        "gaze",
+        "3d-scene"
+      ]
+    },
+    {
+      "name": "GBAT",
+      "kind": "toolkit",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.22962",
+      "paper": "https://arxiv.org/abs/2605.22962",
+      "scale": "AI-powered annotation toolkit for egocentric eye-tracking and video data in child-caregiver interaction studies",
+      "tasks": [
+        "annotation-tooling",
+        "gaze-analysis",
+        "child-caregiver-interaction",
+        "wearable-sensing"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "ar-sensing-navigation",
+        "audio-and-social"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "eye-tracking",
+        "gaze",
+        "annotations"
+      ]
+    },
+    {
+      "name": "OpenGlass",
+      "kind": "toolkit",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.07431",
+      "paper": "https://arxiv.org/abs/2606.07431",
+      "scale": "Open-source low-power AI eyewear platform with event-based vision support for on-device smart-glasses research",
+      "tasks": [
+        "ar-wearables",
+        "edge-ai",
+        "prototyping",
+        "on-device-perception"
+      ],
+      "task_families": [
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "smart-glasses",
+        "event-camera",
+        "embedded-ml",
+        "wearable-sensors"
+      ]
+    },
+    {
+      "name": "Beyond Motion Primitives",
+      "kind": "benchmark",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.27464",
+      "paper": "https://arxiv.org/abs/2605.27464",
+      "scale": "160K-sample Ego4D-derived dataset for behavioral activity recognition from head-mounted IMU",
+      "tasks": [
+        "ar-wearables",
+        "behavioral-activity-recognition",
+        "imu",
+        "proactive-assistance"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "action-and-procedure",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "head-mounted-imu",
+        "egocentric-context-labels"
+      ]
+    },
+    {
+      "name": "EgoRelight",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.28401",
+      "paper": "https://arxiv.org/abs/2605.28401",
+      "scale": "Egocentric HMD-based human capture and illumination recovery for relightable photoreal avatar rendering",
+      "tasks": [
+        "ar-vr",
+        "avatar-rendering",
+        "relighting",
+        "egocentric-human-capture"
+      ],
+      "task_families": [
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "hmd-video",
+        "egocentric-capture",
+        "illumination",
+        "human-avatar"
+      ]
+    },
+    {
+      "name": "PAWS",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.25539",
+      "paper": "https://arxiv.org/abs/2603.25539",
+      "scale": "Extracts object articulations from large-scale hand-object interactions in egocentric videos",
+      "tasks": [
+        "articulation-perception",
+        "3d-scene-understanding",
+        "robot-learning",
+        "hand-object"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "three-d-and-scene",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-object-interaction",
+        "articulated-objects"
+      ]
+    },
+    {
+      "name": "Static Scene Reconstruction from Dynamic Egocentric Videos",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.22450",
+      "paper": "https://arxiv.org/abs/2603.22450",
+      "scale": "Mask-aware reconstruction pipeline adapting static 3D reconstruction backbones to long-form dynamic egocentric video",
+      "tasks": [
+        "scene-reconstruction",
+        "ar-vr",
+        "3d-scene-understanding",
+        "dynamic-scenes"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "3d-reconstruction",
+        "masks"
+      ]
+    },
+    {
+      "name": "Ego-InBetween",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.17749",
+      "paper": "https://arxiv.org/abs/2604.17749",
+      "scale": "Egocentric instructed visual state-transition generation for object transformations between initial and target states",
+      "tasks": [
+        "world-modeling",
+        "state-transition-generation",
+        "action-modeling",
+        "hand-object"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "reasoning-intent-planning",
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text-instructions",
+        "generated-video"
+      ]
+    },
+    {
+      "name": "Syn2Seq Exo-to-Ego",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.13793",
+      "paper": "https://arxiv.org/abs/2604.13793",
+      "scale": "Exo-to-ego video generation via sequential interpolation from synchronized third-person views and camera poses",
+      "tasks": [
+        "ego-exo",
+        "video-generation",
+        "view-synthesis",
+        "world-modeling"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "generation-and-world-models",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "camera-pose",
+        "generated-video"
+      ]
+    },
+    {
+      "name": "VGGT-Segmentor",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.13596",
+      "paper": "https://arxiv.org/abs/2604.13596",
+      "scale": "Geometry-enhanced instance segmentation across disparate egocentric and exocentric views",
+      "tasks": [
+        "cross-view-segmentation",
+        "ego-exo",
+        "remote-collaboration",
+        "embodied-ai"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "evaluation-and-tooling",
+        "assistance-and-agents",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "geometry",
+        "segmentation"
+      ]
+    },
+    {
+      "name": "Personal Point of View 3DGS",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.23803",
+      "paper": "https://arxiv.org/abs/2604.23803",
+      "scale": "Evaluation of dynamic 3D Gaussian splatting methods for egocentric scene reconstruction under rapid camera motion and dynamic interactions",
+      "tasks": [
+        "ar-vr",
+        "scene-reconstruction",
+        "3d-understanding",
+        "dynamic-scenes"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "3d-gaussian-splatting",
+        "scene-reconstruction"
+      ]
+    },
+    {
+      "name": "EgoReasoner",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.06561",
+      "paper": "https://arxiv.org/abs/2603.06561",
+      "scale": "Task-adaptive structured thinking for egocentric 4D reasoning over fixture interactions, viewpoint-relative locations, and object movement",
+      "tasks": [
+        "4d-reasoning",
+        "spatial-reasoning",
+        "object-tracking",
+        "video-language"
+      ],
+      "task_families": [
+        "reasoning-intent-planning",
+        "tracking",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "4d-scene",
+        "structured-reasoning"
+      ]
+    },
+    {
+      "name": "Gaze-Regularized VLMs",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.23190",
+      "paper": "https://arxiv.org/abs/2603.23190",
+      "scale": "Gaze-regularized VLM framework for ego-centric behavior understanding and intent/action focus",
+      "tasks": [
+        "behavior-understanding",
+        "gaze-reasoning",
+        "action-recognition",
+        "intent-understanding"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "ar-sensing-navigation",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "vlm"
+      ]
+    },
+    {
+      "name": "Recurrent Reasoning VLM",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.17312",
+      "paper": "https://arxiv.org/abs/2603.17312",
+      "scale": "Recurrent vision-language reasoning for estimating progress in long-horizon embodied tasks",
+      "tasks": [
+        "task-progress-estimation",
+        "procedural-reasoning",
+        "embodied-ai",
+        "long-video-understanding"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "reasoning-intent-planning",
+        "foundation-and-representation",
+        "memory-and-long-context"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "video-language",
+        "task-progress"
+      ]
+    },
+    {
+      "name": "Ego4OOD",
+      "kind": "benchmark",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.17056",
+      "paper": "https://arxiv.org/abs/2601.17056",
+      "scale": "Egocentric video domain-generalization benchmark built around covariate-shift scoring for action recognition",
+      "tasks": [
+        "domain-generalization",
+        "action-recognition",
+        "robustness",
+        "covariate-shift"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "action-labels",
+        "domain-shifts"
+      ]
+    },
+    {
+      "name": "Robust Egocentric Visual Attention",
+      "kind": "model",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.01818",
+      "paper": "https://arxiv.org/abs/2601.01818",
+      "scale": "Language-guided scene-context-aware framework for robust egocentric visual attention prediction",
+      "tasks": [
+        "visual-attention-prediction",
+        "gaze",
+        "scene-context",
+        "ar-wearables"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "language",
+        "attention"
+      ]
+    },
+    {
+      "name": "HD-EPIC VQA T-CoT",
+      "kind": "model",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.10228",
+      "paper": "https://arxiv.org/abs/2601.10228",
+      "scale": "HD-EPIC VQA challenge solution with query/choice preprocessing, Qwen2.5-VL fine-tuning, temporal chain-of-thought prompting, and post-processing",
+      "tasks": [
+        "hd-epic-vqa",
+        "long-video-reasoning",
+        "video-language",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "memory-and-long-context",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "video-qa",
+        "mllm"
+      ]
+    },
+    {
+      "name": "Event-VStream",
+      "kind": "model",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.15655",
+      "paper": "https://arxiv.org/abs/2601.15655",
+      "scale": "Event-aware real-time long-video stream understanding framework using semantically coherent event units",
+      "tasks": [
+        "streaming-video-understanding",
+        "long-context-video",
+        "video-language",
+        "real-time-assistance"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "memory-and-long-context",
+        "video-language",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "long-video",
+        "streaming-video",
+        "event-segments"
+      ]
+    },
+    {
+      "name": "V-Nutri",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.11913",
+      "paper": "https://arxiv.org/abs/2604.11913",
+      "scale": "Dish-level nutrition estimation from egocentric cooking videos, using preparation process evidence rather than final-dish images only",
+      "tasks": [
+        "nutrition-estimation",
+        "cooking-understanding",
+        "procedural-reasoning",
+        "healthcare-assistance"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "action-and-procedure",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "cooking-video",
+        "nutrition-labels"
+      ]
+    },
+    {
+      "name": "Trajectory-Conditioned Egocentric Prediction",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.20388",
+      "paper": "https://arxiv.org/abs/2605.20388",
+      "scale": "Conditions egocentric future prediction on future camera trajectory to disambiguate actions, plans, and outcomes",
+      "tasks": [
+        "action-anticipation",
+        "future-prediction",
+        "trajectory-conditioning",
+        "embodied-ai"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "reasoning-intent-planning",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "camera-trajectory",
+        "future-prediction"
+      ]
+    },
+    {
+      "name": "Zero-Shot Ego Object ReID",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.26383",
+      "paper": "https://arxiv.org/abs/2605.26383",
+      "scale": "Zero-shot object re-identification in egocentric kitchen videos via multi-stage SAM3 feature fusion",
+      "tasks": [
+        "object-reidentification",
+        "kitchen-understanding",
+        "tracking",
+        "zero-shot"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "action-and-procedure",
+        "tracking",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-crops",
+        "sam-features"
+      ]
+    },
+    {
+      "name": "Mamba Ego Action Recognition",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.24302",
+      "paper": "https://arxiv.org/abs/2605.24302",
+      "scale": "Cross-modal egocentric action-recognition model combining RGB and hand-skeleton streams via VideoMamba and CLS-token fusion",
+      "tasks": [
+        "action-recognition",
+        "hand-object",
+        "multimodal-fusion",
+        "state-space-models"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-skeleton",
+        "rgb"
+      ]
+    },
+    {
+      "name": "Watch Remember Reason",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.07433",
+      "paper": "https://arxiv.org/abs/2606.07433",
+      "scale": "Human-view video understanding framework for MLLMs organized around watching, remembering, and reasoning",
+      "tasks": [
+        "long-video-understanding",
+        "memory",
+        "reasoning",
+        "mllm"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "human-view-video",
+        "multimodal-video",
+        "long-video"
+      ]
+    },
+    {
+      "name": "AnchorWorld",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.07326",
+      "paper": "https://arxiv.org/abs/2606.07326",
+      "scale": "Embodied egocentric world simulation with 3D-human-motion interaction integrity and view-based evolution customization",
+      "tasks": [
+        "world-modeling",
+        "egocentric-simulation",
+        "video-generation",
+        "embodied-ai"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "3d-human-motion",
+        "generated-video"
+      ]
+    },
+    {
+      "name": "WristCompass",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.30671",
+      "paper": "https://arxiv.org/abs/2605.30671",
+      "scale": "Learns kinematic coupling as a visual concept for recovering ego-camera orientation in manipulation video",
+      "tasks": [
+        "egocentric-calibration",
+        "imitation-learning",
+        "hand-object",
+        "robot-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "wrist-camera",
+        "hand-motion",
+        "camera-orientation"
+      ]
+    },
+    {
+      "name": "Objects Before Words",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.12985",
+      "paper": "https://arxiv.org/abs/2606.12985",
+      "scale": "Object-first contrastive learning bias for grounding caregiver language in child-view egocentric video",
+      "tasks": [
+        "language-grounding",
+        "child-view-learning",
+        "egocentric-representation",
+        "weak-supervision"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "child-view-video",
+        "caregiver-speech",
+        "objects"
+      ]
+    },
+    {
+      "name": "Continual Child-View Learning",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.05115",
+      "paper": "https://arxiv.org/abs/2606.05115",
+      "scale": "Continual multimodal learning framework that processes a child's egocentric input stream in chronological order",
+      "tasks": [
+        "continual-learning",
+        "language-grounding",
+        "child-view-learning",
+        "egocentric-representation"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "grounding-localization",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "child-view-video",
+        "speech",
+        "chronological-stream"
+      ]
+    },
+    {
+      "name": "Understanding-Enhanced Ego Mistake Detection",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.02120",
+      "paper": "https://arxiv.org/abs/2606.02120",
+      "scale": "Model-collaboration method for detecting incorrect user actions from egocentric video",
+      "tasks": [
+        "mistake-detection",
+        "procedural-assistance",
+        "action-reasoning",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "assistance-and-agents",
+        "reasoning-intent-planning",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "mllm",
+        "action-labels"
+      ]
+    },
+    {
+      "name": "VISTA",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.20901",
+      "paper": "https://arxiv.org/abs/2605.20901",
+      "scale": "V-JEPA Integrated StillFast Temporal Anticipator for Ego4D Short-Term Object Interaction Anticipation at EgoVis 2026",
+      "tasks": [
+        "short-term-object-interaction-anticipation",
+        "ego4d",
+        "challenge-solution",
+        "hand-object"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "foundation-and-representation",
+        "evaluation-and-tooling",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-boxes",
+        "action-labels"
+      ]
+    },
+    {
+      "name": "JFAA",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.20904",
+      "paper": "https://arxiv.org/abs/2605.20904",
+      "scale": "JEPA-based Future Action Anticipation method for the EPIC-KITCHENS-100 Action Anticipation Challenge at EgoVis 2026",
+      "tasks": [
+        "action-anticipation",
+        "epic-kitchens",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "action-labels",
+        "v-jepa-features"
+      ]
+    },
+    {
+      "name": "FROST-STA",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.00694",
+      "paper": "https://arxiv.org/abs/2606.00694",
+      "scale": "Frozen dense-feature submission for Ego4D Short-Term Object Interaction Anticipation at EgoVis 2026",
+      "tasks": [
+        "short-term-object-interaction-anticipation",
+        "ego4d",
+        "challenge-solution",
+        "hand-object"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "foundation-and-representation",
+        "evaluation-and-tooling",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-boxes",
+        "dense-features"
+      ]
+    },
+    {
+      "name": "TAP-JEPA",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.00662",
+      "paper": "https://arxiv.org/abs/2606.00662",
+      "scale": "Runner-up EPIC-KITCHENS-100 Action Anticipation Challenge submission using frozen V-JEPA 2.1 future-latent probing and two-stage score fusion",
+      "tasks": [
+        "action-anticipation",
+        "epic-kitchens",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "action-labels",
+        "v-jepa-features"
+      ]
+    },
+    {
+      "name": "HiERO-StepG",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.31227",
+      "paper": "https://arxiv.org/abs/2605.31227",
+      "scale": "Hierarchical activity-understanding solution for the Ego4D Step Grounding Challenge",
+      "tasks": [
+        "step-grounding",
+        "procedure-understanding",
+        "ego4d",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "foundation-and-representation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "step-labels",
+        "hierarchical-activities"
+      ]
+    },
+    {
+      "name": "TempRet",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.24470",
+      "paper": "https://arxiv.org/abs/2605.24470",
+      "scale": "Temporal enhancement and two-stage reranking for the CVPR 2026 EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge",
+      "tasks": [
+        "video-text-retrieval",
+        "epic-kitchens",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "video-language",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text",
+        "retrieval-features"
+      ]
+    },
+    {
+      "name": "CASTLE2026 Team WDL",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.00712",
+      "paper": "https://arxiv.org/abs/2606.00712",
+      "scale": "Evidence-aware multimodal reasoning pipeline for 600+ hours of multi-perspective egocentric CASTLE Challenge video",
+      "tasks": [
+        "long-video-qa",
+        "castle",
+        "challenge-solution",
+        "memory-reasoning"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "transcripts",
+        "auxiliary-images",
+        "multimodal-context"
+      ]
+    },
+    {
+      "name": "CuriosAI CASTLE",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.27800",
+      "paper": "https://arxiv.org/abs/2605.27800",
+      "scale": "CASTLE Challenge submission using per-person timelines, speaker-resolved transcripts, multi-VLM captions, and search-verify-answer reasoning",
+      "tasks": [
+        "long-video-qa",
+        "castle",
+        "challenge-solution",
+        "memory-reasoning"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "transcripts",
+        "captions",
+        "multimodal-context"
+      ]
+    },
+    {
+      "name": "MARS CASTLE",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.18176",
+      "paper": "https://arxiv.org/abs/2605.18176",
+      "scale": "Multimodal agentic reasoning with source selection for CASTLE Challenge questions over multi-day, multi-perspective egocentric recordings",
+      "tasks": [
+        "long-video-qa",
+        "castle",
+        "challenge-solution",
+        "memory-reasoning"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "transcripts",
+        "gaze",
+        "thermal",
+        "physiological-signals"
+      ]
+    },
+    {
+      "name": "EgoCross Domain-Wise Inference",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.00829",
+      "paper": "https://arxiv.org/abs/2606.00829",
+      "scale": "Nearly training-free domain-wise inference strategy for EgoCross source-limited egocentric video QA",
+      "tasks": [
+        "egocentric-video-qa",
+        "domain-shift",
+        "challenge-solution",
+        "inference-strategy"
+      ],
+      "task_families": [
+        "question-answering",
+        "evaluation-and-tooling",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "qa",
+        "support-set"
+      ]
+    },
+    {
+      "name": "HD-EPIC Semantic-Visual Evidence",
+      "kind": "model",
+      "released": "2026-05",
+      "venue": "CVPR 2026 EgoVis",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.29402",
+      "paper": "https://arxiv.org/abs/2605.29402",
+      "scale": "HD-EPIC VQA Challenge solution that separates semantic and visual evidence for efficient long-video reasoning",
+      "tasks": [
+        "hd-epic-vqa",
+        "long-video-reasoning",
+        "challenge-solution"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "memory-and-long-context"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "video-qa",
+        "semantic-evidence",
+        "visual-evidence"
+      ]
+    },
+    {
+      "name": "UniversalVTG",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.08522",
+      "paper": "https://arxiv.org/abs/2604.08522",
+      "scale": "Lightweight cross-dataset foundation model for video temporal grounding, surfaced in the Ego4D/egocentric grounding scan",
+      "tasks": [
+        "video-temporal-grounding",
+        "long-video-understanding",
+        "video-language",
+        "transfer-learning"
+      ],
+      "task_families": [
+        "video-language",
+        "memory-and-long-context",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "video",
+        "text",
+        "temporal-grounding"
+      ]
     },
     {
       "name": "EgoCom / Ego audio-visual correspondence",

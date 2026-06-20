@@ -409,7 +409,8 @@ module CatalogArtifacts
     raw_step = max_value / 7.0
     magnitude = 10**Math.log10(raw_step).floor
     step = [1, 2, 2.5, 5, 10].map { |factor| factor * magnitude }.find { |candidate| candidate >= raw_step }
-    (((max_value.to_f / step).ceil) * step).to_i
+    axis_max = (((max_value.to_f / step).ceil) * step).to_i
+    axis_max == max_value ? (axis_max + step).to_i : axis_max
   end
 
   def timeline_number(value)
