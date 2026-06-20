@@ -109,13 +109,18 @@ The landmark works that shaped egocentric AI — a fast on-ramp from the field's
 | :---: | :--- | :--- |
 | 2009 | [CMU-MMAC](http://kitchen.cs.cmu.edu/) | The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009). |
 | 2011-06 | [GTEA / GTEA Gaze / EGTEA Gaze+](https://cbs.ic.gatech.edu/fpv/) | Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded first-person action and attention research. |
+| 2012 | [ADL Dataset](https://www.csc.kth.se/cvap/actions/) | Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition. |
+| 2015 | [EgoHands](http://vision.soic.indiana.edu/projects/egohands/) | The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception. |
 | 2020-06 | [EPIC-KITCHENS-100](https://epic-kitchens.github.io/) | The defining large-scale egocentric action-recognition benchmark and annual challenge suite. |
 | 2021-10 | [Ego4D](https://ego4d-data.org/) | The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era. |
 | 2022 | [Project Aria Datasets](https://www.projectaria.com/datasets/) | Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data. |
+| 2022-03 | [HOI4D](https://hoi4d.github.io/) | Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding. |
 | 2022-06 | [EgoVLP](https://github.com/showlab/EgoVLP) | First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning. |
 | 2023-08 | [EgoSchema](http://egoschema.github.io/) | The benchmark that exposed how far models are from long-form egocentric video reasoning. |
 | 2023-11 | [Ego-Exo4D](https://ego-exo4d-data.org/) | Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning. |
+| 2024-02 | [Universal Manipulation Interface / UMI](https://umi-gripper.github.io/) | Handheld/wrist-view manipulation interface that made robot-free in-the-wild demonstrations practical for cross-embodiment policy learning. |
 | 2024-06 | [HOT3D](https://facebookresearch.github.io/hot3d/) | Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3). |
+| 2025-03 | [EgoLife](https://arxiv.org/abs/2503.03803) | Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning. |
 | 2025-07 | [EgoVLA](https://rchalyang.github.io/EgoVLA/) | Showed vision-language-action policies can be learned from egocentric human video and transferred to robots. |
 | 2026-02 | [EgoScale](https://arxiv.org/abs/2602.16710) | Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining. |
 | 2026-03 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning. |

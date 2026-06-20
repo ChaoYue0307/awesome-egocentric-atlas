@@ -119,6 +119,22 @@
       "image": "assets/milestones/gtea-gaze.png"
     },
     {
+      "name": "ADL Dataset",
+      "kind": "dataset",
+      "url": "https://www.csc.kth.se/cvap/actions/",
+      "date": "2012",
+      "note": "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition.",
+      "image": "assets/milestones/adl-dataset.png"
+    },
+    {
+      "name": "EgoHands",
+      "kind": "dataset",
+      "url": "http://vision.soic.indiana.edu/projects/egohands/",
+      "date": "2015",
+      "note": "The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception.",
+      "image": "assets/milestones/egohands.png"
+    },
+    {
       "name": "EPIC-KITCHENS-100",
       "kind": "dataset",
       "url": "https://epic-kitchens.github.io/",
@@ -141,6 +157,14 @@
       "date": "2022",
       "note": "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data.",
       "image": "assets/milestones/project-aria.png"
+    },
+    {
+      "name": "HOI4D",
+      "kind": "dataset",
+      "url": "https://hoi4d.github.io/",
+      "date": "2022-03",
+      "note": "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding.",
+      "image": "assets/milestones/hoi4d.png"
     },
     {
       "name": "EgoVLP",
@@ -167,12 +191,28 @@
       "image": "assets/milestones/ego-exo4d.png"
     },
     {
+      "name": "Universal Manipulation Interface / UMI",
+      "kind": "toolkit",
+      "url": "https://umi-gripper.github.io/",
+      "date": "2024-02",
+      "note": "Handheld/wrist-view manipulation interface that made robot-free in-the-wild demonstrations practical for cross-embodiment policy learning.",
+      "image": "assets/milestones/umi.png"
+    },
+    {
       "name": "HOT3D",
       "kind": "dataset",
       "url": "https://facebookresearch.github.io/hot3d/",
       "date": "2024-06",
       "note": "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3).",
       "image": "assets/milestones/hot3d.png"
+    },
+    {
+      "name": "EgoLife",
+      "kind": "dataset",
+      "url": "https://arxiv.org/abs/2503.03803",
+      "date": "2025-03",
+      "note": "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning.",
+      "image": "assets/milestones/egolife.png"
     },
     {
       "name": "EgoVLA",

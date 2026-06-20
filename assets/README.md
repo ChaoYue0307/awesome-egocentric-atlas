@@ -34,7 +34,7 @@ The README and GitHub Pages site embed high-resolution PNG exports of the SVG fi
 - `awesome-egocentric-atlas-map.png` — `3840 x 2190`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
 - `awesome-egocentric-timeline.png` — `3840 x 1560`
-- `awesome-egocentric-milestones.png` — `3840 x 6660`
+- `awesome-egocentric-milestones.png` — `3840 x 11190`
 - `awesome-egocentric-task-matrix.png` — `3840 x 2220`
 - `awesome-egocentric-access-funnel.png` — `3840 x 1560`
 
@@ -52,9 +52,9 @@ Visual system (shared across the figures):
 
 - `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026 (H1)`), drawn as a bar chart with a trend line through the bar tops to make the rise explicit. Bar heights come from the egocentric `year` counts in `data/resources.yml`; the latest era is amber and counts only the first half of 2026 (January to June), labelled accordingly.
 - `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
-- `awesome-egocentric-milestones.svg` — a work-specific milestone poster. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images listed in `data/resources.yml` as `milestone_image`.
+- `awesome-egocentric-milestones.svg` — a work-specific milestone poster generated from the `milestone`, `milestone_note`, and `milestone_image` fields in `data/resources.yml`. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images and are rendered uncropped.
 
-When the catalog changes materially, refresh these two figures' numbers so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry and labels).
+When the catalog changes materially, refresh these figures so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry, labels, and milestone cards).
 
 Each SVG figure is plain, well-formed SVG and stays diffable. Most are fully self-contained; `awesome-egocentric-milestones.svg` intentionally references committed local milestone panels so each representative work can carry a specific visual scene. The matching PNG files are fixed high-resolution exports for README, Pages, and Hugging Face display.
 
@@ -64,13 +64,18 @@ Each SVG figure is plain, well-formed SVG and stays diffable. Most are fully sel
 
 - `cmu-mmac.png` — first-person research kitchen activity capture.
 - `gtea-gaze.png` — hand-object food preparation with gaze/attention cues.
+- `adl-dataset.png` — unscripted apartment daily-living activities with object and hand cues.
+- `egohands.png` — Google Glass-style first-person hand segmentation and interaction.
 - `epic-kitchens-100.png` — dense kitchen action segments and benchmark panels.
 - `ego4d.png` — global-scale multimodal egocentric data graph.
 - `project-aria.png` — outward-facing smart-glasses sensing with gaze, SLAM, IMU, and audio.
+- `hoi4d.png` — RGB-D / point-cloud 4D hand-object interaction.
 - `egovlp.png` — egocentric clips flowing into video-language embeddings.
 - `egoschema.png` — long-form first-person video reasoning and temporal memory.
 - `ego-exo4d.png` — synchronized first-person and external-camera skilled activity capture.
 - `hot3d.png` — 3D hand-object tracking from AR glasses.
+- `umi.png` — handheld UMI gripper demonstrations for robot learning.
+- `egolife.png` — long-term smart-glasses memory and daily-life assistant reasoning.
 - `egovla.png` — human egocentric demonstrations transferring to robot policies.
 - `egoscale.png` — data-scaling curve for egocentric VLA pretraining.
 - `xperience-10m.png` — petascale multimodal egocentric world-model corpus.

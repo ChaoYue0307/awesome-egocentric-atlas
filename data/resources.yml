@@ -240,6 +240,9 @@ resources:
     license: MIT
     license_url: https://github.com/real-stanford/universal_manipulation_interface/blob/main/LICENSE
     verified_at: "2026-06-17"
+    milestone: "2024-02"
+    milestone_note: "Handheld/wrist-view manipulation interface that made robot-free in-the-wild demonstrations practical for cross-embodiment policy learning."
+    milestone_image: assets/milestones/umi.png
     citation_key: umi_2024
 
   - name: FastUMI
@@ -431,6 +434,9 @@ resources:
     scale: "2.4M RGB-D egocentric frames, 4,000+ sequences, 800 objects"
     modalities: [rgbd, point-clouds, 3d-hand-pose, object-pose, segmentation]
     tasks: [4d-hoi, pose-tracking, action-segmentation]
+    milestone: "2022-03"
+    milestone_note: "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding."
+    milestone_image: assets/milestones/hoi4d.png
 
   - name: H2O
     kind: dataset
@@ -465,6 +471,9 @@ resources:
     scale: "48 Google Glass videos, 4,800 annotated images"
     modalities: [rgb, hand-masks]
     tasks: [hand-detection, hand-segmentation]
+    milestone: "2015"
+    milestone_note: "The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception."
+    milestone_image: assets/milestones/egohands.png
 
   - name: FPHA
     kind: dataset
@@ -675,6 +684,9 @@ resources:
     scale: "300 hours, 6 participants, one week daily life"
     modalities: [meta-aria, video, audio, third-person-reference, qa]
     tasks: [life-assistant, long-context-qa, memory]
+    milestone: "2025-03"
+    milestone_note: "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning."
+    milestone_image: assets/milestones/egolife.png
 
   - name: Ego-EXTRA
     kind: dataset
@@ -2166,6 +2178,9 @@ resources:
     url: https://www.csc.kth.se/cvap/actions/
     scale: "Unscripted daily activity recordings with activity/object/hand annotations in classic literature"
     tasks: [action-recognition, procedure]
+    milestone: "2012"
+    milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition."
+    milestone_image: assets/milestones/adl-dataset.png
 
   - name: Wrist-mounted ADL
     kind: dataset

@@ -16,6 +16,7 @@ module CatalogArtifacts
   SITE_DATA = File.join(ROOT, "site-data.json")
   CSV_OUTPUT = File.join(ROOT, "awesome-egocentric-atlas.csv")
   HF_HEADER = File.join(ROOT, "huggingface", "dataset_card_header.txt")
+  MILESTONES_SVG = File.join(ROOT, "assets", "awesome-egocentric-milestones.svg")
 
   CSV_COLUMNS = %w[name kind released venue status scope year url paper code license scale tasks modalities].freeze
   STATUS_ORDER = %w[open watch partial benchmark request].freeze
@@ -601,6 +602,166 @@ module CatalogArtifacts
     replace_once!(content.dup, />\d+ resources</, ">#{total} resources<", "atlas map resources count")
   end
 
+  def truncate_text(text, max_chars)
+    return text if text.length <= max_chars
+
+    suffix = "..."
+    "#{text[0, [max_chars - suffix.length, 1].max].rstrip}#{suffix}"
+  end
+
+  def ellipsize_text(text, max_chars)
+    suffix = "..."
+    value = text.to_s.rstrip
+    return "#{value}#{suffix}" if value.length <= max_chars - suffix.length
+
+    truncate_text(value, max_chars)
+  end
+
+  def wrap_text(text, max_chars:, max_lines:)
+    words = text.to_s.gsub(/\s+/, " ").strip.split(" ")
+    return [] if words.empty?
+
+    lines = []
+    current = ""
+    truncated = false
+
+    words.each_with_index do |word, index|
+      candidate = current.empty? ? word : "#{current} #{word}"
+      if candidate.length <= max_chars
+        current = candidate
+        next
+      end
+
+      if current.empty?
+        lines << truncate_text(word, max_chars)
+      else
+        lines << current
+        current = word
+      end
+
+      next unless lines.length >= max_lines
+
+      truncated = index < words.length - 1 || !current.empty?
+      current = ""
+      break
+    end
+
+    unless current.empty?
+      if lines.length < max_lines
+        lines << truncate_text(current, max_chars)
+      else
+        truncated = true
+      end
+    end
+
+    lines[-1] = ellipsize_text(lines[-1], max_chars) if truncated && lines.any?
+    lines
+  end
+
+  def svg_text_block(lines, x:, y:, class_name:, line_height:, anchor: "start")
+    lines.each_with_index.map do |line, index|
+      %(<text class="#{class_name}" x="#{x}" y="#{y + (index * line_height)}" text-anchor="#{anchor}">#{html_escape(line)}</text>)
+    end.join("\n")
+  end
+
+  def updated_milestones_svg(_content = nil)
+    items = milestones
+    card_width = 370
+    card_height = 552
+    card_gap_x = 45
+    card_gap_y = 34
+    margin_x = 40
+    grid_top = 168
+    cols = 3
+    rows = (items.length.to_f / cols).ceil
+    height = grid_top + (rows * card_height) + ([rows - 1, 0].max * card_gap_y) + 80
+    bottom_y = height - 34
+    years = items.map { |item| item.fetch("date").to_s[/\d{4}/].to_i }.reject(&:zero?)
+    year_span = years.empty? ? "field milestones" : "#{years.min}-#{years.max}"
+
+    cards = items.each_with_index.map do |item, index|
+      col = index % cols
+      row = index / cols
+      x = margin_x + (col * (card_width + card_gap_x))
+      y = grid_top + (row * (card_height + card_gap_y))
+      image = item["image"].to_s.sub(%r{\Aassets/}, "")
+      date = item.fetch("date")
+      kind = item.fetch("kind")
+      date_width = [date.length * 8 + 26, 78].max
+      kind_width = [kind.length * 8 + 32, 80].max
+      name_lines = wrap_text(item.fetch("name"), max_chars: 24, max_lines: 2)
+      note_lines = wrap_text(item.fetch("note"), max_chars: 43, max_lines: 2)
+
+      <<~CARD
+        <g class="card" transform="translate(#{x} #{y})">
+          <rect class="card-bg" width="#{card_width}" height="#{card_height}" rx="18"/>
+          <rect class="image-frame" x="18" y="78" width="334" height="334" rx="14"/>
+          <image href="#{html_escape(image)}" x="18" y="78" width="334" height="334" preserveAspectRatio="xMidYMid meet"/>
+          <rect class="date-pill" x="18" y="22" width="#{date_width}" height="32" rx="16"/>
+          <text class="pill-text" x="#{18 + (date_width / 2.0)}" y="43" text-anchor="middle">#{html_escape(date)}</text>
+          <rect class="kind-pill" x="#{26 + date_width}" y="22" width="#{kind_width}" height="32" rx="16"/>
+          <text class="pill-text" x="#{26 + date_width + (kind_width / 2.0)}" y="43" text-anchor="middle">#{html_escape(kind)}</text>
+          #{svg_text_block(name_lines, x: 18, y: 448, class_name: "card-title", line_height: 25)}
+          #{svg_text_block(note_lines, x: 18, y: 502, class_name: "card-note", line_height: 19)}
+        </g>
+      CARD
+    end.join("\n")
+
+    <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="#{height}" viewBox="0 0 1280 #{height}" role="img" aria-labelledby="title desc">
+        <title id="title">Representative egocentric AI milestones</title>
+        <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing #{items.length} representative field-defining works from #{year_span}. Card labels come from data/resources.yml and image panels are shown uncropped.</desc>
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fbfdff"/>
+            <stop offset="0.56" stop-color="#f4faf9"/>
+            <stop offset="1" stop-color="#eaf6f5"/>
+          </linearGradient>
+          <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.35" fill="#cfe0e4" opacity="0.38"/>
+          </pattern>
+          <filter id="softShadow" x="-12%" y="-12%" width="124%" height="132%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f2a33" flood-opacity="0.12"/>
+          </filter>
+          <style>
+            .kicker { font: 800 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .18em; }
+            .title { font: 800 44px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #14212b; letter-spacing: 0; }
+            .subtitle { font: 500 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; letter-spacing: 0; }
+            .stat-num { font: 900 43px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
+            .stat-range { font: 900 34px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
+            .stat-label { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #61717b; letter-spacing: .08em; }
+            .card-bg { fill: #ffffff; fill-opacity: .94; stroke: #c9dde2; stroke-width: 1.4; filter: url(#softShadow); }
+            .image-frame { fill: #eef6f5; stroke: #d7e5e8; stroke-width: 1.2; }
+            .date-pill { fill: #0b8f98; }
+            .kind-pill { fill: #ef9f24; }
+            .pill-text { font: 800 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: .02em; }
+            .card-title { font: 800 21px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
+            .card-note { font: 500 14.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
+            .rule { stroke: #c8dde2; stroke-width: 1.4; }
+            .foot { font: 600 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #62727c; letter-spacing: 0; }
+          </style>
+        </defs>
+
+        <rect width="1280" height="#{height}" fill="url(#bg)"/>
+        <rect width="1280" height="#{height}" fill="url(#dots)"/>
+        <line class="rule" x1="40" y1="128" x2="1240" y2="128"/>
+
+        <text class="kicker" x="40" y="54">CURATED FIELD MILESTONES</text>
+        <text class="title" x="40" y="100">Egocentric AI timeline</text>
+        <text class="subtitle" x="40" y="137">Representative works that changed first-person vision, AR/wearables, robotics, VLA, memory, and hand-object understanding.</text>
+
+        <text class="stat-range" x="1014" y="82" text-anchor="middle">#{year_span}</text>
+        <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>
+        <text class="stat-num" x="1172" y="82" text-anchor="middle">#{items.length}</text>
+        <text class="stat-label" x="1172" y="106" text-anchor="middle">WORKS</text>
+
+      #{cards}
+
+        <text class="foot" x="640" y="#{bottom_y}" text-anchor="middle">Generated from data/resources.yml milestone fields; visual panels are local text-free ChatGPT image assets.</text>
+      </svg>
+    SVG
+  end
+
   def generated_files
     {
       SITE_DATA => site_json,
@@ -609,7 +770,8 @@ module CatalogArtifacts
       File.join(ROOT, "index.html") => updated_index,
       File.join(ROOT, "assets", "awesome-egocentric-timeline.svg") => updated_timeline_svg,
       File.join(ROOT, "assets", "awesome-egocentric-access-funnel.svg") => updated_access_funnel_svg,
-      File.join(ROOT, "assets", "awesome-egocentric-atlas-map.svg") => updated_atlas_map_svg
+      File.join(ROOT, "assets", "awesome-egocentric-atlas-map.svg") => updated_atlas_map_svg,
+      MILESTONES_SVG => updated_milestones_svg
     }
   end
 
