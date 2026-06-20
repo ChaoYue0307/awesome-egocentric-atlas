@@ -223,6 +223,14 @@
       "image": "assets/milestones/egovla.png"
     },
     {
+      "name": "DreamDojo",
+      "kind": "model",
+      "url": "https://github.com/NVIDIA/DreamDojo",
+      "date": "2026-02",
+      "note": "44K-hour egocentric-video robot world model with latent actions for real-time planning.",
+      "image": "assets/milestones/dreamdojo.png"
+    },
+    {
       "name": "EgoScale",
       "kind": "dataset",
       "url": "https://arxiv.org/abs/2602.16710",

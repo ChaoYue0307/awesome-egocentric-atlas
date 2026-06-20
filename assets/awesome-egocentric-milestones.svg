@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="3730" viewBox="0 0 1280 3730" role="img" aria-labelledby="title desc">
   <title id="title">Representative egocentric AI milestones</title>
-  <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing 17 representative field-defining works from 2009-2026. Card labels come from data/resources.yml and image panels are shown uncropped.</desc>
+  <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing 18 representative field-defining works from 2009-2026. Card labels come from data/resources.yml and image panels are shown uncropped.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -42,7 +42,7 @@
 
   <text class="stat-range" x="1014" y="82" text-anchor="middle">2009-2026</text>
   <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>
-  <text class="stat-num" x="1172" y="82" text-anchor="middle">17</text>
+  <text class="stat-num" x="1172" y="82" text-anchor="middle">18</text>
   <text class="stat-label" x="1172" y="106" text-anchor="middle">WORKS</text>
 
 <g class="card" transform="translate(40 168)">
@@ -245,6 +245,19 @@
 <g class="card" transform="translate(40 3098)">
   <rect class="card-bg" width="370" height="552" rx="18"/>
   <rect class="image-frame" x="18" y="78" width="334" height="334" rx="14"/>
+  <image href="milestones/dreamdojo.png" x="18" y="78" width="334" height="334" preserveAspectRatio="xMidYMid meet"/>
+  <rect class="date-pill" x="18" y="22" width="82" height="32" rx="16"/>
+  <text class="pill-text" x="59.0" y="43" text-anchor="middle">2026-02</text>
+  <rect class="kind-pill" x="108" y="22" width="80" height="32" rx="16"/>
+  <text class="pill-text" x="148.0" y="43" text-anchor="middle">model</text>
+  <text class="card-title" x="18" y="448" text-anchor="start">DreamDojo</text>
+  <text class="card-note" x="18" y="502" text-anchor="start">44K-hour egocentric-video robot world model</text>
+<text class="card-note" x="18" y="521" text-anchor="start">with latent actions for real-time planning.</text>
+</g>
+
+<g class="card" transform="translate(455 3098)">
+  <rect class="card-bg" width="370" height="552" rx="18"/>
+  <rect class="image-frame" x="18" y="78" width="334" height="334" rx="14"/>
   <image href="milestones/egoscale.png" x="18" y="78" width="334" height="334" preserveAspectRatio="xMidYMid meet"/>
   <rect class="date-pill" x="18" y="22" width="82" height="32" rx="16"/>
   <text class="pill-text" x="59.0" y="43" text-anchor="middle">2026-02</text>
@@ -255,7 +268,7 @@
 <text class="card-note" x="18" y="521" text-anchor="start">for egocentric human-video VLA pretraining.</text>
 </g>
 
-<g class="card" transform="translate(455 3098)">
+<g class="card" transform="translate(870 3098)">
   <rect class="card-bg" width="370" height="552" rx="18"/>
   <rect class="image-frame" x="18" y="78" width="334" height="334" rx="14"/>
   <image href="milestones/xperience-10m.png" x="18" y="78" width="334" height="334" preserveAspectRatio="xMidYMid meet"/>

@@ -77,5 +77,6 @@ Each SVG figure is plain, well-formed SVG and stays diffable. Most are fully sel
 - `umi.png` — handheld UMI gripper demonstrations for robot learning.
 - `egolife.png` — long-term smart-glasses memory and daily-life assistant reasoning.
 - `egovla.png` — human egocentric demonstrations transferring to robot policies.
+- `dreamdojo.png` — egocentric human videos distilled into latent-action robot world-model planning.
 - `egoscale.png` — data-scaling curve for egocentric VLA pretraining.
 - `xperience-10m.png` — petascale multimodal egocentric world-model corpus.

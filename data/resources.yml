@@ -4356,6 +4356,9 @@ resources:
     modalities: [egocentric-video, latent-actions]
     tasks: [world-modeling, robot-learning, video-generation]
     verified_at: "2026-06-20"
+    milestone: "2026-02"
+    milestone_note: "44K-hour egocentric-video robot world model with latent actions for real-time planning."
+    milestone_image: assets/milestones/dreamdojo.png
     citation_key: dreamdojo_2026
 
   - name: UniDex

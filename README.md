@@ -122,6 +122,7 @@ The landmark works that shaped egocentric AI — a fast on-ramp from the field's
 | 2024-06 | [HOT3D](https://facebookresearch.github.io/hot3d/) | Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3). |
 | 2025-03 | [EgoLife](https://arxiv.org/abs/2503.03803) | Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning. |
 | 2025-07 | [EgoVLA](https://rchalyang.github.io/EgoVLA/) | Showed vision-language-action policies can be learned from egocentric human video and transferred to robots. |
+| 2026-02 | [DreamDojo](https://github.com/NVIDIA/DreamDojo) | 44K-hour egocentric-video robot world model with latent actions for real-time planning. |
 | 2026-02 | [EgoScale](https://arxiv.org/abs/2602.16710) | Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining. |
 | 2026-03 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing first-person data to internet scale for embodied AI and robot learning. |
 
