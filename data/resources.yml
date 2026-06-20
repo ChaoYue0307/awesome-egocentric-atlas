@@ -3572,3 +3572,18 @@ resources:
     release_note: "arXiv preprint (June 2026); watch for code release."
     verified_at: "2026-06-20"
     citation_key: do_as_i_do_2026
+
+  - name: EgoCS-400K
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.18180
+    paper: https://arxiv.org/abs/2606.18180
+    scale: "400K+ first-person Counter-Strike gameplay videos (10K hours, 1K+ matches, 40K rounds, 13 maps) with aligned actions, player state, camera motion, view direction, and game events for interactive world-model training"
+    modalities: [egocentric-video, action-labels, camera-pose]
+    tasks: [world-modeling, video-generation, action-and-procedure]
+    release_note: "arXiv preprint (June 2026); watch for dataset release."
+    verified_at: "2026-06-20"
+    citation_key: egocs_400k_2026

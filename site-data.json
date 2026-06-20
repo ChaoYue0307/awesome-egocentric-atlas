@@ -15,13 +15,13 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 280,
-    "egocentric_resources": 276,
+    "total_resources": 281,
+    "egocentric_resources": 277,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 69,
       "collection": 1,
-      "dataset": 103,
+      "dataset": 104,
       "model": 90,
       "toolkit": 13
     },
@@ -30,7 +30,7 @@
       "open": 119,
       "partial": 12,
       "request": 4,
-      "watch": 134
+      "watch": 135
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 57
+      "count": 58
     },
     {
       "id": "procedure-action",
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 61
+      "count": 62
     },
     {
       "id": "hands-3d",
@@ -6959,6 +6959,32 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
+      ]
+    },
+    {
+      "name": "EgoCS-400K",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.18180",
+      "paper": "https://arxiv.org/abs/2606.18180",
+      "scale": "400K+ first-person Counter-Strike gameplay videos (10K hours, 1K+ matches, 40K rounds, 13 maps) with aligned actions, player state, camera motion, view direction, and game events for interactive world-model training",
+      "tasks": [
+        "world-modeling",
+        "video-generation",
+        "action-and-procedure"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "action-labels",
+        "camera-pose"
       ]
     }
   ]

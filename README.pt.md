@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Um mapa curado da IA em primeira pessoa: os conjuntos de dados, benchmarks, modelos e ferramentas por trás da visão egocêntrica, da IA incorporada e da robótica, da aprendizagem visão-linguagem, da memória de longo contexto, da RA/RV e da interação mão-objeto.</strong></p>
 
-<p align="center"><strong>276</strong> recursos egocêntricos — 103 conjuntos de dados · 69 benchmarks · 90 modelos · 13 ferramentas</p>
+<p align="center"><strong>277</strong> recursos egocêntricos — 104 conjuntos de dados · 69 benchmarks · 90 modelos · 13 ferramentas</p>
 
 ## O que inclui
 
