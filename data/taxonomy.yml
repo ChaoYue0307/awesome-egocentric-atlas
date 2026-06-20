@@ -181,7 +181,8 @@ modality_families:
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
       animal-egocentric-video, first-person-360-video, aria-images, synthetic-egocentric,
-      synthetic-composited-masks, synthetic-rendering, synthetic-stereo, scene-text, novel-view-video]
+      synthetic-composited-masks, synthetic-rendering, synthetic-stereo, scene-text,
+      novel-view-video, event-stream, event-camera, event-based-video]
 
   depth:
     label: Depth and RGB-D

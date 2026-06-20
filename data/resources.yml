@@ -1332,6 +1332,7 @@ resources:
     kind: toolkit
     released: "2019"
     venue: "GitHub"
+    year: 2019
     status: open
     url: https://github.com/epic-kitchens/action-models
     tasks: [action-recognition-baselines]
@@ -1355,6 +1356,7 @@ resources:
     kind: dataset
     released: "2020"
     venue: "project page"
+    year: 2020
     status: open
     url: http://vision.cs.utexas.edu/projects/ego_av_corr/
     scale: "Egocentric video with spatial audio for conversation and audio-visual correspondence tasks"
@@ -1613,6 +1615,7 @@ resources:
     kind: benchmark
     released: "2021"
     venue: "project page"
+    year: 2021
     status: benchmark
     url: https://ego4d-data.org/
     scale: "Derived benchmark suite built on Ego4D; tasks: Natural Language Query, Moment Query, episodic memory, state change, long-term anticipation, social/audio, hand-object"
@@ -1739,6 +1742,7 @@ resources:
     kind: toolkit
     released: "2021"
     venue: "project page"
+    year: 2021
     status: open
     url: https://ego4d-data.org/
     scale: "Downloading and working with Ego4D data after license approval."
@@ -5039,3 +5043,393 @@ resources:
     tasks: [hand-object-pose, grasping, hand-object-interaction]
     verified_at: "2026-06-20"
     citation_key: get_a_grip_2023
+
+  # --- Catalog expansion (2026-06-20): 2019-2021 rescan additions ---
+
+  - name: Rolling-Unrolling LSTMs
+    kind: model
+    released: "2019-05"
+    venue: "ICCV 2019 Oral"
+    year: 2019
+    status: watch
+    url: https://arxiv.org/abs/1905.09035
+    paper: https://arxiv.org/abs/1905.09035
+    scale: "Multi-scale Rolling-Unrolling LSTM architecture with modality attention for anticipating egocentric actions and interacted objects"
+    modalities: [egocentric-video]
+    tasks: [anticipation, action-and-procedure, hand-object-interaction]
+    release_note: "ICCV 2019 oral / TPAMI follow-up; watch for maintained code and models."
+    verified_at: "2026-06-20"
+    citation_key: rolling_unrolling_lstm_2019
+
+  - name: Few-Shot First-Person Action Recognition
+    kind: model
+    released: "2019-07"
+    venue: "T-PAMI"
+    year: 2019
+    status: watch
+    url: https://arxiv.org/abs/1907.09382
+    paper: https://arxiv.org/abs/1907.09382
+    scale: "Domain-specific priors and meta-learning approach for few-shot transfer in first-person action recognition"
+    modalities: [egocentric-video]
+    tasks: [action-recognition, domain-adaptation, representation-learning]
+    release_note: "T-PAMI paper; watch for long-term code/model availability."
+    verified_at: "2026-06-20"
+    citation_key: few_shot_first_person_action_2019
+
+  - name: EPIC-Fusion
+    kind: model
+    released: "2019-08"
+    venue: "ICCV 2019"
+    year: 2019
+    status: watch
+    url: https://arxiv.org/abs/1908.08498
+    paper: https://arxiv.org/abs/1908.08498
+    scale: "Audio-visual temporal-binding model for egocentric action recognition over RGB, optical flow, and audio"
+    modalities: [egocentric-video, audio]
+    tasks: [audio-visual, action-recognition, multimodal]
+    release_note: "ICCV 2019 paper; watch for stable implementation."
+    verified_at: "2026-06-20"
+    citation_key: epic_fusion_2019
+
+  - name: Seeing and Hearing Egocentric Actions
+    kind: model
+    released: "2019-10"
+    venue: "ICCV 2019 EPIC Workshop"
+    year: 2019
+    status: watch
+    url: https://arxiv.org/abs/1910.06693
+    paper: https://arxiv.org/abs/1910.06693
+    scale: "Study and baseline for combining audio and visual cues in egocentric human-object action understanding"
+    modalities: [egocentric-video, audio]
+    tasks: [audio-visual, action-recognition, hand-object-interaction]
+    release_note: "ICCV 2019 EPIC Workshop paper; watch for code and benchmark packaging."
+    verified_at: "2026-06-20"
+    citation_key: seeing_hearing_egocentric_actions_2019
+
+  - name: Motor Attention HOI Forecasting
+    kind: model
+    released: "2019-11"
+    venue: "arXiv"
+    year: 2019
+    status: watch
+    url: https://arxiv.org/abs/1911.10967
+    paper: https://arxiv.org/abs/1911.10967
+    scale: "Joint prediction of motor attention and future actions for first-person human-object interaction forecasting"
+    modalities: [egocentric-video, hand-trajectories, object-boxes]
+    tasks: [anticipation, hand-object-interaction, action-recognition]
+    release_note: "arXiv paper from November 2019; watch for code and benchmark assets."
+    verified_at: "2026-06-20"
+    citation_key: motor_attention_hoi_forecasting_2019
+
+  - name: Symbiotic Attention
+    kind: model
+    released: "2020-02"
+    venue: "AAAI 2020 Oral"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2002.03137
+    paper: https://arxiv.org/abs/2002.03137
+    scale: "Egocentric action-recognition model using privileged hand/object information through symbiotic attention"
+    modalities: [egocentric-video, hand, object-boxes]
+    tasks: [action-recognition, hand-object-interaction, multimodal]
+    release_note: "AAAI 2020 oral paper; watch for maintained implementation."
+    verified_at: "2026-06-20"
+    citation_key: symbiotic_attention_2020
+
+  - name: First-Person Motion-Appearance SSL
+    kind: model
+    released: "2020-02"
+    venue: "ICPR 2020"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2002.03982
+    paper: https://arxiv.org/abs/2002.03982
+    scale: "Self-supervised joint encoding of motion and appearance for first-person action recognition"
+    modalities: [egocentric-video]
+    tasks: [action-recognition, representation-learning]
+    release_note: "ICPR 2020 paper; watch for code/model release."
+    verified_at: "2026-06-20"
+    citation_key: first_person_motion_appearance_ssl_2020
+
+  - name: Unifying Few- and Zero-Shot Ego Action Recognition
+    kind: model
+    released: "2020-05"
+    venue: "CVPR 2020 EPIC Workshop"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2006.11393
+    paper: https://arxiv.org/abs/2006.11393
+    scale: "Few- and zero-shot egocentric action-recognition framework for compositional EPIC-KITCHENS-style action labels"
+    modalities: [egocentric-video, text]
+    tasks: [action-recognition, open-vocabulary-hoi, video-language]
+    release_note: "EPIC@CVPR 2020 paper; watch for code and split release."
+    verified_at: "2026-06-20"
+    citation_key: few_zero_shot_ego_action_2020
+
+  - name: Ego-OMG
+    kind: model
+    released: "2020-06"
+    venue: "arXiv"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2006.03201
+    paper: https://arxiv.org/abs/2006.03201
+    scale: "Egocentric Object Manipulation Graph representation for activity modeling and near-future action anticipation"
+    modalities: [egocentric-video, object-boxes, hand]
+    tasks: [anticipation, hand-object-interaction, relation-reasoning]
+    release_note: "arXiv paper from June 2020; related TPAMI contact-representation work is tracked separately."
+    verified_at: "2026-06-20"
+    citation_key: ego_omg_2020
+
+  - name: SelfPose
+    kind: model
+    released: "2020-11"
+    venue: "T-PAMI 2020"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2011.01519
+    paper: https://arxiv.org/abs/2011.01519
+    scale: "3D egocentric body-pose estimation from downward-looking headset-mounted fisheye cameras"
+    modalities: [fisheye-video, body-pose]
+    tasks: [egocentric-3d-pose, pose-and-body, ar-vr]
+    release_note: "T-PAMI 2020 paper; watch for stable code and data links."
+    verified_at: "2026-06-20"
+    citation_key: selfpose_2020
+
+  - name: Egocentric 4D Human Body Capture
+    kind: model
+    released: "2020-11"
+    venue: "arXiv"
+    year: 2020
+    status: watch
+    url: https://arxiv.org/abs/2011.13341
+    paper: https://arxiv.org/abs/2011.13341
+    scale: "Reconstructs second-person 3D human body meshes from monocular egocentric video through 3D scene grounding"
+    modalities: [egocentric-video, body-pose, scene-geometry]
+    tasks: [pose-and-body, scene-reconstruction, human-motion]
+    release_note: "arXiv paper from November 2020; watch for release of code/data."
+    verified_at: "2026-06-20"
+    citation_key: egocentric_4d_body_capture_2020
+
+  - name: RHOI
+    kind: model
+    released: "2020-12"
+    venue: "arXiv"
+    year: 2020
+    status: open
+    url: https://people.eecs.berkeley.edu/~zhecao/rhoi/
+    paper: https://arxiv.org/abs/2012.09856
+    scale: "Reconstructs hand-object interactions in the wild without direct 3D supervision using optimization and differentiable modeling"
+    modalities: [egocentric-video, hand-pose, object-meshes]
+    tasks: [hand-object-pose, hand-object-interaction, 3d-reconstruction]
+    verified_at: "2026-06-20"
+    citation_key: rhoi_2020
+
+  - name: Imagination-Based Ego Action Anticipation
+    kind: model
+    released: "2021-01"
+    venue: "IEEE TIP 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2101.04924
+    paper: https://arxiv.org/abs/2101.04924
+    scale: "Anticipates future egocentric actions by imagining future representations before execution"
+    modalities: [egocentric-video]
+    tasks: [anticipation, action-and-procedure, future-state-prediction]
+    release_note: "IEEE TIP 2021 paper; watch for maintained implementation."
+    verified_at: "2026-06-20"
+    citation_key: imagination_ego_anticipation_2021
+
+  - name: Contact Representations for Action Forecasting
+    kind: model
+    released: "2021-02"
+    venue: "T-PAMI 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2102.00649
+    paper: https://arxiv.org/abs/2102.00649
+    scale: "Forecasts first-person actions through contact representations built around making and breaking hand-object contact"
+    modalities: [egocentric-video, contact, object-boxes]
+    tasks: [anticipation, contact-understanding, hand-object-interaction]
+    release_note: "T-PAMI 2021 paper; watch for code and models."
+    verified_at: "2026-06-20"
+    citation_key: contact_representations_2021
+
+  - name: Indoor Future Person Localization
+    kind: model
+    released: "2021-03"
+    venue: "IROS 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2103.04019
+    paper: https://arxiv.org/abs/2103.04019
+    scale: "Predicts future person locations and trajectories from egocentric wearable-camera video for assistive navigation"
+    modalities: [egocentric-video, trajectories]
+    tasks: [trajectory-prediction, navigation, blind-assistance]
+    release_note: "IROS 2021 paper; verify current data/code availability."
+    verified_at: "2026-06-20"
+    citation_key: indoor_future_person_localization_2021
+
+  - name: HPS
+    kind: model
+    released: "2021-03"
+    venue: "CVPR 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2103.17265
+    paper: https://arxiv.org/abs/2103.17265
+    scale: "Human POSEitioning System for 3D human pose and self-localization in large scenes from body-mounted sensors and a head-mounted camera"
+    modalities: [egocentric-video, imu, body-pose, scene-scans]
+    tasks: [egocentric-3d-pose, localization, wearable-sensing]
+    release_note: "CVPR 2021 paper; verify current project assets and license."
+    verified_at: "2026-06-20"
+    citation_key: hps_2021
+
+  - name: Egocentric Pose from Human Vision Span
+    kind: model
+    released: "2021-04"
+    venue: "arXiv"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2104.05167
+    paper: https://arxiv.org/abs/2104.05167
+    scale: "Egocentric body-pose estimation from wider human-vision-span camera layouts for AR/VR"
+    modalities: [egocentric-video, body-pose]
+    tasks: [egocentric-3d-pose, pose-and-body, ar-vr]
+    release_note: "arXiv paper from April 2021; watch for implementation release."
+    verified_at: "2026-06-20"
+    citation_key: egocentric_pose_human_vision_span_2021
+
+  - name: Ego-Topo 3D Map Localization
+    kind: model
+    released: "2021-05"
+    venue: "ECCV 2022"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2105.09544
+    paper: https://arxiv.org/abs/2105.09544
+    scale: "Jointly recognizes egocentric activities and localizes where they occur on a 3D environment map"
+    modalities: [egocentric-video, scene-geometry, camera-pose]
+    tasks: [activity-recognition, localization, scene-understanding]
+    release_note: "ECCV 2022 paper from 2021 preprint; verify current code/data package."
+    verified_at: "2026-06-20"
+    citation_key: ego_topo_2021
+
+  - name: PAL
+    kind: toolkit
+    released: "2021-05"
+    venue: "CVPR 2021 EPIC Workshop"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2105.10735
+    paper: https://arxiv.org/abs/2105.10735
+    scale: "Wearable, personalized, privacy-preserving egocentric visual-context detection system for intelligence augmentation"
+    modalities: [egocentric-video, physiological-signals]
+    tasks: [wearable-sensing, interactive-assistance, assistive-systems]
+    release_note: "CVPR EPIC Workshop 2021 paper; verify hardware/software release state."
+    verified_at: "2026-06-20"
+    citation_key: pal_2021
+
+  - name: RNA Cross-Domain FPV AV Recognition
+    kind: model
+    released: "2021-06"
+    venue: "arXiv"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2106.01689
+    paper: https://arxiv.org/abs/2106.01689
+    scale: "Relative Norm Alignment method for cross-domain first-person audio-visual action recognition"
+    modalities: [egocentric-video, audio]
+    tasks: [audio-visual, action-recognition, domain-adaptation]
+    release_note: "arXiv paper from June 2021; watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: rna_fpv_av_recognition_2021
+
+  - name: KinPoly / Dynamics-Regulated Kinematic Policy
+    kind: model
+    released: "2021-06"
+    venue: "NeurIPS 2021"
+    year: 2021
+    status: open
+    url: https://zhengyiluo.github.io/projects/kin_poly/
+    paper: https://arxiv.org/abs/2106.05969
+    scale: "Object-aware egocentric pose-estimation policy combining kinematics, dynamics, and scene-object information"
+    modalities: [egocentric-video, body-pose, scene-geometry]
+    tasks: [pose-and-body, egocentric-3d-pose, human-scene-interaction]
+    verified_at: "2026-06-20"
+    citation_key: kinpoly_2021
+
+  - name: Exo-to-Ego Video Synthesis
+    kind: model
+    released: "2021-07"
+    venue: "ACM MM 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2107.03120
+    paper: https://arxiv.org/abs/2107.03120
+    scale: "Generates egocentric video from exocentric video for cross-view synthesis and ego-exo understanding"
+    modalities: [egocentric-video, third-person-video]
+    tasks: [video-generation, cross-view, ego-exo]
+    release_note: "ACM MM 2021 paper; watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: exo_to_ego_video_synthesis_2021
+
+  - name: MMAC Captions
+    kind: dataset
+    released: "2021-09"
+    venue: "ACM MM 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2109.02955
+    paper: https://arxiv.org/abs/2109.02955
+    scale: "Sensor-augmented egocentric-video captioning dataset and dynamic-modal-attention model built around CMU-MMAC-style multimodal activity data"
+    modalities: [egocentric-video, imu, audio, text]
+    tasks: [captioning, video-language, sensor-fusion]
+    release_note: "ACM MM 2021 paper; verify current dataset/download and license."
+    verified_at: "2026-06-20"
+    citation_key: mmac_captions_2021
+
+  - name: Temporal-Context Ego Action Recognition
+    kind: model
+    released: "2021-11"
+    venue: "BMVC 2021"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2111.01024
+    paper: https://arxiv.org/abs/2111.01024
+    scale: "Transformer-based multimodal egocentric action-recognition model that attends to surrounding temporal context"
+    modalities: [egocentric-video, audio]
+    tasks: [action-recognition, temporal-reasoning, multimodal]
+    release_note: "BMVC 2021 paper; watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: temporal_context_ego_action_2021
+
+  - name: AssistSR
+    kind: benchmark
+    released: "2021-11"
+    venue: "arXiv"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2111.15050
+    paper: https://arxiv.org/abs/2111.15050
+    scale: "Task-oriented video segment retrieval benchmark framed around personal assistants on phones and AR glasses"
+    modalities: [video, text]
+    tasks: [retrieval, temporal-grounding, interactive-assistance]
+    release_note: "arXiv paper from November 2021; verify public data and egocentric-video dependencies."
+    verified_at: "2026-06-20"
+    citation_key: assistsr_2021
+
+  - name: E2(GO)MOTION
+    kind: model
+    released: "2021-12"
+    venue: "CVPR 2022"
+    year: 2021
+    status: watch
+    url: https://arxiv.org/abs/2112.03596
+    paper: https://arxiv.org/abs/2112.03596
+    scale: "Motion-augmented event-stream representation for egocentric action recognition with event-camera style signals"
+    modalities: [egocentric-video, event-stream]
+    tasks: [action-recognition, sensor-fusion, efficient-inference]
+    release_note: "CVPR 2022 paper from December 2021 preprint; verify dataset/code links."
+    verified_at: "2026-06-20"
+    citation_key: e2gomotion_2021

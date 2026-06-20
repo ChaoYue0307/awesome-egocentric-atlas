@@ -58,7 +58,7 @@ Each family lists the canonical theme; the full alias list lives in
 
 | Family | Covers (examples) |
 |---|---|
-| `visual` | rgb, egocentric-video, fisheye/stereo/multiview video, synthetic renders |
+| `visual` | rgb, egocentric-video, fisheye/stereo/multiview video, event streams, synthetic renders |
 | `depth` | depth, rgb-d, stereo-depth |
 | `audio-language` | audio, speech, text, narrations, language instructions |
 | `gaze-motion` | gaze, eye-tracking, imu, head pose, trajectory |
