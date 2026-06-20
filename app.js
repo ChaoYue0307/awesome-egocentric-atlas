@@ -299,7 +299,8 @@ const els = {
   lanes: document.querySelector("#lane-grid"),
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
-  langBar: document.querySelector("#lang-bar")
+  langBar: document.querySelector("#lang-bar"),
+  milestoneLinks: document.querySelector("#milestone-link-layer")
 };
 
 function titleize(value) {
@@ -537,6 +538,29 @@ function renderStatuses() {
   });
 }
 
+function renderMilestoneLinks() {
+  if (!els.milestoneLinks || !state.data.milestone_layout) return;
+  const layout = state.data.milestone_layout;
+  const width = Number(layout.width) || 1280;
+  const height = Number(layout.height) || 2322;
+  els.milestoneLinks.replaceChildren();
+
+  (layout.cells || []).forEach((cell) => {
+    const link = document.createElement("a");
+    link.className = "milestone-cell-link";
+    link.href = cell.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.title = `${cell.name} (${cell.date})`;
+    link.setAttribute("aria-label", `${cell.name} (${cell.date})`);
+    link.style.left = `${(Number(cell.x) / width) * 100}%`;
+    link.style.top = `${(Number(cell.y) / height) * 100}%`;
+    link.style.width = `${(Number(cell.width) / width) * 100}%`;
+    link.style.height = `${(Number(cell.height) / height) * 100}%`;
+    els.milestoneLinks.appendChild(link);
+  });
+}
+
 function bindFilters() {
   els.filters.addEventListener("input", () => {
     state.filters.search = els.search.value;
@@ -568,6 +592,7 @@ async function init() {
   renderFilters();
   renderLanes();
   renderStatuses();
+  renderMilestoneLinks();
   applyFiltersToForm();
   bindFilters();
   renderRows();

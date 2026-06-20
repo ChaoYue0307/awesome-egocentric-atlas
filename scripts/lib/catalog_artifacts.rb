@@ -191,6 +191,7 @@ module CatalogArtifacts
       "summary" => summary(normalized),
       "lanes" => lane_payload(normalized),
       "milestones" => milestones,
+      "milestone_layout" => milestone_link_layout,
       "resources" => normalized
     }
   end
@@ -740,8 +741,7 @@ module CatalogArtifacts
     end.join("\n")
   end
 
-  def updated_milestones_svg(_content = nil)
-    items = milestones
+  def milestone_poster_layout(items = milestones)
     years = items.map { |item| item.fetch("date").to_s[/\d{4}/].to_i }.reject(&:zero?)
     year_span = years.empty? ? "field milestones" : "#{years.min}-#{years.max}"
     year_for = ->(item) { item.fetch("date").to_s[/\d{4}/].to_i }
@@ -820,17 +820,9 @@ module CatalogArtifacts
 
     height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 31
 
-    kind_colors = {
-      "dataset" => "#0b8f98",
-      "benchmark" => "#5b6b73",
-      "model" => "#ef9f24",
-      "toolkit" => "#7a6ff0",
-      "collection" => "#b8c2c9"
-    }
-
     current_y = header_height
     era_nodes = []
-    bands = row_layouts.each_with_index.map do |group, group_index|
+    rows = row_layouts.each_with_index.map do |group, group_index|
       y = current_y
       current_y += group.fetch(:row_height) + row_gap
       era_nodes << [margin_x + era_dot_x, y + 54]
@@ -839,11 +831,89 @@ module CatalogArtifacts
       start_x = card_area_x + ((card_area_width - cards_width) / 2.0)
       card_y = y + 78
 
-      cards = group.fetch(:items).each_with_index.map do |item, index|
+      cells = group.fetch(:items).each_with_index.map do |item, index|
         card_width = group.fetch(:card_width)
         image_height = group.fetch(:image_height)
         card_height = group.fetch(:card_height)
         x = start_x + (index * (card_width + card_gap))
+        {
+          item: item,
+          x: x,
+          y: card_y,
+          width: card_width,
+          height: card_height,
+          image_height: image_height
+        }
+      end
+
+      group.merge(index: group_index, y: y, cells: cells)
+    end
+
+    {
+      items: items,
+      year_span: year_span,
+      width: 1280,
+      height: height,
+      margin_x: margin_x,
+      row_width: row_width,
+      card_area_x: card_area_x,
+      era_dot_x: era_dot_x,
+      era_nodes: era_nodes,
+      rows: rows
+    }
+  end
+
+  def milestone_link_layout
+    layout = milestone_poster_layout
+    {
+      "width" => layout.fetch(:width),
+      "height" => layout.fetch(:height),
+      "cells" => layout.fetch(:rows).flat_map do |group|
+        group.fetch(:cells).map do |cell|
+          item = cell.fetch(:item)
+          {
+            "name" => item.fetch("name"),
+            "date" => item.fetch("date"),
+            "kind" => item.fetch("kind"),
+            "url" => item.fetch("url"),
+            "x" => cell.fetch(:x).round(2),
+            "y" => cell.fetch(:y).round(2),
+            "width" => cell.fetch(:width),
+            "height" => cell.fetch(:height)
+          }
+        end
+      end
+    }
+  end
+
+  def updated_milestones_svg(_content = nil)
+    layout = milestone_poster_layout
+    items = layout.fetch(:items)
+    year_span = layout.fetch(:year_span)
+    height = layout.fetch(:height)
+    margin_x = layout.fetch(:margin_x)
+    row_width = layout.fetch(:row_width)
+    card_area_x = layout.fetch(:card_area_x)
+    era_dot_x = layout.fetch(:era_dot_x)
+    era_nodes = layout.fetch(:era_nodes)
+
+    kind_colors = {
+      "dataset" => "#0b8f98",
+      "benchmark" => "#5b6b73",
+      "model" => "#ef9f24",
+      "toolkit" => "#7a6ff0",
+      "collection" => "#b8c2c9"
+    }
+
+    bands = layout.fetch(:rows).map do |group|
+      y = group.fetch(:y)
+      cards = group.fetch(:cells).map do |cell|
+        item = cell.fetch(:item)
+        card_width = cell.fetch(:width)
+        image_height = cell.fetch(:image_height)
+        card_height = cell.fetch(:height)
+        x = cell.fetch(:x)
+        card_y = cell.fetch(:y)
         image = item["image"].to_s.sub(%r{\Aassets/}, "")
         date = item.fetch("date")
         kind = item.fetch("kind")
@@ -879,7 +949,7 @@ module CatalogArtifacts
           <rect class="era-bg" width="#{row_width}" height="#{group.fetch(:row_height)}" rx="22"/>
           <circle class="era-dot" cx="#{era_dot_x}" cy="54" r="14" fill="#{group.fetch(:color)}"/>
           <path class="era-rail" d="M #{card_area_x - margin_x} 54 H #{row_width - 34}"/>
-          <text class="era-kicker" x="30" y="36">ERA #{group_index + 1}</text>
+          <text class="era-kicker" x="30" y="36">ERA #{group.fetch(:index) + 1}</text>
           <text class="era-range" x="30" y="76">#{html_escape(group.fetch(:range))}</text>
           <text class="era-label" x="30" y="111">#{html_escape(group.fetch(:label))}</text>
           #{svg_text_block(label_lines, x: 30, y: 142, class_name: "era-copy", line_height: 17)}
