@@ -50,7 +50,8 @@ task_families:
   video-language:
     label: Video-language and captioning
     aliases: [video-language, video-language-grounding, captioning,
-      narration-generation, retrieval, temporal-retrieval, reading, scene-text]
+      narration-generation, retrieval, temporal-retrieval, video-retrieval,
+      reading, scene-text]
 
   question-answering:
     label: Question answering
@@ -77,7 +78,7 @@ task_families:
       spatial-reasoning, multimodal-reasoning, chain-of-tool-thought, theory-of-mind,
       goal-reasoning, future-state-prediction, joint-predictive-agent, egocentric-video-reasoning,
       virtual-egocentric-reasoning, tactical-reasoning, survey-prediction, forecasting,
-      temporal-consistency]
+      temporal-consistency, symbolic-reasoning, situated-awareness]
 
   action-and-procedure:
     label: Action and procedure understanding
@@ -94,7 +95,7 @@ task_families:
       hand-detection, contact-understanding, open-vocabulary-hoi, interaction,
       interaction-field-estimation, interaction-prediction, bimanual-manipulation,
       two-hand-pose, two-hand-segmentation, hand-forecasting, active-object-detection,
-      active-object-segmentation, human-object-human-interaction, hoi, h2o]
+      active-object-segmentation, human-object-human-interaction, affordance, hoi, h2o]
 
   pose-and-body:
     label: Pose, body, and motion
@@ -131,7 +132,8 @@ task_families:
     label: Grounding and localization
     aliases: [temporal-grounding, visual-grounding, object-grounding, natural-language-query,
       nlq, egonlq, ego4d-nlq, moment-query, referring-expression-comprehension, referential,
-      localization, spatial-localization, cross-view-association, egocentric-grounding]
+      localization, spatial-localization, cross-view-association, egocentric-grounding,
+      language-grounding]
 
   robotics-and-vla:
     label: Robotics, manipulation, and VLA
@@ -169,7 +171,7 @@ task_families:
     label: Evaluation, benchmarks, and tooling
     aliases: [benchmark, evaluation, baseline-evaluation, vlm-evaluation, reward-modeling,
       tooling, visualization, rerun, hdf5-annotations, mocap, multi-view, cross-view,
-      domain-adaptation, domain-transfer, continual-learning, redetection, ego-exo]
+      domain-adaptation, domain-transfer, continual-learning, efficient-inference, redetection, ego-exo]
 
 # --- modality families ------------------------------------------------------
 modality_families:
@@ -179,11 +181,11 @@ modality_families:
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
       animal-egocentric-video, first-person-360-video, aria-images, synthetic-egocentric,
-      synthetic-composited-masks, synthetic-rendering, synthetic-stereo]
+      synthetic-composited-masks, synthetic-rendering, synthetic-stereo, novel-view-video]
 
   depth:
     label: Depth and RGB-D
-    aliases: [depth, rgbd, multiview-rgbd, stereo-depth, scene-depth]
+    aliases: [depth, rgbd, rgb-d, multiview-rgbd, stereo-depth, scene-depth]
 
   audio-language:
     label: Audio and language
@@ -193,23 +195,25 @@ modality_families:
   gaze-motion:
     label: Gaze, IMU, and motion
     aliases: [gaze, eye-tracking, imu, motion, body-motion, human-motion, head, head-pose,
-      physiological-signals, trajectory, wrist-trajectory]
+      physiological-signals, trajectory, trajectories, wrist-trajectory]
 
   pose-mocap:
     label: Pose and mocap
-    aliases: [2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
+    aliases: [pose, 2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
       human-pose, camera-pose, camera-poses, object-pose, full-body-mocap, hand-mocap,
-      mocap, 6dof]
+      mocap, skeleton, keypoint-visibility, hand-trajectories, 6dof]
 
   hand-object-geometry:
     label: Hand-object geometry and contact
     aliases: [hand, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
-      object-meshes, hand-meshes, mesh, articulated-objects, 3d-objects, object-motion]
+      object-meshes, hand-meshes, mesh, articulated-objects, 3d-objects, object-motion,
+      tactile, pressure]
 
   scene-3d:
     label: 3D scene and reconstruction
     aliases: [3d, point-cloud, point-clouds, scene-point-clouds, 3d-point-clouds,
-      scene-scans, digital-twins, calibration, 3d-target-labels, dslr-images]
+      scene-scans, scene-geometry, scene-graphs, digital-twins, physics,
+      calibration, 3d-target-labels, dslr-images]
 
   device-and-labels:
     label: Device formats and labels
@@ -217,4 +221,4 @@ modality_families:
       robot-camera-video, wrist-camera-video, action-labels, action-primitives,
       annotations, multimodal-annotations, segmentation, instance-labels, scene-labels,
       poi-labels, self-annotations, timeline, tooling, surveys, hdf5-annotations,
-      synthetic-rendering]
+      synthetic-rendering, temporal-graphs, web-tools, latent-actions]
