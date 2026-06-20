@@ -392,25 +392,189 @@ module CatalogArtifacts
     counts
   end
 
+  def era_kind_counts
+    counts = era_counts.transform_values { Hash.new(0) }
+    resources.reject { |entry| entry["scope"] == "adjacent" }.each do |entry|
+      era = era_for_year(resource_year(entry))
+      next unless era
+
+      counts[era][entry["kind"]] += 1
+    end
+    counts
+  end
+
+  def nice_timeline_axis_max(max_value)
+    return 100 if max_value <= 100
+
+    raw_step = max_value / 7.0
+    magnitude = 10**Math.log10(raw_step).floor
+    step = [1, 2, 2.5, 5, 10].map { |factor| factor * magnitude }.find { |candidate| candidate >= raw_step }
+    (((max_value.to_f / step).ceil) * step).to_i
+  end
+
+  def timeline_number(value)
+    rounded = value.round(1)
+    rounded == rounded.to_i ? rounded.to_i.to_s : rounded.to_s
+  end
+
   def updated_timeline_svg(content = File.read(File.join(ROOT, "assets", "awesome-egocentric-timeline.svg"), encoding: "UTF-8"))
     counts = era_counts
-    x_by_era = {
-      "<=2018" => "190",
-      "2019-2021" => "430",
-      "2022-2023" => "670",
-      "2024-2025" => "910",
-      "2026 (H1)" => "1150"
+    kind_counts = era_kind_counts
+    eras = [
+      ["<=2018", 190, "&#8804; 2018", "CMU-MMAC, GTEA"],
+      ["2019-2021", 430, "2019&#8211;2021", "EPIC-100, Ego4D"],
+      ["2022-2023", 670, "2022&#8211;2023", "Ego-Exo4D, HOI4D"],
+      ["2024-2025", 910, "2024&#8211;2025", "EgoVideo, EgoDex"],
+      ["2026 (H1)", 1150, "2026 (H1)", "first half only &#183; DreamDojo, EgoScale"]
+    ]
+    kind_order = %w[dataset benchmark model toolkit collection]
+    colors = {
+      "dataset" => "#0b8f98",
+      "benchmark" => "#5b6b73",
+      "model" => "#ef9f24",
+      "toolkit" => "#7a6ff0",
+      "collection" => "#b8c2c9"
     }
-    text = content.dup
-    x_by_era.each do |era, x|
-      replace_once!(
-        text,
-        /(<text class="count" x="#{x}" y="[^"]+" text-anchor="middle">)\d+(<\/text>)/,
-        "\\1#{counts.fetch(era)}\\2",
-        "timeline #{era} count"
-      )
+    plot_top = 200.0
+    plot_bottom = 480.0
+    plot_height = plot_bottom - plot_top
+    axis_max = nice_timeline_axis_max(counts.values.max || 0)
+    raw_step = axis_max / 7.0
+    magnitude = 10**Math.log10(raw_step).floor
+    tick_step = [1, 2, 2.5, 5, 10].map { |factor| factor * magnitude }.find { |candidate| candidate >= raw_step }.to_i
+    scale = plot_height / axis_max
+    y_for = ->(value) { plot_bottom - (value * scale) }
+    fmt = method(:timeline_number)
+
+    clip_paths = eras.each_with_index.map do |(era, x, _label, _anchor), idx|
+      total = counts.fetch(era)
+      height = total * scale
+      y = plot_bottom - height
+      %(<clipPath id="c#{idx + 1}"><rect x="#{x - 48}" y="#{fmt.call(y)}" width="96" height="#{fmt.call(height)}" rx="8"/></clipPath>)
     end
-    text
+
+    ticks = (0..axis_max).step(tick_step).to_a
+    grid = ticks.reject(&:zero?).map do |tick|
+      y = y_for.call(tick)
+      [
+        %(<line class="grid" x1="110" y1="#{fmt.call(y)}" x2="1210" y2="#{fmt.call(y)}"/>),
+        %(<text class="gridlabel" x="100" y="#{fmt.call(y + 4)}" text-anchor="end">#{tick}</text>)
+      ].join("\n  ")
+    end.join("\n  ")
+
+    bars = eras.each_with_index.map do |(era, x, _label, _anchor), idx|
+      cumulative = 0.0
+      segments = kind_order.map do |kind|
+        value = kind_counts.fetch(era).fetch(kind, 0)
+        next nil if value.zero?
+
+        height = value * scale
+        y = plot_bottom - cumulative - height
+        cumulative += height
+        %(<rect class="seg" x="#{x - 48}" y="#{fmt.call(y)}" width="96" height="#{fmt.call(height)}" fill="#{colors.fetch(kind)}"/>)
+      end.compact.join("\n    ")
+      %(  <g clip-path="url(#c#{idx + 1})" filter="url(#shadow)">\n    #{segments}\n  </g>)
+    end.join("\n")
+
+    points = eras.map { |(era, x, _label, _anchor)| [x, y_for.call(counts.fetch(era))] }
+    trend_points = points.map { |x, y| "#{x},#{fmt.call(y)}" }.join(" ")
+    last_x, last_y = points.last
+    projection = %(M#{last_x} #{fmt.call(last_y)} L1230 #{fmt.call(last_y - 17)})
+    note_y = [145, last_y - 25].max
+
+    circles = points.each_with_index.map do |(x, y), idx|
+      fill = idx == points.length - 1 ? "#ef9f24" : "#ffffff"
+      stroke = idx == points.length - 1 ? "#ffffff" : "#0f3b45"
+      radius = idx == points.length - 1 ? 6 : 5.5
+      %(<circle cx="#{x}" cy="#{fmt.call(y)}" r="#{radius}" fill="#{fill}" stroke="#{stroke}" stroke-width="2.4"/>)
+    end.join("\n    ")
+
+    count_labels = eras.map do |era, x, _label, _anchor|
+      y = y_for.call(counts.fetch(era)) - 12
+      %(<text class="count" x="#{x}" y="#{fmt.call(y)}" text-anchor="middle">#{counts.fetch(era)}</text>)
+    end.join("\n  ")
+
+    era_labels = eras.map do |_era, x, label, anchor|
+      [
+        %(<text class="era" x="#{x}" y="510" text-anchor="middle">#{label}</text>),
+        %(<text class="anchor" x="#{x}" y="531" text-anchor="middle">#{anchor}</text>)
+      ].join("\n  ")
+    end.join("\n  ")
+
+    <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+        <title id="title">Egocentric resources by era and type</title>
+        <desc id="desc">A stacked bar chart of catalogued egocentric AI resources grouped into five eras and split by resource type (dataset, benchmark, model, toolkit, collection). The y-axis is generated from the latest catalog counts so bar tops, totals, and trend line stay aligned after every scan.</desc>
+        <defs>
+          <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#fbfdff"/>
+            <stop offset="0.6" stop-color="#f4faf9"/>
+            <stop offset="1" stop-color="#eef7f6"/>
+          </linearGradient>
+          <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.4" fill="#cfe0e4" opacity="0.4"/>
+          </pattern>
+          <filter id="shadow" x="-14%" y="-14%" width="128%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0f2a33" flood-opacity="0.12"/>
+          </filter>
+          <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
+          </marker>
+          #{clip_paths.join("\n    ")}
+          <style>
+            .ink { fill: #14212b; }
+            .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
+            .title { font: 700 34px system-ui, -apple-system, "Segoe UI", sans-serif; }
+            .subtitle { font: 500 16px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; }
+            .count { font: 800 21px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; }
+            .era { font: 700 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #2b3a44; }
+            .anchor { font: 500 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
+            .grid { stroke: #e2ecef; stroke-width: 1.2; }
+            .gridlabel { font: 600 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #9aa7af; }
+            .axis { stroke: #c2d2d8; stroke-width: 2; }
+            .trend { stroke: #0f3b45; stroke-width: 2.6; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+            .proj { stroke: #ef9f24; stroke-width: 3; fill: none; stroke-dasharray: 3 7; stroke-linecap: round; }
+            .note { font: 700 12.5px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #c4801a; }
+            .seg { stroke: #ffffff; stroke-width: 1.4; }
+            .lg { font: 600 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #46525f; }
+          </style>
+        </defs>
+
+        <rect width="1280" height="560" fill="url(#bg)"/>
+        <rect width="1280" height="560" fill="url(#dots)"/>
+
+        <text class="kicker" x="90" y="50">GROWTH BY TYPE</text>
+        <text class="title ink" x="90" y="92">Egocentric resources by era</text>
+        <text class="subtitle" x="90" y="120">Each era's bar is split by type. 2026 (first half only) already exceeds the 2024&#8211;2025 peak.</text>
+
+        <g>
+          <rect x="90" y="145" width="14" height="14" rx="3" fill="#0b8f98"/><text class="lg" x="111" y="157">datasets</text>
+          <rect x="193" y="145" width="14" height="14" rx="3" fill="#5b6b73"/><text class="lg" x="214" y="157">benchmarks</text>
+          <rect x="316" y="145" width="14" height="14" rx="3" fill="#ef9f24"/><text class="lg" x="337" y="157">models</text>
+          <rect x="407" y="145" width="14" height="14" rx="3" fill="#7a6ff0"/><text class="lg" x="428" y="157">toolkits</text>
+          <rect x="502" y="145" width="14" height="14" rx="3" fill="#b8c2c9"/><text class="lg" x="523" y="157">collection</text>
+        </g>
+
+        <!-- gridlines generated from live catalog max=#{counts.values.max}, axis_max=#{axis_max}, tick_step=#{tick_step} -->
+        #{grid}
+        <text class="gridlabel" x="100" y="484" text-anchor="end">0</text>
+        <line class="axis" x1="110" y1="480" x2="1210" y2="480"/>
+
+        <!-- stacked bars generated from live era/kind counts -->
+      #{bars}
+
+        <polyline class="trend" points="#{trend_points}"/>
+        <path class="proj" d="#{projection}" marker-end="url(#up)"/>
+        <text class="note" x="1208" y="#{fmt.call(note_y)}" text-anchor="end">still H1</text>
+        <g>
+          #{circles}
+        </g>
+
+        #{count_labels}
+
+        #{era_labels}
+      </svg>
+    SVG
   end
 
   def updated_access_funnel_svg(content = File.read(File.join(ROOT, "assets", "awesome-egocentric-access-funnel.svg"), encoding: "UTF-8"))

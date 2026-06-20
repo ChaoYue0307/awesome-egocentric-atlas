@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by era and type</title>
-  <desc id="desc">A stacked bar chart of catalogued egocentric AI resources grouped into five eras and split by resource type (dataset, benchmark, model, toolkit, collection). Datasets dominated the early eras; benchmarks and models now make up a growing share, and 2026's first half (January to June) already exceeds the 2024 to 2025 peak. A trend line through the bar tops marks the totals.</desc>
+  <desc id="desc">A stacked bar chart of catalogued egocentric AI resources grouped into five eras and split by resource type (dataset, benchmark, model, toolkit, collection). The y-axis is generated from the latest catalog counts so bar tops, totals, and trend line stay aligned after every scan.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -16,11 +16,11 @@
     <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
     </marker>
-    <clipPath id="c1"><rect x="142" y="440" width="96" height="40" rx="8"/></clipPath>
-    <clipPath id="c2"><rect x="382" y="429" width="96" height="51" rx="8"/></clipPath>
-    <clipPath id="c3"><rect x="622" y="350" width="96" height="130" rx="8"/></clipPath>
-    <clipPath id="c4"><rect x="862" y="242" width="96" height="238" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="191" width="96" height="289" rx="8"/></clipPath>
+    <clipPath id="c1"><rect x="142" y="424" width="96" height="56" rx="8"/></clipPath>
+    <clipPath id="c2"><rect x="382" y="390" width="96" height="90" rx="8"/></clipPath>
+    <clipPath id="c3"><rect x="622" y="298" width="96" height="182" rx="8"/></clipPath>
+    <clipPath id="c4"><rect x="862" y="246" width="96" height="234" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="218" width="96" height="262" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -47,7 +47,6 @@
   <text class="title ink" x="90" y="92">Egocentric resources by era</text>
   <text class="subtitle" x="90" y="120">Each era's bar is split by type. 2026 (first half only) already exceeds the 2024&#8211;2025 peak.</text>
 
-  <!-- legend -->
   <g>
     <rect x="90" y="145" width="14" height="14" rx="3" fill="#0b8f98"/><text class="lg" x="111" y="157">datasets</text>
     <rect x="193" y="145" width="14" height="14" rx="3" fill="#5b6b73"/><text class="lg" x="214" y="157">benchmarks</text>
@@ -56,71 +55,73 @@
     <rect x="502" y="145" width="14" height="14" rx="3" fill="#b8c2c9"/><text class="lg" x="523" y="157">collection</text>
   </g>
 
-  <!-- gridlines (scale: y = 480 - count*2.7) -->
-  <line class="grid" x1="110" y1="426" x2="1210" y2="426"/>
-  <line class="grid" x1="110" y1="372" x2="1210" y2="372"/>
-  <line class="grid" x1="110" y1="318" x2="1210" y2="318"/>
-  <line class="grid" x1="110" y1="264" x2="1210" y2="264"/>
-  <line class="grid" x1="110" y1="210" x2="1210" y2="210"/>
+  <!-- gridlines generated from live catalog max=131, axis_max=140, tick_step=20 -->
+  <line class="grid" x1="110" y1="440" x2="1210" y2="440"/>
+  <text class="gridlabel" x="100" y="444" text-anchor="end">20</text>
+  <line class="grid" x1="110" y1="400" x2="1210" y2="400"/>
+  <text class="gridlabel" x="100" y="404" text-anchor="end">40</text>
+  <line class="grid" x1="110" y1="360" x2="1210" y2="360"/>
+  <text class="gridlabel" x="100" y="364" text-anchor="end">60</text>
+  <line class="grid" x1="110" y1="320" x2="1210" y2="320"/>
+  <text class="gridlabel" x="100" y="324" text-anchor="end">80</text>
+  <line class="grid" x1="110" y1="280" x2="1210" y2="280"/>
+  <text class="gridlabel" x="100" y="284" text-anchor="end">100</text>
+  <line class="grid" x1="110" y1="240" x2="1210" y2="240"/>
+  <text class="gridlabel" x="100" y="244" text-anchor="end">120</text>
+  <line class="grid" x1="110" y1="200" x2="1210" y2="200"/>
+  <text class="gridlabel" x="100" y="204" text-anchor="end">140</text>
   <text class="gridlabel" x="100" y="484" text-anchor="end">0</text>
-  <text class="gridlabel" x="100" y="430" text-anchor="end">20</text>
-  <text class="gridlabel" x="100" y="376" text-anchor="end">40</text>
-  <text class="gridlabel" x="100" y="322" text-anchor="end">60</text>
-  <text class="gridlabel" x="100" y="268" text-anchor="end">80</text>
-  <text class="gridlabel" x="100" y="214" text-anchor="end">100</text>
   <line class="axis" x1="110" y1="480" x2="1210" y2="480"/>
 
-  <!-- stacked bars (bottom-up: dataset, benchmark, model, toolkit, collection) -->
+  <!-- stacked bars generated from live era/kind counts -->
   <g clip-path="url(#c1)" filter="url(#shadow)">
-    <rect class="seg" x="142" y="442" width="96" height="38" fill="#0b8f98"/>
-    <rect class="seg" x="142" y="440" width="96" height="3" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="438" width="96" height="42" fill="#0b8f98"/>
+    <rect class="seg" x="142" y="436" width="96" height="2" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="424" width="96" height="12" fill="#ef9f24"/>
   </g>
   <g clip-path="url(#c2)" filter="url(#shadow)">
-    <rect class="seg" x="382" y="445" width="96" height="35" fill="#0b8f98"/>
-    <rect class="seg" x="382" y="437" width="96" height="8" fill="#5b6b73"/>
-    <rect class="seg" x="382" y="434" width="96" height="3" fill="#ef9f24"/>
-    <rect class="seg" x="382" y="429" width="96" height="5" fill="#7a6ff0"/>
+    <rect class="seg" x="382" y="452" width="96" height="28" fill="#0b8f98"/>
+    <rect class="seg" x="382" y="444" width="96" height="8" fill="#5b6b73"/>
+    <rect class="seg" x="382" y="396" width="96" height="48" fill="#ef9f24"/>
+    <rect class="seg" x="382" y="390" width="96" height="6" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c3)" filter="url(#shadow)">
-    <rect class="seg" x="622" y="429" width="96" height="51" fill="#0b8f98"/>
-    <rect class="seg" x="622" y="399" width="96" height="30" fill="#5b6b73"/>
-    <rect class="seg" x="622" y="367" width="96" height="32" fill="#ef9f24"/>
-    <rect class="seg" x="622" y="353" width="96" height="14" fill="#7a6ff0"/>
-    <rect class="seg" x="622" y="350" width="96" height="3" fill="#b8c2c9"/>
+    <rect class="seg" x="622" y="432" width="96" height="48" fill="#0b8f98"/>
+    <rect class="seg" x="622" y="404" width="96" height="28" fill="#5b6b73"/>
+    <rect class="seg" x="622" y="312" width="96" height="92" fill="#ef9f24"/>
+    <rect class="seg" x="622" y="300" width="96" height="12" fill="#7a6ff0"/>
+    <rect class="seg" x="622" y="298" width="96" height="2" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
-    <rect class="seg" x="862" y="391" width="96" height="89" fill="#0b8f98"/>
-    <rect class="seg" x="862" y="342" width="96" height="49" fill="#5b6b73"/>
-    <rect class="seg" x="862" y="250" width="96" height="92" fill="#ef9f24"/>
-    <rect class="seg" x="862" y="242" width="96" height="8" fill="#7a6ff0"/>
+    <rect class="seg" x="862" y="404" width="96" height="76" fill="#0b8f98"/>
+    <rect class="seg" x="862" y="368" width="96" height="36" fill="#5b6b73"/>
+    <rect class="seg" x="862" y="258" width="96" height="110" fill="#ef9f24"/>
+    <rect class="seg" x="862" y="246" width="96" height="12" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c5)" filter="url(#shadow)">
-    <rect class="seg" x="1102" y="413" width="96" height="67" fill="#0b8f98"/>
-    <rect class="seg" x="1102" y="315" width="96" height="98" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="199" width="96" height="116" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="191" width="96" height="8" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="428" width="96" height="52" fill="#0b8f98"/>
+    <rect class="seg" x="1102" y="346" width="96" height="82" fill="#5b6b73"/>
+    <rect class="seg" x="1102" y="230" width="96" height="116" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="218" width="96" height="12" fill="#7a6ff0"/>
   </g>
 
-  <!-- trend line through bar tops (totals) + dashed continuation -->
-  <polyline class="trend" points="190,440 430,429 670,350 910,242 1150,191"/>
-  <path class="proj" d="M1150 191 L1230 174" marker-end="url(#up)"/>
-  <text class="note" x="1208" y="162" text-anchor="end">still H1</text>
+  <polyline class="trend" points="190,424 430,390 670,298 910,246 1150,218"/>
+  <path class="proj" d="M1150 218 L1230 201" marker-end="url(#up)"/>
+  <text class="note" x="1208" y="193" text-anchor="end">still H1</text>
   <g>
-    <circle cx="190" cy="440" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="430" cy="429" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="670" cy="350" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="910" cy="242" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="191" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="190" cy="424" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="430" cy="390" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="670" cy="298" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="910" cy="246" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="1150" cy="218" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
-  <!-- totals -->
-  <text class="count" x="190" y="428" text-anchor="middle">28</text>
-  <text class="count" x="430" y="417" text-anchor="middle">45</text>
-  <text class="count" x="670" y="338" text-anchor="middle">91</text>
-  <text class="count" x="910" y="230" text-anchor="middle">117</text>
-  <text class="count" x="1150" y="179" text-anchor="middle">131</text>
+  <text class="count" x="190" y="412" text-anchor="middle">28</text>
+  <text class="count" x="430" y="378" text-anchor="middle">45</text>
+  <text class="count" x="670" y="286" text-anchor="middle">91</text>
+  <text class="count" x="910" y="234" text-anchor="middle">117</text>
+  <text class="count" x="1150" y="206" text-anchor="middle">131</text>
 
-  <!-- era + anchor labels -->
   <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>
   <text class="anchor" x="190" y="531" text-anchor="middle">CMU-MMAC, GTEA</text>
   <text class="era" x="430" y="510" text-anchor="middle">2019&#8211;2021</text>
