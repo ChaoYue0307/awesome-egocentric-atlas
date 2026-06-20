@@ -33,7 +33,7 @@
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
   <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-330-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-373-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -85,7 +85,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 | Signal | What it means for readers |
 | :--- | :--- |
-| 330 egocentric resources | 110 datasets, 74 benchmarks, 126 models, and 19 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
+| 373 egocentric resources | 115 datasets, 77 benchmarks, 160 models, and 20 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
@@ -288,6 +288,7 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 | [HOT3D](https://facebookresearch.github.io/hot3d/) | 2024-06 | CVPR 2025 | 833+ minutes, 3.7M+ images, Aria and Quest 3, gaze, point clouds, 3D hand/object/camera poses | 3D hand-object tracking for AR/VR manipulation | open |
 | [UnrealEgo2 / UnrealEgo-RW](https://arxiv.org/abs/2401.00889) | 2024-01 | arXiv | Expanded stereo egocentric pose datasets from synthetic and real-world capture | Stereo egocentric human pose estimation | watch |
 | [EgoEVHands](https://github.com/ZJUWang01/EgoEV-HandPose) | 2024 | GitHub | Stereo event-camera egocentric hand dataset with 5,419 sequences and 3D/2D keypoints | Event-based bimanual hand pose and gesture recognition | watch |
+| [POV-Surgery](https://batfacewayne.github.io/POV_Surgery_io/) | 2023-07 | MICCAI 2023 | Egocentric surgical video for hand and tool pose estimation during operating-room activities | Surgical hand-tool pose and interaction understanding | open |
 | [EgoHumans](https://arxiv.org/abs/2305.16487) | 2023-05 | ICCV 2023 | 125K+ egocentric images for in-the-wild multi-human tracking, 2D/3D pose, and mesh recovery | Egocentric multi-human perception and tracking | partial |
 | [EgoTracks](https://arxiv.org/abs/2301.03213) | 2023-01 | NeurIPS 2023 | Long-term egocentric visual object tracking annotations from Ego4D | Tracking, re-detection, embodied object persistence | open |
 | [EgoGTA / EgoPW-Scene](https://arxiv.org/abs/2212.11684) | 2022-12 | arXiv | Synthetic EgoGTA plus EgoPW-based in-the-wild scene-aware pose data | Scene-aware egocentric 3D human pose estimation | partial |
@@ -381,6 +382,9 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 | [EgoExo-Fitness](https://github.com/iSEE-Laboratory/EgoExo-Fitness) | 2024-06 | ECCV 2024 | Synchronized ego and exo fitness videos with keypoint verification, execution comments, and quality scores (ECCV 2024) | Ego-exo full-body action quality and skill assessment | open |
 | [EgoExoLearn](https://github.com/OpenGVLab/EgoExoLearn) | 2024-03 | CVPR 2024 | 120 hours of egocentric plus demonstration videos with gaze and annotations | Bridging asynchronous ego and exo procedural activity | open |
 | [EgoSurgery](https://github.com/Fujiry0/EgoSurgery) | 2024 | MICCAI 2024 | EgoSurgery-Phase (surgical phase recognition) and EgoSurgery-HTS (pixel-wise hand-tool segmentation of 14 tools) from egocentric open-surgery video (MICCAI 2024) | Surgical phase, hand, and tool understanding | open |
+| [CaptainCook4D](https://arxiv.org/abs/2312.14556) | 2023-12 | NeurIPS 2024 D&B | Procedural-activity dataset for understanding execution errors, later reused in multimodal temporal-action-segmentation work | Procedural errors and mistake-aware activity understanding | watch |
+| [IndustReal](https://arxiv.org/abs/2310.17323) | 2023-10 | WACV 2024 | Industrial-like egocentric procedure-step recognition dataset with execution errors | Industrial procedure recognition and error handling | watch |
+| [EGOFALLS](https://arxiv.org/abs/2309.04579) | 2023-09 | arXiv | Visual-audio egocentric dataset and benchmark for fall detection | Wearable fall detection and safety monitoring | watch |
 | [WEAR](https://mariusbock.github.io/wear/) | 2023-04 | IMWUT 2024 | 22 participants, 18 outdoor workouts, synchronized egocentric video and 3D acceleration across 11 locations (IMWUT 2024) | Vision-plus-inertial outdoor activity recognition | open |
 | [Visual Experience Dataset / VEDB](http://tamaraberg.com/visualexperience/) | 2023 | project page | 240+ hours egocentric video with gaze/head tracking in classic literature | Lifelogging, attention modeling, visual experience statistics | partial |
 | [EgoProceL](https://sid2697.github.io/egoprocel/) | 2022-07 | ECCV 2022 | 62 hours, 130 subjects, 16 procedural tasks | Key-step localization and procedure learning from ego videos | open |
@@ -420,6 +424,7 @@ AR-glasses and headset data with gaze, SLAM, and digital-twin annotations for sc
 | [HEADS-UP](https://arxiv.org/abs/2409.20324) | 2024-09 | arXiv | Head-mounted egocentric dataset for pedestrian trajectory prediction and collision-risk assessment in blind-assistance systems | Trajectory prediction for blind assistance | watch |
 | [Nymeria](https://www.projectaria.com/datasets/nymeria/) | 2024-06 | ECCV 2024 | 300 hours, 264 participants, 50 locations, Aria, motion, language, observer view | Egocentric motion, language grounding, body tracking, daily activity | open |
 | [Aria Everyday Activities / AEA](https://www.projectaria.com/datasets/aea/) | 2024-02 | arXiv | 143 daily activity sequences across five indoor locations with trajectories, point clouds, gaze, speech | Everyday AR perception, scene reconstruction, prompted segmentation | open |
+| [SANPO](https://arxiv.org/abs/2309.12172) | 2023-09 | WACV 2025 | Scene understanding, accessibility, and human navigation data for egocentric navigation and spatial assistance | Navigation and assistive scene understanding | watch |
 | [Aria Digital Twin / ADT](https://www.projectaria.com/datasets/adt/) | 2023-06 | arXiv | 200 real-world activity sequences, raw Aria streams, 6DoF poses, object poses, depth, segmentation, synthetic renderings | Egocentric 3D machine perception and digital-twin evaluation | open |
 | [Project Aria Datasets](https://www.projectaria.com/datasets/) | 2022 | project page | Official portal for Aria-based datasets and tooling | AR glasses, wearable sensing, scene reconstruction, gaze, SLAM | open |
 
@@ -461,8 +466,11 @@ Evaluation suites and label sets built on top of the raw datasets above.
 | [HD-EPIC VQA Challenge](https://arxiv.org/abs/2502.04144) | 2025-02 | arXiv | HD-EPIC | Recipe, ingredient, nutrition, fine-grained action, 3D perception, object motion, gaze | benchmark |
 | [EgoCross](https://github.com/MyUniverse0726/EgoCross) | 2025 | GitHub | Cross-domain ego clips | Surgery, industry, extreme sports, animal-perspective QA | watch |
 | [EgoHOIBench / EgoNCE++](https://github.com/xuboshen/EgoNCEpp) | 2024-05 | ICLR 2025 | Multiple egocentric HOI sources | Open-vocabulary hand-object interaction understanding | open |
+| [EgoPlan-Bench](https://github.com/ChenYi99/EgoPlan) | 2023-12 | arXiv | Egocentric planning tasks | Multimodal LLM planning over human-level egocentric scenarios | open |
+| [Egocentric Pedestrian Trajectory Benchmark](https://arxiv.org/abs/2310.10424) | 2023-10 | arXiv | Egocentric pedestrian video | Trajectory prediction with scale- and motion-aware evaluation | watch |
 | [RefEgo](https://github.com/shuheikurita/RefEgo) | 2023-08 | ICCV 2023 | Ego4D | 12K+ clips / 41 hours for first-person referring-expression comprehension and referred-object tracking | open |
 | [EgoSchema](http://egoschema.github.io/) | 2023-08 | NeurIPS 2023 | Ego4D | Very-long-form multiple-choice video QA | open |
+| [Fine-Grained Affordance Annotation](https://arxiv.org/abs/2302.03292) | 2023-02 | WACV 2023 | Egocentric HOI videos | Fine-grained affordance labels for hand-object interaction | watch |
 | [Ego-Exo4D Benchmarks](https://ego-exo4d-data.org/) | 2023 | project page | Ego-Exo4D | Fine-grained activity, proficiency, cross-view translation, 3D pose, object correspondence | benchmark |
 | [EPIC-Sounds](https://epic-kitchens.github.io/epic-sounds/) | 2023 | ICASSP 2023 | EPIC-KITCHENS | Audio event recognition in egocentric kitchen video | open |
 | [EPIC-Fields](https://epic-kitchens.github.io/epic-fields/) | 2023 | NeurIPS 2023 | EPIC-KITCHENS | 3D fields and scene-level spatial reasoning over kitchen video | open |
@@ -489,6 +497,8 @@ Open models, baselines, and loaders you can build on directly.
 | Vinci | 2024-12 | IMWUT 2025 | Real-time, always-on egocentric assistant with historical-context QA, planning, and visual demos | [GitHub](https://github.com/OpenGVLab/vinci) |
 | EgoVideo | 2024-06 | CVPR 2024 | Egocentric video foundation model with slow-fast adaptation; multi-track Ego4D / EPIC challenge winner | [GitHub](https://github.com/OpenGVLab/EgoVideo) |
 | AlanaVLM | 2024-06 | arXiv | Embodied-AI foundation model for egocentric video understanding | [Paper](https://arxiv.org/abs/2406.13807) |
+| EgoDistill | 2023-01 | tech report | Distills heavy egocentric clip features into efficient models using head-motion signals | [Project](https://vision.cs.utexas.edu/projects/egodistill/) |
+| EgoT2 / Egocentric Video Task Translation | 2022-12 | CVPR 2023 Highlight | Task-translation framework that transfers supervision between egocentric video tasks | [Project](https://vision.cs.utexas.edu/projects/egot2/) |
 
 ### Video-Language and Long-Video Models
 
@@ -533,8 +543,17 @@ Open models, baselines, and loaders you can build on directly.
 | SoundingActions | 2024-04 | CVPR 2024 | Self-supervised audio-language-vision embedding that learns how actions sound from narrated egocentric videos | [Project](https://vision.cs.utexas.edu/projects/soundingactions) |
 | EgoInstructor | 2024-01 | CVPR 2024 | Retrieval-augmented egocentric captioning via cross-view retrieval of third-person clips (CVPR 2024) | [Project](https://jazzcharles.github.io/Egoinstructor/) |
 | GroundVQA | 2023-12 | CVPR 2024 | Unified temporal grounding and open/closed QA for long egocentric videos | [GitHub](https://github.com/Becomebright/GroundVQA) |
+| LifelongMemory | 2023-12 | arXiv | LLM-based long-form egocentric memory system for answering queries over a camera wearer's past | [Paper](https://arxiv.org/abs/2312.05269) |
+| LEGO | 2023-12 | arXiv | Visual-instruction-tuned egocentric action-frame generation | [Paper](https://arxiv.org/abs/2312.03849) |
+| Action Scene Graphs | 2023-12 | arXiv | Temporally evolving action scene graphs for long-form egocentric video understanding | [Paper](https://arxiv.org/abs/2312.03391) |
+| LEAP | 2023-11 | arXiv | LLM generation of egocentric action programs with sub-actions, preconditions, postconditions, and object references | [Paper](https://arxiv.org/abs/2312.00055) |
+| PALM | 2023-11 | arXiv | Predicts future actions through language models for long-term action anticipation | [Paper](https://arxiv.org/abs/2311.17944) |
+| Exo2EgoDVC | 2023-11 | WACV 2025 | Dense video captioning for egocentric procedural activities using web instructional videos | [Project](https://tkhkaeio.github.io/projects/25-egodvc/) |
+| Encode-Store-Retrieve | 2023-08 | arXiv | Language-encoded egocentric memory pipeline for storing and retrieving human-perception events | [Paper](https://arxiv.org/abs/2308.05822) |
 | EgoVLPv2 | 2023-07 | ICCV 2023 | Egocentric video-language pretraining with fusion in the backbone | [Project](https://shramanpramanick.github.io/EgoVLPv2/) |
 | GroundNLQ | 2023-06 | CVPR 2023 | Two-stage multi-scale grounding for Ego4D Natural Language Queries; CVPR 2023 NLQ champion | [GitHub](https://github.com/houzhijian/GroundNLQ) |
+| MINOTAUR | 2023-02 | arXiv | Unified video grounding model for multimodal queries over Ego4D-style grounding tasks | [Paper](https://arxiv.org/abs/2302.08063) |
+| NaQ | 2023-01 | CVPR 2023 | Uses narrations as implicit queries to supervise episodic-memory retrieval in long egocentric video | [Paper](https://arxiv.org/abs/2301.00746) |
 | LaViLa | 2022-12 | CVPR 2023 | Learns video-language representations from Ego4D narrations and LLM-generated narrations | [Paper](https://arxiv.org/abs/2212.04501) |
 | EgoVLP / EgoNCE | 2022-06 | NeurIPS 2022 | EgoClip, EgoNCE objective, EgoMCQ, and transfer to Ego4D/EPIC/Charades-Ego tasks | [GitHub](https://github.com/showlab/EgoVLP) |
 | EgoEnv | 2022 | project page | Environment-aware representation learning from egocentric video | [Project](https://vision.cs.utexas.edu/projects/ego-env/) |
@@ -601,11 +620,34 @@ Open models, baselines, and loaders you can build on directly.
 | EffHandEgoNet | 2024-04 | FG 2024 | Egocentric 2D hand pose and action-recognition method for smart-glasses RGB input on H2O and FPHA | [Paper](https://arxiv.org/abs/2404.09308) |
 | EgoLifter | 2024-03 | ECCV 2024 | Open-world 3D segmentation decomposing natural egocentric video into individual 3D objects via 3D Gaussians and SAM | [GitHub](https://github.com/facebookresearch/egolifter) |
 | EgoPoseFormer | 2024 | GitHub | Transformer baseline for stereo egocentric 3D human pose estimation | [GitHub](https://github.com/ChenhongyiYang/egoposeformer) |
+| Get a Grip | 2023-12 | arXiv | Reconstructs stable hand-object grasps from egocentric video | [Project](https://zhifanzhu.github.io/getagrip) |
+| Aria-NeRF | 2023-11 | arXiv | Multimodal egocentric view synthesis for Project Aria-style capture | [Paper](https://arxiv.org/abs/2311.06455) |
+| Egocentric Whole-Body MoCap | 2023-11 | arXiv | FisheyeViT plus diffusion refinement for egocentric whole-body motion capture | [Paper](https://arxiv.org/abs/2311.16495) |
+| Symbolic Active Object Localization | 2023-10 | EMNLP 2023 | Uses symbolic world knowledge to localize active objects from egocentric vision and task instructions | [Paper](https://arxiv.org/abs/2310.15066) |
+| EgoPCA | 2023-09 | ICCV 2023 | Framework for egocentric hand-object interaction understanding using hand/object-centric cues | [Paper](https://arxiv.org/abs/2309.02423) |
+| Ego3DPose | 2023-09 | SIGGRAPH Asia 2023 | Captures 3D body cues from binocular egocentric views for pose estimation | [Paper](https://arxiv.org/abs/2309.11962) |
+| Open-Vocabulary Egocentric Actions | 2023-08 | NeurIPS 2023 | Open-vocabulary egocentric action recognition for verb-noun action labels | [Project](https://dibschat.github.io/openvocab-egoAR/) |
+| Helping Hands | 2023-08 | ICCV 2023 | Object-aware egocentric video-recognition model using hand-object cues | [Paper](https://arxiv.org/abs/2308.07918) |
+| EgoPoser | 2023-08 | ECCV 2024 | Real-time egocentric pose estimation from sparse and intermittent HMD/controller observations | [Project](https://siplab.org/projects/EgoPoser) |
 | EgoHandTrajPred / USST | 2023-07 | ICCV 2023 | Egocentric 3D hand trajectory forecasting over H2O and EgoPAT3D-style settings | [Project](https://actionlab-cv.github.io/EgoHandTrajPred) |
+| AntGPT | 2023-07 | ICLR 2024 | Uses large language models to improve long-term action anticipation from video context | [Paper](https://arxiv.org/abs/2307.16368) |
+| AV-EgoGaze Anticipation | 2023-05 | arXiv | Audio-visual model for forecasting future gaze in egocentric video | [Paper](https://arxiv.org/abs/2305.03907) |
 | StillFast | 2023-04 | arXiv | End-to-end short-term object interaction anticipation for Ego4D | [Project](https://iplab.dmi.unict.it/stillfast/) |
+| EgoViT | 2023-03 | arXiv | Pyramid video transformer with dynamic class-token generation for egocentric action recognition | [Paper](https://arxiv.org/abs/2303.08920) |
+| Next Active Object Anticipation | 2023-02 | IEEE Access 2024 | Anticipates next-active-object locations before contact in egocentric video | [Paper](https://arxiv.org/abs/2302.06358) |
+| TransFusion | 2023-01 | IEEE TCSVT 2024 | Summarizes past egocentric context in language to improve multimodal object-interaction anticipation | [Paper](https://arxiv.org/abs/2301.09209) |
+| Ego-Only | 2023-01 | arXiv | Egocentric action detection without exocentric pretraining transfer | [Paper](https://arxiv.org/abs/2301.01380) |
 | EgoSTARK | 2023-01 | arXiv | Adapted long-term tracker baseline for EgoTracks | [Paper](https://arxiv.org/abs/2301.03213) |
 | AV-CONV | 2023 | project page | Audio-visual conversational graph prediction from ego/exo conversation | [Project](https://vjwq.github.io/AV-CONV/) |
+| EgoLoc | 2022-12 | ICCV 2023 | Stronger Ego4D visual-query 3D object localization with camera-pose and localization baselines | [Paper](https://arxiv.org/abs/2212.06969) |
 | CONE | 2022-11 | ECCV 2022 Workshop | Coarse-to-fine alignment framework for Ego4D Natural Language Queries | [Paper](https://arxiv.org/abs/2211.08776) |
+| InternVideo-Ego4D | 2022-11 | Ego4D Workshop 2022 | Pack of champion Ego4D challenge solutions spanning episodic memory, forecasting, hand-object, and audio/social tracks | [Paper](https://arxiv.org/abs/2211.09529) |
+| UmeTrack | 2022-10 | SIGGRAPH Asia 2022 | Unified multi-view end-to-end 3D hand tracking for VR headsets and hand-interaction systems | [Paper](https://arxiv.org/abs/2211.00099) |
+| I-CVAE LTA | 2022-07 | WACV 2023 | Intention-conditioned variational model for long-term human egocentric action forecasting | [Project](https://evm7.github.io/icvae-page/) |
+| SOS Handled Objects | 2022-04 | ECCV 2022 | Self-supervised learning over handled-object sets for egocentric action recognition | [Paper](https://arxiv.org/abs/2204.04796) |
+| HOI Forecast / Interaction Hotspots | 2022-04 | CVPR 2022 | Forecasts future hand trajectories and interaction hotspots on next-active objects | [Project](https://stevenlsw.github.io/hoi-forecast) |
+| EgoGAN | 2022-03 | arXiv | Generative future hand-mask forecasting from egocentric video | [Paper](https://arxiv.org/abs/2203.11305) |
+| Untrimmed Action Anticipation | 2022-02 | arXiv | Reframes egocentric anticipation for untrimmed first-person streams | [Paper](https://arxiv.org/abs/2202.04132) |
 | EgoHOS model | 2022 | GitHub | Context-aware hand-object segmentation and augmentation pipeline | [GitHub](https://github.com/owenzlz/EgoHOS) |
 | Ego-Exo representation transfer | 2021-04 | CVPR 2021 | Distillation from third-person video using ego-specific latent signals | [Paper](https://arxiv.org/abs/2104.07905) |
 | EPIC-KITCHENS action models | 2019 | GitHub | Public baseline models for EPIC-KITCHENS action recognition | [GitHub](https://github.com/epic-kitchens/action-models) |
@@ -622,6 +664,7 @@ Open models, baselines, and loaders you can build on directly.
 | [AiGet](https://arxiv.org/abs/2501.16240) | 2025-01 | CHI 2025 | Smart-glasses assistant for gaze/context/profile-driven informal learning during everyday moments. |
 | [HUX](https://arxiv.org/abs/2407.19492) | 2024-07 | arXiv | Always-on smart-glasses / XR companion concept with gaze, environment context, verbal context, and memory storage. |
 | [HOT3D tooling](https://facebookresearch.github.io/hot3d/) | 2024 | project page | Loading HOT3D hand/object/camera pose annotations and models. |
+| [EgoBlur](https://arxiv.org/abs/2308.13093) | 2023-08 | arXiv | Privacy-preserving blur pipeline and responsible-innovation analysis for Project Aria egocentric capture. |
 | [Ego-Exo4D CLI and docs](https://ego-exo4d-data.org/) | 2023 | project page | Downloading synchronized ego-exo data and annotations. |
 | [EgoObjects API](https://github.com/facebookresearch/EgoObjects) | 2023 | GitHub | Working with category and instance-level egocentric object labels. |
 | [Project Aria Tools](https://github.com/facebookresearch/projectaria_tools) | 2022 | GitHub | Reading Aria VRS, calibration, MPS, trajectory, gaze, and dataset artifacts. |

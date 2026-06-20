@@ -94,7 +94,7 @@ task_families:
     aliases: [hand-object, hand, hand-object-pose, hand-object-segmentation, hand-segmentation,
       hand-detection, contact-understanding, open-vocabulary-hoi, interaction,
       interaction-field-estimation, interaction-prediction, bimanual-manipulation,
-      two-hand-pose, two-hand-segmentation, hand-forecasting, active-object-detection,
+      two-hand-pose, two-hand-segmentation, hand-forecasting, grasping, active-object-detection,
       active-object-segmentation, human-object-human-interaction, affordance, hoi, h2o]
 
   pose-and-body:
