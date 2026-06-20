@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 403,
-    "egocentric_resources": 399,
+    "total_resources": 416,
+    "egocentric_resources": 412,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 78,
       "collection": 1,
-      "dataset": 116,
-      "model": 183,
+      "dataset": 123,
+      "model": 189,
       "toolkit": 21
     },
     "status_counts": {
       "benchmark": 7,
-      "open": 133,
+      "open": 136,
       "partial": 12,
       "request": 4,
-      "watch": 243
+      "watch": 253
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 98
+      "count": 99
     },
     {
       "id": "procedure-action",
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 110
+      "count": 117
     },
     {
       "id": "hands-3d",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 178
+      "count": 185
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 120
+      "count": 122
     },
     {
       "id": "robotics-vla",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 117
+      "count": 121
     }
   ],
   "milestones": [
@@ -2203,6 +2203,7 @@
       "kind": "dataset",
       "released": "2018",
       "venue": "project page",
+      "year": 2011,
       "status": "open",
       "scope": "egocentric",
       "url": "https://cbs.ic.gatech.edu/fpv/",
@@ -2361,6 +2362,7 @@
       "kind": "dataset",
       "released": "2014",
       "venue": "project page",
+      "year": 2014,
       "status": "open",
       "scope": "egocentric",
       "url": "https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/",
@@ -3231,6 +3233,7 @@
       "kind": "dataset",
       "released": "2012",
       "venue": "project page",
+      "year": 2012,
       "status": "partial",
       "scope": "egocentric",
       "url": "https://www.csc.kth.se/cvap/actions/",
@@ -3284,6 +3287,7 @@
       "kind": "dataset",
       "released": "2012",
       "venue": "project page",
+      "year": 2012,
       "status": "partial",
       "scope": "egocentric",
       "url": "http://vision.cs.utexas.edu/projects/egocentric/",
@@ -3301,6 +3305,7 @@
       "kind": "dataset",
       "released": "2014",
       "venue": "project page",
+      "year": 2014,
       "status": "partial",
       "scope": "egocentric",
       "url": "https://www.vision.huji.ac.il/egoseg/",
@@ -3318,6 +3323,7 @@
       "kind": "dataset",
       "released": "2013",
       "venue": "IEEE",
+      "year": 2013,
       "status": "partial",
       "scope": "egocentric",
       "url": "https://ieeexplore.ieee.org/document/6909626",
@@ -3429,6 +3435,7 @@
       "kind": "benchmark",
       "released": "2018",
       "venue": "project page",
+      "year": 2018,
       "status": "benchmark",
       "scope": "egocentric",
       "url": "https://epic-kitchens.github.io/",
@@ -10291,6 +10298,342 @@
       "modalities": [
         "egocentric-video",
         "event-stream"
+      ]
+    },
+    {
+      "name": "EPIC-KITCHENS",
+      "kind": "dataset",
+      "released": "2018-04",
+      "venue": "ECCV 2018",
+      "year": 2018,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://epic-kitchens.github.io/",
+      "paper": "https://arxiv.org/abs/1804.02748",
+      "scale": "Original EPIC-KITCHENS release: 55 hours / 11.5M frames of unscripted egocentric kitchen video from 32 kitchens, with 39.6K narrated action segments and 454K object bounding boxes",
+      "tasks": [
+        "action-recognition",
+        "action-detection",
+        "anticipation",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "narrations",
+        "object-boxes"
+      ],
+      "license": "research terms",
+      "license_url": "https://epic-kitchens.github.io/"
+    },
+    {
+      "name": "From Third Person to First Person",
+      "kind": "dataset",
+      "released": "2018-12",
+      "venue": "CVPR 2019",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1812.00104",
+      "paper": "https://arxiv.org/abs/1812.00104",
+      "scale": "Dataset and baselines for exocentric-to-egocentric video synthesis and retrieval, bridging third-person social-media video with first-person views",
+      "tasks": [
+        "video-generation",
+        "cross-view",
+        "retrieval",
+        "ego-exo"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "evaluation-and-tooling",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "third-person-video"
+      ]
+    },
+    {
+      "name": "EgoYouTubeHands / HandOverFace",
+      "kind": "dataset",
+      "released": "2018-03",
+      "venue": "CVPR 2018",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1803.03317",
+      "paper": "https://arxiv.org/abs/1803.03317",
+      "scale": "Egocentric in-the-wild hand-segmentation study built around EgoYouTubeHands, HandOverFace, EGTEA, and EgoHands-style supervision",
+      "tasks": [
+        "hand-segmentation",
+        "hand-detection",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-masks"
+      ]
+    },
+    {
+      "name": "Task-Dependent Gaze Transition",
+      "kind": "model",
+      "released": "2018-03",
+      "venue": "ECCV 2018",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1803.09125",
+      "paper": "https://arxiv.org/abs/1803.09125",
+      "scale": "Egocentric gaze-prediction model that learns task-dependent attention transitions for first-person activity video",
+      "tasks": [
+        "gaze-prediction",
+        "attention-modeling",
+        "action-recognition"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze"
+      ]
+    },
+    {
+      "name": "Visual Context Event Segmentation",
+      "kind": "model",
+      "released": "2018-08",
+      "venue": "ACM MM 2018",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1808.02289",
+      "paper": "https://arxiv.org/abs/1808.02289",
+      "scale": "Unsupervised segmentation of egocentric photostreams into contextual events, reporting a 1.5M-image lifelogging dataset and EDUB-Seg annotations",
+      "tasks": [
+        "event-segmentation",
+        "lifelogging",
+        "temporal-segmentation"
+      ],
+      "task_families": [
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "lifelogging-images"
+      ]
+    },
+    {
+      "name": "First-Person Stories",
+      "kind": "dataset",
+      "released": "2017-07",
+      "venue": "ICIAP 2017 Workshop",
+      "year": 2017,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1707.07863",
+      "paper": "https://arxiv.org/abs/1707.07863",
+      "scale": "Egocentric first-person photo-stream dataset for lifestyle analysis, with 45K+ images labeled around eating, socializing, sedentary behavior, and other daily contexts",
+      "tasks": [
+        "lifelogging",
+        "activity-recognition",
+        "lifestyle-analysis"
+      ],
+      "task_families": [
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "lifelogging-images"
+      ]
+    },
+    {
+      "name": "Future Person Localization",
+      "kind": "model",
+      "released": "2017-11",
+      "venue": "CVPR 2018",
+      "year": 2017,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1711.11217",
+      "paper": "https://arxiv.org/abs/1711.11217",
+      "scale": "First-person wearable-camera method for localizing where people will appear in the future",
+      "tasks": [
+        "trajectory-prediction",
+        "anticipation",
+        "blind-assistance"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "action-and-procedure",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "trajectories"
+      ]
+    },
+    {
+      "name": "Ego2Top",
+      "kind": "dataset",
+      "released": "2016-07",
+      "venue": "ECCV 2016",
+      "year": 2016,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1607.06986",
+      "paper": "https://arxiv.org/abs/1607.06986",
+      "scale": "Ego2Top matching dataset: 50 top-view videos, 188 egocentric videos, 166K frames, and 100K body detections for matching camera wearers across ego/top views",
+      "tasks": [
+        "cross-view",
+        "person-localization",
+        "tracking"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "grounding-localization",
+        "tracking"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "overhead-video",
+        "object-boxes"
+      ]
+    },
+    {
+      "name": "Ego-Engagement",
+      "kind": "dataset",
+      "released": "2016-04",
+      "venue": "arXiv",
+      "year": 2016,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1604.00906",
+      "paper": "https://arxiv.org/abs/1604.00906",
+      "scale": "Egocentric video dataset and model for detecting whether the camera wearer is engaged with people and objects in the physical world",
+      "tasks": [
+        "engagement-detection",
+        "attention-modeling",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-boxes"
+      ]
+    },
+    {
+      "name": "First-Person Activity Forecasting",
+      "kind": "model",
+      "released": "2016-12",
+      "venue": "ICCV 2017 Oral",
+      "year": 2016,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1612.07796",
+      "paper": "https://arxiv.org/abs/1605.09070",
+      "code": "https://darko.cs.utexas.edu/",
+      "scale": "DARKO online inverse-reinforcement-learning system for forecasting actions and active objects in first-person video",
+      "tasks": [
+        "anticipation",
+        "action-recognition",
+        "active-object-detection"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-boxes"
+      ]
+    },
+    {
+      "name": "Ego-Object Discovery / EDUB",
+      "kind": "dataset",
+      "released": "2015-04",
+      "venue": "arXiv",
+      "year": 2015,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1504.01639",
+      "paper": "https://arxiv.org/abs/1504.01639",
+      "scale": "EDUB egocentric photo-stream dataset for unsupervised object discovery, with 4,912 daily-life images from four users and public code/data reported by the paper",
+      "tasks": [
+        "object-discovery",
+        "detection-segmentation",
+        "lifelogging"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "object-boxes"
+      ],
+      "license": "unknown-public",
+      "license_url": "https://arxiv.org/abs/1504.01639"
+    },
+    {
+      "name": "Egocentric FOV Localization",
+      "kind": "model",
+      "released": "2015-01",
+      "venue": "WACV 2015",
+      "year": 2015,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1501.01643",
+      "paper": "https://arxiv.org/abs/1501.01643",
+      "scale": "Localizes the first-person camera wearer's field of view in surveillance/top-view video using wearable point-of-view devices",
+      "tasks": [
+        "fov-localization",
+        "cross-view",
+        "person-localization"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "overhead-video"
+      ]
+    },
+    {
+      "name": "First-Person Pose Recognition",
+      "kind": "model",
+      "released": "2015",
+      "venue": "CVPR 2015",
+      "year": 2015,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2015/html/Rogez_First-Person_Pose_Recognition_2015_CVPR_paper.html",
+      "paper": "https://openaccess.thecvf.com/content_cvpr_2015/html/Rogez_First-Person_Pose_Recognition_2015_CVPR_paper.html",
+      "scale": "Egocentric workspace method for recognizing human pose from first-person camera geometry and likely body configurations",
+      "tasks": [
+        "pose-and-body",
+        "egocentric-3d-pose",
+        "wearable-sensing"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "body-pose"
       ]
     }
   ]

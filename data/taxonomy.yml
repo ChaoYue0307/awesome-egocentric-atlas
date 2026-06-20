@@ -87,7 +87,8 @@ task_families:
       anticipation, procedure, procedure-learning, procedural-action, key-step-localization,
       mistake-detection, intervention-prediction, next-active-object, short-term-object-interaction-anticipation,
       animal-activity-recognition, everyday-activity, real-world-routines, lifelogging,
-      temporal-segmentation, hand-action-recognition, ehoi, classic, compositional]
+      temporal-segmentation, event-segmentation, lifestyle-analysis, hand-action-recognition,
+      ehoi, classic, compositional]
 
   hand-object-interaction:
     label: Hand-object interaction and contact
@@ -114,7 +115,7 @@ task_families:
     label: Detection, segmentation, and recognition
     aliases: [detection, object-detection, object-recognition, segmentation,
       prompted-segmentation, instance-understanding, gesture-recognition, gesture-grounding,
-      relation-reasoning, relations]
+      relation-reasoning, relations, object-discovery, engagement-detection]
 
   three-d-and-scene:
     label: 3D, 4D, and scene understanding
@@ -133,7 +134,7 @@ task_families:
     aliases: [temporal-grounding, visual-grounding, object-grounding, natural-language-query,
       nlq, egonlq, ego4d-nlq, moment-query, referring-expression-comprehension, referential,
       localization, spatial-localization, cross-view-association, egocentric-grounding,
-      language-grounding]
+      language-grounding, fov-localization, person-localization]
 
   robotics-and-vla:
     label: Robotics, manipulation, and VLA
@@ -158,7 +159,7 @@ task_families:
   ar-sensing-navigation:
     label: AR, wearable sensing, and navigation
     aliases: [ar-perception, ar-vr, wearable-sensing, wearable-interaction, gaze,
-      gaze-reasoning, navigation, trajectory, trajectory-prediction, sensor-fusion,
+      gaze-reasoning, gaze-prediction, attention-modeling, navigation, trajectory, trajectory-prediction, sensor-fusion,
       imu, eeg, calibration, internal-state-reasoning, affect, physiological-signals,
       360-video, mps, vrs-loading, driving]
 
@@ -180,7 +181,8 @@ modality_families:
     aliases: [rgb, video, egocentric-video, first-person-video, fisheye-video,
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
-      animal-egocentric-video, first-person-360-video, aria-images, synthetic-egocentric,
+      overhead-video, top-view-video, animal-egocentric-video, first-person-360-video,
+      egocentric-images, first-person-images, lifelogging-images, aria-images, synthetic-egocentric,
       synthetic-composited-masks, synthetic-rendering, synthetic-stereo, scene-text,
       novel-view-video, event-stream, event-camera, event-based-video]
 

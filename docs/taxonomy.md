@@ -39,18 +39,18 @@ Each family lists the canonical theme; the full alias list lives in
 | `question-answering` | qa, vqa, egocentric-vqa, egomcq |
 | `memory-and-long-context` | episodic-memory, long-context-qa, streaming-memory |
 | `reasoning-intent-planning` | intent, planning, causal-reasoning, theory-of-mind, forecasting |
-| `action-and-procedure` | action-recognition, anticipation, procedure-learning, mistake-detection |
+| `action-and-procedure` | action-recognition, anticipation, procedure/event-learning, mistake-detection |
 | `hand-object-interaction` | hand-object, contact-understanding, bimanual-manipulation |
 | `pose-and-body` | 3d-human-pose, body-pose, mesh-recovery, motion |
 | `tracking` | object-tracking, long-term-object-tracking, re-detection |
-| `detection-segmentation` | object-detection, segmentation, gesture-recognition |
+| `detection-segmentation` | object-detection, object-discovery, segmentation, gesture-recognition |
 | `three-d-and-scene` | 3d-reconstruction, scene-understanding, depth, novel-view-synthesis |
 | `generation-and-world-models` | video-generation, world-modeling |
-| `grounding-localization` | natural-language-query, temporal-grounding, referring-expression |
+| `grounding-localization` | natural-language-query, temporal-grounding, referring-expression, FOV/person localization |
 | `robotics-and-vla` | vla, manipulation, imitation-learning, cross-embodiment-transfer |
 | `audio-and-social` | audio-visual, sound-understanding, social, theory-of-mind |
 | `assistance-and-agents` | interactive-assistance, tool-using-agents, instructional-dialogue |
-| `ar-sensing-navigation` | gaze, imu, slam/navigation, sensor-fusion |
+| `ar-sensing-navigation` | gaze, attention, imu, slam/navigation, sensor-fusion |
 | `skills-and-quality` | skill-assessment, proficiency, action-quality |
 | `evaluation-and-tooling` | benchmark, evaluation, tooling, multi-view, cross-view |
 
@@ -58,7 +58,7 @@ Each family lists the canonical theme; the full alias list lives in
 
 | Family | Covers (examples) |
 |---|---|
-| `visual` | rgb, egocentric-video, fisheye/stereo/multiview video, event streams, synthetic renders |
+| `visual` | rgb, egocentric-video, fisheye/stereo/multiview video, photostreams, event streams, synthetic renders |
 | `depth` | depth, rgb-d, stereo-depth |
 | `audio-language` | audio, speech, text, narrations, language instructions |
 | `gaze-motion` | gaze, eye-tracking, imu, head pose, trajectory |

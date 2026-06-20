@@ -33,7 +33,7 @@
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
   <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-399-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-412-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -85,7 +85,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 | Signal | What it means for readers |
 | :--- | :--- |
-| 399 egocentric resources | 116 datasets, 78 benchmarks, 183 models, and 21 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
+| 412 egocentric resources | 123 datasets, 78 benchmarks, 189 models, and 21 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
@@ -232,6 +232,8 @@ Broad, large-scale first-person corpora that most egocentric pipelines pretrain 
 | [EasyCom](https://arxiv.org/abs/2107.04174) | 2021-07 | arXiv | AR glasses egocentric multi-channel audio and wide-FOV RGB for noisy conversations | Speech enhancement, source localization, conversation assistance | open |
 | [EPIC-KITCHENS-100](https://epic-kitchens.github.io/) | 2020-06 | IJCV 2022 | 100 hours, 20M frames, 90K actions, 45 kitchens, narrations and dense action labels | Kitchen action recognition, anticipation, action detection, retrieval | open |
 | [EgoCom / Ego audio-visual correspondence](http://vision.cs.utexas.edu/projects/ego_av_corr/) | 2020 | project page | Egocentric video with spatial audio for conversation and audio-visual correspondence tasks | Active speaker detection, spatial audio denoising, conversational graph reasoning | open |
+| [From Third Person to First Person](https://arxiv.org/abs/1812.00104) | 2018-12 | CVPR 2019 | Ego/exo video synthesis and retrieval datasets plus baselines for bridging third-person social video to first-person views | Cross-view synthesis, retrieval, and ego-exo transfer | watch |
+| [EPIC-KITCHENS](https://epic-kitchens.github.io/) | 2018-04 | ECCV 2018 | 55 hours / 11.5M frames from 32 kitchens with narrations, 39.6K action segments, and object boxes | Original large-scale kitchen action recognition and anticipation benchmark | open |
 
 ### Robotics, Manipulation, and VLA
 
@@ -303,6 +305,7 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 | [TREK-150](https://machinelearning.uniud.it/datasets/trek150/) | 2021 | project page | 150 egocentric tracking sequences derived from EPIC-KITCHENS | Single-object tracking in egocentric video | open |
 | [Ego2Hands](https://arxiv.org/abs/2011.07252) | 2020-11 | arXiv | Large-scale composited RGB egocentric two-hand segmentation/detection | Robust unconstrained hand segmentation | open |
 | [xR-EgoPose](https://github.com/facebookresearch/xR-EgoPose) | 2019 | GitHub | Synthetic egocentric body pose data for XR headset viewpoints | 3D human pose from head-mounted cameras | open |
+| [EgoYouTubeHands / HandOverFace](https://arxiv.org/abs/1803.03317) | 2018-03 | CVPR 2018 | In-the-wild egocentric hand-segmentation study built around EgoYouTubeHands, HandOverFace, EGTEA, and EgoHands-style supervision | Hand detection and segmentation beyond lab capture | watch |
 | [FPHA / First-Person Hand Action](https://guiggh.github.io/publications/first-person-hands/) | 2017 | CVPR 2018 | 100K+ RGB-D frames, 45 action classes, 26 objects, 3D hand/object poses | 3D hand pose and first-person hand action recognition | open |
 | [EgoGesture](https://ieeexplore.ieee.org/document/8299578/) | 2017 | IEEE TMM 2018 | 24K+ gesture samples, 3M RGB-D frames, 50 subjects, 83 static and dynamic gestures across six scenes | First-person gesture recognition for wearable interaction | open |
 | [EgoHands](http://vision.soic.indiana.edu/projects/egohands/) | 2015 | ICCV 2015 | 48 Google Glass videos, 4,800 annotated hand images | Hand detection and segmentation | open |
@@ -366,6 +369,7 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 | [AssistQ](https://showlab.github.io/assistq/) | 2022-03 | ECCV 2022 | 531 question-answer samples from 100 newly filmed instructional videos | Assistance-oriented video QA and affordance-centric task completion | open |
 | [MMAC Captions](https://arxiv.org/abs/2109.02955) | 2021-09 | ACM MM 2021 | Sensor-augmented egocentric-video captioning data around CMU-MMAC-style multimodal activity streams | Video captioning with RGB, audio, IMU, and text | watch |
 | [EgoVQA](https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Fan_EgoVQA_-_An_Egocentric_Video_Question_Answering_Benchmark_Dataset_ICCVW_2019_paper.html) | 2019 | ICCV 2019 | 600+ QA pairs over egocentric videos; an early first-person VideoQA benchmark | Classic egocentric VideoQA | open |
+| [First-Person Stories](https://arxiv.org/abs/1707.07863) | 2017-07 | ICIAP 2017 Workshop | 45K+ egocentric photo-stream images labeled for lifestyle patterns such as eating, socializing, and sedentary behavior | Lifelogging and daily-life behavior analysis | watch |
 
 ### Action, Procedure, Lifelogging, and Classic FPV
 
@@ -399,7 +403,10 @@ Procedural and activity datasets, from modern industrial assembly to the classic
 | [Charades-Ego](https://prior.allenai.org/projects/charades) | 2018-04 | CVPR 2018 | 68.8 hours paired first-person and third-person videos, 68K+ activity instances | Ego-exo domain transfer, action recognition, localization, captioning | open |
 | [GTEA](https://cbs.ic.gatech.edu/fpv/) | 2018 | project page | Early first-person cooking/activity dataset | Classic ego action recognition and object interaction | open |
 | [GTEA Gaze / EGTEA Gaze+](https://cbs.ic.gatech.edu/fpv/) | 2018 | project page | Meal-prep egocentric videos with gaze and action annotations | Gaze-aware action recognition and hand-object attention | open |
+| [Ego2Top](https://arxiv.org/abs/1607.06986) | 2016-07 | ECCV 2016 | 50 top-view videos, 188 egocentric videos, 166K frames, and 100K body detections | Matching camera wearers across egocentric and overhead views | watch |
+| [Ego-Engagement](https://arxiv.org/abs/1604.00906) | 2016-04 | arXiv | Egocentric video dataset and model for whether the wearer is engaged with people or objects | Engagement, attention, and object/person interaction cues | watch |
 | [Wrist-mounted ADL](https://arxiv.org/abs/1511.06783) | 2015-11 | CVPR 2016 | Synchronized head and wrist wearable-camera daily activities | Comparing head- versus wrist-mounted first-person views | open |
+| [Ego-Object Discovery / EDUB](https://arxiv.org/abs/1504.01639) | 2015-04 | arXiv | 4,912 egocentric daily-life photo-stream images from four users for unsupervised object discovery | Lifelog object discovery and detection | open |
 | [HUJI EgoSeg](https://www.vision.huji.ac.il/egoseg/) | 2014 | project page | Long egocentric videos for temporal segmentation | Egocentric event segmentation | partial |
 | [DogCentric](https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/) | 2014 | project page | Dog-mounted first-person activity videos | Animal egocentric activity recognition | open |
 | [JPL First-Person Interaction](https://ieeexplore.ieee.org/document/6909626) | 2013 | IEEE | First-person videos of people interacting with a humanoid observer | Human interaction recognition from first person | partial |
@@ -676,6 +683,12 @@ Open models, baselines, and loaders you can build on directly.
 | Few-Shot First-Person Action Recognition | 2019-07 | T-PAMI | Domain-specific priors and meta-learning for few-shot first-person action recognition | [Paper](https://arxiv.org/abs/1907.09382) |
 | Rolling-Unrolling LSTMs | 2019-05 | ICCV 2019 Oral | Multi-scale LSTM with modality attention for anticipating egocentric actions and interacted objects | [Paper](https://arxiv.org/abs/1905.09035) |
 | EPIC-KITCHENS action models | 2019 | GitHub | Public baseline models for EPIC-KITCHENS action recognition | [GitHub](https://github.com/epic-kitchens/action-models) |
+| Visual Context Event Segmentation | 2018-08 | ACM MM 2018 | Unsupervised segmentation of egocentric photostreams into contextual events, with EDUB-Seg labels | [Paper](https://arxiv.org/abs/1808.02289) |
+| Task-Dependent Gaze Transition | 2018-03 | ECCV 2018 | Learns task-dependent attention transitions for gaze prediction in egocentric video | [Paper](https://arxiv.org/abs/1803.09125) |
+| Future Person Localization | 2017-11 | CVPR 2018 | Predicts where people will appear in future frames from a first-person wearable camera | [Paper](https://arxiv.org/abs/1711.11217) |
+| First-Person Activity Forecasting | 2016-12 | ICCV 2017 Oral | DARKO online inverse-reinforcement-learning system for forecasting actions and active objects | [Paper](https://arxiv.org/abs/1612.07796) |
+| Egocentric FOV Localization | 2015-10 | WACV 2015 | Localizes the camera wearer's first-person field of view in overhead/surveillance video | [Paper](https://arxiv.org/abs/1510.02073) |
+| First-Person Pose Recognition | 2015 | CVPR 2015 | Uses egocentric workspaces and camera geometry for first-person human pose recognition | [Paper](https://openaccess.thecvf.com/content_cvpr_2015/html/Rogez_First-Person_Pose_Recognition_2015_CVPR_paper.html) |
 
 ### Practical Tooling
 

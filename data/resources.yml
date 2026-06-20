@@ -1017,6 +1017,7 @@ resources:
     kind: dataset
     released: "2018"
     venue: "project page"
+    year: 2011
     status: open
     url: https://cbs.ic.gatech.edu/fpv/
     modalities: [video, gaze, action-labels]
@@ -1084,6 +1085,7 @@ resources:
     kind: dataset
     released: "2014"
     venue: "project page"
+    year: 2014
     status: open
     url: https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/
     modalities: [animal-egocentric-video]
@@ -1527,6 +1529,7 @@ resources:
     kind: dataset
     released: "2012"
     venue: "project page"
+    year: 2012
     status: partial
     url: https://www.csc.kth.se/cvap/actions/
     scale: "Unscripted daily activity recordings with activity/object/hand annotations in classic literature"
@@ -1556,6 +1559,7 @@ resources:
     kind: dataset
     released: "2012"
     venue: "project page"
+    year: 2012
     status: partial
     url: http://vision.cs.utexas.edu/projects/egocentric/
     scale: "Long daily egocentric videos in classic summarization work"
@@ -1565,6 +1569,7 @@ resources:
     kind: dataset
     released: "2014"
     venue: "project page"
+    year: 2014
     status: partial
     url: https://www.vision.huji.ac.il/egoseg/
     scale: "Long egocentric videos for temporal segmentation"
@@ -1574,6 +1579,7 @@ resources:
     kind: dataset
     released: "2013"
     venue: "IEEE"
+    year: 2013
     status: partial
     url: https://ieeexplore.ieee.org/document/6909626
     scale: "First-person videos of people interacting with a humanoid observer"
@@ -1635,6 +1641,7 @@ resources:
     kind: benchmark
     released: "2018"
     venue: "project page"
+    year: 2018
     status: benchmark
     url: https://epic-kitchens.github.io/
     scale: "Derived benchmark suite built on EPIC-KITCHENS / EPIC-KITCHENS-100; tasks: Recognition, detection, anticipation, retrieval, domain adaptation"
@@ -5433,3 +5440,202 @@ resources:
     release_note: "CVPR 2022 paper from December 2021 preprint; verify dataset/code links."
     verified_at: "2026-06-20"
     citation_key: e2gomotion_2021
+
+  # --- Catalog expansion (2026-06-20): 2018-and-earlier rescan additions ---
+
+  - name: EPIC-KITCHENS
+    kind: dataset
+    released: "2018-04"
+    venue: "ECCV 2018"
+    year: 2018
+    status: open
+    url: https://epic-kitchens.github.io/
+    paper: https://arxiv.org/abs/1804.02748
+    license: research terms
+    license_url: https://epic-kitchens.github.io/
+    scale: "Original EPIC-KITCHENS release: 55 hours / 11.5M frames of unscripted egocentric kitchen video from 32 kitchens, with 39.6K narrated action segments and 454K object bounding boxes"
+    modalities: [egocentric-video, audio, narrations, object-boxes]
+    tasks: [action-recognition, action-detection, anticipation, hand-object-interaction]
+    verified_at: "2026-06-20"
+    citation_key: epic_kitchens_2018
+
+  - name: From Third Person to First Person
+    kind: dataset
+    released: "2018-12"
+    venue: "CVPR 2019"
+    year: 2018
+    status: watch
+    url: https://arxiv.org/abs/1812.00104
+    paper: https://arxiv.org/abs/1812.00104
+    scale: "Dataset and baselines for exocentric-to-egocentric video synthesis and retrieval, bridging third-person social-media video with first-person views"
+    modalities: [egocentric-video, third-person-video]
+    tasks: [video-generation, cross-view, retrieval, ego-exo]
+    release_note: "Paper describes public datasets/baselines; verify current download and code longevity."
+    verified_at: "2026-06-20"
+    citation_key: third_to_first_person_2018
+
+  - name: EgoYouTubeHands / HandOverFace
+    kind: dataset
+    released: "2018-03"
+    venue: "CVPR 2018"
+    year: 2018
+    status: watch
+    url: https://arxiv.org/abs/1803.03317
+    paper: https://arxiv.org/abs/1803.03317
+    scale: "Egocentric in-the-wild hand-segmentation study built around EgoYouTubeHands, HandOverFace, EGTEA, and EgoHands-style supervision"
+    modalities: [egocentric-video, hand-masks]
+    tasks: [hand-segmentation, hand-detection, detection-segmentation]
+    release_note: "arXiv paper; verify the current state of individual dataset download links."
+    verified_at: "2026-06-20"
+    citation_key: egoyoutubehands_handoverface_2018
+
+  - name: Task-Dependent Gaze Transition
+    kind: model
+    released: "2018-03"
+    venue: "ECCV 2018"
+    year: 2018
+    status: watch
+    url: https://arxiv.org/abs/1803.09125
+    paper: https://arxiv.org/abs/1803.09125
+    scale: "Egocentric gaze-prediction model that learns task-dependent attention transitions for first-person activity video"
+    modalities: [egocentric-video, gaze]
+    tasks: [gaze-prediction, attention-modeling, action-recognition]
+    release_note: "ECCV 2018 paper; watch for maintained implementation and data split links."
+    verified_at: "2026-06-20"
+    citation_key: task_dependent_gaze_transition_2018
+
+  - name: Visual Context Event Segmentation
+    kind: model
+    released: "2018-08"
+    venue: "ACM MM 2018"
+    year: 2018
+    status: watch
+    url: https://arxiv.org/abs/1808.02289
+    paper: https://arxiv.org/abs/1808.02289
+    scale: "Unsupervised segmentation of egocentric photostreams into contextual events, reporting a 1.5M-image lifelogging dataset and EDUB-Seg annotations"
+    modalities: [egocentric-images, lifelogging-images]
+    tasks: [event-segmentation, lifelogging, temporal-segmentation]
+    release_note: "Paper reports dataset and EDUB-Seg labels; verify current public asset availability."
+    verified_at: "2026-06-20"
+    citation_key: contextual_event_segmentation_2018
+
+  - name: First-Person Stories
+    kind: dataset
+    released: "2017-07"
+    venue: "ICIAP 2017 Workshop"
+    year: 2017
+    status: watch
+    url: https://arxiv.org/abs/1707.07863
+    paper: https://arxiv.org/abs/1707.07863
+    scale: "Egocentric first-person photo-stream dataset for lifestyle analysis, with 45K+ images labeled around eating, socializing, sedentary behavior, and other daily contexts"
+    modalities: [egocentric-images, lifelogging-images]
+    tasks: [lifelogging, activity-recognition, lifestyle-analysis]
+    release_note: "arXiv dataset paper; verify current download and license links."
+    verified_at: "2026-06-20"
+    citation_key: first_person_stories_2017
+
+  - name: Future Person Localization
+    kind: model
+    released: "2017-11"
+    venue: "CVPR 2018"
+    year: 2017
+    status: watch
+    url: https://arxiv.org/abs/1711.11217
+    paper: https://arxiv.org/abs/1711.11217
+    scale: "First-person wearable-camera method for localizing where people will appear in the future"
+    modalities: [egocentric-video, trajectories]
+    tasks: [trajectory-prediction, anticipation, blind-assistance]
+    release_note: "CVPR 2018 paper from 2017 preprint; verify current code/data links."
+    verified_at: "2026-06-20"
+    citation_key: future_person_localization_2017
+
+  - name: Ego2Top
+    kind: dataset
+    released: "2016-07"
+    venue: "ECCV 2016"
+    year: 2016
+    status: watch
+    url: https://arxiv.org/abs/1607.06986
+    paper: https://arxiv.org/abs/1607.06986
+    scale: "Ego2Top matching dataset: 50 top-view videos, 188 egocentric videos, 166K frames, and 100K body detections for matching camera wearers across ego/top views"
+    modalities: [egocentric-video, overhead-video, object-boxes]
+    tasks: [cross-view, person-localization, tracking]
+    release_note: "ECCV 2016 paper; verify current dataset download and license."
+    verified_at: "2026-06-20"
+    citation_key: ego2top_2016
+
+  - name: Ego-Engagement
+    kind: dataset
+    released: "2016-04"
+    venue: "arXiv"
+    year: 2016
+    status: watch
+    url: https://arxiv.org/abs/1604.00906
+    paper: https://arxiv.org/abs/1604.00906
+    scale: "Egocentric video dataset and model for detecting whether the camera wearer is engaged with people and objects in the physical world"
+    modalities: [egocentric-video, object-boxes]
+    tasks: [engagement-detection, attention-modeling, detection-segmentation]
+    release_note: "ECCV 2016 paper; verify current dataset/model release links."
+    verified_at: "2026-06-20"
+    citation_key: ego_engagement_2016
+
+  - name: First-Person Activity Forecasting
+    kind: model
+    released: "2016-12"
+    venue: "ICCV 2017 Oral"
+    year: 2016
+    status: open
+    url: https://arxiv.org/abs/1612.07796
+    paper: https://arxiv.org/abs/1605.09070
+    code: https://darko.cs.utexas.edu/
+    scale: "DARKO online inverse-reinforcement-learning system for forecasting actions and active objects in first-person video"
+    modalities: [egocentric-video, object-boxes]
+    tasks: [anticipation, action-recognition, active-object-detection]
+    verified_at: "2026-06-20"
+    citation_key: first_person_activity_forecasting_2016
+
+  - name: Ego-Object Discovery / EDUB
+    kind: dataset
+    released: "2015-04"
+    venue: "arXiv"
+    year: 2015
+    status: open
+    url: https://arxiv.org/abs/1504.01639
+    paper: https://arxiv.org/abs/1504.01639
+    license: unknown-public
+    license_url: https://arxiv.org/abs/1504.01639
+    scale: "EDUB egocentric photo-stream dataset for unsupervised object discovery, with 4,912 daily-life images from four users and public code/data reported by the paper"
+    modalities: [egocentric-images, object-boxes]
+    tasks: [object-discovery, detection-segmentation, lifelogging]
+    verified_at: "2026-06-20"
+    citation_key: ego_object_discovery_edub_2015
+
+  - name: Egocentric FOV Localization
+    kind: model
+    released: "2015-01"
+    venue: "WACV 2015"
+    year: 2015
+    status: watch
+    url: https://arxiv.org/abs/1501.01643
+    paper: https://arxiv.org/abs/1501.01643
+    scale: "Localizes the first-person camera wearer's field of view in surveillance/top-view video using wearable point-of-view devices"
+    modalities: [egocentric-video, overhead-video]
+    tasks: [fov-localization, cross-view, person-localization]
+    release_note: "WACV 2015 paper; verify whether code/data remain available."
+    verified_at: "2026-06-20"
+    citation_key: egocentric_fov_localization_2015
+
+  - name: First-Person Pose Recognition
+    kind: model
+    released: "2015"
+    venue: "CVPR 2015"
+    year: 2015
+    status: watch
+    url: https://openaccess.thecvf.com/content_cvpr_2015/html/Rogez_First-Person_Pose_Recognition_2015_CVPR_paper.html
+    paper: https://openaccess.thecvf.com/content_cvpr_2015/html/Rogez_First-Person_Pose_Recognition_2015_CVPR_paper.html
+    scale: "Egocentric workspace method for recognizing human pose from first-person camera geometry and likely body configurations"
+    modalities: [egocentric-video, body-pose]
+    tasks: [pose-and-body, egocentric-3d-pose, wearable-sensing]
+    release_note: "CVPR 2015 paper; watch for maintained code/data links."
+    verified_at: "2026-06-20"
+    citation_key: first_person_pose_recognition_2015
