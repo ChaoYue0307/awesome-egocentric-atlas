@@ -33,7 +33,7 @@ resources:
 
   - name: Xperience-10M Sample
     kind: dataset
-    released: "2026"
+    released: "2026-03"
     venue: "Hugging Face"
     year: 2026
     status: open
@@ -486,7 +486,7 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoHands
     kind: dataset
-    released: "2015"
+    released: "2015-12"
     venue: "ICCV 2015"
     year: 2015
     status: open
@@ -497,17 +497,18 @@ resources:
     license: "not specified"
     license_url: "http://vision.soic.indiana.edu/projects/egohands/"
     verified_at: "2026-06-20"
-    milestone: "2015"
+    milestone: "2015-12"
     milestone_note: "The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception."
     milestone_image: assets/milestones/egohands.png
 
   - name: FPHA
     kind: dataset
-    released: "2017"
+    released: "2017-04"
     venue: "CVPR 2018"
     year: 2017
     status: open
     url: https://guiggh.github.io/publications/first-person-hands/
+    paper: https://arxiv.org/abs/1704.02463
     scale: "100K+ RGB-D frames, 45 action classes, 26 objects"
     modalities: [rgbd, 3d-hand-pose, object-pose]
     tasks: [hand-action-recognition, 3d-hand-pose]
@@ -556,11 +557,12 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoBody
     kind: dataset
-    released: "2022"
+    released: "2021-12"
     venue: "ECCV 2022"
-    year: 2022
+    year: 2021
     status: open
     url: https://sanweiliti.github.io/egobody/egobody.html
+    paper: https://arxiv.org/abs/2112.07642
     modalities: [hololens2, rgb, depth, gaze, head-pose, hand-pose, body-pose]
     tasks: [3d-human-pose, body-shape, motion]
     license: "not specified"
@@ -607,11 +609,12 @@ resources:
     verified_at: "2026-06-20"
   - name: xR-EgoPose
     kind: dataset
-    released: "2019"
+    released: "2019-07"
     venue: "GitHub"
     year: 2019
     status: open
     url: https://github.com/facebookresearch/xR-EgoPose
+    paper: https://arxiv.org/abs/1907.10045
     modalities: [synthetic-egocentric, 3d-human-pose]
     tasks: [xr-pose-estimation]
     license: "custom"
@@ -642,25 +645,27 @@ resources:
     verified_at: "2026-06-20"
   - name: TREK-150
     kind: benchmark
-    released: "2021"
+    released: "2021-08"
     venue: "project page"
     year: 2021
     status: open
     url: https://machinelearning.uniud.it/datasets/trek150/
+    paper: https://arxiv.org/abs/2108.13665
     derived_from: EPIC-KITCHENS
     tasks: [single-object-tracking]
     verified_at: "2026-06-20"
   - name: Project Aria Datasets
     verified_at: "2026-06-20"
-    milestone: "2022"
+    milestone: "2023-08"
     milestone_note: "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
     milestone_image: assets/milestones/project-aria.png
     kind: collection
-    released: "2022"
-    venue: "project page"
-    year: 2022
+    released: "2023-08"
+    venue: "arXiv"
+    year: 2023
     status: open
     url: https://www.projectaria.com/datasets/
+    paper: https://arxiv.org/abs/2308.13561
     modalities: [aria, vrs, calibration, gaze, imu, mps]
     tasks: [ar-perception, scene-understanding, wearable-sensing]
 
@@ -1221,11 +1226,12 @@ resources:
     verified_at: "2026-06-20"
   - name: VISOR
     kind: benchmark
-    released: "2022"
+    released: "2022-09"
     venue: "NeurIPS 2022"
     year: 2022
     status: open
     url: https://epic-kitchens.github.io/VISOR/
+    paper: https://arxiv.org/abs/2209.08199
     derived_from: EPIC-KITCHENS
     license: cc-by-nc-4.0
     verified_at: "2026-06-15"
@@ -1233,21 +1239,23 @@ resources:
 
   - name: EPIC-Sounds
     kind: benchmark
-    released: "2023"
+    released: "2023-02"
     venue: "ICASSP 2023"
     year: 2023
     status: open
     url: https://epic-kitchens.github.io/epic-sounds/
+    paper: https://arxiv.org/abs/2302.00646
     derived_from: EPIC-KITCHENS
     tasks: [audio-event-recognition]
     verified_at: "2026-06-20"
   - name: EPIC-Fields
     kind: benchmark
-    released: "2023"
+    released: "2023-06"
     venue: "NeurIPS 2023"
     year: 2023
     status: open
     url: https://epic-kitchens.github.io/epic-fields/
+    paper: https://arxiv.org/abs/2306.08731
     derived_from: EPIC-KITCHENS
     tasks: [3d-fields, spatial-reasoning]
     verified_at: "2026-06-20"
@@ -1329,7 +1337,7 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: Ropedia Xperience-10M Task Suite
     kind: benchmark
-    released: "2026"
+    released: "2026-03"
     venue: "Hugging Face"
     year: 2026
     status: open
@@ -1344,7 +1352,7 @@ resources:
     verified_at: "2026-06-20"
   - name: Ropedia Xperience-10M Task Baselines
     kind: model
-    released: "2026"
+    released: "2026-03"
     venue: "Hugging Face"
     year: 2026
     status: open
@@ -1422,11 +1430,12 @@ resources:
     verified_at: "2026-06-20"
   - name: Project Aria Tools
     kind: toolkit
-    released: "2022"
-    venue: "GitHub"
-    year: 2022
+    released: "2023-08"
+    venue: "arXiv"
+    year: 2023
     status: open
     url: https://github.com/facebookresearch/projectaria_tools
+    paper: https://arxiv.org/abs/2308.13561
     tasks: [vrs-loading, calibration, mps, gaze, trajectory]
     verified_at: "2026-06-20"
   - name: EPIC-KITCHENS action models
@@ -1440,7 +1449,7 @@ resources:
     verified_at: "2026-06-20"
   - name: HOMIE-toolkit
     kind: toolkit
-    released: "2026"
+    released: "2026-03"
     venue: "GitHub"
     year: 2026
     status: open
@@ -2087,11 +2096,12 @@ resources:
 
   - name: EgoCom / Ego audio-visual correspondence
     kind: dataset
-    released: "2020"
-    venue: "project page"
-    year: 2020
+    released: "2023-07"
+    venue: "arXiv"
+    year: 2023
     status: open
     url: http://vision.cs.utexas.edu/projects/ego_av_corr/
+    paper: https://arxiv.org/abs/2307.04760
     scale: "Egocentric video with spatial audio for conversation and audio-visual correspondence tasks"
     tasks: [foundation-video, video-language]
     license: "not specified"
@@ -2127,7 +2137,7 @@ resources:
     milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
     milestone_image: assets/milestones/egovla.png
     kind: model
-    released: "2025"
+    released: "2025-07"
     venue: "project page"
     status: watch
     url: https://rchalyang.github.io/EgoVLA/
@@ -2214,10 +2224,12 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoEVHands
     kind: dataset
-    released: "2024"
-    venue: "GitHub"
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
     status: watch
     url: https://github.com/ZJUWang01/EgoEV-HandPose
+    paper: https://arxiv.org/abs/2605.12297
     scale: "Stereo event-camera egocentric hand dataset with 5,419 sequences and 3D/2D keypoints"
     tasks: [hand-object, 3d, pose]
     verified_at: "2026-06-20"
@@ -2257,27 +2269,31 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoSelf
     kind: model
-    released: "2025"
-    venue: "project page"
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
     status: watch
     url: https://abie-e.github.io/egoself_project/
+    paper: https://arxiv.org/abs/2604.19564
     scale: "Personalized egocentric assistant framework with graph memory"
     tasks: [memory, qa, assistant]
     verified_at: "2026-06-20"
     release_note: "Live access check failed 2026-06-20; kept on watch until the source page reappears or release artifacts are confirmed."
   - name: EgoCross
     kind: dataset
-    released: "2025"
-    venue: "GitHub"
+    released: "2025-08"
+    venue: "arXiv"
+    year: 2025
     status: watch
     url: https://github.com/MyUniverse0726/EgoCross
+    paper: https://arxiv.org/abs/2508.10729
     scale: "About 1,000 QA pairs over surgery, industry, extreme sports, and animal-perspective clips"
     tasks: [memory, qa, assistant]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: ADL Dataset
     kind: dataset
-    released: "2012"
+    released: "2012-06"
     venue: "project page"
     year: 2012
     status: partial
@@ -2286,7 +2302,7 @@ resources:
     tasks: [action-recognition, procedure]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified."
-    milestone: "2012"
+    milestone: "2012-06"
     milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale first-person recognition."
     milestone_image: assets/milestones/adl-dataset.png
 
@@ -2304,18 +2320,19 @@ resources:
     verified_at: "2026-06-20"
   - name: Visual Experience Dataset / VEDB
     kind: dataset
-    released: "2023"
-    venue: "project page"
-    year: 2023
+    released: "2024-02"
+    venue: "arXiv"
+    year: 2024
     status: partial
     url: http://tamaraberg.com/visualexperience/
+    paper: https://arxiv.org/abs/2404.18934
     scale: "240+ hours egocentric video with gaze/head tracking in classic literature"
     tasks: [action-recognition, procedure]
     verified_at: "2026-06-20"
     release_note: "Live access check failed 2026-06-20; catalog remains partial pending a working source or confirmed mirror."
   - name: UT Ego
     kind: dataset
-    released: "2012"
+    released: "2012-06"
     venue: "project page"
     year: 2012
     status: partial
@@ -2326,7 +2343,7 @@ resources:
     release_note: "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified."
   - name: HUJI EgoSeg
     kind: dataset
-    released: "2014"
+    released: "2014-06"
     venue: "project page"
     year: 2014
     status: partial
@@ -2348,11 +2365,12 @@ resources:
     release_note: "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified."
   - name: FT-HID
     kind: dataset
-    released: "2022"
+    released: "2022-09"
     venue: "GitHub"
     year: 2022
     status: open
     url: https://github.com/ENDLICHERE/FT-HID
+    paper: https://arxiv.org/abs/2209.10155
     scale: "90K+ RGB-D first- and third-person human interaction samples from 109 subjects"
     tasks: [action-recognition, procedure]
     license: "not specified"
@@ -2384,7 +2402,7 @@ resources:
 
   - name: Ego4D Benchmarks
     kind: benchmark
-    released: "2021"
+    released: "2021-10"
     venue: "project page"
     year: 2021
     status: benchmark
@@ -2394,7 +2412,7 @@ resources:
     verified_at: "2026-06-20"
   - name: Ego-Exo4D Benchmarks
     kind: benchmark
-    released: "2023"
+    released: "2023-11"
     venue: "project page"
     year: 2023
     status: benchmark
@@ -2404,7 +2422,7 @@ resources:
     verified_at: "2026-06-20"
   - name: EPIC-KITCHENS Challenges
     kind: benchmark
-    released: "2018"
+    released: "2018-04"
     venue: "project page"
     year: 2018
     status: benchmark
@@ -2434,10 +2452,12 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoMAS
     kind: model
-    released: "2026"
-    venue: "project page"
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
     status: open
     url: https://ma-egoqa.github.io/
+    paper: https://arxiv.org/abs/2603.09827
     scale: "Shared-memory baseline for multi-agent egocentric video QA"
     tasks: [video-language, representation-learning]
     verified_at: "2026-06-20"
@@ -2453,10 +2473,12 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoPoseFormer
     kind: model
-    released: "2024"
-    venue: "GitHub"
+    released: "2024-03"
+    venue: "arXiv"
+    year: 2024
     status: open
     url: https://github.com/ChenhongyiYang/egoposeformer
+    paper: https://arxiv.org/abs/2403.18080
     scale: "Transformer baseline for stereo egocentric 3D human pose estimation"
     tasks: [action, tracking, pose, hoi]
     verified_at: "2026-06-20"
@@ -2472,21 +2494,23 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoHOS model
     kind: model
-    released: "2022"
+    released: "2022-08"
     venue: "GitHub"
     year: 2022
     status: open
     url: https://github.com/owenzlz/EgoHOS
+    paper: https://arxiv.org/abs/2208.03826
     scale: "Context-aware hand-object segmentation and augmentation pipeline"
     tasks: [action, tracking, pose, hoi]
     verified_at: "2026-06-20"
   - name: AV-CONV
     kind: model
-    released: "2023"
-    venue: "project page"
+    released: "2023-12"
+    venue: "arXiv"
     year: 2023
     status: open
     url: https://vjwq.github.io/AV-CONV/
+    paper: https://arxiv.org/abs/2312.12870
     scale: "Audio-visual conversational graph prediction from ego/exo conversation"
     tasks: [action, tracking, pose, hoi]
     verified_at: "2026-06-20"
@@ -2514,7 +2538,7 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: Ego4D CLI and docs
     kind: toolkit
-    released: "2021"
+    released: "2021-10"
     venue: "project page"
     year: 2021
     status: open
@@ -2524,7 +2548,7 @@ resources:
     verified_at: "2026-06-20"
   - name: Ego-Exo4D CLI and docs
     kind: toolkit
-    released: "2023"
+    released: "2023-11"
     venue: "project page"
     year: 2023
     status: open
@@ -2534,7 +2558,7 @@ resources:
     verified_at: "2026-06-20"
   - name: VISOR API
     kind: toolkit
-    released: "2022"
+    released: "2022-09"
     venue: "GitHub"
     year: 2022
     status: open
@@ -2544,17 +2568,18 @@ resources:
     verified_at: "2026-06-20"
   - name: EgoObjects API
     kind: toolkit
-    released: "2023"
-    venue: "GitHub"
+    released: "2023-09"
+    venue: "arXiv"
     year: 2023
     status: open
     url: https://github.com/facebookresearch/EgoObjects
+    paper: https://arxiv.org/abs/2309.08816
     scale: "Working with category and instance-level egocentric object labels."
     tasks: [tooling]
     verified_at: "2026-06-20"
   - name: HOT3D tooling
     kind: toolkit
-    released: "2024"
+    released: "2024-06"
     venue: "project page"
     status: open
     url: https://facebookresearch.github.io/hot3d/
@@ -2563,7 +2588,7 @@ resources:
     verified_at: "2026-06-20"
   - name: HOI4D tooling
     kind: toolkit
-    released: "2022"
+    released: "2022-03"
     venue: "project page"
     year: 2022
     status: open
@@ -2655,9 +2680,9 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoMemory
     kind: benchmark
-    released: "2026"
+    released: "2025-09"
     venue: "OpenReview"
-    year: 2026
+    year: 2025
     status: watch
     url: https://openreview.net/forum?id=T0em4hJCQb
     scale: "165,795 user-specific object annotations over 245 videos from 45 participants for memory-augmented personalized retrieval"
@@ -2666,7 +2691,7 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoTextVQA
     kind: benchmark
-    released: "2025"
+    released: "2025-06"
     venue: "CVPR 2025"
     year: 2025
     status: open
@@ -2687,7 +2712,7 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoVQA
     kind: benchmark
-    released: "2019"
+    released: "2019-10"
     venue: "ICCV 2019"
     year: 2019
     status: open
@@ -3232,9 +3257,9 @@ resources:
 
   - name: EgoSurgery
     kind: dataset
-    year: 2024
-    released: "2024"
-    venue: "MICCAI 2024"
+    year: 2025
+    released: "2025-03"
+    venue: "arXiv"
     status: open
     url: https://github.com/Fujiry0/EgoSurgery
     paper: https://arxiv.org/abs/2503.18755
@@ -4294,11 +4319,11 @@ resources:
   - name: CMU-MMAC
     license: "not specified"
     license_url: "http://kitchen.cs.cmu.edu/"
-    milestone: "2009"
+    milestone: "2009-06"
     milestone_note: "The earliest egocentric dataset; launched first-person activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
     milestone_image: assets/milestones/cmu-mmac.png
     kind: dataset
-    released: "2009"
+    released: "2009-06"
     venue: "CMU tech report 2009"
     year: 2009
     status: open
@@ -4313,7 +4338,7 @@ resources:
 
   - name: First-Person Social Interactions
     kind: dataset
-    released: "2012"
+    released: "2012-06"
     venue: "CVPR 2012"
     year: 2012
     status: open
@@ -4329,7 +4354,7 @@ resources:
 
   - name: BEOID
     kind: dataset
-    released: "2014"
+    released: "2014-09"
     venue: "BMVC 2014"
     year: 2014
     status: open
@@ -6483,7 +6508,7 @@ resources:
 
   - name: First-Person Pose Recognition
     kind: model
-    released: "2015"
+    released: "2015-06"
     venue: "CVPR 2015"
     year: 2015
     status: watch
