@@ -52,6 +52,7 @@ machine-checked, so most mistakes are caught by the validator before review.
 ```bash
 ruby scripts/validate_catalog.rb
 ruby scripts/build_artifacts.rb --check
+ruby scripts/build_readme_i18n.rb --check
 ruby scripts/build_hf_package.rb --check
 ruby scripts/audit_catalog.rb
 ```

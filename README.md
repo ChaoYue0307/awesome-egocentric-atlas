@@ -88,7 +88,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 | 456 egocentric resources | 125 datasets, 81 benchmarks, 226 models, and 23 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Four related non-egocentric resources are listed separately. |
 | 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
-| Machine-checked catalog | [`data/resources.yml`](data/resources.yml) mirrors the README with type, year, status, URL, tasks, and provenance — and CI validates it on every change. |
+| Machine-checked catalog | [`data/resources.yml`](data/resources.yml) is the source for type, year, status, URL, tasks, and provenance — and CI keeps the public artifacts in sync. |
 | Reader-first tables | Each entry is short enough to scan, then links out to the official page, paper, code, or dataset portal. |
 
 <p align="center">
@@ -97,7 +97,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 ## Milestones
 
-The landmark works that shaped egocentric AI — a fast on-ramp from the field's origins to its current frontier. Generated from entries tagged `milestone:` in [`data/resources.yml`](data/resources.yml).
+The landmark works that shaped egocentric AI — a fast on-ramp from the field's origins to its current frontier.
 
 <p align="center">
   <img src="assets/awesome-egocentric-milestones.png" alt="Illustrated milestone timeline for representative egocentric AI works" width="100%">

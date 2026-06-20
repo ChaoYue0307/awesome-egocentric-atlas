@@ -6,7 +6,9 @@
 # the translated pages are localized intros that link to the full catalog and
 # the interactive (multilingual) site.
 #
-# Usage: ruby scripts/build_readme_i18n.rb
+# Usage:
+#   ruby scripts/build_readme_i18n.rb
+#   ruby scripts/build_readme_i18n.rb --check
 
 require "yaml"
 
@@ -95,6 +97,17 @@ ego = resources.reject { |r| r["scope"] == "adjacent" }
 kc = Hash.new(0)
 ego.each { |r| kc[r["kind"]] += 1 }
 COUNTS = { ego: ego.length, dataset: kc["dataset"], benchmark: kc["benchmark"], model: kc["model"], toolkit: kc["toolkit"] }
+CHECK = ARGV.include?("--check")
+stale = []
+
+def write_or_check(path, expected, check, stale)
+  if check
+    rel = path.sub("#{ROOT}/", "")
+    stale << rel unless File.file?(path) && File.read(path, encoding: "UTF-8") == expected
+  else
+    File.write(path, expected, encoding: "UTF-8")
+  end
+end
 
 # --- update README.md language bar (between markers) -------------------------
 START = "<!-- LANG-BAR:START -->"
@@ -108,7 +121,7 @@ else
   # insert right after the tagline paragraph (first centered <strong>…</strong></p>)
   readme.sub!(/(<strong>[^<]*<\/strong>\s*<\/p>\n)/m, "\\1\n#{block}\n")
 end
-File.write(readme_path, readme)
+write_or_check(readme_path, readme, CHECK, stale)
 
 # --- generate translated landing pages --------------------------------------
 LANGS.each do |lang|
@@ -144,7 +157,18 @@ LANGS.each do |lang|
 
     > #{t[:note]}
   MD
-  File.write(File.join(ROOT, readme_for(lang)), body)
+  write_or_check(File.join(ROOT, readme_for(lang)), body, CHECK, stale)
 end
 
-puts "Wrote README language bar + #{LANGS.length - 1} translated landing pages (#{COUNTS[:ego]} egocentric)."
+if CHECK
+  unless stale.empty?
+    warn "README i18n artifact(s) out of date:"
+    stale.each { |path| warn "  - #{path}" }
+    warn "Run: ruby scripts/build_readme_i18n.rb"
+    exit 1
+  end
+
+  puts "README i18n OK: #{LANGS.length - 1} translated landing pages (#{COUNTS[:ego]} egocentric)."
+else
+  puts "Wrote README language bar + #{LANGS.length - 1} translated landing pages (#{COUNTS[:ego]} egocentric)."
+end

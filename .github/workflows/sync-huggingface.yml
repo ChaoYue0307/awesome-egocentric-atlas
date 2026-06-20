@@ -19,6 +19,7 @@ jobs:
     env:
       HF_REPO_ID: ${{ vars.HF_REPO_ID || 'cy0307/awesome-egocentric-atlas' }}
       HF_REPO_TYPE: ${{ vars.HF_REPO_TYPE || 'dataset' }}
+      HF_HUB_DISABLE_XET: "1"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -32,7 +33,12 @@ jobs:
             echo "available=true" >> "$GITHUB_OUTPUT"
           else
             echo "available=false" >> "$GITHUB_OUTPUT"
-            echo "HF_TOKEN is not configured; skipping Hugging Face sync."
+            echo "::warning::HF_TOKEN is not configured; skipping Hugging Face sync."
+            {
+              echo "### Hugging Face sync"
+              echo ""
+              echo "Skipped because \`HF_TOKEN\` is not configured for this repository."
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Set up Python
@@ -68,3 +74,7 @@ jobs:
             --delete "huggingface/**" \
             --exclude ".DS_Store" \
             --exclude "__pycache__/*"
+
+      - name: Verify Hugging Face mirror
+        if: steps.token.outputs.available == 'true'
+        run: ruby scripts/verify_hf_mirror.rb hf-upload "$HF_REPO_ID"

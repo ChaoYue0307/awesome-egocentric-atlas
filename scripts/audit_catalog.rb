@@ -55,7 +55,7 @@ puts
 puts "Generated: #{today}"
 puts "Total resources: #{summary.fetch('total_resources')} (#{summary.fetch('egocentric_resources')} egocentric, #{summary.fetch('adjacent_resources')} adjacent)"
 puts
-puts "## Counts"
+puts "## Egocentric Counts"
 puts "Kinds:    #{count_by(egocentric, 'kind').map { |k, v| "#{k}=#{v}" }.join(', ')}"
 puts "Statuses: #{count_by(egocentric, 'status').map { |k, v| "#{k}=#{v}" }.join(', ')}"
 puts "Years:    #{count_by_value(egocentric.map { |entry| CatalogArtifacts.resource_year(entry) }).map { |k, v| "#{k}=#{v}" }.join(', ')}"

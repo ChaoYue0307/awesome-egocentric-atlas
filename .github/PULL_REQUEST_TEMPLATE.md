@@ -11,7 +11,7 @@
 - [ ] Set the correct `kind` (`dataset`, `benchmark`, `model`, `toolkit`, `survey`, `challenge`, or `collection`).
 - [ ] Set a conservative `status` (`open`, `request`, `benchmark`, `partial`, or `watch`).
 - [ ] Used scale/task numbers reported by the official source, without inflation.
-- [ ] Ran `ruby scripts/validate_catalog.rb` locally and it passed.
+- [ ] I understand CI will validate the catalog and generated artifacts.
 
 ## Notes for the reviewer
 

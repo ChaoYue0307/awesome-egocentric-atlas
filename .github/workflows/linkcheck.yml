@@ -1,6 +1,6 @@
 name: Link check
 
-# Verifies the external links in the README and catalog still resolve.
+# Verifies the external links in the README, docs, site, and catalog still resolve.
 # Runs weekly (and on demand). Non-fatal: dead links are reported in an issue
 # rather than failing a build, so a temporarily-down host never blocks work.
 
@@ -30,7 +30,26 @@ jobs:
             --max-retries 2
             --accept 200,206,403,429
             --exclude-mail
-            README.md data/resources.yml
+            README.md
+            README.zh.md
+            README.es.md
+            README.fr.md
+            README.de.md
+            README.ja.md
+            README.ko.md
+            README.pt.md
+            index.html
+            docs/access_matrix.md
+            docs/maintenance.md
+            docs/resource_schema.md
+            docs/status_policy.md
+            docs/taxonomy.md
+            docs/recipes/ar-glasses-sensing.md
+            docs/recipes/audio-social-egocentric.md
+            docs/recipes/hand-object-3d-hoi.md
+            docs/recipes/long-context-egocentric-qa.md
+            docs/recipes/robot-vla-from-ego-video.md
+            data/resources.yml
           fail: false
 
       - name: Open an issue if links are broken

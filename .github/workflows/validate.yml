@@ -33,5 +33,8 @@ jobs:
       - name: Validate generated artifacts
         run: ruby scripts/build_artifacts.rb --check
 
+      - name: Validate translated README pages
+        run: ruby scripts/build_readme_i18n.rb --check
+
       - name: Validate Hugging Face package
         run: ruby scripts/build_hf_package.rb --check
