@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 305,
-    "egocentric_resources": 301,
+    "total_resources": 334,
+    "egocentric_resources": 330,
     "adjacent_resources": 4,
     "kind_counts": {
       "benchmark": 74,
       "collection": 1,
-      "dataset": 105,
-      "model": 105,
-      "toolkit": 16
+      "dataset": 110,
+      "model": 126,
+      "toolkit": 19
     },
     "status_counts": {
       "benchmark": 7,
-      "open": 120,
+      "open": 121,
       "partial": 12,
       "request": 4,
-      "watch": 158
+      "watch": 186
     }
   },
   "lanes": [
@@ -43,7 +43,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 63
+      "count": 74
     },
     {
       "id": "procedure-action",
@@ -53,7 +53,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 66
+      "count": 72
     },
     {
       "id": "hands-3d",
@@ -66,7 +66,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 123
+      "count": 143
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +78,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 97
+      "count": 102
     },
     {
       "id": "robotics-vla",
@@ -87,7 +87,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 55
+      "count": 63
     },
     {
       "id": "ar-wearables",
@@ -98,7 +98,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 79
+      "count": 94
     }
   ],
   "milestones": [
@@ -7653,6 +7653,823 @@
         "stereo-video",
         "point-clouds",
         "robot-actions"
+      ]
+    },
+    {
+      "name": "INSIGHT",
+      "kind": "model",
+      "released": "2025-08",
+      "venue": "AAAI 2026",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2508.01742",
+      "paper": "https://arxiv.org/abs/2508.01742",
+      "scale": "Intention-guided cognitive reasoning framework for egocentric long-term action anticipation, using hand-object cues, verb-noun dependencies, and RL-style reasoning over Ego4D, EPIC-KITCHENS-55, and EGTEA Gaze+",
+      "tasks": [
+        "anticipation",
+        "action-and-procedure",
+        "hand-object-interaction",
+        "reasoning-intent-planning"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "object-boxes"
+      ]
+    },
+    {
+      "name": "NS-iHOS / WISH",
+      "kind": "model",
+      "released": "2025-09",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2509.26004",
+      "paper": "https://arxiv.org/abs/2509.26004",
+      "scale": "Weakly supervised egocentric in-hand object segmentation from natural-language narrations, distilling narration cues into WISH for hand-object association and segmentation without narration at inference",
+      "tasks": [
+        "hand-object-interaction",
+        "detection-segmentation",
+        "video-language"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "narrations",
+        "object-masks"
+      ]
+    },
+    {
+      "name": "Exo2Ego / Ego-ExoClip",
+      "kind": "model",
+      "released": "2025-03",
+      "venue": "AAAI 2026",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2503.09143",
+      "paper": "https://arxiv.org/abs/2503.09143",
+      "scale": "Exocentric-to-egocentric MLLM transfer with Ego-ExoClip, a 1.1M synchronized ego-exo clip-text pretraining set from Ego-Exo4D, plus EgoIT instruction tuning",
+      "tasks": [
+        "video-language",
+        "ego-exo",
+        "cross-view",
+        "representation-learning"
+      ],
+      "task_families": [
+        "video-language",
+        "evaluation-and-tooling",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "text"
+      ]
+    },
+    {
+      "name": "EgoWorld",
+      "kind": "model",
+      "released": "2025-06",
+      "venue": "ICLR 2026",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://redorangeyellowy.github.io/EgoWorld/",
+      "paper": "https://arxiv.org/abs/2506.17896",
+      "scale": "Exocentric-to-egocentric generation framework that reconstructs egocentric views from point clouds, 3D hand poses, and text, evaluated on H2O, TACO, Assembly101, and Ego-Exo4D",
+      "tasks": [
+        "world-modeling",
+        "video-generation",
+        "cross-view",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "evaluation-and-tooling",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "point-clouds",
+        "hand-pose",
+        "text"
+      ]
+    },
+    {
+      "name": "Aria STDR",
+      "kind": "dataset",
+      "released": "2025-07",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2507.16330",
+      "paper": "https://arxiv.org/abs/2507.16330",
+      "scale": "Custom Project Aria smart-glasses scene-text detection and recognition dataset studying lighting, distance, resolution, and gaze-guided processing for egocentric OCR",
+      "tasks": [
+        "scene-text",
+        "ar-vr",
+        "wearable-sensing",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "video-language",
+        "ar-sensing-navigation",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "scene-text"
+      ]
+    },
+    {
+      "name": "RaycastGrasp",
+      "kind": "toolkit",
+      "released": "2025-10",
+      "venue": "ICIR 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2510.22113",
+      "paper": "https://arxiv.org/abs/2510.22113",
+      "scale": "Egocentric gaze-guided robotic manipulation interface using a wearable MR headset, augmented visual cues, pretrained vision models, and a robotic arm for object retrieval",
+      "tasks": [
+        "hri",
+        "robot-learning",
+        "gaze",
+        "interactive-assistance"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "ar-sensing-navigation",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "robot-actions"
+      ]
+    },
+    {
+      "name": "Fish2Mesh",
+      "kind": "model",
+      "released": "2025-03",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2503.06089",
+      "paper": "https://arxiv.org/abs/2503.06089",
+      "scale": "Fisheye-aware transformer for 3D human mesh recovery from egocentric vision, using ego-specific position embeddings and weak supervision from third-person cameras",
+      "tasks": [
+        "egocentric-3d-pose",
+        "pose-and-body",
+        "ar-vr"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "body-pose",
+        "human-motion"
+      ]
+    },
+    {
+      "name": "GazeLLM",
+      "kind": "model",
+      "released": "2025-03",
+      "venue": "Augmented Humans 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2504.00221",
+      "paper": "https://arxiv.org/abs/2504.00221",
+      "scale": "Gaze-focused multimodal LLM pipeline that reduces first-person video processing by routing high-resolution analysis to human attention regions while preserving task comprehension",
+      "tasks": [
+        "video-language",
+        "gaze",
+        "wearable-sensing",
+        "efficient-inference"
+      ],
+      "task_families": [
+        "video-language",
+        "ar-sensing-navigation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "audio",
+        "text"
+      ]
+    },
+    {
+      "name": "LookOut / Aria Navigation Dataset",
+      "kind": "dataset",
+      "released": "2025-08",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2508.14466",
+      "paper": "https://arxiv.org/abs/2508.14466",
+      "scale": "Project Aria real-world humanoid egocentric navigation dataset and framework for predicting future 6D head-pose trajectories, with 4 hours of navigation recordings",
+      "tasks": [
+        "ar-sensing-navigation",
+        "trajectory-prediction",
+        "robot-learning",
+        "pose-and-body"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "robotics-and-vla",
+        "pose-and-body"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "head-pose",
+        "camera-pose"
+      ]
+    },
+    {
+      "name": "ECHO",
+      "kind": "model",
+      "released": "2025-08",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2508.21556",
+      "paper": "https://arxiv.org/abs/2508.21556",
+      "scale": "Ego-centric HOI diffusion framework recovering human pose, object motion, and contact dynamics from sparse smart-glasses and smartwatch tracking signals",
+      "tasks": [
+        "hand-object-interaction",
+        "contact-understanding",
+        "pose-and-body",
+        "ar-vr"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "head-pose",
+        "wrist-trajectory",
+        "object-motion",
+        "contact"
+      ]
+    },
+    {
+      "name": "DMC3 Ego VideoQA",
+      "kind": "model",
+      "released": "2025-10",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2510.20285",
+      "paper": "https://arxiv.org/abs/2510.20285",
+      "scale": "Dual-modal counterfactual contrastive framework for egocentric VideoQA, constructing textual and visual counterfactual samples around events and hand-object interactions",
+      "tasks": [
+        "question-answering",
+        "video-qa",
+        "hand-object-interaction",
+        "contrastive-learning"
+      ],
+      "task_families": [
+        "question-answering",
+        "hand-object-interaction",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "qa",
+        "text"
+      ]
+    },
+    {
+      "name": "Uni-Hand",
+      "kind": "model",
+      "released": "2025-11",
+      "venue": "T-PAMI 2026",
+      "year": 2025,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/IRMVLab/UniHand",
+      "paper": "https://arxiv.org/abs/2511.12878",
+      "code": "https://github.com/IRMVLab/UniHand",
+      "scale": "Universal egocentric hand motion forecasting framework for multi-modal input, 2D/3D wrist and finger waypoints, head-hand motion synergy, and downstream affordance tasks",
+      "tasks": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "anticipation",
+        "robot-learning"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "action-and-procedure",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "text"
+      ]
+    },
+    {
+      "name": "SFHand / EgoHaFL",
+      "kind": "model",
+      "released": "2025-11",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2511.18127",
+      "paper": "https://arxiv.org/abs/2511.18127",
+      "scale": "Streaming language-guided 3D hand-forecasting framework plus EgoHaFL dataset with synchronized 3D hand poses and language instructions for embodied manipulation",
+      "tasks": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "robot-learning",
+        "streaming-assistant"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "robotics-and-vla",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "language-instructions"
+      ]
+    },
+    {
+      "name": "OpenTouch",
+      "kind": "dataset",
+      "released": "2025-12",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://opentouch-tactile.github.io/",
+      "paper": "https://arxiv.org/abs/2512.16842",
+      "scale": "In-the-wild egocentric full-hand tactile dataset with 5.1 hours of synchronized video-touch-pose data, 2,900 curated clips, text annotations, and retrieval/classification benchmarks",
+      "tasks": [
+        "contact-understanding",
+        "hand-object-interaction",
+        "retrieval",
+        "robot-learning"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "video-language",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "tactile",
+        "hand-pose",
+        "text"
+      ]
+    },
+    {
+      "name": "mmEgoHand",
+      "kind": "model",
+      "released": "2025-01",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2501.13805",
+      "paper": "https://arxiv.org/abs/2501.13805",
+      "scale": "Head-mounted egocentric hand pose and gesture-recognition system combining millimeter-wave radar and IMU to support VR interaction, skill digitization, and robotic teleoperation",
+      "tasks": [
+        "pose-and-body",
+        "gesture-recognition",
+        "ar-vr",
+        "robot-learning"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "detection-segmentation",
+        "ar-sensing-navigation",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "imu",
+        "radar",
+        "hand-pose"
+      ]
+    },
+    {
+      "name": "AiGet",
+      "kind": "toolkit",
+      "released": "2025-01",
+      "venue": "CHI 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2501.16240",
+      "paper": "https://arxiv.org/abs/2501.16240",
+      "scale": "Smart-glasses AI assistant for informal learning in everyday moments, using real-time gaze patterns, environmental context, user profiles, and LLM-generated knowledge prompts",
+      "tasks": [
+        "interactive-assistance",
+        "wearable-sensing",
+        "tool-using-agents"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "language"
+      ]
+    },
+    {
+      "name": "Ego4o",
+      "kind": "model",
+      "released": "2025-04",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2504.08449",
+      "paper": "https://arxiv.org/abs/2504.08449",
+      "scale": "Omni-modal egocentric human motion capture and understanding framework for VR/AR headsets, smart glasses, phones, and watches with egocentric images, sparse IMUs, and motion-language descriptions",
+      "tasks": [
+        "pose-and-body",
+        "motion-language",
+        "ar-vr",
+        "wearable-sensing"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "imu",
+        "text",
+        "human-motion"
+      ]
+    },
+    {
+      "name": "EgoExo-Gen",
+      "kind": "model",
+      "released": "2025-04",
+      "venue": "ICLR 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2504.11732",
+      "paper": "https://arxiv.org/abs/2504.11732",
+      "scale": "Cross-view egocentric video prediction from exocentric video, first ego frame, and text instructions, using predicted hand-object interaction masks and diffusion generation",
+      "tasks": [
+        "world-modeling",
+        "video-generation",
+        "ego-exo",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "evaluation-and-tooling",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "text",
+        "object-masks"
+      ]
+    },
+    {
+      "name": "Reading in the Wild",
+      "kind": "dataset",
+      "released": "2025-05",
+      "venue": "NeurIPS 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://www.projectaria.com/datasets/reading-in-the-wild/",
+      "paper": "https://arxiv.org/abs/2505.24848",
+      "scale": "Project Aria smart-glasses dataset for reading recognition with 100 hours of reading and non-reading video, egocentric RGB, eye gaze, head pose, and reading-type labels",
+      "tasks": [
+        "reading",
+        "wearable-sensing",
+        "ar-vr",
+        "activity-recognition"
+      ],
+      "task_families": [
+        "video-language",
+        "ar-sensing-navigation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "head-pose"
+      ]
+    },
+    {
+      "name": "Ego 6DoF Object Trajectories",
+      "kind": "model",
+      "released": "2025-06",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2506.03605",
+      "paper": "https://arxiv.org/abs/2506.03605",
+      "scale": "Framework extracting 6DoF manipulation trajectories from ego/exo video datasets and generating object manipulation trajectories from action descriptions in egocentric vision, evaluated with HOT3D",
+      "tasks": [
+        "hand-object-interaction",
+        "robot-learning",
+        "manipulation",
+        "3d-4d-understanding"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "robotics-and-vla",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "object-pose",
+        "text"
+      ]
+    },
+    {
+      "name": "HEADS-UP",
+      "kind": "dataset",
+      "released": "2024-09",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2409.20324",
+      "paper": "https://arxiv.org/abs/2409.20324",
+      "scale": "Head-mounted egocentric dataset for pedestrian trajectory prediction and collision-risk assessment in blind-assistance systems",
+      "tasks": [
+        "ar-sensing-navigation",
+        "trajectory-prediction",
+        "blind-assistance",
+        "assistive-systems"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "trajectories"
+      ]
+    },
+    {
+      "name": "Embodied VideoAgent",
+      "kind": "model",
+      "released": "2024-12",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://embodied-videoagent.github.io/",
+      "paper": "https://arxiv.org/abs/2501.00358",
+      "scale": "LLM/VLM agent that builds persistent 3D scene memory from egocentric video plus embodied depth and pose sensors for dynamic scene reasoning, planning, and robot manipulation",
+      "tasks": [
+        "memory-and-long-context",
+        "spatial-reasoning",
+        "embodied-ai",
+        "robot-learning"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "reasoning-intent-planning",
+        "foundation-and-representation",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "depth",
+        "pose",
+        "scene-graphs"
+      ]
+    },
+    {
+      "name": "SoundingActions",
+      "kind": "model",
+      "released": "2024-04",
+      "venue": "CVPR 2024",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://vision.cs.utexas.edu/projects/soundingactions",
+      "paper": "https://arxiv.org/abs/2404.05206",
+      "scale": "Self-supervised audio-language-vision embedding that learns how actions sound from narrated egocentric videos using contrastive consensus over Ego4D and EPIC-Sounds",
+      "tasks": [
+        "audio-visual-reasoning",
+        "action-and-procedure",
+        "representation-learning"
+      ],
+      "task_families": [
+        "audio-and-social",
+        "action-and-procedure",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "narrations"
+      ]
+    },
+    {
+      "name": "EgoChoir",
+      "kind": "model",
+      "released": "2024-05",
+      "venue": "NeurIPS 2024",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://yyvhang.github.io/EgoChoir/",
+      "paper": "https://arxiv.org/abs/2405.13659",
+      "scale": "Egocentric 3D human-object interaction region model inferring 3D contact and object affordance from egocentric video, head motion, and 3D object cues",
+      "tasks": [
+        "hand-object-interaction",
+        "contact-understanding",
+        "3d-4d-understanding",
+        "affordance"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "head-pose",
+        "object-meshes",
+        "contact"
+      ]
+    },
+    {
+      "name": "ObjectRelator",
+      "kind": "model",
+      "released": "2024-11",
+      "venue": "ICCV 2025 Highlight",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2411.19083",
+      "paper": "https://arxiv.org/abs/2411.19083",
+      "scale": "Cross-view ego-exo object relation and correspondence model with multimodal condition fusion and self-supervised cross-view object alignment",
+      "tasks": [
+        "ego-exo",
+        "cross-view",
+        "object-grounding",
+        "detection-segmentation"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "grounding-localization",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "object-masks",
+        "text"
+      ]
+    },
+    {
+      "name": "HUX",
+      "kind": "toolkit",
+      "released": "2024-07",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2407.19492",
+      "paper": "https://arxiv.org/abs/2407.19492",
+      "scale": "Heads Up eXperience always-on AI companion concept for smart glasses and XR headsets, integrating eye gaze, surrounding context, verbal context, memory storage, and task assistance",
+      "tasks": [
+        "interactive-assistance",
+        "memory-and-long-context",
+        "wearable-sensing",
+        "tool-using-agents"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "memory-and-long-context",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "speech",
+        "memory"
+      ]
+    },
+    {
+      "name": "EgoZAR",
+      "kind": "model",
+      "released": "2024-09",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://gabrielegoletto.github.io/EgoZAR/",
+      "paper": "https://arxiv.org/abs/2409.14205",
+      "scale": "Egocentric zone-aware action-recognition method that decouples activity-centric zone priors from scene-specific appearance to improve cross-domain transfer on EPIC-KITCHENS-100 and Argo1M",
+      "tasks": [
+        "action-recognition",
+        "domain-transfer",
+        "scene-understanding"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "scene-labels"
+      ]
+    },
+    {
+      "name": "TouchInsight",
+      "kind": "model",
+      "released": "2024-10",
+      "venue": "UIST 2024",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2410.05940",
+      "paper": "https://arxiv.org/abs/2410.05940",
+      "scale": "Real-time mixed-reality touch and text input pipeline that detects touch moment, finger, and touch location from egocentric hand tracking on arbitrary physical surfaces",
+      "tasks": [
+        "ar-vr",
+        "contact-understanding",
+        "hand-object-interaction",
+        "interactive-assistance"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "hand-object-interaction",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "contact"
+      ]
+    },
+    {
+      "name": "EffHandEgoNet",
+      "kind": "model",
+      "released": "2024-04",
+      "venue": "FG 2024",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2404.09308",
+      "paper": "https://arxiv.org/abs/2404.09308",
+      "scale": "Egocentric 2D hand-pose and action-recognition method for smart-glasses RGB input, including EffHandNet and EffHandEgoNet evaluated on H2O and FPHA",
+      "tasks": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "action-recognition"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "pose-and-body",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "object-boxes"
       ]
     }
   ]

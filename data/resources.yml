@@ -3950,3 +3950,441 @@ resources:
     release_note: "arXiv preprint (April 2026); watch for code, data, and hardware release."
     verified_at: "2026-06-20"
     citation_key: activeglasses_2026
+
+  # --- Catalog expansion (2026-06-20): 2024-2025 rescan additions ---
+
+  - name: INSIGHT
+    kind: model
+    released: "2025-08"
+    venue: "AAAI 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.01742
+    paper: https://arxiv.org/abs/2508.01742
+    scale: "Intention-guided cognitive reasoning framework for egocentric long-term action anticipation, using hand-object cues, verb-noun dependencies, and RL-style reasoning over Ego4D, EPIC-KITCHENS-55, and EGTEA Gaze+"
+    modalities: [egocentric-video, hand-pose, object-boxes]
+    tasks: [anticipation, action-and-procedure, hand-object-interaction, reasoning-intent-planning]
+    release_note: "AAAI 2026 arXiv paper; watch for code and checkpoint release."
+    verified_at: "2026-06-20"
+    citation_key: insight_2025
+
+  - name: NS-iHOS / WISH
+    kind: model
+    released: "2025-09"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2509.26004
+    paper: https://arxiv.org/abs/2509.26004
+    scale: "Weakly supervised egocentric in-hand object segmentation from natural-language narrations, distilling narration cues into WISH for hand-object association and segmentation without narration at inference"
+    modalities: [egocentric-video, narrations, object-masks]
+    tasks: [hand-object-interaction, detection-segmentation, video-language]
+    release_note: "arXiv preprint (September 2025); watch for code, labels, and benchmark assets."
+    verified_at: "2026-06-20"
+    citation_key: ns_ihos_wish_2025
+
+  - name: Exo2Ego / Ego-ExoClip
+    kind: model
+    released: "2025-03"
+    venue: "AAAI 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.09143
+    paper: https://arxiv.org/abs/2503.09143
+    scale: "Exocentric-to-egocentric MLLM transfer with Ego-ExoClip, a 1.1M synchronized ego-exo clip-text pretraining set from Ego-Exo4D, plus EgoIT instruction tuning"
+    modalities: [egocentric-video, exocentric-video, text]
+    tasks: [video-language, ego-exo, cross-view, representation-learning]
+    release_note: "AAAI 2026 arXiv paper; watch for dataset, code, and model release."
+    verified_at: "2026-06-20"
+    citation_key: exo2ego_ego_exoclip_2025
+
+  - name: EgoWorld
+    kind: model
+    released: "2025-06"
+    venue: "ICLR 2026"
+    year: 2025
+    status: watch
+    url: https://redorangeyellowy.github.io/EgoWorld/
+    paper: https://arxiv.org/abs/2506.17896
+    scale: "Exocentric-to-egocentric generation framework that reconstructs egocentric views from point clouds, 3D hand poses, and text, evaluated on H2O, TACO, Assembly101, and Ego-Exo4D"
+    modalities: [egocentric-video, exocentric-video, point-clouds, hand-pose, text]
+    tasks: [world-modeling, video-generation, cross-view, hand-object-interaction]
+    release_note: "ICLR 2026 arXiv paper with project page; watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: egoworld_2025
+
+  - name: Aria STDR
+    kind: dataset
+    released: "2025-07"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2507.16330
+    paper: https://arxiv.org/abs/2507.16330
+    scale: "Custom Project Aria smart-glasses scene-text detection and recognition dataset studying lighting, distance, resolution, and gaze-guided processing for egocentric OCR"
+    modalities: [egocentric-video, gaze, scene-text]
+    tasks: [scene-text, ar-vr, wearable-sensing, detection-segmentation]
+    release_note: "arXiv preprint (July 2025); watch for dataset release and license."
+    verified_at: "2026-06-20"
+    citation_key: aria_stdr_2025
+
+  - name: RaycastGrasp
+    kind: toolkit
+    released: "2025-10"
+    venue: "ICIR 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.22113
+    paper: https://arxiv.org/abs/2510.22113
+    scale: "Egocentric gaze-guided robotic manipulation interface using a wearable MR headset, augmented visual cues, pretrained vision models, and a robotic arm for object retrieval"
+    modalities: [egocentric-video, gaze, robot-actions]
+    tasks: [hri, robot-learning, gaze, interactive-assistance]
+    release_note: "ICIR 2025 arXiv paper; watch for implementation and hardware details."
+    verified_at: "2026-06-20"
+    citation_key: raycastgrasp_2025
+
+  - name: Fish2Mesh
+    kind: model
+    released: "2025-03"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.06089
+    paper: https://arxiv.org/abs/2503.06089
+    scale: "Fisheye-aware transformer for 3D human mesh recovery from egocentric vision, using ego-specific position embeddings and weak supervision from third-person cameras"
+    modalities: [egocentric-video, body-pose, human-motion]
+    tasks: [egocentric-3d-pose, pose-and-body, ar-vr]
+    release_note: "arXiv preprint (March 2025); watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: fish2mesh_2025
+
+  - name: GazeLLM
+    kind: model
+    released: "2025-03"
+    venue: "Augmented Humans 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2504.00221
+    paper: https://arxiv.org/abs/2504.00221
+    scale: "Gaze-focused multimodal LLM pipeline that reduces first-person video processing by routing high-resolution analysis to human attention regions while preserving task comprehension"
+    modalities: [egocentric-video, gaze, audio, text]
+    tasks: [video-language, gaze, wearable-sensing, efficient-inference]
+    release_note: "Augmented Humans 2025 arXiv paper; watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: gazellm_2025
+
+  - name: LookOut / Aria Navigation Dataset
+    kind: dataset
+    released: "2025-08"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.14466
+    paper: https://arxiv.org/abs/2508.14466
+    scale: "Project Aria real-world humanoid egocentric navigation dataset and framework for predicting future 6D head-pose trajectories, with 4 hours of navigation recordings"
+    modalities: [egocentric-video, head-pose, camera-pose]
+    tasks: [ar-sensing-navigation, trajectory-prediction, robot-learning, pose-and-body]
+    release_note: "arXiv preprint (August 2025); watch for AND dataset access and license."
+    verified_at: "2026-06-20"
+    citation_key: lookout_and_2025
+
+  - name: ECHO
+    kind: model
+    released: "2025-08"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2508.21556
+    paper: https://arxiv.org/abs/2508.21556
+    scale: "Ego-centric HOI diffusion framework recovering human pose, object motion, and contact dynamics from sparse smart-glasses and smartwatch tracking signals"
+    modalities: [egocentric-video, head-pose, wrist-trajectory, object-motion, contact]
+    tasks: [hand-object-interaction, contact-understanding, pose-and-body, ar-vr]
+    release_note: "arXiv preprint (August 2025); watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: echo_ego_hoi_2025
+
+  - name: DMC3 Ego VideoQA
+    kind: model
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.20285
+    paper: https://arxiv.org/abs/2510.20285
+    scale: "Dual-modal counterfactual contrastive framework for egocentric VideoQA, constructing textual and visual counterfactual samples around events and hand-object interactions"
+    modalities: [egocentric-video, qa, text]
+    tasks: [question-answering, video-qa, hand-object-interaction, contrastive-learning]
+    release_note: "arXiv preprint (October 2025); watch for code and checkpoints."
+    verified_at: "2026-06-20"
+    citation_key: dmc3_ego_videoqa_2025
+
+  - name: Uni-Hand
+    kind: model
+    released: "2025-11"
+    venue: "T-PAMI 2026"
+    year: 2025
+    status: open
+    url: https://github.com/IRMVLab/UniHand
+    paper: https://arxiv.org/abs/2511.12878
+    code: https://github.com/IRMVLab/UniHand
+    data: https://github.com/IRMVLab/UniHand
+    scale: "Universal egocentric hand motion forecasting framework for multi-modal input, 2D/3D wrist and finger waypoints, head-hand motion synergy, and downstream affordance tasks"
+    modalities: [egocentric-video, hand-pose, text]
+    tasks: [hand-object-interaction, pose-and-body, anticipation, robot-learning]
+    verified_at: "2026-06-20"
+    citation_key: uni_hand_2025
+
+  - name: SFHand / EgoHaFL
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.18127
+    paper: https://arxiv.org/abs/2511.18127
+    scale: "Streaming language-guided 3D hand-forecasting framework plus EgoHaFL dataset with synchronized 3D hand poses and language instructions for embodied manipulation"
+    modalities: [egocentric-video, hand-pose, language-instructions]
+    tasks: [hand-object-interaction, pose-and-body, robot-learning, streaming-assistant]
+    release_note: "arXiv preprint (November 2025); watch for EgoHaFL dataset and code release."
+    verified_at: "2026-06-20"
+    citation_key: sfhand_egohafl_2025
+
+  - name: OpenTouch
+    kind: dataset
+    released: "2025-12"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://opentouch-tactile.github.io/
+    paper: https://arxiv.org/abs/2512.16842
+    scale: "In-the-wild egocentric full-hand tactile dataset with 5.1 hours of synchronized video-touch-pose data, 2,900 curated clips, text annotations, and retrieval/classification benchmarks"
+    modalities: [egocentric-video, tactile, hand-pose, text]
+    tasks: [contact-understanding, hand-object-interaction, retrieval, robot-learning]
+    release_note: "arXiv preprint (December 2025) with project page; verify dataset download and license."
+    verified_at: "2026-06-20"
+    citation_key: opentouch_2025
+
+  - name: mmEgoHand
+    kind: model
+    released: "2025-01"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2501.13805
+    paper: https://arxiv.org/abs/2501.13805
+    scale: "Head-mounted egocentric hand pose and gesture-recognition system combining millimeter-wave radar and IMU to support VR interaction, skill digitization, and robotic teleoperation"
+    modalities: [imu, radar, hand-pose]
+    tasks: [pose-and-body, gesture-recognition, ar-vr, robot-learning]
+    release_note: "arXiv preprint (January 2025); watch for hardware, dataset, and code release."
+    verified_at: "2026-06-20"
+    citation_key: mmegohand_2025
+
+  - name: AiGet
+    kind: toolkit
+    released: "2025-01"
+    venue: "CHI 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2501.16240
+    paper: https://arxiv.org/abs/2501.16240
+    scale: "Smart-glasses AI assistant for informal learning in everyday moments, using real-time gaze patterns, environmental context, user profiles, and LLM-generated knowledge prompts"
+    modalities: [egocentric-video, gaze, language]
+    tasks: [interactive-assistance, wearable-sensing, tool-using-agents]
+    release_note: "CHI 2025 arXiv paper; watch for implementation artifacts."
+    verified_at: "2026-06-20"
+    citation_key: aiget_2025
+
+  - name: Ego4o
+    kind: model
+    released: "2025-04"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2504.08449
+    paper: https://arxiv.org/abs/2504.08449
+    scale: "Omni-modal egocentric human motion capture and understanding framework for VR/AR headsets, smart glasses, phones, and watches with egocentric images, sparse IMUs, and motion-language descriptions"
+    modalities: [egocentric-video, imu, text, human-motion]
+    tasks: [pose-and-body, motion-language, ar-vr, wearable-sensing]
+    release_note: "arXiv preprint (April 2025); watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: ego4o_2025
+
+  - name: EgoExo-Gen
+    kind: model
+    released: "2025-04"
+    venue: "ICLR 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2504.11732
+    paper: https://arxiv.org/abs/2504.11732
+    scale: "Cross-view egocentric video prediction from exocentric video, first ego frame, and text instructions, using predicted hand-object interaction masks and diffusion generation"
+    modalities: [egocentric-video, exocentric-video, text, object-masks]
+    tasks: [world-modeling, video-generation, ego-exo, hand-object-interaction]
+    release_note: "ICLR 2025 arXiv paper; watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: egoexo_gen_2025
+
+  - name: Reading in the Wild
+    kind: dataset
+    released: "2025-05"
+    venue: "NeurIPS 2025"
+    year: 2025
+    status: watch
+    url: https://www.projectaria.com/datasets/reading-in-the-wild/
+    paper: https://arxiv.org/abs/2505.24848
+    scale: "Project Aria smart-glasses dataset for reading recognition with 100 hours of reading and non-reading video, egocentric RGB, eye gaze, head pose, and reading-type labels"
+    modalities: [egocentric-video, gaze, head-pose]
+    tasks: [reading, wearable-sensing, ar-vr, activity-recognition]
+    release_note: "NeurIPS 2025 arXiv paper with Project Aria dataset page; verify access terms and license."
+    verified_at: "2026-06-20"
+    citation_key: reading_in_the_wild_2025
+
+  - name: Ego 6DoF Object Trajectories
+    kind: model
+    released: "2025-06"
+    venue: "CVPR 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.03605
+    paper: https://arxiv.org/abs/2506.03605
+    scale: "Framework extracting 6DoF manipulation trajectories from ego/exo video datasets and generating object manipulation trajectories from action descriptions in egocentric vision, evaluated with HOT3D"
+    modalities: [egocentric-video, exocentric-video, object-pose, text]
+    tasks: [hand-object-interaction, robot-learning, manipulation, 3d-4d-understanding]
+    release_note: "CVPR 2025 arXiv paper; watch for generated trajectories, code, and license."
+    verified_at: "2026-06-20"
+    citation_key: ego_6dof_object_trajectories_2025
+
+  - name: HEADS-UP
+    kind: dataset
+    released: "2024-09"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2409.20324
+    paper: https://arxiv.org/abs/2409.20324
+    scale: "Head-mounted egocentric dataset for pedestrian trajectory prediction and collision-risk assessment in blind-assistance systems"
+    modalities: [egocentric-video, trajectories]
+    tasks: [ar-sensing-navigation, trajectory-prediction, blind-assistance, assistive-systems]
+    release_note: "arXiv preprint (September 2024); watch for dataset release and license."
+    verified_at: "2026-06-20"
+    citation_key: heads_up_2024
+
+  - name: Embodied VideoAgent
+    kind: model
+    released: "2024-12"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://embodied-videoagent.github.io/
+    paper: https://arxiv.org/abs/2501.00358
+    scale: "LLM/VLM agent that builds persistent 3D scene memory from egocentric video plus embodied depth and pose sensors for dynamic scene reasoning, planning, and robot manipulation"
+    modalities: [egocentric-video, depth, pose, scene-graphs]
+    tasks: [memory-and-long-context, spatial-reasoning, embodied-ai, robot-learning]
+    release_note: "arXiv preprint submitted December 2024 with project page; paper says code and demo will be made public."
+    verified_at: "2026-06-20"
+    citation_key: embodied_videoagent_2024
+
+  - name: SoundingActions
+    kind: model
+    released: "2024-04"
+    venue: "CVPR 2024"
+    year: 2024
+    status: watch
+    url: https://vision.cs.utexas.edu/projects/soundingactions
+    paper: https://arxiv.org/abs/2404.05206
+    scale: "Self-supervised audio-language-vision embedding that learns how actions sound from narrated egocentric videos using contrastive consensus over Ego4D and EPIC-Sounds"
+    modalities: [egocentric-video, audio, narrations]
+    tasks: [audio-visual-reasoning, action-and-procedure, representation-learning]
+    release_note: "CVPR 2024 arXiv paper with project page; watch for code/model release."
+    verified_at: "2026-06-20"
+    citation_key: soundingactions_2024
+
+  - name: EgoChoir
+    kind: model
+    released: "2024-05"
+    venue: "NeurIPS 2024"
+    year: 2024
+    status: watch
+    url: https://yyvhang.github.io/EgoChoir/
+    paper: https://arxiv.org/abs/2405.13659
+    scale: "Egocentric 3D human-object interaction region model inferring 3D contact and object affordance from egocentric video, head motion, and 3D object cues"
+    modalities: [egocentric-video, head-pose, object-meshes, contact]
+    tasks: [hand-object-interaction, contact-understanding, 3d-4d-understanding, affordance]
+    release_note: "NeurIPS 2024 arXiv paper with project page; watch for code and data release."
+    verified_at: "2026-06-20"
+    citation_key: egochoir_2024
+
+  - name: ObjectRelator
+    kind: model
+    released: "2024-11"
+    venue: "ICCV 2025 Highlight"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2411.19083
+    paper: https://arxiv.org/abs/2411.19083
+    scale: "Cross-view ego-exo object relation and correspondence model with multimodal condition fusion and self-supervised cross-view object alignment"
+    modalities: [egocentric-video, exocentric-video, object-masks, text]
+    tasks: [ego-exo, cross-view, object-grounding, detection-segmentation]
+    release_note: "ICCV 2025 Highlight arXiv paper; watch for code and benchmark artifacts."
+    verified_at: "2026-06-20"
+    citation_key: objectrelator_2024
+
+  - name: HUX
+    kind: toolkit
+    released: "2024-07"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2407.19492
+    paper: https://arxiv.org/abs/2407.19492
+    scale: "Heads Up eXperience always-on AI companion concept for smart glasses and XR headsets, integrating eye gaze, surrounding context, verbal context, memory storage, and task assistance"
+    modalities: [egocentric-video, gaze, speech, memory]
+    tasks: [interactive-assistance, memory-and-long-context, wearable-sensing, tool-using-agents]
+    release_note: "arXiv preprint (July 2024); watch for implementation artifacts."
+    verified_at: "2026-06-20"
+    citation_key: hux_2024
+
+  - name: EgoZAR
+    kind: model
+    released: "2024-09"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://gabrielegoletto.github.io/EgoZAR/
+    paper: https://arxiv.org/abs/2409.14205
+    scale: "Egocentric zone-aware action-recognition method that decouples activity-centric zone priors from scene-specific appearance to improve cross-domain transfer on EPIC-KITCHENS-100 and Argo1M"
+    modalities: [egocentric-video, scene-labels]
+    tasks: [action-recognition, domain-transfer, scene-understanding]
+    release_note: "arXiv preprint (September 2024) with project page; watch for code release."
+    verified_at: "2026-06-20"
+    citation_key: egozar_2024
+
+  - name: TouchInsight
+    kind: model
+    released: "2024-10"
+    venue: "UIST 2024"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2410.05940
+    paper: https://arxiv.org/abs/2410.05940
+    scale: "Real-time mixed-reality touch and text input pipeline that detects touch moment, finger, and touch location from egocentric hand tracking on arbitrary physical surfaces"
+    modalities: [egocentric-video, hand-pose, contact]
+    tasks: [ar-vr, contact-understanding, hand-object-interaction, interactive-assistance]
+    release_note: "UIST 2024 arXiv paper; watch for implementation release."
+    verified_at: "2026-06-20"
+    citation_key: touchinsight_2024
+
+  - name: EffHandEgoNet
+    kind: model
+    released: "2024-04"
+    venue: "FG 2024"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2404.09308
+    paper: https://arxiv.org/abs/2404.09308
+    scale: "Egocentric 2D hand-pose and action-recognition method for smart-glasses RGB input, including EffHandNet and EffHandEgoNet evaluated on H2O and FPHA"
+    modalities: [egocentric-video, hand-pose, object-boxes]
+    tasks: [hand-object-interaction, pose-and-body, action-recognition]
+    release_note: "FG 2024 arXiv paper; watch for code and model release."
+    verified_at: "2026-06-20"
+    citation_key: effhandegonet_2024

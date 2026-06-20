@@ -42,7 +42,7 @@ task_families:
     label: Foundation data and representation learning
     aliases: [foundation-video, embodied-ai, representation-learning, multimodal,
       multimodal-representation, multimodal-baselines, cross-modal-fusion,
-      standardized-pretraining, depth-text-pretraining, 3d-aware-vlp,
+      standardized-pretraining, contrastive-learning, depth-text-pretraining, 3d-aware-vlp,
       video-language-pretraining, video-language-representation, sample-data,
       task-suite, task-suite-prototyping, task-design, loader-testing, sample-evaluation,
       cosmos, qwen3-omni, ego4d, ego4d-transfer, xperience-10m-loading]
@@ -181,7 +181,7 @@ modality_families:
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
       animal-egocentric-video, first-person-360-video, aria-images, synthetic-egocentric,
-      synthetic-composited-masks, synthetic-rendering, synthetic-stereo, novel-view-video]
+      synthetic-composited-masks, synthetic-rendering, synthetic-stereo, scene-text, novel-view-video]
 
   depth:
     label: Depth and RGB-D
@@ -190,7 +190,7 @@ modality_families:
   audio-language:
     label: Audio and language
     aliases: [audio, speech, text, language, narrations, descriptions, dialogue,
-      language-instructions, hierarchical-language, verbal-commands, qa, location-labels]
+      language-instructions, hierarchical-language, verbal-commands, qa, memory, location-labels]
 
   gaze-motion:
     label: Gaze, IMU, and motion
@@ -217,7 +217,7 @@ modality_families:
 
   device-and-labels:
     label: Device formats and labels
-    aliases: [aria, meta-aria, hololens2, quest3, vrs, mps, rlds, robot-actions,
+    aliases: [aria, meta-aria, hololens2, quest3, radar, vrs, mps, rlds, robot-actions,
       robot-camera-video, wrist-camera-video, action-labels, action-primitives,
       annotations, multimodal-annotations, segmentation, instance-labels, scene-labels,
       poi-labels, self-annotations, timeline, tooling, surveys, hdf5-annotations,
