@@ -73,6 +73,11 @@ unless missing.empty?
   exit 1
 end
 
+if remote_readme.include?("config_name: papers")
+  warn "HF README should keep awesome-egocentric-papers.csv as a raw sheet, not a dataset config"
+  exit 1
+end
+
 local_papers_path = File.join(package_dir, "awesome-egocentric-papers.csv")
 unless File.file?(local_papers_path)
   warn "HF package is missing awesome-egocentric-papers.csv"

@@ -25,8 +25,6 @@ configs:
   - config_name: catalog
     data_files: awesome-egocentric-atlas.csv
     default: true
-  - config_name: papers
-    data_files: awesome-egocentric-papers.csv
 ---
 
 ## Use this dataset
@@ -38,7 +36,11 @@ ds = load_dataset("cy0307/awesome-egocentric-atlas", split="train")
 print(len(ds), "resources")
 print(ds[0])
 
-papers = load_dataset("cy0307/awesome-egocentric-atlas", "papers", split="train")
+papers = load_dataset(
+    "csv",
+    data_files="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas/resolve/main/awesome-egocentric-papers.csv",
+    split="train",
+)
 print(len(papers), "paper-linked resources")
 ```
 
@@ -61,6 +63,6 @@ Each row is one catalogued resource. Columns:
 | `tasks` | Task families (`; `-separated) |
 | `modalities` | Modalities (`; `-separated) |
 
-The `papers` config is a paper-focused sheet containing only resources with a paper link. A richer nested-JSON version (with lanes and summary stats) is in [`site-data.json`](site-data.json). This dataset card and catalog are mirrored from the [GitHub repository](https://github.com/ChaoYue0307/awesome-egocentric-atlas) and the [interactive site](https://chaoyue0307.github.io/awesome-egocentric-atlas/); see the full README below for the curated tables and figures.
+The paper-focused sheet is also mirrored as [`awesome-egocentric-papers.csv`](awesome-egocentric-papers.csv), containing only resources with a paper link. A richer nested-JSON version (with lanes and summary stats) is in [`site-data.json`](site-data.json). This dataset card and catalog are mirrored from the [GitHub repository](https://github.com/ChaoYue0307/awesome-egocentric-atlas) and the [interactive site](https://chaoyue0307.github.io/awesome-egocentric-atlas/); see the full README below for the curated tables and figures.
 
 ---
