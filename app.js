@@ -581,8 +581,10 @@ function renderRows() {
   els.empty.hidden = resources.length !== 0;
   els.rows.replaceChildren();
 
-  resources.slice(0, limit).forEach((resource) => {
+  resources.slice(0, limit).forEach((resource, index) => {
     const row = document.createElement("tr");
+    row.className = "motion-row";
+    row.style.setProperty("--row-delay", `${Math.min(index * 8, 120)}ms`);
     const tasks = (resource.tasks || []).slice(0, 3);
     const modalities = (resource.modalities || []).slice(0, 3).map(titleize).join(" / ");
     const sourceLine = [resource.venue, modalities, resource.license].filter(Boolean).join(" / ");
@@ -866,6 +868,39 @@ function bindFilters() {
   });
 }
 
+function setupMotion() {
+  if (reduceMotion) return;
+  const selectors = [
+    ".hero-copy",
+    ".hero-media",
+    ".visual-band",
+    ".section-heading",
+    ".navigator-panel",
+    ".milestone-era",
+    ".lane-card",
+    ".split-section",
+    ".maintenance-grid a"
+  ];
+  const targets = Array.from(document.querySelectorAll(selectors.join(",")));
+  targets.forEach((target, index) => {
+    target.classList.add("reveal");
+    target.style.setProperty("--reveal-delay", `${Math.min((index % 6) * 45, 180)}ms`);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+
+  targets.forEach((target) => observer.observe(target));
+  requestAnimationFrame(() => {
+    document.documentElement.classList.add("motion-ready");
+  });
+}
+
 async function init() {
   applyStaticI18n();
   buildLanguageSwitcher();
@@ -882,6 +917,7 @@ async function init() {
   applyFiltersToForm();
   bindFilters();
   renderRows();
+  setupMotion();
 }
 
 init().catch((error) => {
