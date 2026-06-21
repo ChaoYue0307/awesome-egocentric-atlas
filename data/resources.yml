@@ -53,7 +53,7 @@ resources:
   - name: AssemblyHands
     kind: dataset
     released: "2023-04"
-    venue: "arXiv"
+    venue: "CVPR 2023"
     year: 2023
     status: benchmark
     url: https://arxiv.org/abs/2304.12301
@@ -65,7 +65,7 @@ resources:
   - name: HARMONIC
     kind: dataset
     released: "2018-07"
-    venue: "arXiv"
+    venue: "IJRR 2022"
     year: 2018
     status: watch
     url: https://arxiv.org/abs/1807.11154
@@ -91,7 +91,7 @@ resources:
   - name: MMG-Ego4D
     kind: benchmark
     released: "2023-05"
-    venue: "arXiv"
+    venue: "CVPR 2023"
     year: 2023
     status: benchmark
     url: https://arxiv.org/abs/2305.07214
@@ -118,7 +118,7 @@ resources:
   - name: EPIC-Aff / Multi-label Affordance Mapping
     kind: benchmark
     released: "2023-09"
-    venue: "arXiv"
+    venue: "ICCV 2023"
     year: 2023
     status: benchmark
     url: https://arxiv.org/abs/2309.02120
@@ -131,7 +131,7 @@ resources:
   - name: VQLoC
     kind: model
     released: "2023-06"
-    venue: "arXiv"
+    venue: "NeurIPS 2023"
     year: 2023
     status: open
     url: https://hwjiang1510.github.io/VQLoC/
@@ -182,7 +182,7 @@ resources:
   - name: SpotEM
     kind: model
     released: "2023-06"
-    venue: "arXiv"
+    venue: "ICML 2023"
     year: 2023
     status: watch
     url: https://vision.cs.utexas.edu/projects/spotem
@@ -196,7 +196,7 @@ resources:
   - name: CliMer Temporal Grounding
     kind: model
     released: "2023-10"
-    venue: "arXiv"
+    venue: "BMVC 2023"
     year: 2023
     status: open
     url: https://github.com/keflanagan/CliMer
@@ -209,7 +209,7 @@ resources:
   - name: Object-Centric LTA
     kind: model
     released: "2023-10"
-    venue: "arXiv"
+    venue: "WACV 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2311.00180
@@ -223,7 +223,7 @@ resources:
   - name: OWL
     kind: model
     released: "2022-02"
-    venue: "arXiv"
+    venue: "CVPRW 2023"
     year: 2022
     status: watch
     url: https://arxiv.org/abs/2202.04947
@@ -237,7 +237,7 @@ resources:
   - name: Hand-Object Interaction Reasoning
     kind: model
     released: "2022-01"
-    venue: "arXiv"
+    venue: "AVSS 2022"
     year: 2022
     status: watch
     url: https://arxiv.org/abs/2201.04906
@@ -251,7 +251,7 @@ resources:
   - name: Human Hands as Probes
     kind: model
     released: "2021-12"
-    venue: "arXiv"
+    venue: "CVPR 2022"
     year: 2021
     status: watch
     url: https://arxiv.org/abs/2112.09120
@@ -265,7 +265,7 @@ resources:
   - name: NeuralDiff
     kind: model
     released: "2021-10"
-    venue: "arXiv"
+    venue: "3DV 2021"
     year: 2021
     status: watch
     url: https://arxiv.org/abs/2110.09936
@@ -279,7 +279,7 @@ resources:
   - name: Head-Motion SSL
     kind: model
     released: "2021-10"
-    venue: "arXiv"
+    venue: "ICCV 2021 EPIC Workshop"
     year: 2021
     status: watch
     url: https://arxiv.org/abs/2110.01680
@@ -292,7 +292,7 @@ resources:
   - name: H+O
     kind: model
     released: "2019-04"
-    venue: "arXiv"
+    venue: "CVPR 2019 Oral"
     year: 2019
     status: watch
     url: https://arxiv.org/abs/1904.05349
@@ -305,7 +305,7 @@ resources:
   - name: You2Me
     kind: model
     released: "2019-04"
-    venue: "arXiv"
+    venue: "CVPR 2020"
     year: 2019
     status: watch
     url: https://arxiv.org/abs/1904.09882
@@ -318,7 +318,7 @@ resources:
   - name: Ego-Surfing
     kind: model
     released: "2016-06"
-    venue: "arXiv"
+    venue: "IEEE TPAMI"
     year: 2016
     status: watch
     url: https://arxiv.org/abs/1606.04637
@@ -331,7 +331,7 @@ resources:
   - name: Left/Right Hand Segmentation
     kind: model
     released: "2016-07"
-    venue: "arXiv"
+    venue: "CVIU 2016"
     year: 2016
     status: watch
     url: https://arxiv.org/abs/1607.06264
@@ -344,7 +344,7 @@ resources:
   - name: Unsupervised Important Objects
     kind: model
     released: "2016-11"
-    venue: "arXiv"
+    venue: "ICCV 2017"
     year: 2016
     status: watch
     url: https://arxiv.org/abs/1611.05335
@@ -357,7 +357,7 @@ resources:
   - name: EGO-TOPO Environment Affordances
     kind: model
     released: "2020-01"
-    venue: "arXiv"
+    venue: "CVPR 2020"
     year: 2020
     status: watch
     url: https://arxiv.org/abs/2001.04583
@@ -371,7 +371,7 @@ resources:
   - name: In the Eye of the Beholder
     kind: model
     released: "2020-05"
-    venue: "arXiv"
+    venue: "IEEE TPAMI"
     year: 2020
     status: watch
     url: https://arxiv.org/abs/2006.00626
@@ -385,7 +385,7 @@ resources:
   - name: Hands in Egocentric Vision Survey
     kind: survey
     released: "2019-12"
-    venue: "arXiv"
+    venue: "IEEE TPAMI"
     year: 2019
     status: open
     url: https://arxiv.org/abs/1912.10867
@@ -504,7 +504,7 @@ resources:
   - name: EgoViT Object SSL
     kind: model
     released: "2026-03"
-    venue: "arXiv"
+    venue: "CVPR 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2603.13912
@@ -556,7 +556,7 @@ resources:
   - name: FunRec
     kind: model
     released: "2026-04"
-    venue: "arXiv"
+    venue: "CVPR 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2604.05621
@@ -582,7 +582,7 @@ resources:
   - name: Let Me Show You / RfV
     kind: model
     released: "2025-11"
-    venue: "arXiv"
+    venue: "IROS 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2511.05199
@@ -621,7 +621,7 @@ resources:
   - name: EMMA
     kind: model
     released: "2025-09"
-    venue: "arXiv"
+    venue: "IEEE RA-L 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2509.04443
@@ -634,7 +634,7 @@ resources:
   - name: TASTE-Rob
     kind: dataset
     released: "2025-03"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2503.11423
@@ -647,7 +647,7 @@ resources:
   - name: Kaiwu
     kind: dataset
     released: "2025-03"
-    venue: "arXiv"
+    venue: "IEEE RA-L 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2503.05231
@@ -673,7 +673,7 @@ resources:
   - name: EgoSpeak
     kind: model
     released: "2025-02"
-    venue: "arXiv"
+    venue: "NAACL 2025 Findings"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2502.14892
@@ -686,7 +686,7 @@ resources:
   - name: PRVQL
     kind: model
     released: "2025-02"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2502.07707
@@ -712,7 +712,7 @@ resources:
   - name: R+X
     kind: model
     released: "2024-07"
-    venue: "arXiv"
+    venue: "ICRA 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2407.12957
@@ -725,7 +725,7 @@ resources:
   - name: Missing Modality Token / MMT
     kind: model
     released: "2024-01"
-    venue: "arXiv"
+    venue: "CVPRW 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2401.11470
@@ -761,7 +761,7 @@ resources:
     scale: "Humanoid loco-manipulation from human demonstrations, extending UMI-style collection with egocentric head/wrist observations and head-hand trajectories"
     modalities: [egocentric-video, wrist-camera-video, human-demonstrations, robot-actions, humanoid-motion]
     tasks: [humanoid-control, manipulation, imitation-learning, active-perception, vla]
-    verified_at: "2026-06-21"
+    verified_at: "2026-06-22"
     release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: HumanoidArena
     kind: benchmark
@@ -781,15 +781,18 @@ resources:
     released: "2026-06"
     venue: "arXiv"
     year: 2026
-    status: watch
+    status: open
     url: https://github.com/HanjiangHu/VLESA
     paper: https://arxiv.org/abs/2606.03954
     scale: "Egocentric-video safety-assistance benchmark with goal-conditioned safety annotations for human activity monitoring"
     modalities: [egocentric-video, annotations, text]
     tasks: [safety, activity-recognition, video-language, situated-assistance]
     code: https://github.com/HanjiangHu/VLESA
+    license: mit
+    license_url: https://github.com/HanjiangHu/VLESA
+    access: Public code is available; EgoSafety construction depends on Ego4D/EASG-derived assets and the prebuilt dataset is still pending.
     verified_at: "2026-06-21"
-    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    release_note: "Live source checked 2026-06-22; public code is available under MIT, while the prebuilt EgoSafety dataset is still pending release."
   - name: OVO-S-Bench
     kind: benchmark
     released: "2026-06"
@@ -884,7 +887,7 @@ resources:
   - name: Map-Mono-Ego
     kind: model
     released: "2026-05"
-    venue: "arXiv"
+    venue: "ICIP 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2605.20889
@@ -949,7 +952,7 @@ resources:
   - name: DP-DeGauss
     kind: model
     released: "2026-04"
-    venue: "arXiv"
+    venue: "ICASSP 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2604.07986
@@ -1593,7 +1596,7 @@ resources:
   - name: Ego2HandsPose
     kind: dataset
     released: "2022-06"
-    venue: "arXiv"
+    venue: "WACV 2024"
     year: 2022
     status: open
     url: https://arxiv.org/abs/2206.04927
@@ -1676,7 +1679,7 @@ resources:
   - name: EgoGTA / EgoPW-Scene
     kind: dataset
     released: "2022-12"
-    venue: "arXiv"
+    venue: "CVPR 2023"
     year: 2022
     status: partial
     url: https://arxiv.org/abs/2212.11684
@@ -1732,7 +1735,7 @@ resources:
     license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
     kind: dataset
     released: "2023-06"
-    venue: "arXiv"
+    venue: "ICCV 2023"
     year: 2023
     status: open
     url: https://www.projectaria.com/datasets/adt/
@@ -1804,7 +1807,7 @@ resources:
   - name: Ego-EXTRA
     kind: dataset
     released: "2025-12"
-    venue: "arXiv"
+    venue: "WACV 2026"
     year: 2025
     status: open
     url: https://fpv-iplab.github.io/Ego-EXTRA/
@@ -1836,7 +1839,7 @@ resources:
   - name: X-LeBench
     kind: benchmark
     released: "2025-01"
-    venue: "arXiv"
+    venue: "EMNLP 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2501.06835
@@ -2465,7 +2468,7 @@ resources:
   - name: HiERO
     kind: model
     released: "2025-05"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2505.12911
@@ -2477,7 +2480,7 @@ resources:
   - name: EgoAgent
     kind: model
     released: "2025-02"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2502.05857
@@ -2489,7 +2492,7 @@ resources:
   - name: StillFast
     kind: model
     released: "2023-04"
-    venue: "arXiv"
+    venue: "CVPRW 2023"
     year: 2023
     status: open
     url: https://iplab.dmi.unict.it/stillfast/
@@ -3192,7 +3195,7 @@ resources:
   - name: EgoCom / Ego audio-visual correspondence
     kind: dataset
     released: "2023-07"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2023
     status: open
     url: http://vision.cs.utexas.edu/projects/ego_av_corr/
@@ -3235,6 +3238,7 @@ resources:
     kind: model
     released: "2025-07"
     venue: "arXiv"
+    year: 2025
     status: watch
     url: https://rchalyang.github.io/EgoVLA/
     paper: https://arxiv.org/abs/2507.12440
@@ -3278,7 +3282,7 @@ resources:
   - name: UnrealEgo2 / UnrealEgo-RW
     kind: dataset
     released: "2024-01"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2401.00889
@@ -3379,7 +3383,7 @@ resources:
   - name: EgoCross
     kind: dataset
     released: "2025-08"
-    venue: "arXiv"
+    venue: "AAAI 2026"
     year: 2025
     status: watch
     url: https://github.com/MyUniverse0726/EgoCross
@@ -3419,7 +3423,7 @@ resources:
   - name: Visual Experience Dataset / VEDB
     kind: dataset
     released: "2024-02"
-    venue: "arXiv"
+    venue: "Journal of Vision"
     year: 2024
     status: partial
     url: http://tamaraberg.com/visualexperience/
@@ -3477,7 +3481,7 @@ resources:
   - name: LSC-ADL
     kind: dataset
     released: "2025-04"
-    venue: "arXiv"
+    venue: "ACM MM 2025"
     year: 2025
     status: open
     url: https://arxiv.org/abs/2504.02060
@@ -3541,7 +3545,7 @@ resources:
   - name: EgoEnv
     kind: model
     released: "2022-07"
-    venue: "arXiv"
+    venue: "NeurIPS 2023 Oral"
     year: 2022
     status: open
     url: https://vision.cs.utexas.edu/projects/ego-env/
@@ -3573,7 +3577,7 @@ resources:
   - name: EgoPoseFormer
     kind: model
     released: "2024-03"
-    venue: "arXiv"
+    venue: "ECCV 2024"
     year: 2024
     status: open
     url: https://github.com/ChenhongyiYang/egoposeformer
@@ -3584,7 +3588,7 @@ resources:
   - name: EgoSTARK
     kind: model
     released: "2023-01"
-    venue: "arXiv"
+    venue: "NeurIPS 2023"
     year: 2023
     status: open
     url: https://arxiv.org/abs/2301.03213
@@ -3605,7 +3609,7 @@ resources:
   - name: AV-CONV
     kind: model
     released: "2023-12"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2023
     status: open
     url: https://vjwq.github.io/AV-CONV/
@@ -3668,7 +3672,7 @@ resources:
   - name: EgoObjects API
     kind: toolkit
     released: "2023-09"
-    venue: "arXiv"
+    venue: "ICCV 2023"
     year: 2023
     status: open
     url: https://github.com/facebookresearch/EgoObjects
@@ -3680,6 +3684,7 @@ resources:
     kind: toolkit
     released: "2024-06"
     venue: "project page"
+    year: 2024
     status: open
     url: https://facebookresearch.github.io/hot3d/
     scale: "Loading HOT3D hand/object/camera pose annotations and models."
@@ -3871,7 +3876,7 @@ resources:
   - name: Egocentric HOI Detection
     kind: benchmark
     released: "2025-06"
-    venue: "arXiv"
+    venue: "Expert Systems with Applications"
     year: 2025
     status: open
     url: https://arxiv.org/abs/2506.14189
@@ -4175,7 +4180,7 @@ resources:
   - name: AlanaVLM
     kind: model
     released: "2024-06"
-    venue: "arXiv"
+    venue: "EMNLP 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2406.13807
@@ -4359,7 +4364,7 @@ resources:
     kind: dataset
     year: 2025
     released: "2025-03"
-    venue: "arXiv"
+    venue: "Healthcare Technology Letters"
     status: open
     url: https://github.com/Fujiry0/EgoSurgery
     paper: https://arxiv.org/abs/2503.18755
@@ -4437,7 +4442,7 @@ resources:
     kind: benchmark
     year: 2025
     released: "2025-08"
-    venue: "arXiv"
+    venue: "EMNLP 2025"
     status: watch
     url: https://arxiv.org/abs/2508.12687
     paper: https://arxiv.org/abs/2508.12687
@@ -5164,7 +5169,7 @@ resources:
   - name: Edge Episodic Memory QA
     kind: model
     released: "2026-02"
-    venue: "arXiv"
+    venue: "VISAPP 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2602.22455
@@ -5374,7 +5379,7 @@ resources:
   - name: 3D-Aware Ego Instance Tracking
     kind: model
     released: "2024-08"
-    venue: "arXiv"
+    venue: "ACCV 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2408.09860
@@ -5840,7 +5845,7 @@ resources:
   - name: STAformer++ Affordance-Aware Anticipation
     kind: model
     released: "2026-02"
-    venue: "arXiv"
+    venue: "IEEE TPAMI"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2602.14837
@@ -5885,7 +5890,7 @@ resources:
   - name: Gazeify Then Voiceify
     kind: model
     released: "2026-01"
-    venue: "arXiv"
+    venue: "IUI 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2601.19281
@@ -6052,7 +6057,7 @@ resources:
   - name: Fish2Mesh
     kind: model
     released: "2025-03"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2503.06089
@@ -6082,7 +6087,7 @@ resources:
   - name: LookOut / Aria Navigation Dataset
     kind: dataset
     released: "2025-08"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2508.14466
@@ -6112,7 +6117,7 @@ resources:
   - name: DMC3 Ego VideoQA
     kind: model
     released: "2025-10"
-    venue: "arXiv"
+    venue: "ACM MM 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2510.20285
@@ -6203,7 +6208,7 @@ resources:
   - name: Ego4o
     kind: model
     released: "2025-04"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2504.08449
@@ -6278,7 +6283,7 @@ resources:
   - name: Embodied VideoAgent
     kind: model
     released: "2024-12"
-    venue: "arXiv"
+    venue: "ICCV 2025"
     year: 2024
     status: watch
     url: https://embodied-videoagent.github.io/
@@ -6353,7 +6358,7 @@ resources:
   - name: EgoZAR
     kind: model
     released: "2024-09"
-    venue: "arXiv"
+    venue: "Pattern Recognition Letters"
     year: 2024
     status: watch
     url: https://gabrielegoletto.github.io/EgoZAR/
@@ -6400,7 +6405,7 @@ resources:
   - name: Untrimmed Action Anticipation
     kind: model
     released: "2022-02"
-    venue: "arXiv"
+    venue: "ICIAP 2022"
     year: 2022
     status: watch
     url: https://arxiv.org/abs/2202.04132
@@ -6415,7 +6420,7 @@ resources:
   - name: EgoGAN
     kind: model
     released: "2022-03"
-    venue: "arXiv"
+    venue: "ECCV 2022"
     year: 2022
     status: watch
     url: https://arxiv.org/abs/2203.11305
@@ -6547,7 +6552,7 @@ resources:
   - name: Ego-Only
     kind: model
     released: "2023-01"
-    venue: "arXiv"
+    venue: "ICCV 2023"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2301.01380
@@ -6651,7 +6656,7 @@ resources:
   - name: AV-EgoGaze Anticipation
     kind: model
     released: "2023-05"
-    venue: "arXiv"
+    venue: "ECCV 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2305.03907
@@ -6681,7 +6686,7 @@ resources:
   - name: Encode-Store-Retrieve
     kind: model
     released: "2023-08"
-    venue: "arXiv"
+    venue: "ISMAR 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2308.05822
@@ -6785,7 +6790,7 @@ resources:
   - name: EGOFALLS
     kind: dataset
     released: "2023-09"
-    venue: "arXiv"
+    venue: "ICPR 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2309.04579
@@ -6830,7 +6835,7 @@ resources:
   - name: Egocentric Pedestrian Trajectory Benchmark
     kind: benchmark
     released: "2023-10"
-    venue: "arXiv"
+    venue: "ICRA 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2310.10424
@@ -6890,7 +6895,7 @@ resources:
   - name: Egocentric Whole-Body MoCap
     kind: model
     released: "2023-11"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2311.16495
@@ -6919,7 +6924,7 @@ resources:
   - name: PALM
     kind: model
     released: "2023-11"
-    venue: "arXiv"
+    venue: "ECCV 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2311.17944
@@ -6949,7 +6954,7 @@ resources:
   - name: Action Scene Graphs
     kind: model
     released: "2023-12"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2312.03391
@@ -6964,7 +6969,7 @@ resources:
   - name: LEGO
     kind: model
     released: "2023-12"
-    venue: "arXiv"
+    venue: "ECCV 2024"
     year: 2023
     status: watch
     url: https://arxiv.org/abs/2312.03849
@@ -6994,7 +6999,7 @@ resources:
   - name: EgoPlan-Bench
     kind: benchmark
     released: "2023-12"
-    venue: "arXiv"
+    venue: "IJCV"
     year: 2023
     status: open
     url: https://github.com/ChenYi99/EgoPlan
@@ -7189,7 +7194,7 @@ resources:
   - name: Egocentric 4D Human Body Capture
     kind: model
     released: "2020-11"
-    venue: "arXiv"
+    venue: "3DV 2021"
     year: 2020
     status: watch
     url: https://arxiv.org/abs/2011.13341
@@ -7204,7 +7209,7 @@ resources:
   - name: RHOI
     kind: model
     released: "2020-12"
-    venue: "arXiv"
+    venue: "ICCV 2021"
     year: 2020
     status: open
     url: https://people.eecs.berkeley.edu/~zhecao/rhoi/
@@ -7278,7 +7283,7 @@ resources:
   - name: Egocentric Pose from Human Vision Span
     kind: model
     released: "2021-04"
-    venue: "arXiv"
+    venue: "ICCV 2021"
     year: 2021
     status: watch
     url: https://arxiv.org/abs/2104.05167
@@ -7397,7 +7402,7 @@ resources:
   - name: AssistSR
     kind: benchmark
     released: "2021-11"
-    venue: "arXiv"
+    venue: "EMNLP 2021"
     year: 2021
     status: watch
     url: https://arxiv.org/abs/2111.15050
@@ -7550,7 +7555,7 @@ resources:
   - name: Ego-Engagement
     kind: dataset
     released: "2016-04"
-    venue: "arXiv"
+    venue: "ECCV 2016"
     year: 2016
     status: watch
     url: https://arxiv.org/abs/1604.00906
@@ -7628,7 +7633,7 @@ resources:
   - name: EgoPack / Backpack Full of Skills
     kind: model
     released: "2024-03"
-    venue: "arXiv"
+    venue: "CVPR 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2403.03037
@@ -7643,7 +7648,7 @@ resources:
   - name: EMAG
     kind: model
     released: "2024-05"
-    venue: "arXiv"
+    venue: "ECCV 2024 HANDS Workshop"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2405.20030
@@ -7658,7 +7663,7 @@ resources:
   - name: Object-Aware Egocentric Online Action Detection
     kind: model
     released: "2024-06"
-    venue: "arXiv"
+    venue: "CVPR 2024 EgoVis Workshop"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2406.01079
@@ -7673,7 +7678,7 @@ resources:
   - name: AFF-ttention / STAformer
     kind: model
     released: "2024-06"
-    venue: "arXiv"
+    venue: "ECCV 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2406.01194
@@ -7718,7 +7723,7 @@ resources:
   - name: Ego-VPA
     kind: model
     released: "2024-07"
-    venue: "arXiv"
+    venue: "WACV 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2407.19520
@@ -7733,7 +7738,7 @@ resources:
   - name: Ego3DT
     kind: model
     released: "2024-10"
-    venue: "arXiv"
+    venue: "ACM MM 2024"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2410.08530
@@ -7748,7 +7753,7 @@ resources:
   - name: EgoMimic
     kind: model
     released: "2024-10"
-    venue: "arXiv"
+    venue: "ICRA 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2410.24221
@@ -7763,7 +7768,7 @@ resources:
   - name: ESOM / OVQ2D
     kind: model
     released: "2024-11"
-    venue: "arXiv"
+    venue: "WACV 2026"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2411.16934
@@ -7778,7 +7783,7 @@ resources:
   - name: EgoCast
     kind: model
     released: "2024-12"
-    venue: "arXiv"
+    venue: "WACV 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2412.02903
@@ -7793,7 +7798,7 @@ resources:
   - name: GEM Ego-Vision World Model
     kind: model
     released: "2024-12"
-    venue: "arXiv"
+    venue: "CVPR 2025"
     year: 2024
     status: watch
     url: https://arxiv.org/abs/2412.11198
@@ -7868,7 +7873,7 @@ resources:
   - name: EgoPrivacy
     kind: benchmark
     released: "2025-06"
-    venue: "arXiv"
+    venue: "ICML 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2506.12258
@@ -7883,7 +7888,7 @@ resources:
   - name: ProMemAssist
     kind: model
     released: "2025-07"
-    venue: "arXiv"
+    venue: "UIST 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2507.21378
@@ -7898,7 +7903,7 @@ resources:
   - name: EgoPrompt
     kind: model
     released: "2025-08"
-    venue: "arXiv"
+    venue: "ACM MM 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2508.03266
@@ -7958,7 +7963,7 @@ resources:
   - name: egoEMOTION
     kind: dataset
     released: "2025-10"
-    venue: "arXiv"
+    venue: "NeurIPS 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2510.22129
@@ -7973,7 +7978,7 @@ resources:
   - name: WAGIBench
     kind: benchmark
     released: "2025-10"
-    venue: "arXiv"
+    venue: "NeurIPS 2025 Spotlight"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2510.22443
@@ -7988,7 +7993,7 @@ resources:
   - name: Eyes on Target
     kind: model
     released: "2025-11"
-    venue: "arXiv"
+    venue: "RAAI 2025"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2511.01237
@@ -8018,7 +8023,7 @@ resources:
   - name: Mistake Attribution / MATT
     kind: benchmark
     released: "2025-11"
-    venue: "arXiv"
+    venue: "CVPR 2026"
     year: 2025
     status: watch
     url: https://arxiv.org/abs/2511.20525
@@ -8093,7 +8098,7 @@ resources:
   - name: AirGlove
     kind: benchmark
     released: "2026-02"
-    venue: "arXiv"
+    venue: "ICASSP 2026"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2602.05159
@@ -8153,7 +8158,7 @@ resources:
   - name: Pandora Articulated 3D Scene Graphs
     kind: model
     released: "2026-03"
-    venue: "arXiv"
+    venue: "BMVC 2025"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2603.28732
@@ -8228,7 +8233,7 @@ resources:
   - name: Egocentric Nursing Competency Assessment
     kind: model
     released: "2026-05"
-    venue: "arXiv"
+    venue: "CVPR 2026 Workshop"
     year: 2026
     status: watch
     url: https://arxiv.org/abs/2605.20233
