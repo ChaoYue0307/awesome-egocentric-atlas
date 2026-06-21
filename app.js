@@ -627,7 +627,8 @@ function renderMilestones() {
     section.setAttribute("aria-label", `${era.range} ${era.title}`);
     const cards = era.items.map((item) => {
       const kind = titleize(item.kind);
-      const label = `${item.name}, ${item.date}, ${kind}. ${item.note || ""}`.trim();
+      const origin = item.origin ? `From ${item.origin}.` : "";
+      const label = `${item.name}, ${item.date}, ${kind}. ${origin} ${item.note || ""}`.trim();
       return `
         <a class="milestone-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
           <span class="milestone-card-media">
@@ -638,6 +639,8 @@ function renderMilestones() {
             <span class="chip milestone-card-kind">${escapeHtml(kind)}</span>
           </span>
           <strong class="milestone-card-title">${escapeHtml(item.name)}</strong>
+          ${item.origin ? `<span class="milestone-card-origin">${escapeHtml(item.origin)}</span>` : ""}
+          ${item.note ? `<span class="milestone-card-note">${escapeHtml(item.note)}</span>` : ""}
         </a>
       `;
     }).join("");

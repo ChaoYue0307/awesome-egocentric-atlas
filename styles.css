@@ -798,8 +798,8 @@ tbody tr:hover {
 
 .milestone-card {
   display: grid;
-  grid-template-rows: auto auto 1fr;
-  min-height: 322px;
+  grid-template-rows: auto auto auto auto 1fr;
+  min-height: 430px;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -864,7 +864,7 @@ tbody tr:hover {
 
 .milestone-card-title {
   display: -webkit-box;
-  margin: 11px 14px 18px;
+  margin: 11px 14px 0;
   min-height: 44px;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -873,6 +873,29 @@ tbody tr:hover {
   font-size: 18px;
   font-weight: 830;
   line-height: 1.24;
+  overflow-wrap: break-word;
+}
+
+.milestone-card-origin {
+  display: block;
+  margin: 7px 14px 0;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 820;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.milestone-card-note {
+  display: -webkit-box;
+  margin: 8px 14px 18px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 640;
+  line-height: 1.45;
   overflow-wrap: break-word;
 }
 
