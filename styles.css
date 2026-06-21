@@ -1025,27 +1025,6 @@ tbody tr:hover {
   font-weight: 820;
 }
 
-.lang-bar {
-  color: #64748b;
-  font-size: 0.85rem;
-  line-height: 2;
-}
-
-.lang-bar a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.lang-bar a:hover {
-  text-decoration: underline;
-}
-
-.lang-bar a.active {
-  color: #0f3b45;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 .footer-meta {
   display: flex;
   flex-wrap: wrap;

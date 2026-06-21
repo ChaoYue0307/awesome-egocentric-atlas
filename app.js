@@ -33,8 +33,7 @@ const I18N = {
     "maintain.contributing": "Contributing guide", "maintain.schema": "Resource schema", "maintain.status": "Status policy", "maintain.workflow": "Maintenance workflow",
     "summary.total": "Total catalog", "summary.inscope": "In scope", "summary.adjacent": "Adjacent", "summary.open": "Open today", "summary.watch": "Watchlist", "summary.audit": "Last audit",
     "footer.tagline": "MIT licensed and free to use. Contributions welcome.",
-    "error.load": "Catalog failed to load", updated: "Updated {date}",
-    "bar.help": "Help translate", "bar.landing": "Landing page", "bar.hf": "Hugging Face mirror"
+    "error.load": "Catalog failed to load", updated: "Updated {date}"
   },
   zh: {
     skip: "跳到目录",
@@ -60,8 +59,7 @@ const I18N = {
     "maintain.contributing": "贡献指南", "maintain.schema": "资源结构", "maintain.status": "状态政策", "maintain.workflow": "维护流程",
     "summary.total": "目录总数", "summary.inscope": "范围内", "summary.adjacent": "相邻", "summary.open": "今日可用", "summary.watch": "关注列表", "summary.audit": "上次审核",
     "footer.tagline": "MIT 许可，免费使用，欢迎贡献。",
-    "error.load": "目录加载失败", updated: "更新于 {date}",
-    "bar.help": "帮助翻译", "bar.landing": "项目主页", "bar.hf": "Hugging Face 镜像"
+    "error.load": "目录加载失败", updated: "更新于 {date}"
   },
   es: {
     skip: "Saltar al catálogo",
@@ -87,8 +85,7 @@ const I18N = {
     "maintain.contributing": "Guía de contribución", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Flujo de mantenimiento",
     "summary.total": "Catálogo total", "summary.inscope": "En alcance", "summary.adjacent": "Adyacentes", "summary.open": "Abiertos hoy", "summary.watch": "Lista de seguimiento", "summary.audit": "Última revisión",
     "footer.tagline": "Licencia MIT y de uso libre. Contribuciones bienvenidas.",
-    "error.load": "No se pudo cargar el catálogo", updated: "Actualizado {date}",
-    "bar.help": "Ayuda a traducir", "bar.landing": "Página principal", "bar.hf": "Espejo en Hugging Face"
+    "error.load": "No se pudo cargar el catálogo", updated: "Actualizado {date}"
   },
   fr: {
     skip: "Aller au catalogue",
@@ -114,8 +111,7 @@ const I18N = {
     "maintain.contributing": "Guide de contribution", "maintain.schema": "Schéma des ressources", "maintain.status": "Politique des statuts", "maintain.workflow": "Flux de maintenance",
     "summary.total": "Catalogue total", "summary.inscope": "Dans le périmètre", "summary.adjacent": "Adjacentes", "summary.open": "Ouvertes aujourd'hui", "summary.watch": "Liste de veille", "summary.audit": "Dernière révision",
     "footer.tagline": "Licence MIT, libre d'utilisation. Contributions bienvenues.",
-    "error.load": "Échec du chargement du catalogue", updated: "Mis à jour le {date}",
-    "bar.help": "Aider à traduire", "bar.landing": "Page d'accueil", "bar.hf": "Miroir Hugging Face"
+    "error.load": "Échec du chargement du catalogue", updated: "Mis à jour le {date}"
   },
   de: {
     skip: "Zum Katalog springen",
@@ -141,8 +137,7 @@ const I18N = {
     "maintain.contributing": "Beitragsleitfaden", "maintain.schema": "Ressourcenschema", "maintain.status": "Status-Richtlinie", "maintain.workflow": "Wartungsablauf",
     "summary.total": "Gesamtkatalog", "summary.inscope": "Im Fokus", "summary.adjacent": "Angrenzend", "summary.open": "Heute offen", "summary.watch": "Beobachtungsliste", "summary.audit": "Letzte Prüfung",
     "footer.tagline": "MIT-Lizenz, frei nutzbar. Beiträge willkommen.",
-    "error.load": "Katalog konnte nicht geladen werden", updated: "Aktualisiert am {date}",
-    "bar.help": "Beim Übersetzen helfen", "bar.landing": "Startseite", "bar.hf": "Hugging-Face-Spiegel"
+    "error.load": "Katalog konnte nicht geladen werden", updated: "Aktualisiert am {date}"
   },
   ja: {
     skip: "カタログへスキップ",
@@ -168,8 +163,7 @@ const I18N = {
     "maintain.contributing": "貢献ガイド", "maintain.schema": "資源スキーマ", "maintain.status": "状態ポリシー", "maintain.workflow": "メンテナンス手順",
     "summary.total": "カタログ総数", "summary.inscope": "対象内", "summary.adjacent": "隣接", "summary.open": "本日公開", "summary.watch": "ウォッチリスト", "summary.audit": "最終確認",
     "footer.tagline": "MIT ライセンス、自由に利用可能。貢献歓迎。",
-    "error.load": "カタログの読み込みに失敗しました", updated: "更新日 {date}",
-    "bar.help": "翻訳に協力", "bar.landing": "ランディングページ", "bar.hf": "Hugging Face ミラー"
+    "error.load": "カタログの読み込みに失敗しました", updated: "更新日 {date}"
   },
   ko: {
     skip: "카탈로그로 건너뛰기",
@@ -195,8 +189,7 @@ const I18N = {
     "maintain.contributing": "기여 가이드", "maintain.schema": "자원 스키마", "maintain.status": "상태 정책", "maintain.workflow": "유지보수 절차",
     "summary.total": "전체 카탈로그", "summary.inscope": "범위 내", "summary.adjacent": "인접", "summary.open": "오늘 공개", "summary.watch": "관심 목록", "summary.audit": "최근 점검",
     "footer.tagline": "MIT 라이선스, 자유롭게 사용하세요. 기여 환영.",
-    "error.load": "카탈로그를 불러오지 못했습니다", updated: "업데이트 {date}",
-    "bar.help": "번역 돕기", "bar.landing": "랜딩 페이지", "bar.hf": "Hugging Face 미러"
+    "error.load": "카탈로그를 불러오지 못했습니다", updated: "업데이트 {date}"
   },
   pt: {
     skip: "Ir para o catálogo",
@@ -222,8 +215,7 @@ const I18N = {
     "maintain.contributing": "Guia de contribuição", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Fluxo de manutenção",
     "summary.total": "Catálogo total", "summary.inscope": "No escopo", "summary.adjacent": "Adjacentes", "summary.open": "Abertos hoje", "summary.watch": "Lista de observação", "summary.audit": "Última auditoria",
     "footer.tagline": "Licença MIT e de uso livre. Contribuições bem-vindas.",
-    "error.load": "Falha ao carregar o catálogo", updated: "Atualizado em {date}",
-    "bar.help": "Ajude a traduzir", "bar.landing": "Página inicial", "bar.hf": "Espelho Hugging Face"
+    "error.load": "Falha ao carregar o catálogo", updated: "Atualizado em {date}"
   }
 };
 
@@ -307,7 +299,6 @@ const els = {
   lanes: document.querySelector("#lane-grid"),
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
-  langBar: document.querySelector("#lang-bar"),
   languageSwitcher: document.querySelector("#language-switcher"),
   languageMenu: document.querySelector("#language-menu"),
   languageCurrent: document.querySelector("#language-current"),
@@ -363,12 +354,11 @@ function langHref(code) {
   return `${location.pathname}${qs ? `?${qs}` : ""}${location.hash}`;
 }
 
-function createLanguageLink(code, label, className = "") {
+function createLanguageLink(code, label) {
   const link = document.createElement("a");
   link.href = langHref(code);
   link.textContent = label;
   link.setAttribute("lang", code);
-  if (className) link.className = className;
   if (code === state.lang) {
     link.classList.add("active");
     link.setAttribute("aria-current", "true");
@@ -381,7 +371,7 @@ function createLanguageLink(code, label, className = "") {
   return link;
 }
 
-function buildLangBar() {
+function buildLanguageSwitcher() {
   const activeLang = LANGS.find(([code]) => code === state.lang) || LANGS[0];
 
   if (els.languageCurrent) {
@@ -395,27 +385,6 @@ function buildLangBar() {
       els.languageMenu.appendChild(createLanguageLink(code, label));
     });
   }
-
-  if (!els.langBar) return;
-  els.langBar.replaceChildren();
-  const frag = document.createDocumentFragment();
-  LANGS.forEach(([code, label], index) => {
-    if (index > 0) frag.appendChild(document.createTextNode(" · "));
-    frag.appendChild(createLanguageLink(code, label, "lang-link"));
-  });
-  const extra = [
-    [t("bar.help"), "https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/CONTRIBUTING.md"],
-    [t("bar.landing"), "https://github.com/ChaoYue0307/awesome-egocentric-atlas"],
-    [t("bar.hf"), "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"]
-  ];
-  extra.forEach(([label, href]) => {
-    frag.appendChild(document.createTextNode(" · "));
-    const link = document.createElement("a");
-    link.href = href;
-    link.textContent = label;
-    frag.appendChild(link);
-  });
-  els.langBar.appendChild(frag);
 }
 
 function bindLanguageSwitcher() {
@@ -438,7 +407,7 @@ function setLang(lang) {
   localStorage.setItem("aea-lang", lang);
   syncUrl();
   applyStaticI18n();
-  buildLangBar();
+  buildLanguageSwitcher();
   if (state.data) {
     renderStats();
     renderSummary();
@@ -681,7 +650,7 @@ function bindFilters() {
 
 async function init() {
   applyStaticI18n();
-  buildLangBar();
+  buildLanguageSwitcher();
   bindLanguageSwitcher();
   const response = await fetch("./site-data.json");
   state.data = await response.json();
