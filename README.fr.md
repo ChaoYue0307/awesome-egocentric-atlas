@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Une carte sélective de l'IA égocentrique : les jeux de données, benchmarks, modèles et outils derrière la vision égocentrique, l'IA incarnée et la robotique, l'apprentissage vision-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.</strong></p>
 
-<p align="center"><strong>456</strong> ressources égocentriques — 125 jeux de données · 81 benchmarks · 226 modèles · 23 outils</p>
+<p align="center"><strong>476</strong> ressources égocentriques — 127 jeux de données · 90 benchmarks · 235 modèles · 23 outils</p>
 
 ## Contenu
 
