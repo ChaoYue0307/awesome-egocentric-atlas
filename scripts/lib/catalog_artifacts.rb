@@ -816,7 +816,7 @@ module CatalogArtifacts
         ].max,
         180
       ].min
-      card_height = image_height + 190
+      card_height = image_height + 156
       card_rows = (count.to_f / columns).ceil
       card_stack_height = (card_rows * card_height) + (card_row_gap * [card_rows - 1, 0].max)
       row_height = card_stack_height + 124
@@ -936,10 +936,7 @@ module CatalogArtifacts
         date_width = [date.length * 7.3 + 22, 66].max.round
         kind_width = [[kind.length * 6.9 + 24, 58].max.round, card_width - date_width - 25].min
         max_name_chars = [[(card_width / 8.6).floor, 18].max, 32].min
-        max_note_chars = [[(card_width / 6.8).floor, 26].max, 44].min
         name_lines = wrap_text(item.fetch("name"), max_chars: max_name_chars, max_lines: 2)
-        note_y = image_height + 73 + (name_lines.length * 20) + 10
-        note_lines = wrap_text(item.fetch("note"), max_chars: max_note_chars, max_lines: 3)
 
         <<~CARD
           <a href="#{html_escape(item.fetch("url"))}" target="_blank">
@@ -947,12 +944,11 @@ module CatalogArtifacts
               <rect class="card-bg" width="#{card_width}" height="#{card_height}" rx="14"/>
               <rect class="image-frame" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" rx="10"/>
               <image href="#{html_escape(image)}" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" preserveAspectRatio="xMidYMid meet"/>
-              <rect class="date-pill" x="12" y="#{image_height + 24}" width="#{date_width}" height="27" rx="13.5"/>
-              <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 42}" text-anchor="middle">#{html_escape(date)}</text>
-              <rect class="kind-pill" x="#{21 + date_width}" y="#{image_height + 24}" width="#{kind_width}" height="27" rx="13.5" fill="#{kind_color}"/>
-              <text class="pill-text" x="#{21 + date_width + (kind_width / 2.0)}" y="#{image_height + 42}" text-anchor="middle">#{html_escape(kind)}</text>
-              #{svg_text_block(name_lines, x: 12, y: image_height + 73, class_name: "card-title", line_height: 20)}
-              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 16)}
+              <rect class="date-pill" x="12" y="#{image_height + 32}" width="#{date_width}" height="27" rx="13.5"/>
+              <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 50}" text-anchor="middle">#{html_escape(date)}</text>
+              <rect class="kind-pill" x="#{21 + date_width}" y="#{image_height + 32}" width="#{kind_width}" height="27" rx="13.5" fill="#{kind_color}"/>
+              <text class="pill-text" x="#{21 + date_width + (kind_width / 2.0)}" y="#{image_height + 50}" text-anchor="middle">#{html_escape(kind)}</text>
+              #{svg_text_block(name_lines, x: 12, y: image_height + 88, class_name: "card-title", line_height: 23)}
             </g>
           </a>
         CARD
@@ -1025,8 +1021,7 @@ module CatalogArtifacts
             .date-pill { fill: #0b8f98; }
             .kind-pill { fill: #ef9f24; }
             .pill-text { font: 800 10.8px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
-            .card-title { font: 820 16.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
-            .card-note { font: 540 12.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
+            .card-title { font: 840 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
             .rule { stroke: #c8dde2; stroke-width: 1.4; }
           </style>
         </defs>

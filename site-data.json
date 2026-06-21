@@ -249,7 +249,7 @@
   ],
   "milestone_layout": {
     "width": 1600,
-    "height": 3173,
+    "height": 2969,
     "cells": [
       {
         "name": "CMU-MMAC",
@@ -259,7 +259,7 @@
         "x": 330.0,
         "y": 266,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
@@ -269,7 +269,7 @@
         "x": 639.0,
         "y": 266,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "ADL Dataset",
@@ -279,7 +279,7 @@
         "x": 948.0,
         "y": 266,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "EgoHands",
@@ -289,7 +289,7 @@
         "x": 1257.0,
         "y": 266,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "EPIC-KITCHENS-100",
@@ -297,9 +297,9 @@
         "kind": "dataset",
         "url": "https://epic-kitchens.github.io/",
         "x": 330.0,
-        "y": 781,
+        "y": 747,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "Ego4D",
@@ -307,9 +307,9 @@
         "kind": "dataset",
         "url": "https://ego4d-data.org/",
         "x": 639.0,
-        "y": 781,
+        "y": 747,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "HOI4D",
@@ -317,9 +317,9 @@
         "kind": "dataset",
         "url": "https://hoi4d.github.io/",
         "x": 948.0,
-        "y": 781,
+        "y": 747,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "EgoVLP",
@@ -327,9 +327,9 @@
         "kind": "model",
         "url": "https://github.com/showlab/EgoVLP",
         "x": 1257.0,
-        "y": 781,
+        "y": 747,
         "width": 291,
-        "height": 365
+        "height": 331
       },
       {
         "name": "EgoSchema",
@@ -337,9 +337,9 @@
         "kind": "benchmark",
         "url": "http://egoschema.github.io/",
         "x": 471.0,
-        "y": 1296,
+        "y": 1228,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "Project Aria Datasets",
@@ -347,9 +347,9 @@
         "kind": "collection",
         "url": "https://www.projectaria.com/datasets/",
         "x": 789.0,
-        "y": 1296,
+        "y": 1228,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "Ego-Exo4D",
@@ -357,9 +357,9 @@
         "kind": "dataset",
         "url": "https://ego-exo4d-data.org/",
         "x": 1107.0,
-        "y": 1296,
+        "y": 1228,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "Universal Manipulation Interface / UMI",
@@ -367,9 +367,9 @@
         "kind": "toolkit",
         "url": "https://umi-gripper.github.io/",
         "x": 630.0,
-        "y": 1686,
+        "y": 1584,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "HOT3D",
@@ -377,9 +377,9 @@
         "kind": "dataset",
         "url": "https://facebookresearch.github.io/hot3d/",
         "x": 948.0,
-        "y": 1686,
+        "y": 1584,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "EgoLife",
@@ -387,9 +387,9 @@
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2503.03803",
         "x": 630.0,
-        "y": 2206,
+        "y": 2070,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "EgoVLA",
@@ -397,9 +397,9 @@
         "kind": "model",
         "url": "https://rchalyang.github.io/EgoVLA/",
         "x": 948.0,
-        "y": 2206,
+        "y": 2070,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "DreamDojo",
@@ -407,9 +407,9 @@
         "kind": "model",
         "url": "https://github.com/NVIDIA/DreamDojo",
         "x": 471.0,
-        "y": 2726,
+        "y": 2556,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "EgoScale",
@@ -417,9 +417,9 @@
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2602.16710",
         "x": 789.0,
-        "y": 2726,
+        "y": 2556,
         "width": 300,
-        "height": 370
+        "height": 336
       },
       {
         "name": "Xperience-10M",
@@ -427,9 +427,9 @@
         "kind": "dataset",
         "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
         "x": 1107.0,
-        "y": 2726,
+        "y": 2556,
         "width": 300,
-        "height": 370
+        "height": 336
       }
     ]
   },

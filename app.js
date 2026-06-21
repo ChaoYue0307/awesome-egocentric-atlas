@@ -579,7 +579,6 @@ function renderMilestones() {
             <span class="chip milestone-card-kind">${escapeHtml(kind)}</span>
           </span>
           <strong class="milestone-card-title">${escapeHtml(item.name)}</strong>
-          <span class="milestone-card-note">${escapeHtml(item.note || "")}</span>
         </a>
       `;
     }).join("");

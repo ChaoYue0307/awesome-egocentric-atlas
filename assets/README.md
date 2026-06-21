@@ -34,7 +34,7 @@ The README and GitHub Pages site embed high-resolution PNG exports of the SVG fi
 - `awesome-egocentric-atlas-map.png` — `3840 x 2190`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
 - `awesome-egocentric-timeline.png` — `3840 x 1680`
-- `awesome-egocentric-milestones.png` — `4800 x 9519`
+- `awesome-egocentric-milestones.png` — `4800 x 8907`
 - `awesome-egocentric-task-matrix.png` — `3840 x 2220`
 - `awesome-egocentric-access-funnel.png` — `3840 x 1560`
 
@@ -52,7 +52,7 @@ Visual system (shared across the figures):
 
 - `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026 (H1)`), drawn as a bar chart with a trend line through the bar tops to make the rise explicit. Bar heights come from the egocentric `year` counts in `data/resources.yml`; the latest era is amber and counts only the first half of 2026 (January to June), labelled accordingly.
 - `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
-- `awesome-egocentric-milestones.svg` — a work-specific milestone poster generated from the `milestone`, `milestone_note`, and `milestone_image` fields in `data/resources.yml`. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images and are rendered uncropped.
+- `awesome-egocentric-milestones.svg` — a work-specific milestone poster generated from the `milestone` and `milestone_image` fields in `data/resources.yml`. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images and are rendered uncropped.
 
 When the catalog changes materially, refresh these figures so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry, labels, and milestone cards).
 
