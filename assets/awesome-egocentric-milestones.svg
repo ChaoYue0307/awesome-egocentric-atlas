@@ -120,7 +120,7 @@
     <rect class="kind-pill" x="94" y="207" width="72" height="27" rx="13.5" fill="#0b8f98"/>
     <text class="pill-text" x="130.0" y="225" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="259" text-anchor="start">ADL Dataset</text>
-    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: ADL benchmark team</text>
+    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: UC Irvine</text>
     <text class="card-note" x="12" y="314" text-anchor="start">Classic unscripted daily-life egocentric</text>
 <text class="card-note" x="12" y="331" text-anchor="start">activity corpus with object and hand</text>
 <text class="card-note" x="12" y="348" text-anchor="start">annotations; the reference point for</text>
@@ -167,7 +167,7 @@
     <rect class="kind-pill" x="94" y="207" width="72" height="27" rx="13.5" fill="#0b8f98"/>
     <text class="pill-text" x="130.0" y="225" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="259" text-anchor="start">EPIC-KITCHENS-100</text>
-    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: EPIC-KITCHENS team</text>
+    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: Univ. Bristol / Univ. Catania</text>
     <text class="card-note" x="12" y="314" text-anchor="start">The defining large-scale egocentric</text>
 <text class="card-note" x="12" y="331" text-anchor="start">action-recognition benchmark and annual</text>
 <text class="card-note" x="12" y="348" text-anchor="start">challenge suite.</text>
@@ -201,7 +201,7 @@
     <rect class="kind-pill" x="94" y="207" width="72" height="27" rx="13.5" fill="#0b8f98"/>
     <text class="pill-text" x="130.0" y="225" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="259" text-anchor="start">HOI4D</text>
-    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: HOI4D team</text>
+    <text class="card-origin" x="12" y="290" text-anchor="start">Origin: Tsinghua / Peking / Qi Zhi</text>
     <text class="card-note" x="12" y="314" text-anchor="start">Large RGB-D 4D hand-object interaction</text>
 <text class="card-note" x="12" y="331" text-anchor="start">dataset that moved egocentric HOI toward</text>
 <text class="card-note" x="12" y="348" text-anchor="start">geometry, pose, and temporal scene</text>
@@ -248,7 +248,7 @@
     <rect class="kind-pill" x="94" y="212" width="86" height="27" rx="13.5" fill="#5b6b73"/>
     <text class="pill-text" x="137.0" y="230" text-anchor="middle">benchmark</text>
     <text class="card-title" x="12" y="264" text-anchor="start">EgoSchema</text>
-    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: EgoSchema team</text>
+    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: UC Berkeley</text>
     <text class="card-note" x="12" y="319" text-anchor="start">The benchmark that exposed how far models</text>
 <text class="card-note" x="12" y="336" text-anchor="start">are from long-form egocentric video</text>
 <text class="card-note" x="12" y="353" text-anchor="start">reasoning.</text>
@@ -347,7 +347,7 @@
     <rect class="kind-pill" x="94" y="212" width="72" height="27" rx="13.5" fill="#0b8f98"/>
     <text class="pill-text" x="130.0" y="230" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="264" text-anchor="start">EgoLife</text>
-    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: EgoLife team</text>
+    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: S-Lab, NTU / LMMs-Lab</text>
     <text class="card-note" x="12" y="319" text-anchor="start">Week-long Meta Aria daily-life corpus that</text>
 <text class="card-note" x="12" y="336" text-anchor="start">pushed egocentric research toward</text>
 <text class="card-note" x="12" y="353" text-anchor="start">personalized memory and life-assistant</text>
@@ -365,7 +365,7 @@
     <rect class="kind-pill" x="94" y="212" width="59" height="27" rx="13.5" fill="#ef9f24"/>
     <text class="pill-text" x="123.5" y="230" text-anchor="middle">model</text>
     <text class="card-title" x="12" y="264" text-anchor="start">EgoVLA</text>
-    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: EgoVLA team</text>
+    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: UCSD / UIUC / MIT / NVIDIA</text>
     <text class="card-note" x="12" y="319" text-anchor="start">Showed vision-language-action policies can</text>
 <text class="card-note" x="12" y="336" text-anchor="start">be learned from egocentric human video and</text>
 <text class="card-note" x="12" y="353" text-anchor="start">transferred to robots.</text>
@@ -411,7 +411,7 @@
     <rect class="kind-pill" x="94" y="212" width="72" height="27" rx="13.5" fill="#0b8f98"/>
     <text class="pill-text" x="130.0" y="230" text-anchor="middle">dataset</text>
     <text class="card-title" x="12" y="264" text-anchor="start">EgoScale</text>
-    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: EgoScale team</text>
+    <text class="card-origin" x="12" y="295" text-anchor="start">Origin: NVIDIA / UC Berkeley / UMD</text>
     <text class="card-note" x="12" y="319" text-anchor="start">Revealed the log-linear data-scaling law</text>
 <text class="card-note" x="12" y="336" text-anchor="start">for egocentric human-video VLA</text>
 <text class="card-note" x="12" y="353" text-anchor="start">pretraining.</text>

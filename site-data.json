@@ -126,7 +126,7 @@
       "url": "https://www.csc.kth.se/cvap/actions/",
       "date": "2012-06",
       "note": "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition.",
-      "origin": "ADL benchmark team",
+      "origin": "UC Irvine",
       "image": "assets/milestones/adl-dataset.png"
     },
     {
@@ -144,7 +144,7 @@
       "url": "https://epic-kitchens.github.io/",
       "date": "2020-06",
       "note": "The defining large-scale egocentric action-recognition benchmark and annual challenge suite.",
-      "origin": "EPIC-KITCHENS team",
+      "origin": "Univ. Bristol / Univ. Catania",
       "image": "assets/milestones/epic-kitchens-100.png"
     },
     {
@@ -162,7 +162,7 @@
       "url": "https://hoi4d.github.io/",
       "date": "2022-03",
       "note": "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding.",
-      "origin": "HOI4D team",
+      "origin": "Tsinghua / Peking / Qi Zhi",
       "image": "assets/milestones/hoi4d.png"
     },
     {
@@ -180,7 +180,7 @@
       "url": "http://egoschema.github.io/",
       "date": "2023-08",
       "note": "The benchmark that exposed how far models are from long-form egocentric video reasoning.",
-      "origin": "EgoSchema team",
+      "origin": "UC Berkeley",
       "image": "assets/milestones/egoschema.png"
     },
     {
@@ -225,7 +225,7 @@
       "url": "https://arxiv.org/abs/2503.03803",
       "date": "2025-03",
       "note": "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning.",
-      "origin": "EgoLife team",
+      "origin": "S-Lab, NTU / LMMs-Lab",
       "image": "assets/milestones/egolife.png"
     },
     {
@@ -234,7 +234,7 @@
       "url": "https://rchalyang.github.io/EgoVLA/",
       "date": "2025-07",
       "note": "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots.",
-      "origin": "EgoVLA team",
+      "origin": "UCSD / UIUC / MIT / NVIDIA",
       "image": "assets/milestones/egovla.png"
     },
     {
@@ -252,7 +252,7 @@
       "url": "https://arxiv.org/abs/2602.16710",
       "date": "2026-02",
       "note": "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining.",
-      "origin": "EgoScale team",
+      "origin": "NVIDIA / UC Berkeley / UMD",
       "image": "assets/milestones/egoscale.png"
     },
     {

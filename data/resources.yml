@@ -337,7 +337,7 @@ resources:
     milestone: "2020-06"
     milestone_note: "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
     milestone_image: assets/milestones/epic-kitchens-100.png
-    milestone_origin: EPIC-KITCHENS team
+    milestone_origin: Univ. Bristol / Univ. Catania
     kind: dataset
     released: "2020-06"
     venue: "IJCV 2022"
@@ -712,7 +712,7 @@ resources:
     milestone: "2022-03"
     milestone_note: "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding."
     milestone_image: assets/milestones/hoi4d.png
-    milestone_origin: HOI4D team
+    milestone_origin: Tsinghua / Peking / Qi Zhi
 
   - name: H2O
     kind: dataset
@@ -998,7 +998,7 @@ resources:
     milestone: "2025-03"
     milestone_note: "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning."
     milestone_image: assets/milestones/egolife.png
-    milestone_origin: EgoLife team
+    milestone_origin: S-Lab, NTU / LMMs-Lab
 
   - name: Ego-EXTRA
     kind: dataset
@@ -1018,7 +1018,7 @@ resources:
     milestone: "2023-08"
     milestone_note: "The benchmark that exposed how far models are from long-form egocentric video reasoning."
     milestone_image: assets/milestones/egoschema.png
-    milestone_origin: EgoSchema team
+    milestone_origin: UC Berkeley
     kind: benchmark
     released: "2023-08"
     venue: "NeurIPS 2023"
@@ -2399,7 +2399,7 @@ resources:
     milestone: "2025-07"
     milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
     milestone_image: assets/milestones/egovla.png
-    milestone_origin: EgoVLA team
+    milestone_origin: UCSD / UIUC / MIT / NVIDIA
     kind: model
     released: "2025-07"
     venue: "project page"
@@ -2569,7 +2569,7 @@ resources:
     milestone: "2012-06"
     milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition."
     milestone_image: assets/milestones/adl-dataset.png
-    milestone_origin: ADL benchmark team
+    milestone_origin: UC Irvine
 
   - name: Wrist-mounted ADL
     kind: dataset
@@ -3261,7 +3261,7 @@ resources:
     milestone: "2026-02"
     milestone_note: "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
     milestone_image: assets/milestones/egoscale.png
-    milestone_origin: EgoScale team
+    milestone_origin: NVIDIA / UC Berkeley / UMD
     kind: dataset
     released: "2026-02"
     venue: "arXiv"
