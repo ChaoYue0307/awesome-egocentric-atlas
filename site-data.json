@@ -15,22 +15,23 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 557,
-    "egocentric_resources": 548,
+    "total_resources": 585,
+    "egocentric_resources": 576,
     "adjacent_resources": 9,
     "kind_counts": {
-      "benchmark": 96,
+      "benchmark": 99,
       "collection": 1,
-      "dataset": 136,
-      "model": 290,
+      "dataset": 139,
+      "model": 311,
+      "survey": 1,
       "toolkit": 25
     },
     "status_counts": {
-      "benchmark": 7,
-      "open": 137,
+      "benchmark": 11,
+      "open": 145,
       "partial": 12,
       "request": 4,
-      "watch": 388
+      "watch": 404
     }
   },
   "lanes": [
@@ -43,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 151
+      "count": 158
     },
     {
       "id": "procedure-action",
@@ -53,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 155
+      "count": 165
     },
     {
       "id": "hands-3d",
@@ -66,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 230
+      "count": 246
     },
     {
       "id": "memory-reasoning",
@@ -78,7 +79,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 171
+      "count": 182
     },
     {
       "id": "robotics-vla",
@@ -87,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 111
+      "count": 114
     },
     {
       "id": "ar-wearables",
@@ -98,7 +99,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 165
+      "count": 175
     }
   ],
   "milestones": [
@@ -519,6 +520,837 @@
       "license": "cc-by-nc-4.0",
       "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample",
       "verified_at": "2026-06-20"
+    },
+    {
+      "name": "AssemblyHands",
+      "kind": "dataset",
+      "released": "2023-04",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "benchmark",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2304.12301",
+      "paper": "https://arxiv.org/abs/2304.12301",
+      "scale": "3.0M 3D hand-pose annotations sampled from Assembly101, including 490K egocentric images, with an action-classification task using predicted hand poses",
+      "tasks": [
+        "3d-hand-pose",
+        "hand-object",
+        "action-recognition",
+        "benchmark"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "exocentric-video",
+        "hand-pose",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "HARMONIC",
+      "kind": "dataset",
+      "released": "2018-07",
+      "venue": "arXiv",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1807.11154",
+      "paper": "https://arxiv.org/abs/1807.11154",
+      "scale": "Assistive eating HRI dataset from 24 participants with head-mounted egocentric video, eye video/gaze, EMG, joystick commands, robot arm state, third-person stereo video, and derived body/hand/face features",
+      "tasks": [
+        "hri",
+        "intent-understanding",
+        "assistive-systems",
+        "sensor-fusion"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "reasoning-intent-planning",
+        "assistance-and-agents",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "audio",
+        "imu",
+        "third-person-video",
+        "robot-actions"
+      ],
+      "release_note": "Live source checked 2026-06-22; arXiv describes provided data streams, but stable download and license terms should be verified before marking fully open.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "EgoReID Dataset",
+      "kind": "dataset",
+      "released": "2018-12",
+      "venue": "arXiv",
+      "year": 2018,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1812.09570",
+      "paper": "https://arxiv.org/abs/1812.09570",
+      "scale": "First-person person re-identification dataset from three mobile first-person cameras, reporting 900 identities, about 10.2K tracks, 176K detections, and 12-sensor metadata",
+      "tasks": [
+        "person-localization",
+        "object-reidentification",
+        "social",
+        "wearable-sensing"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "audio-and-social",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "first-person-video",
+        "annotations",
+        "imu"
+      ],
+      "release_note": "Live source checked 2026-06-22; kept on watch until the current dataset access route and license are confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "MMG-Ego4D",
+      "kind": "benchmark",
+      "released": "2023-05",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "benchmark",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2305.07214",
+      "paper": "https://arxiv.org/abs/2305.07214",
+      "code": "https://github.com/facebookresearch/MMG_Ego4D",
+      "derived_from": "Ego4D",
+      "scale": "Human-verified Ego4D-derived benchmark for multimodal generalization under missing-modality and cross-modal zero-shot settings over video, audio, and IMU",
+      "tasks": [
+        "action-recognition",
+        "multimodal-generalization",
+        "domain-generalization",
+        "benchmark"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "imu",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "EgoAdapt 2023",
+      "kind": "benchmark",
+      "released": "2023-07",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "benchmark",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2307.05784",
+      "paper": "https://arxiv.org/abs/2307.05784",
+      "derived_from": "Ego4D",
+      "scale": "Real-world egocentric action-recognition adaptation benchmark over 50 independent Ego4D user streams and 2,740 action labels, with adaptation gain, online generalization, and hindsight metrics",
+      "tasks": [
+        "action-recognition",
+        "continual-learning",
+        "domain-adaptation",
+        "benchmark"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "EPIC-Aff / Multi-label Affordance Mapping",
+      "kind": "benchmark",
+      "released": "2023-09",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "benchmark",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2309.02120",
+      "paper": "https://arxiv.org/abs/2309.02120",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "EPIC-KITCHENS-derived metric, spatial, multi-label affordance annotations for interaction-grounded affordance segmentation and action-centric navigation maps",
+      "tasks": [
+        "affordance",
+        "segmentation",
+        "hand-object",
+        "navigation",
+        "benchmark"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation",
+        "ar-sensing-navigation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "VQLoC",
+      "kind": "model",
+      "released": "2023-06",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://hwjiang1510.github.io/VQLoC/",
+      "paper": "https://arxiv.org/abs/2306.09324",
+      "scale": "Single-stage visual query localization for long-form egocentric video, jointly modeling query-frame and frame-frame correspondences; reports about 20% accuracy improvement and 10x faster inference over prior multi-stage VQL pipelines",
+      "tasks": [
+        "visual-query-localization",
+        "episodic-memory",
+        "object-grounding",
+        "tracking"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "memory-and-long-context",
+        "tracking"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-crops",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "EgoCOL",
+      "kind": "model",
+      "released": "2023-06",
+      "venue": "CVPR 2023 Ego4D Challenge",
+      "year": 2023,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/BCV-Uniandes/EgoCOL",
+      "paper": "https://arxiv.org/abs/2306.16606",
+      "derived_from": "Ego4D",
+      "scale": "Egocentric camera-pose estimation for Ego4D open-world 3D object localization, using sparse pose reconstruction over video and scan renders",
+      "tasks": [
+        "3d-object-detection",
+        "visual-query-localization",
+        "object-grounding",
+        "spatial-localization"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "grounding-localization"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "camera-pose",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "CocoFormer VQL",
+      "kind": "model",
+      "released": "2022-11",
+      "venue": "Ego4D Challenge 2022",
+      "year": 2022,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/facebookresearch/vq2d_cvpr",
+      "paper": "https://arxiv.org/abs/2211.10528",
+      "derived_from": "Ego4D",
+      "scale": "Conditioned Contextual Transformer for egocentric visual query localization, modeling proposal-set context and improving VQ2D/VQ3D localization through query-conditioned object proposal reasoning",
+      "tasks": [
+        "visual-query-localization",
+        "object-grounding",
+        "detection",
+        "tracking"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "detection-segmentation",
+        "tracking"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-crops",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Negative Frames Matter",
+      "kind": "model",
+      "released": "2022-08",
+      "venue": "Ego4D Challenge 2022",
+      "year": 2022,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/facebookresearch/vq2d_cvpr",
+      "paper": "https://arxiv.org/abs/2208.01949",
+      "derived_from": "Ego4D",
+      "scale": "Efficient Ego4D VQ2D solution reducing repeated object-gradient computation and explicitly training with noisy negative/background egocentric frames",
+      "tasks": [
+        "visual-query-localization",
+        "object-grounding",
+        "redetection",
+        "benchmark"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "object-crops",
+        "annotations"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "SpotEM",
+      "kind": "model",
+      "released": "2023-06",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://vision.cs.utexas.edu/projects/spotem",
+      "paper": "https://arxiv.org/abs/2306.15850",
+      "derived_from": "Ego4D",
+      "scale": "Efficient episodic-memory search for long egocentric videos, selecting promising query-conditioned video regions and preserving 84-97% of baseline accuracy while computing 10-25% of clip features",
+      "tasks": [
+        "episodic-memory",
+        "natural-language-query",
+        "retrieval",
+        "efficient-inference"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "grounding-localization",
+        "video-language",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "natural-language",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; project and paper are public, but current code/data packaging should be rechecked before marking open.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "CliMer Temporal Grounding",
+      "kind": "model",
+      "released": "2023-10",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/keflanagan/CliMer",
+      "paper": "https://arxiv.org/abs/2310.17395",
+      "derived_from": "Ego4D; EPIC-KITCHENS",
+      "scale": "Learns temporal sentence grounding from narrated egocentric videos using clip merging and rough narration timestamps instead of dense temporal labels",
+      "tasks": [
+        "temporal-grounding",
+        "video-language-grounding",
+        "narration-generation"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "narrations",
+        "natural-language"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Object-Centric LTA",
+      "kind": "model",
+      "released": "2023-10",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2311.00180",
+      "paper": "https://arxiv.org/abs/2311.00180",
+      "derived_from": "Ego4D; EGTEA Gaze+",
+      "scale": "Object-prompt representation for long-term action anticipation, extracting task-specific object-centric features from visual-language pretrained models",
+      "tasks": [
+        "action-anticipation",
+        "object-recognition",
+        "video-language-representation"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "detection-segmentation",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "natural-language",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; kept on watch until public code/checkpoints and release terms are confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "OWL",
+      "kind": "model",
+      "released": "2022-02",
+      "venue": "arXiv",
+      "year": 2022,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2202.04947",
+      "paper": "https://arxiv.org/abs/2202.04947",
+      "derived_from": "EPIC-KITCHENS; HOMAGE",
+      "scale": "Observe, Watch, Listen baseline showing audiovisual temporal context improves egocentric temporal action localization on EPIC-KITCHENS and HOMAGE",
+      "tasks": [
+        "temporal-grounding",
+        "action-detection",
+        "audio-visual"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "action-and-procedure",
+        "audio-and-social"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/release artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Hand-Object Interaction Reasoning",
+      "kind": "model",
+      "released": "2022-01",
+      "venue": "arXiv",
+      "year": 2022,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2201.04906",
+      "paper": "https://arxiv.org/abs/2201.04906",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "Transformer-style interaction unit for reasoning over acting hands, the other hand, and interacted objects in egocentric video",
+      "tasks": [
+        "hand-object",
+        "action-recognition",
+        "relation-reasoning"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "action-and-procedure",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-trajectories",
+        "object-trajectories"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/release artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Human Hands as Probes",
+      "kind": "model",
+      "released": "2021-12",
+      "venue": "arXiv",
+      "year": 2021,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2112.09120",
+      "paper": "https://arxiv.org/abs/2112.09120",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "Learns interactive object understanding, state-sensitive features, affordance regions, and grasp affordances by observing hands in egocentric video",
+      "tasks": [
+        "affordance",
+        "hand-object",
+        "object-discovery",
+        "interaction"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hands",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/release artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "NeuralDiff",
+      "kind": "model",
+      "released": "2021-10",
+      "venue": "arXiv",
+      "year": 2021,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2110.09936",
+      "paper": "https://arxiv.org/abs/2110.09936",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "Triple-stream neural rendering method for separating static background, actor, and moving objects in egocentric video; introduces annotations for dynamic object segmentation on EPIC-KITCHENS",
+      "tasks": [
+        "dynamic-scene-understanding",
+        "segmentation",
+        "3d-reconstruction",
+        "object-motion"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "detection-segmentation",
+        "tracking"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/dataset release path should be rechecked.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Head-Motion SSL",
+      "kind": "model",
+      "released": "2021-10",
+      "venue": "arXiv",
+      "year": 2021,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2110.01680",
+      "paper": "https://arxiv.org/abs/2110.01680",
+      "scale": "Self-supervised egocentric video representation learning by matching video clips with head-motion signals from IMU sensors embedded in AR/VR devices",
+      "tasks": [
+        "representation-learning",
+        "activity-recognition",
+        "sensor-fusion",
+        "ar-vr"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "action-and-procedure",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "imu"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/checkpoints not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "H+O",
+      "kind": "model",
+      "released": "2019-04",
+      "venue": "arXiv",
+      "year": 2019,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1904.05349",
+      "paper": "https://arxiv.org/abs/1904.05349",
+      "scale": "Unified egocentric RGB model for jointly estimating 3D hand pose, object pose, interaction state, object class, and action class",
+      "tasks": [
+        "3d-hand-pose",
+        "hand-object",
+        "action-recognition",
+        "object-recognition"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "action-and-procedure",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "object-pose"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/release artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "You2Me",
+      "kind": "model",
+      "released": "2019-04",
+      "venue": "arXiv",
+      "year": 2019,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1904.09882",
+      "paper": "https://arxiv.org/abs/1904.09882",
+      "scale": "Infers second-person body pose in egocentric video using first- and second-person interaction cues",
+      "tasks": [
+        "human-pose",
+        "social",
+        "interaction",
+        "pose"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "audio-and-social",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "human-pose"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/release artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Ego-Surfing",
+      "kind": "model",
+      "released": "2016-06",
+      "venue": "arXiv",
+      "year": 2016,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1606.04637",
+      "paper": "https://arxiv.org/abs/1606.04637",
+      "scale": "Classic first-person person-localization method using ego-motion signatures and motion correlation between observer and target wearable-camera videos",
+      "tasks": [
+        "person-localization",
+        "social",
+        "privacy",
+        "retrieval"
+      ],
+      "task_families": [
+        "grounding-localization",
+        "audio-and-social",
+        "assistance-and-agents",
+        "video-language"
+      ],
+      "modalities": [
+        "first-person-video"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/data artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Left/Right Hand Segmentation",
+      "kind": "model",
+      "released": "2016-07",
+      "venue": "arXiv",
+      "year": 2016,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1607.06264",
+      "paper": "https://arxiv.org/abs/1607.06264",
+      "scale": "Classic first-person hand-segmentation approach that distinguishes left and right hands and handles hand-to-hand occlusion with temporal superpixels",
+      "tasks": [
+        "hand-segmentation",
+        "hand-detection",
+        "gesture-recognition"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "first-person-video",
+        "hands"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/data artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Unsupervised Important Objects",
+      "kind": "model",
+      "released": "2016-11",
+      "venue": "arXiv",
+      "year": 2016,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1611.05335",
+      "paper": "https://arxiv.org/abs/1611.05335",
+      "scale": "Unsupervised important-object detection in first-person images using cross-pathway supervision between visual semantics and spatial object proposals",
+      "tasks": [
+        "object-discovery",
+        "object-detection",
+        "attention-modeling"
+      ],
+      "task_families": [
+        "detection-segmentation",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "first-person-video",
+        "first-person-images"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/data artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "EGO-TOPO Environment Affordances",
+      "kind": "model",
+      "released": "2020-01",
+      "venue": "arXiv",
+      "year": 2020,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2001.04583",
+      "paper": "https://arxiv.org/abs/2001.04583",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "Learns environment affordances from egocentric video by building topological maps of interaction opportunities in scenes",
+      "tasks": [
+        "affordance",
+        "scene-understanding",
+        "navigation",
+        "action-recognition"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "three-d-and-scene",
+        "ar-sensing-navigation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/data artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "In the Eye of the Beholder",
+      "kind": "model",
+      "released": "2020-05",
+      "venue": "arXiv",
+      "year": 2020,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2006.00626",
+      "paper": "https://arxiv.org/abs/2006.00626",
+      "derived_from": "EPIC-KITCHENS",
+      "scale": "Analyzes gaze and action in first-person video, studying how wearer attention supports egocentric action understanding",
+      "tasks": [
+        "gaze",
+        "action-recognition",
+        "attention-modeling"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "annotations"
+      ],
+      "release_note": "Live source checked 2026-06-22; public paper verified, code/data artifacts not confirmed.",
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Hands in Egocentric Vision Survey",
+      "kind": "survey",
+      "released": "2019-12",
+      "venue": "arXiv",
+      "year": 2019,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/1912.10867",
+      "paper": "https://arxiv.org/abs/1912.10867",
+      "scale": "Survey organizing hand-focused egocentric vision work around localization, interpretation, applications, and major hand-annotated datasets",
+      "tasks": [
+        "survey",
+        "hand-object",
+        "hand-detection",
+        "hand-segmentation",
+        "gesture-recognition"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "hand-object-interaction",
+        "detection-segmentation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hands"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "R3M",
+      "kind": "model",
+      "released": "2022-03",
+      "venue": "CoRL 2022",
+      "year": 2022,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2203.12601",
+      "paper": "https://arxiv.org/abs/2203.12601",
+      "derived_from": "Ego4D",
+      "scale": "Robot-manipulation visual representation pretrained on Ego4D human video with time-contrastive learning, video-language alignment, and sparse representation regularization",
+      "tasks": [
+        "representation-learning",
+        "robot-manipulation",
+        "imitation-learning",
+        "egocentric-pretraining"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "natural-language",
+        "robot-camera-video"
+      ],
+      "verified_at": "2026-06-22"
+    },
+    {
+      "name": "VIP",
+      "kind": "model",
+      "released": "2022-09",
+      "venue": "ICLR 2023",
+      "year": 2022,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2210.00030",
+      "paper": "https://arxiv.org/abs/2210.00030",
+      "derived_from": "Ego4D",
+      "scale": "Value-Implicit Pre-Training learns a visual representation and dense reward signal from Ego4D human videos for few-shot robot manipulation",
+      "tasks": [
+        "representation-learning",
+        "reward-modeling",
+        "robot-manipulation",
+        "egocentric-pretraining"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "evaluation-and-tooling",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "robot-camera-video"
+      ],
+      "verified_at": "2026-06-22"
     },
     {
       "name": "SpatialWorld",
@@ -2532,7 +3364,8 @@
         "robot-actions",
         "rlds"
       ],
-      "license": "cc-by-4.0"
+      "license": "cc-by-4.0",
+      "verified_at": "2026-06-22"
     },
     {
       "name": "Qwen-RobotNav",
@@ -6937,22 +7770,27 @@
     {
       "name": "EgoEnv",
       "kind": "model",
-      "released": "2022",
-      "venue": "project page",
+      "released": "2022-07",
+      "venue": "arXiv",
       "year": 2022,
       "status": "open",
       "scope": "egocentric",
       "url": "https://vision.cs.utexas.edu/projects/ego-env/",
-      "scale": "Environment-aware representation learning from egocentric video",
+      "paper": "https://arxiv.org/abs/2207.11365",
+      "scale": "Human-centric environment representation learning that links egocentric video to the camera wearer's local surroundings, trained in simulated 3D environments and transferred to HouseTours and Ego4D",
       "tasks": [
         "video-language",
-        "representation-learning"
+        "representation-learning",
+        "scene-understanding",
+        "natural-language-query"
       ],
       "task_families": [
         "video-language",
-        "foundation-and-representation"
+        "foundation-and-representation",
+        "three-d-and-scene",
+        "grounding-localization"
       ],
-      "verified_at": "2026-06-20"
+      "verified_at": "2026-06-22"
     },
     {
       "name": "EgoMAS",

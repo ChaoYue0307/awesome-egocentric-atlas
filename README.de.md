@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Eine kuratierte Karte egozentrischer KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.</strong></p>
 
-<p align="center"><strong>548</strong> egozentrische Ressourcen — 136 Datensätze · 96 Benchmarks · 290 Modelle · 25 Toolkits</p>
+<p align="center"><strong>576</strong> egozentrische Ressourcen — 139 Datensätze · 99 Benchmarks · 311 Modelle · 25 Toolkits</p>
 
 ## Inhalt
 

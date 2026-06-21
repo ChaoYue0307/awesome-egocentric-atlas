@@ -16,9 +16,9 @@
     <marker id="up" viewBox="0 0 10 10" refX="6.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#ef9f24"/>
     </marker>
-    <clipPath id="c1"><rect x="142" y="448.6" width="96" height="31.4" rx="8"/></clipPath>
-    <clipPath id="c2"><rect x="382" y="429.6" width="96" height="50.4" rx="8"/></clipPath>
-    <clipPath id="c3"><rect x="622" y="379.2" width="96" height="100.8" rx="8"/></clipPath>
+    <clipPath id="c1"><rect x="142" y="443" width="96" height="37" rx="8"/></clipPath>
+    <clipPath id="c2"><rect x="382" y="420.6" width="96" height="59.4" rx="8"/></clipPath>
+    <clipPath id="c3"><rect x="622" y="362.4" width="96" height="117.6" rx="8"/></clipPath>
     <clipPath id="c4"><rect x="862" y="301.9" width="96" height="178.1" rx="8"/></clipPath>
     <clipPath id="c5"><rect x="1102" y="226.9" width="96" height="253.1" rx="8"/></clipPath>
     <style>
@@ -71,22 +71,22 @@
 
   <!-- stacked bars generated from live era/kind counts -->
   <g clip-path="url(#c1)" filter="url(#shadow)">
-    <rect class="seg" x="142" y="456.5" width="96" height="23.5" fill="#0b8f98"/>
-    <rect class="seg" x="142" y="455.4" width="96" height="1.1" fill="#5b6b73"/>
-    <rect class="seg" x="142" y="448.6" width="96" height="6.7" fill="#ef9f24"/>
+    <rect class="seg" x="142" y="454.2" width="96" height="25.8" fill="#0b8f98"/>
+    <rect class="seg" x="142" y="453.1" width="96" height="1.1" fill="#5b6b73"/>
+    <rect class="seg" x="142" y="443" width="96" height="10.1" fill="#ef9f24"/>
   </g>
   <g clip-path="url(#c2)" filter="url(#shadow)">
     <rect class="seg" x="382" y="464.3" width="96" height="15.7" fill="#0b8f98"/>
     <rect class="seg" x="382" y="459.8" width="96" height="4.5" fill="#5b6b73"/>
-    <rect class="seg" x="382" y="433" width="96" height="26.9" fill="#ef9f24"/>
-    <rect class="seg" x="382" y="429.6" width="96" height="3.4" fill="#7a6ff0"/>
+    <rect class="seg" x="382" y="425.1" width="96" height="34.7" fill="#ef9f24"/>
+    <rect class="seg" x="382" y="421.8" width="96" height="3.4" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c3)" filter="url(#shadow)">
-    <rect class="seg" x="622" y="454.2" width="96" height="25.8" fill="#0b8f98"/>
-    <rect class="seg" x="622" y="438.6" width="96" height="15.7" fill="#5b6b73"/>
-    <rect class="seg" x="622" y="387" width="96" height="51.5" fill="#ef9f24"/>
-    <rect class="seg" x="622" y="380.3" width="96" height="6.7" fill="#7a6ff0"/>
-    <rect class="seg" x="622" y="379.2" width="96" height="1.1" fill="#b8c2c9"/>
+    <rect class="seg" x="622" y="453.1" width="96" height="26.9" fill="#0b8f98"/>
+    <rect class="seg" x="622" y="434.1" width="96" height="19" fill="#5b6b73"/>
+    <rect class="seg" x="622" y="370.2" width="96" height="63.8" fill="#ef9f24"/>
+    <rect class="seg" x="622" y="363.5" width="96" height="6.7" fill="#7a6ff0"/>
+    <rect class="seg" x="622" y="362.4" width="96" height="1.1" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
     <rect class="seg" x="862" y="429.6" width="96" height="50.4" fill="#0b8f98"/>
@@ -101,20 +101,20 @@
     <rect class="seg" x="1102" y="226.9" width="96" height="10.1" fill="#7a6ff0"/>
   </g>
 
-  <polyline class="trend" points="190,448.6 430,429.6 670,379.2 910,301.9 1150,226.9"/>
+  <polyline class="trend" points="190,443 430,420.6 670,362.4 910,301.9 1150,226.9"/>
   <path class="proj" d="M1150 226.9 L1230 209.9" marker-end="url(#up)"/>
   <text class="note" x="1210" y="188.9" text-anchor="middle">H1 only</text>
   <g>
-    <circle cx="190" cy="448.6" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="430" cy="429.6" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="670" cy="379.2" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="190" cy="443" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="430" cy="420.6" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="670" cy="362.4" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="910" cy="301.9" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="1150" cy="226.9" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
-  <text class="count" x="190" y="436.6" text-anchor="middle">28</text>
-  <text class="count" x="430" y="417.6" text-anchor="middle">45</text>
-  <text class="count" x="670" y="367.2" text-anchor="middle">90</text>
+  <text class="count" x="190" y="431" text-anchor="middle">33</text>
+  <text class="count" x="430" y="408.6" text-anchor="middle">53</text>
+  <text class="count" x="670" y="350.4" text-anchor="middle">105</text>
   <text class="count" x="910" y="289.9" text-anchor="middle">159</text>
   <text class="count" x="1150" y="214.9" text-anchor="middle">226</text>
 

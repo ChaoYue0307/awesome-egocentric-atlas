@@ -202,7 +202,7 @@ task_families:
       domain-adaptation, domain-transfer, continual-learning, efficient-inference, redetection, ego-exo,
       annotation-tooling, castle, challenge-solution, covariate-shift,
       domain-generalization, domain-shift, epic-kitchens, hd-epic-vqa, robustness,
-      streaming-video-understanding, zero-shot]
+      streaming-video-understanding, zero-shot, multimodal-generalization, survey]
 
 # --- modality families ------------------------------------------------------
 modality_families:
@@ -228,7 +228,7 @@ modality_families:
     aliases: [audio, speech, text, language, narrations, descriptions, dialogue,
       language-instructions, hierarchical-language, verbal-commands, qa, memory, location-labels,
       captions, caregiver-speech, mllm, text-instructions, transcripts, video-language,
-      video-qa, vlm]
+      video-qa, vlm, natural-language]
 
   gaze-motion:
     label: Gaze, IMU, and motion
@@ -241,12 +241,12 @@ modality_families:
     label: Pose and mocap
     aliases: [pose, 2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
       human-pose, camera-pose, camera-poses, object-pose, full-body-mocap, hand-mocap,
-      mocap, skeleton, keypoint-visibility, hand-trajectories, 6dof, 3d-human-motion,
+      mocap, skeleton, keypoint-visibility, hand-trajectories, object-trajectories, 6dof, 3d-human-motion,
       hand-skeleton, humanoid-motion, body-tracking]
 
   hand-object-geometry:
     label: Hand-object geometry and contact
-    aliases: [hand, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
+    aliases: [hand, hands, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
       object-meshes, hand-meshes, mesh, articulated-objects, 3d-objects, object-motion,
       tactile, pressure, force, glove-sensors, hand-object-contact,
       hand-object-interaction, hand-object-motion, object-crops, objects]
