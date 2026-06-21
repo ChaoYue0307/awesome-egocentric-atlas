@@ -623,6 +623,92 @@ resources:
     license: cc-by-4.0
     scope_note: Adjacent robot-learning dataset included for VLA and robot-camera policy learning; not a human wearable-camera dataset.
 
+  - name: Qwen-RobotNav
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.18112
+    paper: https://arxiv.org/abs/2606.18112
+    scope: adjacent
+    scale: "Qwen-branded scalable navigation model trained on 15.6M samples with controllable task modes and visual-history observation parameters"
+    modalities: [robot-camera-video, language-instructions, trajectories]
+    tasks: [navigation, robot-learning, spatial-reasoning, embodied-reasoning]
+    release_note: "arXiv technical report from June 2026; verify checkpoints, code, data mix, and license."
+    verified_at: "2026-06-21"
+    citation_key: qwen_robotnav_2026
+    scope_note: "Adjacent Qwen robot-navigation model; useful for embodied navigation comparisons, but not a human wearable first-person dataset."
+
+  - name: Qwen-RobotWorld
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.17030
+    paper: https://arxiv.org/abs/2606.17030
+    scope: adjacent
+    scale: "Language-conditioned embodied video world model with an 8.6M video-text EWK corpus over 20+ embodiments and 500+ action categories"
+    modalities: [video, language-instructions, robot-actions, synthetic-video]
+    tasks: [world-modeling, video-generation, robot-learning, manipulation, navigation]
+    release_note: "arXiv technical report from June 2026; verify model, data, benchmark, and license release state."
+    verified_at: "2026-06-21"
+    citation_key: qwen_robotworld_2026
+    scope_note: "Adjacent Qwen embodied world model spanning robot manipulation, navigation, driving, and human-to-robot transfer; not centered on human wearable first-person capture."
+
+  - name: RhinoVLA
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.07383
+    paper: https://arxiv.org/abs/2606.07383
+    code: https://github.com/HuixiAI/RhinoVLA
+    scope: adjacent
+    scale: "Deployment-oriented VLA model using a token-efficient Qwen3-VL backbone, continuous Action Expert, View Registry, and hardware-aware edge execution"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, manipulation, edge-ai]
+    release_note: "arXiv technical report from June 2026; project says code will be open-sourced, verify release and license."
+    verified_at: "2026-06-21"
+    citation_key: rhinovla_2026
+    scope_note: "Adjacent Qwen3-VL robot VLA deployment system; robot-only observations rather than human wearable first-person capture."
+
+  - name: OpenEAI-Platform
+    kind: toolkit
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.03392
+    paper: https://arxiv.org/abs/2606.03392
+    scope: adjacent
+    scale: "Open-source embodied-AI hardware/software platform with OpenEAI-Arm and OpenEAI-VLA built on Qwen3-VL-4B plus a Diffusion Transformer action head"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, manipulation, tooling, data-collection]
+    release_note: "arXiv paper from June 2026; authors say hardware designs, drivers, models, and pipelines will be released after acceptance."
+    verified_at: "2026-06-21"
+    citation_key: openeai_platform_2026
+    scope_note: "Adjacent Qwen3-VL robot-arm platform; useful for VLA tooling comparisons, but not human or animal first-person capture."
+
+  - name: NORA
+    kind: model
+    released: "2025-04"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2504.19854
+    paper: https://arxiv.org/abs/2504.19854
+    scope: adjacent
+    scale: "3B generalist VLA model using Qwen2.5-VL-3B as the visual-language backbone and 970K real-world robot demonstrations"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, manipulation, efficient-inference]
+    release_note: "arXiv paper from April 2025; verify code, model weights, training data, and license terms."
+    verified_at: "2026-06-21"
+    citation_key: nora_vla_2025
+    scope_note: "Adjacent Qwen2.5-VL robot VLA model trained on robot demonstrations, not human wearable first-person data."
+
   - name: EgoLive
     kind: dataset
     released: "2026-04"
@@ -1584,6 +1670,8 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2506.03097
     paper: https://arxiv.org/abs/2506.03097
+    scale: "Qwen2.5-VL-3B-based egocentric video model optimized with GRPO-style policy learning for first-person video reasoning"
+    modalities: [egocentric-video, text, mllm]
     tasks: [egocentric-video-reasoning, policy-optimization]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -2170,7 +2258,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2606.02120
     paper: https://arxiv.org/abs/2606.02120
-    scale: "Model-collaboration method for detecting incorrect user actions from egocentric video"
+    scale: "Model-collaboration method for detecting incorrect user actions from egocentric video, using Qwen3-VL Embedding in the fine-grained reasoning branch"
     modalities: [egocentric-video, mllm, action-labels]
     tasks: [mistake-detection, procedural-assistance, action-reasoning, challenge-solution]
     verified_at: "2026-06-20"

@@ -15,9 +15,9 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 527,
+    "total_resources": 532,
     "egocentric_resources": 524,
-    "adjacent_resources": 3,
+    "adjacent_resources": 8,
     "kind_counts": {
       "benchmark": 95,
       "collection": 1,
@@ -1680,6 +1680,147 @@
         "rlds"
       ],
       "license": "cc-by-4.0"
+    },
+    {
+      "name": "Qwen-RobotNav",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.18112",
+      "paper": "https://arxiv.org/abs/2606.18112",
+      "scale": "Qwen-branded scalable navigation model trained on 15.6M samples with controllable task modes and visual-history observation parameters",
+      "tasks": [
+        "navigation",
+        "robot-learning",
+        "spatial-reasoning",
+        "embodied-reasoning"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "language-instructions",
+        "trajectories"
+      ]
+    },
+    {
+      "name": "Qwen-RobotWorld",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.17030",
+      "paper": "https://arxiv.org/abs/2606.17030",
+      "scale": "Language-conditioned embodied video world model with an 8.6M video-text EWK corpus over 20+ embodiments and 500+ action categories",
+      "tasks": [
+        "world-modeling",
+        "video-generation",
+        "robot-learning",
+        "manipulation",
+        "navigation"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "video",
+        "language-instructions",
+        "robot-actions",
+        "synthetic-video"
+      ]
+    },
+    {
+      "name": "RhinoVLA",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.07383",
+      "paper": "https://arxiv.org/abs/2606.07383",
+      "code": "https://github.com/HuixiAI/RhinoVLA",
+      "scale": "Deployment-oriented VLA model using a token-efficient Qwen3-VL backbone, continuous Action Expert, View Registry, and hardware-aware edge execution",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "manipulation",
+        "edge-ai"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions"
+      ]
+    },
+    {
+      "name": "OpenEAI-Platform",
+      "kind": "toolkit",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.03392",
+      "paper": "https://arxiv.org/abs/2606.03392",
+      "scale": "Open-source embodied-AI hardware/software platform with OpenEAI-Arm and OpenEAI-VLA built on Qwen3-VL-4B plus a Diffusion Transformer action head",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "manipulation",
+        "tooling",
+        "data-collection"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions"
+      ]
+    },
+    {
+      "name": "NORA",
+      "kind": "model",
+      "released": "2025-04",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2504.19854",
+      "paper": "https://arxiv.org/abs/2504.19854",
+      "scale": "3B generalist VLA model using Qwen2.5-VL-3B as the visual-language backbone and 970K real-world robot demonstrations",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "manipulation",
+        "efficient-inference"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions"
+      ]
     },
     {
       "name": "EgoLive",
@@ -3482,6 +3623,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2506.03097",
       "paper": "https://arxiv.org/abs/2506.03097",
+      "scale": "Qwen2.5-VL-3B-based egocentric video model optimized with GRPO-style policy learning for first-person video reasoning",
       "tasks": [
         "egocentric-video-reasoning",
         "policy-optimization"
@@ -3489,6 +3631,11 @@
       "task_families": [
         "reasoning-intent-planning",
         "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text",
+        "mllm"
       ]
     },
     {
@@ -4643,7 +4790,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2606.02120",
       "paper": "https://arxiv.org/abs/2606.02120",
-      "scale": "Model-collaboration method for detecting incorrect user actions from egocentric video",
+      "scale": "Model-collaboration method for detecting incorrect user actions from egocentric video, using Qwen3-VL Embedding in the fine-grained reasoning branch",
       "tasks": [
         "mistake-detection",
         "procedural-assistance",
