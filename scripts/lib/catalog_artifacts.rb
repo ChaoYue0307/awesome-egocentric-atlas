@@ -102,12 +102,16 @@ module CatalogArtifacts
       "url" => entry["url"],
       "paper" => entry["paper"],
       "code" => entry["code"],
+      "derived_from" => entry["derived_from"],
       "scale" => entry["scale"],
       "tasks" => tasks,
       "task_families" => families,
       "modalities" => Array(entry["modalities"]),
       "license" => entry["license"],
-      "license_url" => entry["license_url"]
+      "license_url" => entry["license_url"],
+      "access" => entry["access"],
+      "release_note" => entry["release_note"],
+      "verified_at" => entry["verified_at"]
     }.delete_if { |_key, value| value.nil? || value == [] }
   end
 

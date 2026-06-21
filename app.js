@@ -12,8 +12,12 @@ const I18N = {
   en: {
     skip: "Skip to catalog",
     "language.label": "Language",
-    "nav.catalog": "Catalog", "nav.lanes": "Lanes", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones",
+    "nav.catalog": "Catalog", "nav.navigator": "Navigator", "nav.lanes": "Lanes", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones",
     "milestones.title": "Milestones", "milestones.desc": "The landmark works that shaped egocentric AI — from the field's origins to its current frontier.",
+    "navigator.title": "Research Navigator", "navigator.desc": "Fast, data-driven entry points for choosing datasets, benchmarks, models, and tools without reading every row first.", "navigator.catalog": "Open catalog",
+    "navigator.tasks": "Task Hotspots", "navigator.tasks.desc": "Most common problem settings in the current catalog.",
+    "navigator.modalities": "Modality Signals", "navigator.modalities.desc": "Useful sensing and annotation types to filter for.",
+    "navigator.lineage": "Dataset Lineages", "navigator.lineage.desc": "Major families that many works build on or extend.",
     "hero.lead": "A curated map of egocentric AI — the datasets, benchmarks, models, and tools behind egocentric vision, embodied AI and robotics, video-language, long-context memory, AR/VR, and hand-object interaction.",
     "btn.github": "GitHub Repo", "btn.hf": "Hugging Face Mirror", "btn.browse": "Browse Catalog",
     "stat.resources": "egocentric resources", "stat.datasets": "datasets", "stat.benchmarks": "benchmarks", "stat.models": "models", "stat.toolkits": "toolkits",
@@ -38,8 +42,12 @@ const I18N = {
   zh: {
     skip: "跳到目录",
     "language.label": "语言",
-    "nav.catalog": "目录", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑",
+    "nav.catalog": "目录", "nav.navigator": "导航", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑",
     "milestones.title": "里程碑", "milestones.desc": "塑造自我中心 AI 的里程碑工作——从领域起源到当前前沿。",
+    "navigator.title": "研究导航", "navigator.desc": "用数据驱动的入口快速选择数据集、基准、模型和工具。", "navigator.catalog": "打开目录",
+    "navigator.tasks": "任务热点", "navigator.tasks.desc": "当前目录中最常见的问题设置。",
+    "navigator.modalities": "模态信号", "navigator.modalities.desc": "适合筛选的传感与标注类型。",
+    "navigator.lineage": "数据集谱系", "navigator.lineage.desc": "许多工作构建或扩展的主要资源家族。",
     "hero.lead": "自我中心 AI 的精选地图——汇集自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 以及手物交互背后的数据集、基准、模型与工具。",
     "btn.github": "GitHub 仓库", "btn.hf": "Hugging Face 镜像", "btn.browse": "浏览目录",
     "stat.resources": "自我中心资源", "stat.datasets": "数据集", "stat.benchmarks": "基准", "stat.models": "模型", "stat.toolkits": "工具包",
@@ -64,8 +72,12 @@ const I18N = {
   es: {
     skip: "Saltar al catálogo",
     "language.label": "Idioma",
-    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos",
+    "nav.catalog": "Catálogo", "nav.navigator": "Navegador", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos",
     "milestones.title": "Hitos", "milestones.desc": "Los trabajos de referencia que dieron forma a la IA egocéntrica, desde sus orígenes hasta la frontera actual.",
+    "navigator.title": "Navegador de investigación", "navigator.desc": "Entradas rápidas y basadas en datos para elegir datos, benchmarks, modelos y herramientas.", "navigator.catalog": "Abrir catálogo",
+    "navigator.tasks": "Tareas clave", "navigator.tasks.desc": "Los problemas más comunes del catálogo actual.",
+    "navigator.modalities": "Señales de modalidad", "navigator.modalities.desc": "Tipos útiles de sensores y anotaciones para filtrar.",
+    "navigator.lineage": "Linajes de datos", "navigator.lineage.desc": "Familias principales que muchos trabajos usan o extienden.",
     "hero.lead": "Un mapa curado de la IA egocéntrica: los conjuntos de datos, benchmarks, modelos y herramientas tras la visión egocéntrica, la IA encarnada y la robótica, el aprendizaje visión-lenguaje, la memoria de largo contexto, la RA/RV y la interacción mano-objeto.",
     "btn.github": "Repositorio GitHub", "btn.hf": "Espejo en Hugging Face", "btn.browse": "Explorar catálogo",
     "stat.resources": "recursos egocéntricos", "stat.datasets": "conjuntos de datos", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "herramientas",
@@ -90,8 +102,12 @@ const I18N = {
   fr: {
     skip: "Aller au catalogue",
     "language.label": "Langue",
-    "nav.catalog": "Catalogue", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons",
+    "nav.catalog": "Catalogue", "nav.navigator": "Navigateur", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons",
     "milestones.title": "Jalons", "milestones.desc": "Les travaux marquants qui ont façonné l'IA égocentrique, des origines du domaine à sa frontière actuelle.",
+    "navigator.title": "Navigateur de recherche", "navigator.desc": "Des entrées rapides et pilotées par les données pour choisir jeux de données, benchmarks, modèles et outils.", "navigator.catalog": "Ouvrir le catalogue",
+    "navigator.tasks": "Tâches fréquentes", "navigator.tasks.desc": "Les cadres de problèmes les plus présents dans le catalogue.",
+    "navigator.modalities": "Signaux de modalité", "navigator.modalities.desc": "Types de capteurs et d'annotations utiles pour filtrer.",
+    "navigator.lineage": "Lignées de données", "navigator.lineage.desc": "Grandes familles que de nombreux travaux réutilisent ou étendent.",
     "hero.lead": "Une carte sélective de l'IA égocentrique : les jeux de données, benchmarks, modèles et outils derrière la vision égocentrique, l'IA incarnée et la robotique, l'apprentissage vision-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.",
     "btn.github": "Dépôt GitHub", "btn.hf": "Miroir Hugging Face", "btn.browse": "Parcourir le catalogue",
     "stat.resources": "ressources égocentriques", "stat.datasets": "jeux de données", "stat.benchmarks": "benchmarks", "stat.models": "modèles", "stat.toolkits": "outils",
@@ -116,8 +132,12 @@ const I18N = {
   de: {
     skip: "Zum Katalog springen",
     "language.label": "Sprache",
-    "nav.catalog": "Katalog", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine",
+    "nav.catalog": "Katalog", "nav.navigator": "Navigator", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine",
     "milestones.title": "Meilensteine", "milestones.desc": "Die wegweisenden Arbeiten, die egozentrische KI geprägt haben – von den Ursprüngen bis zur aktuellen Front.",
+    "navigator.title": "Forschungsnavigator", "navigator.desc": "Schnelle datenbasierte Einstiege zur Auswahl von Datensätzen, Benchmarks, Modellen und Tools.", "navigator.catalog": "Katalog öffnen",
+    "navigator.tasks": "Aufgaben-Hotspots", "navigator.tasks.desc": "Die häufigsten Problemstellungen im aktuellen Katalog.",
+    "navigator.modalities": "Modalitätssignale", "navigator.modalities.desc": "Nützliche Sensor- und Annotationstypen zum Filtern.",
+    "navigator.lineage": "Datensatz-Linien", "navigator.lineage.desc": "Wichtige Familien, auf denen viele Arbeiten aufbauen.",
     "hero.lead": "Eine kuratierte Karte egozentrischer KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.",
     "btn.github": "GitHub-Repo", "btn.hf": "Hugging-Face-Spiegel", "btn.browse": "Katalog durchsuchen",
     "stat.resources": "egozentrische Ressourcen", "stat.datasets": "Datensätze", "stat.benchmarks": "Benchmarks", "stat.models": "Modelle", "stat.toolkits": "Toolkits",
@@ -142,8 +162,12 @@ const I18N = {
   ja: {
     skip: "カタログへスキップ",
     "language.label": "言語",
-    "nav.catalog": "カタログ", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン",
+    "nav.catalog": "カタログ", "nav.navigator": "ナビゲータ", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン",
     "milestones.title": "マイルストーン", "milestones.desc": "エゴセントリック AI を形づくった画期的な研究——分野の起源から最前線まで。",
+    "navigator.title": "研究ナビゲータ", "navigator.desc": "全行を読む前に、データ・ベンチマーク・モデル・ツールを選ぶためのデータ駆動入口です。", "navigator.catalog": "カタログを開く",
+    "navigator.tasks": "タスクの中心", "navigator.tasks.desc": "現在のカタログで多い問題設定。",
+    "navigator.modalities": "モダリティ信号", "navigator.modalities.desc": "絞り込みに使いやすいセンサー・注釈タイプ。",
+    "navigator.lineage": "データ系譜", "navigator.lineage.desc": "多くの研究が利用・拡張する主要ファミリー。",
     "hero.lead": "エゴセントリック AI の厳選マップ——エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用を支えるデータセット・ベンチマーク・モデル・ツールを収録。",
     "btn.github": "GitHub リポジトリ", "btn.hf": "Hugging Face ミラー", "btn.browse": "カタログを見る",
     "stat.resources": "エゴセントリック資源", "stat.datasets": "データセット", "stat.benchmarks": "ベンチマーク", "stat.models": "モデル", "stat.toolkits": "ツールキット",
@@ -168,8 +192,12 @@ const I18N = {
   ko: {
     skip: "카탈로그로 건너뛰기",
     "language.label": "언어",
-    "nav.catalog": "카탈로그", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표",
+    "nav.catalog": "카탈로그", "nav.navigator": "내비게이터", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표",
     "milestones.title": "이정표", "milestones.desc": "자기중심 AI를 형성한 획기적 연구 — 분야의 기원부터 현재 최전선까지.",
+    "navigator.title": "연구 내비게이터", "navigator.desc": "모든 행을 읽기 전에 데이터셋, 벤치마크, 모델, 도구를 고르는 데이터 기반 입구입니다.", "navigator.catalog": "카탈로그 열기",
+    "navigator.tasks": "작업 핫스팟", "navigator.tasks.desc": "현재 카탈로그에서 가장 흔한 문제 설정.",
+    "navigator.modalities": "모달리티 신호", "navigator.modalities.desc": "필터링에 유용한 센서와 주석 유형.",
+    "navigator.lineage": "데이터셋 계보", "navigator.lineage.desc": "많은 연구가 기반으로 삼거나 확장한 주요 계열.",
     "hero.lead": "자기중심 AI의 엄선된 지도 — 자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 뒷받침하는 데이터셋·벤치마크·모델·도구를 담았습니다.",
     "btn.github": "GitHub 저장소", "btn.hf": "Hugging Face 미러", "btn.browse": "카탈로그 보기",
     "stat.resources": "자기중심 자원", "stat.datasets": "데이터셋", "stat.benchmarks": "벤치마크", "stat.models": "모델", "stat.toolkits": "툴킷",
@@ -194,8 +222,12 @@ const I18N = {
   pt: {
     skip: "Ir para o catálogo",
     "language.label": "Idioma",
-    "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos",
+    "nav.catalog": "Catálogo", "nav.navigator": "Navegador", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos",
     "milestones.title": "Marcos", "milestones.desc": "Os trabalhos marcantes que moldaram a IA egocêntrica — das origens do campo à sua fronteira atual.",
+    "navigator.title": "Navegador de pesquisa", "navigator.desc": "Entradas rápidas e orientadas por dados para escolher dados, benchmarks, modelos e ferramentas.", "navigator.catalog": "Abrir catálogo",
+    "navigator.tasks": "Tarefas em destaque", "navigator.tasks.desc": "Configurações de problema mais comuns no catálogo atual.",
+    "navigator.modalities": "Sinais de modalidade", "navigator.modalities.desc": "Tipos úteis de sensores e anotações para filtrar.",
+    "navigator.lineage": "Linhagens de dados", "navigator.lineage.desc": "Famílias principais que muitos trabalhos usam ou estendem.",
     "hero.lead": "Um mapa curado da IA egocêntrica: os conjuntos de dados, benchmarks, modelos e ferramentas por trás da visão egocêntrica, da IA incorporada e da robótica, da aprendizagem visão-linguagem, da memória de longo contexto, da RA/RV e da interação mão-objeto.",
     "btn.github": "Repositório GitHub", "btn.hf": "Espelho Hugging Face", "btn.browse": "Explorar catálogo",
     "stat.resources": "recursos egocêntricos", "stat.datasets": "conjuntos de dados", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "ferramentas",
@@ -285,6 +317,54 @@ function rowLimit() {
   return window.matchMedia("(max-width: 640px)").matches ? 18 : 48;
 }
 
+const GENERIC_MODALITIES = new Set([
+  "video", "rgb", "text", "annotations", "egocentric-video", "first-person-video"
+]);
+
+const LINEAGE_ANCHORS = [
+  {
+    label: "Ego4D family",
+    query: "Ego4D",
+    tokens: ["Ego4D"],
+    note: "Long-form video, memory, NLQ, forecasting, and derived QA/VLP tasks."
+  },
+  {
+    label: "EPIC-KITCHENS family",
+    query: "EPIC-KITCHENS",
+    tokens: ["EPIC-KITCHENS", "EPIC"],
+    note: "Kitchen action, hand-object interaction, segmentation, audio, and retrieval."
+  },
+  {
+    label: "Project Aria family",
+    query: "Aria",
+    tokens: ["Project Aria", "Aria"],
+    note: "AR glasses, gaze, SLAM/MPS, smart-glasses datasets, and wearable sensing."
+  },
+  {
+    label: "Ego-Exo4D family",
+    query: "Ego-Exo",
+    tokens: ["Ego-Exo4D", "EgoExo", "Ego-Exo"],
+    note: "Skilled activity with synchronized first- and third-person capture."
+  },
+  {
+    label: "UMI-style robotics",
+    query: "UMI",
+    tokens: ["UMI", "FastUMI", "MV-UMI", "UMIGen"],
+    note: "Human demonstration interfaces and wrist-camera robot policy data."
+  },
+  {
+    label: "Xperience-10M stack",
+    query: "Xperience-10M",
+    tokens: ["Xperience-10M", "HOMIE"],
+    note: "Large-scale egocentric world-model data, sample, tools, and baselines."
+  }
+];
+
+const ACRONYMS = new Set([
+  "ai", "api", "ar", "av", "hdf5", "hoi", "imu", "mllm", "mps", "nlq", "qa",
+  "rgb", "rgbd", "slam", "vla", "vlm", "vlp", "vqa", "vr"
+]);
+
 const els = {
   rows: document.querySelector("#catalog-rows"),
   count: document.querySelector("#result-count"),
@@ -302,13 +382,19 @@ const els = {
   languageSwitcher: document.querySelector("#language-switcher"),
   languageMenu: document.querySelector("#language-menu"),
   languageCurrent: document.querySelector("#language-current"),
-  milestoneBoard: document.querySelector("#milestone-board")
+  milestoneBoard: document.querySelector("#milestone-board"),
+  taskHotspots: document.querySelector("#task-hotspots"),
+  modalityHotspots: document.querySelector("#modality-hotspots"),
+  lineageList: document.querySelector("#lineage-list")
 };
 
 function titleize(value) {
   return String(value || "")
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
+    .replace(/\b[\w+]+\b/g, (word) => {
+      const lower = word.toLowerCase();
+      return ACRONYMS.has(lower) ? lower.toUpperCase() : word.charAt(0).toUpperCase() + word.slice(1);
+    });
 }
 
 function option(select, value, label) {
@@ -420,6 +506,11 @@ function compactReleased(resource) {
   return resource.released || resource.year || "unknown";
 }
 
+function asArray(value) {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
 function matchesLane(resource, laneId) {
   if (!laneId) return true;
   const lane = state.data.lanes.find((item) => item.id === laneId);
@@ -431,19 +522,52 @@ function matchesLane(resource, laneId) {
 function searchableText(resource) {
   return [
     resource.name, resource.kind, resource.status, resource.released, resource.venue, resource.scale,
+    resource.access, resource.release_note,
+    ...asArray(resource.derived_from),
     ...(resource.tasks || []), ...(resource.modalities || []), ...(resource.task_families || [])
   ].join(" ").toLowerCase();
 }
 
+function queryTerms(query) {
+  return String(query || "")
+    .toLowerCase()
+    .split(/[\s,;/]+/)
+    .map((term) => term.trim())
+    .filter(Boolean);
+}
+
 function filteredResources() {
-  const query = state.filters.search.trim().toLowerCase();
+  const terms = queryTerms(state.filters.search);
   return state.data.resources
     .filter((resource) => resource.scope !== "adjacent")
     .filter((resource) => !state.filters.kind || resource.kind === state.filters.kind)
     .filter((resource) => !state.filters.status || resource.status === state.filters.status)
     .filter((resource) => matchesLane(resource, state.filters.lane))
-    .filter((resource) => !query || searchableText(resource).includes(query))
+    .filter((resource) => {
+      if (!terms.length) return true;
+      const haystack = searchableText(resource);
+      return terms.every((term) => haystack.includes(term));
+    })
     .sort((a, b) => String(compactReleased(b)).localeCompare(String(compactReleased(a))) || a.name.localeCompare(b.name));
+}
+
+function focusCatalogSearch(query) {
+  state.filters = { search: query, kind: "", status: "", lane: "" };
+  applyFiltersToForm();
+  syncUrl();
+  renderRows();
+  document.querySelector("#catalog").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+}
+
+function statusHint(resource) {
+  const label = {
+    open: "public route listed",
+    request: "request needed",
+    benchmark: "benchmark or labels",
+    partial: "partial release",
+    watch: "release watch"
+  }[resource.status] || "status checked";
+  return resource.verified_at ? `${label} · checked ${resource.verified_at}` : label;
 }
 
 function renderRows() {
@@ -462,6 +586,7 @@ function renderRows() {
     const tasks = (resource.tasks || []).slice(0, 3);
     const modalities = (resource.modalities || []).slice(0, 3).map(titleize).join(" / ");
     const sourceLine = [resource.venue, modalities, resource.license].filter(Boolean).join(" / ");
+    const statusLine = statusHint(resource);
 
     row.innerHTML = `
       <td data-label="${escapeHtml(t("th.resource"))}">
@@ -472,7 +597,10 @@ function renderRows() {
       </td>
       <td data-label="${escapeHtml(t("th.kind"))}"><span class="chip">${escapeHtml(titleize(resource.kind))}</span></td>
       <td data-label="${escapeHtml(t("th.released"))}">${escapeHtml(compactReleased(resource))}</td>
-      <td data-label="${escapeHtml(t("th.status"))}"><span class="chip status-${escapeHtml(resource.status)}">${escapeHtml(resource.status)}</span></td>
+      <td data-label="${escapeHtml(t("th.status"))}">
+        <span class="chip status-${escapeHtml(resource.status)}">${escapeHtml(resource.status)}</span>
+        <span class="status-context" title="${escapeHtml(resource.release_note || resource.access || statusLine)}">${escapeHtml(statusLine)}</span>
+      </td>
       <td data-label="${escapeHtml(t("th.signal"))}">
         <div>${escapeHtml(resource.scale || "")}</div>
         <div class="task-tags">${tasks.map((task) => `<span class="chip">${escapeHtml(titleize(task))}</span>`).join("")}</div>
@@ -480,6 +608,96 @@ function renderRows() {
     `;
     els.rows.appendChild(row);
   });
+}
+
+function topTokens(resources, field, options = {}) {
+  const skip = options.skip || new Set();
+  const counts = new Map();
+  resources.forEach((resource) => {
+    (resource[field] || []).forEach((token) => {
+      if (!token || skip.has(token)) return;
+      counts.set(token, (counts.get(token) || 0) + 1);
+    });
+  });
+  return Array.from(counts, ([token, count]) => ({ token, count }))
+    .sort((a, b) => b.count - a.count || a.token.localeCompare(b.token))
+    .slice(0, options.limit || 10)
+    .map(({ token }) => {
+      const terms = queryTerms(token);
+      const count = resources.filter((resource) => {
+        const haystack = searchableText(resource);
+        return terms.every((term) => haystack.includes(term));
+      }).length;
+      return { token, count };
+    })
+    .sort((a, b) => b.count - a.count || a.token.localeCompare(b.token));
+}
+
+function renderTokenCloud(container, tokens) {
+  if (!container) return;
+  container.replaceChildren();
+  tokens.forEach(({ token, count }) => {
+    const button = document.createElement("button");
+    button.className = "token-button";
+    button.type = "button";
+    button.innerHTML = `<span>${escapeHtml(titleize(token))}</span><strong>${escapeHtml(count)}</strong>`;
+    button.addEventListener("click", () => focusCatalogSearch(token));
+    container.appendChild(button);
+  });
+}
+
+function lineageMatches(anchor, resources) {
+  return resources.filter((resource) => {
+    const text = [
+      resource.name,
+      resource.url,
+      resource.venue,
+      ...asArray(resource.derived_from),
+      ...(resource.modalities || [])
+    ].join(" ").toLowerCase();
+    return anchor.tokens.some((token) => text.includes(token.toLowerCase()));
+  }).sort((a, b) => {
+    const score = (resource) => {
+      const name = String(resource.name || "").toLowerCase();
+      const derived = asArray(resource.derived_from).join(" ").toLowerCase();
+      return anchor.tokens.reduce((total, token) => {
+        const term = token.toLowerCase();
+        return total + (name.includes(term) ? 4 : 0) + (derived.includes(term) ? 2 : 0);
+      }, 0);
+    };
+    return score(b) - score(a) || String(compactReleased(b)).localeCompare(String(compactReleased(a)));
+  });
+}
+
+function renderLineageList(resources) {
+  if (!els.lineageList) return;
+  els.lineageList.replaceChildren();
+  LINEAGE_ANCHORS.forEach((anchor) => {
+    const matches = lineageMatches(anchor, resources);
+    const topNames = matches.slice(0, 3).map((resource) => resource.name).join(", ");
+    const button = document.createElement("button");
+    button.className = "lineage-button";
+    button.type = "button";
+    button.innerHTML = `
+      <span class="lineage-main">
+        <strong>${escapeHtml(anchor.label)}</strong>
+        <span>${escapeHtml(anchor.note)}</span>
+      </span>
+      <span class="lineage-meta">
+        <strong>${escapeHtml(matches.length)}</strong>
+        <span>${escapeHtml(topNames)}</span>
+      </span>
+    `;
+    button.addEventListener("click", () => focusCatalogSearch(anchor.query));
+    els.lineageList.appendChild(button);
+  });
+}
+
+function renderNavigator() {
+  const resources = state.data.resources.filter((resource) => resource.scope !== "adjacent");
+  renderTokenCloud(els.taskHotspots, topTokens(resources, "tasks", { limit: 10 }));
+  renderTokenCloud(els.modalityHotspots, topTokens(resources, "modalities", { skip: GENERIC_MODALITIES, limit: 10 }));
+  renderLineageList(resources);
 }
 
 function renderFilters() {
@@ -657,6 +875,7 @@ async function init() {
   renderStats();
   renderSummary();
   renderFilters();
+  renderNavigator();
   renderLanes();
   renderStatuses();
   renderMilestones();

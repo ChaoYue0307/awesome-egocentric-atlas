@@ -1011,6 +1011,7 @@
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#catalog" data-i18n="nav.catalog">Catalog</a>
+        <a href="#navigator" data-i18n="nav.navigator">Navigator</a>
         <a href="#milestones" data-i18n="nav.milestones">Milestones</a>
         <a href="#lanes" data-i18n="nav.lanes">Lanes</a>
         <a href="#access" data-i18n="nav.access">Access</a>
@@ -1076,6 +1077,39 @@
 
       <section class="visual-band" aria-label="Atlas overview">
         <img src="assets/awesome-egocentric-atlas-map.png" width="3840" height="2190" loading="lazy" decoding="async" alt="Awesome Egocentric Atlas system map">
+      </section>
+
+      <section class="section navigator" id="navigator">
+        <div class="section-heading">
+          <div>
+            <h2 data-i18n="navigator.title">Research Navigator</h2>
+            <p data-i18n="navigator.desc">Fast, data-driven entry points for choosing datasets, benchmarks, models, and tools without reading every row first.</p>
+          </div>
+          <a class="text-link" href="#catalog" data-i18n="navigator.catalog">Open catalog</a>
+        </div>
+        <div class="navigator-grid" aria-label="Research navigator">
+          <article class="navigator-panel">
+            <div class="panel-heading">
+              <h3 data-i18n="navigator.tasks">Task Hotspots</h3>
+              <p data-i18n="navigator.tasks.desc">Most common problem settings in the current catalog.</p>
+            </div>
+            <div class="token-cloud" id="task-hotspots"></div>
+          </article>
+          <article class="navigator-panel">
+            <div class="panel-heading">
+              <h3 data-i18n="navigator.modalities">Modality Signals</h3>
+              <p data-i18n="navigator.modalities.desc">Useful sensing and annotation types to filter for.</p>
+            </div>
+            <div class="token-cloud" id="modality-hotspots"></div>
+          </article>
+          <article class="navigator-panel lineage-panel">
+            <div class="panel-heading">
+              <h3 data-i18n="navigator.lineage">Dataset Lineages</h3>
+              <p data-i18n="navigator.lineage.desc">Major families that many works build on or extend.</p>
+            </div>
+            <div class="lineage-list" id="lineage-list"></div>
+          </article>
+        </div>
       </section>
 
       <section class="section milestones" id="milestones">

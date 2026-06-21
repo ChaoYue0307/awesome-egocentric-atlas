@@ -488,7 +488,9 @@
         "imu",
         "hierarchical-language"
       ],
-      "license": "other"
+      "license": "other",
+      "access": "controlled non-commercial access; external agreement-signing step may be required",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Xperience-10M Sample",
@@ -515,7 +517,8 @@
         "hdf5-annotations"
       ],
       "license": "cc-by-nc-4.0",
-      "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
+      "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HALOMI",
@@ -544,7 +547,9 @@
         "human-demonstrations",
         "robot-actions",
         "humanoid-motion"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "HumanoidArena",
@@ -574,7 +579,9 @@
         "text-instructions",
         "robot-actions",
         "humanoid-motion"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "VLESA",
@@ -604,7 +611,9 @@
         "egocentric-video",
         "annotations",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "OVO-S-Bench",
@@ -634,7 +643,9 @@
         "text",
         "temporal-grounding",
         "annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoPro-Bench",
@@ -663,7 +674,9 @@
         "egocentric-video",
         "text",
         "annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Pro2Assist",
@@ -691,7 +704,9 @@
         "smart-glasses",
         "text",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoSPT / SPOT",
@@ -722,7 +737,9 @@
         "object-masks",
         "3d-pose",
         "text-instructions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoBabyVLM",
@@ -751,7 +768,9 @@
         "egocentric-video",
         "audio",
         "language"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoInteract",
@@ -780,7 +799,9 @@
         "egocentric-video",
         "annotations",
         "scene-graphs"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EggHand",
@@ -810,7 +831,9 @@
         "hand-pose",
         "language",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Map-Mono-Ego",
@@ -839,7 +862,9 @@
         "human-pose",
         "scene-scans",
         "camera-trajectory"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Being-H0.7",
@@ -867,7 +892,9 @@
         "egocentric-video",
         "latent-actions",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "GazeVLA",
@@ -897,7 +924,9 @@
         "gaze",
         "language",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "WARPED",
@@ -924,7 +953,9 @@
         "wrist-camera-video",
         "3d-gaussian-splatting",
         "hand-trajectories"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "PIE-V",
@@ -952,7 +983,9 @@
         "egocentric-video",
         "annotations",
         "structured-reasoning"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "DP-DeGauss",
@@ -980,7 +1013,9 @@
         "3d-gaussian-splatting",
         "hand-object-motion",
         "4d-scene"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "LifeEval",
@@ -1008,7 +1043,9 @@
         "egocentric-video",
         "dialogue",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "SAVA-X",
@@ -1037,7 +1074,9 @@
         "egocentric-video",
         "exocentric-video",
         "annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "AG-EgoPose",
@@ -1063,7 +1102,9 @@
         "fisheye-video",
         "3d-human-pose",
         "motion"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Ego4D",
@@ -1101,7 +1142,8 @@
         "3d",
         "narrations"
       ],
-      "license": "Ego4D License Agreement"
+      "license": "Ego4D License Agreement",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "Ego-Exo4D",
@@ -1136,7 +1178,8 @@
         "camera-poses",
         "language"
       ],
-      "license": "Ego-Exo4D License Agreement"
+      "license": "Ego-Exo4D License Agreement",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EPIC-KITCHENS-100",
@@ -1169,7 +1212,8 @@
         "object-boxes"
       ],
       "license": "CC BY-NC 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "HD-EPIC",
@@ -1205,7 +1249,8 @@
         "3d"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2502.04144"
+      "license_url": "https://arxiv.org/abs/2502.04144",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HoloAssist",
@@ -1239,7 +1284,8 @@
         "audio"
       ],
       "license": "not specified",
-      "license_url": "https://holoassist.github.io/"
+      "license_url": "https://holoassist.github.io/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Assembly101",
@@ -1267,7 +1313,8 @@
         "3d-hand-pose"
       ],
       "license": "not specified",
-      "license_url": "https://assembly-101.github.io/"
+      "license_url": "https://assembly-101.github.io/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-1K",
@@ -1293,7 +1340,8 @@
         "calibration"
       ],
       "license": "fair-noncommercial-research-license",
-      "license_url": "https://huggingface.co/datasets/facebook/ego-1k"
+      "license_url": "https://huggingface.co/datasets/facebook/ego-1k",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoObjects",
@@ -1321,7 +1369,8 @@
         "instance-labels"
       ],
       "license": "MIT",
-      "license_url": "https://github.com/facebookresearch/EgoObjects/blob/main/LICENSE"
+      "license_url": "https://github.com/facebookresearch/EgoObjects/blob/main/LICENSE",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoBlind",
@@ -1346,7 +1395,9 @@
       "modalities": [
         "first-person-video",
         "qa"
-      ]
+      ],
+      "release_note": "NeurIPS 2025 D&B paper; verify stable dataset download and terms before benchmark use",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoDex",
@@ -1371,7 +1422,9 @@
         "egocentric-video",
         "3d-hand-pose",
         "head-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVerse",
@@ -1396,7 +1449,9 @@
         "egocentric-video",
         "annotations",
         "tooling"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "OpenEgo",
@@ -1422,7 +1477,9 @@
         "egocentric-video",
         "hand-pose",
         "action-primitives"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Dobb-E / HoNY",
@@ -1450,7 +1507,9 @@
         "depth",
         "robot-actions",
         "wrist-camera-video"
-      ]
+      ],
+      "release_note": "Public dataset, code, model, and hardware pages exist; dataset terms should be rechecked before benchmark use.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "Universal Manipulation Interface / UMI",
@@ -1481,7 +1540,8 @@
         "robot-actions"
       ],
       "license": "MIT",
-      "license_url": "https://github.com/real-stanford/universal_manipulation_interface/blob/main/LICENSE"
+      "license_url": "https://github.com/real-stanford/universal_manipulation_interface/blob/main/LICENSE",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "FastUMI",
@@ -1506,7 +1566,9 @@
       "modalities": [
         "wrist-camera-video",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Paper reports an open-sourced dataset; verify stable repository, download path, and license.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "FastUMI-100K",
@@ -1537,7 +1599,8 @@
         "language-instructions"
       ],
       "license": "apache-2.0",
-      "license_url": "https://github.com/MrKeee/FastUMI-100K/blob/main/LICENSE"
+      "license_url": "https://github.com/MrKeee/FastUMI-100K/blob/main/LICENSE",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "MV-UMI",
@@ -1564,7 +1627,9 @@
         "wrist-camera-video",
         "third-person-video",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code, data, and license before treating as a reusable package.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "UMIGen",
@@ -1592,7 +1657,9 @@
         "wrist-camera-video",
         "point-clouds",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public Cloud-UMI code, generated data, and license.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "Hoi!",
@@ -1621,7 +1688,9 @@
         "robot-actions",
         "contact",
         "articulated-objects"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify stable dataset download path and license.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "YUBI",
@@ -1649,7 +1718,9 @@
         "wrist-camera-video",
         "robot-actions",
         "6dof"
-      ]
+      ],
+      "release_note": "Paper reports release of hardware, software, and dataset; verify stable public repository and license.",
+      "verified_at": "2026-06-17"
     },
     {
       "name": "Open X-Embodiment / RT-X",
@@ -1707,7 +1778,9 @@
         "robot-camera-video",
         "language-instructions",
         "trajectories"
-      ]
+      ],
+      "release_note": "arXiv technical report from June 2026; verify checkpoints, code, data mix, and license.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Qwen-RobotWorld",
@@ -1737,7 +1810,9 @@
         "language-instructions",
         "robot-actions",
         "synthetic-video"
-      ]
+      ],
+      "release_note": "arXiv technical report from June 2026; verify model, data, benchmark, and license release state.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "RhinoVLA",
@@ -1765,7 +1840,9 @@
         "robot-camera-video",
         "robot-actions",
         "language-instructions"
-      ]
+      ],
+      "release_note": "arXiv technical report from June 2026; project says code will be open-sourced, verify release and license.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "OpenEAI-Platform",
@@ -1793,7 +1870,9 @@
         "robot-camera-video",
         "robot-actions",
         "language-instructions"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2026; authors say hardware designs, drivers, models, and pipelines will be released after acceptance.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "NORA",
@@ -1820,7 +1899,9 @@
         "robot-camera-video",
         "robot-actions",
         "language-instructions"
-      ]
+      ],
+      "release_note": "arXiv paper from April 2025; verify code, model weights, training data, and license terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoLive",
@@ -1844,7 +1925,9 @@
       "modalities": [
         "egocentric-video",
         "multimodal-annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "World In Your Hands",
@@ -1871,7 +1954,9 @@
         "depth",
         "hand-pose",
         "wrist-trajectory"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "InterVLA",
@@ -1901,7 +1986,9 @@
         "human-motion",
         "object-motion",
         "verbal-commands"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPAT3D / EgoPAT3Dv2",
@@ -1932,7 +2019,8 @@
         "3d-target-labels"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2403.05046"
+      "license_url": "https://arxiv.org/abs/2403.05046",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HOT3D",
@@ -1965,7 +2053,8 @@
         "camera-pose"
       ],
       "license": "CC BY-NC-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "HOI4D",
@@ -1996,7 +2085,8 @@
         "segmentation"
       ],
       "license": "CC BY-NC 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "H2O",
@@ -2027,7 +2117,8 @@
         "scene-point-clouds"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2104.11181"
+      "license_url": "https://arxiv.org/abs/2104.11181",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ARCTIC",
@@ -2055,7 +2146,8 @@
         "object-meshes",
         "contact",
         "articulated-objects"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoHands",
@@ -2079,7 +2171,8 @@
         "hand-masks"
       ],
       "license": "not specified",
-      "license_url": "http://vision.soic.indiana.edu/projects/egohands/"
+      "license_url": "http://vision.soic.indiana.edu/projects/egohands/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "FPHA",
@@ -2106,7 +2199,8 @@
         "object-pose"
       ],
       "license": "not specified",
-      "license_url": "https://guiggh.github.io/publications/first-person-hands/"
+      "license_url": "https://guiggh.github.io/publications/first-person-hands/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoHOS",
@@ -2131,7 +2225,8 @@
         "hand-object-contact-masks"
       ],
       "license": "MIT",
-      "license_url": "https://github.com/owenzlz/EgoHOS/blob/main/LICENSE"
+      "license_url": "https://github.com/owenzlz/EgoHOS/blob/main/LICENSE",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego2Hands",
@@ -2156,7 +2251,8 @@
         "synthetic-composited-masks"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2011.07252"
+      "license_url": "https://arxiv.org/abs/2011.07252",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego2HandsPose",
@@ -2180,7 +2276,8 @@
         "3d-hand-pose"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2206.04927"
+      "license_url": "https://arxiv.org/abs/2206.04927",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoBody",
@@ -2211,7 +2308,8 @@
         "body-pose"
       ],
       "license": "not specified",
-      "license_url": "https://sanweiliti.github.io/egobody/egobody.html"
+      "license_url": "https://sanweiliti.github.io/egobody/egobody.html",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "GIMO",
@@ -2240,7 +2338,8 @@
         "scene-scans"
       ],
       "license": "not specified",
-      "license_url": "https://github.com/y-zheng18/GIMO"
+      "license_url": "https://github.com/y-zheng18/GIMO",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoHumans",
@@ -2268,7 +2367,9 @@
         "2d-pose",
         "3d-pose",
         "mesh"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UnrealEgo",
@@ -2292,7 +2393,8 @@
         "3d-human-pose"
       ],
       "license": "not specified",
-      "license_url": "https://4dqv.mpi-inf.mpg.de/UnrealEgo/"
+      "license_url": "https://4dqv.mpi-inf.mpg.de/UnrealEgo/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "xR-EgoPose",
@@ -2316,7 +2418,8 @@
         "3d-human-pose"
       ],
       "license": "custom",
-      "license_url": "https://github.com/facebookresearch/xR-EgoPose/blob/HEAD/LICENSE.md"
+      "license_url": "https://github.com/facebookresearch/xR-EgoPose/blob/HEAD/LICENSE.md",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoGTA / EgoPW-Scene",
@@ -2342,7 +2445,9 @@
         "synthetic-egocentric",
         "scene-depth",
         "human-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoTracks",
@@ -2354,6 +2459,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2301.03213",
       "paper": "https://arxiv.org/abs/2301.03213",
+      "derived_from": "Ego4D",
       "scale": "Ego4D-derived long-term object-tracking benchmark emphasizing large ego-motion, hand-object occlusion, target exits/re-entries, appearance changes, and re-detection",
       "tasks": [
         "long-term-object-tracking",
@@ -2362,7 +2468,8 @@
       "task_families": [
         "tracking",
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TREK-150",
@@ -2374,13 +2481,15 @@
       "scope": "egocentric",
       "url": "https://machinelearning.uniud.it/datasets/trek150/",
       "paper": "https://arxiv.org/abs/2108.13665",
+      "derived_from": "EPIC-KITCHENS",
       "scale": "150 densely annotated first-person tracking sequences from EPIC-KITCHENS for systematic evaluation of manipulated-object tracking under FPV motion and interaction",
       "tasks": [
         "single-object-tracking"
       ],
       "task_families": [
         "tracking"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Project Aria Datasets",
@@ -2409,7 +2518,8 @@
         "gaze",
         "imu",
         "mps"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Aria Digital Twin",
@@ -2442,7 +2552,8 @@
         "synthetic-rendering"
       ],
       "license": "CC BY-NC-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Aria Everyday Activities",
@@ -2473,7 +2584,8 @@
         "speech"
       ],
       "license": "CC BY-NC-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Nymeria",
@@ -2504,7 +2616,8 @@
         "observer-view"
       ],
       "license": "CC BY-NC-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Digital Twin Catalog",
@@ -2530,7 +2643,8 @@
         "aria-images"
       ],
       "license": "Project Aria DTC Dataset License Agreement",
-      "license_url": "https://www.projectaria.com/datasets/dtc/"
+      "license_url": "https://www.projectaria.com/datasets/dtc/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoLife",
@@ -2558,7 +2672,9 @@
         "audio",
         "third-person-reference",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-EXTRA",
@@ -2585,7 +2701,8 @@
         "qa"
       ],
       "license": "not specified",
-      "license_url": "https://fpv-iplab.github.io/Ego-EXTRA/"
+      "license_url": "https://fpv-iplab.github.io/Ego-EXTRA/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoSchema",
@@ -2598,6 +2715,7 @@
       "url": "http://egoschema.github.io/",
       "paper": "https://arxiv.org/abs/2308.09126",
       "code": "https://github.com/egoschema/EgoSchema",
+      "derived_from": "Ego4D",
       "scale": "5K+ multiple-choice QA pairs, 250+ hours",
       "tasks": [
         "long-video-qa",
@@ -2606,7 +2724,8 @@
       "task_families": [
         "memory-and-long-context",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-15"
     },
     {
       "name": "X-LeBench",
@@ -2618,6 +2737,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2501.06835",
       "paper": "https://arxiv.org/abs/2501.06835",
+      "derived_from": "Ego4D",
       "scale": "432 simulated life logs, 23 minutes to 16.4 hours",
       "tasks": [
         "extremely-long-video-understanding",
@@ -2627,7 +2747,9 @@
       "task_families": [
         "memory-and-long-context",
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TeleEgo",
@@ -2655,7 +2777,9 @@
         "audio",
         "text",
         "timeline"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoMemReason",
@@ -2667,6 +2791,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.09874",
       "paper": "https://arxiv.org/abs/2605.09874",
+      "derived_from": "week-long egocentric video",
       "scale": "500 questions across entity, event, and behavior memory; average 25.9 hours of memory backtracking",
       "tasks": [
         "long-horizon-memory",
@@ -2678,7 +2803,9 @@
       "task_families": [
         "memory-and-long-context",
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "arXiv paper; verify public data/code release before benchmark use",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoClip",
@@ -2690,6 +2817,7 @@
       "scope": "egocentric",
       "url": "https://github.com/showlab/EgoVLP",
       "paper": "https://arxiv.org/abs/2206.01670",
+      "derived_from": "Ego4D",
       "scale": "3.8M clip-text pairs",
       "tasks": [
         "video-language-pretraining",
@@ -2700,7 +2828,8 @@
         "video-language"
       ],
       "license": "not specified",
-      "license_url": "https://github.com/showlab/EgoVLP"
+      "license_url": "https://github.com/showlab/EgoVLP",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "RefEgo",
@@ -2712,6 +2841,7 @@
       "scope": "egocentric",
       "url": "https://github.com/shuheikurita/RefEgo",
       "paper": "https://arxiv.org/abs/2308.12035",
+      "derived_from": "Ego4D",
       "scale": "12K+ clips and 41 hours for video-based referring-expression comprehension",
       "tasks": [
         "referring-expression-comprehension",
@@ -2721,7 +2851,8 @@
       "task_families": [
         "grounding-localization",
         "tracking"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoBench",
@@ -2743,7 +2874,9 @@
         "assistance-and-agents",
         "reasoning-intent-planning",
         "hand-object-interaction"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoIntrospect",
@@ -2774,7 +2907,9 @@
         "motion",
         "physiological-signals",
         "self-annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Minerva-Ego",
@@ -2805,7 +2940,9 @@
         "text",
         "segmentation",
         "structured-reasoning"
-      ]
+      ],
+      "release_note": "Paper points to the google-deepmind/neptune repository for download; release state should be rechecked as the benchmark matures.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "MA-EgoQA",
@@ -2827,7 +2964,8 @@
         "memory-and-long-context",
         "audio-and-social",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EASG-Bench",
@@ -2849,7 +2987,8 @@
         "question-answering",
         "detection-segmentation",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MyEgo",
@@ -2870,7 +3009,8 @@
       "task_families": [
         "question-answering",
         "memory-and-long-context"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoToM",
@@ -2882,6 +3022,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2503.22152",
       "paper": "https://arxiv.org/abs/2503.22152",
+      "derived_from": "Ego4D",
       "scale": "Ego4D-based theory-of-mind QA benchmark over camera-wearer goals, beliefs, and next actions, showing MLLMs trail humans on belief and future-action reasoning",
       "tasks": [
         "theory-of-mind",
@@ -2891,7 +3032,9 @@
       ],
       "task_families": [
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "arXiv paper; verify public release route before benchmark use",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoSound",
@@ -2903,6 +3046,10 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2602.14122",
       "paper": "https://arxiv.org/abs/2602.14122",
+      "derived_from": [
+        "Ego4D",
+        "EgoBlind"
+      ],
       "scale": "7,315 validated QA pairs across 900 videos",
       "tasks": [
         "sound-understanding",
@@ -2914,7 +3061,9 @@
         "audio-and-social",
         "grounding-localization",
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "CVPR 2026 paper; verify public release route before benchmark use",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoEsportsQA",
@@ -2941,7 +3090,9 @@
       "modalities": [
         "first-person-video",
         "qa"
-      ]
+      ],
+      "release_note": "arXiv paper; virtual first-person setting, not wearable-camera capture",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Causal-Plan-1M",
@@ -2961,7 +3112,9 @@
       ],
       "task_families": [
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AssistQ",
@@ -2983,7 +3136,8 @@
         "assistance-and-agents",
         "question-answering",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoTaskQA",
@@ -3006,7 +3160,8 @@
         "assistance-and-agents",
         "reasoning-intent-planning",
         "question-answering"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HowToDIV",
@@ -3032,7 +3187,9 @@
         "egocentric-video",
         "dialogue",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoThink",
@@ -3054,7 +3211,8 @@
         "question-answering",
         "evaluation-and-tooling",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VidEgoThink",
@@ -3066,6 +3224,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2410.11623",
       "paper": "https://arxiv.org/abs/2410.11623",
+      "derived_from": "Ego4D",
       "scale": "Ego4D-derived embodied-video benchmark for video QA, hierarchy planning, visual grounding, and reward modeling, with GPT-4o-assisted generation and human filtering",
       "tasks": [
         "video-qa",
@@ -3078,7 +3237,8 @@
         "reasoning-intent-planning",
         "grounding-localization",
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoCoT-Bench",
@@ -3098,7 +3258,8 @@
       ],
       "task_families": [
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "NoRA",
@@ -3118,7 +3279,9 @@
       ],
       "task_families": [
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego2Web",
@@ -3139,7 +3302,9 @@
       "task_families": [
         "assistance-and-agents",
         "grounding-localization"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Pause and Think",
@@ -3160,7 +3325,9 @@
       "task_families": [
         "assistance-and-agents",
         "reasoning-intent-planning"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-R1",
@@ -3182,7 +3349,9 @@
         "memory-and-long-context",
         "reasoning-intent-planning",
         "video-language"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoTrigger / HME-QA",
@@ -3194,6 +3363,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2508.01915",
       "paper": "https://arxiv.org/abs/2508.01915",
+      "derived_from": "Ego4D",
       "scale": "340 human-annotated first-person QA pairs from full-length Ego4D videos curated for audio",
       "tasks": [
         "memory-assistance",
@@ -3210,7 +3380,9 @@
         "first-person-video",
         "audio",
         "qa"
-      ]
+      ],
+      "release_note": "Accepted to ISMAR 2025 as TVCG journal paper",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
@@ -3238,7 +3410,8 @@
         "action-labels"
       ],
       "license": "not specified",
-      "license_url": "https://cbs.ic.gatech.edu/fpv/"
+      "license_url": "https://cbs.ic.gatech.edu/fpv/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Charades-Ego",
@@ -3269,7 +3442,8 @@
         "descriptions"
       ],
       "license": "not specified",
-      "license_url": "https://prior.allenai.org/projects/charades"
+      "license_url": "https://prior.allenai.org/projects/charades",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MECCANO",
@@ -3298,7 +3472,8 @@
         "gaze"
       ],
       "license": "not specified",
-      "license_url": "https://iplab.dmi.unict.it/MECCANO/"
+      "license_url": "https://iplab.dmi.unict.it/MECCANO/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoProceL",
@@ -3319,7 +3494,8 @@
         "action-and-procedure"
       ],
       "license": "not specified",
-      "license_url": "https://sid2697.github.io/egoprocel/"
+      "license_url": "https://sid2697.github.io/egoprocel/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EGO-CH",
@@ -3351,7 +3527,9 @@
         "location-labels",
         "poi-labels",
         "surveys"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoExoLearn",
@@ -3381,7 +3559,8 @@
         "annotations"
       ],
       "license": "MIT",
-      "license_url": "https://github.com/OpenGVLab/EgoExoLearn/blob/main/LICENSE"
+      "license_url": "https://github.com/OpenGVLab/EgoExoLearn/blob/main/LICENSE",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "DogCentric",
@@ -3403,7 +3582,8 @@
         "animal-egocentric-video"
       ],
       "license": "not specified",
-      "license_url": "https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/"
+      "license_url": "https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "KrishnaCam / OAK",
@@ -3429,7 +3609,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoK360",
@@ -3453,7 +3635,9 @@
       "modalities": [
         "first-person-360-video",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoTraj",
@@ -3482,7 +3666,8 @@
         "scene-labels"
       ],
       "license": "custom",
-      "license_url": "https://github.com/yehiahmad/EgoTraj/blob/HEAD/LICENSE"
+      "license_url": "https://github.com/yehiahmad/EgoTraj/blob/HEAD/LICENSE",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VISOR",
@@ -3494,6 +3679,7 @@
       "scope": "egocentric",
       "url": "https://epic-kitchens.github.io/VISOR/",
       "paper": "https://arxiv.org/abs/2209.13064",
+      "derived_from": "EPIC-KITCHENS",
       "scale": "EPIC-KITCHENS pixel-level annotation benchmark with 272K manual masks, 257 object classes, 9.9M interpolated dense masks, 67K hand-object relations, and 36 hours from 179 untrimmed videos",
       "tasks": [
         "hand-segmentation",
@@ -3504,7 +3690,8 @@
         "hand-object-interaction",
         "detection-segmentation"
       ],
-      "license": "cc-by-nc-4.0"
+      "license": "cc-by-nc-4.0",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EPIC-Sounds",
@@ -3516,13 +3703,15 @@
       "scope": "egocentric",
       "url": "https://epic-kitchens.github.io/epic-sounds/",
       "paper": "https://arxiv.org/abs/2302.00646",
+      "derived_from": "EPIC-KITCHENS",
       "scale": "EPIC-KITCHENS audio annotation benchmark with 78.4K categorized audible event/action segments across 44 classes plus 39.2K non-categorized segments and material labels for object-collision sounds",
       "tasks": [
         "audio-event-recognition"
       ],
       "task_families": [
         "audio-and-social"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC-Fields",
@@ -3534,6 +3723,7 @@
       "scope": "egocentric",
       "url": "https://epic-kitchens.github.io/epic-fields/",
       "paper": "https://arxiv.org/abs/2306.08731",
+      "derived_from": "EPIC-KITCHENS",
       "scale": "3D camera and neural-rendering augmentation for EPIC-KITCHENS, reconstructing 96% of videos with 19M registered frames over 99 hours across 45 kitchens",
       "tasks": [
         "3d-fields",
@@ -3542,7 +3732,8 @@
       "task_families": [
         "three-d-and-scene",
         "reasoning-intent-planning"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVLP",
@@ -3563,7 +3754,8 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVLPv2",
@@ -3582,7 +3774,8 @@
       ],
       "task_families": [
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LaViLa",
@@ -3602,7 +3795,8 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoNCE++",
@@ -3622,7 +3816,8 @@
       "task_families": [
         "hand-object-interaction",
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoDTM",
@@ -3641,7 +3836,8 @@
       ],
       "task_families": [
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVLM",
@@ -3666,7 +3862,9 @@
         "egocentric-video",
         "text",
         "mllm"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoGraph",
@@ -3685,7 +3883,9 @@
       ],
       "task_families": [
         "memory-and-long-context"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ropedia Xperience-10M Task Suite",
@@ -3696,6 +3896,7 @@
       "status": "open",
       "scope": "egocentric",
       "url": "https://huggingface.co/spaces/cy0307/ropedia-xperience-10m-task-suite",
+      "derived_from": "Xperience-10M Sample",
       "scale": "12 embodied-AI task contracts over one public Xperience-10M sample episode",
       "tasks": [
         "task-design",
@@ -3715,7 +3916,9 @@
         "full-body-mocap",
         "imu",
         "language"
-      ]
+      ],
+      "access": "public Space and related artifacts",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ropedia Xperience-10M Task Baselines",
@@ -3726,6 +3929,10 @@
       "status": "open",
       "scope": "egocentric",
       "url": "https://huggingface.co/cy0307/ropedia-xperience-10m-task-baselines",
+      "derived_from": [
+        "Xperience-10M",
+        "Xperience-10M Sample"
+      ],
       "scale": "Public task definitions, baseline artifacts, metrics, and scale-up notes for Xperience-10M",
       "tasks": [
         "baseline-evaluation",
@@ -3747,7 +3954,8 @@
         "imu",
         "language"
       ],
-      "license": "mit"
+      "license": "mit",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "GroundVQA",
@@ -3768,7 +3976,8 @@
       "task_families": [
         "memory-and-long-context",
         "grounding-localization"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HiERO",
@@ -3792,7 +4001,9 @@
         "question-answering",
         "grounding-localization",
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoAgent",
@@ -3813,7 +4024,9 @@
       "task_families": [
         "reasoning-intent-planning",
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "StillFast",
@@ -3834,7 +4047,8 @@
       "task_families": [
         "action-and-procedure",
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "CONE",
@@ -3855,7 +4069,9 @@
       "task_families": [
         "grounding-localization",
         "video-language"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoHandTrajPred / USST",
@@ -3879,7 +4095,8 @@
         "action-and-procedure",
         "hand-object-interaction",
         "three-d-and-scene"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Project Aria Tools",
@@ -3901,7 +4118,8 @@
       ],
       "task_families": [
         "ar-sensing-navigation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC-KITCHENS action models",
@@ -3918,7 +4136,8 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HOMIE-toolkit",
@@ -3929,6 +4148,7 @@
       "status": "open",
       "scope": "egocentric",
       "url": "https://github.com/Ropedia/HOMIE-toolkit",
+      "derived_from": "Xperience-10M",
       "scale": "MIT-licensed Ropedia toolkit for loading and visualizing Xperience-10M-style HDF5 annotations, depth, calibration, mocap, IMU, and Rerun streams",
       "tasks": [
         "xperience-10m-loading",
@@ -3946,7 +4166,8 @@
         "ar-sensing-navigation",
         "three-d-and-scene"
       ],
-      "license": "MIT"
+      "license": "MIT",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ActiveMimic",
@@ -3974,7 +4195,9 @@
         "egocentric-video",
         "hand-object-motion",
         "camera-motion"
-      ]
+      ],
+      "release_note": "arXiv paper found in 2026 scan; verify public code, data artifacts, and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPriMo",
@@ -4001,7 +4224,9 @@
         "egocentric-video",
         "human-demonstrations",
         "humanoid-motion"
-      ]
+      ],
+      "release_note": "arXiv paper found in 2026 scan; verify public code and demonstration assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "FEEL",
@@ -4030,7 +4255,9 @@
         "force",
         "glove-sensors",
         "hand-object-contact"
-      ]
+      ],
+      "release_note": "arXiv dataset paper found; verify stable download route and license before marking open.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "IMPACT",
@@ -4061,7 +4288,9 @@
         "rgbd",
         "bimanual-annotations",
         "state-labels"
-      ]
+      ],
+      "release_note": "arXiv dataset paper found; verify public assets, splits, and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MM-Conv",
@@ -4092,7 +4321,9 @@
         "motion",
         "gaze",
         "3d-scene"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper found; verify public data/package release and terms.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "GBAT",
@@ -4121,7 +4352,9 @@
         "eye-tracking",
         "gaze",
         "annotations"
-      ]
+      ],
+      "release_note": "arXiv toolkit paper found; verify public repository and install instructions.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "OpenGlass",
@@ -4148,7 +4381,9 @@
         "event-camera",
         "embedded-ml",
         "wearable-sensors"
-      ]
+      ],
+      "release_note": "arXiv hardware/toolkit paper found; verify repository, hardware files, and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Beyond Motion Primitives",
@@ -4160,6 +4395,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.27464",
       "paper": "https://arxiv.org/abs/2605.27464",
+      "derived_from": "Ego4D",
       "scale": "160K-sample Ego4D-derived dataset for behavioral activity recognition from head-mounted IMU",
       "tasks": [
         "ar-wearables",
@@ -4175,7 +4411,9 @@
       "modalities": [
         "head-mounted-imu",
         "egocentric-context-labels"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public annotations and terms.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoRelight",
@@ -4202,7 +4440,9 @@
         "egocentric-capture",
         "illumination",
         "human-avatar"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code, assets, and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "PAWS",
@@ -4230,7 +4470,9 @@
         "egocentric-video",
         "hand-object-interaction",
         "articulated-objects"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public extraction pipeline and generated artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Static Scene Reconstruction from Dynamic Egocentric Videos",
@@ -4257,7 +4499,9 @@
         "egocentric-video",
         "3d-reconstruction",
         "masks"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and benchmark setup.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-InBetween",
@@ -4286,7 +4530,9 @@
         "egocentric-video",
         "text-instructions",
         "generated-video"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Syn2Seq Exo-to-Ego",
@@ -4315,7 +4561,9 @@
         "exocentric-video",
         "camera-pose",
         "generated-video"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VGGT-Segmentor",
@@ -4345,7 +4593,9 @@
         "exocentric-video",
         "geometry",
         "segmentation"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and evaluation data.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Personal Point of View 3DGS",
@@ -4372,7 +4622,9 @@
         "egocentric-video",
         "3d-gaussian-splatting",
         "scene-reconstruction"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify associated code and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoReasoner",
@@ -4400,7 +4652,9 @@
         "egocentric-video",
         "4d-scene",
         "structured-reasoning"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and evaluation protocol.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Gaze-Regularized VLMs",
@@ -4428,7 +4682,9 @@
         "egocentric-video",
         "gaze",
         "vlm"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Recurrent Reasoning VLM",
@@ -4457,7 +4713,9 @@
         "egocentric-video",
         "video-language",
         "task-progress"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego4OOD",
@@ -4484,7 +4742,9 @@
         "egocentric-video",
         "action-labels",
         "domain-shifts"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper found; verify public splits and code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Robust Egocentric Visual Attention",
@@ -4511,7 +4771,9 @@
         "egocentric-video",
         "language",
         "attention"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HD-EPIC VQA T-CoT",
@@ -4523,6 +4785,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2601.10228",
       "paper": "https://arxiv.org/abs/2601.10228",
+      "derived_from": "HD-EPIC",
       "scale": "HD-EPIC VQA challenge solution with query/choice preprocessing, Qwen2.5-VL fine-tuning, temporal chain-of-thought prompting, and post-processing",
       "tasks": [
         "hd-epic-vqa",
@@ -4539,7 +4802,9 @@
         "egocentric-video",
         "video-qa",
         "mllm"
-      ]
+      ],
+      "release_note": "arXiv challenge report found; verify public implementation and model artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Event-VStream",
@@ -4568,7 +4833,9 @@
         "long-video",
         "streaming-video",
         "event-segments"
-      ]
+      ],
+      "release_note": "arXiv paper surfaced through Ego4D/EgoVis scan; verify egocentric evaluation setup and public code.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "V-Nutri",
@@ -4596,7 +4863,9 @@
         "egocentric-video",
         "cooking-video",
         "nutrition-labels"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code/data release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Trajectory-Conditioned Egocentric Prediction",
@@ -4624,7 +4893,9 @@
         "egocentric-video",
         "camera-trajectory",
         "future-prediction"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and evaluation assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Zero-Shot Ego Object ReID",
@@ -4636,6 +4907,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.26383",
       "paper": "https://arxiv.org/abs/2605.26383",
+      "derived_from": "EPIC-KITCHENS",
       "scale": "Zero-shot object re-identification in egocentric kitchen videos via multi-stage SAM3 feature fusion",
       "tasks": [
         "object-reidentification",
@@ -4653,7 +4925,9 @@
         "egocentric-video",
         "object-crops",
         "sam-features"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and benchmark setup.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Mamba Ego Action Recognition",
@@ -4681,7 +4955,9 @@
         "egocentric-video",
         "hand-skeleton",
         "rgb"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public implementation and benchmark details.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Watch Remember Reason",
@@ -4708,7 +4984,9 @@
         "human-view-video",
         "multimodal-video",
         "long-video"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify whether code/data artifacts are public.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AnchorWorld",
@@ -4735,7 +5013,9 @@
         "egocentric-video",
         "3d-human-motion",
         "generated-video"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "WristCompass",
@@ -4763,7 +5043,9 @@
         "wrist-camera",
         "hand-motion",
         "camera-orientation"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and evaluation data.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Objects Before Words",
@@ -4790,7 +5072,9 @@
         "child-view-video",
         "caregiver-speech",
         "objects"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and SAYCam-derived assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Continual Child-View Learning",
@@ -4818,7 +5102,9 @@
         "child-view-video",
         "speech",
         "chronological-stream"
-      ]
+      ],
+      "release_note": "arXiv paper found; verify public code and data dependencies.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Understanding-Enhanced Ego Mistake Detection",
@@ -4847,7 +5133,9 @@
         "egocentric-video",
         "mllm",
         "action-labels"
-      ]
+      ],
+      "release_note": "arXiv report found; verify challenge setting and public code.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VISTA",
@@ -4859,6 +5147,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.20901",
       "paper": "https://arxiv.org/abs/2605.20901",
+      "derived_from": "Ego4D",
       "scale": "V-JEPA Integrated StillFast Temporal Anticipator for Ego4D Short-Term Object Interaction Anticipation at EgoVis 2026",
       "tasks": [
         "short-term-object-interaction-anticipation",
@@ -4876,7 +5165,9 @@
         "egocentric-video",
         "object-boxes",
         "action-labels"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "JFAA",
@@ -4888,6 +5179,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.20904",
       "paper": "https://arxiv.org/abs/2605.20904",
+      "derived_from": "EPIC-KITCHENS-100",
       "scale": "JEPA-based Future Action Anticipation method for the EPIC-KITCHENS-100 Action Anticipation Challenge at EgoVis 2026",
       "tasks": [
         "action-anticipation",
@@ -4902,7 +5194,9 @@
         "egocentric-video",
         "action-labels",
         "v-jepa-features"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "FROST-STA",
@@ -4914,6 +5208,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2606.00694",
       "paper": "https://arxiv.org/abs/2606.00694",
+      "derived_from": "Ego4D",
       "scale": "Frozen dense-feature submission for Ego4D Short-Term Object Interaction Anticipation at EgoVis 2026",
       "tasks": [
         "short-term-object-interaction-anticipation",
@@ -4931,7 +5226,9 @@
         "egocentric-video",
         "object-boxes",
         "dense-features"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TAP-JEPA",
@@ -4943,6 +5240,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2606.00662",
       "paper": "https://arxiv.org/abs/2606.00662",
+      "derived_from": "EPIC-KITCHENS-100",
       "scale": "Runner-up EPIC-KITCHENS-100 Action Anticipation Challenge submission using frozen V-JEPA 2.1 future-latent probing and two-stage score fusion",
       "tasks": [
         "action-anticipation",
@@ -4957,7 +5255,9 @@
         "egocentric-video",
         "action-labels",
         "v-jepa-features"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HiERO-StepG",
@@ -4969,6 +5269,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.31227",
       "paper": "https://arxiv.org/abs/2605.31227",
+      "derived_from": "Ego4D",
       "scale": "Hierarchical activity-understanding solution for the Ego4D Step Grounding Challenge",
       "tasks": [
         "step-grounding",
@@ -4985,7 +5286,9 @@
         "egocentric-video",
         "step-labels",
         "hierarchical-activities"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TempRet",
@@ -4997,6 +5300,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.24470",
       "paper": "https://arxiv.org/abs/2605.24470",
+      "derived_from": "EPIC-KITCHENS-100",
       "scale": "Temporal enhancement and two-stage reranking for the CVPR 2026 EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge",
       "tasks": [
         "video-text-retrieval",
@@ -5011,7 +5315,9 @@
         "egocentric-video",
         "text",
         "retrieval-features"
-      ]
+      ],
+      "release_note": "EgoVis 2026 challenge report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "CASTLE2026 Team WDL",
@@ -5023,6 +5329,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2606.00712",
       "paper": "https://arxiv.org/abs/2606.00712",
+      "derived_from": "CASTLE 2024",
       "scale": "Evidence-aware multimodal reasoning pipeline for 600+ hours of multi-perspective egocentric CASTLE Challenge video",
       "tasks": [
         "long-video-qa",
@@ -5039,7 +5346,9 @@
         "transcripts",
         "auxiliary-images",
         "multimodal-context"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "CuriosAI CASTLE",
@@ -5051,6 +5360,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.27800",
       "paper": "https://arxiv.org/abs/2605.27800",
+      "derived_from": "CASTLE 2024",
       "scale": "CASTLE Challenge submission using per-person timelines, speaker-resolved transcripts, multi-VLM captions, and search-verify-answer reasoning",
       "tasks": [
         "long-video-qa",
@@ -5067,7 +5377,9 @@
         "transcripts",
         "captions",
         "multimodal-context"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MARS CASTLE",
@@ -5079,6 +5391,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.18176",
       "paper": "https://arxiv.org/abs/2605.18176",
+      "derived_from": "CASTLE 2024",
       "scale": "Multimodal agentic reasoning with source selection for CASTLE Challenge questions over multi-day, multi-perspective egocentric recordings",
       "tasks": [
         "long-video-qa",
@@ -5097,7 +5410,9 @@
         "gaze",
         "thermal",
         "physiological-signals"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoCross Domain-Wise Inference",
@@ -5109,6 +5424,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2606.00829",
       "paper": "https://arxiv.org/abs/2606.00829",
+      "derived_from": "EgoCross",
       "scale": "Nearly training-free domain-wise inference strategy for EgoCross source-limited egocentric video QA",
       "tasks": [
         "egocentric-video-qa",
@@ -5125,7 +5441,9 @@
         "egocentric-video",
         "qa",
         "support-set"
-      ]
+      ],
+      "release_note": "EgoVis 2026 technical report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HD-EPIC Semantic-Visual Evidence",
@@ -5137,6 +5455,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.29402",
       "paper": "https://arxiv.org/abs/2605.29402",
+      "derived_from": "HD-EPIC",
       "scale": "HD-EPIC VQA Challenge solution that separates semantic and visual evidence for efficient long-video reasoning",
       "tasks": [
         "hd-epic-vqa",
@@ -5152,7 +5471,9 @@
         "video-qa",
         "semantic-evidence",
         "visual-evidence"
-      ]
+      ],
+      "release_note": "EgoVis 2026 challenge report found; verify repository and leaderboard artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UniversalVTG",
@@ -5180,7 +5501,9 @@
         "video",
         "text",
         "temporal-grounding"
-      ]
+      ],
+      "release_note": "arXiv paper found through Ego4D scan; verify egocentric evaluation details and public artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoCom / Ego audio-visual correspondence",
@@ -5202,7 +5525,8 @@
         "video-language"
       ],
       "license": "not specified",
-      "license_url": "http://vision.cs.utexas.edu/projects/ego_av_corr/"
+      "license_url": "http://vision.cs.utexas.edu/projects/ego_av_corr/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EasyCom",
@@ -5223,7 +5547,8 @@
         "video-language"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2107.04174"
+      "license_url": "https://arxiv.org/abs/2107.04174",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Look and Tell",
@@ -5242,7 +5567,9 @@
       "task_families": [
         "foundation-and-representation",
         "video-language"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVLA",
@@ -5260,7 +5587,9 @@
       ],
       "task_families": [
         "robotics-and-vla"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoEngine",
@@ -5280,7 +5609,9 @@
       ],
       "task_families": [
         "robotics-and-vla"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoAERO",
@@ -5299,7 +5630,9 @@
       ],
       "task_families": [
         "robotics-and-vla"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HRDexDB",
@@ -5318,7 +5651,9 @@
       ],
       "task_families": [
         "robotics-and-vla"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UnrealEgo2 / UnrealEgo-RW",
@@ -5339,7 +5674,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TouchMoment",
@@ -5360,7 +5697,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoFun3D",
@@ -5381,7 +5720,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoEMG",
@@ -5402,7 +5743,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoEVHands",
@@ -5424,7 +5767,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "GitHub README rechecked 2026-06-20; source code, pretrained models, and EgoEVHands dataset release are still marked pending.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EventEgoHands",
@@ -5445,7 +5790,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "A multimodal RGB/events FPV hand dataset",
@@ -5466,7 +5813,9 @@
         "hand-object-interaction",
         "three-d-and-scene",
         "pose-and-body"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoExoMem",
@@ -5487,7 +5836,9 @@
         "memory-and-long-context",
         "question-answering",
         "assistance-and-agents"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoSelf",
@@ -5509,7 +5860,9 @@
         "memory-and-long-context",
         "question-answering",
         "assistance-and-agents"
-      ]
+      ],
+      "release_note": "Live access check failed 2026-06-20; kept on watch until the source page reappears or release artifacts are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoCross",
@@ -5531,7 +5884,9 @@
         "memory-and-long-context",
         "question-answering",
         "assistance-and-agents"
-      ]
+      ],
+      "release_note": "GitHub README rechecked 2026-06-20; evaluator code is public, but benchmark JSON/data files are expected under datasets/ and are not bundled with clear access terms.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ADL Dataset",
@@ -5549,7 +5904,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Wrist-mounted ADL",
@@ -5569,7 +5926,8 @@
         "action-and-procedure"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/1511.06783"
+      "license_url": "https://arxiv.org/abs/1511.06783",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Visual Experience Dataset / VEDB",
@@ -5588,7 +5946,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live access check failed 2026-06-20; catalog remains partial pending a working source or confirmed mirror.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UT Ego",
@@ -5606,7 +5966,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HUJI EgoSeg",
@@ -5624,7 +5986,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live access check failed 2026-06-20; catalog remains partial pending a working source or confirmed mirror.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "JPL First-Person Interaction",
@@ -5642,7 +6006,9 @@
       ],
       "task_families": [
         "action-and-procedure"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; catalog remains partial because access, annotations, or terms are incomplete, gated, or not fully verified.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "FT-HID",
@@ -5663,7 +6029,8 @@
         "action-and-procedure"
       ],
       "license": "not specified",
-      "license_url": "https://github.com/ENDLICHERE/FT-HID"
+      "license_url": "https://github.com/ENDLICHERE/FT-HID",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LSC-ADL",
@@ -5683,7 +6050,8 @@
         "action-and-procedure"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2504.02060"
+      "license_url": "https://arxiv.org/abs/2504.02060",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SEED4D",
@@ -5723,7 +6091,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Exo4D Benchmarks",
@@ -5741,7 +6110,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC-KITCHENS Challenges",
@@ -5759,7 +6129,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HD-EPIC VQA Challenge",
@@ -5777,7 +6148,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoEnv",
@@ -5796,7 +6168,8 @@
       "task_families": [
         "video-language",
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoMAS",
@@ -5816,7 +6189,8 @@
       "task_families": [
         "video-language",
         "foundation-and-representation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Exo representation transfer",
@@ -5839,7 +6213,8 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPoseFormer",
@@ -5863,7 +6238,8 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoSTARK",
@@ -5886,7 +6262,8 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoHOS model",
@@ -5910,7 +6287,8 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AV-CONV",
@@ -5934,7 +6312,8 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoAction",
@@ -5957,7 +6336,9 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoAdapt",
@@ -5980,7 +6361,9 @@
         "tracking",
         "pose-and-body",
         "hand-object-interaction"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego4D CLI and docs",
@@ -5997,7 +6380,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Exo4D CLI and docs",
@@ -6014,7 +6398,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VISOR API",
@@ -6031,7 +6416,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoObjects API",
@@ -6049,7 +6435,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HOT3D tooling",
@@ -6065,7 +6452,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HOI4D tooling",
@@ -6082,7 +6470,8 @@
       ],
       "task_families": [
         "evaluation-and-tooling"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVid-5M",
@@ -6104,7 +6493,8 @@
         "generation-and-world-models"
       ],
       "license": "not specified",
-      "license_url": "https://egovid.github.io/"
+      "license_url": "https://egovid.github.io/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AoE",
@@ -6124,7 +6514,9 @@
       "task_families": [
         "robotics-and-vla",
         "foundation-and-representation"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Seeing Across Views (MV-RoboBench)",
@@ -6168,7 +6560,8 @@
         "ar-sensing-navigation"
       ],
       "license": "not specified",
-      "license_url": "https://ieeexplore.ieee.org/document/8299578/"
+      "license_url": "https://ieeexplore.ieee.org/document/8299578/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoBrain",
@@ -6189,7 +6582,9 @@
         "ar-sensing-navigation",
         "action-and-procedure",
         "foundation-and-representation"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MM-Ego",
@@ -6210,7 +6605,8 @@
         "video-language",
         "memory-and-long-context",
         "question-answering"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoStream",
@@ -6230,7 +6626,9 @@
       "task_families": [
         "memory-and-long-context",
         "question-answering"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoMemory",
@@ -6249,7 +6647,9 @@
       ],
       "task_families": [
         "memory-and-long-context"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoTextVQA",
@@ -6269,7 +6669,8 @@
       "task_families": [
         "video-language",
         "question-answering"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Gesture-Based Egocentric Video QA",
@@ -6290,7 +6691,9 @@
         "detection-segmentation",
         "question-answering",
         "grounding-localization"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoVQA",
@@ -6310,7 +6713,8 @@
       "task_families": [
         "question-answering",
         "action-and-procedure"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ExAct",
@@ -6331,7 +6735,8 @@
         "assistance-and-agents",
         "skills-and-quality",
         "video-language"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Home Action Genome / HOMAGE",
@@ -6354,7 +6759,8 @@
         "evaluation-and-tooling"
       ],
       "license": "not specified",
-      "license_url": "https://homeactiongenome.org/"
+      "license_url": "https://homeactiongenome.org/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoExo-Fitness",
@@ -6377,7 +6783,8 @@
         "skills-and-quality"
       ],
       "license": "Apache-2.0",
-      "license_url": "https://github.com/iSEE-Laboratory/EgoExo-Fitness/blob/main/LICENSE"
+      "license_url": "https://github.com/iSEE-Laboratory/EgoExo-Fitness/blob/main/LICENSE",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "WEAR",
@@ -6400,7 +6807,8 @@
         "ar-sensing-navigation"
       ],
       "license": "not specified",
-      "license_url": "https://mariusbock.github.io/wear/"
+      "license_url": "https://mariusbock.github.io/wear/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric HOI Detection",
@@ -6420,7 +6828,8 @@
       "task_families": [
         "hand-object-interaction",
         "detection-segmentation"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SHOW3D",
@@ -6447,7 +6856,9 @@
         "3d-hand-pose",
         "object-pose",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoTouch / TouchAnything",
@@ -6473,7 +6884,9 @@
         "wrist-camera-video",
         "3d-hand-pose",
         "contact"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoEverything",
@@ -6500,7 +6913,9 @@
         "egocentric-video",
         "gaze",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoNight",
@@ -6529,7 +6944,8 @@
         "qa",
         "depth",
         "synthetic-rendering"
-      ]
+      ],
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoIntent",
@@ -6554,7 +6970,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoMAGIC",
@@ -6584,7 +7002,8 @@
         "object-boxes"
       ],
       "license": "CC BY 4.0",
-      "license_url": "https://doi.org/10.5281/zenodo.20089464"
+      "license_url": "https://doi.org/10.5281/zenodo.20089464",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "Audio Hallucination in Egocentric Video",
@@ -6610,7 +7029,9 @@
         "egocentric-video",
         "audio",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "Ego2World",
@@ -6622,6 +7043,7 @@
       "scope": "egocentric",
       "url": "https://arxiv.org/abs/2605.13335",
       "paper": "https://arxiv.org/abs/2605.13335",
+      "derived_from": "HD-EPIC",
       "scale": "Compiles egocentric cooking videos (built on HD-EPIC) into executable symbolic worlds with graph-transition rules for belief-state planning under partial observability",
       "tasks": [
         "planning",
@@ -6634,7 +7056,9 @@
       "modalities": [
         "egocentric-video",
         "annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoCrowds / CrowdEraser",
@@ -6659,7 +7083,9 @@
       "modalities": [
         "egocentric-video",
         "first-person-video"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoPressure",
@@ -6688,7 +7114,8 @@
         "contact"
       ],
       "license": "not specified",
-      "license_url": "https://yiming-zhao.github.io/EgoPressure/"
+      "license_url": "https://yiming-zhao.github.io/EgoPressure/",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoTL",
@@ -6714,7 +7141,9 @@
         "egocentric-video",
         "speech",
         "annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "SuperMemory-VQA",
@@ -6742,7 +7171,9 @@
         "gaze",
         "imu",
         "point-clouds"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoAVU",
@@ -6769,7 +7200,8 @@
         "egocentric-video",
         "audio",
         "qa"
-      ]
+      ],
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoScale",
@@ -6793,7 +7225,9 @@
       "modalities": [
         "egocentric-video",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "StableHand",
@@ -6818,7 +7252,9 @@
       "modalities": [
         "egocentric-video",
         "3d-hand-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-15"
     },
     {
       "name": "EgoVideo",
@@ -6844,7 +7280,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoHOD",
@@ -6871,7 +7308,8 @@
         "egocentric-video",
         "hand",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoM2P",
@@ -6897,7 +7335,9 @@
         "depth",
         "gaze",
         "camera-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "AlanaVLM",
@@ -6923,7 +7363,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Vinci",
@@ -6949,7 +7391,8 @@
         "egocentric-video",
         "audio",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "AMEGO",
@@ -6973,7 +7416,8 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoInstructor",
@@ -6999,7 +7443,8 @@
         "egocentric-video",
         "exocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "GroundNLQ",
@@ -7025,7 +7470,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "OSGNet",
@@ -7050,7 +7496,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoThinker",
@@ -7075,7 +7522,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Walk through Paintings",
@@ -7099,7 +7548,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Temporal-Aware Ego VLM",
@@ -7125,7 +7576,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoMotion",
@@ -7151,7 +7604,9 @@
         "egocentric-video",
         "motion",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Gaze-SoM HOI Anticipation",
@@ -7178,7 +7633,9 @@
         "egocentric-video",
         "gaze",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Sanpo-D",
@@ -7204,7 +7661,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoSurgery",
@@ -7234,7 +7693,8 @@
         "object-boxes"
       ],
       "license": "custom",
-      "license_url": "https://github.com/Fujiry0/EgoSurgery/blob/HEAD/LICENSE.txt"
+      "license_url": "https://github.com/Fujiry0/EgoSurgery/blob/HEAD/LICENSE.txt",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoEMS",
@@ -7260,7 +7720,9 @@
         "egocentric-video",
         "audio",
         "multimodal-annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "LEMMA",
@@ -7287,7 +7749,8 @@
         "multimodal-annotations"
       ],
       "license": "not specified",
-      "license_url": "https://arxiv.org/abs/2007.15781"
+      "license_url": "https://arxiv.org/abs/2007.15781",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoMe",
@@ -7313,7 +7776,9 @@
       "modalities": [
         "egocentric-video",
         "exocentric-video"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "ENIGMA-360",
@@ -7339,7 +7804,9 @@
         "egocentric-video",
         "exocentric-video",
         "first-person-360-video"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoIllusion",
@@ -7365,7 +7832,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoExo-Con",
@@ -7391,7 +7860,9 @@
         "egocentric-video",
         "exocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "WearVQA",
@@ -7417,7 +7888,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "WearVox",
@@ -7444,7 +7917,9 @@
         "egocentric-video",
         "audio",
         "speech"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "SuperGlasses",
@@ -7469,7 +7944,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "PhysBrain",
@@ -7494,7 +7971,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoCampus",
@@ -7519,7 +7998,9 @@
         "egocentric-video",
         "gaze",
         "scene-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Egocentric Clinical Intent",
@@ -7545,7 +8026,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "1M-HUGs / HUG",
@@ -7575,7 +8058,8 @@
         "object-meshes"
       ],
       "license": "not specified",
-      "license_url": "https://grasping.io/"
+      "license_url": "https://grasping.io/",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoKit",
@@ -7604,7 +8088,8 @@
         "wrist-camera-video",
         "head-pose",
         "hand-pose"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "MobileEgo Anywhere",
@@ -7631,7 +8116,9 @@
         "egocentric-video",
         "trajectory",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "UCS-Bench / DirectMe",
@@ -7661,7 +8148,8 @@
         "egocentric-video",
         "qa",
         "trajectory"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "StreamMemBench",
@@ -7690,7 +8178,9 @@
         "egocentric-video",
         "qa",
         "dialogue"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Ego-METAS",
@@ -7720,7 +8210,9 @@
         "gaze",
         "imu",
         "monochrome"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Plan Watch Recover / EgoProactive",
@@ -7748,7 +8240,9 @@
         "egocentric-video",
         "qa",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoExoBench",
@@ -7777,7 +8271,9 @@
         "egocentric-video",
         "exocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoProx",
@@ -7806,7 +8302,9 @@
         "egocentric-video",
         "qa",
         "3d"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "BARISTA",
@@ -7836,7 +8334,9 @@
         "object-masks",
         "object-boxes",
         "action-labels"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "TAVIS",
@@ -7864,7 +8364,9 @@
         "egocentric-video",
         "gaze",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoPoint-Bench",
@@ -7893,7 +8395,9 @@
         "egocentric-video",
         "qa",
         "hand-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "ReFocus / EM-QnF",
@@ -7921,7 +8425,9 @@
         "egocentric-video",
         "qa",
         "dialogue"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "HumanEgo",
@@ -7948,7 +8454,9 @@
         "egocentric-video",
         "hand-pose",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoGuide",
@@ -7974,7 +8482,9 @@
         "egocentric-video",
         "wrist-camera-video",
         "robot-actions"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Ego-Pi",
@@ -8000,7 +8510,9 @@
         "egocentric-video",
         "robot-actions",
         "hand-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoTactile",
@@ -8029,7 +8541,9 @@
         "hand-pose",
         "contact",
         "depth"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoPressDiff",
@@ -8056,7 +8570,9 @@
         "hand-pose",
         "mesh",
         "depth"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoForce Hand Pose",
@@ -8085,7 +8601,8 @@
         "egocentric-video",
         "hand-pose",
         "hand-meshes"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "PROSE",
@@ -8113,7 +8630,9 @@
         "egocentric-video",
         "3d",
         "object-masks"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "OSGNet + MLLM Reranking",
@@ -8141,7 +8660,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "OmniEgo-R2",
@@ -8169,7 +8689,8 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "CASTLE KG Retrieval",
@@ -8198,7 +8719,9 @@
         "egocentric-video",
         "exocentric-video",
         "multimodal-annotations"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Reflective Dialogue EgoCross",
@@ -8226,7 +8749,9 @@
         "egocentric-video",
         "qa",
         "dialogue"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EARL",
@@ -8256,7 +8781,8 @@
         "egocentric-video",
         "object-masks",
         "qa"
-      ]
+      ],
+      "verified_at": "2026-06-16"
     },
     {
       "name": "EgoExo-WM",
@@ -8284,7 +8810,9 @@
         "egocentric-video",
         "exocentric-video",
         "human-pose"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "MotionGRPO",
@@ -8310,7 +8838,9 @@
         "egocentric-video",
         "body-pose",
         "human-motion"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "Hand Trajectory Fusion for Ego NLQ",
@@ -8338,7 +8868,9 @@
         "egocentric-video",
         "hand-pose",
         "text"
-      ]
+      ],
+      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-16"
     },
     {
       "name": "ACE-Ego-0",
@@ -8364,7 +8896,9 @@
         "egocentric-video",
         "language",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code and checkpoint release.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "EgoXtreme",
@@ -8388,7 +8922,9 @@
       "modalities": [
         "egocentric-video",
         "rgb"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for dataset and benchmark release.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "EgoForge",
@@ -8413,7 +8949,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for code and weights.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "EgoHOI World Model",
@@ -8436,7 +8974,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for code release.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "EgoControl",
@@ -8461,7 +9001,9 @@
       "modalities": [
         "egocentric-video",
         "body-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (November 2025); watch for code release.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "EgoFlow",
@@ -8484,7 +9026,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2026); watch for code release.",
+      "verified_at": "2026-06-18"
     },
     {
       "name": "WholeBodyVLA",
@@ -8510,7 +9054,8 @@
         "egocentric-video",
         "language",
         "robot-actions"
-      ]
+      ],
+      "verified_at": "2026-06-19"
     },
     {
       "name": "In-N-On",
@@ -8534,7 +9079,9 @@
       "modalities": [
         "egocentric-video",
         "language"
-      ]
+      ],
+      "release_note": "arXiv preprint (November 2025); watch for code and data release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoZero",
@@ -8557,7 +9104,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv preprint (May 2025); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Ego-PM",
@@ -8583,7 +9132,9 @@
         "egocentric-video",
         "hand-pose",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (August 2025); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "PEDESTRIAN",
@@ -8607,7 +9158,9 @@
       "modalities": [
         "egocentric-video",
         "rgb"
-      ]
+      ],
+      "release_note": "arXiv preprint (December 2025); watch for dataset release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "DeltaDorsal",
@@ -8632,7 +9185,8 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Edge Episodic Memory QA",
@@ -8656,7 +9210,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "LOME",
@@ -8683,7 +9239,9 @@
         "body-pose",
         "hand-pose",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Ego-Nav Co-training",
@@ -8709,7 +9267,9 @@
         "egocentric-video",
         "robot-actions",
         "language"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EXPLORE-Bench",
@@ -8735,7 +9295,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for benchmark release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Hand2World",
@@ -8760,7 +9322,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoSim",
@@ -8785,7 +9349,9 @@
       "modalities": [
         "egocentric-video",
         "camera-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoPush",
@@ -8809,7 +9375,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "MEgoHand",
@@ -8837,7 +9405,9 @@
         "rgb-d",
         "text",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (May 2025); watch for code and data release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoH4",
@@ -8864,7 +9434,9 @@
         "egocentric-video",
         "camera-pose",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2025); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Diff-IP2D",
@@ -8889,7 +9461,8 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "verified_at": "2026-06-19"
     },
     {
       "name": "IndEgo",
@@ -8921,7 +9494,8 @@
         "point-cloud"
       ],
       "license": "cc-by-4.0",
-      "license_url": "https://huggingface.co/datasets/FraunhoferIPK/IndEgo"
+      "license_url": "https://huggingface.co/datasets/FraunhoferIPK/IndEgo",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "LaMAria",
@@ -8948,7 +9522,8 @@
         "egocentric-video",
         "imu",
         "camera-pose"
-      ]
+      ],
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoLifter",
@@ -8973,7 +9548,8 @@
       "modalities": [
         "egocentric-video",
         "camera-pose"
-      ]
+      ],
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoSplat",
@@ -8997,7 +9573,9 @@
       "modalities": [
         "egocentric-video",
         "language"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2025); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "3D-Aware Ego Instance Tracking",
@@ -9023,7 +9601,9 @@
       "modalities": [
         "egocentric-video",
         "camera-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (August 2024); watch for code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "EgoCogNav",
@@ -9049,7 +9629,9 @@
       "modalities": [
         "egocentric-video",
         "motion"
-      ]
+      ],
+      "release_note": "arXiv preprint (November 2025); watch for dataset and code release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "Neck-Mounted Gaze (GLC)",
@@ -9073,7 +9655,9 @@
       "modalities": [
         "egocentric-video",
         "gaze"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); watch for code and data release.",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "CMU-MMAC",
@@ -9101,7 +9685,8 @@
         "audio"
       ],
       "license": "not specified",
-      "license_url": "http://kitchen.cs.cmu.edu/"
+      "license_url": "http://kitchen.cs.cmu.edu/",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "First-Person Social Interactions",
@@ -9128,7 +9713,8 @@
         "egocentric-video"
       ],
       "license": "not specified",
-      "license_url": "http://ai.stanford.edu/~alireza/publication/CVPR12.pdf"
+      "license_url": "http://ai.stanford.edu/~alireza/publication/CVPR12.pdf",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "BEOID",
@@ -9156,7 +9742,8 @@
         "gaze"
       ],
       "license": "not specified",
-      "license_url": "https://dimadamen.github.io/BEOID/"
+      "license_url": "https://dimadamen.github.io/BEOID/",
+      "verified_at": "2026-06-19"
     },
     {
       "name": "DreamDojo",
@@ -9182,7 +9769,8 @@
       "modalities": [
         "egocentric-video",
         "latent-actions"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UniDex",
@@ -9206,7 +9794,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2026); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "DexGloveHOI",
@@ -9233,7 +9823,9 @@
         "egocentric-video",
         "imu",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (May 2026); watch for dataset release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "DexWM",
@@ -9259,7 +9851,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (December 2025); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "H2R",
@@ -9283,7 +9877,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (May 2025); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HumanScale",
@@ -9307,7 +9903,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Do as I Do",
@@ -9332,7 +9930,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoCS-400K",
@@ -9358,7 +9958,9 @@
         "egocentric-video",
         "action-labels",
         "camera-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for dataset release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UNIEGO",
@@ -9387,7 +9989,9 @@
         "exocentric-video",
         "depth",
         "skeleton"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code and checkpoint release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HT-Bench / HandTouch",
@@ -9415,7 +10019,9 @@
         "egocentric-video",
         "tactile",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for benchmark assets and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Hand-4DGS",
@@ -9442,7 +10048,9 @@
         "egocentric-video",
         "hand-pose",
         "hand-meshes"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code, model, and project asset release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Motion-Focused Latent Action VLA",
@@ -9468,7 +10076,9 @@
         "egocentric-video",
         "language",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv preprint marked accepted to IROS 2026; watch for code and checkpoint release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VEGA / VEGA-Bench",
@@ -9497,7 +10107,9 @@
         "scene-geometry",
         "trajectories",
         "language"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); paper says code and benchmark will be released at publication.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Divide Deliberate Decide",
@@ -9522,7 +10134,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VL-MemKnG / WalkieKnowledgeT+",
@@ -9552,7 +10166,9 @@
         "qa",
         "trajectory",
         "scene-graphs"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for benchmark and implementation release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPhys",
@@ -9581,7 +10197,9 @@
         "rgb",
         "physics",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for dataset, code, and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC Efficient Egocentric Perception",
@@ -9610,7 +10228,9 @@
         "gaze",
         "pose",
         "imu"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for system code or reproducible hardware/software artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Temporal Action Graphs for Ego VLMs",
@@ -9637,7 +10257,9 @@
         "egocentric-video",
         "text",
         "temporal-graphs"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); paper says code will be made public.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "V-RAGBench / CARVE",
@@ -9666,7 +10288,9 @@
         "egocentric-video",
         "qa",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for benchmark assets and code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ReRe Cross-View Revisiting",
@@ -9693,7 +10317,9 @@
         "egocentric-video",
         "novel-view-video",
         "3d"
-      ]
+      ],
+      "release_note": "ICML 2026 arXiv preprint; watch for code release from the project page.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EDITH",
@@ -9723,7 +10349,9 @@
         "gaze",
         "speech",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv preprint (June 2026) with project page and code link; verify repository license and long-term availability.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Eva-3M / EvaPose",
@@ -9749,7 +10377,9 @@
         "egocentric-video",
         "body-pose",
         "keypoint-visibility"
-      ]
+      ],
+      "release_note": "CVPR 2026 arXiv preprint; watch for dataset access path and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SAW-Bench",
@@ -9776,7 +10406,9 @@
       "modalities": [
         "egocentric-video",
         "qa"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); watch for benchmark data and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ARGaze",
@@ -9800,7 +10432,9 @@
       "modalities": [
         "egocentric-video",
         "gaze"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026); paper says source code and pretrained models will be released.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "STAformer++ Affordance-Aware Anticipation",
@@ -9827,7 +10461,9 @@
         "egocentric-video",
         "object-boxes",
         "hand-trajectories"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026) reports released code, annotations, and affordances; verify stable repository and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "WristPP",
@@ -9854,7 +10490,9 @@
         "wrist-camera-video",
         "hand-pose",
         "pressure"
-      ]
+      ],
+      "release_note": "arXiv preprint (February 2026) submitted to CHI 2026; watch for data/code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric Co-Pilot",
@@ -9883,7 +10521,9 @@
         "speech",
         "gaze",
         "web-tools"
-      ]
+      ],
+      "release_note": "WWW 2026 arXiv preprint; watch for public implementation and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Gazeify Then Voiceify",
@@ -9912,7 +10552,9 @@
         "gaze",
         "speech",
         "object-masks"
-      ]
+      ],
+      "release_note": "arXiv preprint (January 2026); watch for implementation release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EGAgent",
@@ -9943,7 +10585,8 @@
         "audio",
         "scene-graphs",
         "qa"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Wearable Product Localization",
@@ -9972,7 +10615,9 @@
         "egocentric-video",
         "audio",
         "language"
-      ]
+      ],
+      "release_note": "arXiv preprint (January 2026); watch for implementation and user-study release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "VisionClaw",
@@ -9999,7 +10644,9 @@
         "egocentric-video",
         "speech",
         "web-tools"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2026); watch for public code and reproducible deployment artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ActiveGlasses",
@@ -10026,7 +10673,9 @@
         "stereo-video",
         "point-clouds",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2026); watch for code, data, and hardware release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "INSIGHT",
@@ -10054,7 +10703,9 @@
         "egocentric-video",
         "hand-pose",
         "object-boxes"
-      ]
+      ],
+      "release_note": "AAAI 2026 arXiv paper; watch for code and checkpoint release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "NS-iHOS / WISH",
@@ -10081,7 +10732,9 @@
         "egocentric-video",
         "narrations",
         "object-masks"
-      ]
+      ],
+      "release_note": "arXiv preprint (September 2025); watch for code, labels, and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Exo2Ego / Ego-ExoClip",
@@ -10109,7 +10762,9 @@
         "egocentric-video",
         "exocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "AAAI 2026 arXiv paper; watch for dataset, code, and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoWorld",
@@ -10139,7 +10794,9 @@
         "point-clouds",
         "hand-pose",
         "text"
-      ]
+      ],
+      "release_note": "ICLR 2026 arXiv paper with project page; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Aria STDR",
@@ -10167,7 +10824,9 @@
         "egocentric-video",
         "gaze",
         "scene-text"
-      ]
+      ],
+      "release_note": "arXiv preprint (July 2025); watch for dataset release and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "RaycastGrasp",
@@ -10195,7 +10854,9 @@
         "egocentric-video",
         "gaze",
         "robot-actions"
-      ]
+      ],
+      "release_note": "ICIR 2025 arXiv paper; watch for implementation and hardware details.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Fish2Mesh",
@@ -10221,7 +10882,9 @@
         "egocentric-video",
         "body-pose",
         "human-motion"
-      ]
+      ],
+      "release_note": "arXiv preprint (March 2025); watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "GazeLLM",
@@ -10250,7 +10913,9 @@
         "gaze",
         "audio",
         "text"
-      ]
+      ],
+      "release_note": "Augmented Humans 2025 arXiv paper; watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LookOut / Aria Navigation Dataset",
@@ -10278,7 +10943,9 @@
         "egocentric-video",
         "head-pose",
         "camera-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (August 2025); watch for AND dataset access and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ECHO",
@@ -10308,7 +10975,9 @@
         "wrist-trajectory",
         "object-motion",
         "contact"
-      ]
+      ],
+      "release_note": "arXiv preprint (August 2025); watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "DMC3 Ego VideoQA",
@@ -10336,7 +11005,9 @@
         "egocentric-video",
         "qa",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (October 2025); watch for code and checkpoints.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Uni-Hand",
@@ -10366,7 +11037,8 @@
         "egocentric-video",
         "hand-pose",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SFHand / EgoHaFL",
@@ -10395,7 +11067,9 @@
         "egocentric-video",
         "hand-pose",
         "language-instructions"
-      ]
+      ],
+      "release_note": "arXiv preprint (November 2025); watch for EgoHaFL dataset and code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "OpenTouch",
@@ -10424,7 +11098,9 @@
         "tactile",
         "hand-pose",
         "text"
-      ]
+      ],
+      "release_note": "arXiv preprint (December 2025) with project page; verify dataset download and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "mmEgoHand",
@@ -10453,7 +11129,9 @@
         "imu",
         "radar",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv preprint (January 2025); watch for hardware, dataset, and code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AiGet",
@@ -10479,7 +11157,9 @@
         "egocentric-video",
         "gaze",
         "language"
-      ]
+      ],
+      "release_note": "CHI 2025 arXiv paper; watch for implementation artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego4o",
@@ -10507,7 +11187,9 @@
         "imu",
         "text",
         "human-motion"
-      ]
+      ],
+      "release_note": "arXiv preprint (April 2025); watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoExo-Gen",
@@ -10536,7 +11218,9 @@
         "exocentric-video",
         "text",
         "object-masks"
-      ]
+      ],
+      "release_note": "ICLR 2025 arXiv paper; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Reading in the Wild",
@@ -10564,7 +11248,9 @@
         "egocentric-video",
         "gaze",
         "head-pose"
-      ]
+      ],
+      "release_note": "NeurIPS 2025 arXiv paper with Project Aria dataset page; verify access terms and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego 6DoF Object Trajectories",
@@ -10593,7 +11279,9 @@
         "exocentric-video",
         "object-pose",
         "text"
-      ]
+      ],
+      "release_note": "CVPR 2025 arXiv paper; watch for generated trajectories, code, and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HEADS-UP",
@@ -10619,7 +11307,9 @@
       "modalities": [
         "egocentric-video",
         "trajectories"
-      ]
+      ],
+      "release_note": "arXiv preprint (September 2024); watch for dataset release and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Embodied VideoAgent",
@@ -10649,7 +11339,9 @@
         "depth",
         "pose",
         "scene-graphs"
-      ]
+      ],
+      "release_note": "arXiv preprint submitted December 2024 with project page; paper says code and demo will be made public.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SoundingActions",
@@ -10676,7 +11368,9 @@
         "egocentric-video",
         "audio",
         "narrations"
-      ]
+      ],
+      "release_note": "CVPR 2024 arXiv paper with project page; watch for code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoChoir",
@@ -10704,7 +11398,9 @@
         "head-pose",
         "object-meshes",
         "contact"
-      ]
+      ],
+      "release_note": "NeurIPS 2024 arXiv paper with project page; watch for code and data release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "ObjectRelator",
@@ -10733,7 +11429,9 @@
         "exocentric-video",
         "object-masks",
         "text"
-      ]
+      ],
+      "release_note": "ICCV 2025 Highlight arXiv paper; watch for code and benchmark artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HUX",
@@ -10762,7 +11460,9 @@
         "gaze",
         "speech",
         "memory"
-      ]
+      ],
+      "release_note": "arXiv preprint (July 2024); watch for implementation artifacts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoZAR",
@@ -10788,7 +11488,9 @@
       "modalities": [
         "egocentric-video",
         "scene-labels"
-      ]
+      ],
+      "release_note": "arXiv preprint (September 2024) with project page; watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TouchInsight",
@@ -10816,7 +11518,9 @@
         "egocentric-video",
         "hand-pose",
         "contact"
-      ]
+      ],
+      "release_note": "UIST 2024 arXiv paper; watch for implementation release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EffHandEgoNet",
@@ -10843,7 +11547,9 @@
         "egocentric-video",
         "hand-pose",
         "object-boxes"
-      ]
+      ],
+      "release_note": "FG 2024 arXiv paper; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Untrimmed Action Anticipation",
@@ -10866,7 +11572,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2022; watch for maintained code.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoGAN",
@@ -10891,7 +11599,9 @@
       "modalities": [
         "egocentric-video",
         "hand-masks"
-      ]
+      ],
+      "release_note": "arXiv paper from March 2022; watch for code and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HOI Forecast / Interaction Hotspots",
@@ -10918,7 +11628,8 @@
         "egocentric-video",
         "hand-trajectories",
         "object-masks"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SOS Handled Objects",
@@ -10944,7 +11655,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "ECCV 2022 paper; watch for a stable code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "I-CVAE LTA",
@@ -10971,7 +11684,8 @@
       "modalities": [
         "egocentric-video",
         "narrations"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "UmeTrack",
@@ -10996,7 +11710,9 @@
       "modalities": [
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "SIGGRAPH Asia 2022 paper; watch for maintained implementation and model weights.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "InternVideo-Ego4D",
@@ -11024,7 +11740,9 @@
         "egocentric-video",
         "audio",
         "narrations"
-      ]
+      ],
+      "release_note": "ECCV 2022 Ego4D Workshop technical report; verify whether the announced code remains public.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoT2 / Egocentric Video Task Translation",
@@ -11051,7 +11769,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoLoc",
@@ -11079,7 +11798,9 @@
         "egocentric-video",
         "camera-pose",
         "3d-point-clouds"
-      ]
+      ],
+      "release_note": "ICCV 2023 paper; watch for long-term code and data packaging.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "NaQ",
@@ -11107,7 +11828,9 @@
         "egocentric-video",
         "narrations",
         "text"
-      ]
+      ],
+      "release_note": "CVPR 2023 paper; watch for code and pretrained checkpoints.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Only",
@@ -11131,7 +11854,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv paper from January 2023; watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoDistill",
@@ -11157,7 +11882,8 @@
       "modalities": [
         "egocentric-video",
         "head-pose"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "TransFusion",
@@ -11185,7 +11911,9 @@
         "egocentric-video",
         "text",
         "object-boxes"
-      ]
+      ],
+      "release_note": "Peer-reviewed version appears in TCSVT; watch for stable code and benchmark packaging.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Fine-Grained Affordance Annotation",
@@ -11211,7 +11939,9 @@
         "egocentric-video",
         "object-masks",
         "hand-masks"
-      ]
+      ],
+      "release_note": "WACV 2023 paper; verify the current public annotation package and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Next Active Object Anticipation",
@@ -11236,7 +11966,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "Published in IEEE Access 2024; watch for maintained code and data.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MINOTAUR",
@@ -11263,7 +11995,9 @@
         "egocentric-video",
         "text",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2023; watch for public code and checkpoints.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoViT",
@@ -11288,7 +12022,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv paper from March 2023; watch for implementation release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AV-EgoGaze Anticipation",
@@ -11316,7 +12052,9 @@
         "egocentric-video",
         "audio",
         "gaze"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2023; watch for code and dataset packaging.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AntGPT",
@@ -11343,7 +12081,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "ICLR 2024 paper; watch for maintained code and prompt/data release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Encode-Store-Retrieve",
@@ -11371,7 +12111,9 @@
         "egocentric-video",
         "text",
         "memory"
-      ]
+      ],
+      "release_note": "arXiv paper from August 2023; watch for code, data, and deployment details.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPoser",
@@ -11397,7 +12139,8 @@
         "head-pose",
         "body-pose",
         "imu"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Helping Hands",
@@ -11424,7 +12167,9 @@
         "egocentric-video",
         "hand",
         "object-boxes"
-      ]
+      ],
+      "release_note": "ICCV 2023 paper; watch for public implementation.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Open-Vocabulary Egocentric Actions",
@@ -11450,7 +12195,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoBlur",
@@ -11475,7 +12221,9 @@
       "modalities": [
         "egocentric-video",
         "aria"
-      ]
+      ],
+      "release_note": "Project Aria privacy paper; verify public tool packaging and maintenance.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "POV-Surgery",
@@ -11503,7 +12251,8 @@
         "object-pose"
       ],
       "license": "not specified",
-      "license_url": "https://batfacewayne.github.io/POV_Surgery_io/"
+      "license_url": "https://batfacewayne.github.io/POV_Surgery_io/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPCA",
@@ -11530,7 +12279,9 @@
         "egocentric-video",
         "hand",
         "object-boxes"
-      ]
+      ],
+      "release_note": "ICCV 2023 paper; watch for maintained code and assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EGOFALLS",
@@ -11557,7 +12308,9 @@
         "egocentric-video",
         "audio",
         "imu"
-      ]
+      ],
+      "release_note": "arXiv paper from September 2023; verify dataset access and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego3DPose",
@@ -11583,7 +12336,9 @@
         "stereo-video",
         "body-pose",
         "3d-pose"
-      ]
+      ],
+      "release_note": "SIGGRAPH Asia 2023 paper; watch for code and data release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SANPO",
@@ -11611,7 +12366,9 @@
         "egocentric-video",
         "scene-geometry",
         "trajectory"
-      ]
+      ],
+      "release_note": "WACV 2025 submission version found in the 2023 scan; verify current dataset page and terms.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric Pedestrian Trajectory Benchmark",
@@ -11635,7 +12392,9 @@
       "modalities": [
         "egocentric-video",
         "trajectory"
-      ]
+      ],
+      "release_note": "arXiv paper from October 2023; watch for benchmark data and code.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Symbolic Active Object Localization",
@@ -11664,7 +12423,9 @@
         "egocentric-video",
         "text",
         "object-boxes"
-      ]
+      ],
+      "release_note": "EMNLP 2023 paper; watch for maintained code and assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "IndustReal",
@@ -11687,7 +12448,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "WACV 2024 paper; verify current dataset repository and license before marking open.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Aria-NeRF",
@@ -11714,7 +12477,9 @@
         "aria",
         "scene-geometry",
         "camera-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2023; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric Whole-Body MoCap",
@@ -11739,7 +12504,9 @@
         "fisheye-video",
         "body-pose",
         "human-motion"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2023; watch for code and dataset assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Exo2EgoDVC",
@@ -11767,7 +12534,8 @@
         "egocentric-video",
         "third-person-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "PALM",
@@ -11794,7 +12562,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2023; watch for public code and prompts.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LEAP",
@@ -11821,7 +12591,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper and linked data folder; verify current access terms and code.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Action Scene Graphs",
@@ -11849,7 +12621,9 @@
       "modalities": [
         "egocentric-video",
         "scene-graphs"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2023; later EASG-Bench is already tracked separately.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LEGO",
@@ -11875,7 +12649,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2023; watch for model and dataset release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "LifelongMemory",
@@ -11902,7 +12678,9 @@
         "egocentric-video",
         "text",
         "memory"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2023; verify code and benchmark availability.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPlan-Bench",
@@ -11929,7 +12707,8 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "CaptainCook4D",
@@ -11955,7 +12734,9 @@
         "audio",
         "gaze",
         "imu"
-      ]
+      ],
+      "release_note": "Accepted to NeurIPS 2024 Datasets and Benchmarks; verify current project-page data access and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Get a Grip",
@@ -11980,7 +12761,8 @@
         "egocentric-video",
         "hand-pose",
         "object-meshes"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Rolling-Unrolling LSTMs",
@@ -12004,7 +12786,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "ICCV 2019 oral / TPAMI follow-up; watch for maintained code and models.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Few-Shot First-Person Action Recognition",
@@ -12029,7 +12813,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "T-PAMI paper; watch for long-term code/model availability.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC-Fusion",
@@ -12055,7 +12841,9 @@
       "modalities": [
         "egocentric-video",
         "audio"
-      ]
+      ],
+      "release_note": "ICCV 2019 paper; watch for stable implementation.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Seeing and Hearing Egocentric Actions",
@@ -12081,7 +12869,9 @@
       "modalities": [
         "egocentric-video",
         "audio"
-      ]
+      ],
+      "release_note": "ICCV 2019 EPIC Workshop paper; watch for code and benchmark packaging.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Motor Attention HOI Forecasting",
@@ -12107,7 +12897,9 @@
         "egocentric-video",
         "hand-trajectories",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2019; watch for code and benchmark assets.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Symbiotic Attention",
@@ -12134,7 +12926,9 @@
         "egocentric-video",
         "hand",
         "object-boxes"
-      ]
+      ],
+      "release_note": "AAAI 2020 oral paper; watch for maintained implementation.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "First-Person Motion-Appearance SSL",
@@ -12157,7 +12951,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "ICPR 2020 paper; watch for code/model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Unifying Few- and Zero-Shot Ego Action Recognition",
@@ -12183,7 +12979,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "EPIC@CVPR 2020 paper; watch for code and split release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-OMG",
@@ -12210,7 +13008,9 @@
         "egocentric-video",
         "object-boxes",
         "hand"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2020; related TPAMI contact-representation work is tracked separately.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "SelfPose",
@@ -12235,7 +13035,9 @@
       "modalities": [
         "fisheye-video",
         "body-pose"
-      ]
+      ],
+      "release_note": "T-PAMI 2020 paper; watch for stable code and data links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric 4D Human Body Capture",
@@ -12261,7 +13063,9 @@
         "egocentric-video",
         "body-pose",
         "scene-geometry"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2020; watch for release of code/data.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "RHOI",
@@ -12287,7 +13091,8 @@
         "egocentric-video",
         "hand-pose",
         "object-meshes"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Imagination-Based Ego Action Anticipation",
@@ -12311,7 +13116,9 @@
       ],
       "modalities": [
         "egocentric-video"
-      ]
+      ],
+      "release_note": "IEEE TIP 2021 paper; watch for maintained implementation.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Contact Representations for Action Forecasting",
@@ -12337,7 +13144,9 @@
         "egocentric-video",
         "contact",
         "object-boxes"
-      ]
+      ],
+      "release_note": "T-PAMI 2021 paper; watch for code and models.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Indoor Future Person Localization",
@@ -12362,7 +13171,9 @@
       "modalities": [
         "egocentric-video",
         "trajectories"
-      ]
+      ],
+      "release_note": "IROS 2021 paper; verify current data/code availability.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "HPS",
@@ -12390,7 +13201,9 @@
         "imu",
         "body-pose",
         "scene-scans"
-      ]
+      ],
+      "release_note": "CVPR 2021 paper; verify current project assets and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric Pose from Human Vision Span",
@@ -12415,7 +13228,9 @@
       "modalities": [
         "egocentric-video",
         "body-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from April 2021; watch for implementation release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Topo 3D Map Localization",
@@ -12442,7 +13257,9 @@
         "egocentric-video",
         "scene-geometry",
         "camera-pose"
-      ]
+      ],
+      "release_note": "ECCV 2022 paper from 2021 preprint; verify current code/data package.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "PAL",
@@ -12467,7 +13284,9 @@
       "modalities": [
         "egocentric-video",
         "physiological-signals"
-      ]
+      ],
+      "release_note": "CVPR EPIC Workshop 2021 paper; verify hardware/software release state.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "RNA Cross-Domain FPV AV Recognition",
@@ -12493,7 +13312,9 @@
       "modalities": [
         "egocentric-video",
         "audio"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2021; watch for code release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "KinPoly / Dynamics-Regulated Kinematic Policy",
@@ -12518,7 +13339,8 @@
         "egocentric-video",
         "body-pose",
         "scene-geometry"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Exo-to-Ego Video Synthesis",
@@ -12543,7 +13365,9 @@
       "modalities": [
         "egocentric-video",
         "third-person-video"
-      ]
+      ],
+      "release_note": "ACM MM 2021 paper; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "MMAC Captions",
@@ -12570,7 +13394,9 @@
         "imu",
         "audio",
         "text"
-      ]
+      ],
+      "release_note": "ACM MM 2021 paper; verify current dataset/download and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Temporal-Context Ego Action Recognition",
@@ -12596,7 +13422,9 @@
       "modalities": [
         "egocentric-video",
         "audio"
-      ]
+      ],
+      "release_note": "BMVC 2021 paper; watch for code and model release.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "AssistSR",
@@ -12622,7 +13450,9 @@
       "modalities": [
         "video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2021; verify public data and egocentric-video dependencies.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "E2(GO)MOTION",
@@ -12648,7 +13478,9 @@
       "modalities": [
         "egocentric-video",
         "event-stream"
-      ]
+      ],
+      "release_note": "CVPR 2022 paper from December 2021 preprint; verify dataset/code links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EPIC-KITCHENS",
@@ -12678,7 +13510,8 @@
         "object-boxes"
       ],
       "license": "research terms",
-      "license_url": "https://epic-kitchens.github.io/"
+      "license_url": "https://epic-kitchens.github.io/",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "From Third Person to First Person",
@@ -12705,7 +13538,9 @@
       "modalities": [
         "egocentric-video",
         "third-person-video"
-      ]
+      ],
+      "release_note": "Paper describes public datasets/baselines; verify current download and code longevity.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoYouTubeHands / HandOverFace",
@@ -12730,7 +13565,9 @@
       "modalities": [
         "egocentric-video",
         "hand-masks"
-      ]
+      ],
+      "release_note": "arXiv paper; verify the current state of individual dataset download links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Task-Dependent Gaze Transition",
@@ -12755,7 +13592,9 @@
       "modalities": [
         "egocentric-video",
         "gaze"
-      ]
+      ],
+      "release_note": "ECCV 2018 paper; watch for maintained implementation and data split links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Visual Context Event Segmentation",
@@ -12779,7 +13618,9 @@
       "modalities": [
         "egocentric-images",
         "lifelogging-images"
-      ]
+      ],
+      "release_note": "Paper reports dataset and EDUB-Seg labels; verify current public asset availability.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "First-Person Stories",
@@ -12803,7 +13644,9 @@
       "modalities": [
         "egocentric-images",
         "lifelogging-images"
-      ]
+      ],
+      "release_note": "arXiv dataset paper; verify current download and license links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Future Person Localization",
@@ -12829,7 +13672,9 @@
       "modalities": [
         "egocentric-video",
         "trajectories"
-      ]
+      ],
+      "release_note": "CVPR 2018 paper from 2017 preprint; verify current code/data links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego2Top",
@@ -12856,7 +13701,9 @@
         "egocentric-video",
         "overhead-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "ECCV 2016 paper; verify current dataset download and license.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Engagement",
@@ -12881,7 +13728,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "ECCV 2016 paper; verify current dataset/model release links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "First-Person Activity Forecasting",
@@ -12907,7 +13756,8 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Ego-Object Discovery / EDUB",
@@ -12934,7 +13784,8 @@
         "object-boxes"
       ],
       "license": "unknown-public",
-      "license_url": "https://arxiv.org/abs/1504.01639"
+      "license_url": "https://arxiv.org/abs/1504.01639",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "Egocentric FOV Localization",
@@ -12959,7 +13810,9 @@
       "modalities": [
         "egocentric-video",
         "overhead-video"
-      ]
+      ],
+      "release_note": "WACV 2015 paper; verify whether code/data remain available.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "First-Person Pose Recognition",
@@ -12984,7 +13837,9 @@
       "modalities": [
         "egocentric-video",
         "body-pose"
-      ]
+      ],
+      "release_note": "CVPR 2015 paper; watch for maintained code/data links.",
+      "verified_at": "2026-06-20"
     },
     {
       "name": "EgoPack / Backpack Full of Skills",
@@ -13011,7 +13866,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from March 2024; verify maintained code and benchmark assets.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EMAG",
@@ -13037,7 +13894,9 @@
         "egocentric-video",
         "hand-trajectories",
         "camera-motion"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2024; verify code and split availability.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Object-Aware Egocentric Online Action Detection",
@@ -13062,7 +13921,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2024; verify public implementation.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "AFF-ttention / STAformer",
@@ -13087,7 +13948,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2024; verify code and model release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EFM3D",
@@ -13116,7 +13979,9 @@
         "3d",
         "point-clouds",
         "camera-poses"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper from June 2024; verify dataset package and leaderboard state.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "PARSE-Ego4D",
@@ -13143,7 +14008,9 @@
         "egocentric-video",
         "text",
         "annotations"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2024; verify public annotation files.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Ego-VPA",
@@ -13168,7 +14035,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from July 2024; verify code and checkpoints.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Ego3DT",
@@ -13195,7 +14064,9 @@
         "egocentric-video",
         "object-masks",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from October 2024; verify implementation and evaluation assets.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoMimic",
@@ -13222,7 +14093,9 @@
         "egocentric-video",
         "hand-pose",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from October 2024; verify code/data release and license.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "ESOM / OVQ2D",
@@ -13248,7 +14121,9 @@
       "modalities": [
         "egocentric-video",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2024; verify code and Ego4D challenge assets.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoCast",
@@ -13276,7 +14151,9 @@
         "body-pose",
         "proprioception",
         "aria"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2024; verify public code/checkpoints.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "GEM Ego-Vision World Model",
@@ -13303,7 +14180,9 @@
         "depth",
         "trajectories",
         "body-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2024; verify public data/model release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoLog",
@@ -13329,7 +14208,9 @@
         "audio",
         "imu",
         "wearable-sensors"
-      ]
+      ],
+      "release_note": "arXiv paper from April 2025; verify dataset release, license, and whether raw egocentric video is included.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Week-Long First-Person Video Privacy Probe",
@@ -13356,7 +14237,9 @@
         "egocentric-video",
         "lifelogging-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv study from April 2025; contextual paper, not a reusable dataset release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoExOR",
@@ -13388,7 +14271,9 @@
         "audio",
         "hand-pose",
         "scene-graphs"
-      ]
+      ],
+      "release_note": "arXiv dataset paper from May 2025; verify public release and clinical-data terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "GazeNLQ",
@@ -13414,7 +14299,9 @@
         "egocentric-video",
         "gaze",
         "text"
-      ]
+      ],
+      "release_note": "Challenge report says code is available; verify repository and maintained branch.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoPrivacy",
@@ -13440,7 +14327,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper from June 2025; verify dataset access and ethical-use constraints.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "ProMemAssist",
@@ -13467,7 +14356,9 @@
         "smart-glasses",
         "wearable-sensors",
         "egocentric-video"
-      ]
+      ],
+      "release_note": "arXiv paper from July 2025; verify code/data release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoPrompt",
@@ -13493,7 +14384,9 @@
       "modalities": [
         "egocentric-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from August 2025; verify implementation availability.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoTwin",
@@ -13519,7 +14412,9 @@
         "egocentric-video",
         "human-motion",
         "trajectories"
-      ]
+      ],
+      "release_note": "arXiv paper from August 2025; verify model/data release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EvHand-FPV",
@@ -13546,7 +14441,9 @@
         "event-stream",
         "egocentric-video",
         "hand-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from September 2025; verify dataset and code release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "ActiveUMI",
@@ -13574,7 +14471,9 @@
         "wrist-camera-video",
         "robot-actions",
         "head-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from October 2025; verify hardware/software release and data terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "egoEMOTION",
@@ -13601,7 +14500,9 @@
         "gaze",
         "physiological-signals",
         "imu"
-      ]
+      ],
+      "release_note": "arXiv dataset paper from October 2025; verify access process and privacy terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "WAGIBench",
@@ -13628,7 +14529,9 @@
         "audio",
         "digital-context",
         "wearable-sensors"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper from October 2025; verify dataset access and license.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Eyes on Target",
@@ -13655,7 +14558,9 @@
         "gaze",
         "depth",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2025; verify code/data release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "SkillSight",
@@ -13681,7 +14586,9 @@
       "modalities": [
         "egocentric-video",
         "gaze"
-      ]
+      ],
+      "release_note": "arXiv paper from November 2025; verify dataset and code links.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Mistake Attribution / MATT",
@@ -13707,7 +14614,9 @@
         "egocentric-video",
         "annotations",
         "object-boxes"
-      ]
+      ],
+      "release_note": "arXiv benchmark paper from November 2025; verify annotation release and terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "X-Humanoid",
@@ -13734,7 +14643,9 @@
         "exocentric-video",
         "humanoid-motion",
         "synthetic-video"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2025; verify generated dataset release and license.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "DreamTacVLA",
@@ -13762,7 +14673,9 @@
         "tactile",
         "exocentric-video",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from December 2025; verify code/checkpoint/data release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoGrasp",
@@ -13789,7 +14702,9 @@
         "hand-pose",
         "object-pose",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from January 2026; verify implementation and template/object asset release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoActor",
@@ -13817,7 +14732,9 @@
         "text-instructions",
         "robot-actions",
         "humanoid-motion"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2026; verify code/data availability.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "AirGlove",
@@ -13844,7 +14761,9 @@
         "egocentric-video",
         "hand-pose",
         "glove-sensors"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2026; verify dataset release and terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoHumanoid",
@@ -13871,7 +14790,9 @@
         "human-demonstrations",
         "robot-actions",
         "humanoid-motion"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2026; verify public code/data release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "WHOLE",
@@ -13898,7 +14819,9 @@
         "hand-pose",
         "object-pose",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2026; verify code/data and object-template requirements.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "EgoAVFlow",
@@ -13925,7 +14848,9 @@
         "3d-flow",
         "robot-actions",
         "camera-trajectory"
-      ]
+      ],
+      "release_note": "arXiv paper from February 2026; verify public implementation and data.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Pandora Articulated 3D Scene Graphs",
@@ -13954,7 +14879,9 @@
         "egocentric-video",
         "scene-graphs",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from March 2026; verify project/code release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "RoSHI",
@@ -13983,7 +14910,9 @@
         "egocentric-video",
         "body-pose",
         "human-demonstrations"
-      ]
+      ],
+      "release_note": "arXiv paper from April 2026; verify hardware/software release and dataset terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "VISTA Daily Assistance",
@@ -14009,7 +14938,9 @@
         "egocentric-video",
         "synthetic-video",
         "text"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2026; verify data/model release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Low-Resolution Active Perception BC",
@@ -14033,7 +14964,9 @@
       "modalities": [
         "wrist-camera-video",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2026; verify reproducibility assets.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "DeMiAn",
@@ -14060,7 +14993,9 @@
         "egocentric-video",
         "language-instructions",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2026; verify code and annotation release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Egocentric Nursing Competency Assessment",
@@ -14086,7 +15021,9 @@
       "modalities": [
         "egocentric-video",
         "action-labels"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2026; verify dataset access constraints.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Gaze2Act",
@@ -14113,7 +15050,9 @@
         "egocentric-video",
         "gaze",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from May 2026; verify public assets.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Qwen-VLA",
@@ -14141,7 +15080,9 @@
         "robot-actions",
         "language-instructions",
         "trajectories"
-      ]
+      ],
+      "release_note": "arXiv technical report from May 2026; verify checkpoints and training-data terms.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "CAIP",
@@ -14168,7 +15109,9 @@
         "egocentric-video",
         "hand-pose",
         "robot-actions"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2026; verify model/checkpoint release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Qwen-RobotManip",
@@ -14195,7 +15138,9 @@
         "hand-pose",
         "robot-actions",
         "language-instructions"
-      ]
+      ],
+      "release_note": "arXiv technical report from June 2026; verify checkpoint/data availability.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "PAIWorld",
@@ -14223,7 +15168,9 @@
         "wrist-camera-video",
         "multiview-video",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2026; verify code/model release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Mem-World",
@@ -14251,7 +15198,9 @@
         "wrist-camera-video",
         "robot-actions",
         "3d"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2026; verify implementation/model release.",
+      "verified_at": "2026-06-21"
     },
     {
       "name": "Pose6DAug",
@@ -14279,7 +15228,9 @@
         "multiview-video",
         "robot-actions",
         "object-pose"
-      ]
+      ],
+      "release_note": "arXiv paper from June 2026; verify code/data release.",
+      "verified_at": "2026-06-21"
     }
   ]
 }
