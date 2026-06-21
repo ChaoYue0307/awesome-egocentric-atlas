@@ -15,10 +15,12 @@ module CatalogArtifacts
   README_ALIASES = File.join(ROOT, "data", "readme_aliases.yml")
   SITE_DATA = File.join(ROOT, "site-data.json")
   CSV_OUTPUT = File.join(ROOT, "awesome-egocentric-atlas.csv")
+  PAPERS_CSV_OUTPUT = File.join(ROOT, "awesome-egocentric-papers.csv")
   HF_HEADER = File.join(ROOT, "huggingface", "dataset_card_header.txt")
   MILESTONES_SVG = File.join(ROOT, "assets", "awesome-egocentric-milestones.svg")
 
   CSV_COLUMNS = %w[name kind released venue status scope year url paper code license scale tasks modalities].freeze
+  PAPERS_CSV_COLUMNS = %w[name kind released venue status scope year paper url code license scale tasks modalities].freeze
   STATUS_ORDER = %w[open watch partial benchmark request].freeze
   KIND_ORDER = %w[dataset benchmark model toolkit collection].freeze
 
@@ -201,16 +203,27 @@ module CatalogArtifacts
     JSON.pretty_generate(site_payload) + "\n"
   end
 
-  def csv
+  def csv_value(value)
+    value.is_a?(Array) ? value.join("; ") : value
+  end
+
+  def csv_for(rows, columns)
     CSV.generate do |out|
-      out << CSV_COLUMNS
-      resources.each do |entry|
-        out << CSV_COLUMNS.map do |column|
-          value = entry[column]
-          value.is_a?(Array) ? value.join("; ") : value
+      out << columns
+      rows.each do |entry|
+        out << columns.map do |column|
+          csv_value(entry[column])
         end
       end
     end
+  end
+
+  def csv
+    csv_for(resources, CSV_COLUMNS)
+  end
+
+  def papers_csv
+    csv_for(site_resources.select { |entry| entry["paper"].to_s.strip != "" }, PAPERS_CSV_COLUMNS)
   end
 
   def number_word(value)
@@ -1064,6 +1077,7 @@ module CatalogArtifacts
     {
       SITE_DATA => site_json,
       CSV_OUTPUT => csv,
+      PAPERS_CSV_OUTPUT => papers_csv,
       README => updated_readme,
       File.join(ROOT, "index.html") => updated_index,
       File.join(ROOT, "assets", "awesome-egocentric-timeline.svg") => updated_timeline_svg,

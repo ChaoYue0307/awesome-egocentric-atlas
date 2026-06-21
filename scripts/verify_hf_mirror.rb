@@ -73,4 +73,17 @@ unless missing.empty?
   exit 1
 end
 
+local_papers_path = File.join(package_dir, "awesome-egocentric-papers.csv")
+unless File.file?(local_papers_path)
+  warn "HF package is missing awesome-egocentric-papers.csv"
+  exit 1
+end
+
+local_papers = File.read(local_papers_path, encoding: "UTF-8")
+remote_papers = fetch_text("#{base}/awesome-egocentric-papers.csv?download=1&ts=#{Time.now.to_i}")
+unless remote_papers == local_papers
+  warn "HF papers CSV mismatch"
+  exit 1
+end
+
 puts "Hugging Face mirror OK: #{repo_id} (#{local_summary.fetch('egocentric_resources')} egocentric resources, #{local_date})"

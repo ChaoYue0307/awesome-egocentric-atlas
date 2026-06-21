@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Backward-compatible wrapper for the site JSON/CSV subset of the artifact build.
+# Backward-compatible wrapper for the site JSON/CSV export subset of the artifact build.
 #
 # Usage:
 #   ruby scripts/build_site_data.rb
@@ -11,7 +11,8 @@ require_relative "lib/catalog_artifacts"
 
 targets = {
   CatalogArtifacts::SITE_DATA => CatalogArtifacts.site_json,
-  CatalogArtifacts::CSV_OUTPUT => CatalogArtifacts.csv
+  CatalogArtifacts::CSV_OUTPUT => CatalogArtifacts.csv,
+  CatalogArtifacts::PAPERS_CSV_OUTPUT => CatalogArtifacts.papers_csv
 }
 
 if ARGV.include?("--check")
@@ -33,5 +34,5 @@ if ARGV.include?("--check")
   puts "Site data OK: #{summary.fetch('egocentric_resources')} egocentric resources (#{summary.fetch('total_resources')} rows)"
 else
   targets.each { |path, expected| File.write(path, expected, encoding: "UTF-8") }
-  puts "Wrote #{CatalogArtifacts::SITE_DATA} and #{CatalogArtifacts::CSV_OUTPUT}"
+  puts "Wrote #{targets.keys.map { |path| path.sub("#{CatalogArtifacts::ROOT}/", "") }.join(', ')}"
 end
