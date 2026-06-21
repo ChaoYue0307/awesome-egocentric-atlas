@@ -808,6 +808,7 @@ resources:
     status: open
     url: https://arxiv.org/abs/2104.11181
     paper: https://arxiv.org/abs/2104.11181
+    scale: "Synchronized multi-view RGB-D benchmark with two-hand 3D pose, 6D object pose, interaction labels, camera poses, object meshes, and scene point clouds for first-person hand-object interaction recognition"
     modalities: [multiview-rgbd, 3d-hand-pose, object-pose, camera-pose, object-meshes, scene-point-clouds]
     tasks: [first-person-interaction-recognition, two-hand-pose, hand-object-pose]
     license: "not specified"
@@ -879,6 +880,7 @@ resources:
     status: open
     url: https://arxiv.org/abs/2011.07252
     paper: https://arxiv.org/abs/2011.07252
+    scale: "Large-scale RGB egocentric two-hand segmentation/detection dataset with semi-automatic masks, compositing-based data generation, and a manually annotated evaluation set for unseen-domain generalization"
     modalities: [rgb, synthetic-composited-masks]
     tasks: [two-hand-segmentation, hand-detection]
     license: "not specified"
@@ -892,6 +894,7 @@ resources:
     status: open
     url: https://arxiv.org/abs/2206.04927
     paper: https://arxiv.org/abs/2206.04927
+    scale: "Ego2Hands extension adding 3D hand-pose annotations and fitting/tracking tools for color-based two-hand 3D global pose estimation in unseen domains"
     modalities: [rgb, 3d-hand-pose]
     tasks: [two-hand-3d-pose]
     license: "not specified"
@@ -905,6 +908,7 @@ resources:
     status: open
     url: https://sanweiliti.github.io/egobody/egobody.html
     paper: https://arxiv.org/abs/2112.07642
+    scale: "125 HoloLens2 interaction sequences with RGB, depth, gaze, head/hand tracking, scene-calibrated multi-Kinect ground truth, and SMPL-X body pose/shape for social-partner motion estimation"
     modalities: [hololens2, rgb, depth, gaze, head-pose, hand-pose, body-pose]
     tasks: [3d-human-pose, body-shape, motion]
     license: "not specified"
@@ -918,6 +922,7 @@ resources:
     status: open
     url: https://github.com/y-zheng18/GIMO
     paper: https://arxiv.org/abs/2204.09443
+    scale: "Gaze-informed human-motion dataset with egocentric views, eye gaze, inertial-motion body poses, and scene scans for intent-aware motion prediction in context"
     modalities: [egocentric-video, gaze, body-pose, scene-scans]
     tasks: [gaze-informed-motion-prediction, human-motion, scene-context]
     license: "not specified"
@@ -944,6 +949,7 @@ resources:
     status: open
     url: https://4dqv.mpi-inf.mpg.de/UnrealEgo/
     paper: https://arxiv.org/abs/2208.01633
+    scale: "Large-scale synthetic stereo-fisheye egocentric 3D human-pose corpus from virtual eyeglasses, covering diverse motions and naturalistic in-the-wild renderings"
     modalities: [synthetic-stereo, 3d-human-pose]
     tasks: [egocentric-3d-pose]
     license: "not specified"
@@ -957,6 +963,7 @@ resources:
     status: open
     url: https://github.com/facebookresearch/xR-EgoPose
     paper: https://arxiv.org/abs/1907.10045
+    scale: "383K photorealistic synthetic HMD fisheye frames plus real-data evaluation for monocular egocentric 3D body-pose estimation under self-occlusion and perspective distortion"
     modalities: [synthetic-egocentric, 3d-human-pose]
     tasks: [xr-pose-estimation]
     license: "custom"
@@ -970,6 +977,7 @@ resources:
     status: partial
     url: https://arxiv.org/abs/2212.11684
     paper: https://arxiv.org/abs/2212.11684
+    scale: "Synthetic scene-aware egocentric pose data supporting depth-inpainted scene constraints for monocular fisheye 3D human-pose estimation in occluded human-scene interactions"
     modalities: [synthetic-egocentric, scene-depth, human-pose]
     tasks: [scene-aware-3d-human-pose, egocentric-depth, human-scene-interaction]
     verified_at: "2026-06-20"
@@ -983,6 +991,7 @@ resources:
     url: https://arxiv.org/abs/2301.03213
     paper: https://arxiv.org/abs/2301.03213
     derived_from: Ego4D
+    scale: "Ego4D-derived long-term object-tracking benchmark emphasizing large ego-motion, hand-object occlusion, target exits/re-entries, appearance changes, and re-detection"
     tasks: [long-term-object-tracking, redetection]
     verified_at: "2026-06-20"
   - name: TREK-150
@@ -994,6 +1003,7 @@ resources:
     url: https://machinelearning.uniud.it/datasets/trek150/
     paper: https://arxiv.org/abs/2108.13665
     derived_from: EPIC-KITCHENS
+    scale: "150 densely annotated first-person tracking sequences from EPIC-KITCHENS for systematic evaluation of manipulated-object tracking under FPV motion and interaction"
     tasks: [single-object-tracking]
     verified_at: "2026-06-20"
   - name: Project Aria Datasets
@@ -1009,6 +1019,7 @@ resources:
     status: open
     url: https://www.projectaria.com/datasets/
     paper: https://arxiv.org/abs/2308.13561
+    scale: "Official Project Aria collection hub and tooling entry point for smart-glasses multimodal recordings, VRS/MPS processing, calibration, gaze, SLAM, and AR perception datasets"
     modalities: [aria, vrs, calibration, gaze, imu, mps]
     tasks: [ar-perception, scene-understanding, wearable-sensing]
 
@@ -1244,6 +1255,7 @@ resources:
     status: open
     url: https://github.com/fpv-iplab/EASG-bench
     paper: https://arxiv.org/abs/2506.05787
+    scale: "Egocentric video QA benchmark generated from spatio-temporally grounded dynamic action scene graphs, exposing relation and temporal-ordering gaps in video-LLMs"
     tasks: [scene-graph-qa, relation-reasoning, temporal-reasoning]
     verified_at: "2026-06-20"
   - name: MyEgo
@@ -1266,6 +1278,7 @@ resources:
     url: https://arxiv.org/abs/2503.22152
     paper: https://arxiv.org/abs/2503.22152
     derived_from: Ego4D
+    scale: "Ego4D-based theory-of-mind QA benchmark over camera-wearer goals, beliefs, and next actions, showing MLLMs trail humans on belief and future-action reasoning"
     tasks: [theory-of-mind, goal-reasoning, belief-reasoning, next-action]
     created_by: Yuxuan Li, Vijay Veerabadran, Michael L. Iuzzolino, Brett D. Roads, Asli Celikyilmaz, Karl Ridgeway
     release_note: arXiv paper; verify public release route before benchmark use
@@ -1329,6 +1342,7 @@ resources:
     status: benchmark
     url: https://arxiv.org/abs/2210.03929
     paper: https://arxiv.org/abs/2210.03929
+    scale: "Egocentric task-understanding QA benchmark over action dependencies/effects, intents/goals, and agents' beliefs with descriptive, predictive, explanatory, and counterfactual questions"
     tasks: [task-understanding, causal-reasoning, counterfactual-qa, belief-reasoning]
     verified_at: "2026-06-20"
   - name: HowToDIV
@@ -1352,6 +1366,7 @@ resources:
     status: benchmark
     url: https://arxiv.org/abs/2311.15596
     paper: https://arxiv.org/abs/2311.15596
+    scale: "First-person VQA benchmark spanning six capability groups and twelve dimensions, evaluating 18 VLMs and exposing persistent first-person perspective reasoning gaps"
     tasks: [first-person-vqa, vlm-evaluation, embodied-reasoning]
     verified_at: "2026-06-20"
   - name: VidEgoThink
@@ -1363,6 +1378,7 @@ resources:
     url: https://arxiv.org/abs/2410.11623
     paper: https://arxiv.org/abs/2410.11623
     derived_from: Ego4D
+    scale: "Ego4D-derived embodied-video benchmark for video QA, hierarchy planning, visual grounding, and reward modeling, with GPT-4o-assisted generation and human filtering"
     tasks: [video-qa, hierarchy-planning, visual-grounding, reward-modeling]
     verified_at: "2026-06-20"
   - name: EgoCoT-Bench
@@ -1396,6 +1412,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2603.22529
     paper: https://arxiv.org/abs/2603.22529
+    scale: "Web-agent benchmark where agents must use egocentric video evidence about a physical scene to execute grounded online web tasks"
     tasks: [web-agents, egocentric-grounding, physical-digital-assistance]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1407,6 +1424,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2606.00616
     paper: https://arxiv.org/abs/2606.00616
+    scale: "Reasoning-centric proactive-assistance benchmark for grounded action suggestions over egocentric videos, emphasizing temporal consistency and when to pause before acting"
     tasks: [assistive-action-suggestion, grounded-reasoning, temporal-consistency]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1451,6 +1469,7 @@ resources:
     year: 2011
     status: open
     url: https://cbs.ic.gatech.edu/fpv/
+    scale: "Classic Georgia Tech first-person activity/gaze family spanning GTEA, GTEA Gaze, and EGTEA Gaze+, grounding early hand-object action recognition and attention modeling"
     modalities: [video, gaze, action-labels]
     tasks: [action-recognition, gaze, hand-object]
 
@@ -1476,6 +1495,7 @@ resources:
     status: open
     url: https://iplab.dmi.unict.it/MECCANO/
     paper: https://arxiv.org/abs/2010.05654
+    scale: "Industrial-like motorbike assembly egocentric dataset with RGB/depth/gaze variants for egocentric hand-object interaction, active-object detection, anticipation, and action recognition"
     modalities: [rgb, depth, gaze]
     tasks: [ehoi, active-object-detection, action-recognition, anticipation]
     license: "not specified"
@@ -1528,6 +1548,7 @@ resources:
     year: 2014
     status: open
     url: https://robotics.ait.kyushu-u.ac.jp/dog-centric-activity-dataset/
+    scale: "Animal-borne first-person dog activity videos for recognizing canine behaviors from a non-human egocentric perspective"
     modalities: [animal-egocentric-video]
     tasks: [animal-activity-recognition]
     license: "not specified"
@@ -1554,6 +1575,7 @@ resources:
     status: partial
     url: https://egok360.github.io/
     paper: https://arxiv.org/abs/2010.08055
+    scale: "First-person 360-degree activity-recognition dataset with activity and sub-action annotations, designed for spherical egocentric video understanding"
     modalities: [first-person-360-video, action-labels]
     tasks: [360-video, activity-recognition]
     verified_at: "2026-06-20"
@@ -1579,8 +1601,9 @@ resources:
     year: 2022
     status: open
     url: https://epic-kitchens.github.io/VISOR/
-    paper: https://arxiv.org/abs/2209.08199
+    paper: https://arxiv.org/abs/2209.13064
     derived_from: EPIC-KITCHENS
+    scale: "EPIC-KITCHENS pixel-level annotation benchmark with 272K manual masks, 257 object classes, 9.9M interpolated dense masks, 67K hand-object relations, and 36 hours from 179 untrimmed videos"
     license: cc-by-nc-4.0
     verified_at: "2026-06-15"
     tasks: [hand-segmentation, active-object-segmentation, relations]
@@ -1594,6 +1617,7 @@ resources:
     url: https://epic-kitchens.github.io/epic-sounds/
     paper: https://arxiv.org/abs/2302.00646
     derived_from: EPIC-KITCHENS
+    scale: "EPIC-KITCHENS audio annotation benchmark with 78.4K categorized audible event/action segments across 44 classes plus 39.2K non-categorized segments and material labels for object-collision sounds"
     tasks: [audio-event-recognition]
     verified_at: "2026-06-20"
   - name: EPIC-Fields
@@ -1605,6 +1629,7 @@ resources:
     url: https://epic-kitchens.github.io/epic-fields/
     paper: https://arxiv.org/abs/2306.08731
     derived_from: EPIC-KITCHENS
+    scale: "3D camera and neural-rendering augmentation for EPIC-KITCHENS, reconstructing 96% of videos with 19M registered frames over 99 hours across 45 kitchens"
     tasks: [3d-fields, spatial-reasoning]
     verified_at: "2026-06-20"
   - name: EgoVLP
@@ -1620,6 +1645,7 @@ resources:
     status: open
     url: https://github.com/showlab/EgoVLP
     paper: https://arxiv.org/abs/2206.01670
+    scale: "Egocentric video-language pretraining framework introducing EgoClip (3.8M Ego4D clip-text pairs), EgoNCE, and EgoMCQ, transferring to EPIC-KITCHENS, Charades-Ego, and Ego4D tasks"
     tasks: [video-language-pretraining, retrieval, ego4d-transfer]
 
   - name: EgoVLPv2
@@ -1630,6 +1656,7 @@ resources:
     status: open
     url: https://shramanpramanick.github.io/EgoVLPv2/
     paper: https://arxiv.org/abs/2307.05463
+    scale: "Second-generation egocentric VLP model with cross-modal fusion inside the video/language backbones, reducing downstream fusion overhead while improving multiple VL tasks"
     tasks: [video-language-pretraining, cross-modal-fusion]
     verified_at: "2026-06-20"
   - name: LaViLa
@@ -1640,6 +1667,7 @@ resources:
     status: open
     url: https://arxiv.org/abs/2212.04501
     paper: https://arxiv.org/abs/2212.04501
+    scale: "LLM-narrated video-language pretraining that densifies Ego4D-style narrations, improving EGTEA classification by 10.1 points and EPIC-KITCHENS-100 retrieval by 5.9 points"
     tasks: [video-language-representation, narration-generation]
     verified_at: "2026-06-20"
   - name: EgoNCE++
@@ -1650,6 +1678,7 @@ resources:
     status: open
     url: https://github.com/xuboshen/EgoNCEpp
     paper: https://arxiv.org/abs/2405.17719
+    scale: "EgoHOIBench plus asymmetric contrastive EgoNCE++ objective with hard verb/noun negatives and object-centric text-to-video learning for fine-grained hand-object VLP"
     tasks: [open-vocabulary-hoi, video-language-pretraining]
     verified_at: "2026-06-20"
   - name: EgoDTM
@@ -1660,6 +1689,7 @@ resources:
     status: open
     url: https://github.com/xuboshen/EgoDTM
     paper: https://arxiv.org/abs/2503.15470
+    scale: "Depth- and text-aware egocentric VLP model with pseudo-depth supervision, lightweight 3D-aware decoding, and hand-object-enriched captions for 3D-aware representation learning"
     tasks: [3d-aware-vlp, depth-text-pretraining]
     verified_at: "2026-06-20"
   - name: EgoVLM
@@ -1683,6 +1713,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2602.23709
     paper: https://arxiv.org/abs/2602.23709
+    scale: "Training-free temporal knowledge-graph framework for ultra-long egocentric videos, accumulating people/object/location/event relations for multi-day memory QA on EgoLifeQA and EgoR1-bench"
     tasks: [temporal-knowledge-graph, ultra-long-video-qa]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1724,6 +1755,7 @@ resources:
     status: open
     url: https://github.com/Becomebright/GroundVQA
     paper: https://arxiv.org/abs/2312.06505
+    scale: "Long egocentric video QA model unifying temporal query grounding and answering, using LLM-generated supervision and close-ended evaluation to improve QaEgo4D and Ego4D-NLQ"
     tasks: [long-video-qa, temporal-grounding, ego4d-nlq]
     verified_at: "2026-06-20"
   - name: HiERO
@@ -1734,6 +1766,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2505.12911
     paper: https://arxiv.org/abs/2505.12911
+    scale: "Weakly supervised hierarchical activity-thread representation from narrated egocentric videos, improving EgoMCQ/EgoNLQ and zero-shot procedure learning (+12.5 F1 on EgoProceL)"
     tasks: [hierarchical-activity-reasoning, egomcq, egonlq, procedure-learning]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1745,6 +1778,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2502.05857
     paper: https://arxiv.org/abs/2502.05857
+    scale: "Unified first-person agent transformer that interleaves states and actions to jointly learn representation, future-state prediction, and action prediction in egocentric worlds"
     tasks: [joint-predictive-agent, future-state-prediction, action-prediction]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1756,6 +1790,7 @@ resources:
     status: open
     url: https://iplab.dmi.unict.it/stillfast/
     paper: https://arxiv.org/abs/2304.03959
+    scale: "End-to-end Ego4D short-term object-interaction anticipation model combining still image and video cues to localize next-active objects, predict verbs, and estimate contact timing"
     tasks: [short-term-object-interaction-anticipation, next-active-object, ego4d]
     verified_at: "2026-06-20"
   - name: CONE
@@ -1766,6 +1801,7 @@ resources:
     status: watch
     url: https://arxiv.org/abs/2211.08776
     paper: https://arxiv.org/abs/2211.08776
+    scale: "Ego4D NLQ challenge coarse-to-fine temporal grounding pipeline with sliding-window prefiltering and EgoVLP-based moment ranking (blind R1@0.3 15.26, R1@0.5 9.24)"
     tasks: [natural-language-query, video-language-grounding, ego4d-nlq]
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
@@ -1777,6 +1813,7 @@ resources:
     status: open
     url: https://actionlab-cv.github.io/EgoHandTrajPred
     paper: https://arxiv.org/abs/2307.08243
+    scale: "Egocentric 3D hand-trajectory forecasting framework with uncertainty-aware state-space Transformer, velocity constraints, visual prompt tuning, and H2O/EgoPAT3D evaluations"
     tasks: [3d-hand-trajectory-forecasting, anticipation, h2o, egopat3d]
     verified_at: "2026-06-20"
   - name: Project Aria Tools
@@ -1787,6 +1824,7 @@ resources:
     status: open
     url: https://github.com/facebookresearch/projectaria_tools
     paper: https://arxiv.org/abs/2308.13561
+    scale: "Official Project Aria SDK for reading VRS recordings, calibration, MPS/SLAM outputs, trajectories, gaze, and dataset artifacts across the Aria ecosystem"
     tasks: [vrs-loading, calibration, mps, gaze, trajectory]
     verified_at: "2026-06-20"
   - name: EPIC-KITCHENS action models
@@ -1796,6 +1834,7 @@ resources:
     year: 2019
     status: open
     url: https://github.com/epic-kitchens/action-models
+    scale: "Official EPIC-KITCHENS action-recognition baseline repository for RGB/flow/audio model training, evaluation, and challenge-style action-model workflows"
     tasks: [action-recognition-baselines]
     verified_at: "2026-06-20"
   - name: HOMIE-toolkit
@@ -1806,13 +1845,14 @@ resources:
     status: open
     url: https://github.com/Ropedia/HOMIE-toolkit
     derived_from: Xperience-10M
+    scale: "MIT-licensed Ropedia toolkit for loading and visualizing Xperience-10M-style HDF5 annotations, depth, calibration, mocap, IMU, and Rerun streams"
     tasks: [xperience-10m-loading, hdf5-annotations, visualization, rerun, calibration, depth, mocap, imu]
     created_by: Ropedia
     released_by: Ropedia on GitHub
     license: MIT
+    verified_at: "2026-06-20"
 
   # --- Catalog expansion (2026-06-20): targeted 2026 arXiv/EgoVis scan ---
-    verified_at: "2026-06-20"
   - name: ActiveMimic
     kind: model
     released: "2026-06"
