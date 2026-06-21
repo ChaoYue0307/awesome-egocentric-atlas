@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Just launched Awesome Egocentric Atlas — a curated collection of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-20"
+  last_major_audit: "2026-06-21"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -46,6 +46,254 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+  - name: HALOMI
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.18772
+    paper: https://arxiv.org/abs/2606.18772
+    scale: "Humanoid loco-manipulation from human demonstrations, extending UMI-style collection with egocentric head/wrist observations and head-hand trajectories"
+    modalities: [egocentric-video, wrist-camera-video, human-demonstrations, robot-actions, humanoid-motion]
+    tasks: [humanoid-control, manipulation, imitation-learning, active-perception, vla]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: HumanoidArena
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.17833
+    paper: https://arxiv.org/abs/2606.17833
+    scale: "Benchmark for egocentric hierarchical whole-body learning with seven leg-critical humanoid-object and humanoid-scene interaction tasks"
+    modalities: [egocentric-video, text-instructions, robot-actions, humanoid-motion]
+    tasks: [benchmark, humanoid-control, embodied-ai, manipulation, vla]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: VLESA
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://github.com/HanjiangHu/VLESA
+    paper: https://arxiv.org/abs/2606.03954
+    scale: "Egocentric-video safety-assistance benchmark with goal-conditioned safety annotations for human activity monitoring"
+    modalities: [egocentric-video, annotations, text]
+    tasks: [safety, activity-recognition, video-language, situated-assistance]
+    code: https://github.com/HanjiangHu/VLESA
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: OVO-S-Bench
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.03890
+    paper: https://arxiv.org/abs/2606.03890
+    scale: "1,680 spatial-reasoning questions over 348 continuous egocentric videos with query timestamps and evidence intervals"
+    modalities: [egocentric-video, text, temporal-grounding, annotations]
+    tasks: [spatial-reasoning, egocentric-video-qa, streaming-video-understanding, spatial-localization]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: EgoPro-Bench
+    kind: benchmark
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.07299
+    paper: https://arxiv.org/abs/2605.07299
+    scale: "Personalized proactive-interaction benchmark with 2,400 evaluation videos, 12K+ training videos, and 12 domains"
+    modalities: [egocentric-video, text, annotations]
+    tasks: [proactive-assistance, personalized-qa, streaming-video-understanding, intent-understanding]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: Pro2Assist
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.04227
+    paper: https://arxiv.org/abs/2605.04227
+    scale: "Continuous step-aware proactive assistance with multimodal egocentric perception, including public-source data and an AR-glasses testbed"
+    modalities: [egocentric-video, smart-glasses, text, action-labels]
+    tasks: [proactive-assistance, step-grounding, real-time-assistance, procedure-understanding]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: EgoSPT / SPOT
+    kind: dataset
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.20085
+    paper: https://arxiv.org/abs/2605.20085
+    scale: "Egocentric spatially prompted manipulation trajectories with first-frame object/target grounding and 3D end-effector motion"
+    modalities: [egocentric-video, trajectories, object-masks, 3d-pose, text-instructions]
+    tasks: [trajectory-prediction, visual-grounding, manipulation, robot-learning, vla]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: EgoBabyVLM
+    kind: benchmark
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.19130
+    paper: https://arxiv.org/abs/2605.19130
+    scale: "Benchmarking cross-modal learning from naturalistic infant and adult egocentric video, including Machine-DevBench and an EgoBabyVLM challenge"
+    modalities: [child-view-video, egocentric-video, audio, language]
+    tasks: [child-view-learning, video-language, representation-learning, vlm-evaluation]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: EgoInteract
+    kind: dataset
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.18214
+    paper: https://arxiv.org/abs/2605.18214
+    scale: "Controllable egocentric-video simulator and synthetic dataset with dense spatial and temporal annotations"
+    modalities: [synthetic-egocentric, egocentric-video, annotations, scene-graphs]
+    tasks: [egocentric-simulation, temporal-segmentation, anticipation, next-active-object, ehoi]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: EggHand
+    kind: model
+    released: "2026-05"
+    venue: "CVPR 2026 Findings"
+    year: 2026
+    status: watch
+    url: https://jyoun9.github.io/EggHand/
+    paper: https://arxiv.org/abs/2605.07642
+    scale: "Multimodal foundation model for egocentric hand-pose forecasting over EgoExo4D-style video-language and action signals"
+    modalities: [egocentric-video, hand-pose, language, action-labels]
+    tasks: [hand-forecasting, 3d-hand-pose, video-language, vla]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: Map-Mono-Ego
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.20889
+    paper: https://arxiv.org/abs/2605.20889
+    scale: "Map-grounded global human-pose estimation from monocular egocentric video, with AIST-Living paired ego video and scanned environments"
+    modalities: [egocentric-video, human-pose, scene-scans, camera-trajectory]
+    tasks: [3d-human-pose, scene-understanding, localization, pose-and-body]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: Being-H0.7
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.00078
+    paper: https://arxiv.org/abs/2605.00078
+    scale: "Latent world-action model learned from egocentric videos for future-aware reasoning and VLA policy learning"
+    modalities: [egocentric-video, latent-actions, robot-actions]
+    tasks: [world-modeling, vla, robot-learning, future-state-prediction]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: GazeVLA
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://gazevla.github.io/
+    paper: https://arxiv.org/abs/2604.22615
+    scale: "Vision-language-action policy that pretrains on large-scale egocentric human data to capture gaze, intention, and action before robot fine-tuning"
+    modalities: [egocentric-video, gaze, language, robot-actions]
+    tasks: [vla, gaze, intent-understanding, manipulation, robot-learning]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: WARPED
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.10809
+    paper: https://arxiv.org/abs/2604.10809
+    scale: "Wrist-aligned rendering pipeline that converts monocular egocentric human demonstrations into robot policy observations with 3D Gaussian Splatting"
+    modalities: [egocentric-video, wrist-camera-video, 3d-gaussian-splatting, hand-trajectories]
+    tasks: [imitation-learning, cross-embodiment-transfer, robot-learning, manipulation]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: PIE-V
+    kind: benchmark
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.15134
+    paper: https://arxiv.org/abs/2604.15134
+    scale: "Mistake-aware procedural egocentric-video benchmark injecting human-plausible mistakes and recovery corrections across Ego-Exo4D scenarios"
+    modalities: [egocentric-video, annotations, structured-reasoning]
+    tasks: [mistake-detection, procedural-reasoning, action-and-procedure, procedural-assistance]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: DP-DeGauss
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.07986
+    paper: https://arxiv.org/abs/2604.07986
+    scale: "Dynamic probabilistic Gaussian decomposition for egocentric 4D scene reconstruction, separating background, hands, and objects in first-person interaction"
+    modalities: [egocentric-video, 3d-gaussian-splatting, hand-object-motion, 4d-scene]
+    tasks: [4d-reconstruction, scene-reconstruction, hand-object-interaction, neural-scene-reconstruction]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: LifeEval
+    kind: benchmark
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.00490
+    paper: https://arxiv.org/abs/2603.00490
+    scale: "4,075 high-quality QA pairs over continuous first-person streams for real-time task-oriented human-AI collaboration in daily life"
+    modalities: [egocentric-video, dialogue, text]
+    tasks: [egocentric-video-qa, interactive-assistance, real-time-assistance, multimodal-reasoning]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: SAVA-X
+    kind: benchmark
+    released: "2026-03"
+    venue: "CVPR 2026"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.12764
+    paper: https://arxiv.org/abs/2603.12764
+    scale: "Ego-to-exo imitation-error detection over asynchronous, length-mismatched egocentric and exocentric videos, evaluated with EgoMe"
+    modalities: [egocentric-video, exocentric-video, annotations]
+    tasks: [mistake-detection, cross-view, imitation-learning, procedural-assistance]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+  - name: AG-EgoPose
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.25175
+    paper: https://arxiv.org/abs/2603.25175
+    scale: "Attention-guided egocentric 3D human-pose estimation from fisheye camera input with dual motion/spatial streams"
+    modalities: [fisheye-video, 3d-human-pose, motion]
+    tasks: [egocentric-3d-pose, 3d-human-pose, pose-and-body, motion]
+    verified_at: "2026-06-21"
+    release_note: "Live source checked 2026-06-21; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: Ego4D
     milestone: "2021-10"
     milestone_note: "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
@@ -868,15 +1116,17 @@ resources:
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: Minerva-Ego
     kind: benchmark
-    released: "2025-05"
+    released: "2026-05"
     venue: "arXiv"
-    year: 2025
+    year: 2026
     status: open
-    scope: adjacent
     url: https://github.com/google-deepmind/neptune
-    paper: https://arxiv.org/abs/2505.00681
-    scale: "Part of the Neptune / MINERVA long-video reasoning collection over web (YouTube) videos with manually annotated reasoning traces"
-    tasks: [multistep-reasoning, long-video-qa, reasoning-traces]
+    paper: https://arxiv.org/abs/2605.15342
+    scale: "Complex egocentric visual-reasoning benchmark with multi-step multimodal questions, dense reasoning traces, and spatiotemporal object masks"
+    modalities: [egocentric-video, text, segmentation, structured-reasoning]
+    tasks: [multistep-reasoning, egocentric-video-qa, spatial-reasoning, visual-grounding, reasoning-traces]
+    verified_at: "2026-06-21"
+    release_note: "Paper points to the google-deepmind/neptune repository for download; release state should be rechecked as the benchmark matures."
 
   - name: MA-EgoQA
     kind: benchmark
