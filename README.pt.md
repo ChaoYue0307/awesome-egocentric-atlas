@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Um mapa curado da IA egocêntrica: os conjuntos de dados, benchmarks, modelos e ferramentas por trás da visão egocêntrica, da IA incorporada e da robótica, da aprendizagem visão-linguagem, da memória de longo contexto, da RA/RV e da interação mão-objeto.</strong></p>
 
-<p align="center"><strong>476</strong> recursos egocêntricos — 127 conjuntos de dados · 90 benchmarks · 235 modelos · 23 ferramentas</p>
+<p align="center"><strong>524</strong> recursos egocêntricos — 132 conjuntos de dados · 95 benchmarks · 271 modelos · 25 ferramentas</p>
 
 ## O que inclui
 
