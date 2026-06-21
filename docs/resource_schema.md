@@ -55,6 +55,7 @@ enforces the required fields and the format of the optional ones it understands.
 | `released_by` | string | Releasing org/channel. |
 | `publisher` | string | Hosting platform. |
 | `derived_from` | string | Parent dataset this is built on. |
+| `milestone_origin` | string | Short institution, lab, company, project, or consortium label shown on milestone cards when the entry has `milestone`. |
 
 ## Minimal example
 

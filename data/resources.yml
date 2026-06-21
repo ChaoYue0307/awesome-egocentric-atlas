@@ -16,6 +16,7 @@ resources:
     milestone: "2026-03"
     milestone_note: "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing egocentric data to internet scale for embodied AI and robot learning."
     milestone_image: assets/milestones/xperience-10m.png
+    milestone_origin: Ropedia
     kind: dataset
     released: "2026-03"
     venue: "Hugging Face"
@@ -298,6 +299,7 @@ resources:
     milestone: "2021-10"
     milestone_note: "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era."
     milestone_image: assets/milestones/ego4d.png
+    milestone_origin: Meta AI / Ego4D consortium
     kind: dataset
     released: "2021-10"
     venue: "CVPR 2022"
@@ -316,6 +318,7 @@ resources:
     milestone: "2023-11"
     milestone_note: "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning."
     milestone_image: assets/milestones/ego-exo4d.png
+    milestone_origin: Meta AI / Ego-Exo4D consortium
     kind: dataset
     released: "2023-11"
     venue: "CVPR 2024"
@@ -334,6 +337,7 @@ resources:
     milestone: "2020-06"
     milestone_note: "The defining large-scale egocentric action-recognition benchmark and annual challenge suite."
     milestone_image: assets/milestones/epic-kitchens-100.png
+    milestone_origin: EPIC-KITCHENS team
     kind: dataset
     released: "2020-06"
     venue: "IJCV 2022"
@@ -506,6 +510,7 @@ resources:
     milestone: "2024-02"
     milestone_note: "Handheld/wrist-view manipulation interface that made robot-free in-the-wild demonstrations practical for cross-embodiment policy learning."
     milestone_image: assets/milestones/umi.png
+    milestone_origin: Stanford
     citation_key: umi_2024
 
   - name: FastUMI
@@ -675,6 +680,7 @@ resources:
     milestone: "2024-06"
     milestone_note: "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3)."
     milestone_image: assets/milestones/hot3d.png
+    milestone_origin: Meta / Project Aria
     kind: dataset
     released: "2024-06"
     venue: "CVPR 2025"
@@ -706,6 +712,7 @@ resources:
     milestone: "2022-03"
     milestone_note: "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding."
     milestone_image: assets/milestones/hoi4d.png
+    milestone_origin: HOI4D team
 
   - name: H2O
     kind: dataset
@@ -748,6 +755,7 @@ resources:
     milestone: "2015-12"
     milestone_note: "The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception."
     milestone_image: assets/milestones/egohands.png
+    milestone_origin: Indiana University
 
   - name: FPHA
     kind: dataset
@@ -907,6 +915,7 @@ resources:
     milestone: "2023-08"
     milestone_note: "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data."
     milestone_image: assets/milestones/project-aria.png
+    milestone_origin: Meta Reality Labs
     kind: collection
     released: "2023-08"
     venue: "arXiv"
@@ -989,6 +998,7 @@ resources:
     milestone: "2025-03"
     milestone_note: "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning."
     milestone_image: assets/milestones/egolife.png
+    milestone_origin: EgoLife team
 
   - name: Ego-EXTRA
     kind: dataset
@@ -1008,6 +1018,7 @@ resources:
     milestone: "2023-08"
     milestone_note: "The benchmark that exposed how far models are from long-form egocentric video reasoning."
     milestone_image: assets/milestones/egoschema.png
+    milestone_origin: EgoSchema team
     kind: benchmark
     released: "2023-08"
     venue: "NeurIPS 2023"
@@ -1347,6 +1358,7 @@ resources:
     milestone: "2011-06"
     milestone_note: "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded egocentric action and attention research."
     milestone_image: assets/milestones/gtea-gaze.png
+    milestone_origin: Georgia Tech
     kind: dataset
     released: "2018"
     venue: "project page"
@@ -1514,6 +1526,7 @@ resources:
     milestone: "2022-06"
     milestone_note: "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning."
     milestone_image: assets/milestones/egovlp.png
+    milestone_origin: ShowLab
     kind: model
     released: "2022-06"
     venue: "NeurIPS 2022"
@@ -2386,6 +2399,7 @@ resources:
     milestone: "2025-07"
     milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
     milestone_image: assets/milestones/egovla.png
+    milestone_origin: EgoVLA team
     kind: model
     released: "2025-07"
     venue: "project page"
@@ -2555,6 +2569,7 @@ resources:
     milestone: "2012-06"
     milestone_note: "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition."
     milestone_image: assets/milestones/adl-dataset.png
+    milestone_origin: ADL benchmark team
 
   - name: Wrist-mounted ADL
     kind: dataset
@@ -3246,6 +3261,7 @@ resources:
     milestone: "2026-02"
     milestone_note: "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining."
     milestone_image: assets/milestones/egoscale.png
+    milestone_origin: EgoScale team
     kind: dataset
     released: "2026-02"
     venue: "arXiv"
@@ -4572,6 +4588,7 @@ resources:
     milestone: "2009-06"
     milestone_note: "The earliest egocentric dataset; launched egocentric activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009)."
     milestone_image: assets/milestones/cmu-mmac.png
+    milestone_origin: Carnegie Mellon University
     kind: dataset
     released: "2009-06"
     venue: "CMU tech report 2009"
@@ -4634,6 +4651,7 @@ resources:
     milestone: "2026-02"
     milestone_note: "44K-hour egocentric-video robot world model with latent actions for real-time planning."
     milestone_image: assets/milestones/dreamdojo.png
+    milestone_origin: NVIDIA
     citation_key: dreamdojo_2026
 
   - name: UniDex

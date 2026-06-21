@@ -108,6 +108,7 @@
       "url": "http://kitchen.cs.cmu.edu/",
       "date": "2009-06",
       "note": "The earliest egocentric dataset; launched egocentric activity recognition at the first IEEE Workshop on Egocentric Vision (CVPR 2009).",
+      "origin": "Carnegie Mellon University",
       "image": "assets/milestones/cmu-mmac.png"
     },
     {
@@ -116,6 +117,7 @@
       "url": "https://cbs.ic.gatech.edu/fpv/",
       "date": "2011-06",
       "note": "Foundational hand-object and gaze egocentric activity datasets (GTEA, CVPR 2011) that seeded egocentric action and attention research.",
+      "origin": "Georgia Tech",
       "image": "assets/milestones/gtea-gaze.png"
     },
     {
@@ -124,6 +126,7 @@
       "url": "https://www.csc.kth.se/cvap/actions/",
       "date": "2012-06",
       "note": "Classic unscripted daily-life egocentric activity corpus with object and hand annotations; the reference point for ADL-scale egocentric recognition.",
+      "origin": "ADL benchmark team",
       "image": "assets/milestones/adl-dataset.png"
     },
     {
@@ -132,6 +135,7 @@
       "url": "http://vision.soic.indiana.edu/projects/egohands/",
       "date": "2015-12",
       "note": "The Google Glass hand-segmentation benchmark that made hands a first-class signal for egocentric perception.",
+      "origin": "Indiana University",
       "image": "assets/milestones/egohands.png"
     },
     {
@@ -140,6 +144,7 @@
       "url": "https://epic-kitchens.github.io/",
       "date": "2020-06",
       "note": "The defining large-scale egocentric action-recognition benchmark and annual challenge suite.",
+      "origin": "EPIC-KITCHENS team",
       "image": "assets/milestones/epic-kitchens-100.png"
     },
     {
@@ -148,6 +153,7 @@
       "url": "https://ego4d-data.org/",
       "date": "2021-10",
       "note": "The 3,670-hour massive-scale benchmark suite that catalyzed the modern egocentric era.",
+      "origin": "Meta AI / Ego4D consortium",
       "image": "assets/milestones/ego4d.png"
     },
     {
@@ -156,6 +162,7 @@
       "url": "https://hoi4d.github.io/",
       "date": "2022-03",
       "note": "Large RGB-D 4D hand-object interaction dataset that moved egocentric HOI toward geometry, pose, and temporal scene understanding.",
+      "origin": "HOI4D team",
       "image": "assets/milestones/hoi4d.png"
     },
     {
@@ -164,6 +171,7 @@
       "url": "https://github.com/showlab/EgoVLP",
       "date": "2022-06",
       "note": "First egocentric video-language pretraining (EgoClip, EgoNCE) and a basis for ego representation learning.",
+      "origin": "ShowLab",
       "image": "assets/milestones/egovlp.png"
     },
     {
@@ -172,6 +180,7 @@
       "url": "http://egoschema.github.io/",
       "date": "2023-08",
       "note": "The benchmark that exposed how far models are from long-form egocentric video reasoning.",
+      "origin": "EgoSchema team",
       "image": "assets/milestones/egoschema.png"
     },
     {
@@ -180,6 +189,7 @@
       "url": "https://www.projectaria.com/datasets/",
       "date": "2023-08",
       "note": "Meta's research smart-glasses platform that opened the modern wave of AR and wearable egocentric data.",
+      "origin": "Meta Reality Labs",
       "image": "assets/milestones/project-aria.png"
     },
     {
@@ -188,6 +198,7 @@
       "url": "https://ego-exo4d-data.org/",
       "date": "2023-11",
       "note": "Synchronized ego and exo skilled-activity capture at scale; the reference for cross-view egocentric learning.",
+      "origin": "Meta AI / Ego-Exo4D consortium",
       "image": "assets/milestones/ego-exo4d.png"
     },
     {
@@ -196,6 +207,7 @@
       "url": "https://umi-gripper.github.io/",
       "date": "2024-02",
       "note": "Handheld/wrist-view manipulation interface that made robot-free in-the-wild demonstrations practical for cross-embodiment policy learning.",
+      "origin": "Stanford",
       "image": "assets/milestones/umi.png"
     },
     {
@@ -204,6 +216,7 @@
       "url": "https://facebookresearch.github.io/hot3d/",
       "date": "2024-06",
       "note": "Reference benchmark for 3D hand-object tracking from AR glasses (Project Aria and Quest 3).",
+      "origin": "Meta / Project Aria",
       "image": "assets/milestones/hot3d.png"
     },
     {
@@ -212,6 +225,7 @@
       "url": "https://arxiv.org/abs/2503.03803",
       "date": "2025-03",
       "note": "Week-long Meta Aria daily-life corpus that pushed egocentric research toward personalized memory and life-assistant reasoning.",
+      "origin": "EgoLife team",
       "image": "assets/milestones/egolife.png"
     },
     {
@@ -220,6 +234,7 @@
       "url": "https://rchalyang.github.io/EgoVLA/",
       "date": "2025-07",
       "note": "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots.",
+      "origin": "EgoVLA team",
       "image": "assets/milestones/egovla.png"
     },
     {
@@ -228,6 +243,7 @@
       "url": "https://github.com/NVIDIA/DreamDojo",
       "date": "2026-02",
       "note": "44K-hour egocentric-video robot world model with latent actions for real-time planning.",
+      "origin": "NVIDIA",
       "image": "assets/milestones/dreamdojo.png"
     },
     {
@@ -236,6 +252,7 @@
       "url": "https://arxiv.org/abs/2602.16710",
       "date": "2026-02",
       "note": "Revealed the log-linear data-scaling law for egocentric human-video VLA pretraining.",
+      "origin": "EgoScale team",
       "image": "assets/milestones/egoscale.png"
     },
     {
@@ -244,12 +261,13 @@
       "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
       "date": "2026-03",
       "note": "Petascale egocentric world-model corpus (10M experiences, ~1 PB) pushing egocentric data to internet scale for embodied AI and robot learning.",
+      "origin": "Ropedia",
       "image": "assets/milestones/xperience-10m.png"
     }
   ],
   "milestone_layout": {
     "width": 1600,
-    "height": 2969,
+    "height": 3605,
     "cells": [
       {
         "name": "CMU-MMAC",
@@ -259,7 +277,7 @@
         "x": 330.0,
         "y": 266,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
@@ -269,7 +287,7 @@
         "x": 639.0,
         "y": 266,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "ADL Dataset",
@@ -279,7 +297,7 @@
         "x": 948.0,
         "y": 266,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "EgoHands",
@@ -289,7 +307,7 @@
         "x": 1257.0,
         "y": 266,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "EPIC-KITCHENS-100",
@@ -297,9 +315,9 @@
         "kind": "dataset",
         "url": "https://epic-kitchens.github.io/",
         "x": 330.0,
-        "y": 747,
+        "y": 853,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "Ego4D",
@@ -307,9 +325,9 @@
         "kind": "dataset",
         "url": "https://ego4d-data.org/",
         "x": 639.0,
-        "y": 747,
+        "y": 853,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "HOI4D",
@@ -317,9 +335,9 @@
         "kind": "dataset",
         "url": "https://hoi4d.github.io/",
         "x": 948.0,
-        "y": 747,
+        "y": 853,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "EgoVLP",
@@ -327,9 +345,9 @@
         "kind": "model",
         "url": "https://github.com/showlab/EgoVLP",
         "x": 1257.0,
-        "y": 747,
+        "y": 853,
         "width": 291,
-        "height": 331
+        "height": 437
       },
       {
         "name": "EgoSchema",
@@ -337,9 +355,9 @@
         "kind": "benchmark",
         "url": "http://egoschema.github.io/",
         "x": 471.0,
-        "y": 1228,
+        "y": 1440,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "Project Aria Datasets",
@@ -347,9 +365,9 @@
         "kind": "collection",
         "url": "https://www.projectaria.com/datasets/",
         "x": 789.0,
-        "y": 1228,
+        "y": 1440,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "Ego-Exo4D",
@@ -357,9 +375,9 @@
         "kind": "dataset",
         "url": "https://ego-exo4d-data.org/",
         "x": 1107.0,
-        "y": 1228,
+        "y": 1440,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "Universal Manipulation Interface / UMI",
@@ -367,9 +385,9 @@
         "kind": "toolkit",
         "url": "https://umi-gripper.github.io/",
         "x": 630.0,
-        "y": 1584,
+        "y": 1902,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "HOT3D",
@@ -377,9 +395,9 @@
         "kind": "dataset",
         "url": "https://facebookresearch.github.io/hot3d/",
         "x": 948.0,
-        "y": 1584,
+        "y": 1902,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "EgoLife",
@@ -387,9 +405,9 @@
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2503.03803",
         "x": 630.0,
-        "y": 2070,
+        "y": 2494,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "EgoVLA",
@@ -397,9 +415,9 @@
         "kind": "model",
         "url": "https://rchalyang.github.io/EgoVLA/",
         "x": 948.0,
-        "y": 2070,
+        "y": 2494,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "DreamDojo",
@@ -407,9 +425,9 @@
         "kind": "model",
         "url": "https://github.com/NVIDIA/DreamDojo",
         "x": 471.0,
-        "y": 2556,
+        "y": 3086,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "EgoScale",
@@ -417,9 +435,9 @@
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2602.16710",
         "x": 789.0,
-        "y": 2556,
+        "y": 3086,
         "width": 300,
-        "height": 336
+        "height": 442
       },
       {
         "name": "Xperience-10M",
@@ -427,9 +445,9 @@
         "kind": "dataset",
         "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
         "x": 1107.0,
-        "y": 2556,
+        "y": 3086,
         "width": 300,
-        "height": 336
+        "height": 442
       }
     ]
   },

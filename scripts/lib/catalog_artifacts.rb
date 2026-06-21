@@ -161,7 +161,8 @@ module CatalogArtifacts
           "kind" => entry["kind"],
           "url" => entry["url"],
           "date" => entry["milestone"].to_s,
-          "note" => entry["milestone_note"]
+          "note" => entry["milestone_note"],
+          "origin" => entry["milestone_origin"] || entry["released_by"] || entry["publisher"] || entry["created_by"] || entry["venue"]
         }
         milestone["image"] = entry["milestone_image"] if entry["milestone_image"]
         milestone
@@ -816,7 +817,7 @@ module CatalogArtifacts
         ].max,
         180
       ].min
-      card_height = image_height + 156
+      card_height = image_height + 262
       card_rows = (count.to_f / columns).ceil
       card_stack_height = (card_rows * card_height) + (card_row_gap * [card_rows - 1, 0].max)
       row_height = card_stack_height + 124
@@ -935,8 +936,16 @@ module CatalogArtifacts
         kind_color = kind_colors.fetch(kind, group.fetch(:accent))
         date_width = [date.length * 7.3 + 22, 66].max.round
         kind_width = [[kind.length * 6.9 + 24, 58].max.round, card_width - date_width - 25].min
-        max_name_chars = [[(card_width / 8.6).floor, 18].max, 32].min
+        max_name_chars = [[(card_width / 8.5).floor, 18].max, 34].min
+        max_origin_chars = [[(card_width / 6.5).floor, 26].max, 42].min
+        max_note_chars = [[(card_width / 6.9).floor, 25].max, 42].min
         name_lines = wrap_text(item.fetch("name"), max_chars: max_name_chars, max_lines: 2)
+        origin = item["origin"].to_s.strip
+        origin_lines = origin.empty? ? [] : wrap_text("Origin: #{origin}", max_chars: max_origin_chars, max_lines: 1)
+        note_lines = wrap_text(item.fetch("note").to_s, max_chars: max_note_chars, max_lines: 4)
+        title_y = image_height + 84
+        origin_y = title_y + (name_lines.length * 23) + 8
+        note_y = origin_y + (origin_lines.empty? ? 4 : 24)
 
         <<~CARD
           <a href="#{html_escape(item.fetch("url"))}" target="_blank">
@@ -948,7 +957,9 @@ module CatalogArtifacts
               <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 50}" text-anchor="middle">#{html_escape(date)}</text>
               <rect class="kind-pill" x="#{21 + date_width}" y="#{image_height + 32}" width="#{kind_width}" height="27" rx="13.5" fill="#{kind_color}"/>
               <text class="pill-text" x="#{21 + date_width + (kind_width / 2.0)}" y="#{image_height + 50}" text-anchor="middle">#{html_escape(kind)}</text>
-              #{svg_text_block(name_lines, x: 12, y: image_height + 88, class_name: "card-title", line_height: 23)}
+              #{svg_text_block(name_lines, x: 12, y: title_y, class_name: "card-title", line_height: 23)}
+              #{svg_text_block(origin_lines, x: 12, y: origin_y, class_name: "card-origin", line_height: 17)}
+              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 17)}
             </g>
           </a>
         CARD
@@ -1022,6 +1033,8 @@ module CatalogArtifacts
             .kind-pill { fill: #ef9f24; }
             .pill-text { font: 800 10.8px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
             .card-title { font: 840 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
+            .card-origin { font: 780 12.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .01em; }
+            .card-note { font: 560 12.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5d6c76; letter-spacing: 0; }
             .rule { stroke: #c8dde2; stroke-width: 1.4; }
           </style>
         </defs>
