@@ -954,14 +954,6 @@
     <link rel="icon" href="assets/awesome-egocentric-logo.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/awesome-egocentric-logo.png">
     <link rel="stylesheet" href="./styles.css">
-    <style>
-      .site-footer { display: flex; flex-direction: column; gap: 0.85rem; text-align: center; align-items: center; }
-      .lang-bar { font-size: 0.85rem; line-height: 2; color: #64748b; }
-      .lang-bar a { color: #2563eb; text-decoration: none; }
-      .lang-bar a:hover { text-decoration: underline; }
-      .lang-bar a.active { font-weight: 700; color: #0f3b45; text-decoration: underline; }
-      .footer-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: center; align-items: center; }
-    </style>
   </head>
   <body>
     <a class="skip-link" href="#catalog" data-i18n="skip">Skip to catalog</a>
@@ -977,6 +969,15 @@
         <a href="#access" data-i18n="nav.access">Access</a>
         <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas#readme" data-i18n="nav.readme">README</a>
       </nav>
+      <div class="header-actions">
+        <details class="language-switcher" id="language-switcher">
+          <summary class="language-toggle" aria-label="Select language">
+            <span class="language-label" data-i18n="language.label">Language</span>
+            <span class="language-current" id="language-current">English</span>
+          </summary>
+          <nav class="language-menu" id="language-menu" aria-label="Choose language"></nav>
+        </details>
+      </div>
     </header>
 
     <main>

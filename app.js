@@ -11,6 +11,7 @@ const LANGS = [
 const I18N = {
   en: {
     skip: "Skip to catalog",
+    "language.label": "Language",
     "nav.catalog": "Catalog", "nav.lanes": "Lanes", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones",
     "milestones.title": "Milestones", "milestones.desc": "The landmark works that shaped egocentric AI — from the field's origins to its current frontier.",
     "hero.lead": "A curated map of egocentric AI — the datasets, benchmarks, models, and tools behind egocentric vision, embodied AI and robotics, video-language, long-context memory, AR/VR, and hand-object interaction.",
@@ -37,6 +38,7 @@ const I18N = {
   },
   zh: {
     skip: "跳到目录",
+    "language.label": "语言",
     "nav.catalog": "目录", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑",
     "milestones.title": "里程碑", "milestones.desc": "塑造自我中心 AI 的里程碑工作——从领域起源到当前前沿。",
     "hero.lead": "自我中心 AI 的精选地图——汇集自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 以及手物交互背后的数据集、基准、模型与工具。",
@@ -63,6 +65,7 @@ const I18N = {
   },
   es: {
     skip: "Saltar al catálogo",
+    "language.label": "Idioma",
     "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos",
     "milestones.title": "Hitos", "milestones.desc": "Los trabajos de referencia que dieron forma a la IA egocéntrica, desde sus orígenes hasta la frontera actual.",
     "hero.lead": "Un mapa curado de la IA egocéntrica: los conjuntos de datos, benchmarks, modelos y herramientas tras la visión egocéntrica, la IA encarnada y la robótica, el aprendizaje visión-lenguaje, la memoria de largo contexto, la RA/RV y la interacción mano-objeto.",
@@ -89,6 +92,7 @@ const I18N = {
   },
   fr: {
     skip: "Aller au catalogue",
+    "language.label": "Langue",
     "nav.catalog": "Catalogue", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons",
     "milestones.title": "Jalons", "milestones.desc": "Les travaux marquants qui ont façonné l'IA égocentrique, des origines du domaine à sa frontière actuelle.",
     "hero.lead": "Une carte sélective de l'IA égocentrique : les jeux de données, benchmarks, modèles et outils derrière la vision égocentrique, l'IA incarnée et la robotique, l'apprentissage vision-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.",
@@ -115,6 +119,7 @@ const I18N = {
   },
   de: {
     skip: "Zum Katalog springen",
+    "language.label": "Sprache",
     "nav.catalog": "Katalog", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine",
     "milestones.title": "Meilensteine", "milestones.desc": "Die wegweisenden Arbeiten, die egozentrische KI geprägt haben – von den Ursprüngen bis zur aktuellen Front.",
     "hero.lead": "Eine kuratierte Karte egozentrischer KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.",
@@ -141,6 +146,7 @@ const I18N = {
   },
   ja: {
     skip: "カタログへスキップ",
+    "language.label": "言語",
     "nav.catalog": "カタログ", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン",
     "milestones.title": "マイルストーン", "milestones.desc": "エゴセントリック AI を形づくった画期的な研究——分野の起源から最前線まで。",
     "hero.lead": "エゴセントリック AI の厳選マップ——エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用を支えるデータセット・ベンチマーク・モデル・ツールを収録。",
@@ -167,6 +173,7 @@ const I18N = {
   },
   ko: {
     skip: "카탈로그로 건너뛰기",
+    "language.label": "언어",
     "nav.catalog": "카탈로그", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표",
     "milestones.title": "이정표", "milestones.desc": "자기중심 AI를 형성한 획기적 연구 — 분야의 기원부터 현재 최전선까지.",
     "hero.lead": "자기중심 AI의 엄선된 지도 — 자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 뒷받침하는 데이터셋·벤치마크·모델·도구를 담았습니다.",
@@ -193,6 +200,7 @@ const I18N = {
   },
   pt: {
     skip: "Ir para o catálogo",
+    "language.label": "Idioma",
     "nav.catalog": "Catálogo", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos",
     "milestones.title": "Marcos", "milestones.desc": "Os trabalhos marcantes que moldaram a IA egocêntrica — das origens do campo à sua fronteira atual.",
     "hero.lead": "Um mapa curado da IA egocêntrica: os conjuntos de dados, benchmarks, modelos e ferramentas por trás da visão egocêntrica, da IA incorporada e da robótica, da aprendizagem visão-linguagem, da memória de longo contexto, da RA/RV e da interação mão-objeto.",
@@ -300,6 +308,9 @@ const els = {
   statuses: document.querySelector("#status-list"),
   empty: document.querySelector("#empty-state"),
   langBar: document.querySelector("#lang-bar"),
+  languageSwitcher: document.querySelector("#language-switcher"),
+  languageMenu: document.querySelector("#language-menu"),
+  languageCurrent: document.querySelector("#language-current"),
   milestoneBoard: document.querySelector("#milestone-board")
 };
 
@@ -341,22 +352,56 @@ function applyStaticI18n() {
   document.documentElement.lang = state.lang;
 }
 
+function langHref(code) {
+  const p = new URLSearchParams(location.search);
+  if (code === "en") {
+    p.delete("lang");
+  } else {
+    p.set("lang", code);
+  }
+  const qs = p.toString();
+  return `${location.pathname}${qs ? `?${qs}` : ""}${location.hash}`;
+}
+
+function createLanguageLink(code, label, className = "") {
+  const link = document.createElement("a");
+  link.href = langHref(code);
+  link.textContent = label;
+  link.setAttribute("lang", code);
+  if (className) link.className = className;
+  if (code === state.lang) {
+    link.classList.add("active");
+    link.setAttribute("aria-current", "true");
+  }
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    setLang(code);
+    if (els.languageSwitcher) els.languageSwitcher.open = false;
+  });
+  return link;
+}
+
 function buildLangBar() {
+  const activeLang = LANGS.find(([code]) => code === state.lang) || LANGS[0];
+
+  if (els.languageCurrent) {
+    els.languageCurrent.textContent = activeLang[1];
+    els.languageCurrent.setAttribute("lang", activeLang[0]);
+  }
+
+  if (els.languageMenu) {
+    els.languageMenu.replaceChildren();
+    LANGS.forEach(([code, label]) => {
+      els.languageMenu.appendChild(createLanguageLink(code, label));
+    });
+  }
+
   if (!els.langBar) return;
   els.langBar.replaceChildren();
   const frag = document.createDocumentFragment();
   LANGS.forEach(([code, label], index) => {
     if (index > 0) frag.appendChild(document.createTextNode(" · "));
-    const link = document.createElement("a");
-    link.href = "#";
-    link.textContent = label;
-    link.setAttribute("lang", code);
-    if (code === state.lang) link.className = "active";
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      setLang(code);
-    });
-    frag.appendChild(link);
+    frag.appendChild(createLanguageLink(code, label, "lang-link"));
   });
   const extra = [
     [t("bar.help"), "https://github.com/ChaoYue0307/awesome-egocentric-atlas/blob/main/CONTRIBUTING.md"],
@@ -371,6 +416,20 @@ function buildLangBar() {
     frag.appendChild(link);
   });
   els.langBar.appendChild(frag);
+}
+
+function bindLanguageSwitcher() {
+  if (!els.languageSwitcher) return;
+  document.addEventListener("click", (event) => {
+    if (!els.languageSwitcher.contains(event.target)) {
+      els.languageSwitcher.open = false;
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      els.languageSwitcher.open = false;
+    }
+  });
 }
 
 function setLang(lang) {
@@ -620,6 +679,7 @@ function bindFilters() {
 async function init() {
   applyStaticI18n();
   buildLangBar();
+  bindLanguageSwitcher();
   const response = await fetch("./site-data.json");
   state.data = await response.json();
   renderStats();
