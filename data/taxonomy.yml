@@ -161,7 +161,7 @@ task_families:
       imitation-learning, cross-embodiment-transfer, human-demonstrations, human-centric-policy-learning,
       manipulation-safety, policy-optimization, hri, data-collection, active-perception,
       egocentric-calibration, humanoid-control, motion-generation, loco-manipulation,
-      tactile-learning]
+      tactile-learning, mobile-manipulation, whole-body-manipulation]
 
   audio-and-social:
     label: Audio, speech, and social interaction
@@ -235,14 +235,14 @@ modality_families:
     aliases: [gaze, eye-tracking, imu, motion, body-motion, human-motion, head, head-pose,
       physiological-signals, trajectory, trajectories, wrist-trajectory, camera-motion,
       camera-orientation, camera-trajectory, hand-motion, head-mounted-imu, attention,
-      proprioception]
+      proprioception, emg, optical-flow]
 
   pose-mocap:
     label: Pose and mocap
     aliases: [pose, 2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
       human-pose, camera-pose, camera-poses, object-pose, full-body-mocap, hand-mocap,
       mocap, skeleton, keypoint-visibility, hand-trajectories, 6dof, 3d-human-motion,
-      hand-skeleton, humanoid-motion]
+      hand-skeleton, humanoid-motion, body-tracking]
 
   hand-object-geometry:
     label: Hand-object geometry and contact

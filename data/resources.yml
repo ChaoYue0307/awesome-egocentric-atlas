@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Just launched Awesome Egocentric Atlas — a curated collection of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-21"
+  last_major_audit: "2026-06-22"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,336 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Targeted live scan additions (2026-06-22): 2024-2026 arXiv/project sweep ---
+
+  - name: SpatialWorld
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.09669
+    paper: https://arxiv.org/abs/2606.09669
+    scale: "760 human-annotated real-world spatial tasks across eight simulation backends, evaluated under vision-only partial observability and egocentric evidence gathering"
+    modalities: [egocentric-video, text-instructions, annotations]
+    tasks: [spatial-reasoning, embodied-ai, benchmark, interactive-assistance, vlm-evaluation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until benchmark artifacts, license terms, and stable evaluation files are confirmed."
+  - name: MotionWAM
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.09215
+    paper: https://arxiv.org/abs/2606.09215
+    scale: "Real-time humanoid world-action model driven by a single egocentric camera and unified whole-body motion tokens"
+    modalities: [egocentric-video, robot-actions, humanoid-motion, latent-actions]
+    tasks: [world-modeling, humanoid-control, loco-manipulation, active-perception, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public code, checkpoints, and data release terms are confirmed."
+  - name: OSCAR
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.04463
+    paper: https://arxiv.org/abs/2606.04463
+    scale: "Omni-embodiment action-conditioned video world model trained through a pipeline spanning robotics and egocentric human datasets"
+    modalities: [egocentric-video, robot-camera-video, robot-actions, hand-skeleton, generated-video]
+    tasks: [world-modeling, video-generation, robot-learning, cross-embodiment-transfer, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public model/data artifacts and license terms are confirmed."
+  - name: Face-vs-Body HRI Tracking
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.03694
+    paper: https://arxiv.org/abs/2606.03694
+    scale: "Custom-annotated egocentric HRI tracking dataset from a social robot, comparing face and body tracking under occlusion and engagement changes"
+    modalities: [egocentric-video, annotations, body-tracking]
+    tasks: [hri, tracking, engagement-detection, social, assistive-systems]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until dataset download, license, and annotation files are confirmed."
+  - name: EgoForce Motion
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.13041
+    paper: https://arxiv.org/abs/2605.13041
+    scale: "Online full-body motion reconstruction from sparse egocentric observations using diffusion forcing for long-term real-time applications"
+    modalities: [egocentric-video, head-pose, body-motion, hand-pose]
+    tasks: [human-motion, body-pose, egocentric-3d-pose, ar-vr, real-time-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until code, models, and evaluation assets are confirmed."
+  - name: SABER
+    kind: dataset
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.09613
+    paper: https://arxiv.org/abs/2605.09613
+    scale: "100+ hours of in-store retail action capture with head-mounted egocentric footage and exocentric 360-degree scene video for VLA adaptation"
+    modalities: [egocentric-video, exocentric-video, action-labels, language-instructions]
+    tasks: [vla, robot-learning, manipulation, action-understanding, data-collection]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until data access, license, and reproducible release metadata are confirmed."
+  - name: EgoViT Object SSL
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.13912
+    paper: https://arxiv.org/abs/2603.13912
+    scale: "Self-supervised object representation learning from continuous, uncurated first-person video using proto-object discovery and stability objectives"
+    modalities: [first-person-video, egocentric-video, depth, optical-flow]
+    tasks: [representation-learning, object-discovery, object-recognition, egocentric-pretraining]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public code, checkpoints, and data-processing assets are confirmed."
+  - name: CoMe-VLA
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.04600
+    paper: https://arxiv.org/abs/2602.04600
+    scale: "Cognitive and memory-aware VLA for active perception, learned from large-scale egocentric human data and non-Markovian sensing strategies"
+    modalities: [egocentric-video, robot-actions, memory, language-instructions]
+    tasks: [vla, active-perception, manipulation, robot-learning, memory-and-long-context]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public model, code, and data release terms are confirmed."
+  - name: RynnBrain
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2602.14979
+    paper: https://arxiv.org/abs/2602.14979
+    scale: "Open embodied foundation model family with variants for egocentric understanding, localization, physical reasoning, planning, navigation, and VLA"
+    modalities: [egocentric-video, video, text, robot-actions]
+    tasks: [embodied-ai, egocentric-representation, spatial-reasoning, planning, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public checkpoints, data provenance, and license terms are confirmed."
+  - name: UniT
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.19734
+    paper: https://arxiv.org/abs/2604.19734
+    scale: "Unified latent action tokenizer that anchors massive egocentric human data to humanoid policy learning and world modeling"
+    modalities: [egocentric-video, human-demonstrations, humanoid-motion, latent-actions]
+    tasks: [humanoid-control, cross-embodiment-transfer, world-modeling, imitation-learning, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until code, model, and data artifacts are confirmed."
+  - name: FunRec
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.05621
+    paper: https://arxiv.org/abs/2604.05621
+    scale: "Functional 3D digital-twin reconstruction from in-the-wild egocentric RGB-D interaction videos, with articulated parts, kinematics, meshes, and URDF/USD export"
+    modalities: [egocentric-video, rgb-d, articulated-objects, object-meshes, digital-twins]
+    tasks: [3d-reconstruction, articulated-objects, scene-reconstruction, robot-learning, manipulation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public benchmark, code, and asset release terms are confirmed."
+  - name: METIS
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.17366
+    paper: https://arxiv.org/abs/2511.17366
+    scale: "Dexterous VLA pretrained on EgoAtlas, a multi-source egocentric human and robotic data mixture unified under a consistent action space"
+    modalities: [egocentric-video, robot-camera-video, robot-actions, hand-trajectories]
+    tasks: [vla, dexterous-manipulation, robot-learning, cross-embodiment-transfer, egocentric-pretraining]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public EgoAtlas/model assets and release terms are confirmed."
+  - name: Let Me Show You / RfV
+    kind: model
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.05199
+    paper: https://arxiv.org/abs/2511.05199
+    scale: "Retrieves relevant human egocentric demonstration clips and extracts affordance masks plus hand trajectories to condition robot manipulation policies"
+    modalities: [egocentric-video, hand-trajectories, object-masks, language-instructions]
+    tasks: [robot-learning, manipulation, retrieval, affordance, imitation-learning]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until video-bank, code, and robot-policy artifacts are confirmed."
+  - name: EgoMI
+    kind: model
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.00153
+    paper: https://arxiv.org/abs/2511.00153
+    scale: "Egocentric Manipulation Interface for synchronized end-effector and active-head trajectories, retargeted to semi-humanoid robots"
+    modalities: [egocentric-video, head-pose, hand-trajectories, robot-actions]
+    tasks: [active-perception, whole-body-manipulation, imitation-learning, robot-learning, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public data, code, and hardware details are confirmed."
+  - name: Hand-VLA Pretraining
+    kind: model
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2510.21571
+    paper: https://arxiv.org/abs/2510.21571
+    scale: "1M episodes and 26M frames converted from unscripted real-life egocentric hand videos into VLA-aligned action and language supervision"
+    modalities: [egocentric-video, hand-motion, camera-motion, language-instructions]
+    tasks: [vla, robot-learning, egocentric-pretraining, action-segmentation, manipulation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until data conversion code, model artifacts, and license terms are confirmed."
+  - name: EMMA
+    kind: model
+    released: "2025-09"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2509.04443
+    paper: https://arxiv.org/abs/2509.04443
+    scale: "Egocentric Mobile MAnipulation framework co-training human full-body motion data with static robot data for mobile manipulation policies"
+    modalities: [egocentric-video, human-motion, robot-actions]
+    tasks: [mobile-manipulation, robot-learning, imitation-learning, manipulation, cross-embodiment-transfer]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public project/data artifacts and terms are confirmed."
+  - name: TASTE-Rob
+    kind: dataset
+    released: "2025-03"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.11423
+    paper: https://arxiv.org/abs/2503.11423
+    scale: "100,856 task-oriented ego-centric hand-object interaction videos aligned with language instructions for video generation and robot imitation"
+    modalities: [egocentric-video, hand-object-interaction, language-instructions]
+    tasks: [video-generation, hand-object, robot-learning, imitation-learning, manipulation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until data access, license, and generation-model artifacts are confirmed."
+  - name: Kaiwu
+    kind: dataset
+    released: "2025-03"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.05231
+    paper: https://arxiv.org/abs/2503.05231
+    scale: "11,664 synchronized assembling-action instances from 20 subjects with first-person video, gaze, hand motion, pressure, sound, EMG, mocap, robot, and environment streams"
+    modalities: [first-person-video, gaze, hand-motion, force, audio, emg, mocap, robot-actions]
+    tasks: [robot-learning, hri, industrial-assembly, sensor-fusion, manipulation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until stable data access, license, and loader details are confirmed."
+  - name: Humanoid-VLA
+    kind: model
+    released: "2025-02"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2502.14795
+    paper: https://arxiv.org/abs/2502.14795
+    scale: "Language, egocentric scene perception, and motion-control framework for universal humanoid control with video-conditioned fine-tuning"
+    modalities: [egocentric-video, text-instructions, humanoid-motion]
+    tasks: [humanoid-control, vla, motion-generation, robot-learning, embodied-ai]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public code, model, and data assets are confirmed."
+  - name: EgoSpeak
+    kind: model
+    released: "2025-02"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2502.14892
+    paper: https://arxiv.org/abs/2502.14892
+    scale: "Real-time speech-initiation prediction for egocentric conversational agents over first-person RGB streaming video"
+    modalities: [egocentric-video, dialogue, speech]
+    tasks: [streaming-assistant, multimodal-conversation, social, real-time-understanding, assistive-systems]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public YT-Conversation assets, code, and terms are confirmed."
+  - name: PRVQL
+    kind: model
+    released: "2025-02"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2502.07707
+    paper: https://arxiv.org/abs/2502.07707
+    scale: "Progressive knowledge-guided refinement for egocentric visual query localization under appearance change and clutter"
+    modalities: [egocentric-video, object-crops, retrieval-features]
+    tasks: [visual-query-localization, object-tracking, grounding-localization, episodic-memory]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until code, checkpoints, and evaluation setup are confirmed."
+  - name: Human Gaze Object-Centered Learning
+    kind: model
+    released: "2025-01"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2501.02966
+    paper: https://arxiv.org/abs/2501.02966
+    scale: "Uses Ego4D-simulated months of egocentric experience and gaze-inspired central visual amplification to improve object-centered representation learning"
+    modalities: [egocentric-video, gaze, attention]
+    tasks: [representation-learning, gaze, object-recognition, egocentric-pretraining]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public code and derived gaze/feature assets are confirmed."
+  - name: R+X
+    kind: model
+    released: "2024-07"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2407.12957
+    paper: https://arxiv.org/abs/2407.12957
+    scale: "Retrieval-and-execution framework that teaches robots from long, unlabeled first-person videos of everyday human tasks"
+    modalities: [first-person-video, language-instructions, robot-actions]
+    tasks: [robot-learning, retrieval, imitation-learning, manipulation, cross-embodiment-transfer]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until public video-bank, code, and robot-policy artifacts are confirmed."
+  - name: Missing Modality Token / MMT
+    kind: model
+    released: "2024-01"
+    venue: "arXiv"
+    year: 2024
+    status: watch
+    url: https://arxiv.org/abs/2401.11470
+    paper: https://arxiv.org/abs/2401.11470
+    scale: "Missing-modality modeling for multimodal egocentric action recognition and moment localization on Ego4D, EPIC-KITCHENS, and EPIC-Sounds"
+    modalities: [egocentric-video, audio, imu, gaze]
+    tasks: [multimodal-fusion, action-recognition, moment-query, robustness, egocentric-representation]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until code and reproducible training/evaluation assets are confirmed."
+  - name: StarVLA
+    kind: toolkit
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.05014
+    paper: https://arxiv.org/abs/2604.05014
+    scope: adjacent
+    scale: "Modular open-source VLA codebase supporting swappable VLM backbones such as Qwen-VL and world-model backbones such as Cosmos"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [tooling, vla, robot-learning, evaluation, qwen3-omni]
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; kept on watch until repository, license, and reproducible examples are confirmed."
+    scope_note: "Adjacent VLA tooling; useful for egocentric-VLA comparisons, but not itself a human first-person dataset."
   - name: HALOMI
     kind: model
     released: "2026-06"
@@ -2522,17 +2852,18 @@ resources:
     verified_at: "2026-06-20"
     release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoVLA
-    verified_at: "2026-06-20"
-    release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    verified_at: "2026-06-22"
+    release_note: "Live source checked 2026-06-22; arXiv paper added from the 2024-2026 scan, kept on watch until public artifacts and access terms are confirmed."
     milestone: "2025-07"
     milestone_note: "Showed vision-language-action policies can be learned from egocentric human video and transferred to robots."
     milestone_image: assets/milestones/egovla.png
     milestone_origin: UCSD / UIUC / MIT / NVIDIA
     kind: model
     released: "2025-07"
-    venue: "project page"
+    venue: "arXiv"
     status: watch
     url: https://rchalyang.github.io/EgoVLA/
+    paper: https://arxiv.org/abs/2507.12440
     scale: "VLA training from egocentric human videos plus robot fine-tuning"
     tasks: [robot-learning, manipulation, vla]
 
