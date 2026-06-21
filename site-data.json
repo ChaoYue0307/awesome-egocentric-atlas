@@ -248,188 +248,188 @@
     }
   ],
   "milestone_layout": {
-    "width": 1280,
-    "height": 2322,
+    "width": 1600,
+    "height": 3173,
     "cells": [
       {
         "name": "CMU-MMAC",
         "date": "2009-06",
         "kind": "dataset",
         "url": "http://kitchen.cs.cmu.edu/",
-        "x": 266.0,
+        "x": 330.0,
         "y": 266,
-        "width": 228,
-        "height": 295
+        "width": 291,
+        "height": 365
       },
       {
         "name": "GTEA / GTEA Gaze / EGTEA Gaze+",
         "date": "2011-06",
         "kind": "dataset",
         "url": "https://cbs.ic.gatech.edu/fpv/",
-        "x": 508.0,
+        "x": 639.0,
         "y": 266,
-        "width": 228,
-        "height": 295
+        "width": 291,
+        "height": 365
       },
       {
         "name": "ADL Dataset",
         "date": "2012-06",
         "kind": "dataset",
         "url": "https://www.csc.kth.se/cvap/actions/",
-        "x": 750.0,
+        "x": 948.0,
         "y": 266,
-        "width": 228,
-        "height": 295
+        "width": 291,
+        "height": 365
       },
       {
         "name": "EgoHands",
         "date": "2015-12",
         "kind": "dataset",
         "url": "http://vision.soic.indiana.edu/projects/egohands/",
-        "x": 992.0,
+        "x": 1257.0,
         "y": 266,
-        "width": 228,
-        "height": 295
+        "width": 291,
+        "height": 365
       },
       {
         "name": "EPIC-KITCHENS-100",
         "date": "2020-06",
         "kind": "dataset",
         "url": "https://epic-kitchens.github.io/",
-        "x": 266.0,
-        "y": 691,
-        "width": 228,
-        "height": 295
+        "x": 330.0,
+        "y": 781,
+        "width": 291,
+        "height": 365
       },
       {
         "name": "Ego4D",
         "date": "2021-10",
         "kind": "dataset",
         "url": "https://ego4d-data.org/",
-        "x": 508.0,
-        "y": 691,
-        "width": 228,
-        "height": 295
+        "x": 639.0,
+        "y": 781,
+        "width": 291,
+        "height": 365
       },
       {
         "name": "HOI4D",
         "date": "2022-03",
         "kind": "dataset",
         "url": "https://hoi4d.github.io/",
-        "x": 750.0,
-        "y": 691,
-        "width": 228,
-        "height": 295
+        "x": 948.0,
+        "y": 781,
+        "width": 291,
+        "height": 365
       },
       {
         "name": "EgoVLP",
         "date": "2022-06",
         "kind": "model",
         "url": "https://github.com/showlab/EgoVLP",
-        "x": 992.0,
-        "y": 691,
-        "width": 228,
-        "height": 295
+        "x": 1257.0,
+        "y": 781,
+        "width": 291,
+        "height": 365
       },
       {
         "name": "EgoSchema",
         "date": "2023-08",
         "kind": "benchmark",
         "url": "http://egoschema.github.io/",
-        "x": 267.5,
-        "y": 1116,
-        "width": 179,
-        "height": 265
+        "x": 471.0,
+        "y": 1296,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "Project Aria Datasets",
         "date": "2023-08",
         "kind": "collection",
         "url": "https://www.projectaria.com/datasets/",
-        "x": 460.5,
-        "y": 1116,
-        "width": 179,
-        "height": 265
+        "x": 789.0,
+        "y": 1296,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "Ego-Exo4D",
         "date": "2023-11",
         "kind": "dataset",
         "url": "https://ego-exo4d-data.org/",
-        "x": 653.5,
-        "y": 1116,
-        "width": 179,
-        "height": 265
+        "x": 1107.0,
+        "y": 1296,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "Universal Manipulation Interface / UMI",
         "date": "2024-02",
         "kind": "toolkit",
         "url": "https://umi-gripper.github.io/",
-        "x": 846.5,
-        "y": 1116,
-        "width": 179,
-        "height": 265
+        "x": 630.0,
+        "y": 1686,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "HOT3D",
         "date": "2024-06",
         "kind": "dataset",
         "url": "https://facebookresearch.github.io/hot3d/",
-        "x": 1039.5,
-        "y": 1116,
-        "width": 179,
-        "height": 265
+        "x": 948.0,
+        "y": 1686,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "EgoLife",
         "date": "2025-03",
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2503.03803",
-        "x": 450.0,
-        "y": 1511,
-        "width": 286,
-        "height": 312
+        "x": 630.0,
+        "y": 2206,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "EgoVLA",
         "date": "2025-07",
         "kind": "model",
         "url": "https://rchalyang.github.io/EgoVLA/",
-        "x": 750.0,
-        "y": 1511,
-        "width": 286,
-        "height": 312
+        "x": 948.0,
+        "y": 2206,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "DreamDojo",
         "date": "2026-02",
         "kind": "model",
         "url": "https://github.com/NVIDIA/DreamDojo",
-        "x": 300.0,
-        "y": 1953,
-        "width": 286,
-        "height": 312
+        "x": 471.0,
+        "y": 2726,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "EgoScale",
         "date": "2026-02",
         "kind": "dataset",
         "url": "https://arxiv.org/abs/2602.16710",
-        "x": 600.0,
-        "y": 1953,
-        "width": 286,
-        "height": 312
+        "x": 789.0,
+        "y": 2726,
+        "width": 300,
+        "height": 370
       },
       {
         "name": "Xperience-10M",
         "date": "2026-03",
         "kind": "dataset",
         "url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m",
-        "x": 900.0,
-        "y": 1953,
-        "width": 286,
-        "height": 312
+        "x": 1107.0,
+        "y": 2726,
+        "width": 300,
+        "height": 370
       }
     ]
   },

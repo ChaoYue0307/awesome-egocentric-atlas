@@ -540,7 +540,7 @@ function renderStatuses() {
 
 function milestoneEra(item) {
   const year = Number(String(item.date || "").slice(0, 4));
-  if (year <= 2015) return { id: "origins", range: "2009-2015", title: "Origins", copy: "Daily-life activity, gaze, and hands become measurable first-person signals." };
+  if (year <= 2015) return { id: "origins", range: "2009-2015", title: "Origins", copy: "Daily-life activity, gaze, and hands become measurable egocentric signals." };
   if (year <= 2022) return { id: "scale", range: "2020-2022", title: "Modern Scale", copy: "Large benchmarks, smart-glasses sensing, geometry, and video-language pretraining mature." };
   if (year <= 2024) return { id: "reasoning", range: "2023-2024", title: "Reasoning & Robotics", copy: "Long-form reasoning, ego-exo capture, AR hand-object tracking, and robot interfaces converge." };
   if (year === 2025) return { id: "daily", range: "2025", title: "Daily Life to VLA", copy: "Personal memory and egocentric demonstrations begin feeding robot policies." };
@@ -566,19 +566,23 @@ function renderMilestones() {
     const section = document.createElement("section");
     section.className = "milestone-era";
     section.setAttribute("aria-label", `${era.range} ${era.title}`);
-    const cards = era.items.map((item) => `
-      <a class="milestone-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(`${item.name} (${item.date})`)}">
-        <span class="milestone-card-media">
-          <img src="${escapeHtml(item.image || "assets/awesome-egocentric-logo.png")}" loading="lazy" decoding="async" alt="">
-        </span>
-        <span class="milestone-card-meta">
-          <span class="chip milestone-card-date">${escapeHtml(item.date)}</span>
-          <span class="chip milestone-card-kind">${escapeHtml(titleize(item.kind))}</span>
-        </span>
-        <strong class="milestone-card-title">${escapeHtml(item.name)}</strong>
-        <span class="milestone-card-note">${escapeHtml(item.note || "")}</span>
-      </a>
-    `).join("");
+    const cards = era.items.map((item) => {
+      const kind = titleize(item.kind);
+      const label = `${item.name}, ${item.date}, ${kind}. ${item.note || ""}`.trim();
+      return `
+        <a class="milestone-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+          <span class="milestone-card-media">
+            <img src="${escapeHtml(item.image || "assets/awesome-egocentric-logo.png")}" loading="lazy" decoding="async" alt="">
+          </span>
+          <span class="milestone-card-meta">
+            <span class="chip milestone-card-date">${escapeHtml(item.date)}</span>
+            <span class="chip milestone-card-kind">${escapeHtml(kind)}</span>
+          </span>
+          <strong class="milestone-card-title">${escapeHtml(item.name)}</strong>
+          <span class="milestone-card-note">${escapeHtml(item.note || "")}</span>
+        </a>
+      `;
+    }).join("");
 
     section.innerHTML = `
       <div class="milestone-era-head">

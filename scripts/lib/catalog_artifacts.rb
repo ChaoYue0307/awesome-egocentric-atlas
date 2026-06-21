@@ -788,34 +788,45 @@ module CatalogArtifacts
       }
     ].reject { |group| group.fetch(:items).empty? }
 
-    margin_x = 40
+    canvas_width = 1600
+    margin_x = 52
     row_gap = 26
     header_height = 188
-    row_width = 1200
-    card_area_x = 266
-    card_area_width = 954
-    card_gap = 14
+    row_width = canvas_width - (margin_x * 2)
+    card_area_x = 330
+    card_area_width = canvas_width - card_area_x - margin_x
+    card_gap = 18
+    card_row_gap = 20
     era_dot_x = card_area_x - margin_x - 18
 
     row_layouts = era_specs.map do |group|
       count = group.fetch(:items).length
+      columns = count >= 5 ? 3 : [count, 4].min
       card_width = [
         [
-          ((card_area_width - (card_gap * [count - 1, 0].max)) / count.to_f).floor,
-          174
+          ((card_area_width - (card_gap * [columns - 1, 0].max)) / columns.to_f).floor,
+          252
         ].max,
-        286
+        300
       ].min
       image_height = [
         [
-          (card_width * 0.62).round,
-          104
+          (card_width * 0.60).round,
+          156
         ].max,
-        158
+        180
       ].min
-      card_height = image_height + 154
-      row_height = card_height + 104
-      group.merge(card_width: card_width, image_height: image_height, card_height: card_height, row_height: row_height)
+      card_height = image_height + 190
+      card_rows = (count.to_f / columns).ceil
+      card_stack_height = (card_rows * card_height) + (card_row_gap * [card_rows - 1, 0].max)
+      row_height = card_stack_height + 124
+      group.merge(
+        columns: columns,
+        card_width: card_width,
+        image_height: image_height,
+        card_height: card_height,
+        row_height: row_height
+      )
     end
 
     height = header_height + row_layouts.sum { |group| group.fetch(:row_height) } + (row_gap * [row_layouts.length - 1, 0].max) + 31
@@ -826,20 +837,23 @@ module CatalogArtifacts
       y = current_y
       current_y += group.fetch(:row_height) + row_gap
       era_nodes << [margin_x + era_dot_x, y + 54]
-      count = group.fetch(:items).length
-      cards_width = (count * group.fetch(:card_width)) + (card_gap * [count - 1, 0].max)
-      start_x = card_area_x + ((card_area_width - cards_width) / 2.0)
       card_y = y + 78
 
       cells = group.fetch(:items).each_with_index.map do |item, index|
         card_width = group.fetch(:card_width)
         image_height = group.fetch(:image_height)
         card_height = group.fetch(:card_height)
-        x = start_x + (index * (card_width + card_gap))
+        columns = group.fetch(:columns)
+        row_index = index / columns
+        column_index = index % columns
+        items_in_row = [group.fetch(:items).length - (row_index * columns), columns].min
+        cards_width = (items_in_row * card_width) + (card_gap * [items_in_row - 1, 0].max)
+        start_x = card_area_x + ((card_area_width - cards_width) / 2.0)
+        x = start_x + (column_index * (card_width + card_gap))
         {
           item: item,
           x: x,
-          y: card_y,
+          y: card_y + (row_index * (card_height + card_row_gap)),
           width: card_width,
           height: card_height,
           image_height: image_height
@@ -852,7 +866,7 @@ module CatalogArtifacts
     {
       items: items,
       year_span: year_span,
-      width: 1280,
+      width: canvas_width,
       height: height,
       margin_x: margin_x,
       row_width: row_width,
@@ -890,6 +904,7 @@ module CatalogArtifacts
     layout = milestone_poster_layout
     items = layout.fetch(:items)
     year_span = layout.fetch(:year_span)
+    width = layout.fetch(:width)
     height = layout.fetch(:height)
     margin_x = layout.fetch(:margin_x)
     row_width = layout.fetch(:row_width)
@@ -920,11 +935,11 @@ module CatalogArtifacts
         kind_color = kind_colors.fetch(kind, group.fetch(:accent))
         date_width = [date.length * 7.3 + 22, 66].max.round
         kind_width = [[kind.length * 6.9 + 24, 58].max.round, card_width - date_width - 25].min
-        max_name_chars = [[(card_width / 7.7).floor, 15].max, 30].min
-        max_note_chars = [[(card_width / 5.9).floor, 20].max, 48].min
+        max_name_chars = [[(card_width / 8.6).floor, 18].max, 32].min
+        max_note_chars = [[(card_width / 6.8).floor, 26].max, 44].min
         name_lines = wrap_text(item.fetch("name"), max_chars: max_name_chars, max_lines: 2)
-        note_y = image_height + 66 + (name_lines.length * 19) + 9
-        note_lines = wrap_text(item.fetch("note"), max_chars: max_note_chars, max_lines: 2)
+        note_y = image_height + 73 + (name_lines.length * 20) + 10
+        note_lines = wrap_text(item.fetch("note"), max_chars: max_note_chars, max_lines: 3)
 
         <<~CARD
           <a href="#{html_escape(item.fetch("url"))}" target="_blank">
@@ -932,12 +947,12 @@ module CatalogArtifacts
               <rect class="card-bg" width="#{card_width}" height="#{card_height}" rx="14"/>
               <rect class="image-frame" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" rx="10"/>
               <image href="#{html_escape(image)}" x="12" y="12" width="#{card_width - 24}" height="#{image_height}" preserveAspectRatio="xMidYMid meet"/>
-              <rect class="date-pill" x="12" y="#{image_height + 23}" width="#{date_width}" height="25" rx="12.5"/>
-              <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(date)}</text>
-              <rect class="kind-pill" x="#{19 + date_width}" y="#{image_height + 23}" width="#{kind_width}" height="25" rx="12.5" fill="#{kind_color}"/>
-              <text class="pill-text" x="#{19 + date_width + (kind_width / 2.0)}" y="#{image_height + 40}" text-anchor="middle">#{html_escape(kind)}</text>
-              #{svg_text_block(name_lines, x: 12, y: image_height + 66, class_name: "card-title", line_height: 19)}
-              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 15)}
+              <rect class="date-pill" x="12" y="#{image_height + 24}" width="#{date_width}" height="27" rx="13.5"/>
+              <text class="pill-text" x="#{12 + (date_width / 2.0)}" y="#{image_height + 42}" text-anchor="middle">#{html_escape(date)}</text>
+              <rect class="kind-pill" x="#{21 + date_width}" y="#{image_height + 24}" width="#{kind_width}" height="27" rx="13.5" fill="#{kind_color}"/>
+              <text class="pill-text" x="#{21 + date_width + (kind_width / 2.0)}" y="#{image_height + 42}" text-anchor="middle">#{html_escape(kind)}</text>
+              #{svg_text_block(name_lines, x: 12, y: image_height + 73, class_name: "card-title", line_height: 20)}
+              #{svg_text_block(note_lines, x: 12, y: note_y, class_name: "card-note", line_height: 16)}
             </g>
           </a>
         CARD
@@ -968,7 +983,7 @@ module CatalogArtifacts
     end
 
     <<~SVG
-      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="#{height}" viewBox="0 0 1280 #{height}" role="img" aria-labelledby="title desc">
+      <svg xmlns="http://www.w3.org/2000/svg" width="#{width}" height="#{height}" viewBox="0 0 #{width} #{height}" role="img" aria-labelledby="title desc">
         <title id="title">Representative egocentric AI milestones</title>
         <desc id="desc">A generated milestone poster for Awesome Egocentric Atlas, showing #{items.length} representative field-defining works from #{year_span}, grouped into era bands with uncropped visual panels.</desc>
         <defs>
@@ -990,7 +1005,7 @@ module CatalogArtifacts
           </filter>
           <style>
             .kicker { font: 800 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .18em; }
-            .title { font: 850 46px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #14212b; letter-spacing: 0; }
+            .title { font: 850 52px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #14212b; letter-spacing: 0; }
             .subtitle { font: 500 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #53606b; letter-spacing: 0; }
             .stat-num { font: 900 43px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
             .stat-range { font: 900 34px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0f3b45; letter-spacing: 0; }
@@ -1010,26 +1025,26 @@ module CatalogArtifacts
             .date-pill { fill: #0b8f98; }
             .kind-pill { fill: #ef9f24; }
             .pill-text { font: 800 10.8px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
-            .card-title { font: 820 15px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
-            .card-note { font: 520 11.4px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
+            .card-title { font: 820 16.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #182733; letter-spacing: 0; }
+            .card-note { font: 540 12.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #5c6b74; letter-spacing: 0; }
             .rule { stroke: #c8dde2; stroke-width: 1.4; }
           </style>
         </defs>
 
-        <rect width="1280" height="#{height}" fill="url(#bg)"/>
-        <rect width="1280" height="#{height}" fill="url(#dots)"/>
-        <rect class="hero-card" x="40" y="24" width="1200" height="138" rx="24"/>
-        <rect x="40" y="24" width="1200" height="138" rx="24" fill="url(#heroGlow)"/>
-        <line class="rule" x1="40" y1="150" x2="1240" y2="150"/>
+        <rect width="#{width}" height="#{height}" fill="url(#bg)"/>
+        <rect width="#{width}" height="#{height}" fill="url(#dots)"/>
+        <rect class="hero-card" x="#{margin_x}" y="24" width="#{row_width}" height="138" rx="24"/>
+        <rect x="#{margin_x}" y="24" width="#{row_width}" height="138" rx="24" fill="url(#heroGlow)"/>
+        <line class="rule" x1="#{margin_x}" y1="150" x2="#{margin_x + row_width}" y2="150"/>
 
-        <text class="kicker" x="40" y="48">CURATED FIELD MILESTONES</text>
-        <text class="title" x="40" y="101">Egocentric AI timeline</text>
-        <text class="subtitle" x="40" y="136">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
+        <text class="kicker" x="#{margin_x}" y="48">CURATED FIELD MILESTONES</text>
+        <text class="title" x="#{margin_x}" y="104">Egocentric AI timeline</text>
+        <text class="subtitle" x="#{margin_x}" y="138">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
 
-        <text class="stat-range" x="1014" y="82" text-anchor="middle">#{year_span}</text>
-        <text class="stat-label" x="1014" y="106" text-anchor="middle">SPAN</text>
-        <text class="stat-num" x="1172" y="82" text-anchor="middle">#{items.length}</text>
-        <text class="stat-label" x="1172" y="106" text-anchor="middle">WORKS</text>
+        <text class="stat-range" x="#{width - 300}" y="82" text-anchor="middle">#{year_span}</text>
+        <text class="stat-label" x="#{width - 300}" y="106" text-anchor="middle">SPAN</text>
+        <text class="stat-num" x="#{width - 104}" y="82" text-anchor="middle">#{items.length}</text>
+        <text class="stat-label" x="#{width - 104}" y="106" text-anchor="middle">WORKS</text>
 
         #{spine_path}
       #{bands}
