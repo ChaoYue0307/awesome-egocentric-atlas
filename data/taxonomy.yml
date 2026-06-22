@@ -145,7 +145,7 @@ task_families:
   generation-and-world-models:
     label: Generation and world models
     aliases: [video-generation, world-modeling, action-conditioned-generation,
-      egocentric-simulation]
+      egocentric-simulation, simulation]
 
   grounding-localization:
     label: Grounding and localization
@@ -161,7 +161,7 @@ task_families:
       imitation-learning, cross-embodiment-transfer, human-demonstrations, human-centric-policy-learning,
       manipulation-safety, policy-optimization, hri, data-collection, active-perception,
       egocentric-calibration, humanoid-control, motion-generation, loco-manipulation,
-      tactile-learning, mobile-manipulation, whole-body-manipulation]
+      tactile-learning, mobile-manipulation, whole-body-manipulation, trajectory-synthesis]
 
   audio-and-social:
     label: Audio, speech, and social interaction
@@ -202,7 +202,8 @@ task_families:
       domain-adaptation, domain-transfer, continual-learning, efficient-inference, redetection, ego-exo,
       annotation-tooling, castle, challenge-solution, covariate-shift,
       domain-generalization, domain-shift, epic-kitchens, hd-epic-vqa, robustness,
-      streaming-video-understanding, zero-shot, multimodal-generalization, survey]
+      streaming-video-understanding, zero-shot, multimodal-generalization, survey,
+      data-conversion]
 
 # --- modality families ------------------------------------------------------
 modality_families:
@@ -217,7 +218,7 @@ modality_families:
       novel-view-video, event-stream, event-camera, event-based-video, child-view-video,
       cooking-video, egocentric-capture, egocentric-vr, generated-video, hmd-video,
       human-view-video, long-video, streaming-video, wrist-camera, lifelogging-video,
-      synthetic-video]
+      synthetic-video, monocular-video, egocentric-observations, video-priors]
 
   depth:
     label: Depth and RGB-D
@@ -228,7 +229,7 @@ modality_families:
     aliases: [audio, speech, text, language, narrations, descriptions, dialogue,
       language-instructions, hierarchical-language, verbal-commands, qa, memory, location-labels,
       captions, caregiver-speech, mllm, text-instructions, transcripts, video-language,
-      video-qa, vlm, natural-language]
+      video-qa, vlm, natural-language, motion-descriptions, goal-specification]
 
   gaze-motion:
     label: Gaze, IMU, and motion
@@ -257,7 +258,7 @@ modality_families:
       scene-scans, scene-geometry, scene-graphs, digital-twins, physics,
       calibration, 3d-target-labels, dslr-images, 3d-gaussian-splatting,
       3d-reconstruction, 3d-scene, 4d-scene, geometry, masks,
-      scene-reconstruction, 3d-flow]
+      scene-reconstruction, 3d-flow, 3d-assets, spatial-memory]
 
   device-and-labels:
     label: Device formats and labels
@@ -273,4 +274,5 @@ modality_families:
       sam-features, semantic-evidence, smart-glasses, state-labels,
       structured-reasoning, support-set, task-progress, temporal-grounding,
       thermal, v-jepa-features, visual-evidence, wearable-sensors,
-      chronological-stream, step-labels, digital-context]
+      chronological-stream, step-labels, digital-context, demonstrations,
+      evaluation, future-state-targets, synthetic-data, simulation]

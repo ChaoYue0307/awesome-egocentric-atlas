@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-06-22",
+    "last_major_audit": "2026-06-23",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,13 +15,13 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 614,
-    "egocentric_resources": 604,
-    "adjacent_resources": 10,
+    "total_resources": 623,
+    "egocentric_resources": 605,
+    "adjacent_resources": 18,
     "kind_counts": {
       "benchmark": 104,
       "collection": 1,
-      "dataset": 142,
+      "dataset": 143,
       "model": 325,
       "survey": 1,
       "toolkit": 31
@@ -31,7 +31,7 @@
       "open": 150,
       "partial": 12,
       "request": 4,
-      "watch": 427
+      "watch": 428
     }
   },
   "lanes": [
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 163
+      "count": 164
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 170
+      "count": 171
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 258
+      "count": 259
     },
     {
       "id": "memory-reasoning",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 125
+      "count": 126
     },
     {
       "id": "ar-wearables",
@@ -4400,6 +4400,249 @@
       "verified_at": "2026-06-21"
     },
     {
+      "name": "NavWAM",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.13494",
+      "paper": "https://arxiv.org/abs/2606.13494",
+      "scale": "Navigation world-action model that predicts future egocentric visual observations and action sequences for goal-conditioned visual navigation",
+      "tasks": [
+        "navigation",
+        "world-modeling",
+        "robot-learning",
+        "spatial-reasoning"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "generation-and-world-models",
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "trajectories",
+        "goal-specification"
+      ],
+      "release_note": "arXiv scan 2026-06-23; robot/agent navigation model, watch for code, benchmark assets, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "IntentNav",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.08029",
+      "paper": "https://arxiv.org/abs/2606.08029",
+      "scale": "Spatial-visual object-navigation policy learned from human demonstrations, using frontier probing and spatial memory for partially observed scenes",
+      "tasks": [
+        "navigation",
+        "robot-learning",
+        "spatial-reasoning",
+        "imitation-learning"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "trajectories",
+        "demonstrations"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify public implementation, demonstration data, and license before marking open.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "AlloSpatial",
+      "kind": "toolkit",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.08952",
+      "paper": "https://arxiv.org/abs/2606.08952",
+      "scale": "Agentic spatial-reasoning harness that converts local egocentric observations into allocentric spatial representations for foundation-model reasoning",
+      "tasks": [
+        "spatial-reasoning",
+        "embodied-ai",
+        "evaluation",
+        "navigation"
+      ],
+      "task_families": [
+        "reasoning-intent-planning",
+        "foundation-and-representation",
+        "evaluation-and-tooling",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-observations",
+        "spatial-memory",
+        "text"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code/harness release and benchmark assets.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "World-Language-Action Model",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.05979",
+      "paper": "https://arxiv.org/abs/2606.05979",
+      "scale": "Unified embodied foundation model jointly predicting subtasks, subgoal images, and robot actions while learning from egocentric videos and robot trajectories",
+      "tasks": [
+        "world-modeling",
+        "vla",
+        "robot-learning",
+        "planning"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "robot-camera-video",
+        "language-instructions",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify model, code, training data, and license release.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "ManiSplat",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.10645",
+      "paper": "https://arxiv.org/abs/2606.10645",
+      "scale": "Manipulation trajectory synthesis from monocular video using decoupled 3D Gaussian Splatting for dynamic interactive scenes",
+      "tasks": [
+        "manipulation",
+        "robot-learning",
+        "trajectory-synthesis",
+        "3d-understanding"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "monocular-video",
+        "3d-gaussian-splatting",
+        "trajectories"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code/data release and whether demonstrations include human first-person capture.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "DexFuture",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.05699",
+      "paper": "https://arxiv.org/abs/2606.05699",
+      "scale": "Hierarchical future-state visuomotor targeting for bimanual dexterous tool use, using future visual targets for robot policy learning",
+      "tasks": [
+        "dexterous-manipulation",
+        "robot-learning",
+        "world-modeling",
+        "bimanual-manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "future-state-targets"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code, tasks, and dataset access.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "GRAIL",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.05160",
+      "paper": "https://arxiv.org/abs/2606.05160",
+      "scale": "Digital-twin pipeline generating humanoid loco-manipulation demonstrations from 3D assets and video priors",
+      "tasks": [
+        "humanoid-control",
+        "robot-learning",
+        "manipulation",
+        "simulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "3d-assets",
+        "video-priors",
+        "humanoid-motion",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify asset/code release and licensing.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "DataLadder",
+      "kind": "toolkit",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.16776",
+      "paper": "https://arxiv.org/abs/2606.16776",
+      "scale": "Simulation-enabled interconversion toolchain for moving between robot trials, demonstrations, synthetic data, and evaluation assets in an embodied-data pyramid",
+      "tasks": [
+        "robot-learning",
+        "data-conversion",
+        "simulation",
+        "evaluation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "simulation",
+        "robot-actions",
+        "synthetic-data",
+        "evaluation"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify toolchain/code release and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
       "name": "NORA",
       "kind": "model",
       "released": "2025-04",
@@ -8128,7 +8371,7 @@
       "scope": "egocentric",
       "url": "https://egoengine.github.io/",
       "paper": "https://arxiv.org/abs/2606.12604",
-      "scale": "Framework converting egocentric human manipulation videos into high-fidelity robot observation videos and executable robot action trajectories",
+      "scale": "Framework converting egocentric RGB human manipulation videos into temporally aligned robot observation videos and feasible executable robot action trajectories, with zero-shot dexterous policy learning from human videos",
       "tasks": [
         "robot-learning",
         "manipulation",
@@ -8137,8 +8380,8 @@
       "task_families": [
         "robotics-and-vla"
       ],
-      "release_note": "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
-      "verified_at": "2026-06-16"
+      "release_note": "Live project page and arXiv record checked 2026-06-23; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed.",
+      "verified_at": "2026-06-23"
     },
     {
       "name": "EgoAERO",
@@ -12413,6 +12656,43 @@
       ],
       "release_note": "arXiv preprint (May 2025); watch for code release.",
       "verified_at": "2026-06-20"
+    },
+    {
+      "name": "HumanNet",
+      "kind": "dataset",
+      "released": "2026-05",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2605.06747",
+      "paper": "https://arxiv.org/abs/2605.06747",
+      "scale": "One-million-hour human-centric video corpus spanning first-person and third-person perspectives, with interaction-centric captions, motion descriptions, hand/body signals, and a reported 1,000-hour egocentric subset used for VLA-style validation",
+      "tasks": [
+        "foundation-video",
+        "representation-learning",
+        "embodied-ai",
+        "action-and-procedure",
+        "hand-object-interaction",
+        "robot-learning",
+        "vla"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "action-and-procedure",
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "exocentric-video",
+        "captions",
+        "motion-descriptions",
+        "hand-pose",
+        "body-pose"
+      ],
+      "release_note": "arXiv scan 2026-06-23; watch for public corpus access, subset definitions, license, and reproducible release metadata.",
+      "verified_at": "2026-06-23"
     },
     {
       "name": "HumanScale",

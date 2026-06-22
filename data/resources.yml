@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-22"
+  last_major_audit: "2026-06-23"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -1840,6 +1840,142 @@ resources:
     verified_at: "2026-06-21"
     citation_key: openeai_platform_2026
     scope_note: "Adjacent Qwen3-VL robot-arm platform; useful for VLA tooling comparisons, but not human or animal first-person capture."
+
+  - name: NavWAM
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.13494
+    paper: https://arxiv.org/abs/2606.13494
+    scope: adjacent
+    scale: "Navigation world-action model that predicts future egocentric visual observations and action sequences for goal-conditioned visual navigation"
+    modalities: [robot-camera-video, trajectories, goal-specification]
+    tasks: [navigation, world-modeling, robot-learning, spatial-reasoning]
+    release_note: "arXiv scan 2026-06-23; robot/agent navigation model, watch for code, benchmark assets, and license."
+    verified_at: "2026-06-23"
+    citation_key: navwam_2026
+    scope_note: "Adjacent robot visual-navigation world model; egocentric observation prediction is relevant, but it is not human wearable capture."
+
+  - name: IntentNav
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.08029
+    paper: https://arxiv.org/abs/2606.08029
+    scope: adjacent
+    scale: "Spatial-visual object-navigation policy learned from human demonstrations, using frontier probing and spatial memory for partially observed scenes"
+    modalities: [robot-camera-video, trajectories, demonstrations]
+    tasks: [navigation, robot-learning, spatial-reasoning, imitation-learning]
+    release_note: "arXiv scan 2026-06-23; verify public implementation, demonstration data, and license before marking open."
+    verified_at: "2026-06-23"
+    citation_key: intentnav_2026
+    scope_note: "Adjacent object-navigation work from human demonstrations; relevant to egocentric navigation, but not a human wearable-camera resource."
+
+  - name: AlloSpatial
+    kind: toolkit
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.08952
+    paper: https://arxiv.org/abs/2606.08952
+    scope: adjacent
+    scale: "Agentic spatial-reasoning harness that converts local egocentric observations into allocentric spatial representations for foundation-model reasoning"
+    modalities: [egocentric-observations, spatial-memory, text]
+    tasks: [spatial-reasoning, embodied-ai, evaluation, navigation]
+    release_note: "arXiv scan 2026-06-23; verify code/harness release and benchmark assets."
+    verified_at: "2026-06-23"
+    citation_key: allospatial_2026
+    scope_note: "Adjacent spatial-reasoning harness; directly references egocentric observations, but is a general foundation-model framework rather than a wearable capture dataset."
+
+  - name: World-Language-Action Model
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.05979
+    paper: https://arxiv.org/abs/2606.05979
+    scope: adjacent
+    scale: "Unified embodied foundation model jointly predicting subtasks, subgoal images, and robot actions while learning from egocentric videos and robot trajectories"
+    modalities: [egocentric-video, robot-camera-video, language-instructions, robot-actions]
+    tasks: [world-modeling, vla, robot-learning, planning]
+    release_note: "arXiv scan 2026-06-23; verify model, code, training data, and license release."
+    verified_at: "2026-06-23"
+    citation_key: world_language_action_model_2026
+    scope_note: "Adjacent embodied world-language-action model; it uses egocentric videos among broader robot data, but is not centered on human wearable capture."
+
+  - name: ManiSplat
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10645
+    paper: https://arxiv.org/abs/2606.10645
+    scope: adjacent
+    scale: "Manipulation trajectory synthesis from monocular video using decoupled 3D Gaussian Splatting for dynamic interactive scenes"
+    modalities: [monocular-video, 3d-gaussian-splatting, trajectories]
+    tasks: [manipulation, robot-learning, trajectory-synthesis, 3d-understanding]
+    release_note: "arXiv scan 2026-06-23; verify code/data release and whether demonstrations include human first-person capture."
+    verified_at: "2026-06-23"
+    citation_key: manisplat_2026
+    scope_note: "Adjacent monocular manipulation-synthesis method; relevant to hand-object and robot learning, but not confirmed as human wearable egocentric capture."
+
+  - name: DexFuture
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.05699
+    paper: https://arxiv.org/abs/2606.05699
+    scope: adjacent
+    scale: "Hierarchical future-state visuomotor targeting for bimanual dexterous tool use, using future visual targets for robot policy learning"
+    modalities: [robot-camera-video, robot-actions, future-state-targets]
+    tasks: [dexterous-manipulation, robot-learning, world-modeling, bimanual-manipulation]
+    release_note: "arXiv scan 2026-06-23; verify code, tasks, and dataset access."
+    verified_at: "2026-06-23"
+    citation_key: dexfuture_2026
+    scope_note: "Adjacent robot-dexterity method; useful for manipulation/world-model comparisons, but not a human first-person resource."
+
+  - name: GRAIL
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.05160
+    paper: https://arxiv.org/abs/2606.05160
+    scope: adjacent
+    scale: "Digital-twin pipeline generating humanoid loco-manipulation demonstrations from 3D assets and video priors"
+    modalities: [3d-assets, video-priors, humanoid-motion, robot-actions]
+    tasks: [humanoid-control, robot-learning, manipulation, simulation]
+    release_note: "arXiv scan 2026-06-23; verify asset/code release and licensing."
+    verified_at: "2026-06-23"
+    citation_key: grail_2026
+    scope_note: "Adjacent humanoid demonstration-generation method; related to ego-to-robot transfer, but not a human wearable dataset."
+
+  - name: DataLadder
+    kind: toolkit
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.16776
+    paper: https://arxiv.org/abs/2606.16776
+    scope: adjacent
+    scale: "Simulation-enabled interconversion toolchain for moving between robot trials, demonstrations, synthetic data, and evaluation assets in an embodied-data pyramid"
+    modalities: [simulation, robot-actions, synthetic-data, evaluation]
+    tasks: [robot-learning, data-conversion, simulation, evaluation]
+    release_note: "arXiv scan 2026-06-23; verify toolchain/code release and license."
+    verified_at: "2026-06-23"
+    citation_key: dataladder_2026
+    scope_note: "Adjacent embodied-data tooling; relevant to robot-data pipelines, but not human or animal first-person capture."
 
   - name: NORA
     kind: model
@@ -3695,10 +3831,10 @@ resources:
     status: watch
     url: https://egoengine.github.io/
     paper: https://arxiv.org/abs/2606.12604
-    scale: "Framework converting egocentric human manipulation videos into high-fidelity robot observation videos and executable robot action trajectories"
+    scale: "Framework converting egocentric RGB human manipulation videos into temporally aligned robot observation videos and feasible executable robot action trajectories, with zero-shot dexterous policy learning from human videos"
     tasks: [robot-learning, manipulation, vla]
-    verified_at: "2026-06-16"
-    release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    verified_at: "2026-06-23"
+    release_note: "Live project page and arXiv record checked 2026-06-23; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
   - name: EgoAERO
     kind: model
     released: "2026-06"
@@ -5994,6 +6130,22 @@ resources:
     release_note: "arXiv preprint (May 2025); watch for code release."
     verified_at: "2026-06-20"
     citation_key: h2r_2025
+
+  - name: HumanNet
+    kind: dataset
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.06747
+    paper: https://arxiv.org/abs/2605.06747
+    scale: "One-million-hour human-centric video corpus spanning first-person and third-person perspectives, with interaction-centric captions, motion descriptions, hand/body signals, and a reported 1,000-hour egocentric subset used for VLA-style validation"
+    modalities: [egocentric-video, exocentric-video, captions, motion-descriptions, hand-pose, body-pose]
+    tasks: [foundation-video, representation-learning, embodied-ai, action-and-procedure, hand-object-interaction, robot-learning, vla]
+    scope_note: "Mixed first-person and third-person human-centric corpus; included because it explicitly contains first-person/egocentric video and evaluates egocentric human video as a robot-data substitute."
+    release_note: "arXiv scan 2026-06-23; watch for public corpus access, subset definitions, license, and reproducible release metadata."
+    verified_at: "2026-06-23"
+    citation_key: humannet_2026
 
   - name: HumanScale
     kind: model
