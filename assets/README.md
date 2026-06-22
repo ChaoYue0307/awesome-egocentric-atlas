@@ -31,7 +31,7 @@ Prompt summary: a polished circular atlas mark combining wearable first-person g
 
 The README and GitHub Pages site embed high-resolution PNG exports of the SVG figures so downstream renderers show the same text layout everywhere:
 
-- `awesome-egocentric-atlas-map.png` — `3840 x 2190`
+- `awesome-egocentric-atlas-map.png` — `5120 x 2920`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
 - `awesome-egocentric-timeline.png` — `3840 x 1680`
 - `awesome-egocentric-milestones.png` — `4800 x 10815`
