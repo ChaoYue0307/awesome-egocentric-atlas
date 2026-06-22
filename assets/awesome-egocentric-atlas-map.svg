@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 730" role="img" aria-labelledby="title desc">
-  <title id="title">Awesome Egocentric Atlas system map</title>
+  <title id="title">Awesome Egocentric Atlas catalog overview</title>
   <desc id="desc">Awesome Egocentric Atlas pipeline: egocentric capture sources feed multimodal signals, which feed research task families, which produce reusable, validated atlas artifacts, with a curate-verify-update feedback loop.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
@@ -42,10 +42,10 @@
   <rect width="1280" height="730" fill="url(#bg)"/>
   <rect width="1280" height="730" fill="url(#dots)"/>
 
-  <text class="kicker" x="56" y="52">EGOCENTRIC AI · SYSTEM MAP</text>
+  <text class="kicker" x="56" y="52">CATALOG OVERVIEW</text>
   <text class="title ink" x="56" y="104">Awesome Egocentric Atlas</text>
   <text class="subtitle sub" x="56" y="136">
-    <tspan x="56" y="136">Just launched: curated egocentric AI resources for egocentric vision, embodied AI,</tspan>
+    <tspan x="56" y="136">Datasets, benchmarks, models, and tools for egocentric vision, embodied AI,</tspan>
     <tspan x="56" y="161">robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.</tspan>
   </text>
 
@@ -56,7 +56,7 @@
     <text class="chiptext" x="798" y="81">604 resources</text>
     <rect class="chip" x="978" y="58" width="118" height="36" rx="18"/>
     <circle class="dotA" cx="1004" cy="76" r="5"/>
-    <text class="chiptext" x="1022" y="81">6 lanes</text>
+    <text class="chiptext" x="1022" y="81">6 areas</text>
     <rect class="chip" x="1118" y="58" width="132" height="36" rx="18"/>
     <circle class="dotN" cx="1144" cy="76" r="5"/>
     <text class="chiptext" x="1162" y="81">5 states</text>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 460" role="img" aria-labelledby="title desc">
   <title id="title">Awesome Egocentric Atlas reader route</title>
-  <desc id="desc">A five-step reader route for using Awesome Egocentric Atlas: choose a goal, pick a lane, check access, filter the catalog, then cite, build, or contribute.</desc>
+  <desc id="desc">A five-step reader route for using Awesome Egocentric Atlas: choose a goal, pick an area, check access, filter the catalog, then cite, build, or contribute.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -33,9 +33,9 @@
   <rect width="1280" height="460" fill="url(#bg)"/>
   <rect width="1280" height="460" fill="url(#dots)"/>
 
-  <text class="kicker" x="51" y="60">README FLOW</text>
-  <text class="title ink" x="51" y="104">How to enter the atlas</text>
-  <text class="subtitle" x="51" y="136">Move from intent to resources without reading every table first.</text>
+  <text class="kicker" x="51" y="60">QUICK GUIDE</text>
+  <text class="title ink" x="51" y="104">How to use the catalog</text>
+  <text class="subtitle" x="51" y="136">Choose a task, check access, then open the matching resources.</text>
 
   <line class="rail" x1="90" y1="290" x2="1230" y2="290"/>
 
@@ -55,7 +55,7 @@
     <rect x="0" y="0" width="210" height="180" rx="22" fill="#ffffff" stroke="#d8e3e7" stroke-width="1.6" filter="url(#shadow)"/>
     <circle cx="42" cy="46" r="22" fill="#5b6b73"/>
     <text class="numText" x="42" y="53" text-anchor="middle">2</text>
-    <text class="label" x="28" y="108">Pick lane</text>
+    <text class="label" x="28" y="108">Pick area</text>
     <text class="text" x="28" y="138">foundation, action,</text>
     <text class="text" x="28" y="162">memory, VLA, AR</text>
   </g>
@@ -93,5 +93,5 @@
     <text class="text" x="28" y="162">or contribute</text>
   </g>
 
-  <text class="foot" x="51" y="430">Each step maps to a README section; the YAML catalog backs steps 2&#8211;4 with structured filters.</text>
+  <text class="foot" x="51" y="430">Each step points to a README section; YAML filters cover areas, tasks, modalities, and years.</text>
 </svg>

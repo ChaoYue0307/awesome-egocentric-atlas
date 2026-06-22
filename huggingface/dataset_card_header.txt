@@ -63,6 +63,6 @@ Each row is one catalogued resource. Columns:
 | `tasks` | Task families (`; `-separated) |
 | `modalities` | Modalities (`; `-separated) |
 
-The paper-focused sheet is also mirrored as [`awesome-egocentric-papers.csv`](awesome-egocentric-papers.csv), containing only resources with a paper link. A richer nested-JSON version (with lanes and summary stats) is in [`site-data.json`](site-data.json). This dataset card and catalog are mirrored from the [GitHub repository](https://github.com/ChaoYue0307/awesome-egocentric-atlas) and the [interactive site](https://chaoyue0307.github.io/awesome-egocentric-atlas/); see the full README below for the curated tables and figures.
+The paper-focused sheet is also mirrored as [`awesome-egocentric-papers.csv`](awesome-egocentric-papers.csv), containing only resources with a paper link. A richer nested-JSON version with research-area summaries and stats is in [`site-data.json`](site-data.json). This dataset card and catalog are mirrored from the [GitHub repository](https://github.com/ChaoYue0307/awesome-egocentric-atlas) and the [interactive site](https://chaoyue0307.github.io/awesome-egocentric-atlas/); see the full README below for the resource tables and figures.
 
 ---

@@ -18,7 +18,7 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>Une carte sélective de l'IA égocentrique : les jeux de données, benchmarks, modèles et outils derrière la vision égocentrique, l'IA incarnée et la robotique, l'apprentissage vision-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.</strong></p>
+<p align="center"><strong>Jeux de données, benchmarks, modèles et outils pour la vision égocentrique, l'IA incarnée et la robotique, le vidéo-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.</strong></p>
 
 <p align="center"><strong>604</strong> ressources égocentriques — 142 jeux de données · 104 benchmarks · 325 modèles · 31 outils</p>
 

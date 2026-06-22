@@ -18,7 +18,7 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>Eine kuratierte Karte egozentrischer KI – die Datensätze, Benchmarks, Modelle und Werkzeuge hinter egozentrischem Sehen, verkörperter KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.</strong></p>
+<p align="center"><strong>Datensätze, Benchmarks, Modelle und Werkzeuge für egozentrisches Sehen, verkörperte KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.</strong></p>
 
 <p align="center"><strong>604</strong> egozentrische Ressourcen — 142 Datensätze · 104 Benchmarks · 325 Modelle · 31 Toolkits</p>
 

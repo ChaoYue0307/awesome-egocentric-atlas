@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Awesome Egocentric Atlas",
-    "description": "Just launched Awesome Egocentric Atlas — a curated collection of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
+    "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
     "last_major_audit": "2026-06-22",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",

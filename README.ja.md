@@ -18,7 +18,7 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>エゴセントリック AI の厳選マップ——エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用を支えるデータセット・ベンチマーク・モデル・ツールを収録。</strong></p>
+<p align="center"><strong>エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用に使うデータセット・ベンチマーク・モデル・ツール。</strong></p>
 
 <p align="center"><strong>604</strong> エゴセントリック資源 — 142 データセット · 104 ベンチマーク · 325 モデル · 31 ツールキット</p>
 

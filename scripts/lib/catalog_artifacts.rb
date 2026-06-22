@@ -678,7 +678,7 @@ module CatalogArtifacts
         <rect width="1280" height="520" fill="url(#bg)"/>
         <rect width="1280" height="520" fill="url(#dots)"/>
 
-        <text class="kicker" x="70" y="58">ACCESS REALITY</text>
+        <text class="kicker" x="70" y="58">ACCESS STATUS</text>
         <text class="title ink" x="70" y="102">#{total} egocentric resources by access state</text>
         <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
 
@@ -761,7 +761,7 @@ module CatalogArtifacts
 
   def milestone_poster_layout(items = milestones)
     years = items.map { |item| item.fetch("date").to_s[/\d{4}/].to_i }.reject(&:zero?)
-    year_span = years.empty? ? "field milestones" : "#{years.min}-#{years.max}"
+    year_span = years.empty? ? "representative works" : "#{years.min}-#{years.max}"
     year_for = ->(item) { item.fetch("date").to_s[/\d{4}/].to_i }
     era_specs = [
       {
@@ -797,9 +797,9 @@ module CatalogArtifacts
         items: items.select { |item| year_for.call(item) == 2025 }
       },
       {
-        label: "World-Model Frontier",
+        label: "World Models",
         range: "2026",
-        theme: "Egocentric corpora, world models, and data-scaling laws push embodied AI outward.",
+        theme: "Recent egocentric corpora, world models, and data-scaling studies.",
         color: "#5d52cf",
         accent: "#ef9f24",
         items: items.select { |item| year_for.call(item) >= 2026 }
@@ -1062,9 +1062,9 @@ module CatalogArtifacts
         <rect x="#{margin_x}" y="24" width="#{row_width}" height="138" rx="24" fill="url(#heroGlow)"/>
         <line class="rule" x1="#{margin_x}" y1="150" x2="#{margin_x + row_width}" y2="150"/>
 
-        <text class="kicker" x="#{margin_x}" y="48">CURATED FIELD MILESTONES</text>
+        <text class="kicker" x="#{margin_x}" y="48">REPRESENTATIVE WORKS</text>
         <text class="title" x="#{margin_x}" y="104">Egocentric AI timeline</text>
-        <text class="subtitle" x="#{margin_x}" y="138">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
+        <text class="subtitle" x="#{margin_x}" y="138">Works grouped by period, topic, and release date: data, scale, reasoning, robotics, and world models.</text>
 
         <text class="stat-range" x="#{width - 300}" y="82" text-anchor="middle">#{year_span}</text>
         <text class="stat-label" x="#{width - 300}" y="106" text-anchor="middle">SPAN</text>

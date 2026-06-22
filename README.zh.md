@@ -18,7 +18,7 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>自我中心 AI 的精选地图——汇集自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 以及手物交互背后的数据集、基准、模型与工具。</strong></p>
+<p align="center"><strong>用于自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 和手物交互的数据集、基准、模型与工具。</strong></p>
 
 <p align="center"><strong>604</strong> 自我中心资源 — 142 数据集 · 104 基准 · 325 模型 · 31 工具包</p>
 

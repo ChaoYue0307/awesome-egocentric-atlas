@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric AI task matrix</title>
-  <desc id="desc">A six-lane map of egocentric AI research: foundation video, procedure and action, hands and objects in 3D, memory and reasoning, robotics and VLA, and AR wearable sensing, with the comparison axis and canonical anchors for each lane and a legend of access states.</desc>
+  <desc id="desc">A six-area map of egocentric AI research: foundation video, procedure and action, hands and objects in 3D, memory and reasoning, robotics and VLA, and AR wearable sensing, with the comparison axis and canonical anchors for each area and a legend of access states.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -29,9 +29,9 @@
   <rect width="1280" height="740" fill="url(#bg)"/>
   <rect width="1280" height="740" fill="url(#dots)"/>
 
-  <text class="kicker" x="58" y="60">SIX RESEARCH LANES</text>
+  <text class="kicker" x="58" y="60">SIX RESEARCH AREAS</text>
   <text class="title ink" x="58" y="102">Egocentric AI Task Matrix</text>
-  <text class="subtitle" x="58" y="134">Pick a lane by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
+  <text class="subtitle" x="58" y="134">Pick an area by task, then compare resources by scale, modality, access status, and benchmark maturity.</text>
 
   <!-- Row 1 -->
   <g transform="translate(58 170)">
@@ -101,5 +101,5 @@
   <text class="legendT" x="596" y="666">partial</text>
   <circle cx="688" cy="661" r="6" fill="#c2ccd2"/>
   <text class="legendT" x="702" y="666">watch</text>
-  <text class="compare" x="58" y="708">Start with mature lanes; track watch entries separately from open resources.</text>
+  <text class="compare" x="58" y="708">Start with mature areas; track watch entries separately from open resources.</text>
 </svg>

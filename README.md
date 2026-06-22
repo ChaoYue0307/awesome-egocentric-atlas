@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>A curated map of egocentric AI — datasets, benchmarks, models, and tools.</strong>
+  <strong>Datasets, benchmarks, models, and tools for egocentric AI.</strong>
 </p>
 
 <!-- LANG-BAR:START -->
@@ -40,13 +40,13 @@
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-22A06B"></a>
 </p>
 
-**Awesome Egocentric Atlas** maps the egocentric (first-person) AI landscape — datasets, benchmarks, models, and tools spanning egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
+**Awesome Egocentric Atlas** is a practical catalog of egocentric (first-person) datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
 
 **Updated:** 2026-06-22.
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
-  <img src="assets/awesome-egocentric-atlas-map.png" alt="Awesome Egocentric Atlas system map" width="100%">
+  <img src="assets/awesome-egocentric-atlas-map.png" alt="Awesome Egocentric Atlas catalog overview" width="100%">
 </p>
 
 ## Contents
@@ -86,7 +86,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 | Signal | What it means for readers |
 | :--- | :--- |
 | 604 egocentric resources | 142 datasets, 104 benchmarks, 325 models, and 31 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. Ten related non-egocentric resources are listed separately. |
-| 6 research lanes | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
+| 6 research areas | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) is the source for type, year, status, URL, tasks, and provenance — and CI keeps the public artifacts in sync. |
 | Reader-first tables | Each entry is short enough to scan, then links out to the official page, paper, code, or dataset portal. |
@@ -97,7 +97,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 ## Milestones
 
-The landmark works that shaped egocentric AI — a fast on-ramp from the field's origins to its current frontier.
+Representative works to read first, from early egocentric activity datasets to recent models and large-scale corpora.
 
 <p align="center">
   <img src="assets/awesome-egocentric-milestones.png" alt="Illustrated milestone timeline for representative egocentric AI works" width="100%">
@@ -123,7 +123,7 @@ The landmark works that shaped egocentric AI — a fast on-ramp from the field's
   <img src="assets/awesome-egocentric-task-matrix.png" alt="Egocentric AI task matrix" width="100%">
 </p>
 
-| Lane | What to compare | Canonical anchors |
+| Area | What to compare | Canonical anchors |
 | :--- | :--- | :--- |
 | Foundation video | scale, license, modalities, benchmark maturity | Xperience-10M, Ego4D, Ego-Exo4D, EPIC-KITCHENS-100, EgoClip |
 | Procedure and action | action granularity, mistakes, anticipation, gaze | EPIC-KITCHENS, Assembly101, MECCANO, EgoProceL, HoloAssist |
@@ -941,7 +941,7 @@ Foundational papers and recent surveys for background and citation.
 | [HoloAssist](https://arxiv.org/abs/2309.17024) | Important for human-AI assistance and instructor-performer interaction. |
 | [Nymeria](https://arxiv.org/abs/2406.09905) | Major egocentric multimodal motion-language dataset from Project Aria. |
 | [HOT3D](https://arxiv.org/abs/2406.09598) | Major 3D hand-object tracking dataset for AR/VR. |
-| [OpenEgo](https://arxiv.org/abs/2509.05513), [EgoDex](https://arxiv.org/abs/2505.11709), [EgoVerse](https://arxiv.org/abs/2604.07607) | The current frontier for scaling egocentric manipulation data toward robot learning. |
+| [OpenEgo](https://arxiv.org/abs/2509.05513), [EgoDex](https://arxiv.org/abs/2505.11709), [EgoVerse](https://arxiv.org/abs/2604.07607) | Recent large-scale egocentric manipulation data for robot learning. |
 | [Challenges and Trends in Egocentric Vision: A Survey](https://arxiv.org/abs/2503.15275) | Recent comprehensive survey of egocentric tasks, datasets, and open problems. |
 | [Bridging Perspectives: Cross-view Collaborative Intelligence with Egocentric-Exocentric Vision](https://arxiv.org/abs/2506.06253) | Survey of ego-exo collaboration and paired-capture research. |
 
@@ -974,7 +974,7 @@ These entries are promising but should be rechecked before treating them as stab
 | EgoIntrospect | 2026-05 | arXiv |
 | EgoBench | 2026-05 | arXiv |
 | EgoAERO / EgoEngine / HumanEgo / EgoGuide / Ego-Pi | Conversion of egocentric videos into robot demonstrations and policies | Track code, dataset artifacts, and robot-transfer evaluation protocols. |
-| EgoEMG / EgoEVHands / TouchMoment / EgoFun3D / EgoTactile / EgoPressDiff / EgoForce | 2026 hand/contact/event/3D frontier resources | Track GitHub/HF data release, pressure/contact assets, and license. |
+| EgoEMG / EgoEVHands / TouchMoment / EgoFun3D / EgoTactile / EgoPressDiff / EgoForce | 2026 hand/contact/event/3D resources | Track GitHub/HF data release, pressure/contact assets, and license. |
 | UCS-Bench / StreamMemBench / ReFocus / Plan Watch Recover | Streaming memory, spatial reasoning, and proactive assistance | Track full data/code releases and raw-video dependencies. |
 | EgoProx / BARISTA / TAVIS / EgoPoint-Bench / Ego-METAS | New 2026 evaluation suites with strong task definitions | Track stable leaderboards, splits, and license terms. |
 | Causal-Plan-1M / HowToDIV / EgoThink-family / EgoCoT / NoRA / Ego2Web / Pause and Think | Reasoning, planning, safety, and agentic egocentric benchmarks | Confirm URLs, licenses, and raw-video dependencies. |
@@ -1002,7 +1002,7 @@ If this atlas helps your research or project, a citation or a link back is appre
 ```bibtex
 @misc{he_awesome_egocentric_atlas,
   author       = {He, Chaoyue},
-  title        = {Awesome Egocentric Atlas: Curated Egocentric AI Datasets, Benchmarks, Models, and Tools},
+  title        = {Awesome Egocentric Atlas: Egocentric AI Datasets, Benchmarks, Models, and Tools},
   year         = {2026},
   howpublished = {\url{https://github.com/ChaoYue0307/awesome-egocentric-atlas}}
 }

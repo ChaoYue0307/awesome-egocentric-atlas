@@ -30,7 +30,7 @@
   <rect width="1280" height="520" fill="url(#bg)"/>
   <rect width="1280" height="520" fill="url(#dots)"/>
 
-  <text class="kicker" x="70" y="58">ACCESS REALITY</text>
+  <text class="kicker" x="70" y="58">ACCESS STATUS</text>
   <text class="title ink" x="70" y="102">604 egocentric resources by access state</text>
   <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
 

@@ -53,9 +53,9 @@
   <rect x="52" y="24" width="1496" height="138" rx="24" fill="url(#heroGlow)"/>
   <line class="rule" x1="52" y1="150" x2="1548" y2="150"/>
 
-  <text class="kicker" x="52" y="48">CURATED FIELD MILESTONES</text>
+  <text class="kicker" x="52" y="48">REPRESENTATIVE WORKS</text>
   <text class="title" x="52" y="104">Egocentric AI timeline</text>
-  <text class="subtitle" x="52" y="138">Representative works grouped by the shifts they created: egocentric data, scale, reasoning, robotics, and world models.</text>
+  <text class="subtitle" x="52" y="138">Works grouped by period, topic, and release date: data, scale, reasoning, robotics, and world models.</text>
 
   <text class="stat-range" x="1300" y="82" text-anchor="middle">2009-2026</text>
   <text class="stat-label" x="1300" y="106" text-anchor="middle">SPAN</text>
@@ -379,10 +379,10 @@
   <path class="era-rail" d="M 278 54 H 1462"/>
   <text class="era-kicker" x="30" y="36">ERA 5</text>
   <text class="era-range" x="30" y="76">2026</text>
-  <text class="era-label" x="30" y="111">World-Model Frontier</text>
-  <text class="era-copy" x="30" y="142" text-anchor="start">Egocentric corpora, world</text>
-<text class="era-copy" x="30" y="159" text-anchor="start">models, and data-scaling laws</text>
-<text class="era-copy" x="30" y="176" text-anchor="start">push embodied AI outward.</text>
+  <text class="era-label" x="30" y="111">World Models</text>
+  <text class="era-copy" x="30" y="142" text-anchor="start">Recent egocentric corpora,</text>
+<text class="era-copy" x="30" y="159" text-anchor="start">world models, and data-scaling</text>
+<text class="era-copy" x="30" y="176" text-anchor="start">studies.</text>
 </g>
 <a href="https://github.com/NVIDIA/DreamDojo" target="_blank">
   <g class="milestone-card" transform="translate(471.0 3086)">

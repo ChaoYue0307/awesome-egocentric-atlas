@@ -63,7 +63,7 @@ end
 
 remote_readme = fetch_text("#{base}/README.md?download=1&ts=#{Time.now.to_i}")
 required = [
-  "A curated map of egocentric AI",
+  "Datasets, benchmarks, models, and tools for egocentric AI.",
   "**Updated:** #{local_date}.",
   "badge/resources-#{local_summary.fetch('egocentric_resources')}-"
 ]

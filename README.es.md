@@ -18,7 +18,7 @@
 
 <h1 align="center">Awesome Egocentric Atlas</h1>
 
-<p align="center"><strong>Un mapa curado de la IA egocéntrica: los conjuntos de datos, benchmarks, modelos y herramientas tras la visión egocéntrica, la IA encarnada y la robótica, el aprendizaje visión-lenguaje, la memoria de largo contexto, la RA/RV y la interacción mano-objeto.</strong></p>
+<p align="center"><strong>Conjuntos de datos, benchmarks, modelos y herramientas para visión egocéntrica, IA encarnada y robótica, video-lenguaje, memoria de largo contexto, RA/RV e interacción mano-objeto.</strong></p>
 
 <p align="center"><strong>604</strong> recursos egocéntricos — 142 conjuntos de datos · 104 benchmarks · 325 modelos · 31 herramientas</p>
 
