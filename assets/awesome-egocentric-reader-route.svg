@@ -13,9 +13,6 @@
     <filter id="shadow" x="-10%" y="-12%" width="120%" height="140%">
       <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a33" flood-opacity="0.10"/>
     </filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 z" fill="#9bb0b8"/>
-    </marker>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 15.3px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -24,8 +21,8 @@
       .numText { font: 800 21.2px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #ffffff; }
       .label { font: 700 24px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #102a33; }
       .text { font: 500 18px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #4c5965; }
-      .arrow { stroke: #9bb0b8; stroke-width: 2.6; fill: none; }
-      .rail { stroke: #cdd9de; stroke-width: 2.4; stroke-dasharray: 2 9; stroke-linecap: round; }
+      .connector circle { fill: #f5fafb; stroke: #c9dde2; stroke-width: 1.4; }
+      .connector path { stroke: #8aa1aa; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
       .foot { font: 500 17.7px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #6a7882; }
     </style>
   </defs>
@@ -37,8 +34,6 @@
   <text class="title ink" x="51" y="104">How to use the catalog</text>
   <text class="subtitle" x="51" y="136">Choose a task, check access, then open the matching resources.</text>
 
-  <line class="rail" x1="90" y1="290" x2="1230" y2="290"/>
-
   <!-- 1 -->
   <g transform="translate(51 200)">
     <rect x="0" y="0" width="210" height="180" rx="22" fill="#e8f7f7" stroke="#8ed1d3" stroke-width="1.6" filter="url(#shadow)"/>
@@ -48,7 +43,10 @@
     <text class="text" x="28" y="138">assistant, robot,</text>
     <text class="text" x="28" y="162">benchmark, or 3D</text>
   </g>
-  <line class="arrow" x1="271" y1="290" x2="283" y2="290" marker-end="url(#arrow)"/>
+  <g class="connector" transform="translate(277 290)">
+    <circle cx="0" cy="0" r="13.5"/>
+    <path d="M-4 -7 L4 0 L-4 7"/>
+  </g>
 
   <!-- 2 -->
   <g transform="translate(293 200)">
@@ -59,7 +57,10 @@
     <text class="text" x="28" y="138">foundation, action,</text>
     <text class="text" x="28" y="162">memory, VLA, AR</text>
   </g>
-  <line class="arrow" x1="513" y1="290" x2="525" y2="290" marker-end="url(#arrow)"/>
+  <g class="connector" transform="translate(519 290)">
+    <circle cx="0" cy="0" r="13.5"/>
+    <path d="M-4 -7 L4 0 L-4 7"/>
+  </g>
 
   <!-- 3 -->
   <g transform="translate(535 200)">
@@ -70,7 +71,10 @@
     <text class="text" x="28" y="138">open, request,</text>
     <text class="text" x="28" y="162">partial, or watch</text>
   </g>
-  <line class="arrow" x1="755" y1="290" x2="767" y2="290" marker-end="url(#arrow)"/>
+  <g class="connector" transform="translate(761 290)">
+    <circle cx="0" cy="0" r="13.5"/>
+    <path d="M-4 -7 L4 0 L-4 7"/>
+  </g>
 
   <!-- 4 -->
   <g transform="translate(777 200)">
@@ -81,7 +85,10 @@
     <text class="text" x="28" y="138">use YAML tasks,</text>
     <text class="text" x="28" y="162">modalities, years</text>
   </g>
-  <line class="arrow" x1="997" y1="290" x2="1009" y2="290" marker-end="url(#arrow)"/>
+  <g class="connector" transform="translate(1003 290)">
+    <circle cx="0" cy="0" r="13.5"/>
+    <path d="M-4 -7 L4 0 L-4 7"/>
+  </g>
 
   <!-- 5 -->
   <g transform="translate(1019 200)">
