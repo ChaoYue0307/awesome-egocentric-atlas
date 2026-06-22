@@ -48,6 +48,448 @@ resources:
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
 
+  # --- Full live scan additions (2026-06-22): recent arXiv/project sweep ---
+
+  - name: BinaryTracking / GangnamLoop
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://github.com/ndb796/BinaryTracking
+    paper: https://arxiv.org/abs/2606.16902
+    code: https://github.com/ndb796/BinaryTracking
+    data: https://github.com/ndb796/BinaryTracking
+    scale: "Spatial QA and navigation benchmark for service robots traversing long egocentric routes, with the GangnamLoop multi-trip outdoor route dataset and BinTrack open implementation"
+    modalities: [egocentric-video, trajectory, text, annotations]
+    tasks: [spatial-reasoning, navigation, egocentric-video-qa, episodic-memory, benchmark]
+    verified_at: "2026-06-22"
+    citation_key: binarytracking_gangnamloop_2026
+
+  - name: WT-UMI
+    kind: toolkit
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.13232
+    paper: https://arxiv.org/abs/2606.13232
+    scale: "Wearable whole-body tactile UMI interface for humanoid manipulation, aligning human demonstrations and teleoperation through tactile images, contact forces, and end-effector poses"
+    modalities: [egocentric-video, tactile, force, human-demonstrations, humanoid-motion]
+    tasks: [whole-body-manipulation, tactile-learning, imitation-learning, humanoid-control, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public hardware/software release, data artifacts, and license before marking open."
+    citation_key: wt_umi_2026
+
+  - name: UMI-Bench 1.0
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10382
+    paper: https://arxiv.org/abs/2606.10382
+    scale: "Local-first real-robot benchmark dedicated to UMI-style manipulation policies, aligning UMI data collection, scene reset, deployment, logging, and task-factor analysis"
+    modalities: [wrist-camera-video, robot-actions, annotations]
+    tasks: [benchmark, robot-learning, manipulation, imitation-learning, evaluation]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; title claims open/reproducible benchmark, but stable code/data URL and license still need confirmation."
+    citation_key: umi_bench_1_0_2026
+
+  - name: VISTA UMI
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.04708
+    paper: https://arxiv.org/abs/2606.04708
+    scale: "Vision-grounded and physics-validated adaptation pipeline for UMI data, combining UMI-VQA for wrist fisheye visual alignment with physics filtering for VLA training"
+    modalities: [wrist-camera-video, robot-actions, language-instructions, annotations]
+    tasks: [vla, robot-learning, manipulation, data-collection, physical-action-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify UMI-VQA/data release, code, and license before marking open."
+    citation_key: vista_umi_2026
+
+  - name: Egocentric Pedestrian Crossing Intention
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.09142
+    paper: https://arxiv.org/abs/2606.09142
+    scale: "VLM-based closed-ended VQA formulation for decoding pedestrian crossing intention from short egocentric traffic-safety clips, including zero-shot and parameter-efficient fine-tuning studies"
+    modalities: [egocentric-video, qa, annotations]
+    tasks: [intent-understanding, vqa, safety, trajectory-prediction, wearable-sensing]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public clips, labels, model code, and license before marking open."
+    citation_key: egocentric_pedestrian_crossing_intention_2026
+
+  - name: FactCheck LTA
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.14778
+    paper: https://arxiv.org/abs/2606.14778
+    scale: "Feasibility-aware long-term action anticipation using a multi-agent Observe-Plan-Verify loop to reduce physically impossible future action predictions on EPIC-KITCHENS-55 and EGTEA Gaze+"
+    modalities: [egocentric-video, action-labels, text]
+    tasks: [anticipation, long-horizon-memory, action-planning, affordance, procedure-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify code, prompts, splits, and reproducible evaluation package before marking open."
+    citation_key: factcheck_lta_2026
+
+  - name: TrAction
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://github.com/ecker-lab/TrAction
+    paper: https://arxiv.org/abs/2606.03490
+    code: https://github.com/ecker-lab/TrAction
+    scale: "Sparse 2.5D point-trajectory transformer for action recognition that reduces appearance/background shortcuts and evaluates on EPIC-KITCHENS-100"
+    modalities: [egocentric-video, trajectories]
+    tasks: [action-recognition, efficient-inference, motion-estimation, representation-learning]
+    verified_at: "2026-06-22"
+    citation_key: traction_2026
+
+  - name: AmbientEye
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.03774
+    paper: https://arxiv.org/abs/2606.03774
+    scale: "Smart-glasses pupil-segmentation dataset for passive infrared eye tracking under natural ambient illumination, targeting all-day outdoor use without active IR lighting"
+    modalities: [eye-tracking, smart-glasses, annotations]
+    tasks: [gaze, wearable-sensing, segmentation, energy-efficient-smart-glasses]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public dataset package, splits, and license before marking open."
+    citation_key: ambienteye_2026
+
+  - name: Personal Visual Context Learning / Personal-VCL-Bench
+    kind: benchmark
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://vision.cs.utexas.edu/projects/PersonalVCL/
+    paper: https://arxiv.org/abs/2605.10936
+    scale: "Personal Visual Context Learning benchmark for smart-glasses LMMs, testing prompt-time use of wearer-specific visual context over continuous first-person streams"
+    modalities: [egocentric-video, smart-glasses, egocentric-context-labels, qa]
+    tasks: [personalized-qa, personal-memory, wearable-sensing, long-context-video, benchmark]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify benchmark package, data dependencies, and license before marking open."
+    citation_key: personal_vcl_bench_2026
+
+  - name: GazeMind / CogLoad-Bench
+    kind: benchmark
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.05790
+    paper: https://arxiv.org/abs/2605.05790
+    scale: "Gaze-guided LLM agent and CogLoad-Bench for personalized cognitive-load assessment on smart glasses, reporting 152 participants, 40+ hours, and 10K+ annotations"
+    modalities: [gaze, eye-tracking, smart-glasses, annotations]
+    tasks: [gaze-reasoning, internal-state-reasoning, assistive-systems, wearable-sensing, benchmark]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public CogLoad-Bench access, code, and license before marking open."
+    citation_key: gazemind_cogload_bench_2026
+
+  - name: SpatialBench
+    kind: benchmark
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://ropedia.github.io/SpatialBench/
+    paper: https://arxiv.org/abs/2605.27367
+    scale: "Broad spatial foundation-model benchmark across viewpoints, scene domains, input densities, and hardware constraints, including embodied and egocentric-style spatial reasoning settings"
+    modalities: [video, 3d, point-clouds, robot-camera-video, synthetic-rendering]
+    tasks: [spatial-reasoning, benchmark, embodied-ai, evaluation, 3d-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; adjacent because the benchmark is broad spatial foundation-model evaluation rather than a human wearable-first dataset."
+    scope_note: "Adjacent broad spatial foundation-model benchmark; useful context for egocentric spatial reasoning, but not centered on human wearable capture."
+    citation_key: spatialbench_2026
+
+  - name: Dietary Behavior Change Receptivity
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.27950
+    paper: https://arxiv.org/abs/2605.27950
+    scale: "Pilot study using free-living AIM-2 wearable-camera egocentric eating images to infer behavior-change receptivity dimensions for just-in-time dietary interventions"
+    modalities: [egocentric-images, lifelogging-images, annotations]
+    tasks: [lifelogging, nutrition-estimation, healthcare-assistance, behavior-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public image data, labels, participant terms, and license before marking open."
+    citation_key: dietary_receptivity_2026
+
+  - name: E3C Video Generation
+    kind: model
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://e3c-videogen.github.io/
+    paper: https://arxiv.org/abs/2605.26316
+    scale: "Controllable egocentric video diffusion with 3D environmental memory and ego-exo human-pose control for physically grounded first-person interaction generation"
+    modalities: [egocentric-video, exocentric-video, human-pose, point-clouds, generated-video]
+    tasks: [video-generation, world-modeling, 3d-4d-understanding, cross-view, hand-object]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify code, checkpoints, datasets, and license before marking open."
+    citation_key: e3c_video_generation_2026
+
+  - name: Mobile UMI
+    kind: toolkit
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.20894
+    paper: https://arxiv.org/abs/2605.20894
+    scale: "Robot-free mobile manipulation demonstration framework with chest-centric global context, wrist-centric local interaction, decoupled kinematics, and latency-aware cross-view diffusion policy"
+    modalities: [egocentric-video, wrist-camera-video, human-demonstrations, robot-actions]
+    tasks: [mobile-manipulation, imitation-learning, data-collection, robot-learning, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public hardware/data/code artifacts and license before marking open."
+    citation_key: mobile_umi_2026
+
+  - name: BifrostUMI
+    kind: toolkit
+    released: "2026-05"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2605.03452
+    paper: https://arxiv.org/abs/2605.03452
+    scale: "Portable robot-free humanoid demonstration framework using lightweight VR devices, sparse keypoint trajectories, wrist-mounted visual data, and keypoint retargeting"
+    modalities: [wrist-camera-video, hand-trajectories, human-demonstrations, humanoid-motion]
+    tasks: [humanoid-control, whole-body-manipulation, imitation-learning, robot-learning, data-collection]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public repository, data, hardware notes, and license before marking open."
+    citation_key: bifrostumi_2026
+
+  - name: UMI-3D
+    kind: toolkit
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://umi-3d.github.io/
+    paper: https://arxiv.org/abs/2604.14089
+    scale: "Multimodal UMI extension adding low-cost wrist LiDAR, LiDAR-centric SLAM, synchronized sensing, and spatiotemporal calibration to reduce monocular SLAM failures"
+    modalities: [wrist-camera-video, point-clouds, calibration, robot-actions]
+    tasks: [3d-reconstruction, robot-learning, data-collection, manipulation, egocentric-calibration]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify repository, data, hardware files, and license before marking open."
+    citation_key: umi_3d_2026
+
+  - name: OmniUMI
+    kind: toolkit
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2604.10647
+    paper: https://arxiv.org/abs/2604.10647
+    scale: "Human-aligned multimodal UMI system synchronizing RGB, depth, trajectory, tactile sensing, internal grasp force, and external interaction wrench for contact-rich robot learning"
+    modalities: [wrist-camera-video, depth, tactile, force, robot-actions]
+    tasks: [tactile-learning, contact-understanding, imitation-learning, robot-learning, manipulation]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public system files, demonstrations, and license before marking open."
+    citation_key: omniumi_2026
+
+  - name: UMI-Underwater
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://umi-under-water.github.io/
+    paper: https://arxiv.org/abs/2603.27012
+    scale: "Transfers on-land handheld human demonstrations to underwater grasping through depth-based affordance representations plus self-supervised underwater demonstration collection"
+    modalities: [egocentric-video, depth, robot-actions, human-demonstrations]
+    tasks: [robot-learning, manipulation, affordance, domain-transfer, imitation-learning]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify public artifacts, dataset availability, and license before marking open."
+    citation_key: umi_underwater_2026
+
+  - name: HoMMI
+    kind: toolkit
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://hommi-robot.github.io/
+    paper: https://arxiv.org/abs/2603.03243
+    scale: "Whole-body mobile manipulation interface learning from robot-free human demonstrations by augmenting UMI with egocentric sensing, relaxed head actions, and cross-embodiment hand-eye policy design"
+    modalities: [egocentric-video, wrist-camera-video, human-demonstrations, robot-actions]
+    tasks: [mobile-manipulation, whole-body-manipulation, imitation-learning, active-perception, vla]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify code, demonstrations, hardware notes, and license before marking open."
+    citation_key: hommi_2026
+
+  - name: EgoAdapt Speaker Detection
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.18082
+    paper: https://arxiv.org/abs/2603.18082
+    scale: "Adaptive framework for egocentric Talking-to-Me speaker detection under missing modalities, head-orientation ambiguity, and background noise in social interaction video"
+    modalities: [egocentric-video, audio, head-pose, annotations]
+    tasks: [social, audio-visual, first-person-interaction-recognition, robustness]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify code, TTM splits, checkpoints, and license before marking open."
+    citation_key: egoadapt_speaker_detection_2026
+
+  - name: FlowNar
+    kind: model
+    released: "2026-05"
+    venue: "ICML 2026"
+    year: 2026
+    status: open
+    url: https://github.com/zeyun-zhong/FlowNar
+    paper: https://arxiv.org/abs/2606.00620
+    code: https://github.com/zeyun-zhong/FlowNar
+    scale: "Scalable streaming video narration framework with bounded visual memory via historical-context pruning and Cross Linear Attentive Memory, evaluated on long-form Ego4D, Ego-Exo4D, and EPIC-KITCHENS-100-style narration"
+    modalities: [egocentric-video, captions, long-video, streaming-video]
+    tasks: [narration-generation, streaming-video-understanding, long-video-understanding, video-language]
+    verified_at: "2026-06-22"
+    citation_key: flownar_2026
+
+  - name: egoPPG
+    kind: model
+    released: "2025-02"
+    venue: "ICCV 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2502.20879
+    paper: https://arxiv.org/abs/2502.20879
+    scale: "Heart-rate estimation task for egocentric systems using eye-tracking cameras, adding physiological-state awareness to downstream wearer-behavior understanding"
+    modalities: [eye-tracking, physiological-signals, smart-glasses]
+    tasks: [physiological-signals, wearable-sensing, gaze, affect, egocentric-representation]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public data, code, and license before marking open."
+    citation_key: egoppg_2025
+
+  - name: Photoreal Scene Reconstruction from an Egocentric Device
+    kind: model
+    released: "2025-06"
+    venue: "SIGGRAPH 2025"
+    year: 2025
+    status: watch
+    url: https://www.projectaria.com/photoreal-reconstruction/
+    paper: https://arxiv.org/abs/2506.04444
+    scale: "Project Aria egocentric-device scene reconstruction study showing frame-rate VIO pose is insufficient for pixel-accurate photoreal HDR reconstruction and introducing improved pose/exposure treatment"
+    modalities: [aria, egocentric-video, camera-pose, illumination]
+    tasks: [scene-reconstruction, novel-view-synthesis, ar-vr, 3d-reconstruction]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv/project scan 2026-06-22; verify code, data examples, and license before marking open."
+    citation_key: photoreal_scene_reconstruction_egocentric_device_2025
+
+  - name: Egocentric Event-Based Ping Pong
+    kind: dataset
+    released: "2025-06"
+    venue: "CVPRW 2025"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2506.07860
+    paper: https://arxiv.org/abs/2506.07860
+    scale: "Egocentric event-camera table-tennis trajectory-prediction system and dataset for high-speed ball tracking under low latency and motion blur"
+    modalities: [event-camera, event-stream, egocentric-video, trajectories]
+    tasks: [trajectory-prediction, active-perception, wearable-sensing, benchmark]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify public dataset package, calibration, and license before marking open."
+    citation_key: egocentric_event_ping_pong_2025
+
+  - name: Aria Gen 2 Pilot Dataset
+    kind: dataset
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: open
+    url: https://www.projectaria.com/datasets/
+    paper: https://arxiv.org/abs/2510.16134
+    data: https://www.projectaria.com/datasets/
+    scale: "Incrementally released egocentric multimodal open dataset captured with Aria Gen 2 glasses, covering daily activities such as cleaning, cooking, eating, playing, and outdoor walking"
+    modalities: [aria, egocentric-video, gaze, imu, audio, calibration]
+    tasks: [ar-perception, wearable-sensing, everyday-activity, scene-understanding, data-collection]
+    license: "Project Aria dataset terms"
+    license_url: https://www.projectaria.com/datasets/
+    verified_at: "2026-06-22"
+    citation_key: aria_gen2_pilot_dataset_2025
+
+  - name: GateFusion
+    kind: model
+    released: "2025-12"
+    venue: "WACV 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2512.15707
+    paper: https://arxiv.org/abs/2512.15707
+    scale: "Hierarchical gated cross-modal fusion model for active speaker detection, improving fine-grained audio-visual interactions on unconstrained and egocentric ASD settings including Ego4D-ASD"
+    modalities: [egocentric-video, audio, annotations]
+    tasks: [audio-visual, social, first-person-interaction-recognition, detection]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify code, Ego4D-ASD setup, checkpoints, and license before marking open."
+    citation_key: gatefusion_2026
+
+  - name: CS3 Collision Sound Source Segmentation
+    kind: benchmark
+    released: "2025-11"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://krantiparida.github.io/projects/cs3.html
+    paper: https://arxiv.org/abs/2511.13863
+    scale: "Collision Sound Source Segmentation task with EPIC-CS3 and Ego4D-CS3 benchmarks, segmenting objects responsible for collision sounds in egocentric audio-visual clips"
+    modalities: [egocentric-video, audio, object-masks, annotations]
+    tasks: [audio-visual, sound-understanding, segmentation, hand-object, benchmark]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify full dataset access, code, and license before marking open."
+    citation_key: cs3_collision_sound_source_segmentation_2025
+
+  - name: EAGLE VQL
+    kind: model
+    released: "2025-11"
+    venue: "AAAI 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.08007
+    paper: https://arxiv.org/abs/2511.08007
+    scale: "Episodic appearance- and geometry-aware memory for unified 2D/3D visual query localization in egocentric video, targeting Ego4D visual-query localization"
+    modalities: [egocentric-video, object-crops, 3d, camera-pose]
+    tasks: [visual-query-localization, episodic-memory, object-grounding, 3d-object-detection]
+    verified_at: "2026-06-22"
+    release_note: "Live arXiv scan 2026-06-22; verify code, memory assets, splits, and license before marking open."
+    citation_key: eagle_vql_2026
+
+  - name: HieraMamba
+    kind: model
+    released: "2025-10"
+    venue: "CVPR 2026"
+    year: 2025
+    status: watch
+    url: https://vision.cs.utexas.edu/projects/hieramamba/
+    paper: https://arxiv.org/abs/2510.23043
+    scale: "Hierarchical Anchor-Mamba pooling for long-video temporal grounding, preserving fine temporal structure while improving Ego4D Natural Language Query grounding"
+    modalities: [egocentric-video, text, long-video]
+    tasks: [temporal-grounding, natural-language-query, video-temporal-grounding, long-video-understanding]
+    verified_at: "2026-06-22"
+    release_note: "Live project checked 2026-06-22; verify code, checkpoints, and license before marking open."
+    citation_key: hieramamba_2026
+
   # --- Targeted live scan additions (2026-06-22): pre-2024 arXiv/project sweep ---
 
   - name: AssemblyHands
