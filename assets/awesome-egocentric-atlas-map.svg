@@ -51,15 +51,15 @@
 
   <!-- stat chips -->
   <g>
-    <rect class="chip" x="816" y="58" width="172" height="36" rx="18"/>
-    <circle class="dotT" cx="840" cy="76" r="5"/>
-    <text class="chiptext" x="854" y="81">604 resources</text>
-    <rect class="chip" x="1002" y="58" width="96" height="36" rx="18"/>
-    <circle class="dotA" cx="1024" cy="76" r="5"/>
-    <text class="chiptext" x="1038" y="81">6 lanes</text>
-    <rect class="chip" x="1112" y="58" width="104" height="36" rx="18"/>
-    <circle class="dotN" cx="1135" cy="76" r="5"/>
-    <text class="chiptext" x="1149" y="81">5 states</text>
+    <rect class="chip" x="754" y="58" width="202" height="36" rx="18"/>
+    <circle class="dotT" cx="780" cy="76" r="5"/>
+    <text class="chiptext" x="798" y="81">604 resources</text>
+    <rect class="chip" x="978" y="58" width="118" height="36" rx="18"/>
+    <circle class="dotA" cx="1004" cy="76" r="5"/>
+    <text class="chiptext" x="1022" y="81">6 lanes</text>
+    <rect class="chip" x="1118" y="58" width="132" height="36" rx="18"/>
+    <circle class="dotN" cx="1144" cy="76" r="5"/>
+    <text class="chiptext" x="1162" y="81">5 states</text>
   </g>
 
   <!-- flow badges -->
