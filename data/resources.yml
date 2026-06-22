@@ -1977,6 +1977,210 @@ resources:
     citation_key: dataladder_2026
     scope_note: "Adjacent embodied-data tooling; relevant to robot-data pipelines, but not human or animal first-person capture."
 
+  - name: EgoInfinity
+    kind: toolkit
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.17385
+    paper: https://arxiv.org/abs/2606.17385
+    scope: adjacent
+    scale: "Web-scale 4D hand-object interaction data engine that lifts in-the-wild human manipulation videos into metric hand trajectories, object poses, contact states, and robot-executable trajectories"
+    modalities: [video, hand-trajectories, object-trajectories, robot-actions]
+    tasks: [hand-object-interaction, cross-embodiment-transfer, robot-learning, manipulation, data-collection]
+    release_note: "arXiv scan 2026-06-23; verify public project artifacts, code/data access, and licensing."
+    verified_at: "2026-06-23"
+    citation_key: egoinfinity_2026
+    scope_note: "Adjacent human-video-to-robot data engine; highly relevant to egocentric hand-object transfer, but it converts arbitrary RGB footage rather than centering on human wearable capture."
+
+  - name: LUCID
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://lucid-robot.github.io/
+    paper: https://arxiv.org/abs/2606.11628
+    scope: adjacent
+    scale: "Embodiment-agnostic intent model trained from unstructured human videos and paired with simulation-trained sensorimotor policies for dexterous robot skill acquisition"
+    modalities: [video, rgb-d, human-demonstrations, robot-actions]
+    tasks: [robot-learning, dexterous-manipulation, imitation-learning, cross-embodiment-transfer, manipulation]
+    release_note: "Project page and arXiv checked 2026-06-23; code/demo buttons are visible, but stable public artifacts and license still need confirmation."
+    verified_at: "2026-06-23"
+    citation_key: lucid_robot_2026
+    scope_note: "Adjacent unstructured-human-video-to-robot work; relevant to egocentric AI transfer, but the source videos are not confirmed as wearable first-person capture."
+
+  - name: Dexterous Point Policy
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10614
+    paper: https://arxiv.org/abs/2606.10614
+    scope: adjacent
+    scale: "Point-based dexterous manipulation policy that transfers from raw human demonstration videos using task-relevant 3D keypoints for hands and objects, without robot demonstrations"
+    modalities: [video, hand-pose, object-trajectories, robot-actions]
+    tasks: [dexterous-manipulation, robot-learning, cross-embodiment-transfer, manipulation, vla]
+    release_note: "arXiv scan 2026-06-23; verify public code/data and license before marking open."
+    verified_at: "2026-06-23"
+    citation_key: dexterous_point_policy_2026
+    scope_note: "Adjacent human-demonstration-video transfer method; not confirmed as first-person or wearable capture."
+
+  - name: V2P-Manip
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.16436
+    paper: https://arxiv.org/abs/2606.16436
+    scope: adjacent
+    scale: "Pipeline for learning dexterous manipulation from monocular human demonstration videos through 3D asset acquisition, trajectory estimation, physical refinement, and dexterous policy learning"
+    modalities: [monocular-video, trajectories, hand-pose, robot-actions]
+    tasks: [dexterous-manipulation, robot-learning, cross-embodiment-transfer, manipulation]
+    release_note: "arXiv scan 2026-06-23; verify implementation, data access, and license."
+    verified_at: "2026-06-23"
+    citation_key: v2p_manip_2026
+    scope_note: "Adjacent monocular-human-video-to-robot work; useful for egocentric manipulation transfer, but the source videos are not confirmed as wearable first-person capture."
+
+  - name: SeeTraceAct
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.02745
+    paper: https://arxiv.org/abs/2606.02745
+    scope: adjacent
+    scale: "Demo-conditioned VLA framework with visibility-aware future end-effector trace prediction and RoboCasa-DC cross-embodiment demonstration episodes"
+    modalities: [video, trajectories, human-demonstrations, robot-actions]
+    tasks: [vla, robot-learning, imitation-learning, cross-embodiment-transfer, manipulation]
+    release_note: "arXiv scan 2026-06-23; verify RoboCasa-DC assets, implementation, and license."
+    verified_at: "2026-06-23"
+    citation_key: seetraceact_2026
+    scope_note: "Adjacent demo-conditioned robot VLA; uses human/humanoid demonstrations, but not a human wearable egocentric dataset."
+
+  - name: What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.06627
+    paper: https://arxiv.org/abs/2606.06627
+    scope: adjacent
+    scale: "Study and 532-video, 28-hour everyday-human-video dataset with triangulated hand labels for cotraining robot manipulation policies under low robot-data regimes"
+    modalities: [video, hand-pose, human-demonstrations, robot-actions]
+    tasks: [robot-learning, manipulation, cross-embodiment-transfer, human-centric-policy-learning]
+    release_note: "arXiv scan 2026-06-23; verify dataset/code release, access terms, and license."
+    verified_at: "2026-06-23"
+    citation_key: everyday_human_videos_cotraining_2026
+    scope_note: "Adjacent everyday-human-video transfer study; relevant to egocentric human-video policy learning, but not scoped as wearable first-person capture."
+
+  - name: LARA
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.07100
+    paper: https://arxiv.org/abs/2606.07100
+    scope: adjacent
+    scale: "Latent Action Representation Alignment framework that jointly optimizes latent action models and VLAs so abundant unlabeled human videos can improve robot action learning"
+    modalities: [video, latent-actions, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, manipulation, latent-action-learning, cross-embodiment-transfer]
+    release_note: "arXiv scan 2026-06-23; verify code/model artifacts and license."
+    verified_at: "2026-06-23"
+    citation_key: lara_vla_2026
+    scope_note: "Adjacent human-video-to-VLA method; relevant to egocentric pretraining but not itself a wearable first-person resource."
+
+  - name: Video2Sim2Real
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.08828
+    paper: https://arxiv.org/abs/2606.08828
+    scope: adjacent
+    scale: "Full-stack dexterous skill-acquisition pipeline that reconstructs a simulator-ready digital twin and robot/object motion priors from a single human manipulation video"
+    modalities: [video, point-clouds, trajectories, robot-actions]
+    tasks: [dexterous-manipulation, robot-learning, simulation, cross-embodiment-transfer, manipulation]
+    release_note: "arXiv scan 2026-06-23; verify project artifacts, implementation, data, and license."
+    verified_at: "2026-06-23"
+    citation_key: video2sim2real_2026
+    scope_note: "Adjacent single-human-video-to-robot method; useful for egocentric manipulation transfer, but first-person wearable capture is not confirmed."
+
+  - name: HOWTransfer
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.10743
+    paper: https://arxiv.org/abs/2606.10743
+    scope: adjacent
+    scale: "Hand-object open-world transfer method that localizes contact in human video demonstrations and retargets wrist trajectories into robot-executable motions"
+    modalities: [video, hand-trajectories, object-trajectories, robot-actions]
+    tasks: [robot-learning, hand-object-interaction, cross-embodiment-transfer, manipulation, contact-understanding]
+    release_note: "arXiv scan 2026-06-23; verify code/data release and license."
+    verified_at: "2026-06-23"
+    citation_key: howtransfer_2026
+    scope_note: "Adjacent hand-centric human-video-to-robot trajectory transfer; not confirmed as egocentric wearable capture."
+
+  - name: "Retrieve, Don't Retrain"
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.15631
+    paper: https://arxiv.org/abs/2606.15631
+    scope: adjacent
+    scale: "Retrieval-augmented VLA adaptation method that adds new tasks at test time by appending pool-side demonstrations such as human-hand videos instead of retraining"
+    modalities: [video, trajectories, human-demonstrations, robot-actions]
+    tasks: [vla, robot-learning, retrieval, cross-embodiment-transfer, manipulation, world-modeling]
+    release_note: "arXiv scan 2026-06-23; verify project artifacts, retrieval pool access, code, and license."
+    verified_at: "2026-06-23"
+    citation_key: retrieve_dont_retrain_2026
+    scope_note: "Adjacent retrieval-based robot VLA adaptation; uses cheaper embodiment demonstrations including human-hand video, but is not centered on wearable egocentric data."
+
+  - name: SERF
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.12956
+    paper: https://arxiv.org/abs/2606.12956
+    scope: adjacent
+    scale: "Spatiotemporal environment and robot feature map for long-horizon mobile manipulation, updated online from egocentric observations and proprioceptive state"
+    modalities: [egocentric-observations, robot-actions, point-clouds, trajectories]
+    tasks: [mobile-manipulation, robot-learning, spatial-reasoning, long-horizon-reasoning, manipulation]
+    release_note: "arXiv scan 2026-06-23; verify code, benchmark assets, and license."
+    verified_at: "2026-06-23"
+    citation_key: serf_mobile_manipulation_2026
+    scope_note: "Adjacent robot-policy work using egocentric observations; robot-centric rather than human wearable capture."
+
+  - name: ImageWAM
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.19531
+    paper: https://arxiv.org/abs/2606.19531
+    scope: adjacent
+    scale: "World-action model that reframes robot future prediction as image editing instead of dense video generation for action prediction"
+    modalities: [robot-camera-video, robot-actions, generated-video]
+    tasks: [world-modeling, robot-learning, vla, manipulation, video-generation]
+    release_note: "arXiv scan 2026-06-23; verify code/model release and license."
+    verified_at: "2026-06-23"
+    citation_key: imagewam_2026
+    scope_note: "Adjacent robot world-action model; relevant to WAM comparisons, but not a human wearable first-person resource."
+
   - name: NORA
     kind: model
     released: "2025-04"

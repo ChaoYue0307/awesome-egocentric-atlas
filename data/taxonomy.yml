@@ -86,7 +86,7 @@ task_families:
       temporal-consistency, symbolic-reasoning, situated-awareness, 4d-reasoning,
       action-reasoning, future-prediction, inference-strategy, intent-understanding,
       procedural-reasoning, state-transition-generation, trajectory-conditioning,
-      goal-inference]
+      goal-inference, long-horizon-reasoning]
 
   action-and-procedure:
     label: Action and procedure understanding
@@ -161,7 +161,8 @@ task_families:
       imitation-learning, cross-embodiment-transfer, human-demonstrations, human-centric-policy-learning,
       manipulation-safety, policy-optimization, hri, data-collection, active-perception,
       egocentric-calibration, humanoid-control, motion-generation, loco-manipulation,
-      tactile-learning, mobile-manipulation, whole-body-manipulation, trajectory-synthesis]
+      tactile-learning, mobile-manipulation, whole-body-manipulation, trajectory-synthesis,
+      latent-action-learning]
 
   audio-and-social:
     label: Audio, speech, and social interaction

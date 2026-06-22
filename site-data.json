@@ -15,9 +15,9 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 623,
+    "total_resources": 635,
     "egocentric_resources": 605,
-    "adjacent_resources": 18,
+    "adjacent_resources": 30,
     "kind_counts": {
       "benchmark": 104,
       "collection": 1,
@@ -4640,6 +4640,371 @@
         "evaluation"
       ],
       "release_note": "arXiv scan 2026-06-23; verify toolchain/code release and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "EgoInfinity",
+      "kind": "toolkit",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.17385",
+      "paper": "https://arxiv.org/abs/2606.17385",
+      "scale": "Web-scale 4D hand-object interaction data engine that lifts in-the-wild human manipulation videos into metric hand trajectories, object poses, contact states, and robot-executable trajectories",
+      "tasks": [
+        "hand-object-interaction",
+        "cross-embodiment-transfer",
+        "robot-learning",
+        "manipulation",
+        "data-collection"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "hand-trajectories",
+        "object-trajectories",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify public project artifacts, code/data access, and licensing.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "LUCID",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://lucid-robot.github.io/",
+      "paper": "https://arxiv.org/abs/2606.11628",
+      "scale": "Embodiment-agnostic intent model trained from unstructured human videos and paired with simulation-trained sensorimotor policies for dexterous robot skill acquisition",
+      "tasks": [
+        "robot-learning",
+        "dexterous-manipulation",
+        "imitation-learning",
+        "cross-embodiment-transfer",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "rgb-d",
+        "human-demonstrations",
+        "robot-actions"
+      ],
+      "release_note": "Project page and arXiv checked 2026-06-23; code/demo buttons are visible, but stable public artifacts and license still need confirmation.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "Dexterous Point Policy",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.10614",
+      "paper": "https://arxiv.org/abs/2606.10614",
+      "scale": "Point-based dexterous manipulation policy that transfers from raw human demonstration videos using task-relevant 3D keypoints for hands and objects, without robot demonstrations",
+      "tasks": [
+        "dexterous-manipulation",
+        "robot-learning",
+        "cross-embodiment-transfer",
+        "manipulation",
+        "vla"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "hand-pose",
+        "object-trajectories",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify public code/data and license before marking open.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "V2P-Manip",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.16436",
+      "paper": "https://arxiv.org/abs/2606.16436",
+      "scale": "Pipeline for learning dexterous manipulation from monocular human demonstration videos through 3D asset acquisition, trajectory estimation, physical refinement, and dexterous policy learning",
+      "tasks": [
+        "dexterous-manipulation",
+        "robot-learning",
+        "cross-embodiment-transfer",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "monocular-video",
+        "trajectories",
+        "hand-pose",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify implementation, data access, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "SeeTraceAct",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.02745",
+      "paper": "https://arxiv.org/abs/2606.02745",
+      "scale": "Demo-conditioned VLA framework with visibility-aware future end-effector trace prediction and RoboCasa-DC cross-embodiment demonstration episodes",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "imitation-learning",
+        "cross-embodiment-transfer",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "trajectories",
+        "human-demonstrations",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify RoboCasa-DC assets, implementation, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.06627",
+      "paper": "https://arxiv.org/abs/2606.06627",
+      "scale": "Study and 532-video, 28-hour everyday-human-video dataset with triangulated hand labels for cotraining robot manipulation policies under low robot-data regimes",
+      "tasks": [
+        "robot-learning",
+        "manipulation",
+        "cross-embodiment-transfer",
+        "human-centric-policy-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "hand-pose",
+        "human-demonstrations",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify dataset/code release, access terms, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "LARA",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.07100",
+      "paper": "https://arxiv.org/abs/2606.07100",
+      "scale": "Latent Action Representation Alignment framework that jointly optimizes latent action models and VLAs so abundant unlabeled human videos can improve robot action learning",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "manipulation",
+        "latent-action-learning",
+        "cross-embodiment-transfer"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "latent-actions",
+        "robot-actions",
+        "language-instructions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code/model artifacts and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "Video2Sim2Real",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.08828",
+      "paper": "https://arxiv.org/abs/2606.08828",
+      "scale": "Full-stack dexterous skill-acquisition pipeline that reconstructs a simulator-ready digital twin and robot/object motion priors from a single human manipulation video",
+      "tasks": [
+        "dexterous-manipulation",
+        "robot-learning",
+        "simulation",
+        "cross-embodiment-transfer",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "video",
+        "point-clouds",
+        "trajectories",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify project artifacts, implementation, data, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "HOWTransfer",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.10743",
+      "paper": "https://arxiv.org/abs/2606.10743",
+      "scale": "Hand-object open-world transfer method that localizes contact in human video demonstrations and retargets wrist trajectories into robot-executable motions",
+      "tasks": [
+        "robot-learning",
+        "hand-object-interaction",
+        "cross-embodiment-transfer",
+        "manipulation",
+        "contact-understanding"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "video",
+        "hand-trajectories",
+        "object-trajectories",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code/data release and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "Retrieve, Don't Retrain",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.15631",
+      "paper": "https://arxiv.org/abs/2606.15631",
+      "scale": "Retrieval-augmented VLA adaptation method that adds new tasks at test time by appending pool-side demonstrations such as human-hand videos instead of retraining",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "retrieval",
+        "cross-embodiment-transfer",
+        "manipulation",
+        "world-modeling"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "video-language",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "video",
+        "trajectories",
+        "human-demonstrations",
+        "robot-actions"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify project artifacts, retrieval pool access, code, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "SERF",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.12956",
+      "paper": "https://arxiv.org/abs/2606.12956",
+      "scale": "Spatiotemporal environment and robot feature map for long-horizon mobile manipulation, updated online from egocentric observations and proprioceptive state",
+      "tasks": [
+        "mobile-manipulation",
+        "robot-learning",
+        "spatial-reasoning",
+        "long-horizon-reasoning",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "egocentric-observations",
+        "robot-actions",
+        "point-clouds",
+        "trajectories"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code, benchmark assets, and license.",
+      "verified_at": "2026-06-23"
+    },
+    {
+      "name": "ImageWAM",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2606.19531",
+      "paper": "https://arxiv.org/abs/2606.19531",
+      "scale": "World-action model that reframes robot future prediction as image editing instead of dense video generation for action prediction",
+      "tasks": [
+        "world-modeling",
+        "robot-learning",
+        "vla",
+        "manipulation",
+        "video-generation"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "generated-video"
+      ],
+      "release_note": "arXiv scan 2026-06-23; verify code/model release and license.",
       "verified_at": "2026-06-23"
     },
     {
