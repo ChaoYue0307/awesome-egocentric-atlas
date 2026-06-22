@@ -1180,21 +1180,27 @@ tbody tr:hover {
 }
 
 .maintenance-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 760px;
 }
 
 .maintenance-grid a {
-  min-height: 72px;
-  padding: 16px;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--paper);
+  background: rgba(255, 255, 255, 0.78);
   color: var(--slate);
+  font-size: 14px;
   font-weight: 780;
+  line-height: 1.2;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(15, 42, 51, 0.045);
+  box-shadow: 0 6px 16px rgba(15, 42, 51, 0.035);
 }
 
 .maintenance-grid a:hover {
@@ -1271,8 +1277,7 @@ tbody tr:hover {
 
   .filters,
   .navigator-grid,
-  .lane-grid,
-  .maintenance-grid {
+  .lane-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1375,8 +1380,7 @@ tbody tr:hover {
   .filters,
   .navigator-grid,
   .lane-grid,
-  .milestone-era,
-  .maintenance-grid {
+  .milestone-era {
     display: grid;
     grid-template-columns: 1fr;
   }
