@@ -15,14 +15,14 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 635,
-    "egocentric_resources": 605,
+    "total_resources": 638,
+    "egocentric_resources": 608,
     "adjacent_resources": 30,
     "kind_counts": {
       "benchmark": 104,
       "collection": 1,
-      "dataset": 143,
-      "model": 325,
+      "dataset": 144,
+      "model": 327,
       "survey": 1,
       "toolkit": 31
     },
@@ -31,7 +31,7 @@
       "open": 150,
       "partial": 12,
       "request": 4,
-      "watch": 428
+      "watch": 431
     }
   },
   "lanes": [
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 164
+      "count": 165
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 171
+      "count": 172
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 259
+      "count": 261
     },
     {
       "id": "memory-reasoning",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 126
+      "count": 127
     },
     {
       "id": "ar-wearables",
@@ -99,7 +99,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 188
+      "count": 190
     }
   ],
   "milestones": [
@@ -13290,6 +13290,35 @@
       "verified_at": "2026-06-20"
     },
     {
+      "name": "Wh0",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://chenyt31.github.io/wh0.github.io/",
+      "paper": "https://arxiv.org/abs/2606.22136",
+      "scale": "Generates 50K episodes of synthetic egocentric human-hand manipulation video (WM-H) and converts them into robot-trainable dexterous action supervision using hand-motion reconstruction",
+      "tasks": [
+        "vla",
+        "dexterous-manipulation",
+        "world-modeling",
+        "robot-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text",
+        "robot-actions"
+      ],
+      "release_note": "arXiv preprint (June 2026); watch for dataset and benchmark release details beyond the abstract and project page.",
+      "verified_at": "2026-06-24"
+    },
+    {
       "name": "Divide Deliberate Decide",
       "kind": "model",
       "released": "2026-06",
@@ -18409,6 +18438,63 @@
       ],
       "release_note": "arXiv paper from June 2026; verify code/data release.",
       "verified_at": "2026-06-21"
+    },
+    {
+      "name": "EgoEvGesture",
+      "kind": "dataset",
+      "released": "2025-03",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2503.12419",
+      "paper": "https://arxiv.org/abs/2503.12419",
+      "scale": "First large-scale egocentric event-camera gesture-recognition dataset, paired with a 7M-parameter head-motion-robust network (62.7% on unseen subjects, 97.0% on DVS128 Gesture)",
+      "tasks": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "ar-sensing-navigation"
+      ],
+      "task_families": [
+        "pose-and-body",
+        "hand-object-interaction",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "event-camera",
+        "egocentric-video"
+      ],
+      "release_note": "arXiv preprint (March 2025); watch for dataset and code release.",
+      "verified_at": "2026-06-24"
+    },
+    {
+      "name": "EgoSpanLift",
+      "kind": "model",
+      "released": "2025-11",
+      "venue": "NeurIPS 2025 spotlight",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2511.18470",
+      "paper": "https://arxiv.org/abs/2511.18470",
+      "scale": "Lifts 2D egocentric gaze forecasting into 3D visual-span prediction with SLAM keypoints, volumetric regions, and a 3D U-Net plus transformer, over a 364.6K-sample benchmark (Gaze Beyond the Frame)",
+      "tasks": [
+        "ar-sensing-navigation",
+        "pose-and-body",
+        "anticipation"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "pose-and-body",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "camera-pose"
+      ],
+      "release_note": "NeurIPS 2025 spotlight; watch for code and benchmark release.",
+      "verified_at": "2026-06-24"
     }
   ]
 }

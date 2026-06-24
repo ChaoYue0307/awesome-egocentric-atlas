@@ -6474,6 +6474,21 @@ resources:
     verified_at: "2026-06-20"
     citation_key: vega_vega_bench_2026
 
+  - name: Wh0
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://chenyt31.github.io/wh0.github.io/
+    paper: https://arxiv.org/abs/2606.22136
+    scale: "Generates 50K episodes of synthetic egocentric human-hand manipulation video (WM-H) and converts them into robot-trainable dexterous action supervision using hand-motion reconstruction"
+    modalities: [egocentric-video, text, robot-actions]
+    tasks: [vla, dexterous-manipulation, world-modeling, robot-learning]
+    release_note: "arXiv preprint (June 2026); watch for dataset and benchmark release details beyond the abstract and project page."
+    verified_at: "2026-06-24"
+    citation_key: wh0_2026
+
   - name: Divide Deliberate Decide
     kind: model
     released: "2026-06"
@@ -9147,3 +9162,33 @@ resources:
     release_note: "arXiv paper from June 2026; verify code/data release."
     verified_at: "2026-06-21"
     citation_key: pose6daug_2026
+
+  - name: EgoEvGesture
+    kind: dataset
+    released: "2025-03"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2503.12419
+    paper: https://arxiv.org/abs/2503.12419
+    scale: "First large-scale egocentric event-camera gesture-recognition dataset, paired with a 7M-parameter head-motion-robust network (62.7% on unseen subjects, 97.0% on DVS128 Gesture)"
+    modalities: [event-camera, egocentric-video]
+    tasks: [pose-and-body, hand-object-interaction, ar-sensing-navigation]
+    release_note: "arXiv preprint (March 2025); watch for dataset and code release."
+    verified_at: "2026-06-24"
+    citation_key: egoevgesture_2025
+
+  - name: EgoSpanLift
+    kind: model
+    released: "2025-11"
+    venue: "NeurIPS 2025 spotlight"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.18470
+    paper: https://arxiv.org/abs/2511.18470
+    scale: "Lifts 2D egocentric gaze forecasting into 3D visual-span prediction with SLAM keypoints, volumetric regions, and a 3D U-Net plus transformer, over a 364.6K-sample benchmark (Gaze Beyond the Frame)"
+    modalities: [egocentric-video, gaze, camera-pose]
+    tasks: [ar-sensing-navigation, pose-and-body, anticipation]
+    release_note: "NeurIPS 2025 spotlight; watch for code and benchmark release."
+    verified_at: "2026-06-24"
+    citation_key: egospanlift_2025
