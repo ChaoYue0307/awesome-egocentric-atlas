@@ -819,25 +819,26 @@ module CatalogArtifacts
 
     row_layouts = era_specs.map do |group|
       count = group.fetch(:items).length
-      columns = count >= 5 ? 3 : [count, 4].min
-      card_width = [
-        [
-          ((card_area_width - (card_gap * [columns - 1, 0].max)) / columns.to_f).floor,
-          252
-        ].max,
-        300
-      ].min
+      columns = [count, 3].min
+      estimated_card_width = ((card_area_width - (card_gap * [columns - 1, 0].max)) / columns.to_f).floor
+      max_card_width = case columns
+                       when 1 then 860
+                       when 2 then 520
+                       when 3 then 420
+                       else 360
+                       end
+      card_width = [[estimated_card_width, 252].max, max_card_width].min
       image_height = [
         [
-          (card_width * 0.60).round,
-          156
+          (card_width * 0.62).round,
+          170
         ].max,
-        180
+        220
       ].min
-      card_height = image_height + 262
+      card_height = image_height + 238
       card_rows = (count.to_f / columns).ceil
       card_stack_height = (card_rows * card_height) + (card_row_gap * [card_rows - 1, 0].max)
-      row_height = card_stack_height + 124
+      row_height = card_stack_height + 104
       group.merge(
         columns: columns,
         card_width: card_width,

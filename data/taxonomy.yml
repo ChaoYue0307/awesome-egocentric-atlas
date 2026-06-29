@@ -48,7 +48,8 @@ task_families:
       cosmos, qwen3-omni, ego4d, ego4d-transfer, xperience-10m-loading,
       egocentric-pretraining, egocentric-representation, mllm, multimodal-fusion,
       state-space-models, transfer-learning, weak-supervision, child-view-learning,
-      multitask-learning, parameter-efficient-tuning, data-augmentation]
+      multitask-learning, parameter-efficient-tuning, data-augmentation, egocentric-vision,
+      synthetic-data]
 
   video-language:
     label: Video-language and captioning
@@ -60,7 +61,7 @@ task_families:
     label: Question answering
     aliases: [qa, vqa, video-qa, egocentric-vqa, egocentric-qa, first-person-vqa,
       first-person-qa, personalized-qa, affordance-centric-qa, counterfactual-qa,
-      scene-graph-qa, assistive-videoqa, egomcq, egocentric-video-qa]
+      scene-graph-qa, assistive-videoqa, egomcq, egocentric-video-qa, streaming-qa, vision-language]
 
   memory-and-long-context:
     label: Memory and long-context reasoning
@@ -71,7 +72,7 @@ task_families:
       multistep-reasoning, extremely-long-video-understanding, ultra-long-video-qa,
       long-video-qa, temporal-knowledge-graph, ego-grounding, personalized-retrieval,
       long-context-video, long-video-reasoning, long-video-understanding, reasoning,
-      personal-memory]
+      personal-memory, agentic-reasoning]
 
   reasoning-intent-planning:
     label: Reasoning, intent, and planning
@@ -85,8 +86,8 @@ task_families:
       virtual-egocentric-reasoning, tactical-reasoning, survey-prediction, forecasting,
       temporal-consistency, symbolic-reasoning, situated-awareness, 4d-reasoning,
       action-reasoning, future-prediction, inference-strategy, intent-understanding,
-      procedural-reasoning, state-transition-generation, trajectory-conditioning,
-      goal-inference, long-horizon-reasoning]
+      procedural-reasoning, structured-reasoning, state-transition-generation, trajectory-conditioning,
+      goal-inference, long-horizon-reasoning, prompt-learning]
 
   action-and-procedure:
     label: Action and procedure understanding
@@ -98,10 +99,10 @@ task_families:
       temporal-segmentation, event-segmentation, lifestyle-analysis, hand-action-recognition,
       ehoi, classic, compositional, action-anticipation, action-modeling,
       behavior-understanding, behavioral-activity-recognition, cooking-understanding,
-      industrial-assembly, physical-action-understanding, procedure-understanding,
+      industrial-assembly, physical-action-understanding, interaction-understanding, procedure-understanding,
       step-grounding, task-progress-estimation, anomaly-detection, kitchen-understanding,
       action-recommendation, online-action-detection, short-term-anticipation,
-      mistake-attribution, surgical-understanding]
+      mistake-attribution, surgical-understanding, task-progress, object-state-change]
 
   hand-object-interaction:
     label: Hand-object interaction and contact
@@ -110,7 +111,8 @@ task_families:
       interaction-field-estimation, interaction-prediction, bimanual-manipulation,
       two-hand-pose, two-hand-segmentation, hand-forecasting, grasping, active-object-detection,
       active-object-segmentation, human-object-human-interaction, affordance, hoi, h2o,
-      articulation-perception, hand-tracking]
+      articulation-perception, hand-tracking, hoi-detection, hand-reconstruction,
+      3d-hand-reconstruction]
 
   pose-and-body:
     label: Pose, body, and motion
@@ -118,7 +120,7 @@ task_families:
       body-tracking, mesh-recovery, 3d-human-pose, egocentric-3d-pose, scene-aware-3d-human-pose,
       xr-pose-estimation, two-hand-3d-pose, 3d-hand-pose, 3d-hand-trajectory-forecasting,
       gaze-informed-motion-prediction, human-scene-interaction, motion-estimation, motion-language,
-      3d-pose]
+      3d-pose, human-pose-estimation]
 
   tracking:
     label: Tracking and re-detection
@@ -140,7 +142,8 @@ task_families:
       novel-view-synthesis, dynamic-scene-understanding, object-reconstruction,
       digital-twin-evaluation, depth, egocentric-depth, reconstruction, egopat3d,
       3d-dialogue, 3d-scene-understanding, 3d-understanding, dynamic-scenes,
-      view-synthesis, 3d-object-detection, surface-regression, articulated-objects]
+      view-synthesis, 3d-object-detection, surface-regression, articulated-objects,
+      semantic-mapping]
 
   generation-and-world-models:
     label: Generation and world models
@@ -162,7 +165,7 @@ task_families:
       manipulation-safety, policy-optimization, hri, data-collection, active-perception,
       egocentric-calibration, humanoid-control, motion-generation, loco-manipulation,
       tactile-learning, mobile-manipulation, whole-body-manipulation, trajectory-synthesis,
-      latent-action-learning]
+      latent-action-learning, reinforcement-learning, contact-rich-manipulation, retargeting]
 
   audio-and-social:
     label: Audio, speech, and social interaction
@@ -179,7 +182,7 @@ task_families:
       expert-trainee-assistance, expert-feedback, instructional-dialogue, real-time-understanding,
       healthcare-assistance, procedural-assistance, proactive-assistance, real-time-assistance,
       remote-collaboration, situated-assistance, nutrition-estimation, medical-assistance,
-      privacy]
+      privacy, cognitive-state-aware-assistance, instruction-generation]
 
   ar-sensing-navigation:
     label: AR, wearable sensing, and navigation
@@ -210,7 +213,7 @@ task_families:
 modality_families:
   visual:
     label: Visual streams
-    aliases: [rgb, video, egocentric-video, first-person-video, fisheye-video,
+    aliases: [rgb, video, egocentric-video, egocentric-image, first-person-video, fisheye-video,
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
       overhead-video, top-view-video, animal-egocentric-video, first-person-360-video,
@@ -230,14 +233,14 @@ modality_families:
     aliases: [audio, speech, text, language, narrations, descriptions, dialogue,
       language-instructions, hierarchical-language, verbal-commands, qa, memory, location-labels,
       captions, caregiver-speech, mllm, text-instructions, transcripts, video-language,
-      video-qa, vlm, natural-language, motion-descriptions, goal-specification]
+      video-qa, vlm, natural-language, motion-descriptions, goal-specification, survey]
 
   gaze-motion:
     label: Gaze, IMU, and motion
     aliases: [gaze, eye-tracking, imu, motion, body-motion, human-motion, head, head-pose,
       physiological-signals, trajectory, trajectories, wrist-trajectory, camera-motion,
       camera-orientation, camera-trajectory, hand-motion, head-mounted-imu, attention,
-      proprioception, emg, optical-flow]
+      proprioception, emg, optical-flow, posture]
 
   pose-mocap:
     label: Pose and mocap
@@ -249,7 +252,7 @@ modality_families:
   hand-object-geometry:
     label: Hand-object geometry and contact
     aliases: [hand, hands, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
-      object-meshes, hand-meshes, mesh, articulated-objects, 3d-objects, object-motion,
+      object-meshes, hand-meshes, hand-mesh, mesh, articulated-objects, 3d-objects, object-motion,
       tactile, pressure, force, glove-sensors, hand-object-contact,
       hand-object-interaction, hand-object-motion, object-crops, objects]
 
@@ -259,13 +262,13 @@ modality_families:
       scene-scans, scene-geometry, scene-graphs, digital-twins, physics,
       calibration, 3d-target-labels, dslr-images, 3d-gaussian-splatting,
       3d-reconstruction, 3d-scene, 4d-scene, geometry, masks,
-      scene-reconstruction, 3d-flow, 3d-assets, spatial-memory]
+      scene-reconstruction, 3d-flow, 3d-assets, spatial-memory, maps]
 
   device-and-labels:
     label: Device formats and labels
     aliases: [aria, meta-aria, hololens2, quest3, radar, vrs, mps, rlds, robot-actions,
       robot-camera-video, wrist-camera-video, action-labels, action-primitives,
-      annotations, multimodal-annotations, segmentation, instance-labels, scene-labels,
+      annotations, multimodal-annotations, segmentation, bounding-boxes, instance-labels, scene-labels,
       poi-labels, self-annotations, timeline, tooling, surveys, hdf5-annotations,
       synthetic-rendering, temporal-graphs, web-tools, latent-actions,
       auxiliary-images, bimanual-annotations, dense-features, domain-shifts,
@@ -276,4 +279,5 @@ modality_families:
       structured-reasoning, support-set, task-progress, temporal-grounding,
       thermal, v-jepa-features, visual-evidence, wearable-sensors,
       chronological-stream, step-labels, digital-context, demonstrations,
-      evaluation, future-state-targets, synthetic-data, simulation]
+      evaluation, future-state-targets, synthetic-data, simulation, model,
+      object-tracks, wearable-sensing]

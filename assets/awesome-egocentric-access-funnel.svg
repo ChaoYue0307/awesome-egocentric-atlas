@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by access state</title>
-  <desc id="desc">A proportional bar snapshot of the 608 egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
+  <desc id="desc">A proportional bar snapshot of the 664 egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -31,43 +31,43 @@
   <rect width="1280" height="520" fill="url(#dots)"/>
 
   <text class="kicker" x="70" y="58">ACCESS STATUS</text>
-  <text class="title ink" x="70" y="102">608 egocentric resources by access state</text>
+  <text class="title ink" x="70" y="102">664 egocentric resources by access state</text>
   <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
 
   <line class="tick" x1="300" y1="162" x2="300" y2="174"/>
   <line class="tick" x1="860.0" y1="162" x2="860.0" y2="174"/>
   <text class="scale" x="300" y="156" text-anchor="middle">0</text>
-  <text class="scale" x="860.0" y="156" text-anchor="middle">max 431</text>
+  <text class="scale" x="860.0" y="156" text-anchor="middle">max 487</text>
 
   <g>
   <text class="rowlabel" x="70" y="213">open · 150</text>
   <rect class="rail" x="300" y="186" width="560" height="40" rx="12"/>
-  <rect class="fill" x="300" y="186" width="194.9" height="40" rx="12" fill="#00a6b2"/>
-  <text class="value" x="888.0" y="213">24.7%</text>
+  <rect class="fill" x="300" y="186" width="172.5" height="40" rx="12" fill="#00a6b2"/>
+  <text class="value" x="888.0" y="213">22.6%</text>
   <text class="gloss" x="986.0" y="213">usable today</text>
 </g>
 
 <g>
-  <text class="rowlabel" x="70" y="277">watch · 431</text>
+  <text class="rowlabel" x="70" y="277">watch · 487</text>
   <rect class="rail" x="300" y="250" width="560" height="40" rx="12"/>
   <rect class="fill" x="300" y="250" width="560" height="40" rx="12" fill="#9aa7af"/>
-  <text class="value" x="888.0" y="277">70.9%</text>
+  <text class="value" x="888.0" y="277">73.3%</text>
   <text class="gloss" x="986.0" y="277">verify before use</text>
 </g>
 
 <g>
   <text class="rowlabel" x="70" y="341">partial · 12</text>
   <rect class="rail" x="300" y="314" width="560" height="40" rx="12"/>
-  <rect class="fill" x="300" y="314" width="15.6" height="40" rx="12" fill="#ef9f24"/>
-  <text class="value" x="888.0" y="341">2.0%</text>
+  <rect class="fill" x="300" y="314" width="13.8" height="40" rx="12" fill="#ef9f24"/>
+  <text class="value" x="888.0" y="341">1.8%</text>
   <text class="gloss" x="986.0" y="341">subset / annotations only</text>
 </g>
 
 <g>
   <text class="rowlabel" x="70" y="405">benchmark · 11</text>
   <rect class="rail" x="300" y="378" width="560" height="40" rx="12"/>
-  <rect class="fill" x="300" y="378" width="14.3" height="40" rx="12" fill="#5b6b73"/>
-  <text class="value" x="888.0" y="405">1.8%</text>
+  <rect class="fill" x="300" y="378" width="12.6" height="40" rx="12" fill="#5b6b73"/>
+  <text class="value" x="888.0" y="405">1.7%</text>
   <text class="gloss" x="986.0" y="405">eval over existing video</text>
 </g>
 
@@ -75,7 +75,7 @@
   <text class="rowlabel" x="70" y="469">request · 4</text>
   <rect class="rail" x="300" y="442" width="560" height="40" rx="12"/>
   <rect class="fill" x="300" y="442" width="8" height="40" rx="12" fill="#d98f1f"/>
-  <text class="value" x="888.0" y="469">0.7%</text>
+  <text class="value" x="888.0" y="469">0.6%</text>
   <text class="gloss" x="986.0" y="469">license / approval needed</text>
 </g>
 
