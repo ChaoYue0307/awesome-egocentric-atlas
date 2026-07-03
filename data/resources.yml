@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-06-29"
+  last_major_audit: "2026-07-03"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,408 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Full live scan additions (2026-07-03): recent arXiv/Crossref sweep ---
+
+  - name: LIME
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.02417
+    paper: https://arxiv.org/abs/2607.02417
+    scale: "Language-conditioned camera-motion generator mined from egocentric video, pairing free-form intents and observation-gain descriptions with relative SE(3) target poses for next-view prediction"
+    modalities: [egocentric-video, camera-motion, language-instructions, robot-camera-video]
+    tasks: [active-perception, spatial-reasoning, robot-learning, vla, navigation]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03; verify code, training pairs, evaluation data, and license before marking open."
+    citation_key: lime_camera_motion_2026
+
+  - name: LongEgoRefer
+    kind: benchmark
+    released: "2026-07"
+    venue: "ECCV 2026"
+    year: 2026
+    status: open
+    url: https://github.com/shunya-kato/LongEgoRefer
+    paper: https://arxiv.org/abs/2607.02096
+    code: https://github.com/shunya-kato/LongEgoRefer
+    data: https://github.com/shunya-kato/LongEgoRefer
+    scale: "Long-form Ego4D referring-expression benchmark with 1,498 expressions over videos averaging 45 minutes, requiring temporal and spatial localization of sparse referred objects"
+    modalities: [egocentric-video, text, object-boxes, annotations]
+    tasks: [referring-expression-comprehension, temporal-grounding, object-grounding, visual-grounding, benchmark]
+    verified_at: "2026-07-03"
+    release_note: "arXiv comments report dataset and code on GitHub; verify license, splits, and data dependency terms."
+    citation_key: longegorefer_2026
+
+  - name: HandsOnWorld
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.02075
+    paper: https://arxiv.org/abs/2607.02075
+    scale: "Unconstrained egocentric video generation with camera-disentangled hand control; introduces EgoVid-Pro with 103K clips and roughly 12M frames of protagonist-only 3D hand trajectories"
+    modalities: [egocentric-video, hand-trajectories, camera-motion, generated-video]
+    tasks: [video-generation, hand-object-interaction, world-modeling, 3d-hand-pose]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03; verify EgoVid-Pro release, code/checkpoints, and license before marking open."
+    citation_key: handsonworld_2026
+
+  - name: SG-Ego / GLEN
+    kind: dataset
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://francescapistilli.github.io/GLEN
+    paper: https://arxiv.org/abs/2607.02425
+    scale: "Large-scale Ego4D spatio-temporal scene-graph annotation set plus GLEN graph model for scene-evolution reasoning, retrieval, and activity-driven graph-edit forecasting"
+    modalities: [egocentric-video, scene-graphs, action-labels, text]
+    tasks: [structured-reasoning, action-understanding, scene-graph-qa, temporal-reasoning]
+    verified_at: "2026-07-03"
+    release_note: "arXiv/project scan 2026-07-03; verify annotation download, model code, and license before marking open."
+    citation_key: sg_ego_glen_2026
+
+  - name: Wearable Gait MoCap with Shank-Mounted Ego Cameras
+    kind: dataset
+    released: "2026-07"
+    venue: "Scientific Data 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1038/s41597-026-07657-7
+    paper: https://doi.org/10.1038/s41597-026-07657-7
+    scale: "Wearable motion-capture dataset for gait analysis using IMUs and shank-mounted egocentric cameras"
+    modalities: [egocentric-video, imu, motion, wearable-sensing]
+    tasks: [activity-recognition, human-motion, sensor-fusion, wearable-sensing]
+    verified_at: "2026-07-03"
+    release_note: "Crossref DOI scan 2026-07-03; verify dataset repository, participant terms, and license before marking open."
+    citation_key: wearable_gait_mocap_ego_cameras_2026
+
+  - name: TAP VLA
+    kind: model
+    released: "2026-07"
+    venue: "ICML 2026"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.02466
+    paper: https://arxiv.org/abs/2607.02466
+    scale: "Task-Agnostic Pretraining framework that learns transferable motor priors from unlabeled interaction data before grounding them with limited language-instruction data"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, representation-learning, imitation-learning]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03; adjacent robot/VLA pretraining work, not a human wearable capture resource."
+    scope_note: "Robot/VLA method using unlabeled robot interaction data rather than egocentric human capture."
+    citation_key: tap_vla_2026
+
+  - name: The Moving Eye
+    kind: model
+    released: "2026-07"
+    venue: "IROS 2026"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.02322
+    paper: https://arxiv.org/abs/2607.02322
+    scale: "Hybrid dynamic data-collection strategy for VLA spatial generalization, using a dual-arm setup where one arm manipulates while the other acts as a moving environmental camera"
+    modalities: [robot-camera-video, robot-actions, multiview-video]
+    tasks: [vla, robot-learning, active-perception, data-collection, spatial-reasoning]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03; adjacent because it studies robot camera/viewpoint collection rather than human wearable capture."
+    scope_note: "Robot VLA viewpoint-generalization work, useful for active camera policies but not human first-person data."
+    citation_key: moving_eye_vla_2026
+
+  - name: Bridge-WA
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://hcplab-sysu.github.io/BRIDGE-WA
+    paper: https://arxiv.org/abs/2607.02195
+    scale: "Lightweight world-action framework that distills future-change tokens, change maps, and motion-flow maps into a VLA action transformer"
+    modalities: [robot-camera-video, robot-actions, generated-video]
+    tasks: [vla, robot-learning, world-modeling, future-state-prediction]
+    verified_at: "2026-07-03"
+    release_note: "arXiv/project scan 2026-07-03; adjacent robot world-action method, not a human wearable capture resource."
+    scope_note: "Robot VLA/world-action model; relevant context for egocentric WAMs but not main human-first-person scope."
+    citation_key: bridge_wa_2026
+
+  - name: VLA-Corrector
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.01804
+    paper: https://arxiv.org/abs/2607.01804
+    scale: "Lightweight detect-and-correct inference layer for action-chunked VLA policies, using visual feature evolution to detect open-loop deviations and adapt action horizons"
+    modalities: [robot-camera-video, robot-actions]
+    tasks: [vla, robot-learning, efficient-inference, manipulation-safety]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03; adjacent VLA inference/safety method, not human wearable capture."
+    scope_note: "Robot VLA closed-loop correction method; adjacent to egocentric policy deployment."
+    citation_key: vla_corrector_2026
+
+  - name: VLA-Arena
+    kind: benchmark
+    released: "2025-12"
+    venue: "ICML 2026"
+    year: 2025
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2512.22539
+    paper: https://arxiv.org/abs/2512.22539
+    scale: "Open-source VLA benchmark with 170 structured tasks and decoupled task, language, and visual perturbation axes for measuring model capability frontiers"
+    modalities: [robot-camera-video, language-instructions, robot-actions]
+    tasks: [vla, benchmark, evaluation, manipulation-safety]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03 shows ICML 2026 acceptance; verify repository/package and license before marking open."
+    scope_note: "Robot VLA benchmark, useful adjacent context but not a human wearable/egocentric dataset."
+    citation_key: vla_arena_2025
+
+  - name: VLSA / AEGIS
+    kind: model
+    released: "2025-12"
+    venue: "IROS 2026"
+    year: 2025
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2512.11891
+    paper: https://arxiv.org/abs/2512.11891
+    scale: "Vision-Language-Safe Action architecture with a plug-and-play control-barrier-function safety layer and SafeLIBERO benchmark for safety-critical manipulation"
+    modalities: [robot-camera-video, language-instructions, robot-actions]
+    tasks: [vla, manipulation-safety, safety, robot-learning, benchmark]
+    verified_at: "2026-07-03"
+    release_note: "arXiv scan 2026-07-03 shows IROS 2026 acceptance; adjacent robot safety/VLA method, not human wearable capture."
+    scope_note: "Robot VLA safety architecture; adjacent to egocentric embodied-agent safety work."
+    citation_key: vlsa_aegis_2025
+
+  # --- Full live scan additions (2026-07-02): recent arXiv/project sweep ---
+
+  - name: H-Tac / TTP
+    kind: dataset
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.01067
+    paper: https://arxiv.org/abs/2607.01067
+    scale: "Human-Centric Transferable Tactile Pre-Training introduces H-Tac, a 160-hour tactile-action dataset with egocentric human videos over 300+ tasks and 135K episodes, plus tactile pretraining for fine-grained robotic manipulation"
+    modalities: [egocentric-video, tactile, force, human-demonstrations, robot-actions]
+    tasks: [tactile-learning, robot-learning, dexterous-manipulation, human-demonstrations, vla]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; verify public H-Tac package, tactile hardware/specs, code, and license before marking open."
+    citation_key: htac_ttp_2026
+
+  - name: Imprint
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.00696
+    paper: https://arxiv.org/abs/2607.00696
+    scale: "Online interaction-centric memory compression for long-horizon egocentric QA, evaluated on seven-day EgoLifeQA with improved QA accuracy, evidence grounding, memory footprint, and retrieval latency"
+    modalities: [egocentric-video, qa, text]
+    tasks: [episodic-memory, long-context-qa, egocentric-video-qa, retrieval, memory-reasoning]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; verify implementation, evaluation artifacts, and license before marking open."
+    citation_key: imprint_egocentric_memory_2026
+
+  - name: EgoGapBench
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://github.com/jhCOR/EgoGapBench
+    paper: https://arxiv.org/abs/2607.00547
+    code: https://github.com/jhCOR/EgoGapBench
+    data: https://github.com/jhCOR/EgoGapBench
+    scale: "Diagnostic benchmark for egocentric action selection in multi-agent scenes, isolating whether models choose actions from the camera-wearer's perspective rather than copying visible agents"
+    modalities: [egocentric-video, qa, action-labels, annotations]
+    tasks: [action-reasoning, action-selection, egocentric-vqa, multi-agent-memory, benchmark]
+    verified_at: "2026-07-02"
+    release_note: "arXiv comments report public code and benchmark on GitHub; verify dataset files, splits, and license details."
+    citation_key: egogapbench_2026
+
+  - name: EgoSafetyBench
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.00218
+    paper: https://arxiv.org/abs/2607.00218
+    scale: "1,200 egocentric robot-view safety scenarios annotated at half-second granularity, with situational and misleading in-scene text tracks for evaluating streaming VLM safety guards"
+    modalities: [egocentric-video, robot-camera-video, scene-text, annotations]
+    tasks: [safety, vlm-evaluation, streaming-video-understanding, scene-text, benchmark]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; verify public benchmark package, videos/annotations, and license before marking open."
+    citation_key: egosafetybench_2026
+
+  - name: RetailSMV
+    kind: dataset
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.00310
+    paper: https://arxiv.org/abs/2607.00310
+    scale: "32,105 captioned synchronized retail clips from five supermarkets with staff-perspective egocentric and exocentric capture, used to compare LoRA adaptation of foundation video world models"
+    modalities: [egocentric-video, exocentric-video, captions]
+    tasks: [world-modeling, video-generation, domain-adaptation, retail-understanding, ego-exo]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; verify public clips/captions, model adapters, and license before marking open."
+    citation_key: retailsmv_2026
+
+  - name: Human-as-Humanoid
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://zgc-embodyai.github.io/Human-as-Humanoid
+    paper: https://arxiv.org/abs/2606.32009
+    scale: "Human-to-humanoid supervision framework that uses synchronized ego-exo videos, exocentric motion recovery, staged IK, and FK-aware supervision to convert human demonstrations into 60-DoF humanoid action chunks"
+    modalities: [egocentric-video, exocentric-video, human-demonstrations, humanoid-motion, robot-actions]
+    tasks: [humanoid-control, whole-body-manipulation, imitation-learning, cross-embodiment-transfer, vla]
+    verified_at: "2026-07-02"
+    release_note: "arXiv/project scan 2026-07-02; verify code, data-generation artifacts, robot logs, and license before marking open."
+    citation_key: human_as_humanoid_2026
+
+  - name: SkillSpotter
+    kind: model
+    released: "2026-06"
+    venue: "ECCV 2026"
+    year: 2026
+    status: open
+    url: https://github.com/eth-siplab/SkillSpotter
+    paper: https://arxiv.org/abs/2606.31127
+    code: https://github.com/eth-siplab/SkillSpotter
+    scale: "Pose-aware multi-view skilled-action detection and grading for Ego-Exo4D proficiency demonstrations, using adaptive temporal suppression, gated 3D body-pose fusion, and bidirectional ego-exo attention"
+    modalities: [egocentric-video, exocentric-video, 3d-human-pose, action-labels]
+    tasks: [skill-assessment, action-detection, proficiency, ego-exo, pose]
+    verified_at: "2026-07-02"
+    release_note: "arXiv paper reports public code; verify release completeness and license before changing any dataset status."
+    citation_key: skillspotter_2026
+
+  - name: ViDiHand
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://vidihand.github.io
+    paper: https://arxiv.org/abs/2606.30308
+    scale: "4D two-hand motion reconstruction from full-frame egocentric video using video-diffusion representations and a hand-overlay rendering objective, evaluated on ARCTIC, HOT3D, and HOI4D"
+    modalities: [egocentric-video, hand-pose, hand-meshes]
+    tasks: [3d-hand-pose, hand-tracking, hand-reconstruction, hand-object-interaction]
+    verified_at: "2026-07-02"
+    release_note: "arXiv/project scan 2026-07-02; verify code, checkpoints, evaluation assets, and license before marking open."
+    citation_key: vidihand_2026
+
+  - name: Controllable Egocentric Video Generation
+    kind: model
+    released: "2026-03"
+    venue: "ECCV 2026"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.11755
+    paper: https://arxiv.org/abs/2603.11755
+    scale: "Occlusion-aware sparse 3D hand-joint control for realistic egocentric hand-object video generation, with an automated pipeline yielding 1M egocentric clips paired with precise hand trajectories"
+    modalities: [egocentric-video, hand-pose, generated-video, trajectories]
+    tasks: [video-generation, hand-object-interaction, world-modeling, 3d-hand-pose]
+    verified_at: "2026-07-02"
+    release_note: "arXiv v3 scan 2026-07-02 shows ECCV 2026; verify public code/data and license before marking open."
+    citation_key: controllable_egocentric_video_generation_2026
+
+  - name: EgoVITA
+    kind: model
+    released: "2025-11"
+    venue: "ECCV 2026"
+    year: 2025
+    status: watch
+    url: https://arxiv.org/abs/2511.18242
+    paper: https://arxiv.org/abs/2511.18242
+    scale: "Plan-then-verify framework for egocentric video reasoning, using GRPO with visual-grounding and cross-perspective consistency rewards over a 52K-sample training setup"
+    modalities: [egocentric-video, qa, text]
+    tasks: [egocentric-video-reasoning, planning, temporal-reasoning, grounded-reasoning]
+    verified_at: "2026-07-02"
+    release_note: "arXiv v3 scan 2026-07-02 shows ECCV 2026; verify code/data release and license before marking open."
+    citation_key: egovita_2025
+
+  - name: OmniView-Space
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.00881
+    paper: https://arxiv.org/abs/2607.00881
+    scale: "Spatial-reasoning framework that re-anchors reconstructed geometry into query-aligned visual cognitive maps and textual spatial graphs, then trains tool-guided egocentric reasoning with ego-frame rewards"
+    modalities: [egocentric-images, 3d, scene-graphs, text]
+    tasks: [spatial-reasoning, 3d-understanding, grounded-reasoning, mllm]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; verify implementation, benchmark scripts, and license before marking open."
+    citation_key: omniview_space_2026
+
+  - name: LongVQUBench
+    kind: benchmark
+    released: "2026-07"
+    venue: "ECCV 2026"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.01086
+    paper: https://arxiv.org/abs/2607.01086
+    scale: "Long-term video-quality understanding benchmark with 1,200+ videos and 1,500 questions spanning movies, documentaries, surveillance, egocentric recordings, and animation"
+    modalities: [video, qa, annotations]
+    tasks: [benchmark, vlm-evaluation, long-video-understanding]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; adjacent because egocentric recordings are one slice of a broad video-quality benchmark."
+    scope_note: "Broad long-video quality benchmark with some egocentric recordings, not centered on human wearable capture."
+    citation_key: longvqubench_2026
+
+  - name: WorldOdysseyBench
+    kind: benchmark
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2606.31672
+    paper: https://arxiv.org/abs/2606.31672
+    scale: "600+ open-world interactive world-model test cases across nature, urban, and indoor scenes, using first/third-person views and 10-60s WASD interaction to test action, vision, physics, and memory stability"
+    modalities: [video, generated-video, 3d, trajectories]
+    tasks: [world-modeling, benchmark, long-horizon-reasoning, evaluation]
+    verified_at: "2026-07-02"
+    release_note: "arXiv scan 2026-07-02; adjacent because it is a broad interactive-world-model benchmark rather than a human egocentric capture resource."
+    scope_note: "Relevant for egocentric world models, but evaluates broad first/third-person interactive scenes rather than a wearable-first corpus."
+    citation_key: worldodysseybench_2026
+
+  - name: MM-Nav
+    kind: model
+    released: "2025-10"
+    venue: "arXiv"
+    year: 2025
+    status: watch
+    scope: adjacent
+    url: https://pku-epic.github.io/MM-Nav-Web/
+    paper: https://arxiv.org/abs/2510.03142
+    scale: "Multi-view VLA navigation model with 360-degree observations, trained from synthetic RL expert data for reaching, squeezing, and avoiding, with real-world navigation experiments"
+    modalities: [robot-camera-video, synthetic-rendering, language-instructions, trajectories]
+    tasks: [vla, navigation, robot-learning, evaluation]
+    verified_at: "2026-07-02"
+    release_note: "arXiv v2 scan 2026-07-02; adjacent because it is robot/synthetic navigation rather than human wearable capture."
+    scope_note: "Robot visual-navigation VLA using egocentric observations, not a human first-person dataset or method centered on wearable capture."
+    citation_key: mm_nav_2025
 
   # --- Full live scan additions (2026-06-22): recent arXiv/project sweep ---
 
@@ -6911,6 +7313,160 @@ resources:
     verified_at: "2026-06-20"
     citation_key: ht_bench_handtouch_2026
 
+  - name: EPIC-Contact / HOPformer
+    kind: dataset
+    released: "2026-06"
+    venue: "ECCV 2026"
+    year: 2026
+    status: open
+    url: https://sid2697.github.io/epic-contact/
+    paper: https://arxiv.org/abs/2606.30598
+    code: https://github.com/Sid2697/HOPformer
+    data: https://huggingface.co/datasets/Sid2697/epic-contact
+    scale: "EPIC-KITCHENS-derived in-the-wild egocentric 3D hand-object pose dataset with 2.3K clips, 62.3K frames, nine object categories, dense bijective 3D hand-object contact correspondences, posed meshes, plus HOPformer code and checkpoints"
+    modalities: [egocentric-video, hand-pose, object-pose, hand-meshes, object-meshes, contact]
+    tasks: [hand-object-pose, 3d-hand-pose, contact-understanding, hand-object-interaction, 3d-hand-object-tracking]
+    license: "cc-by-nc-4.0"
+    license_url: https://huggingface.co/datasets/Sid2697/epic-contact
+    release_note: "Live arXiv/project/Hugging Face scan 2026-06-30; dataset is public and ungated, code/checkpoints are linked, and the dataset card reports CC-BY-NC-4.0."
+    verified_at: "2026-06-30"
+    citation_key: epic_contact_hopformer_2026
+
+  - name: GhostHandEgoNet
+    kind: model
+    released: "2026-06"
+    venue: "IJPRAI 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1142/s0218001426550116
+    paper: https://doi.org/10.1142/s0218001426550116
+    scale: "Lightweight egocentric hand-pose and hand-hygiene monitoring pipeline using Ghost convolutions with attention, reporting 2.56M parameters and robust embedded deployment under occlusion"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [3d-hand-pose, hand-object-interaction, medical-assistance, efficient-inference]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public code, data, and license before marking open."
+    verified_at: "2026-07-01"
+    citation_key: ghosthandegonet_2026
+
+  - name: Towards Egocentric 3D Hand Pose Estimation in Unseen Domains
+    kind: model
+    released: "2026-03"
+    venue: "WACV 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1109/wacv61042.2026.00560
+    paper: https://doi.org/10.1109/wacv61042.2026.00560
+    scale: "Egocentric 3D hand-pose estimation study focused on unseen-domain generalization for first-person hand tracking"
+    modalities: [egocentric-video, hand-pose]
+    tasks: [3d-hand-pose, hand-tracking, domain-generalization, ar-vr]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public implementation, benchmark assets, and license."
+    verified_at: "2026-07-01"
+    citation_key: unseen_domain_egocentric_hand_pose_2026
+
+  - name: Leveraging Synthetic Data for Egocentric HOI Detection
+    kind: model
+    released: "2026-05"
+    venue: "IJCV 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1007/s11263-026-02838-8
+    paper: https://doi.org/10.1007/s11263-026-02838-8
+    scale: "Studies synthetic-data augmentation for egocentric hand-object interaction detection on VISOR, EgoHOS, and ENIGMA-51, especially when real labels are scarce"
+    modalities: [egocentric-video, synthetic-data, hand-masks, object-masks]
+    tasks: [hoi-detection, hand-object-interaction, synthetic-data, data-augmentation, domain-generalization]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public synthetic data, code, and license."
+    verified_at: "2026-07-01"
+    citation_key: synthetic_data_egocentric_hoi_detection_2026
+
+  - name: Person Identification from Egocentric HOI
+    kind: model
+    released: "2026-02"
+    venue: "CCF TPCI 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1007/s42486-025-00215-x
+    paper: https://doi.org/10.1007/s42486-025-00215-x
+    scale: "Person-identification study using 3D hand pose from egocentric human-object interactions as an identity signal"
+    modalities: [egocentric-video, hand-pose, human-demonstrations]
+    tasks: [hand-object-interaction, 3d-hand-pose, person-identification, behavior-understanding]
+    release_note: "DOI/Crossref scan 2026-07-01; verify dataset/code availability and usage terms."
+    verified_at: "2026-07-01"
+    citation_key: person_identification_egocentric_hoi_2026
+
+  - name: Industrial Egocentric HOI Detection
+    kind: model
+    released: "2026-01"
+    venue: "ICIAP 2025 Workshops"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1007/978-3-032-11317-7_38
+    paper: https://doi.org/10.1007/978-3-032-11317-7_38
+    scale: "Real-time egocentric hand-object interaction detection system for industrial-domain workflows"
+    modalities: [egocentric-video, hand-masks, object-masks]
+    tasks: [hoi-detection, hand-object-interaction, industrial-assembly, efficient-inference]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public benchmark/code release and license."
+    verified_at: "2026-07-01"
+    citation_key: industrial_egocentric_hoi_detection_2026
+
+  - name: GlovEgo-HOI
+    kind: model
+    released: "2026"
+    venue: "VISAPP 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.5220/0014466400004084
+    paper: https://doi.org/10.5220/0014466400004084
+    scale: "Industrial egocentric HOI detection work bridging the synthetic-to-real gap for gloved hand-object interaction scenarios"
+    modalities: [egocentric-video, synthetic-data, hand-masks, object-masks]
+    tasks: [hoi-detection, hand-object-interaction, synthetic-data, domain-adaptation, industrial-assembly]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public data/code and license before marking open."
+    verified_at: "2026-07-01"
+    citation_key: glovego_hoi_2026
+
+  - name: Causal-Inspired Fourier Egocentric Action Recognition
+    kind: model
+    released: "2026-05"
+    venue: "IEEE TCSVT 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1109/tcsvt.2026.3653125
+    paper: https://doi.org/10.1109/tcsvt.2026.3653125
+    scale: "Causal-inspired Fourier representation learning for wearable IMU signals and egocentric action recognition"
+    modalities: [imu, wearable-sensing, egocentric-video]
+    tasks: [action-recognition, representation-learning, wearable-sensing, sensor-fusion]
+    release_note: "DOI/Crossref scan 2026-07-01; verify code/data availability and license."
+    verified_at: "2026-07-01"
+    citation_key: causal_fourier_egocentric_action_2026
+
+  - name: Screen Detection from Egocentric Streams
+    kind: model
+    released: "2026"
+    venue: "IEEE TMM 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1109/tmm.2026.3660180
+    paper: https://doi.org/10.1109/tmm.2026.3660180
+    scale: "Screen detection from egocentric image streams using a multi-view vision-language model"
+    modalities: [egocentric-images, wearable-sensing, text]
+    tasks: [object-detection, scene-text, assistive-systems, wearable-sensing]
+    release_note: "DOI/Crossref scan 2026-07-01; verify public implementation, evaluation data, and license."
+    verified_at: "2026-07-01"
+    citation_key: screen_detection_egocentric_streams_2026
+
+  - name: SmartSeg
+    kind: model
+    released: "2026"
+    venue: "Pervasive and Mobile Computing 2026"
+    year: 2026
+    status: watch
+    url: https://doi.org/10.1016/j.pmcj.2026.102223
+    paper: https://doi.org/10.1016/j.pmcj.2026.102223
+    scale: "Non-parametric temporal segmentation method for wearable-camera video streams"
+    modalities: [egocentric-video, wearable-sensing]
+    tasks: [temporal-segmentation, procedure-understanding, lifelogging, wearable-sensing]
+    release_note: "DOI/Crossref scan 2026-07-01; publisher issue date is later in 2026, so verify online availability, code/data, and license before opening."
+    verified_at: "2026-07-01"
+    citation_key: smartseg_wearable_video_2026
+
   - name: Hand-4DGS
     kind: model
     released: "2026-06"
@@ -10244,6 +10800,87 @@ resources:
     release_note: "Fresh arXiv scan 2026-06-28; track later conference/journal version."
     verified_at: "2026-06-28"
     citation_key: world_action_models_2026
+
+  - name: FutureNav
+    scope: adjacent
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.30367
+    paper: https://arxiv.org/abs/2606.30367
+    scale: "Unified world-action modeling framework for vision-and-language navigation, jointly optimizing action prediction, inverse/forward dynamics, and future spatial-state prediction from egocentric agent observations"
+    modalities: [egocentric-video, text, spatial-features, trajectories]
+    tasks: [navigation, world-modeling, vla, spatial-reasoning, robot-learning]
+    release_note: "Fresh arXiv recent-list scan 2026-06-30; adjacent navigation-agent work, so verify code/data release and license before opening."
+    verified_at: "2026-06-30"
+    citation_key: futurenav_2026
+
+  - name: ZR-0
+    scope: adjacent
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://github.com/RUCKBReasoning/ZR-0
+    paper: https://arxiv.org/abs/2606.30552
+    code: https://github.com/RUCKBReasoning/ZR-0
+    scale: "2.6B VLA model trained with dense embodied chain-of-thought supervision over ProcCorpus-60M to align cross-embodiment manipulation representations without inference-time reasoning overhead"
+    modalities: [video, text, robot-actions, trajectories]
+    tasks: [vla, robot-learning, manipulation, cross-embodiment-transfer, reasoning]
+    release_note: "Fresh arXiv/GitHub scan 2026-06-30; verify repository completeness, data availability, checkpoints, and license."
+    verified_at: "2026-06-30"
+    citation_key: zr0_vla_2026
+
+  - name: VLK
+    scope: adjacent
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://vision-language-kinematics.github.io/
+    paper: https://arxiv.org/abs/2606.30645
+    scale: "Vision-language-kinematics supervision pipeline generating 48K synthetic humanoid loco-manipulation trajectories with paired egocentric renderings, instructions, and whole-body kinematic targets in reconstructed scenes"
+    modalities: [synthetic-video, egocentric-video, text, trajectories, humanoid-motion]
+    tasks: [humanoid-control, loco-manipulation, vla, robot-learning, synthetic-data]
+    release_note: "Fresh arXiv/project scan 2026-06-30; project page is public, but synthetic data/code/checkpoint release terms need verification."
+    verified_at: "2026-06-30"
+    citation_key: vlk_vision_language_kinematics_2026
+
+  - name: HUMEMBR
+    scope: adjacent
+    kind: model
+    released: "2026-06"
+    venue: "IROS 2026"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2606.30404
+    paper: https://arxiv.org/abs/2606.30404
+    scale: "Human-Centered Memory for Embodied Robots, building structured long-term human-routine memories for embodied question answering and routine-conditioned navigation on physical robots"
+    modalities: [robot-observations, memory, text, trajectories]
+    tasks: [memory-reasoning, navigation, embodied-reasoning, question-answering, robot-learning]
+    release_note: "Fresh arXiv scan 2026-06-30; adjacent robot-memory/navigation work, verify public code/data and license."
+    verified_at: "2026-06-30"
+    citation_key: humembr_2026
+
+  - name: WARP Retarget
+    scope: adjacent
+    kind: model
+    released: "2026-06"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://warp-retarget.github.io/
+    paper: https://arxiv.org/abs/2606.29940
+    scale: "Whole-body-aware retargeting pipeline that converts offline human demonstrations into precise mobile-manipulator trajectories using shoulder-elbow-wrist geometric solving and lazy mobile-base control"
+    modalities: [human-demonstrations, human-motion, trajectories, robot-actions]
+    tasks: [robot-learning, imitation-learning, retargeting, mobile-manipulation, cross-embodiment-transfer]
+    release_note: "Fresh arXiv/project scan 2026-06-30; adjacent human-demonstration retargeting work, verify artifact release and license."
+    verified_at: "2026-06-30"
+    citation_key: warp_retarget_2026
 
   - name: ContactWorld
     scope: adjacent

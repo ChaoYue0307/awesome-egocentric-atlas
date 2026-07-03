@@ -102,7 +102,8 @@ task_families:
       industrial-assembly, physical-action-understanding, interaction-understanding, procedure-understanding,
       step-grounding, task-progress-estimation, anomaly-detection, kitchen-understanding,
       action-recommendation, online-action-detection, short-term-anticipation,
-      mistake-attribution, surgical-understanding, task-progress, object-state-change]
+      mistake-attribution, surgical-understanding, task-progress, object-state-change,
+      action-selection, retail-understanding]
 
   hand-object-interaction:
     label: Hand-object interaction and contact
@@ -132,7 +133,7 @@ task_families:
     aliases: [detection, object-detection, object-recognition, segmentation,
       prompted-segmentation, instance-understanding, gesture-recognition, gesture-grounding,
       relation-reasoning, relations, object-discovery, engagement-detection,
-      cross-view-segmentation]
+      cross-view-segmentation, person-identification]
 
   three-d-and-scene:
     label: 3D, 4D, and scene understanding
@@ -262,7 +263,7 @@ modality_families:
       scene-scans, scene-geometry, scene-graphs, digital-twins, physics,
       calibration, 3d-target-labels, dslr-images, 3d-gaussian-splatting,
       3d-reconstruction, 3d-scene, 4d-scene, geometry, masks,
-      scene-reconstruction, 3d-flow, 3d-assets, spatial-memory, maps]
+      scene-reconstruction, 3d-flow, 3d-assets, spatial-memory, maps, spatial-features]
 
   device-and-labels:
     label: Device formats and labels
@@ -280,4 +281,4 @@ modality_families:
       thermal, v-jepa-features, visual-evidence, wearable-sensors,
       chronological-stream, step-labels, digital-context, demonstrations,
       evaluation, future-state-targets, synthetic-data, simulation, model,
-      object-tracks, wearable-sensing]
+      object-tracks, wearable-sensing, robot-observations]
