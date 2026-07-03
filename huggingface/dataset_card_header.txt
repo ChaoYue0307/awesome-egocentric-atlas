@@ -3,6 +3,8 @@ license: mit
 language:
   - en
 pretty_name: Awesome Egocentric Atlas
+task_categories:
+  - robotics
 size_categories:
   - "n<1K"
 tags:
