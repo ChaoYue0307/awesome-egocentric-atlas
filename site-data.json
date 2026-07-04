@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-07-03",
+    "last_major_audit": "2026-07-04",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,23 +15,23 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 750,
-    "egocentric_resources": 690,
+    "total_resources": 766,
+    "egocentric_resources": 706,
     "adjacent_resources": 60,
     "kind_counts": {
-      "benchmark": 119,
+      "benchmark": 121,
       "collection": 1,
-      "dataset": 151,
-      "model": 381,
+      "dataset": 156,
+      "model": 390,
       "survey": 2,
       "toolkit": 36
     },
     "status_counts": {
       "benchmark": 11,
-      "open": 154,
+      "open": 157,
       "partial": 12,
-      "request": 4,
-      "watch": 509
+      "request": 5,
+      "watch": 521
     }
   },
   "lanes": [
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 191
+      "count": 193
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 192
+      "count": 202
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 289
+      "count": 298
     },
     {
       "id": "memory-reasoning",
@@ -79,7 +79,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 228
+      "count": 232
     },
     {
       "id": "robotics-vla",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 147
+      "count": 150
     },
     {
       "id": "ar-wearables",
@@ -99,7 +99,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 210
+      "count": 221
     }
   ],
   "milestones": [
@@ -520,6 +520,502 @@
       "license": "cc-by-nc-4.0",
       "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample",
       "verified_at": "2026-06-20"
+    },
+    {
+      "name": "Future-Privileged Causal Ego Gaze",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2607.01437",
+      "paper": "https://arxiv.org/abs/2607.01437",
+      "scale": "Controlled causal egocentric gaze-estimation study using a future-aware training branch that is discarded at inference; evaluates EGTEA Gaze+ and Ego4D and finds peak gains around 1.7-3.3 seconds of future context",
+      "tasks": [
+        "gaze-prediction",
+        "streaming-video-understanding",
+        "ar-wearables",
+        "attention-modeling"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "streaming-video"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify code, trained models, and dataset split details before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "NormAct",
+      "kind": "benchmark",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.27826",
+      "paper": "https://arxiv.org/abs/2606.27826",
+      "scale": "Embodied planning benchmark for hidden social-norm compliance in egocentric environments, reporting Goal Achievement, Norm Compliance, and Task Success and showing a large norm-grounding gap in frontier MLLMs",
+      "tasks": [
+        "normative-action-reasoning",
+        "action-planning",
+        "embodied-reasoning",
+        "safety",
+        "benchmark"
+      ],
+      "task_families": [
+        "reasoning-intent-planning",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-observations",
+        "language-instructions",
+        "annotations"
+      ],
+      "release_note": "arXiv scan 2026-07-04; abstract points to a Hugging Face dataset, but the dataset endpoint was not publicly resolvable during verification.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Astra",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2606.06476",
+      "paper": "https://arxiv.org/abs/2606.06476",
+      "scale": "Agentic spatial-reasoning framework coupling an RL-trained VLM policy with a view-consistent world simulator to request imagined novel-view evidence from limited egocentric observations",
+      "tasks": [
+        "spatial-reasoning",
+        "agentic-reasoning",
+        "world-modeling",
+        "view-synthesis",
+        "multimodal-reasoning"
+      ],
+      "task_families": [
+        "reasoning-intent-planning",
+        "memory-and-long-context",
+        "generation-and-world-models",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-observations",
+        "generated-video",
+        "text",
+        "camera-motion"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify code, simulator checkpoints, benchmark assets, and license before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Egocentric-100K",
+      "kind": "dataset",
+      "released": "2025-12",
+      "venue": "Hugging Face",
+      "year": 2025,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/builddotai/Egocentric-100K",
+      "scale": "Manual-labor egocentric video corpus reporting 100,405 hours, 10.8B frames, 2,010,759 clips, WebDataset packaging, intrinsics, and 238 factory directories",
+      "tasks": [
+        "human-demonstrations",
+        "action-recognition",
+        "hand-object-interaction",
+        "robot-learning",
+        "data-collection"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text",
+        "calibration"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/builddotai/Egocentric-100K",
+      "access": "Hugging Face auto-gated access with extra contact and affiliation fields",
+      "release_note": "Hugging Face API scan 2026-07-04; auto-gated full corpus, so keep request status until access terms and download flow are rechecked.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Egocentric-100K Evaluation",
+      "kind": "benchmark",
+      "released": "2025-12",
+      "venue": "Hugging Face",
+      "year": 2025,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/builddotai/Egocentric-100K-Evaluation",
+      "scale": "30K-frame public evaluation set comparing Egocentric-100K, Ego4D, and EPIC-KITCHENS-100 on hand visibility and active manipulation density",
+      "tasks": [
+        "benchmark",
+        "evaluation",
+        "hand-object-interaction",
+        "action-understanding"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "hand-object-interaction",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "egocentric-images",
+        "annotations",
+        "text"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/builddotai/Egocentric-100K-Evaluation",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Manus Egocentric Sample",
+      "kind": "dataset",
+      "released": "2026-01",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/OpenGraphLabs-Research/manus-egocentric-sample",
+      "scale": "20 LeRobot-format egocentric manipulation episodes with Manus glove finger tracking, OAK-D RGB/depth, IMU, per-episode parquet files, depth binaries, and egocentric videos",
+      "tasks": [
+        "robot-learning",
+        "imitation-learning",
+        "hand-tracking",
+        "manipulation",
+        "sensor-fusion"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "depth",
+        "hand-mocap",
+        "imu",
+        "robot-actions"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/OpenGraphLabs-Research/manus-egocentric-sample",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Motion Focus Recognition",
+      "kind": "model",
+      "released": "2026-01",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2601.07154",
+      "paper": "https://arxiv.org/abs/2601.07154",
+      "scale": "Real-time motion-focus recognition for fast-moving egocentric video, estimating wearer locomotion intention from arbitrary first-person video with camera-pose foundation-model features and sliding-batch inference",
+      "tasks": [
+        "activity-recognition",
+        "motion-estimation",
+        "edge-ai",
+        "efficient-inference"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "pose-and-body",
+        "ar-sensing-navigation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "camera-motion",
+        "motion"
+      ],
+      "release_note": "Live arXiv scan 2026-07-04; arXiv reports a collected egocentric action dataset, but public code, data, and license were not verified.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Egocentric Affordance Dataset",
+      "kind": "dataset",
+      "released": "2026-02",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/Kavin60606/egocentric-affordance-dataset",
+      "scale": "48,400 annotated egocentric video frames across cleaning, workshop/DIY, factory work, gardening/outdoor, and medical/healthcare activity categories with Qwen3-VL-2B affordance labels",
+      "tasks": [
+        "affordance",
+        "hand-object-interaction",
+        "object-detection",
+        "action-recognition",
+        "robot-learning"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "detection-segmentation",
+        "action-and-procedure",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "annotations",
+        "text"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/Kavin60606/egocentric-affordance-dataset",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "CIVIL Lifelog Retrieval",
+      "kind": "model",
+      "released": "2025-10",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2510.04010",
+      "paper": "https://arxiv.org/abs/2510.04010",
+      "scale": "Captioning-Integrated Visual Lifelog retrieval system that converts wearable-camera lifelog images into first-person experience captions before text-query retrieval",
+      "tasks": [
+        "lifelogging",
+        "personalized-retrieval",
+        "memory-assistance",
+        "captioning"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "memory-and-long-context",
+        "assistance-and-agents",
+        "video-language"
+      ],
+      "modalities": [
+        "lifelogging-images",
+        "captions",
+        "text"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify caption dataset release, code, and license before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "THOR",
+      "kind": "model",
+      "released": "2025-07",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2507.06442",
+      "paper": "https://arxiv.org/abs/2507.06442",
+      "scale": "Thermal-guided adaptive RGB sampling for wearable hand-object activity monitoring, validated with 14 in-the-wild participants and Ego4D, using about 3% of RGB data while preserving activity segments",
+      "tasks": [
+        "hand-object-interaction",
+        "activity-recognition",
+        "wearable-sensing",
+        "efficient-inference",
+        "healthcare-assistance"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "action-and-procedure",
+        "ar-sensing-navigation",
+        "evaluation-and-tooling",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "thermal",
+        "object-crops"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify wearable hardware notes, code, participant data availability, and license before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Physical Activity VLM Annotation",
+      "kind": "model",
+      "released": "2025-05",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2505.03374",
+      "paper": "https://arxiv.org/abs/2505.03374",
+      "scale": "Compares VLMs and discriminative models for labeling sedentary, light, and moderate-to-vigorous activity from Autographer wearable-camera images across Oxfordshire and Sichuan free-living studies",
+      "tasks": [
+        "activity-recognition",
+        "lifelogging",
+        "wearable-sensing",
+        "domain-generalization"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "ar-sensing-navigation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "action-labels"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify study data access terms and reusable evaluation assets before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Head+Cane Camera Navigation",
+      "kind": "model",
+      "released": "2025-04",
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2504.19345",
+      "paper": "https://arxiv.org/abs/2504.19345",
+      "scale": "Systematic comparison of synchronized head- and cane-mounted cameras for blind last-mile navigation, evaluating SLAM localization and NeRF-style 3D reconstruction across five real environments",
+      "tasks": [
+        "blind-assistance",
+        "navigation",
+        "scene-reconstruction",
+        "sensor-fusion"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "ar-sensing-navigation",
+        "three-d-and-scene"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "wearable-sensing",
+        "scene-reconstruction"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify whether synchronized navigation recordings, reconstruction scripts, or annotations are public.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Audio-Narrated FPV Domain Generalization",
+      "kind": "model",
+      "released": "2024-09",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2409.09611",
+      "paper": "https://arxiv.org/abs/2409.09611",
+      "scale": "Multimodal first-person action-recognition framework using motion, audio, appearance, audio narrations, and audio-visual consistency ratings to improve domain generalization on ARGO1M",
+      "tasks": [
+        "action-recognition",
+        "audio-visual",
+        "domain-generalization",
+        "multimodal-generalization"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "audio-and-social",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "first-person-video",
+        "audio",
+        "narrations",
+        "motion"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify code, ARGO1M split details, and license before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Smart-Glasses Engagement Prediction",
+      "kind": "dataset",
+      "released": "2024-09",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2409.09135",
+      "paper": "https://arxiv.org/abs/2409.09135",
+      "scale": "Smart-glasses dyadic-conversation dataset from 34 participants with self-reported engagement ratings and a multimodal-transcript LLM fusion strategy for behavioral reasoning",
+      "tasks": [
+        "social",
+        "engagement-detection",
+        "multimodal-conversation",
+        "behavior-understanding"
+      ],
+      "task_families": [
+        "audio-and-social",
+        "detection-segmentation",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "smart-glasses",
+        "audio",
+        "transcripts",
+        "annotations"
+      ],
+      "release_note": "arXiv scan 2026-07-04; paper says data/features will be public, but the release URL and license still need verification.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "Egocentric 360 VideoQA for Visual Impairment",
+      "kind": "dataset",
+      "released": "2024-05",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2405.19794",
+      "paper": "https://arxiv.org/abs/2405.19794",
+      "scale": "Visual-question-answering dataset captured with a 360-degree egocentric wearable camera for multiple real-life obstacles faced by people with visual impairments",
+      "tasks": [
+        "assistive-videoqa",
+        "360-video",
+        "blind-assistance",
+        "video-qa"
+      ],
+      "task_families": [
+        "question-answering",
+        "ar-sensing-navigation",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "first-person-360-video",
+        "qa",
+        "annotations"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify dataset download, consent/access terms, and license before marking open.",
+      "verified_at": "2026-07-04"
+    },
+    {
+      "name": "AIM-2 Food Ingestion Environment",
+      "kind": "model",
+      "released": "2024-05",
+      "venue": "arXiv",
+      "year": 2024,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2405.07827",
+      "paper": "https://arxiv.org/abs/2405.07827",
+      "scale": "Two-stage fine-tuning and transfer-learning method for recognizing ingestion environment from AIM-2 egocentric wearable-camera images in the UA Free Living Study",
+      "tasks": [
+        "nutrition-estimation",
+        "activity-recognition",
+        "lifelogging",
+        "wearable-sensing"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "action-and-procedure",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-images",
+        "nutrition-labels"
+      ],
+      "release_note": "arXiv scan 2026-07-04; verify UA Free Living Study data access and reusable model artifacts before marking open.",
+      "verified_at": "2026-07-04"
     },
     {
       "name": "LIME",
