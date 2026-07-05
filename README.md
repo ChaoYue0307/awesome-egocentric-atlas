@@ -33,7 +33,7 @@
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
   <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-713-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-716-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -42,7 +42,7 @@
 
 **Awesome Egocentric Atlas** is a practical catalog of egocentric (first-person) datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
 
-**Updated:** 2026-07-05.
+**Updated:** 2026-07-06.
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
@@ -85,7 +85,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 | Signal | What it means for readers |
 | :--- | :--- |
-| 713 egocentric resources | 162 datasets, 122 benchmarks, 390 models, and 36 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. 60 related non-egocentric resources are listed separately. |
+| 716 egocentric resources | 162 datasets, 122 benchmarks, 393 models, and 36 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. 60 related non-egocentric resources are listed separately. |
 | 6 research areas | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) is the source for type, year, status, URL, tasks, and provenance — and CI keeps the public artifacts in sync. |
@@ -702,8 +702,11 @@ Open models, baselines, and loaders you can build on directly.
 | Watch Remember Reason | 2026-06 | arXiv | Human-view long-video understanding framework for MLLM watching, memory, and reasoning | [Paper](https://arxiv.org/abs/2606.07433) |
 | World Action Models | 2026-05 | arXiv | Survey and taxonomy linking VLA, world models, portable human demonstrations, simulation, and internet-scale egocentric video | [Paper](https://arxiv.org/abs/2605.12090) |
 | Pro2Assist | 2026-05 | arXiv | Continuous step-aware proactive assistance framework with multimodal egocentric perception and AR-glasses evaluation | [Paper](https://arxiv.org/abs/2605.04227) |
+| T-REN | 2026-04 | arXiv | Text-aligned region-token encoder that reduces long-video token counts and improves Ego4D video object localization | [GitHub](https://github.com/savya08/T-REN) |
+| V-JEPA 2.1 | 2026-03 | arXiv | Dense self-supervised video representation model with strong Ego4D STA, EPIC-KITCHENS anticipation, and robot-grasping transfer results | [Paper](https://arxiv.org/abs/2603.14482) |
 | EgoViT Object SSL | 2026-03 | CVPR 2026 | Self-supervised object representation learning from continuous, uncurated first-person video | [Paper](https://arxiv.org/abs/2603.13912) |
 | RynnBrain | 2026-02 | arXiv | Open embodied foundation model family with variants for egocentric understanding, localization, physical reasoning, planning, navigation, and VLA | [Paper](https://arxiv.org/abs/2602.14979) |
+| Central Vision SSL | 2026-02 | arXiv | Ego4D-derived gaze-centered crops and temporal-slowness SSL for object representation learning from human-like visual experience | [GitHub](https://github.com/t9s9/central-vision-ssl) |
 | PhysBrain | 2025-12 | arXiv | Uses human egocentric data to bridge vision-language models toward physical intelligence and embodied control | [Paper](https://arxiv.org/abs/2512.16793) |
 | EgoM2P | 2025-06 | ICCV 2025 | Egocentric multimodal multitask pretraining over RGB, depth, gaze, and camera pose | [Paper](https://arxiv.org/abs/2506.07886) |
 | Exo2Ego / Ego-ExoClip | 2025-03 | AAAI 2026 | Transfers exocentric MLLM knowledge into egocentric video understanding with 1.1M synchronized ego-exo clip-text pairs and EgoIT instruction tuning | [Paper](https://arxiv.org/abs/2503.09143) |

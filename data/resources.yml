@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-07-05"
+  last_major_audit: "2026-07-06"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -2014,6 +2014,20 @@ resources:
     tasks: [vla, robot-learning, manipulation, action-understanding, data-collection]
     verified_at: "2026-06-22"
     release_note: "Live source checked 2026-06-22; kept on watch until data access, license, and reproducible release metadata are confirmed."
+  - name: T-REN
+    kind: model
+    released: "2026-04"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://arxiv.org/abs/2604.18573
+    paper: https://arxiv.org/abs/2604.18573
+    code: https://github.com/savya08/T-REN
+    scale: "Text-aligned region-token encoder that improves dense vision-language alignment while reducing long-video token counts, including reported gains on Ego4D video object localization"
+    modalities: [video, egocentric-video, text]
+    tasks: [video-language, object-grounding, representation-learning, efficient-inference]
+    verified_at: "2026-07-06"
+    release_note: "Live arXiv scan 2026-07-06; paper reports public code and model, with repository license/checkpoint details to keep under review."
   - name: EgoViT Object SSL
     kind: model
     released: "2026-03"
@@ -2027,6 +2041,19 @@ resources:
     tasks: [representation-learning, object-discovery, object-recognition, egocentric-pretraining]
     verified_at: "2026-06-22"
     release_note: "Live source checked 2026-06-22; kept on watch until public code, checkpoints, and data-processing assets are confirmed."
+  - name: V-JEPA 2.1
+    kind: model
+    released: "2026-03"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2603.14482
+    paper: https://arxiv.org/abs/2603.14482
+    scale: "Dense self-supervised video representation model reporting strong Ego4D short-term object-interaction anticipation and EPIC-KITCHENS high-level action-anticipation results, plus robot-grasping transfer"
+    modalities: [video, egocentric-video, dense-features]
+    tasks: [representation-learning, world-modeling, action-anticipation, short-term-object-interaction-anticipation, robot-learning]
+    verified_at: "2026-07-06"
+    release_note: "Live arXiv scan 2026-07-06; included for egocentric benchmark and robot-transfer signal, while public checkpoints/code remain to be verified."
   - name: CoMe-VLA
     kind: model
     released: "2026-02"
@@ -2040,6 +2067,21 @@ resources:
     tasks: [vla, active-perception, manipulation, robot-learning, memory-and-long-context]
     verified_at: "2026-06-22"
     release_note: "Live source checked 2026-06-22; kept on watch until public model, code, and data release terms are confirmed."
+  - name: Central Vision SSL
+    kind: model
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://arxiv.org/abs/2602.04462
+    paper: https://arxiv.org/abs/2602.04462
+    code: https://github.com/t9s9/central-vision-ssl
+    derived_from: Ego4D
+    scale: "Time-contrastive self-supervised object-representation learning from Ego4D-derived gaze-centered crops that mimic central vision and temporal slowness in human visual experience"
+    modalities: [egocentric-video, gaze, object-crops]
+    tasks: [representation-learning, object-recognition, gaze, child-view-learning]
+    verified_at: "2026-07-06"
+    release_note: "Live arXiv scan 2026-07-06; code link is reported by the paper, with repository license and release stability to keep under review."
   - name: RynnBrain
     kind: model
     released: "2026-02"

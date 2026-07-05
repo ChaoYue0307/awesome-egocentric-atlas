@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-07-05",
+    "last_major_audit": "2026-07-06",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,23 +15,23 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 773,
-    "egocentric_resources": 713,
+    "total_resources": 776,
+    "egocentric_resources": 716,
     "adjacent_resources": 60,
     "kind_counts": {
       "benchmark": 122,
       "collection": 1,
       "dataset": 162,
-      "model": 390,
+      "model": 393,
       "survey": 2,
       "toolkit": 36
     },
     "status_counts": {
       "benchmark": 11,
-      "open": 162,
+      "open": 164,
       "partial": 12,
       "request": 7,
-      "watch": 521
+      "watch": 522
     }
   },
   "lanes": [
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 195
+      "count": 198
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 206
+      "count": 207
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 302
+      "count": 303
     },
     {
       "id": "memory-reasoning",
@@ -79,7 +79,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 232
+      "count": 233
     },
     {
       "id": "robotics-vla",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 155
+      "count": 156
     },
     {
       "id": "ar-wearables",
@@ -99,7 +99,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 221
+      "count": 222
     }
   ],
   "milestones": [
@@ -4491,6 +4491,38 @@
       "verified_at": "2026-06-22"
     },
     {
+      "name": "T-REN",
+      "kind": "model",
+      "released": "2026-04",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2604.18573",
+      "paper": "https://arxiv.org/abs/2604.18573",
+      "code": "https://github.com/savya08/T-REN",
+      "scale": "Text-aligned region-token encoder that improves dense vision-language alignment while reducing long-video token counts, including reported gains on Ego4D video object localization",
+      "tasks": [
+        "video-language",
+        "object-grounding",
+        "representation-learning",
+        "efficient-inference"
+      ],
+      "task_families": [
+        "video-language",
+        "grounding-localization",
+        "foundation-and-representation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "video",
+        "egocentric-video",
+        "text"
+      ],
+      "release_note": "Live arXiv scan 2026-07-06; paper reports public code and model, with repository license/checkpoint details to keep under review.",
+      "verified_at": "2026-07-06"
+    },
+    {
       "name": "EgoViT Object SSL",
       "kind": "model",
       "released": "2026-03",
@@ -4519,6 +4551,38 @@
       ],
       "release_note": "Live source checked 2026-06-22; kept on watch until public code, checkpoints, and data-processing assets are confirmed.",
       "verified_at": "2026-06-22"
+    },
+    {
+      "name": "V-JEPA 2.1",
+      "kind": "model",
+      "released": "2026-03",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2603.14482",
+      "paper": "https://arxiv.org/abs/2603.14482",
+      "scale": "Dense self-supervised video representation model reporting strong Ego4D short-term object-interaction anticipation and EPIC-KITCHENS high-level action-anticipation results, plus robot-grasping transfer",
+      "tasks": [
+        "representation-learning",
+        "world-modeling",
+        "action-anticipation",
+        "short-term-object-interaction-anticipation",
+        "robot-learning"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "generation-and-world-models",
+        "action-and-procedure",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "video",
+        "egocentric-video",
+        "dense-features"
+      ],
+      "release_note": "Live arXiv scan 2026-07-06; included for egocentric benchmark and robot-transfer signal, while public checkpoints/code remain to be verified.",
+      "verified_at": "2026-07-06"
     },
     {
       "name": "CoMe-VLA",
@@ -4550,6 +4614,38 @@
       ],
       "release_note": "Live source checked 2026-06-22; kept on watch until public model, code, and data release terms are confirmed.",
       "verified_at": "2026-06-22"
+    },
+    {
+      "name": "Central Vision SSL",
+      "kind": "model",
+      "released": "2026-02",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2602.04462",
+      "paper": "https://arxiv.org/abs/2602.04462",
+      "code": "https://github.com/t9s9/central-vision-ssl",
+      "derived_from": "Ego4D",
+      "scale": "Time-contrastive self-supervised object-representation learning from Ego4D-derived gaze-centered crops that mimic central vision and temporal slowness in human visual experience",
+      "tasks": [
+        "representation-learning",
+        "object-recognition",
+        "gaze",
+        "child-view-learning"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "detection-segmentation",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "gaze",
+        "object-crops"
+      ],
+      "release_note": "Live arXiv scan 2026-07-06; code link is reported by the paper, with repository license and release stability to keep under review.",
+      "verified_at": "2026-07-06"
     },
     {
       "name": "RynnBrain",
