@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-07-04"
+  last_major_audit: "2026-07-05"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,143 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Full live scan additions (2026-07-05): Hugging Face dataset sweep ---
+
+  - name: USA Egocentric
+    kind: dataset
+    released: "2026-07"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/Grably/usa-egocentric
+    data: https://huggingface.co/datasets/Grably/usa-egocentric
+    scale: "Three iPhone kitchen-manipulation episodes with normalized RGB videos, raw videos, camera calibration and trajectory files, MediaPipe and HaMeR hand outputs, action segments, contact/object tracks on the strongest run, review manifests, and quality reports"
+    modalities: [egocentric-video, hand-pose, object-tracks, camera-trajectory, annotations, calibration]
+    tasks: [robot-learning, imitation-learning, hand-object-interaction, manipulation, data-conversion]
+    created_by: Grably
+    released_by: Grably on Hugging Face
+    publisher: Hugging Face
+    license: other
+    license_url: https://huggingface.co/datasets/Grably/usa-egocentric
+    verified_at: "2026-07-05"
+    citation_key: usa_egocentric_2026
+
+  - name: TimeScribe Egocentric Annotations
+    kind: dataset
+    released: "2026-06"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/play0718/timescribe-egocentric-annotations
+    data: https://huggingface.co/datasets/play0718/timescribe-egocentric-annotations
+    scale: "Manual human dense-caption annotations for eight egocentric videos, with frame-aligned micro-events, Chinese captions, English mirrors where available, per-video JSON, manifest, and source clips"
+    modalities: [egocentric-video, captions, annotations, text]
+    tasks: [captioning, hand-action-recognition, procedure-understanding, annotation-tooling]
+    released_by: play0718 on Hugging Face
+    publisher: Hugging Face
+    access: "Hugging Face manual-gated dataset"
+    license: "cc-by-nc-4.0"
+    license_url: https://huggingface.co/datasets/play0718/timescribe-egocentric-annotations
+    verified_at: "2026-07-05"
+    release_note: "Hugging Face API scan 2026-07-05; manual-gated package, so keep request status until access approval and reuse terms are rechecked."
+    citation_key: timescribe_egocentric_annotations_2026
+
+  - name: SIGNIQ Egocentric Hand-Pose Sample
+    kind: dataset
+    released: "2026-06"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample
+    data: https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample
+    scale: "Five short head-mounted GoPro manipulation clips at 1280x720 and 30 fps, packaged with Label Studio import JSON and metadata for hand-pose and action-segment annotation workflows"
+    modalities: [egocentric-video, annotations, text]
+    tasks: [hand-tracking, manipulation, imitation-learning, annotation-tooling, action-segmentation]
+    released_by: jackji on Hugging Face
+    publisher: Hugging Face
+    license: "cc-by-4.0"
+    license_url: https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample
+    verified_at: "2026-07-05"
+    citation_key: signiq_egocentric_handpose_sample_2026
+
+  - name: Grid Egocentric Residential Samples
+    kind: dataset
+    released: "2026-05"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/aryan56789gridai/grid-egocentric-residential-samples
+    data: https://huggingface.co/datasets/aryan56789gridai/grid-egocentric-residential-samples
+    scale: "Public preview pack of first-person residential manipulation recordings, including full-length household samples at 1920x1080, 30 fps, H.265/HEVC video"
+    modalities: [egocentric-video]
+    tasks: [robot-learning, imitation-learning, manipulation, human-demonstrations]
+    created_by: Grid AI
+    released_by: aryan56789gridai on Hugging Face
+    publisher: Hugging Face
+    license: "cc-by-4.0"
+    license_url: https://huggingface.co/datasets/aryan56789gridai/grid-egocentric-residential-samples
+    verified_at: "2026-07-05"
+    citation_key: grid_egocentric_residential_samples_2026
+
+  - name: Industrial Workplace Egocentric FHD Samples
+    kind: dataset
+    released: "2026-05"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/TrainThemAI/Industrial-Workplace-Egocentric-FHD-Samples
+    data: https://huggingface.co/datasets/TrainThemAI/Industrial-Workplace-Egocentric-FHD-Samples
+    scale: "21 rights-cleared first-person industrial and workplace clips captured with a head-mounted smartphone, with paired JSON metadata across factory, construction, services, retail, transit, and food-service domains"
+    modalities: [first-person-video, text, annotations]
+    tasks: [human-demonstrations, vla, robot-learning, world-modeling, data-collection]
+    created_by: TrainThemAI
+    released_by: TrainThemAI on Hugging Face
+    publisher: Hugging Face
+    license: mit
+    license_url: https://huggingface.co/datasets/TrainThemAI/Industrial-Workplace-Egocentric-FHD-Samples
+    verified_at: "2026-07-05"
+    citation_key: industrial_workplace_egocentric_fhd_samples_2026
+
+  - name: Egocentric-10K
+    kind: dataset
+    released: "2025-11"
+    venue: "Hugging Face"
+    year: 2025
+    status: request
+    url: https://huggingface.co/datasets/builddotai/Egocentric-10K
+    data: https://huggingface.co/datasets/builddotai/Egocentric-10K
+    scale: "Factory-only egocentric video corpus reporting 10,000 hours and 1.08B frames, WebDataset-style tar shards, intrinsics files, and companion hand-visibility / active-manipulation evaluation data"
+    modalities: [egocentric-video, text, calibration]
+    tasks: [human-demonstrations, action-recognition, hand-object-interaction, robot-learning, data-collection]
+    created_by: Builddotai
+    released_by: builddotai on Hugging Face
+    publisher: Hugging Face
+    access: "Hugging Face auto-gated access with extra contact and affiliation fields"
+    license: apache-2.0
+    license_url: https://huggingface.co/datasets/builddotai/Egocentric-10K
+    verified_at: "2026-07-05"
+    release_note: "Hugging Face API scan 2026-07-05; auto-gated full corpus, so keep request status until access terms and download flow are rechecked."
+    citation_key: egocentric_10k_2025
+
+  - name: Egocentric-10K Evaluation
+    kind: benchmark
+    released: "2025-11"
+    venue: "Hugging Face"
+    year: 2025
+    status: open
+    url: https://huggingface.co/datasets/builddotai/Egocentric-10K-Evaluation
+    data: https://huggingface.co/datasets/builddotai/Egocentric-10K-Evaluation
+    scale: "30K-frame public comparison set with 10K sampled frames each from Egocentric-10K, Ego4D, and EPIC-KITCHENS-100, labeled for hand visibility and active manipulation with published prompts"
+    modalities: [egocentric-video, egocentric-images, annotations, text]
+    tasks: [benchmark, evaluation, hand-object-interaction, action-understanding]
+    created_by: Builddotai
+    released_by: builddotai on Hugging Face
+    publisher: Hugging Face
+    license: apache-2.0
+    license_url: https://huggingface.co/datasets/builddotai/Egocentric-10K-Evaluation
+    verified_at: "2026-07-05"
+    citation_key: egocentric_10k_evaluation_2025
 
   # --- Full live scan additions (2026-07-04): arXiv and Hugging Face sweep ---
 

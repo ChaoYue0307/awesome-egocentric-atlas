@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-07-04",
+    "last_major_audit": "2026-07-05",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,22 +15,22 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 766,
-    "egocentric_resources": 706,
+    "total_resources": 773,
+    "egocentric_resources": 713,
     "adjacent_resources": 60,
     "kind_counts": {
-      "benchmark": 121,
+      "benchmark": 122,
       "collection": 1,
-      "dataset": 156,
+      "dataset": 162,
       "model": 390,
       "survey": 2,
       "toolkit": 36
     },
     "status_counts": {
       "benchmark": 11,
-      "open": 157,
+      "open": 162,
       "partial": 12,
-      "request": 5,
+      "request": 7,
       "watch": 521
     }
   },
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 193
+      "count": 195
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 202
+      "count": 206
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 298
+      "count": 302
     },
     {
       "id": "memory-reasoning",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 150
+      "count": 155
     },
     {
       "id": "ar-wearables",
@@ -520,6 +520,225 @@
       "license": "cc-by-nc-4.0",
       "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample",
       "verified_at": "2026-06-20"
+    },
+    {
+      "name": "USA Egocentric",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/Grably/usa-egocentric",
+      "scale": "Three iPhone kitchen-manipulation episodes with normalized RGB videos, raw videos, camera calibration and trajectory files, MediaPipe and HaMeR hand outputs, action segments, contact/object tracks on the strongest run, review manifests, and quality reports",
+      "tasks": [
+        "robot-learning",
+        "imitation-learning",
+        "hand-object-interaction",
+        "manipulation",
+        "data-conversion"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "object-tracks",
+        "camera-trajectory",
+        "annotations",
+        "calibration"
+      ],
+      "license": "other",
+      "license_url": "https://huggingface.co/datasets/Grably/usa-egocentric",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "TimeScribe Egocentric Annotations",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/play0718/timescribe-egocentric-annotations",
+      "scale": "Manual human dense-caption annotations for eight egocentric videos, with frame-aligned micro-events, Chinese captions, English mirrors where available, per-video JSON, manifest, and source clips",
+      "tasks": [
+        "captioning",
+        "hand-action-recognition",
+        "procedure-understanding",
+        "annotation-tooling"
+      ],
+      "task_families": [
+        "video-language",
+        "action-and-procedure",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "captions",
+        "annotations",
+        "text"
+      ],
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://huggingface.co/datasets/play0718/timescribe-egocentric-annotations",
+      "access": "Hugging Face manual-gated dataset",
+      "release_note": "Hugging Face API scan 2026-07-05; manual-gated package, so keep request status until access approval and reuse terms are rechecked.",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "SIGNIQ Egocentric Hand-Pose Sample",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample",
+      "scale": "Five short head-mounted GoPro manipulation clips at 1280x720 and 30 fps, packaged with Label Studio import JSON and metadata for hand-pose and action-segment annotation workflows",
+      "tasks": [
+        "hand-tracking",
+        "manipulation",
+        "imitation-learning",
+        "annotation-tooling",
+        "action-segmentation"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "robotics-and-vla",
+        "evaluation-and-tooling",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations",
+        "text"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "Grid Egocentric Residential Samples",
+      "kind": "dataset",
+      "released": "2026-05",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/aryan56789gridai/grid-egocentric-residential-samples",
+      "scale": "Public preview pack of first-person residential manipulation recordings, including full-length household samples at 1920x1080, 30 fps, H.265/HEVC video",
+      "tasks": [
+        "robot-learning",
+        "imitation-learning",
+        "manipulation",
+        "human-demonstrations"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/aryan56789gridai/grid-egocentric-residential-samples",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "Industrial Workplace Egocentric FHD Samples",
+      "kind": "dataset",
+      "released": "2026-05",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/TrainThemAI/Industrial-Workplace-Egocentric-FHD-Samples",
+      "scale": "21 rights-cleared first-person industrial and workplace clips captured with a head-mounted smartphone, with paired JSON metadata across factory, construction, services, retail, transit, and food-service domains",
+      "tasks": [
+        "human-demonstrations",
+        "vla",
+        "robot-learning",
+        "world-modeling",
+        "data-collection"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "first-person-video",
+        "text",
+        "annotations"
+      ],
+      "license": "mit",
+      "license_url": "https://huggingface.co/datasets/TrainThemAI/Industrial-Workplace-Egocentric-FHD-Samples",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "Egocentric-10K",
+      "kind": "dataset",
+      "released": "2025-11",
+      "venue": "Hugging Face",
+      "year": 2025,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/builddotai/Egocentric-10K",
+      "scale": "Factory-only egocentric video corpus reporting 10,000 hours and 1.08B frames, WebDataset-style tar shards, intrinsics files, and companion hand-visibility / active-manipulation evaluation data",
+      "tasks": [
+        "human-demonstrations",
+        "action-recognition",
+        "hand-object-interaction",
+        "robot-learning",
+        "data-collection"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "text",
+        "calibration"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/builddotai/Egocentric-10K",
+      "access": "Hugging Face auto-gated access with extra contact and affiliation fields",
+      "release_note": "Hugging Face API scan 2026-07-05; auto-gated full corpus, so keep request status until access terms and download flow are rechecked.",
+      "verified_at": "2026-07-05"
+    },
+    {
+      "name": "Egocentric-10K Evaluation",
+      "kind": "benchmark",
+      "released": "2025-11",
+      "venue": "Hugging Face",
+      "year": 2025,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/builddotai/Egocentric-10K-Evaluation",
+      "scale": "30K-frame public comparison set with 10K sampled frames each from Egocentric-10K, Ego4D, and EPIC-KITCHENS-100, labeled for hand visibility and active manipulation with published prompts",
+      "tasks": [
+        "benchmark",
+        "evaluation",
+        "hand-object-interaction",
+        "action-understanding"
+      ],
+      "task_families": [
+        "evaluation-and-tooling",
+        "hand-object-interaction",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "egocentric-images",
+        "annotations",
+        "text"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/builddotai/Egocentric-10K-Evaluation",
+      "verified_at": "2026-07-05"
     },
     {
       "name": "Future-Privileged Causal Ego Gaze",
