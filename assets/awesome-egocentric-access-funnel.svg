@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
   <title id="title">Egocentric resources by access state</title>
-  <desc id="desc">A proportional bar snapshot of the 716 egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
+  <desc id="desc">A proportional bar snapshot of the 724 egocentric resources by public-access state: open, watch, partial, benchmark, and request. Bar lengths are generated from the latest catalog counts.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#fbfdff"/>
@@ -31,7 +31,7 @@
   <rect width="1280" height="520" fill="url(#dots)"/>
 
   <text class="kicker" x="70" y="58">ACCESS STATUS</text>
-  <text class="title ink" x="70" y="102">716 egocentric resources by access state</text>
+  <text class="title ink" x="70" y="102">724 egocentric resources by access state</text>
   <text class="subtitle" x="70" y="134">Bar lengths are proportional to live status counts. Labels stay outside the bars so small categories remain readable.</text>
 
   <line class="tick" x1="300" y1="162" x2="300" y2="174"/>
@@ -40,10 +40,10 @@
   <text class="scale" x="860.0" y="156" text-anchor="middle">max 522</text>
 
   <g>
-  <text class="rowlabel" x="70" y="213">open · 164</text>
+  <text class="rowlabel" x="70" y="213">open · 170</text>
   <rect class="rail" x="300" y="186" width="560" height="40" rx="12"/>
-  <rect class="fill" x="300" y="186" width="175.9" height="40" rx="12" fill="#00a6b2"/>
-  <text class="value" x="888.0" y="213">22.9%</text>
+  <rect class="fill" x="300" y="186" width="182.4" height="40" rx="12" fill="#00a6b2"/>
+  <text class="value" x="888.0" y="213">23.5%</text>
   <text class="gloss" x="986.0" y="213">usable today</text>
 </g>
 
@@ -51,7 +51,7 @@
   <text class="rowlabel" x="70" y="277">watch · 522</text>
   <rect class="rail" x="300" y="250" width="560" height="40" rx="12"/>
   <rect class="fill" x="300" y="250" width="560" height="40" rx="12" fill="#9aa7af"/>
-  <text class="value" x="888.0" y="277">72.9%</text>
+  <text class="value" x="888.0" y="277">72.1%</text>
   <text class="gloss" x="986.0" y="277">verify before use</text>
 </g>
 
@@ -72,10 +72,10 @@
 </g>
 
 <g>
-  <text class="rowlabel" x="70" y="469">request · 7</text>
+  <text class="rowlabel" x="70" y="469">request · 9</text>
   <rect class="rail" x="300" y="442" width="560" height="40" rx="12"/>
-  <rect class="fill" x="300" y="442" width="8" height="40" rx="12" fill="#d98f1f"/>
-  <text class="value" x="888.0" y="469">1.0%</text>
+  <rect class="fill" x="300" y="442" width="9.7" height="40" rx="12" fill="#d98f1f"/>
+  <text class="value" x="888.0" y="469">1.2%</text>
   <text class="gloss" x="986.0" y="469">license / approval needed</text>
 </g>
 

@@ -83,6 +83,70 @@
     },
     {
       "@type": "Dataset",
+      "name": "Lo6yu Egocentric RGB-D + EMG/IMU",
+      "url": "https://huggingface.co/datasets/Lo6yu/egocentric_dataset",
+      "description": "Eight first-person household-activity packages, about 30.1 GB total, with RGB-D video, wrist EMG/IMU, hand keypoints, object masks, hand-object contact, per-finger force annotations, semantic action segments, and training-ready exports",
+      "keywords": "robot-learning, imitation-learning, manipulation, hand-object-interaction, action-segmentation, sensor-fusion, contact-understanding",
+      "license": "https://huggingface.co/datasets/Lo6yu/egocentric_dataset"
+    },
+    {
+      "@type": "Dataset",
+      "name": "RoboX Egocentric Collection",
+      "url": "https://huggingface.co/datasets/RoboXTechnologies/RoboX-Egocentric-Collection-v0.2",
+      "description": "Auto-gated crowdsourced first-person robotics collection with 7,342 annotated clips across grasping, daily activities, scene captures, and navigation; includes videos, metadata, hand keypoints, object tracks, action segments, IMU/camera-pos",
+      "keywords": "robot-learning, imitation-learning, manipulation, navigation, scene-understanding, action-segmentation, hand-object-interaction",
+      "license": "https://huggingface.co/datasets/RoboXTechnologies/RoboX-Egocentric-Collection-v0.2"
+    },
+    {
+      "@type": "Dataset",
+      "name": "WhissleAI Egocentric Activity Sample",
+      "url": "https://huggingface.co/datasets/WhissleAI/egocentric-activity-sample",
+      "description": "Small Ego4D-style prototyping sample with 19 first-person 540p clips, about 9.5 minutes total, 99 narrations, 57 NLQ queries, 19 moment annotations, 57 FHO action records, and bundled taxonomy/metadata",
+      "keywords": "action-recognition, natural-language-query, moment-query, captioning, video-qa, annotation-tooling",
+      "license": "https://huggingface.co/datasets/WhissleAI/egocentric-activity-sample"
+    },
+    {
+      "@type": "Dataset",
+      "name": "OBayData Egocentric Dexterous Manipulation Demo",
+      "url": "https://huggingface.co/datasets/obaydata/egocentric-dexterous-manipulation-demo",
+      "description": "Public demo with 500 train and 100 test manipulation sessions, synchronized head-mounted and dual wrist videos, 3D hand joints, camera extrinsics, action labels, language annotations, and metadata for dexterous manipulation quality review",
+      "keywords": "robot-learning, dexterous-manipulation, imitation-learning, hand-object-interaction, action-segmentation, language-grounding",
+      "license": "https://huggingface.co/datasets/obaydata/egocentric-dexterous-manipulation-demo"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Kriya-Egocentric-100K",
+      "url": "https://huggingface.co/datasets/ankk98/kriya-egocentric-100k",
+      "description": "Preview annotation subset for Egocentric-100K with Action100M-style hierarchical temporal action trees, one JSON file per video clip, video metadata, segment nodes, and LLM-generated action descriptions",
+      "keywords": "action-segmentation, procedure-understanding, captioning, annotation-tooling, human-demonstrations",
+      "license": "https://huggingface.co/datasets/ankk98/kriya-egocentric-100k"
+    },
+    {
+      "@type": "Dataset",
+      "name": "HoyerChou Egocentric Bimanual Videos",
+      "url": "https://huggingface.co/datasets/HoyerChou/EgocentricVideos",
+      "description": "YOTO/YOTO++ bimanual manipulation release with three raw first-person task videos, 119 segmented short demonstrations, 241 rows, about 973 MB total, and extracted MANO hand meshes, 3D keypoints, camera calibration, and camera/world transfor",
+      "keywords": "bimanual-manipulation, robot-learning, imitation-learning, hand-object-interaction, hand-tracking",
+      "license": "https://huggingface.co/datasets/HoyerChou/EgocentricVideos"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Egocentric Specialties",
+      "url": "https://huggingface.co/datasets/ThisIsPepper/EgocentricSpecialties",
+      "description": "Auto-gated skilled-jewelry manufacturing dataset card describing synchronized egocentric and top-down videos for diamond setting and specialty manufacturing workflows",
+      "keywords": "skilled-activity, industrial-assembly, robot-learning, imitation-learning, hand-object-interaction",
+      "license": "https://huggingface.co/datasets/ThisIsPepper/EgocentricSpecialties"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Egocentric Adjust Bottle LeRobot",
+      "url": "https://huggingface.co/datasets/suz22/egocentric_adjust_bottle",
+      "description": "LeRobot-format human_mano adjust-bottle task dataset with 500 episodes, 36,897 frames at 15 fps, image, text, and timeseries fields, chunked Parquet files, and video exports",
+      "keywords": "robot-learning, manipulation, imitation-learning, data-conversion, sample-data",
+      "license": "https://huggingface.co/datasets/suz22/egocentric_adjust_bottle"
+    },
+    {
+      "@type": "Dataset",
       "name": "SIGNIQ Egocentric Hand-Pose Sample",
       "url": "https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample",
       "description": "Five short head-mounted GoPro manipulation clips at 1280x720 and 30 fps, packaged with Label Studio import JSON and metadata for hand-pose and action-segment annotation workflows",
@@ -1261,11 +1325,11 @@
           </div>
           <dl class="stat-strip" aria-label="Atlas summary">
             <div>
-              <dt data-stat="egocentric_resources">716</dt>
+              <dt data-stat="egocentric_resources">724</dt>
               <dd data-i18n="stat.resources">egocentric resources</dd>
             </div>
             <div>
-              <dt data-kind="dataset">162</dt>
+              <dt data-kind="dataset">170</dt>
               <dd data-i18n="stat.datasets">datasets</dd>
             </div>
             <div>
@@ -1291,7 +1355,7 @@
           <img src="assets/awesome-egocentric-atlas-cover.png" width="1672" height="941" decoding="async" fetchpriority="high" alt="Technical illustration of a first-person egocentric AI atlas">
           <div class="media-caption">
             <span data-i18n="media.caption">First-person research resources</span>
-            <span data-updated>Updated 2026-07-06</span>
+            <span data-updated>Updated 2026-07-07</span>
           </div>
         </div>
       </section>
