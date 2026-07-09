@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-07-08"
+  last_major_audit: "2026-07-09"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,258 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Full live scan additions (2026-07-09): arXiv, Hugging Face, and web sweep ---
+
+  - name: LingBot-Video
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.07675
+    paper: https://arxiv.org/abs/2607.07675
+    scale: "Mixture-of-Experts DiT video pretraining paradigm for embodied intelligence, using a data-profiling engine that augments internet videos with robot-oriented manipulation, navigation, and egocentric-perspective footage plus physically grounded reward alignment"
+    modalities: [video, generated-video, egocentric-video, robot-camera-video, robot-actions]
+    tasks: [foundation-video, world-modeling, embodied-ai, robot-learning, video-generation, efficient-inference]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; paper calls LingBot-Video open source, but code/checkpoint availability, model license, and data terms still need repository-level verification before marking open."
+    citation_key: lingbot_video_2026
+
+  - name: Ego3DLM / Ego-Human Motion Prediction
+    kind: model
+    released: "2026-07"
+    venue: "ECCV 2026"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.07001
+    paper: https://arxiv.org/abs/2607.07001
+    scale: "3D-aware LLM for egocentric human motion prediction that jointly decodes past pose, future pose, past narration, and future narration from three-point tracking, 3D scene features, and egocentric video; evaluated on Nymeria"
+    modalities: [egocentric-video, 3d-scene, 3d-human-motion, language, trajectories]
+    tasks: [human-motion, pose, trajectory-prediction, motion-language, future-prediction, ar-vr]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; accepted to ECCV 2026 with a project page, but code/model/data release and license still need verification."
+    citation_key: ego3dlm_2026
+
+  - name: CoMind
+    kind: dataset
+    released: "2026-07"
+    venue: "ECCV 2026"
+    year: 2026
+    status: watch
+    url: https://comind.ethz.ch/
+    paper: https://arxiv.org/abs/2607.06691
+    data: https://comind.ethz.ch/#download
+    scale: "Dual-view egocentric and exocentric collaborative-cooking dataset with two synchronized head-mounted cameras, two exocentric views, high-quality audio, gaze tracking, 3D scene scans, object scans, action/hand/object/gaze annotations, and benchmarks for joint attention, socially conditioned object-interaction anticipation, and collaborative handover"
+    modalities: [egocentric-video, exocentric-video, audio, gaze, scene-scans, object-meshes, 6dof, annotations]
+    tasks: [social-reasoning, theory-of-mind, visual-grounding, action-anticipation, interaction-understanding]
+    verified_at: "2026-07-09"
+    release_note: "arXiv and project-page scan 2026-07-09; project page says download is coming soon, so keep watch until the dataset package and license are public."
+    citation_key: comind_2026
+
+  - name: LingBot-World 2.0
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.07534
+    paper: https://arxiv.org/abs/2607.07534
+    scale: "Interactive world simulator update with unbounded interaction horizon, a real-time distilled variant for 720p 60 FPS streams, richer action/event controls, agentic pilot/director harnesses, and paired 14B/1.3B models"
+    modalities: [generated-video, language-instructions, simulation]
+    tasks: [world-modeling, simulation, video-generation, embodied-ai]
+    verified_at: "2026-07-09"
+    release_note: "HF daily paper and arXiv scan 2026-07-09; adjacent interactive world-model work, not human wearable capture."
+    scope_note: "General interactive world simulator; useful world-model context but not a first-person human dataset."
+    citation_key: lingbot_world_2_0_2026
+
+  - name: RoboDojo
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.04434
+    paper: https://arxiv.org/abs/2607.04434
+    scale: "Unified sim-and-real benchmark for generalist robot manipulation with 42 simulation tasks, 18 real-world tasks, five capability dimensions, RoboDojo-RealEval remote evaluation, XPolicyLab integration, 30 evaluated policies, and a public leaderboard"
+    modalities: [robot-camera-video, robot-actions, simulation, evaluation]
+    tasks: [benchmark, evaluation, robot-manipulation, vla, domain-generalization]
+    verified_at: "2026-07-09"
+    release_note: "HF daily paper and arXiv scan 2026-07-09; adjacent robot-policy benchmark, not human wearable capture."
+    scope_note: "Robot-only manipulation benchmark; relevant comparison surface for VLA policies but outside the main egocentric data scope."
+    citation_key: robodojo_2026
+
+  - name: LaMem-VLA
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.07608
+    paper: https://arxiv.org/abs/2607.07608
+    scale: "Latent-memory-native VLA framework with curator, seeker, condenser, and weaver modules that reconstruct short- and long-term historical experience into latent memory tokens for long-horizon robotic manipulation"
+    modalities: [robot-camera-video, robot-actions, latent-actions, memory]
+    tasks: [vla, robot-learning, manipulation, long-horizon-memory, memory-reasoning]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent robot VLA memory method, not human wearable capture."
+    scope_note: "Robot VLA architecture using policy history; relevant to long-context ego/VLA ideas but not a human first-person resource."
+    citation_key: lamem_vla_2026
+
+  - name: TouchWorld
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.07287
+    paper: https://arxiv.org/abs/2607.07287
+    scale: "Predictive-and-reactive tactile foundation model for dexterous manipulation that separates vision-language planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement"
+    modalities: [robot-camera-video, tactile, proprioception, robot-actions]
+    tasks: [tactile-learning, dexterous-manipulation, world-modeling, robot-learning, contact-rich-manipulation]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent tactile robot foundation model, not human wearable capture."
+    scope_note: "Robot tactile manipulation method; useful for contact-rich VLA context but outside the main first-person corpus."
+    citation_key: touchworld_2026
+
+  - name: WAM-TTT
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06988
+    paper: https://arxiv.org/abs/2607.06988
+    scale: "Test-time training framework that steers frozen world-action models from unlabeled raw human videos by adapting a lightweight memory through self-supervised video prediction and paired human-robot meta-training"
+    modalities: [demonstration-video, robot-camera-video, robot-actions, memory]
+    tasks: [world-action-models, test-time-scaling, robot-learning, human-demonstrations, manipulation]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent human-video-to-robot WAM method, not a human wearable dataset release."
+    scope_note: "Uses human videos to adapt robot WAM behavior, but the resource itself is a robot-control method rather than a first-person capture corpus."
+    citation_key: wam_ttt_2026
+
+  - name: EAGOR
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06165
+    paper: https://arxiv.org/abs/2607.06165
+    scale: "Training-free geometry-aware framework for 360-degree directional reasoning that maintains spherical-harmonic belief fields over target directions and reports gains on HOS, OSR-Bench, and legged-robot navigation"
+    modalities: [360-video, robot-observations, maps]
+    tasks: [spatial-reasoning, navigation, embodied-reasoning, visual-grounding]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent embodied 360-degree robot/agent reasoning work, not human wearable capture."
+    scope_note: "Embodied 360-camera navigation/reasoning; related to egocentric spatial AI but outside the human first-person dataset scope."
+    citation_key: eagor_2026
+
+  - name: VLA Models Review
+    kind: survey
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06706
+    paper: https://arxiv.org/abs/2607.06706
+    scale: "Survey of 183 VLA contributions from 2017-2026 across architectures, training recipes, action representations, bimanual coordination, UAV navigation/control, language grounding, memory, and world models"
+    modalities: [survey, robot-camera-video, robot-actions]
+    tasks: [survey, vla, robot-learning, bimanual-manipulation, navigation]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent robotics/VLA survey rather than a first-person capture resource."
+    scope_note: "Robot/UAV VLA survey; useful context for ego-to-robot work but outside the main egocentric atlas."
+    citation_key: vla_models_review_2026
+
+  - name: NativeMEM
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06678
+    paper: https://arxiv.org/abs/2607.06678
+    scale: "Memory-compression VLA policy that repurposes the VLA vision encoder to compress each historical frame from each camera view into a single memory token, improving long-horizon manipulation with low latency"
+    modalities: [robot-camera-video, robot-actions, memory]
+    tasks: [vla, robot-learning, manipulation, long-horizon-memory, efficient-inference]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent robot VLA memory method, not human wearable capture."
+    scope_note: "Robot VLA memory-compression method; useful comparison for egocentric memory models but not a first-person data resource."
+    citation_key: nativemem_2026
+
+  - name: Lift3D-VLA
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06564
+    paper: https://arxiv.org/abs/2607.06564
+    scale: "3D geometry- and dynamics-aware VLA that lifts pretrained 2D models to point-cloud reasoning, uses geometry-centric masked autoencoding, and reports results across 22 simulated and 8 real-world manipulation tasks"
+    modalities: [robot-camera-video, point-clouds, robot-actions]
+    tasks: [vla, robot-learning, 3d-understanding, manipulation, spatial-reasoning]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent robot VLA architecture, not human wearable capture."
+    scope_note: "Robot-only 3D VLA method; relevant to spatial manipulation baselines but outside the main first-person resource scope."
+    citation_key: lift3d_vla_2026
+
+  - name: Pelican-VLA 0.5
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06655
+    paper: https://arxiv.org/abs/2607.06655
+    scale: "Unified VLA report integrating vision-language understanding, future-frame generation, and action prediction, with learnable reasoning slots that induce manipulation-centric attention across unseen scenes and embodiments"
+    modalities: [robot-camera-video, generated-video, robot-actions, language-instructions]
+    tasks: [vla, robot-learning, manipulation, future-prediction, video-generation]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent robot VLA model, not human wearable capture."
+    scope_note: "Robot VLA architecture; useful baseline context but not a first-person capture resource."
+    citation_key: pelican_vla_0_5_2026
+
+  - name: ActionCache
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.06370
+    paper: https://arxiv.org/abs/2607.06370
+    scale: "Training-free cache and refinement method for accelerating flow-matching VLA action heads, reusing past intermediate actions through compact multimodal keys and reporting up to 11.75x and 34.43x inference acceleration on representative VLA models"
+    modalities: [robot-camera-video, robot-actions, latent-actions]
+    tasks: [vla, robot-learning, efficient-inference, action-evaluation, manipulation]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent VLA acceleration method, not human wearable capture."
+    scope_note: "Robot VLA inference method; relevant deployment context but outside the main egocentric atlas."
+    citation_key: actioncache_vla_2026
+
+  - name: Smooth Operator / SBR
+    kind: toolkit
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.07491
+    paper: https://arxiv.org/abs/2607.07491
+    scale: "Sampling-Based Retargeter for low-jitter real-time kinematic hand retargeting, evaluated in simulation and an 18-participant real-world user study over three complex manipulation tasks"
+    modalities: [hand-pose, trajectories, robot-actions]
+    tasks: [retargeting, digital-teleoperation, human-demonstrations, dexterous-manipulation, robot-learning]
+    verified_at: "2026-07-09"
+    release_note: "arXiv scan 2026-07-09; adjacent hand-retargeting method for teleoperation data quality, not human wearable capture."
+    scope_note: "Teleoperation/retargeting method; useful for ego-to-robot demonstration pipelines but not a first-person dataset."
+    citation_key: smooth_operator_sbr_2026
 
   # --- Full live scan additions (2026-07-08): arXiv, Hugging Face, and dataset sweep ---
 

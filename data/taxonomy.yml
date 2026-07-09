@@ -221,7 +221,7 @@ modality_families:
     aliases: [rgb, video, egocentric-video, egocentric-image, first-person-video, fisheye-video,
       stereo-video, stereo, multiview-video, multiview, monochrome, exocentric-video,
       third-person-video, third-person-reference, observer-view, demonstration-video,
-      overhead-video, top-view-video, animal-egocentric-video, first-person-360-video,
+      overhead-video, top-view-video, animal-egocentric-video, first-person-360-video, 360-video,
       egocentric-images, first-person-images, lifelogging-images, aria-images, synthetic-egocentric,
       synthetic-composited-masks, synthetic-rendering, synthetic-stereo, scene-text,
       novel-view-video, event-stream, event-camera, event-based-video, child-view-video,
