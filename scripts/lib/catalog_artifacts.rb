@@ -395,7 +395,7 @@ module CatalogArtifacts
     return "2019-2021" if year <= 2021
     return "2022-2023" if year <= 2023
     return "2024-2025" if year <= 2025
-    return "2026 (H1)" if year == 2026
+    return "2026 YTD" if year == 2026
 
     nil
   end
@@ -406,7 +406,7 @@ module CatalogArtifacts
       "2019-2021" => 0,
       "2022-2023" => 0,
       "2024-2025" => 0,
-      "2026 (H1)" => 0
+      "2026 YTD" => 0
     }
     resources.reject { |entry| entry["scope"] == "adjacent" }.each do |entry|
       era = era_for_year(resource_year(entry))
@@ -449,7 +449,7 @@ module CatalogArtifacts
       ["2019-2021", 430, "2019&#8211;2021", "EPIC-100, Ego4D"],
       ["2022-2023", 670, "2022&#8211;2023", "Ego-Exo4D, HOI4D"],
       ["2024-2025", 910, "2024&#8211;2025", "EgoVideo, EgoDex"],
-      ["2026 (H1)", 1150, "2026 (H1)", "first half only &#183; DreamDojo, EgoScale"]
+      ["2026 YTD", 1150, "2026 YTD", "year to date &#183; DreamDojo, EgoScale"]
     ]
     kind_order = %w[dataset benchmark model toolkit collection]
     colors = {
@@ -569,7 +569,7 @@ module CatalogArtifacts
 
         <text class="kicker" x="90" y="50">GROWTH BY TYPE</text>
         <text class="title ink" x="90" y="92">Egocentric resources by era</text>
-        <text class="subtitle" x="90" y="120">Each era's bar is split by type. 2026 (first half only) already exceeds the 2024&#8211;2025 peak.</text>
+        <text class="subtitle" x="90" y="120">Each era's bar is split by type. 2026 year to date already exceeds the 2024&#8211;2025 peak.</text>
 
         <g>
           <rect x="90" y="145" width="14" height="14" rx="3" fill="#0b8f98"/><text class="lg" x="111" y="157">datasets</text>
@@ -589,7 +589,7 @@ module CatalogArtifacts
 
         <polyline class="trend" points="#{trend_points}"/>
         <path class="proj" d="#{projection}" marker-end="url(#up)"/>
-        <text class="note" x="1210" y="#{fmt.call(note_y)}" text-anchor="middle">H1 only</text>
+        <text class="note" x="1210" y="#{fmt.call(note_y)}" text-anchor="middle">YTD</text>
         <g>
           #{circles}
         </g>

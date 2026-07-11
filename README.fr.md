@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Jeux de données, benchmarks, modèles et outils pour la vision égocentrique, l'IA incarnée et la robotique, le vidéo-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.</strong></p>
 
-<p align="center"><strong>739</strong> ressources égocentriques — 174 jeux de données · 126 benchmarks · 400 modèles · 36 outils</p>
+<p align="center"><strong>747</strong> ressources égocentriques — 176 jeux de données · 128 benchmarks · 404 modèles · 36 outils</p>
 
 ## Contenu
 

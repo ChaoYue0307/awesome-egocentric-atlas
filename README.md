@@ -33,7 +33,7 @@
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
   <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-739-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-747-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
@@ -42,7 +42,7 @@
 
 **Awesome Egocentric Atlas** is a practical catalog of egocentric (first-person) datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
 
-**Updated:** 2026-07-09.
+**Updated:** 2026-07-11.
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
@@ -85,7 +85,7 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 | Signal | What it means for readers |
 | :--- | :--- |
-| 739 egocentric resources | 174 datasets, 126 benchmarks, 400 models, and 36 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. 77 related non-egocentric resources are listed separately. |
+| 747 egocentric resources | 176 datasets, 128 benchmarks, 404 models, and 36 toolkits, plus a Project Aria collection hub — across vision, robotics, memory, and AR. 86 related non-egocentric resources are listed separately. |
 | 6 research areas | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) is the source for type, year, status, URL, tasks, and provenance — and CI keeps the public artifacts in sync. |
@@ -233,6 +233,9 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [Datoric Residential Egocentric Video](https://huggingface.co/datasets/Datoric/egocentric-residential-video-100000h) | 2026-07 | Hugging Face | Commercial card claims 100,000 hours of 1080p+ household first-person video from Brazilian homes with task, action, object, HOI, and completion-state annotations; public files are specification/sample metadata | Reviewing large-scale household capture specifications and requesting production data | request |
+| [Datoric Industrial Egocentric Video](https://huggingface.co/datasets/Datoric/industrial-egocentric-video-50000h) | 2026-07 | Hugging Face | Commercial card claims 50,000 hours of workplace first-person video across logistics, inspection, assembly, and cleaning; public files are specification/sample metadata | Reviewing industrial capture specifications and requesting production data | request |
+| [EgoWAM](https://gatech-rl2.github.io/egowam.github.io/) | 2026-07 | arXiv | Controlled human-robot WAM co-training study comparing pixel, DINO, and 3D-flow targets on three real bimanual tasks, with up to 4x OOD gains reported for DINO | Human-to-robot world-representation transfer | watch |
 | [USA Egocentric](https://huggingface.co/datasets/Grably/usa-egocentric) | 2026-07 | Hugging Face | Three iPhone kitchen-manipulation episodes with RGB videos, camera trajectories, hand outputs, action segments, object/contact tracks, and quality reports | Open manipulation-pipeline debugging and VLA annotation prototyping | open |
 | [RynnWorld-4D](https://arxiv.org/abs/2607.06559) | 2026-07 | arXiv | 4D embodied world model over future RGB, depth, and optical flow; reports Rynn4DDataset 1.0 with 254.4M+ frames across egocentric human and robotic manipulation videos | Robot manipulation world modeling and action-conditioned 4D prediction | watch |
 | [RynnWorld-Teleop](https://arxiv.org/abs/2607.06558) | 2026-07 | arXiv | Digital-teleoperation world model driven by operator hand-pose streams to synthesize egocentric videos and action labels | Scalable bimanual robot data generation from human pose streams | watch |
@@ -312,6 +315,7 @@ Egocentric human-manipulation and wrist-camera data aimed at vision-language-act
 | [Hand-VLA Pretraining](https://arxiv.org/abs/2510.21571) | 2025-10 | arXiv | Converts unscripted real-life egocentric hand videos into 1M VLA-aligned action-language episodes | Robot pretraining from human activity video | watch |
 | [ActiveUMI](https://arxiv.org/abs/2510.01607) | 2025-10 | arXiv | Portable VR/UMI-style system capturing active egocentric perception for bimanual manipulation | Active-perception UMI-style data collection | watch |
 | [FastUMI-100K](https://huggingface.co/datasets/IPEC-COMMUNITY/FastUMI_100k_lerobot) | 2025-10 | arXiv | 100K+ UMI-style trajectories across 54 tasks in LeRobot format with multi-view wrist fisheye images | Large-scale UMI-style robot policy training | open |
+| [BiNoMaP](https://hnuzhy.github.io/projects/BiNoMaP/) | 2025-09 | arXiv | Category-level bimanual non-prehensile primitives learned from egocentric hand trajectories and transferred across two dual-arm platforms | Contact-rich bimanual skill extraction from human demonstrations | watch |
 | [EMMA](https://arxiv.org/abs/2509.04443) | 2025-09 | IEEE RA-L 2025 | Co-trains egocentric human mobile-manipulation data with static robot data to avoid mobile teleoperation bottlenecks | Scalable mobile manipulation from human data | watch |
 | [OpenEgo](https://arxiv.org/abs/2509.05513) | 2025-09 | arXiv | 1,107 hours unified across six public egocentric datasets, 290 manipulation tasks, hand-pose/action primitives | Standardized dexterous manipulation pretraining and evaluation | watch |
 | [MV-UMI](https://arxiv.org/abs/2509.18757) | 2025-09 | arXiv | Multi-view UMI adds third-person context to wrist egocentric observations | Broad-scene context for cross-embodiment manipulation | watch |
@@ -337,16 +341,18 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [CI-HOI / DEHOI](https://arxiv.org/abs/2607.08514) | 2026-07 | arXiv | Cue-isolated HOI evaluation and inpainted testbed that separate hand and object evidence to expose contextual shortcuts in egocentric VLMs | Diagnosing hand- versus object-centric action understanding | watch |
+| [Whareformer](https://jacobchalk.github.io/Whareformer/) | 2026-07 | ECCV 2026 | First learned OSNOM tracker, trained on 56 videos and tested on 260 long EPIC-KITCHENS-100, IT3DEgo, and HD-EPIC videos; MIT code, weights, features, and training data are live | Long-term 3D object tracking through occlusion and out-of-view periods | open |
 | [HandsOnWorld](https://arxiv.org/abs/2607.02075) | 2026-07 | arXiv | Camera-disentangled hand-controlled egocentric video generation with EgoVid-Pro: 103K clips and roughly 12M frames of protagonist-only hand trajectories | Unconstrained egocentric HOI video generation | watch |
 | [SAGE Action-Gaze](https://arxiv.org/abs/2607.04017) | 2026-07 | arXiv | Unified action-gaze recognition and anticipation framework linking HOI, gaze, egocentric close-up views, and exocentric context | Joint gaze/action anticipation for human behavior understanding | watch |
 | [Ego3DLM / Ego-Human Motion Prediction](https://arxiv.org/abs/2607.07001) | 2026-07 | ECCV 2026 | 3D-aware LLM that jointly predicts past/future human pose and narration from egocentric video, three-point tracking, and scene features on Nymeria | Scene-grounded egocentric human-motion forecasting | watch |
+| [Humanola Egocentric Hand-Pose Sample](https://huggingface.co/datasets/humanola-inc/egocentric-sample) | 2026-07 | Hugging Face | LeRobot v2.1 sample with 9 episodes, 48,272 frames, four synchronized cameras, 200 Hz IMU, 3D hands, poses, overlays, and Rerun logs | Open hand-pose and sensor-fusion loader tests for manipulation pipelines | open |
 | [ViDiHand](https://vidihand.github.io) | 2026-06 | arXiv | 4D two-hand motion reconstruction from full-frame egocentric video using video-diffusion representations; evaluated on ARCTIC, HOT3D, and HOI4D | Egocentric hand-motion reconstruction without detector/test-time optimization | watch |
 | [HT-Bench / HandTouch](https://arxiv.org/abs/2606.19161) | 2026-06 | arXiv | 10M RGB frames and 7.8M tactile frames across 226 dexterous full-hand tasks | Vision-tactile representation learning for dexterous manipulation | watch |
 | [EPIC-Contact / HOPformer](https://sid2697.github.io/epic-contact/) | 2026-06 | ECCV 2026 | 2.3K EPIC-KITCHENS clips and 62.3K frames with dense 3D hand-object contact, posed meshes, code, dataset, and checkpoints | In-the-wild egocentric 3D hand-object pose and contact estimation | open |
 | [GhostHandEgoNet](https://doi.org/10.1142/s0218001426550116) | 2026-06 | IJPRAI 2026 | Lightweight egocentric hand-pose and hygiene-monitoring pipeline with 2.56M parameters for embedded deployment | Egocentric hand pose under occlusion and clinical hand-hygiene monitoring | watch |
 | [Hand-4DGS](https://jeongminb.github.io/hand-4dgs/) | 2026-06 | arXiv | Feed-forward 4D hand reconstruction from egocentric video with 3D Gaussian Splatting, evaluated on H2O and ARCTIC | Fast egocentric 4D hand reconstruction | watch |
 | [A multimodal RGB/events FPV hand dataset](https://arxiv.org/abs/2606.10790) | 2026-06 | arXiv | Synthetic event-based first-person hand detection from EgoHands plus v2e | Event/RGB hand detection benchmarking | watch |
-| [Humanola Egocentric Hand-Pose Sample](https://huggingface.co/datasets/humanola-inc/egocentric-sample) | 2026-07 | Hugging Face | LeRobot v2.1 sample with 9 episodes, 48,272 frames, four synchronized cameras, 200 Hz IMU, 3D hands, poses, overlays, and Rerun logs | Open hand-pose and sensor-fusion loader tests for manipulation pipelines | open |
 | [SIGNIQ Egocentric Hand-Pose Sample](https://huggingface.co/datasets/jackji/signiq-egocentric-handpose-sample) | 2026-06 | Hugging Face | Five short head-mounted GoPro manipulation clips with Label Studio import metadata for hand-pose and action-segment annotation | Hand-pose annotation and manipulation-labeling workflow tests | open |
 | [Leveraging Synthetic Data for Egocentric HOI Detection](https://doi.org/10.1007/s11263-026-02838-8) | 2026-05 | IJCV 2026 | Synthetic-data augmentation study for hand-object interaction detection on VISOR, EgoHOS, and ENIGMA-51 | HOI detection when real labels are scarce | watch |
 | [Causal-Inspired Fourier Egocentric Action Recognition](https://doi.org/10.1109/tcsvt.2026.3653125) | 2026-05 | IEEE TCSVT 2026 | Causal-inspired Fourier representation learning for wearable IMUs and egocentric action recognition | Wearable-sensor action recognition | watch |
@@ -427,6 +433,7 @@ Long-horizon daily-life capture and the question-answering benchmarks that probe
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [VEGAS](https://arxiv.org/abs/2607.08489) | 2026-07 | arXiv | Training-free gaze-aware caption metric plus egocentric activities and instructional slides paired with synchronized gaze and reference captions | Human-attention-aligned caption evaluation and retrieval | watch |
 | [CoMind](https://comind.ethz.ch/) | 2026-07 | ECCV 2026 | Dual-view collaborative-cooking dataset with two synchronized head-mounted cameras, two exo views, audio, gaze, 3D scene/object scans, and social/interaction annotations; download is marked coming soon | Social reasoning, joint attention, handover prediction, and collaborative assistance | watch |
 | [Imprint](https://arxiv.org/abs/2607.00696) | 2026-07 | arXiv | Online interaction-centric memory compression for seven-day egocentric QA on EgoLifeQA | Scalable long-horizon memory retrieval | watch |
 | [EgoGapBench](https://github.com/jhCOR/EgoGapBench) | 2026-07 | arXiv | Diagnostic benchmark for whether models select actions from the camera-wearer's perspective in multi-agent scenes | Egocentric perspective and action-selection evaluation | open |
@@ -584,6 +591,7 @@ AR-glasses and headset data with gaze, SLAM, and digital-twin annotations for sc
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [HeadRoom](https://arxiv.org/abs/2607.08083) | 2026-07 | arXiv | Edge smart-glasses pipeline estimates visual and auditory channel availability from egocentric video/audio; a 25-participant study tests adaptive notification routing | Perceptual-load-aware wearable assistance | watch |
 | [Future-Privileged Causal Ego Gaze](https://arxiv.org/abs/2607.01437) | 2026-07 | arXiv | Causal egocentric gaze-estimation study showing future-aware training improves online models on EGTEA Gaze+ and Ego4D | Real-time gaze modeling for AR/wearables | watch |
 | [AmbientEye](https://arxiv.org/abs/2606.03774) | 2026-06 | arXiv | Passive-IR smart-glasses pupil-segmentation dataset for natural ambient illumination without active IR lighting | Energy-efficient eye tracking for all-day AR | watch |
 | [Single-View Mesh Rotation Stress Test](https://arxiv.org/abs/2606.22987) | 2026-06 | arXiv | Controlled camera-rotation stress test for single-view mesh reconstruction on Aria Digital Twin and Franka wrist-camera sequences | Robust 3D reconstruction under ego/wrist camera motion | watch |
@@ -1052,6 +1060,15 @@ These resources are **not first-person/egocentric**, but they are close neighbor
 
 | Resource | Released | Venue | Scale / signal | Why it is adjacent (not egocentric) | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [DexVerse](https://ycyao216.github.io/DexVerse.site/) | 2026-07 | arXiv | 100-task dexterous-manipulation benchmark across three arms and six hands, with VR teleoperation and 3,180 reported demonstrations; core BSD-3-Clause suite is live while full data/tooling remain pending | Robot simulation and teleoperation benchmark, not a human wearable-video corpus | partial |
+| [FabriVLA](https://arxiv.org/abs/2607.08575) | 2026-07 | arXiv | Compact 1B VLA with InternVL3.5 and a flow-matching action head, reporting 90.0% tier-average success on Meta-World MT50 | Simulation-focused robot VLA, not human egocentric capture | watch |
+| [Harness VLA](https://arxiv.org/abs/2607.08448) | 2026-07 | arXiv | Memory-guided agentic harness composing a frozen VLA with retryable contact primitives and fixed analytic primitives across LIBERO-Pro, RoboCasa365, and RoboTwin C2R | Robot VLA planning harness, not a first-person resource | watch |
+| [AnyDexRT](https://chenxi-wang.github.io/projects/anydexrt/) | 2026-07 | arXiv | Calibration-free hand retargeting with self-supervised fingertip correspondence, few-shot human guidance, and contact-aware pinch refinement | Human-hand teleoperation method, not egocentric video data | watch |
+| [TFP](https://arxiv.org/abs/2607.08283) | 2026-07 | RSS 2026 SemRob Workshop | Event-sensitive memory-action fusion for a 3.3B VLA, evaluated on LIBERO, LIBERO-plus, and MIKASA ShellGameTouch | Robot VLA memory method without wearable capture | watch |
+| [LingBot-VA 2.0](https://arxiv.org/abs/2607.08639) | 2026-07 | arXiv | Native video-action model with a semantic tokenizer, causal pretraining, sparse MoE backbone, and asynchronous closed-loop inference | Robot video-action foundation model, not human first-person data | watch |
+| [LEEVLA](https://arxiv.org/abs/2607.08182) | 2026-07 | arXiv | Task-aware VLA using drift-guided visual prioritization and structured latent feature-flow generation; the linked repository does not yet match the paper | Robot VLA architecture without human wearable capture | watch |
+| [Video-Action Generalization Gap / Temporal Ratio](https://umishra.me/temporal-ratio/) | 2026-07 | arXiv | Diagnostic Temporal Ratio and adaptive inference guidance for compositional generalization in video-action models on LIBERO and real robot tasks | Robot video-action analysis, not a human first-person resource | watch |
+| [GIRAF](https://arxiv.org/abs/2607.07880) | 2026-07 | CVPR 2026 HuMoGen Workshop | Text-conditioned full-body interaction generation with articulated objects, object-centric contact representations, and contact augmentation | Generated third-person human-object motion, not wearable capture | watch |
 | [LingBot-World 2.0](https://arxiv.org/abs/2607.07534) | 2026-07 | arXiv | Interactive world simulator with unbounded interaction horizon, 720p/60 FPS real-time distillation, richer action/event controls, and 14B/1.3B models | General interactive world simulator, not human first-person capture | watch |
 | [RoboDojo](https://arxiv.org/abs/2607.04434) | 2026-07 | arXiv | Unified sim-and-real robot manipulation benchmark with 42 simulation tasks, 18 real tasks, remote evaluation, 30 integrated policies, and a leaderboard | Robot-policy benchmark, not human wearable capture | watch |
 | [LaMem-VLA](https://arxiv.org/abs/2607.07608) | 2026-07 | arXiv | Latent-memory-native VLA framework that reconstructs short- and long-term history into latent memory tokens for long-horizon manipulation | Robot VLA memory architecture, not a human first-person resource | watch |
