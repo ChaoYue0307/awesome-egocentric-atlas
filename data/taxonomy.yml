@@ -86,7 +86,7 @@ task_families:
       virtual-egocentric-reasoning, tactical-reasoning, survey-prediction, forecasting,
       temporal-consistency, symbolic-reasoning, situated-awareness, 4d-reasoning,
       action-reasoning, future-prediction, inference-strategy, intent-understanding,
-      procedural-reasoning, structured-reasoning, state-transition-generation, trajectory-conditioning,
+      procedural-reasoning, structured-reasoning, neuro-symbolic-reasoning, state-transition-generation, trajectory-conditioning,
       goal-inference, long-horizon-reasoning, prompt-learning, high-stakes-egocentric-understanding]
 
   action-and-procedure:
@@ -103,7 +103,8 @@ task_families:
       step-grounding, task-progress-estimation, anomaly-detection, kitchen-understanding,
       action-recommendation, online-action-detection, short-term-anticipation,
       mistake-attribution, surgical-understanding, task-progress, object-state-change,
-      action-selection, retail-understanding, human-behavior-understanding, industrial-egocentric-video]
+      action-selection, retail-understanding, human-behavior-understanding, industrial-egocentric-video,
+      manipulation-understanding, progress-estimation]
 
   hand-object-interaction:
     label: Hand-object interaction and contact
@@ -168,7 +169,8 @@ task_families:
       egocentric-calibration, humanoid-control, motion-generation, loco-manipulation,
       tactile-learning, mobile-manipulation, whole-body-manipulation, trajectory-synthesis,
       latent-action-learning, reinforcement-learning, contact-rich-manipulation, retargeting,
-      digital-teleoperation, compositional-generalization, whole-body-control]
+      digital-teleoperation, compositional-generalization, whole-body-control,
+      human-robot-interaction, humanoid-robotics, multimodal-data-collection]
 
   audio-and-social:
     label: Audio, speech, and social interaction
@@ -186,7 +188,7 @@ task_families:
       healthcare-assistance, procedural-assistance, proactive-assistance, real-time-assistance,
       remote-collaboration, situated-assistance, nutrition-estimation, medical-assistance,
       privacy, cognitive-state-aware-assistance, instruction-generation, health-ai,
-      wearable-assistants]
+      wearable-assistants, visual-assistance, accessibility]
 
   ar-sensing-navigation:
     label: AR, wearable sensing, and navigation
@@ -228,7 +230,7 @@ modality_families:
       cooking-video, egocentric-capture, egocentric-vr, generated-video, hmd-video,
       human-view-video, long-video, streaming-video, wrist-camera, lifelogging-video,
       synthetic-video, monocular-video, egocentric-observations, video-priors,
-      body-worn-camera, latent-video]
+      body-worn-camera, latent-video, bimanual-video, images]
 
   depth:
     label: Depth and RGB-D
@@ -245,7 +247,8 @@ modality_families:
     label: Gaze, IMU, and motion
     aliases: [gaze, eye-tracking, imu, motion, body-motion, human-motion, head, head-pose,
       physiological-signals, trajectory, trajectories, wrist-trajectory, camera-motion,
-      camera-orientation, camera-trajectory, hand-motion, head-mounted-imu, attention,
+      camera-orientation, camera-trajectory, camera-trajectories, camera-attitude,
+      hand-motion, head-mounted-imu, attention,
       proprioception, emg, optical-flow, posture, tracking]
 
   pose-mocap:
@@ -269,7 +272,7 @@ modality_families:
       calibration, 3d-target-labels, dslr-images, 3d-gaussian-splatting,
       3d-reconstruction, 3d-scene, 4d-scene, geometry, masks,
       scene-reconstruction, 3d-flow, 3d-assets, spatial-memory, maps, spatial-features,
-      generated-3d]
+      generated-3d, camera-calibration, camera-intrinsics, predicate-graphs]
 
   device-and-labels:
     label: Device formats and labels
@@ -288,4 +291,5 @@ modality_families:
       chronological-stream, step-labels, digital-context, demonstrations,
       evaluation, future-state-targets, synthetic-data, simulation, model,
       object-tracks, wearable-sensing, robot-observations, embodied-models,
-      logs, metadata, object-segmentation, temporal-localization]
+      logs, metadata, object-segmentation, temporal-localization, evaluation-logs,
+      sensor-sidecars, semantic-masks, vr]
