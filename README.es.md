@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Conjuntos de datos, benchmarks, modelos y herramientas para visión egocéntrica, IA encarnada y robótica, video-lenguaje, memoria de largo contexto, RA/RV e interacción mano-objeto.</strong></p>
 
-<p align="center"><strong>757</strong> recursos egocéntricos — 180 conjuntos de datos · 129 benchmarks · 407 modelos · 38 herramientas</p>
+<p align="center"><strong>767</strong> recursos egocéntricos — 187 conjuntos de datos · 130 benchmarks · 408 modelos · 39 herramientas</p>
 
 ## Qué incluye
 

@@ -53,7 +53,7 @@
   <g>
     <rect class="chip" x="754" y="58" width="202" height="36" rx="18"/>
     <circle class="dotT" cx="780" cy="76" r="5"/>
-    <text class="chiptext" x="798" y="81">757 resources</text>
+    <text class="chiptext" x="798" y="81">767 resources</text>
     <rect class="chip" x="978" y="58" width="118" height="36" rx="18"/>
     <circle class="dotA" cx="1004" cy="76" r="5"/>
     <text class="chiptext" x="1022" y="81">6 areas</text>

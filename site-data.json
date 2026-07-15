@@ -2,7 +2,7 @@
   "meta": {
     "title": "Awesome Egocentric Atlas",
     "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
-    "last_major_audit": "2026-07-13",
+    "last_major_audit": "2026-07-15",
     "status_legend": {
       "open": "Public download, public annotations, public code, or application-based access is clearly documented.",
       "request": "Public project exists, but dataset access requires license, form, approval, or institutional agreement.",
@@ -15,23 +15,23 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 847,
-    "egocentric_resources": 757,
-    "adjacent_resources": 90,
+    "total_resources": 879,
+    "egocentric_resources": 767,
+    "adjacent_resources": 112,
     "kind_counts": {
-      "benchmark": 129,
+      "benchmark": 130,
       "collection": 1,
-      "dataset": 180,
-      "model": 407,
+      "dataset": 187,
+      "model": 408,
       "survey": 2,
-      "toolkit": 38
+      "toolkit": 39
     },
     "status_counts": {
       "benchmark": 11,
-      "open": 173,
+      "open": 179,
       "partial": 18,
-      "request": 11,
-      "watch": 544
+      "request": 13,
+      "watch": 546
     }
   },
   "lanes": [
@@ -44,7 +44,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 211
+      "count": 212
     },
     {
       "id": "procedure-action",
@@ -54,7 +54,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 224
+      "count": 231
     },
     {
       "id": "hands-3d",
@@ -67,7 +67,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 327
+      "count": 333
     },
     {
       "id": "memory-reasoning",
@@ -79,7 +79,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 243
+      "count": 246
     },
     {
       "id": "robotics-vla",
@@ -88,7 +88,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 181
+      "count": 189
     },
     {
       "id": "ar-wearables",
@@ -99,7 +99,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 238
+      "count": 241
     }
   ],
   "milestones": [
@@ -520,6 +520,1039 @@
       "license": "cc-by-nc-4.0",
       "license_url": "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample",
       "verified_at": "2026-06-20"
+    },
+    {
+      "name": "Verbose Clothing Industry Egocentric Video",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric",
+      "scale": "Placeholder repository for clothing-industry egocentric video; the current file tree contains only .gitattributes and a 27-byte README declaring CC-BY-4.0",
+      "tasks": [
+        "industrial-activity",
+        "human-demonstrations",
+        "action-recognition",
+        "robot-learning"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric/blob/main/README.md",
+      "release_note": "HF API and recursive file-tree verification found no videos, annotations, statistics, capture documentation, or usable dataset card beyond the license header; keep watch until actual assets and provenance are published.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Verbose Cooking and Chopping Egocentric Video",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric",
+      "scale": "11 head- or chest-mounted kitchen clips totaling 6,104 seconds (101.7 minutes) across cooking and chopping, distributed as an ungated 6.09 GB ZIP with clip-level metadata",
+      "tasks": [
+        "action-recognition",
+        "hand-object-interaction",
+        "procedural-learning",
+        "human-demonstrations",
+        "robot-learning"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "metadata"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric/blob/main/cooking_README_huggingface.md",
+      "release_note": "The video archive and 11-row metadata CSV are publicly downloadable. The descriptive CC-BY-4.0 card is stored under a nonstandard filename rather than README.md, so Hub metadata is not rendered and several loader examples refer to paths that exist only inside the ZIP.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Verbose Household Cleaning Egocentric Video",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric",
+      "scale": "12 head- or chest-mounted 1080p/30 fps cleaning clips totaling 6,259 seconds (104.3 minutes), distributed as an ungated 5.74 GB ZIP with audio and clip metadata across three sub-activities",
+      "tasks": [
+        "action-recognition",
+        "hand-object-interaction",
+        "temporal-localization",
+        "human-demonstrations",
+        "assistive-robotics"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "hand-object-interaction",
+        "grounding-localization",
+        "robotics-and-vla",
+        "assistance-and-agents"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "metadata"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric/blob/main/README.md",
+      "release_note": "HF file-tree and metadata verification confirmed the public ZIP and 12-row CSV. The current card calls the CSV annotations.csv and demonstrates individual video paths that are not exposed outside the archive, so consumers should download and unpack the ZIP directly.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "DenseReward",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.13033",
+      "paper": "https://arxiv.org/abs/2607.13033",
+      "scale": "Dense frame-level vision-language reward model trained with automatically synthesized physical failures such as collisions, missed grasps, drops, and recovery behaviors, evaluated for simulated and real manipulation plus MPC and RL guidance",
+      "tasks": [
+        "robot-learning",
+        "reward-modeling",
+        "reinforcement-learning",
+        "manipulation",
+        "failure-understanding"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "language-instructions",
+        "synthetic-failures",
+        "dense-rewards"
+      ],
+      "release_note": "The paper says its dataset, trained reward models, and evaluation suite are released, but the linked dense-reward.github.io project URL returned a GitHub Pages 404 and no public repository or model package was discoverable during this audit.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "FlowWAM",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "adjacent",
+      "url": "https://flow-wam.github.io/",
+      "paper": "https://arxiv.org/abs/2607.13017",
+      "code": "https://github.com/YixiangChen515/FlowWAM",
+      "scale": "Dual-stream world-action model using optical flow as a shared video-native action representation; reports 92.94% RoboTwin Clean and 92.14% Random success plus a 63.71 WorldArena EWMScore",
+      "tasks": [
+        "world-action-models",
+        "vla",
+        "world-modeling",
+        "robot-learning",
+        "manipulation"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "optical-flow",
+        "robot-actions",
+        "generated-video"
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/YixiangChen515/FlowWAM/blob/main/LICENSE",
+      "release_note": "Apache-2.0 training and RoboTwin inference code, open Hugging Face checkpoints, and a downloadable RoboTwin-derived flow dataset are public; the companion WorldArena evaluation repository is also live.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "ChunkFlow",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.12992",
+      "paper": "https://arxiv.org/abs/2607.12992",
+      "scale": "Continuity-consistent chunked-policy framework with frozen, editable, and future zones, overlap blending, seam and derivative losses, history corruption, scheduled sampling, and AWAC fine-tuning",
+      "tasks": [
+        "vla",
+        "robot-learning",
+        "action-chunking",
+        "manipulation",
+        "policy-stability"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions"
+      ],
+      "release_note": "The arXiv paper and JavaScript project route are public, but the scan found no linked code repository, checkpoint, training data, or license.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "ExToken",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.12931",
+      "paper": "https://arxiv.org/abs/2607.12931",
+      "scale": "Structured VLA reinforcement fine-tuning that derives discrete behavioral priors from offline demonstrations, conditions rollout exploration on tokens, and learns a state-conditioned token selector for deterministic deployment",
+      "tasks": [
+        "vla",
+        "reinforcement-learning",
+        "robot-learning",
+        "exploration",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions",
+        "offline-demonstrations"
+      ],
+      "release_note": "The arXiv record exposes no project page, implementation, checkpoints, rollout data, or license.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Hy-Embodied-VLM-1.0",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "adjacent",
+      "url": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+      "paper": "https://arxiv.org/abs/2607.12894",
+      "code": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+      "scale": "Approximately 30B-parameter embodied MoE VLM activating about 3B parameters per token; evaluated on 38 physical-world benchmarks and ranked first among compared similarly sized models on 19, with an 8.4% average gain over HY-Embodied-0.5",
+      "tasks": [
+        "embodied-ai",
+        "spatial-reasoning",
+        "navigation",
+        "long-horizon-reasoning",
+        "physical-world-understanding"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "reasoning-intent-planning",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "images",
+        "video",
+        "natural-language",
+        "embodied-observations"
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/Tencent-Hunyuan/HY-Embodied/blob/master/LICENSE",
+      "release_note": "The official repository was updated on July 15 with Apache-2.0 Transformers and vLLM inference code, and an ungated Apache-2.0 Hugging Face checkpoint is live; fine-tuning code remains unchecked on the roadmap.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Jetson-PI",
+      "kind": "toolkit",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "adjacent",
+      "url": "https://github.com/PKU-SEC-Lab/Jetson-PI",
+      "paper": "https://arxiv.org/abs/2607.12659",
+      "code": "https://github.com/PKU-SEC-Lab/Jetson-PI",
+      "scale": "Foresight-aligned asynchronous VLA inference for Jetson Orin, reporting 8.66x higher control frequency than naive PyTorch, 5.41x over vla.cpp, and a 14.8% average success-rate gain over VLASH on LIBERO",
+      "tasks": [
+        "vla",
+        "edge-inference",
+        "robot-control",
+        "manipulation",
+        "systems-optimization"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "latent-features"
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/PKU-SEC-Lab/Jetson-PI/blob/main/LICENSE",
+      "release_note": "Apache-2.0 LIBERO training and evaluation code is public, the separate Jetson-PI-Edge runtime repository is live, and pi0.5 plus future-correction checkpoints are downloadable from ModelScope.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "TrustVLA",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.12571",
+      "paper": "https://arxiv.org/abs/2607.12571",
+      "scale": "Retraining-free defense that detects abnormal VLA evidence evolution, localizes compact visual-trigger regions by counterfactual score drop, and recovers observations through localized inpainting",
+      "tasks": [
+        "vla",
+        "safety",
+        "backdoor-defense",
+        "robot-learning",
+        "manipulation"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "reasoning-intent-planning",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "visual-triggers"
+      ],
+      "release_note": "The arXiv record provides no project page, implementation, evaluation assets, poisoned checkpoints, or license.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Self-in-Space / SIS-Bench",
+      "kind": "benchmark",
+      "released": "2026-07",
+      "venue": "ACM MM 2026",
+      "year": 2026,
+      "status": "open",
+      "scope": "adjacent",
+      "url": "https://choucisan.github.io/publications/self-in-space/",
+      "paper": "https://arxiv.org/abs/2607.12477",
+      "code": "https://github.com/IntelliSensing/Self-in-Space",
+      "scale": "4,856 expert-verified QA pairs across 13 self-awareness and spatial-cognition tasks from 1,646 real-world UAV videos, plus 54,298 public SIS-Motion training examples and an open motion-aware adapter",
+      "tasks": [
+        "embodied-ai",
+        "spatial-reasoning",
+        "self-awareness",
+        "video-qa",
+        "navigation"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "reasoning-intent-planning",
+        "question-answering",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "uav-video",
+        "optical-flow",
+        "natural-language",
+        "annotations"
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/IntelliSensing/Self-in-Space/blob/main/LICENSE",
+      "release_note": "The official repository records ACM MM 2026 acceptance; Apache-2.0 code, the 4,856-row SIS-Bench, 54,298-row SIS-Motion-54K training set, and SIS-Motion adapter are all public and ungated.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "VistaVLA",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.12356",
+      "paper": "https://arxiv.org/abs/2607.12356",
+      "scale": "Grounds geometry- and semantics-aware 3D Gaussian primitives into compact VLA context tokens; reports 99% token reduction, +22.8% success over seven real tasks, and +30.0% over VLA-Adapter on OOD tasks",
+      "tasks": [
+        "vla",
+        "3d-spatial-reasoning",
+        "robot-learning",
+        "manipulation",
+        "domain-generalization"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "three-d-and-scene",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "multiview-video",
+        "3d-gaussians",
+        "robot-actions",
+        "language-instructions"
+      ],
+      "release_note": "The arXiv record provides no public project page, code, checkpoint, training data, or license.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Efficient VLA Inference via Temporal Redundancy Reduction",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.12287",
+      "paper": "https://arxiv.org/abs/2607.12287",
+      "scale": "System-level VLA acceleration that updates only dynamic visual tokens and compresses diffusion action sampling to two steps, reporting more than 2x speedup and up to 98% success across LIBERO, RoboTwin, and real robots",
+      "tasks": [
+        "vla",
+        "efficient-inference",
+        "robot-control",
+        "manipulation",
+        "systems-optimization"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "robot-actions",
+        "visual-tokens"
+      ],
+      "release_note": "The paper states that code will be released, but the current arXiv record links no repository, checkpoints, evaluation assets, or license.",
+      "verified_at": "2026-07-15"
+    },
+    {
+      "name": "Vinci2 / EgoServe",
+      "kind": "benchmark",
+      "released": "2026-07",
+      "venue": "ECCV 2026",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://sitonggong.github.io/EgoServe-page/",
+      "paper": "https://arxiv.org/abs/2607.11523",
+      "code": "https://github.com/SitongGong/EgoMemo",
+      "derived_from": "EgoLife, HoloAssist, and CaptainCook4D",
+      "scale": "3,000+ proactive-service instances across 11 service categories and four temporal memory horizons, with the training-free EgoMemo agent combining multi-scale summaries, a semantic graph, and visual retrieval archives",
+      "tasks": [
+        "proactive-assistance",
+        "memory",
+        "long-context",
+        "video-qa",
+        "streaming-assistant"
+      ],
+      "task_families": [
+        "assistance-and-agents",
+        "memory-and-long-context",
+        "question-answering"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations",
+        "natural-language",
+        "memory"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://huggingface.co/datasets/SitongGong/EgoServe",
+      "release_note": "ECCV acceptance is stated in the arXiv record; the MIT-licensed EgoMemo implementation and CC-BY-4.0 EgoServe annotations are public. The annotations reference source videos from EgoLife, HoloAssist, and CaptainCook4D rather than redistributing them.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "LightMem-Ego",
+      "kind": "toolkit",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://github.com/zjunlp/LightMem-Ego",
+      "paper": "https://arxiv.org/abs/2607.11487",
+      "code": "https://github.com/zjunlp/LightMem-Ego",
+      "scale": "Streaming multimodal memory system that aligns first-person visual and audio capture into current, short-term, and long-term memory for object finding, conversation recall, life summaries, routine discovery, and evidence-grounded answers",
+      "tasks": [
+        "memory",
+        "long-horizon-memory",
+        "wearable-assistants",
+        "personalized-qa",
+        "visual-assistance"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "assistance-and-agents",
+        "question-answering"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "speech",
+        "smart-glasses",
+        "memory"
+      ],
+      "license": "MIT",
+      "license_url": "https://github.com/zjunlp/LightMem-Ego/blob/main/LICENSE",
+      "release_note": "Public MIT-licensed repository includes the memory runtime, backend and frontend, plus an Android client for Rokid AI glasses; the arXiv record describes the work as ongoing.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "EgoSteer",
+      "kind": "model",
+      "released": "2026-06",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://egosteer.github.io/",
+      "paper": "https://arxiv.org/abs/2607.09701",
+      "code": "https://github.com/egosteer/egosteer",
+      "scale": "Full-stack dexterous VLA system using EgoSmith to curate 9.6K hours of egocentric human video, an open robot stack for teleoperation and correction, and 3B base and RealMan checkpoints; evaluated on 40+ tasks with 75%+ few-shot success on long-horizon tasks",
+      "tasks": [
+        "vla",
+        "dexterous-manipulation",
+        "human-demonstrations",
+        "cross-embodiment-transfer",
+        "world-action-models"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-motion",
+        "robot-camera-video",
+        "robot-actions",
+        "language-instructions"
+      ],
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/egosteer/egosteer/blob/main/LICENSE",
+      "release_note": "Apache-2.0 policy, EgoSmith, and robot-stack repositories are public; Hugging Face hosts open Apache-2.0 EgoSteer-3B-Base and EgoSteer-3B-RealMan checkpoints of about 5.58 GB each.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "InterPet4D",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/ohicarip/interpet4d",
+      "paper": "https://arxiv.org/abs/2607.10287",
+      "scale": "113 human-dog interaction sessions with 6.8M synchronized multi-view and egocentric frames from 13 dogs across 11 breeds and 23 people; public v1 provides 227 headset clips with audio and aligned SMPL, MANO, pet skeleton, SMAL, and MERT features",
+      "tasks": [
+        "3d-4d-understanding",
+        "human-pose-estimation",
+        "motion-generation",
+        "animal-activity-recognition",
+        "interaction-understanding"
+      ],
+      "task_families": [
+        "three-d-and-scene",
+        "pose-and-body",
+        "robotics-and-vla",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "multiview-video",
+        "audio",
+        "3d-human-motion",
+        "hand-motion",
+        "skeleton",
+        "mesh"
+      ],
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://huggingface.co/datasets/ohicarip/interpet4d",
+      "release_note": "HF API and file scan verified an ungated 10.7 GB CC-BY-NC-4.0 release with 227 rows; the current Hub package exposes synchronized derived motion/audio assets rather than the paper's complete 6.8M-frame raw multi-view capture.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Flikforge Egocentric Household Tasks",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/FlikforgeInc/egocentric-household-tasks",
+      "scale": "Dataset card claims about 100 rights-cleared iPhone and GoPro household clips across seven task categories with customizable ActionSummary 2.0 annotations",
+      "tasks": [
+        "human-demonstrations",
+        "action-recognition",
+        "hand-object-interaction",
+        "robot-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "action-and-procedure",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "annotations",
+        "action-labels"
+      ],
+      "license": "other",
+      "license_url": "https://huggingface.co/datasets/FlikforgeInc/egocentric-household-tasks/blob/main/LICENSE",
+      "release_note": "HF API and recursive file-tree scan found only README.md, .gitattributes, and a zero-byte LICENSE, with no videos, annotations, catalog, or documentation described by the card; keep watch until files and usable terms are published.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Poseidon First-Person Task Video Samples",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/psdn-ai/first-person-task-video-samples",
+      "scale": "Five 1080p first-person clips totaling 174 seconds across kitchen, gardening, light maintenance, fine-motor manipulation, and cleaning or organization, with clip-level technical and PII metadata",
+      "tasks": [
+        "human-demonstrations",
+        "hand-object-interaction",
+        "action-recognition",
+        "everyday-activity"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction",
+        "action-and-procedure"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "metadata"
+      ],
+      "license": "other",
+      "license_url": "https://huggingface.co/datasets/psdn-ai/first-person-task-video-samples/blob/main/TERMS.md",
+      "access": "automatic Hugging Face access request under Poseidon sample-preview terms",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Poseidon Egocentric Activity Video Samples",
+      "kind": "dataset",
+      "released": "2026-06",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/psdn-ai/egocentric-activity-video-samples",
+      "scale": "Two auto-gated 1080p, 30 fps everyday first-person activity clips with task, scene, media-quality, feature, and PII metadata",
+      "tasks": [
+        "everyday-activity",
+        "action-recognition",
+        "human-demonstrations",
+        "hand-object-interaction"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "robotics-and-vla",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "metadata"
+      ],
+      "license": "other",
+      "license_url": "https://huggingface.co/datasets/psdn-ai/egocentric-activity-video-samples/blob/main/TERMS.md",
+      "access": "automatic Hugging Face access request under Poseidon sample-preview terms",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "yyyyywv/egocentric",
+      "kind": "dataset",
+      "released": "2026-07",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "partial",
+      "scope": "adjacent",
+      "url": "https://huggingface.co/datasets/yyyyywv/egocentric",
+      "scale": "About 25.7 GB and 860 robot episodes totaling 717,197 frames at 20 fps: 800 bimanual cube-stacking gripper episodes plus 60 hand-policy episodes, with robot eye or head and wrist cameras, 26D-54D state, and 54D-56D actions",
+      "tasks": [
+        "robot-learning",
+        "bimanual-manipulation",
+        "manipulation",
+        "imitation-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "hand-object-interaction"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "wrist-camera-video",
+        "robot-actions",
+        "proprioception",
+        "language-instructions"
+      ],
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://huggingface.co/datasets/yyyyywv/egocentric",
+      "release_note": "HF file and metadata scan verified downloadable LeRobot-style episodes and CC-BY-NC-4.0 metadata, but the dataset card contains only its YAML header and does not document provenance, capture hardware, intended use, or limitations.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "REGRIND",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://yunhaifeng.com/REGRIND",
+      "paper": "https://arxiv.org/abs/2607.11874",
+      "scale": "Retargeting-guided residual reinforcement-learning recipe that learns contact-rich dexterous policies from one human demonstration and transfers zero-shot to LEAP and WUJI hands for scissors and screwdriver tasks",
+      "tasks": [
+        "dexterous-manipulation",
+        "retargeting",
+        "reinforcement-learning",
+        "contact-rich-manipulation",
+        "human-demonstrations"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "human-demonstrations",
+        "hand-object-motion",
+        "object-pose",
+        "robot-actions",
+        "simulation"
+      ],
+      "release_note": "The project page's code button targets github.com/yunhaif/regrind, which returned 404 during this audit; no model, dataset, or license was available.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "TeleDexter",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://bigai-dex.github.io/blog/teledexter/",
+      "paper": "https://arxiv.org/abs/2607.11481",
+      "scale": "Hand-object co-tracking controller trained with single-stage RL and transferred zero-shot across two dexterous hands; reports 75.2% average success over seven in-hand and tool-use tasks and uses 50 demonstrations per task for behavior cloning",
+      "tasks": [
+        "digital-teleoperation",
+        "dexterous-manipulation",
+        "human-demonstrations",
+        "imitation-learning"
+      ],
+      "task_families": [
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "human-demonstrations",
+        "hand-motion",
+        "object-pose",
+        "robot-actions"
+      ],
+      "release_note": "Project page and paper are public, but no code, trained controller, demonstration data, or license was linked.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "WALA",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://liujiahao2077.github.io/WALA.github.io",
+      "paper": "https://arxiv.org/abs/2607.11397",
+      "scale": "Learns executable latent actions jointly from action-labeled demonstrations and action-free human or robot videos using DINOv3 feature deltas, dense depth, and a trainable latent world model; reports 75.2% RoboCasa success",
+      "tasks": [
+        "latent-action-learning",
+        "world-action-models",
+        "vla",
+        "robot-learning",
+        "human-demonstrations"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "generation-and-world-models"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "human-demonstrations",
+        "dense-features",
+        "depth",
+        "latent-actions",
+        "robot-actions"
+      ],
+      "release_note": "Official project page labels code as coming soon and exposes no checkpoints, training data, or license.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Robot-Centric Pointmaps",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://davian-robotics.github.io/pointmap/",
+      "paper": "https://arxiv.org/abs/2607.11498",
+      "scale": "Encodes per-pixel XYZ in the robot frame while preserving a dense image grid; improves pi0.5 by 7.6 points and SmolVLA by 4.2 over 24 RoboCasa tasks, with a +11.7-point gain at an unseen viewpoint in four real tasks using 180 demonstrations",
+      "tasks": [
+        "vla",
+        "spatial-reasoning",
+        "robot-learning",
+        "manipulation",
+        "domain-generalization"
+      ],
+      "task_families": [
+        "robotics-and-vla",
+        "reasoning-intent-planning",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "point-clouds",
+        "depth",
+        "robot-actions"
+      ],
+      "release_note": "Project and paper are public, but the code control remains disabled with no repository, checkpoints, data, or license.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Lumo-2",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11270",
+      "paper": "https://arxiv.org/abs/2607.11270",
+      "scale": "Latent world-action model with staged alignment of actions to latent dynamics, vision, and language, evaluated for scaling and out-of-distribution generalization on long-horizon and dexterous real-world manipulation",
+      "tasks": [
+        "world-action-models",
+        "vla",
+        "robot-learning",
+        "long-horizon-reasoning",
+        "dexterous-manipulation"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla",
+        "reasoning-intent-planning"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "latent-actions",
+        "robot-actions",
+        "language-instructions"
+      ],
+      "release_note": "arXiv and web scan found no public project page, code, checkpoint, training data, or license.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "Xiaomi-Robotics-U0",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11643",
+      "paper": "https://arxiv.org/abs/2607.11643",
+      "scale": "38B unified embodied-synthesis model spanning multi-view scene generation, embodiment transfer, editing, and video generation; reports improving pi0.5 out-of-distribution manipulation success from 36.9% to 63.2%",
+      "tasks": [
+        "world-modeling",
+        "data-generation",
+        "robot-learning",
+        "video-generation",
+        "cross-embodiment-transfer"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "generated-video",
+        "multiview-video",
+        "robot-camera-video",
+        "robot-actions"
+      ],
+      "release_note": "The arXiv abstract says code and checkpoints are available at robotics.xiaomi.com/xiaomi-robotics-u0.html, but that URL returned 404 during this audit and the Xiaomi Robotics index did not list U0.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "World Action Models to Embodied Brains Roadmap",
+      "kind": "survey",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11689",
+      "paper": "https://arxiv.org/abs/2607.11689",
+      "scale": "Roadmap organizing WAM gaps across model roles and representations, objectives and standardization, and system composition, then proposing embodied brains, physical harnesses, shared contracts, and closed-loop post-training",
+      "tasks": [
+        "world-action-models",
+        "embodied-ai",
+        "survey",
+        "robot-learning"
+      ],
+      "task_families": [
+        "generation-and-world-models",
+        "foundation-and-representation",
+        "evaluation-and-tooling",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "survey",
+        "embodied-models"
+      ],
+      "release_note": "The arXiv record marks this as ongoing work and provides no project, code, benchmark, or license.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "SLVMBench",
+      "kind": "benchmark",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11312",
+      "paper": "https://arxiv.org/abs/2607.11312",
+      "scale": "2,261 human-authored questions over 1,220 videos in 11 domains, embedding tutorials inside 2-3-hour distractor streams to test whether video LLMs retain procedural knowledge and apply it to an ongoing target video",
+      "tasks": [
+        "procedure-learning",
+        "long-video-qa",
+        "memory",
+        "evaluation"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "memory-and-long-context",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "long-video",
+        "video-qa",
+        "temporal-localization"
+      ],
+      "release_note": "Paper and source package were checked; no public benchmark files, code, project page, model, or license was found.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "E-VQA / ST-Evidence",
+      "kind": "benchmark",
+      "released": "2026-07",
+      "venue": "ECCV 2026",
+      "year": 2026,
+      "status": "open",
+      "scope": "adjacent",
+      "url": "https://github.com/SalesforceAIResearch/EVQA",
+      "paper": "https://arxiv.org/abs/2607.11862",
+      "code": "https://github.com/SalesforceAIResearch/EVQA",
+      "scale": "Human-verified benchmark for answers plus temporal segments and tracked object masklets, accompanied by 160K ST-Evidence-Instruct examples and released 3B and 7B grounded video-language models",
+      "tasks": [
+        "video-qa",
+        "visual-grounding",
+        "segmentation",
+        "evidence-consistency",
+        "evaluation"
+      ],
+      "task_families": [
+        "question-answering",
+        "grounding-localization",
+        "detection-segmentation",
+        "reasoning-intent-planning",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "video",
+        "video-qa",
+        "object-masks",
+        "temporal-localization",
+        "annotations"
+      ],
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://github.com/SalesforceAIResearch/EVQA#license",
+      "release_note": "ECCV 2026 journal reference, public training/evaluation code, benchmark and instruction datasets, and 3B/7B checkpoints were verified; the repository states CC-BY-NC-4.0 terms.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "DA-Nav / ReDA",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11638",
+      "paper": "https://arxiv.org/abs/2607.11638",
+      "scale": "Direction-aware city-scale VLN framework grounding commercial navigation instructions on the egocentric image plane, with the ReDA recovery dataset; reports 56.16% success in unseen CARLA cities and kilometer-scale quadruped and humanoid trials",
+      "tasks": [
+        "navigation",
+        "spatial-reasoning",
+        "embodied-ai",
+        "domain-generalization"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "reasoning-intent-planning",
+        "foundation-and-representation",
+        "evaluation-and-tooling"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "language-instructions",
+        "trajectories",
+        "maps"
+      ],
+      "release_note": "The paper is submitted to RA-L, not accepted; no public ReDA files, code, project page, model, or license was found.",
+      "verified_at": "2026-07-14"
+    },
+    {
+      "name": "AdvNav",
+      "kind": "model",
+      "released": "2026-07",
+      "venue": "ACM MM 2026",
+      "year": 2026,
+      "status": "watch",
+      "scope": "adjacent",
+      "url": "https://arxiv.org/abs/2607.11063",
+      "paper": "https://arxiv.org/abs/2607.11063",
+      "scale": "Behavior-guided black-box attack on first-person VLN observations using trajectory and action feedback plus adaptive and genetic optimization; reports 49.70%-87.30% attack success against HAMT and MapGPT on R2R",
+      "tasks": [
+        "navigation",
+        "robustness",
+        "evaluation",
+        "embodied-ai"
+      ],
+      "task_families": [
+        "ar-sensing-navigation",
+        "evaluation-and-tooling",
+        "foundation-and-representation"
+      ],
+      "modalities": [
+        "robot-camera-video",
+        "trajectories",
+        "language-instructions"
+      ],
+      "release_note": "ACM MM 2026 is stated in the arXiv comment; no public code, perturbation assets, project page, or license was found.",
+      "verified_at": "2026-07-14"
     },
     {
       "name": "TSR-Ego",
@@ -9467,18 +10500,20 @@
     {
       "name": "CHORD",
       "kind": "model",
-      "released": "2026",
-      "venue": "preprint",
+      "released": "2026-06",
+      "venue": "arXiv",
       "year": 2026,
       "status": "watch",
       "scope": "adjacent",
-      "url": "https://arxiv.org/search/cs?query=CHORD+Learning+Dexterous+Manipulation+Using+Contact+Wrench+Guidance+From+Human+Demonstration&searchtype=all&source=header",
-      "scale": "Learning dexterous manipulation using contact-wrench guidance from human demonstration; added as a contact-rich human-demonstration manipulation work pending a stable public paper or project URL",
+      "url": "https://nvidia-isaac.github.io/video_to_data/chord/",
+      "paper": "https://arxiv.org/abs/2607.00033",
+      "scale": "Object-centric contact-wrench guidance for long-horizon dexterous RL, with a 4,739-task bimanual simulation benchmark; reports 82.12% average success over 1,831 tasks, 90.77% whole-body success, and real-hardware transfer",
       "tasks": [
         "dexterous-manipulation",
         "robot-learning",
         "imitation-learning",
-        "contact-rich-manipulation"
+        "contact-rich-manipulation",
+        "reinforcement-learning"
       ],
       "task_families": [
         "robotics-and-vla"
@@ -9487,10 +10522,12 @@
         "human-demonstrations",
         "force",
         "contact",
-        "trajectories"
+        "trajectories",
+        "robot-actions",
+        "simulation"
       ],
-      "release_note": "Requested addition checked 2026-06-29; exact-title arXiv, GitHub, and web searches did not expose a stable public record, so keep watch until paper/project URL and release terms are confirmed.",
-      "verified_at": "2026-06-29"
+      "release_note": "Official NVIDIA project and arXiv record verified 2026-07-14; the project page still labels code as coming soon and exposes no benchmark package, models, or license.",
+      "verified_at": "2026-07-14"
     },
     {
       "name": "TopoRetarget",
