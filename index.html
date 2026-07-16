@@ -67,6 +67,61 @@
     },
     {
       "@type": "Dataset",
+      "name": "EgoHTR",
+      "url": "https://egohtr.github.io/",
+      "description": "55 scene-aligned 4D human-motion sequences across seven challenging terrains, totaling 1.37 hours and about 150K frames from eight participants, with 36 multiview sequences and 0.7 hours of motion-capture ground truth",
+      "keywords": "4d-reconstruction, human-motion, humanoid-control, scene-aware-3d-human-pose, robot-learning"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Open-AoE",
+      "url": "https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h",
+      "description": "Current public nano and tiny tiers contain 2,821 smartphone first-person manipulation clips (111 plus 2,710), about 103 hours and 819 GB, with raw and undistorted video, metric SLAM camera trajectories, MANO hand reconstruction, and atomic-",
+      "keywords": "hand-object-interaction, 3d-hand-reconstruction, action-segmentation, human-demonstrations, robot-learning",
+      "license": "https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h/blob/main/README.md"
+    },
+    {
+      "@type": "Dataset",
+      "name": "SenseXperience UMI Human Demonstrations",
+      "url": "https://huggingface.co/datasets/ICRA-WBCD/IO-AI-SenseXperience-UMI",
+      "description": "1,051 natural human-demonstration episodes, 220,963 frames, and 92 manipulation tasks at 30 fps, with six synchronized head, wrist, depth, and gripper views plus head and dual-gripper 7-DoF poses in LeRobot format",
+      "keywords": "human-demonstrations, imitation-learning, bimanual-manipulation, vla, cross-embodiment-transfer",
+      "license": "https://huggingface.co/datasets/ICRA-WBCD/IO-AI-SenseXperience-UMI/blob/main/README.md"
+    },
+    {
+      "@type": "Dataset",
+      "name": "SenseXperience Raw MCAP Sample",
+      "url": "https://huggingface.co/datasets/io-intelligence/SenseXperience_WristCam_SampleData",
+      "description": "12 raw human-motion episodes of 63-100 seconds each in ROS 2 MCAP, spanning household, office, laboratory, cable, and craft activities with four synchronized MJPEG cameras and head IMU near 120 Hz",
+      "keywords": "data-collection, sensor-fusion, human-demonstrations, robot-learning, loader-testing",
+      "license": "https://huggingface.co/datasets/io-intelligence/SenseXperience_WristCam_SampleData/blob/main/LICENSE"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Ego Data by Object",
+      "url": "https://huggingface.co/datasets/Kavin60606/ego-data-by-object",
+      "description": "4,110 basic pick-and-place episodes across 51 object labels, pairing egocentric RGB clips with HDF5 hand/body transforms, confidence values, camera intrinsics, task attributes, and language-derived descriptions",
+      "keywords": "hand-tracking, hand-object-interaction, imitation-learning, robot-learning, data-conversion",
+      "license": "https://huggingface.co/datasets/Kavin60606/ego-data-by-object/blob/main/README.md"
+    },
+    {
+      "@type": "Dataset",
+      "name": "EgoExo-Wreck",
+      "url": "https://huggingface.co/datasets/WreckVegas/EgoExo-Wreck",
+      "description": "Commercial card reports 150+ hours of synchronized 4K head-mounted ego and fixed exo video from object destruction, debris handling, cleanup, and reset cycles, with sync anchors, manifests, transcripts, and object labels",
+      "keywords": "human-demonstrations, hand-object-interaction, action-recognition, world-modeling, robot-learning",
+      "license": "https://huggingface.co/datasets/WreckVegas/EgoExo-Wreck/blob/main/LICENSE.md"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Ego-Tactile Manipulation",
+      "url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation",
+      "description": "72 tabletop-manipulation episodes totaling 1.28 hours and 138,629 frames at 30 fps, pairing 1080p egocentric video with 160-channel dual-hand tactile pressure, head and wrist IMU, and contact-derived action segments",
+      "keywords": "tactile-learning, action-segmentation, human-demonstrations, contact-rich-manipulation, robot-learning",
+      "license": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/blob/main/README.md"
+    },
+    {
+      "@type": "Dataset",
       "name": "Verbose Clothing Industry Egocentric Video",
       "url": "https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric",
       "description": "Placeholder repository for clothing-industry egocentric video; the current file tree contains only .gitattributes and a 27-byte README declaring CC-BY-4.0",
@@ -1460,15 +1515,15 @@
           </div>
           <dl class="stat-strip" aria-label="Atlas summary">
             <div>
-              <dt data-stat="egocentric_resources">767</dt>
+              <dt data-stat="egocentric_resources">775</dt>
               <dd data-i18n="stat.resources">egocentric resources</dd>
             </div>
             <div>
-              <dt data-kind="dataset">187</dt>
+              <dt data-kind="dataset">194</dt>
               <dd data-i18n="stat.datasets">datasets</dd>
             </div>
             <div>
-              <dt data-kind="benchmark">130</dt>
+              <dt data-kind="benchmark">131</dt>
               <dd data-i18n="stat.benchmarks">benchmarks</dd>
             </div>
             <div>
@@ -1490,13 +1545,13 @@
           <img src="assets/awesome-egocentric-atlas-cover.png" width="1672" height="941" decoding="async" fetchpriority="high" alt="Technical illustration of a first-person egocentric AI atlas">
           <div class="media-caption">
             <span data-i18n="media.caption">First-person research resources</span>
-            <span data-updated>Updated 2026-07-15</span>
+            <span data-updated>Updated 2026-07-16</span>
           </div>
         </div>
       </section>
 
       <section class="visual-band" aria-label="Atlas overview">
-        <img src="assets/awesome-egocentric-atlas-map.png" width="5120" height="2920" loading="lazy" decoding="async" alt="Awesome Egocentric Atlas catalog overview">
+        <img src="assets/awesome-egocentric-atlas-map.png" width="5689" height="3244" loading="lazy" decoding="async" alt="Awesome Egocentric Atlas catalog overview">
       </section>
 
       <section class="section navigator" id="navigator">
@@ -1630,8 +1685,8 @@
           <div class="status-list" id="status-list"></div>
         </div>
         <div class="figure-stack">
-          <img src="assets/awesome-egocentric-access-funnel.png" width="3840" height="1560" loading="lazy" decoding="async" alt="Egocentric resources by access state">
-          <img src="assets/awesome-egocentric-timeline.png" width="3840" height="1680" loading="lazy" decoding="async" alt="Egocentric resources by era and type">
+          <img src="assets/awesome-egocentric-access-funnel.png" width="5689" height="2311" loading="lazy" decoding="async" alt="Egocentric resources by access state">
+          <img src="assets/awesome-egocentric-timeline.png" width="5689" height="2489" loading="lazy" decoding="async" alt="Egocentric resources by era and type">
         </div>
       </section>
 

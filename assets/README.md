@@ -31,12 +31,12 @@ Prompt summary: a polished circular atlas mark combining wearable first-person g
 
 The README and GitHub Pages site embed high-resolution PNG exports of the SVG figures so downstream renderers show the same text layout everywhere:
 
-- `awesome-egocentric-atlas-map.png` — `5120 x 2920`
+- `awesome-egocentric-atlas-map.png` — `5689 x 3244`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`
-- `awesome-egocentric-timeline.png` — `3840 x 1680`
+- `awesome-egocentric-timeline.png` — `5689 x 2489`
 - `awesome-egocentric-milestones.png` — `4800 x 13701`
 - `awesome-egocentric-task-matrix.png` — `3840 x 2220`
-- `awesome-egocentric-access-funnel.png` — `3840 x 1560`
+- `awesome-egocentric-access-funnel.png` — `5689 x 2311`
 
 The SVG files remain the editable source of truth; regenerate the PNG exports after changing any SVG figure.
 
@@ -51,7 +51,7 @@ Visual system (shared across the figures):
 ### Data-driven figures
 
 - `awesome-egocentric-timeline.svg` — resources grouped into five eras (`<=2018`, `2019-2021`, `2022-2023`, `2024-2025`, `2026 YTD`), drawn as a bar chart with a trend line through the bar tops to make the rise explicit. Bar heights come from the egocentric `year` counts in `data/resources.yml`; the latest era is amber and is labelled year to date so the wording stays accurate as the catalog advances through 2026.
-- `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as a tapering funnel, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
+- `awesome-egocentric-access-funnel.svg` — the egocentric resources by `status` (`open`, `watch`, `partial`, `benchmark`, `request`) as proportional bars, so readers see how much is usable today versus still unverified. Bar widths and counts come from the catalog.
 - `awesome-egocentric-milestones.svg` — a work-specific milestone poster generated from the `milestone` and `milestone_image` fields in `data/resources.yml`. The factual labels, dates, and categories are vector text, while the visual panels come from the local `milestones/*.png` images and are rendered uncropped.
 
 When the catalog changes materially, refresh these figures so they stay in sync with `data/resources.yml` (recompute counts, then update the bar geometry, labels, and milestone cards).
