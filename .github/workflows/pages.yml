@@ -33,7 +33,8 @@ jobs:
       - name: Stage static site
         run: |
           mkdir -p _site
-          cp index.html styles.css app.js site-data.json README.md LICENSE CITATION.cff _site/
+          cp index.html styles.css app.js site-data.json README.md LICENSE CITATION.cff \
+            feed.xml robots.txt sitemap.xml site.webmanifest _site/
           cp -R assets data docs _site/
 
       - name: Upload static site
