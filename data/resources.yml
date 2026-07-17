@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-07-16"
+  last_major_audit: "2026-07-17"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,419 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Full live scan additions (2026-07-17): arXiv, project, code, and Hugging Face sweep ---
+
+  - name: Ego Scene Augmentation (ESA)
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: partial
+    url: https://github.com/Chikit-WONG/spatialGraph
+    paper: https://arxiv.org/abs/2607.14497
+    code: https://github.com/Chikit-WONG/spatialGraph
+    scale: "Ego-element Graph framework that combines visual-foundation-model signals into an explicit egocentric spatial representation, improving EgoTextVQA by 8.14% indoors and 8.72% outdoors"
+    modalities: [egocentric-video, scene-graphs, spatial-features, natural-language]
+    tasks: [egocentric-vqa, spatial-reasoning, scene-understanding, representation-learning]
+    created_by: "Chi Kit Wong, Ye Pan, Yuanhuiyi Lyu, Xu Zheng, Zidong Cao, Lutao Jiang, Zixin Zhang, Huiyu Zhou, and Xuming Hu"
+    verified_at: "2026-07-17"
+    release_note: "The public repository contains inference scripts, graph construction code, prompts, EgoTextVQA support files, and results, but it does not declare a software license or release a trained checkpoint."
+    citation_key: esa_ego_scene_augmentation_2026
+
+  - name: VIABench
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://github.com/MCG-NJU/VIABench
+    paper: https://arxiv.org/abs/2607.14660
+    project: https://github.com/MCG-NJU/VIABench
+    scale: "First-person video benchmark recorded or shared by blind and visually impaired people, evaluating proactive navigation reminders, visual question answering, and vision-guided interaction in online and offline settings"
+    modalities: [egocentric-video, video-qa, natural-language]
+    tasks: [blind-assistance, proactive-assistance, assistive-videoqa, vision-language, benchmark]
+    created_by: "Yunfeng Liu, Yuandong Yang, Jiarui Han, Zhenpeng Huang, Yuqing Tang, Xiangyu Zeng, Gangshan Wu, and Limin Wang"
+    verified_at: "2026-07-17"
+    release_note: "The paper and project repository are public, but the repository currently contains only the README and visual assets; benchmark data, evaluation code, and license have not yet been released."
+    citation_key: viabench_2026
+
+  - name: Wearable AI Dataset
+    kind: benchmark
+    released: "2026-05"
+    venue: "ECCV 2026 Workshop"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/facebook/wearable-ai
+    paper: https://arxiv.org/abs/2606.04970
+    data: https://huggingface.co/datasets/facebook/wearable-ai
+    scale: "2,100 head-mounted everyday-activity videos (about 317 GB), split evenly across EgoConv conversational QA, EgoLongQA long-video multiple-choice QA, and EgoProactive streaming-assistant evaluation, with 700 samples per task and a bundled starter kit"
+    modalities: [egocentric-video, video-qa, dialogue, natural-language]
+    tasks: [long-video-qa, multimodal-conversation, proactive-assistance, wearable-assistants, benchmark]
+    created_by: "Meta AI and the ECCV 2026 Wearable AI Workshop"
+    released_by: facebook on Hugging Face
+    access: "automatic Hugging Face agreement requiring contact-information sharing"
+    license: cc-by-nc-4.0
+    license_url: https://huggingface.co/datasets/facebook/wearable-ai/blob/main/LICENSE
+    verified_at: "2026-07-17"
+    release_note: "The complete 2,100-video package, annotations, and evaluation scripts are hosted on Hugging Face under CC-BY-NC-4.0, but file access requires accepting the repository agreement."
+    citation_key: wearable_ai_dataset_2026
+
+  - name: HomER v2
+    kind: dataset
+    released: "2026-06"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/toloka/homer-v2
+    data: https://huggingface.co/datasets/toloka/homer-v2
+    scale: "765 first-person household videos totaling 99.60 hours, collected from 420 participants across 49 countries and 10 balanced activity categories, with task descriptions plus durable preview and download URLs"
+    modalities: [egocentric-video, natural-language, metadata]
+    tasks: [everyday-activity, action-recognition, hand-object-interaction, video-language, robot-learning]
+    created_by: "Bakyt Yrysov and Oleksii Moga (Toloka)"
+    released_by: toloka on Hugging Face
+    license: cc-by-4.0
+    license_url: https://huggingface.co/datasets/toloka/homer-v2
+    verified_at: "2026-07-17"
+    release_note: "The metadata table is ungated and each row provides a public preview and long-lived download URL for its source video; the card states CC-BY-4.0."
+    citation_key: homer_v2_2026
+
+  - name: RoboX-EgoTask
+    kind: dataset
+    released: "2026-05"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/RoboXTechnologies/RoboX-EgoTask
+    data: https://huggingface.co/datasets/RoboXTechnologies/RoboX-EgoTask
+    scale: "17 public RGB-D egocentric task clips from five recordings, with 2D/3D hand signals, camera pose, IMU, depth metadata, action segments, trajectories, segmentation, and quality reports; 16 clips include object tracks"
+    modalities: [egocentric-video, rgb-d, hand-pose, camera-pose, imu, action-labels]
+    tasks: [hand-object-interaction, hand-tracking, action-segmentation, human-demonstrations, robot-learning]
+    created_by: "RoboX Technologies"
+    released_by: RoboXTechnologies on Hugging Face
+    license: cc-by-nc-4.0
+    license_url: https://huggingface.co/datasets/RoboXTechnologies/RoboX-EgoTask/blob/main/LICENSE
+    verified_at: "2026-07-17"
+    release_note: "The 1.2 GB dataset, metadata, clean clips, overlays, annotations, validation report, and explicit CC-BY-NC-4.0 license are publicly downloadable without gating."
+    citation_key: robox_egotask_2026
+
+  - name: Seesaw Video Subset
+    kind: dataset
+    released: "2026-02"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/SeesawVideos/Video_Subset
+    data: https://huggingface.co/datasets/SeesawVideos/Video_Subset
+    scale: "763 LeRobot-compatible indoor episodes (243 egocentric and 520 exocentric), totaling 321,178 frames at 30 fps across four room/task settings, with smartphone AR-derived 7D camera pose"
+    modalities: [egocentric-video, exocentric-video, camera-pose, metadata]
+    tasks: [ego-exo, robot-learning, action-recognition, data-conversion]
+    created_by: "Seesaw Videos"
+    released_by: SeesawVideos on Hugging Face
+    access: "manual Hugging Face approval and contact-information sharing"
+    license: MIT
+    license_url: https://huggingface.co/datasets/SeesawVideos/Video_Subset/blob/main/LICENSE
+    verified_at: "2026-07-17"
+    release_note: "The 5.76 GB videos and frame-level Parquet files are present and the card states MIT, but access is manually gated and the citation block still contains template placeholders."
+    citation_key: seesaw_video_subset_2026
+
+  - name: HUI360
+    kind: dataset
+    released: "2025-09"
+    venue: "FG 2026"
+    year: 2025
+    status: partial
+    url: https://hucebot.github.io/hui360/
+    project: https://hucebot.github.io/hui360/
+    paper: https://doi.org/10.1109/FG67764.2026.11556969
+    code: https://github.com/hucebot/HUI360-Baselines
+    data: https://huggingface.co/datasets/rlorlou/HUI360
+    scale: "99 in-the-wild 360-degree egocentric HRI recordings (70 INRIA Shelfy and 29 Cornell SSUP-HRI), with open per-track skeleton, mask, box, and interaction annotations plus baselines for anticipation"
+    modalities: [first-person-360-video, skeleton, masks, annotations]
+    tasks: [human-robot-interaction, interaction-understanding, human-pose-estimation, anticipation, benchmark]
+    created_by: "Romain Lorlou and the HUCEBOT collaborators"
+    verified_at: "2026-07-17"
+    release_note: "Skeleton annotations, background images, processing tools, and baseline code are public. Raw videos and original JSON annotations are hosted in separate gated repositories, and the public annotation card declares no reuse license."
+    citation_key: hui360_2026
+
+  - name: Luel IMU Egocentric 250k
+    kind: dataset
+    released: "2026-05"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/Luel-ai/imu-egocentric-250k
+    data: https://huggingface.co/datasets/Luel-ai/imu-egocentric-250k
+    scale: "Commercial card reports about 250,000 hours of synchronized 1080p first-person video and 6-DoF IMU across 46,340 work-task records and 338,197 procedural substeps; the repository exposes a 10-clip, 30-minute, 1.13 GB sample and the full task taxonomy"
+    modalities: [egocentric-video, imu, natural-language, annotations]
+    tasks: [industrial-egocentric-video, procedural-learning, sensor-fusion, action-recognition, robot-learning]
+    created_by: "Luel"
+    released_by: Luel-ai on Hugging Face
+    access: "manual Hugging Face approval; full corpus requires separate authorization from Luel"
+    license: other
+    license_url: https://huggingface.co/datasets/Luel-ai/imu-egocentric-250k/blob/main/LICENSE
+    verified_at: "2026-07-17"
+    release_note: "Only the 30-minute sample and task taxonomy are verifiable on the Hub. The 250,000-hour scale is a publisher claim, and all files are proprietary, all-rights-reserved, and restricted to authorized parties."
+    citation_key: luel_imu_egocentric_250k_2026
+
+  - name: EgoDyn-Bench
+    kind: benchmark
+    released: "2026-04"
+    venue: "ECCV 2026"
+    year: 2026
+    status: open
+    scope: adjacent
+    url: https://huggingface.co/datasets/TUM-AVS/EgoDyn-Bench-ECCV2026
+    paper: https://arxiv.org/abs/2604.22851
+    code: https://github.com/TUM-AVS/EgoDyn-Bench
+    data: https://huggingface.co/datasets/TUM-AVS/EgoDyn-Bench-ECCV2026
+    scale: "1,000 three-second clips (500 nuScenes and 500 CARLA/Cosmos-transferred), 14 question types and about 14,000 oracle-labelled QA pairs, per-clip dynamics arrays, and a 49-model reference leaderboard"
+    modalities: [vehicle-camera-video, video-qa, trajectories, annotations]
+    tasks: [spatial-reasoning, physical-world-understanding, video-qa, benchmark, driving]
+    created_by: "TUM Autonomous Vehicle Systems"
+    license: cc-by-nc-sa-4.0
+    license_url: https://huggingface.co/datasets/TUM-AVS/EgoDyn-Bench-ECCV2026/blob/main/README.md
+    verified_at: "2026-07-17"
+    release_note: "The 1.16 GB benchmark is public. The bundle is CC-BY-NC-SA-4.0, CARLA-derived artifacts are CC-BY-4.0, and the code is Apache-2.0."
+    scope_note: "Autonomous-driving ego-motion video rather than human or animal wearable first-person capture."
+    citation_key: egodyn_bench_2026
+
+  - name: VTM-Nav
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14514
+    paper: https://arxiv.org/abs/2607.14514
+    scale: "Training-free cross-episode object-goal navigation with persistent room- and object-level visual-topological memory, coarse-to-fine retrieval, and a conservative execution guard, evaluated on HM3D v0.1/v0.2 and MP3D"
+    modalities: [robot-camera-video, spatial-memory, scene-graphs, trajectories]
+    tasks: [navigation, memory, semantic-mapping, long-horizon-reasoning]
+    created_by: "Xiaoran Xu, Yupeng Wu, Tianyu Xue, Yifan Xu, Xuanran Dong, Xiaoshan Yang, and Changsheng Xu"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record links no implementation, checkpoint, benchmark package, or license."
+    scope_note: "Robot-agent navigation memory rather than human wearable first-person capture."
+    citation_key: vtm_nav_2026
+
+  - name: SafeRelBench
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14543
+    paper: https://arxiv.org/abs/2607.14543
+    scale: "507 executable household-agent evaluations, including 248 spatial-relation safety cases and 259 controls, testing whether VLM-driven agents satisfy support, containment, and proximity constraints before risk-prone actions"
+    modalities: [robot-camera-video, language-instructions, annotations]
+    tasks: [safety, spatial-reasoning, benchmark, embodied-reasoning]
+    created_by: "Huaigang Yang, Ya Li, Min Ren, Bo Dai, Zhenliang Zhang, and Zhaofeng He"
+    verified_at: "2026-07-17"
+    release_note: "The preprint provides no benchmark files, simulator configuration, evaluation code, or license."
+    scope_note: "Household robot-agent safety evaluation rather than human wearable capture."
+    citation_key: saferelbench_2026
+
+  - name: SoftNav
+    kind: model
+    released: "2026-07"
+    venue: "IROS 2026"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14586
+    paper: https://arxiv.org/abs/2607.14586
+    scale: "Injects one continuous 3D soft token per detected object or frontier into a frozen VLM using about 1,200 samples and 17M trainable parameters, with transfer across HM3D-OVON, GOAT-Bench, SG3D, and a real robot"
+    modalities: [robot-camera-video, point-clouds, spatial-features, language-instructions]
+    tasks: [navigation, 3d-scene-understanding, representation-learning, domain-generalization]
+    created_by: "Yi Wu, Junjie An, Xiao Liu, Yiqun Zhou, Yuechen Wu, Xiaoqing Guan, Shuyang Yu, You Wang, and Guang Li"
+    verified_at: "2026-07-17"
+    release_note: "IROS 2026 acceptance is stated in the arXiv record, but no code, checkpoint, training sample, or license is linked."
+    scope_note: "Robot object-goal navigation rather than human wearable first-person capture."
+    citation_key: softnav_2026
+
+  - name: Representation-Aligned Tactile Grounding
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14609
+    paper: https://arxiv.org/abs/2607.14609
+    scale: "Latent Tactile Predictor grounded at intermediate action-expert features, selected through linear probing to align VLA representations with future contact consequences without predicting noisy raw tactile signals"
+    modalities: [robot-camera-video, tactile, robot-actions, latent-features]
+    tasks: [tactile-learning, contact-rich-manipulation, vla, robot-learning]
+    created_by: "Ruilin Chen, Jingkai Jia, Tong Yang, Xinyu Zhou, Qiao Sun, Jiangwei Zhong, Shizeng Zhang, Nuo Chen, Bailin He, Wei Li, and Wenqiang Zhang"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record provides no code, checkpoint, tactile dataset, or license."
+    scope_note: "Robot tactile-VLA method rather than human wearable capture."
+    citation_key: representation_aligned_tactile_grounding_2026
+
+  - name: Action QFormer
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14635
+    paper: https://arxiv.org/abs/2607.14635
+    scale: "Instruction-conditioned query interface that reorganizes inherited multimodal features before action generation, raising zero-shot sim-to-real navigation success from 18.8% to 56.3% and action correctness from 22.5% to 75.5%"
+    modalities: [robot-camera-video, language-instructions, robot-actions, latent-features]
+    tasks: [vla, navigation, representation-learning, domain-generalization]
+    created_by: "Yufeng Ji, Wenhao Tang, Haoyi Niu, Koushil Sreenath, Yi Wu, and Zhongyu Li"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record links no implementation, checkpoint, evaluation package, or license."
+    scope_note: "Robot navigation VLA architecture rather than human wearable first-person capture."
+    citation_key: action_qformer_2026
+
+  - name: Reflex
+    kind: toolkit
+    released: "2026-07"
+    venue: "ICML 2026"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14695
+    paper: https://arxiv.org/abs/2607.14695
+    scale: "Streaming flow-matching VLA inference with static/sliding/dynamic attention regions, AdaRMSNorm, asynchronous visual encoding, and operator fusion, reporting 2.58x speedup, stable 50 Hz control, and up to 54% lower reaction latency"
+    modalities: [robot-camera-video, robot-actions, latent-features]
+    tasks: [vla, efficient-inference, robot-deployment, robot-control]
+    created_by: "Yuanchun Guo and Bingyan Liu"
+    verified_at: "2026-07-17"
+    release_note: "ICML 2026 acceptance is stated by the arXiv record, but no runtime, code, checkpoint, or license is linked."
+    scope_note: "Robot VLA inference framework rather than human wearable capture."
+    citation_key: reflex_vla_2026
+
+  - name: FoMoVLA
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://liauto-research.github.io/FoMoVLA/
+    paper: https://arxiv.org/abs/2607.14739
+    project: https://liauto-research.github.io/FoMoVLA/
+    scale: "Couples compact future-feature foresight with sparse 2D point trajectories through future-conditioned cross-attention, supplying both target-state and motion-path supervision for continuous VLA policies"
+    modalities: [robot-camera-video, robot-actions, latent-features, trajectories]
+    tasks: [vla, future-prediction, tracking, robot-learning]
+    created_by: "Wei Li, Peijin Jia, Yuan Ma, Xuefeng Jiang, Titong Jiang, Sheng Sun, Yujian Li, Xin Wen, Han Hong, Zhikang Liu, Bailin Li, and Kun Zhan"
+    verified_at: "2026-07-17"
+    release_note: "The paper and project page are public, but no code, checkpoint, training data, or license is linked."
+    scope_note: "Robot manipulation VLA method rather than human wearable capture."
+    citation_key: fomovla_2026
+
+  - name: LifelongVLA
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14852
+    paper: https://arxiv.org/abs/2607.14852
+    scale: "Dual-timescale LoRA gating separates short-term plasticity from long-term consolidation, paired with cache-efficient stochastic replay for sequentially expanding manipulation skills on an xArm robot"
+    modalities: [robot-camera-video, robot-actions, language-instructions]
+    tasks: [vla, continual-learning, robot-learning, manipulation]
+    created_by: "Yao He, Gan Sun, Wenqi Liang, Fazeng Li, Yang Cong"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record provides no implementation, checkpoint, replay cache, evaluation trajectories, or license."
+    scope_note: "Robot lifelong-learning VLA method rather than human wearable capture."
+    citation_key: lifelongvla_2026
+
+  - name: Steering Robustness into World Action Models
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14943
+    paper: https://arxiv.org/abs/2607.14943
+    scale: "Mechanistic analysis of robustness-relevant WAM activations plus contrastive steering directions and a reduced-order World-Action LQR controller, improving robustness on Cosmos-Policy and DiT4DiT"
+    modalities: [robot-camera-video, robot-actions, latent-features]
+    tasks: [world-action-models, robustness, robot-control, evaluation]
+    created_by: "Jihoon Hong, Julian Skifstad, Qiyue Dai, Alice Chan, and Glen Chou"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record links no steering implementation, checkpoints, evaluation rollouts, or license."
+    scope_note: "Robot WAM robustness method rather than human wearable capture."
+    citation_key: steering_wam_robustness_2026
+
+  - name: AeroAct
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.14997
+    paper: https://arxiv.org/abs/2607.14997
+    scale: "First reported real-world aerial WAM, adapting a video diffusion Transformer to predict local quadrotor trajectory-action chunks from egocentric visual history, proprioception, and language without decoding future video at deployment"
+    modalities: [uav-video, proprioception, language-instructions, robot-actions]
+    tasks: [world-action-models, navigation, vla, robot-control]
+    created_by: "Xinhong Zhang, Qiyuan Zhu, Yubo Huang, Haolin Chen, Runqing Wang, Yuhao Mo, Zhongxin Chen, Yu Hu, Xinjiang Wang, Jian Sun, and Gang Wang"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record provides no implementation, flight dataset, checkpoint, or license."
+    scope_note: "Quadrotor onboard video and control rather than human wearable first-person capture."
+    citation_key: aeroact_2026
+
+  - name: DriftWorld
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://susie-lu.github.io/driftworld/
+    paper: https://arxiv.org/abs/2607.15065
+    project: https://susie-lu.github.io/driftworld/
+    scale: "Single-forward-pass action-conditioned world model generating robot future frames at more than 30 fps, reported 17x faster on average than diffusion baselines and reaching up to 0.99 correlation for offline policy ranking"
+    modalities: [robot-camera-video, robot-actions, generated-video]
+    tasks: [world-modeling, planning, robot-control, evaluation]
+    created_by: "Susie Lu, Haonan Chen, Weirui Ye, and Yilun Du"
+    verified_at: "2026-07-17"
+    release_note: "The official project and GitHub repository are public, but the repository currently contains only a README and assets; implementation, checkpoints, and a license are absent."
+    scope_note: "Robot world-model planning and policy evaluation rather than human wearable capture."
+    citation_key: driftworld_2026
+
+  - name: BadWAM
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.15207
+    paper: https://arxiv.org/abs/2607.15207
+    scale: "World-Action Drift Attack framework testing action-only and imagination-preserving perturbations; the reported action-only attack lowers one WAM from 96.5% to 43.1% closed-loop success"
+    modalities: [robot-camera-video, robot-actions, generated-video]
+    tasks: [world-action-models, robustness, safety, benchmark]
+    created_by: "Qi Li, Xingyi Yang, and Xinchao Wang"
+    verified_at: "2026-07-17"
+    release_note: "The arXiv record links no attack code, evaluation package, adversarial examples, or license."
+    scope_note: "Robot WAM security evaluation rather than human wearable capture."
+    citation_key: badwam_2026
+
+  - name: RoboTTT
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://research.nvidia.com/labs/gear/robottt/
+    paper: https://arxiv.org/abs/2607.15275
+    project: https://research.nvidia.com/labs/gear/robottt/
+    scale: "Test-time-training robot policy scaling visuomotor context to 8K timesteps without growing inference latency, enabling one-shot imitation from a human video, online improvement, perturbation recovery, and a five-minute ten-stage assembly"
+    modalities: [robot-camera-video, human-view-video, robot-actions, language-instructions]
+    tasks: [vla, long-horizon-reasoning, imitation-learning, test-time-scaling, manipulation]
+    created_by: "NVIDIA GEAR, Stanford University, and The University of Texas at Austin"
+    verified_at: "2026-07-17"
+    release_note: "The NVIDIA project page provides the paper, full rollout videos, architecture details, and evaluations, but no code, model weights, training data, or license."
+    scope_note: "Robot policy research using a human video as context rather than releasing a human wearable-video resource."
+    citation_key: robottt_2026
 
   # --- Full live scan additions (2026-07-16): arXiv, project, code, and Hugging Face sweep ---
 

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Awesome Egocentric Atlas updates</title>
+  <id>https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml</id>
+  <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml" rel="self"/>
+  <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"/>
+  <updated>2026-07-17T00:00:00Z</updated>
+  <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
+<entry>
+  <title>yyyyywv/egocentric</title>
+  <id>https://huggingface.co/datasets/yyyyywv/egocentric</id>
+  <link href="https://huggingface.co/datasets/yyyyywv/egocentric"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>About 32.8 GB and 1,019 robot episodes totaling 994,459 frames across seven LeRobot task groups: 800 gripper episodes plus plate, shoe, tea, wash, gift-in-hand, and flower-picking sets, with eye or head and wrist cameras, state, and action streams at 20-25 fps</summary>
+</entry>
+<entry>
+  <title>Xiaomi-Robotics-U0</title>
+  <id>https://arxiv.org/abs/2607.11643</id>
+  <link href="https://arxiv.org/abs/2607.11643"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>38B unified embodied-synthesis model spanning multi-view scene generation, embodiment transfer, editing, and video generation; reports improving pi0.5 out-of-distribution manipulation success from 36.9% to 63.2%</summary>
+</entry>
+<entry>
+  <title>Worldscape-MoE</title>
+  <id>https://worldscape-moe.com/</id>
+  <link href="https://worldscape-moe.com/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Mixture-of-experts diffusion world model unifying camera trajectories, robot actions, and hand-joint action maps across locomotion, manipulation, and egocentric hand-control experiments</summary>
+</entry>
+<entry>
+  <title>World Action Models to Embodied Brains Roadmap</title>
+  <id>https://arxiv.org/abs/2607.11689</id>
+  <link href="https://arxiv.org/abs/2607.11689"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="survey"/>
+  <summary>Roadmap organizing WAM gaps across model roles and representations, objectives and standardization, and system composition, then proposing embodied brains, physical harnesses, shared contracts, and closed-loop post-training</summary>
+</entry>
+<entry>
+  <title>Whareformer</title>
+  <id>https://jacobchalk.github.io/Whareformer/</id>
+  <link href="https://jacobchalk.github.io/Whareformer/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>First learning-based solution for online Out of Sight, Not out of Mind tracking, trained on 56 videos and evaluated on 260 long videos from EPIC-KITCHENS-100, IT3DEgo, and HD-EPIC with updatable appearance and 3D-location memory</summary>
+</entry>
+<entry>
+  <title>Wearable Gait MoCap with Shank-Mounted Ego Cameras</title>
+  <id>https://doi.org/10.1038/s41597-026-07657-7</id>
+  <link href="https://doi.org/10.1038/s41597-026-07657-7"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Wearable motion-capture dataset for gait analysis using IMUs and shank-mounted egocentric cameras</summary>
+</entry>
+<entry>
+  <title>WANDA / Worlds in One Demo</title>
+  <id>https://wanda.lecar-lab.org/</id>
+  <link href="https://wanda.lecar-lab.org/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Synthetic-data engine expanding one real demonstration per task into 16,922 LeRobot episodes and about 26.8M timesteps (roughly 248 hours at 30 fps) across five long-horizon mobile-manipulation tasks and diverse generated worlds</summary>
+</entry>
+<entry>
+  <title>WAM-TTT</title>
+  <id>https://arxiv.org/abs/2607.06988</id>
+  <link href="https://arxiv.org/abs/2607.06988"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Test-time training framework that steers frozen world-action models from unlabeled raw human videos by adapting a lightweight memory through self-supervised video prediction and paired human-robot meta-training</summary>
+</entry>
+<entry>
+  <title>WALA</title>
+  <id>https://liujiahao2077.github.io/WALA.github.io</id>
+  <link href="https://liujiahao2077.github.io/WALA.github.io"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Learns executable latent actions jointly from action-labeled demonstrations and action-free human or robot videos using DINOv3 feature deltas, dense depth, and a trainable latent world model; reports 75.2% RoboCasa success</summary>
+</entry>
+<entry>
+  <title>VistaVLA</title>
+  <id>https://arxiv.org/abs/2607.12356</id>
+  <link href="https://arxiv.org/abs/2607.12356"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Grounds geometry- and semantics-aware 3D Gaussian primitives into compact VLA context tokens; reports 99% token reduction, +22.8% success over seven real tasks, and +30.0% over VLA-Adapter on OOD tasks</summary>
+</entry>
+<entry>
+  <title>Vinci2 / EgoServe</title>
+  <id>https://sitonggong.github.io/EgoServe-page/</id>
+  <link href="https://sitonggong.github.io/EgoServe-page/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>3,000+ proactive-service instances across 11 service categories and four temporal memory horizons, with the training-free EgoMemo agent combining multi-scale summaries, a semantic graph, and visual retrieval archives</summary>
+</entry>
+<entry>
+  <title>Video-Action Generalization Gap / Temporal Ratio</title>
+  <id>https://umishra.me/temporal-ratio/</id>
+  <link href="https://umishra.me/temporal-ratio/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Systematic video-action model study introducing Temporal Ratio to measure reliance on future latent rollouts, plus inference-time adaptive guidance that narrows compositional OOD gaps on LIBERO and real-world robot tasks</summary>
+</entry>
+<entry>
+  <title>Verbose Household Cleaning Egocentric Video</title>
+  <id>https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric</id>
+  <link href="https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>12 head- or chest-mounted 1080p/30 fps cleaning clips totaling 6,259 seconds (104.3 minutes), distributed as an ungated 5.74 GB ZIP with audio and clip metadata across three sub-activities</summary>
+</entry>
+<entry>
+  <title>Verbose Cooking and Chopping Egocentric Video</title>
+  <id>https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric</id>
+  <link href="https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>11 head- or chest-mounted kitchen clips totaling 6,104 seconds (101.7 minutes) across cooking and chopping, distributed as an ungated 6.09 GB ZIP with clip-level metadata</summary>
+</entry>
+<entry>
+  <title>Verbose Clothing Industry Egocentric Video</title>
+  <id>https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric</id>
+  <link href="https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Placeholder repository for clothing-industry egocentric video; the current file tree contains only .gitattributes and a 27-byte README declaring CC-BY-4.0</summary>
+</entry>
+<entry>
+  <title>VTM-Nav</title>
+  <id>https://arxiv.org/abs/2607.14514</id>
+  <link href="https://arxiv.org/abs/2607.14514"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Training-free cross-episode object-goal navigation with persistent room- and object-level visual-topological memory, coarse-to-fine retrieval, and a conservative execution guard, evaluated on HM3D v0.1/v0.2 and MP3D</summary>
+</entry>
+<entry>
+  <title>VSI-Super-Wild</title>
+  <id>https://vsi-super-wild.github.io/</id>
+  <link href="https://vsi-super-wild.github.io/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>6,980 human-verified spatial QA pairs over 442 continuous panoramic in-the-wild videos totaling 284.52 hours across eight scene categories, including recordings longer than four hours and four observer-object-environment task families</summary>
+</entry>
+<entry>
+  <title>VLA-Corrector</title>
+  <id>https://arxiv.org/abs/2607.01804</id>
+  <link href="https://arxiv.org/abs/2607.01804"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Lightweight detect-and-correct inference layer for action-chunked VLA policies, using visual feature evolution to detect open-loop deviations and adapt action horizons</summary>
+</entry>
+<entry>
+  <title>VLA Models Review</title>
+  <id>https://arxiv.org/abs/2607.06706</id>
+  <link href="https://arxiv.org/abs/2607.06706"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="survey"/>
+  <summary>Survey of 183 VLA contributions from 2017-2026 across architectures, training recipes, action representations, bimanual coordination, UAV navigation/control, language grounding, memory, and world models</summary>
+</entry>
+<entry>
+  <title>VIABench</title>
+  <id>https://github.com/MCG-NJU/VIABench</id>
+  <link href="https://github.com/MCG-NJU/VIABench"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>First-person video benchmark recorded or shared by blind and visually impaired people, evaluating proactive navigation reminders, visual question answering, and vision-guided interaction in online and offline settings</summary>
+</entry>
+<entry>
+  <title>VEGAS</title>
+  <id>https://arxiv.org/abs/2607.08489</id>
+  <link href="https://arxiv.org/abs/2607.08489"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Training-free Video caption Evaluation via GAze Score metric plus an evaluation dataset of egocentric activities and instructional slides paired with synchronized gaze and reference captions; the abstract does not report the dataset size</summary>
+</entry>
+<entry>
+  <title>USA Egocentric</title>
+  <id>https://huggingface.co/datasets/Grably/usa-egocentric</id>
+  <link href="https://huggingface.co/datasets/Grably/usa-egocentric"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Three iPhone kitchen-manipulation episodes with normalized RGB videos, raw videos, camera calibration and trajectory files, MediaPipe and HaMeR hand outputs, action segments, contact/object tracks on the strongest run, review manifests, and quality reports</summary>
+</entry>
+<entry>
+  <title>UESF-Bench / SeekFollow-VLA</title>
+  <id>https://arxiv.org/abs/2607.13621</id>
+  <link href="https://arxiv.org/abs/2607.13621"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Unified language-guided human seeking and persistent following benchmark requiring semantic exploration, delayed identity grounding, phase switching, and recovery in single- and multi-person environments</summary>
+</entry>
+<entry>
+  <title>TrustVLA</title>
+  <id>https://arxiv.org/abs/2607.12571</id>
+  <link href="https://arxiv.org/abs/2607.12571"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Retraining-free defense that detects abnormal VLA evidence evolution, localizes compact visual-trigger regions by counterfactual score drop, and recovers observations through localized inpainting</summary>
+</entry>
+<entry>
+  <title>TouchWorld</title>
+  <id>https://arxiv.org/abs/2607.07287</id>
+  <link href="https://arxiv.org/abs/2607.07287"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Predictive-and-reactive tactile foundation model for dexterous manipulation that separates vision-language planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement</summary>
+</entry>
+<entry>
+  <title>The Moving Eye</title>
+  <id>https://arxiv.org/abs/2607.02322</id>
+  <link href="https://arxiv.org/abs/2607.02322"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Hybrid dynamic data-collection strategy for VLA spatial generalization, using a dual-arm setup where one arm manipulates while the other acts as a moving environmental camera</summary>
+</entry>
+<entry>
+  <title>TeleDexter</title>
+  <id>https://bigai-dex.github.io/blog/teledexter/</id>
+  <link href="https://bigai-dex.github.io/blog/teledexter/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Hand-object co-tracking controller trained with single-stage RL and transferred zero-shot across two dexterous hands; reports 75.2% average success over seven in-hand and tool-use tasks and uses 50 demonstrations per task for behavior cloning</summary>
+</entry>
+<entry>
+  <title>TactiDex</title>
+  <id>https://tactidex.github.io/</id>
+  <link href="https://tactidex.github.io/"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Real-world human-demonstration benchmark synchronizing whole-hand tactile pressure, multi-granularity hand kinematics, object 6D states, language descriptions, and task phases, with TactiSkill transfer across single-hand and bimanual tasks</summary>
+</entry>
+<entry>
+  <title>TSR-Ego</title>
+  <id>https://arxiv.org/abs/2607.09169</id>
+  <link href="https://arxiv.org/abs/2607.09169"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Online egocentric 3D human-pose framework using causal temporal stereo features, temporal and joint self-attention, and fisheye deformable stereo cross-attention to recover occluded or truncated body joints</summary>
+</entry>
+<entry>
+  <title>TFP</title>
+  <id>https://arxiv.org/abs/2607.08283</id>
+  <link href="https://arxiv.org/abs/2607.08283"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Temporally Conditioned Memory-Fusion Policy with a 3.3B VLA backbone and event-sensitive episode belief, reporting 98.75% on LIBERO, 93.77% on LIBERO-plus, and up to 75% on MIKASA ShellGameTouch</summary>
+</entry>
+</feed>

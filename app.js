@@ -12,17 +12,17 @@ const I18N = {
   en: {
     skip: "Skip to catalog",
     "language.label": "Language",
-    "nav.catalog": "Catalog", "nav.navigator": "Find", "nav.lanes": "Areas", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones",
+    "nav.catalog": "Catalog", "nav.navigator": "Find", "nav.lanes": "Areas", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones", "nav.menu": "Menu",
     "milestones.title": "Milestones", "milestones.desc": "Representative works to read first, from early egocentric activity datasets to recent models and large-scale corpora.",
     "navigator.title": "Find Resources", "navigator.desc": "Use task, modality, lineage, and access summaries to narrow the catalog quickly.", "navigator.catalog": "Open catalog",
     "navigator.tasks": "Common Tasks", "navigator.tasks.desc": "Frequent problem settings in the catalog.",
     "navigator.modalities": "Modalities", "navigator.modalities.desc": "Sensor and annotation types you can filter by.",
     "navigator.lineage": "Dataset Lineages", "navigator.lineage.desc": "Dataset families that many papers and tools build on.",
-    "hero.lead": "Find datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, video-language, long-context memory, AR/VR, and hand-object interaction.",
-    "btn.github": "GitHub Repo", "btn.hf": "Hugging Face Mirror", "btn.browse": "Browse Catalog",
+    "hero.lead": "Explore a curated collection of datasets, benchmarks, models, and tools for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
+    "btn.github": "GitHub Repo", "btn.hf": "Hugging Face Mirror", "btn.browse": "Browse Catalog", "btn.share": "Share Atlas",
     "stat.resources": "egocentric resources", "stat.datasets": "datasets", "stat.benchmarks": "benchmarks", "stat.models": "models", "stat.toolkits": "toolkits",
     "proof.1": "Datasets, benchmarks, models & tools", "proof.2": "Filter by task, status, and date", "proof.3": "Open access, MIT licensed",
-    "media.caption": "First-person research resources",
+    "media.caption": "Egocentric AI research resources",
     "catalog.title": "Catalog", "catalog.desc": "Filter by name, task, modality, status, kind, or research area.", "catalog.openyaml": "Open YAML",
     "filter.search": "Search", "filter.kind": "Kind", "filter.status": "Status", "filter.lane": "Area", "filter.reset": "Reset",
     "filter.allkinds": "All kinds", "filter.allstatuses": "All statuses", "filter.alllanes": "All areas",
@@ -36,20 +36,21 @@ const I18N = {
     "maintain.title": "Add a Resource", "maintain.desc": "Missing a resource? Open a short issue with the source, access status, and license notes.", "maintain.add": "Add Resource",
     "maintain.contributing": "Contributing guide", "maintain.schema": "Resource schema", "maintain.status": "Status policy", "maintain.workflow": "Maintenance workflow",
     "summary.total": "Total catalog", "summary.inscope": "In scope", "summary.adjacent": "Adjacent", "summary.open": "Open today", "summary.watch": "Watchlist", "summary.audit": "Last audit",
-    "footer.tagline": "MIT licensed and free to use. Contributions welcome.",
+    "footer.tagline": "MIT licensed and free to use. Contributions welcome.", "footer.feed": "Updates feed", "footer.cite": "Cite the atlas",
+    "share.copied": "Atlas link copied.", "share.failed": "Unable to share this page.",
     "error.load": "Catalog failed to load", updated: "Updated {date}"
   },
   zh: {
     skip: "跳到目录",
     "language.label": "语言",
-    "nav.catalog": "目录", "nav.navigator": "查找", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑",
+    "nav.catalog": "目录", "nav.navigator": "查找", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑", "nav.menu": "菜单",
     "milestones.title": "里程碑", "milestones.desc": "优先阅读的代表性工作：从早期自我中心活动数据集到近期模型和大规模语料。",
     "navigator.title": "查找资源", "navigator.desc": "用任务、模态、谱系和获取状态快速缩小目录范围。", "navigator.catalog": "打开目录",
     "navigator.tasks": "常见任务", "navigator.tasks.desc": "目录中常见的问题设置。",
     "navigator.modalities": "模态", "navigator.modalities.desc": "可用于筛选的传感器和标注类型。",
     "navigator.lineage": "数据集谱系", "navigator.lineage.desc": "许多论文和工具基于的数据集家族。",
     "hero.lead": "查找用于自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 和手物交互的数据集、基准、模型与工具。",
-    "btn.github": "GitHub 仓库", "btn.hf": "Hugging Face 镜像", "btn.browse": "浏览目录",
+    "btn.github": "GitHub 仓库", "btn.hf": "Hugging Face 镜像", "btn.browse": "浏览目录", "btn.share": "分享图谱",
     "stat.resources": "自我中心资源", "stat.datasets": "数据集", "stat.benchmarks": "基准", "stat.models": "模型", "stat.toolkits": "工具包",
     "proof.1": "数据集、基准、模型与工具", "proof.2": "按任务、状态与日期筛选", "proof.3": "开放获取，MIT 许可",
     "media.caption": "第一人称研究资源",
@@ -66,20 +67,21 @@ const I18N = {
     "maintain.title": "添加资源", "maintain.desc": "缺少资源？请提交简短 issue，并附上来源、获取状态和许可证说明。", "maintain.add": "添加资源",
     "maintain.contributing": "贡献指南", "maintain.schema": "资源结构", "maintain.status": "状态政策", "maintain.workflow": "维护流程",
     "summary.total": "目录总数", "summary.inscope": "范围内", "summary.adjacent": "相邻", "summary.open": "今日可用", "summary.watch": "关注列表", "summary.audit": "上次审核",
-    "footer.tagline": "MIT 许可，免费使用，欢迎贡献。",
+    "footer.tagline": "MIT 许可，免费使用，欢迎贡献。", "footer.feed": "更新订阅", "footer.cite": "引用图谱",
+    "share.copied": "已复制图谱链接。", "share.failed": "无法分享此页面。",
     "error.load": "目录加载失败", updated: "更新于 {date}"
   },
   es: {
     skip: "Saltar al catálogo",
     "language.label": "Idioma",
-    "nav.catalog": "Catálogo", "nav.navigator": "Buscar", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos",
+    "nav.catalog": "Catálogo", "nav.navigator": "Buscar", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos", "nav.menu": "Menú",
     "milestones.title": "Hitos", "milestones.desc": "Trabajos representativos para leer primero, desde los primeros conjuntos egocéntricos de actividad hasta modelos y corpus recientes a gran escala.",
     "navigator.title": "Encontrar recursos", "navigator.desc": "Usa resúmenes de tarea, modalidad, linaje y acceso para acotar el catálogo rápidamente.", "navigator.catalog": "Abrir catálogo",
     "navigator.tasks": "Tareas comunes", "navigator.tasks.desc": "Configuraciones de problema frecuentes en el catálogo.",
     "navigator.modalities": "Modalidades", "navigator.modalities.desc": "Sensores y tipos de anotación por los que puedes filtrar.",
     "navigator.lineage": "Linajes de datos", "navigator.lineage.desc": "Familias de datos en las que se basan muchos artículos y herramientas.",
     "hero.lead": "Encuentra conjuntos de datos, benchmarks, modelos y herramientas para visión egocéntrica, IA encarnada y robótica, video-lenguaje, memoria de largo contexto, RA/RV e interacción mano-objeto.",
-    "btn.github": "Repositorio GitHub", "btn.hf": "Espejo en Hugging Face", "btn.browse": "Explorar catálogo",
+    "btn.github": "Repositorio GitHub", "btn.hf": "Espejo en Hugging Face", "btn.browse": "Explorar catálogo", "btn.share": "Compartir atlas",
     "stat.resources": "recursos egocéntricos", "stat.datasets": "conjuntos de datos", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "herramientas",
     "proof.1": "Datos, benchmarks, modelos y herramientas", "proof.2": "Filtra por tarea, estado y fecha", "proof.3": "Acceso abierto, licencia MIT",
     "media.caption": "Recursos de investigación en primera persona",
@@ -96,20 +98,21 @@ const I18N = {
     "maintain.title": "Añadir un recurso", "maintain.desc": "¿Falta un recurso? Abre una breve incidencia con la fuente, el estado de acceso y las notas de licencia.", "maintain.add": "Añadir recurso",
     "maintain.contributing": "Guía de contribución", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Flujo de mantenimiento",
     "summary.total": "Catálogo total", "summary.inscope": "En alcance", "summary.adjacent": "Adyacentes", "summary.open": "Abiertos hoy", "summary.watch": "Lista de seguimiento", "summary.audit": "Última revisión",
-    "footer.tagline": "Licencia MIT y de uso libre. Contribuciones bienvenidas.",
+    "footer.tagline": "Licencia MIT y de uso libre. Contribuciones bienvenidas.", "footer.feed": "Fuente de novedades", "footer.cite": "Citar el atlas",
+    "share.copied": "Enlace del atlas copiado.", "share.failed": "No se pudo compartir esta página.",
     "error.load": "No se pudo cargar el catálogo", updated: "Actualizado {date}"
   },
   fr: {
     skip: "Aller au catalogue",
     "language.label": "Langue",
-    "nav.catalog": "Catalogue", "nav.navigator": "Trouver", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons",
+    "nav.catalog": "Catalogue", "nav.navigator": "Trouver", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons", "nav.menu": "Menu",
     "milestones.title": "Jalons", "milestones.desc": "Travaux représentatifs à lire en premier, des premiers jeux de données d'activité égocentrique aux modèles et corpus récents à grande échelle.",
     "navigator.title": "Trouver des ressources", "navigator.desc": "Utilisez les résumés par tâche, modalité, lignée et accès pour réduire rapidement le catalogue.", "navigator.catalog": "Ouvrir le catalogue",
     "navigator.tasks": "Tâches fréquentes", "navigator.tasks.desc": "Cadres de problèmes fréquents dans le catalogue.",
     "navigator.modalities": "Modalités", "navigator.modalities.desc": "Types de capteurs et d'annotations utilisables pour filtrer.",
     "navigator.lineage": "Lignées de données", "navigator.lineage.desc": "Familles de données sur lesquelles s'appuient de nombreux articles et outils.",
     "hero.lead": "Trouvez des jeux de données, benchmarks, modèles et outils pour la vision égocentrique, l'IA incarnée et la robotique, le vidéo-langage, la mémoire à long contexte, la RA/RV et l'interaction main-objet.",
-    "btn.github": "Dépôt GitHub", "btn.hf": "Miroir Hugging Face", "btn.browse": "Parcourir le catalogue",
+    "btn.github": "Dépôt GitHub", "btn.hf": "Miroir Hugging Face", "btn.browse": "Parcourir le catalogue", "btn.share": "Partager l'atlas",
     "stat.resources": "ressources égocentriques", "stat.datasets": "jeux de données", "stat.benchmarks": "benchmarks", "stat.models": "modèles", "stat.toolkits": "outils",
     "proof.1": "Données, benchmarks, modèles et outils", "proof.2": "Filtrer par tâche, statut et date", "proof.3": "Accès libre, licence MIT",
     "media.caption": "Ressources de recherche en première personne",
@@ -126,20 +129,21 @@ const I18N = {
     "maintain.title": "Ajouter une ressource", "maintain.desc": "Une ressource manque ? Ouvrez un court ticket avec la source, le statut d'accès et les notes de licence.", "maintain.add": "Ajouter une ressource",
     "maintain.contributing": "Guide de contribution", "maintain.schema": "Schéma des ressources", "maintain.status": "Politique des statuts", "maintain.workflow": "Flux de maintenance",
     "summary.total": "Catalogue total", "summary.inscope": "Dans le périmètre", "summary.adjacent": "Adjacentes", "summary.open": "Ouvertes aujourd'hui", "summary.watch": "Liste de veille", "summary.audit": "Dernière révision",
-    "footer.tagline": "Licence MIT, libre d'utilisation. Contributions bienvenues.",
+    "footer.tagline": "Licence MIT, libre d'utilisation. Contributions bienvenues.", "footer.feed": "Flux des mises à jour", "footer.cite": "Citer l'atlas",
+    "share.copied": "Lien de l'atlas copié.", "share.failed": "Impossible de partager cette page.",
     "error.load": "Échec du chargement du catalogue", updated: "Mis à jour le {date}"
   },
   de: {
     skip: "Zum Katalog springen",
     "language.label": "Sprache",
-    "nav.catalog": "Katalog", "nav.navigator": "Finden", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine",
+    "nav.catalog": "Katalog", "nav.navigator": "Finden", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine", "nav.menu": "Menü",
     "milestones.title": "Meilensteine", "milestones.desc": "Repräsentative Arbeiten für den Einstieg, von frühen egozentrischen Aktivitätsdatensätzen bis zu aktuellen Modellen und großen Korpora.",
     "navigator.title": "Ressourcen finden", "navigator.desc": "Nutze Aufgaben-, Modalitäts-, Linien- und Zugriffszusammenfassungen, um den Katalog schnell einzugrenzen.", "navigator.catalog": "Katalog öffnen",
     "navigator.tasks": "Häufige Aufgaben", "navigator.tasks.desc": "Häufige Problemstellungen im Katalog.",
     "navigator.modalities": "Modalitäten", "navigator.modalities.desc": "Sensor- und Annotationstypen, nach denen du filtern kannst.",
     "navigator.lineage": "Datensatz-Linien", "navigator.lineage.desc": "Datensatzfamilien, auf denen viele Artikel und Tools aufbauen.",
     "hero.lead": "Finde Datensätze, Benchmarks, Modelle und Werkzeuge für egozentrisches Sehen, verkörperte KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.",
-    "btn.github": "GitHub-Repo", "btn.hf": "Hugging-Face-Spiegel", "btn.browse": "Katalog durchsuchen",
+    "btn.github": "GitHub-Repo", "btn.hf": "Hugging-Face-Spiegel", "btn.browse": "Katalog durchsuchen", "btn.share": "Atlas teilen",
     "stat.resources": "egozentrische Ressourcen", "stat.datasets": "Datensätze", "stat.benchmarks": "Benchmarks", "stat.models": "Modelle", "stat.toolkits": "Toolkits",
     "proof.1": "Datensätze, Benchmarks, Modelle & Werkzeuge", "proof.2": "Nach Aufgabe, Status und Datum filtern", "proof.3": "Offen zugänglich, MIT-Lizenz",
     "media.caption": "Ressourcen für First-Person-Forschung",
@@ -156,20 +160,21 @@ const I18N = {
     "maintain.title": "Ressource hinzufügen", "maintain.desc": "Fehlt eine Ressource? Öffne ein kurzes Issue mit Quelle, Zugriffsstatus und Lizenzhinweisen.", "maintain.add": "Ressource hinzufügen",
     "maintain.contributing": "Beitragsleitfaden", "maintain.schema": "Ressourcenschema", "maintain.status": "Status-Richtlinie", "maintain.workflow": "Wartungsablauf",
     "summary.total": "Gesamtkatalog", "summary.inscope": "Im Fokus", "summary.adjacent": "Angrenzend", "summary.open": "Heute offen", "summary.watch": "Beobachtungsliste", "summary.audit": "Letzte Prüfung",
-    "footer.tagline": "MIT-Lizenz, frei nutzbar. Beiträge willkommen.",
+    "footer.tagline": "MIT-Lizenz, frei nutzbar. Beiträge willkommen.", "footer.feed": "Updates-Feed", "footer.cite": "Atlas zitieren",
+    "share.copied": "Atlas-Link kopiert.", "share.failed": "Diese Seite konnte nicht geteilt werden.",
     "error.load": "Katalog konnte nicht geladen werden", updated: "Aktualisiert am {date}"
   },
   ja: {
     skip: "カタログへスキップ",
     "language.label": "言語",
-    "nav.catalog": "カタログ", "nav.navigator": "探す", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン",
+    "nav.catalog": "カタログ", "nav.navigator": "探す", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン", "nav.menu": "メニュー",
     "milestones.title": "マイルストーン", "milestones.desc": "まず読む代表的な研究。初期のエゴセントリック活動データセットから近年のモデルと大規模コーパスまで。",
     "navigator.title": "リソースを探す", "navigator.desc": "タスク、モダリティ、系譜、アクセス状況の要約でカタログを素早く絞り込みます。", "navigator.catalog": "カタログを開く",
     "navigator.tasks": "よく使うタスク", "navigator.tasks.desc": "カタログでよく出てくる問題設定。",
     "navigator.modalities": "モダリティ", "navigator.modalities.desc": "絞り込みに使えるセンサーと注釈タイプ。",
     "navigator.lineage": "データ系譜", "navigator.lineage.desc": "多くの論文やツールが基盤にするデータセット群。",
     "hero.lead": "エゴセントリック視覚、身体性 AI とロボティクス、ビデオ言語、長文脈記憶、AR/VR、手と物体の相互作用に使うデータセット・ベンチマーク・モデル・ツールを探せます。",
-    "btn.github": "GitHub リポジトリ", "btn.hf": "Hugging Face ミラー", "btn.browse": "カタログを見る",
+    "btn.github": "GitHub リポジトリ", "btn.hf": "Hugging Face ミラー", "btn.browse": "カタログを見る", "btn.share": "アトラスを共有",
     "stat.resources": "エゴセントリック資源", "stat.datasets": "データセット", "stat.benchmarks": "ベンチマーク", "stat.models": "モデル", "stat.toolkits": "ツールキット",
     "proof.1": "データセット・ベンチマーク・モデル・ツール", "proof.2": "タスク・状態・日付で絞り込み", "proof.3": "オープンアクセス、MIT ライセンス",
     "media.caption": "第一人称研究リソース",
@@ -186,20 +191,21 @@ const I18N = {
     "maintain.title": "資源を追加", "maintain.desc": "不足している資源は、出典・アクセス状況・ライセンス情報を添えて短い issue で知らせてください。", "maintain.add": "資源を追加",
     "maintain.contributing": "貢献ガイド", "maintain.schema": "資源スキーマ", "maintain.status": "状態ポリシー", "maintain.workflow": "メンテナンス手順",
     "summary.total": "カタログ総数", "summary.inscope": "対象内", "summary.adjacent": "隣接", "summary.open": "本日公開", "summary.watch": "ウォッチリスト", "summary.audit": "最終確認",
-    "footer.tagline": "MIT ライセンス、自由に利用可能。貢献歓迎。",
+    "footer.tagline": "MIT ライセンス、自由に利用可能。貢献歓迎。", "footer.feed": "更新フィード", "footer.cite": "アトラスを引用",
+    "share.copied": "アトラスのリンクをコピーしました。", "share.failed": "このページを共有できませんでした。",
     "error.load": "カタログの読み込みに失敗しました", updated: "更新日 {date}"
   },
   ko: {
     skip: "카탈로그로 건너뛰기",
     "language.label": "언어",
-    "nav.catalog": "카탈로그", "nav.navigator": "찾기", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표",
+    "nav.catalog": "카탈로그", "nav.navigator": "찾기", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표", "nav.menu": "메뉴",
     "milestones.title": "이정표", "milestones.desc": "먼저 읽기 좋은 대표 작업입니다. 초기 자기중심 활동 데이터셋부터 최근 모델과 대규모 코퍼스까지 포함합니다.",
     "navigator.title": "자원 찾기", "navigator.desc": "작업, 모달리티, 계보, 접근 상태 요약으로 카탈로그를 빠르게 좁힙니다.", "navigator.catalog": "카탈로그 열기",
     "navigator.tasks": "공통 작업", "navigator.tasks.desc": "카탈로그에서 자주 나오는 문제 설정.",
     "navigator.modalities": "모달리티", "navigator.modalities.desc": "필터링할 수 있는 센서와 주석 유형.",
     "navigator.lineage": "데이터셋 계보", "navigator.lineage.desc": "많은 논문과 도구가 기반으로 삼는 데이터셋 계열.",
     "hero.lead": "자기중심 비전, 체화 AI와 로보틱스, 비디오-언어, 장문맥 기억, AR/VR, 손-물체 상호작용을 위한 데이터셋·벤치마크·모델·도구를 찾을 수 있습니다.",
-    "btn.github": "GitHub 저장소", "btn.hf": "Hugging Face 미러", "btn.browse": "카탈로그 보기",
+    "btn.github": "GitHub 저장소", "btn.hf": "Hugging Face 미러", "btn.browse": "카탈로그 보기", "btn.share": "아틀라스 공유",
     "stat.resources": "자기중심 자원", "stat.datasets": "데이터셋", "stat.benchmarks": "벤치마크", "stat.models": "모델", "stat.toolkits": "툴킷",
     "proof.1": "데이터셋·벤치마크·모델·도구", "proof.2": "작업·상태·날짜로 필터링", "proof.3": "오픈 액세스, MIT 라이선스",
     "media.caption": "일인칭 연구 자원",
@@ -216,20 +222,21 @@ const I18N = {
     "maintain.title": "자원 추가", "maintain.desc": "빠진 자원이 있으면 출처, 접근 상태, 라이선스 메모를 담아 짧은 이슈로 알려주세요.", "maintain.add": "자원 추가",
     "maintain.contributing": "기여 가이드", "maintain.schema": "자원 스키마", "maintain.status": "상태 정책", "maintain.workflow": "유지보수 절차",
     "summary.total": "전체 카탈로그", "summary.inscope": "범위 내", "summary.adjacent": "인접", "summary.open": "오늘 공개", "summary.watch": "관심 목록", "summary.audit": "최근 점검",
-    "footer.tagline": "MIT 라이선스, 자유롭게 사용하세요. 기여 환영.",
+    "footer.tagline": "MIT 라이선스, 자유롭게 사용하세요. 기여 환영.", "footer.feed": "업데이트 피드", "footer.cite": "아틀라스 인용",
+    "share.copied": "아틀라스 링크를 복사했습니다.", "share.failed": "이 페이지를 공유할 수 없습니다.",
     "error.load": "카탈로그를 불러오지 못했습니다", updated: "업데이트 {date}"
   },
   pt: {
     skip: "Ir para o catálogo",
     "language.label": "Idioma",
-    "nav.catalog": "Catálogo", "nav.navigator": "Encontrar", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos",
+    "nav.catalog": "Catálogo", "nav.navigator": "Encontrar", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos", "nav.menu": "Menu",
     "milestones.title": "Marcos", "milestones.desc": "Trabalhos representativos para ler primeiro, dos primeiros dados egocêntricos de atividade a modelos e corpus recentes em grande escala.",
     "navigator.title": "Encontrar recursos", "navigator.desc": "Use resumos por tarefa, modalidade, linhagem e acesso para reduzir rapidamente o catálogo.", "navigator.catalog": "Abrir catálogo",
     "navigator.tasks": "Tarefas comuns", "navigator.tasks.desc": "Configurações de problema frequentes no catálogo.",
     "navigator.modalities": "Modalidades", "navigator.modalities.desc": "Sensores e tipos de anotação pelos quais você pode filtrar.",
     "navigator.lineage": "Linhagens de dados", "navigator.lineage.desc": "Famílias de dados usadas por muitos artigos e ferramentas.",
     "hero.lead": "Encontre conjuntos de dados, benchmarks, modelos e ferramentas para visão egocêntrica, IA incorporada e robótica, vídeo-linguagem, memória de longo contexto, RA/RV e interação mão-objeto.",
-    "btn.github": "Repositório GitHub", "btn.hf": "Espelho Hugging Face", "btn.browse": "Explorar catálogo",
+    "btn.github": "Repositório GitHub", "btn.hf": "Espelho Hugging Face", "btn.browse": "Explorar catálogo", "btn.share": "Compartilhar atlas",
     "stat.resources": "recursos egocêntricos", "stat.datasets": "conjuntos de dados", "stat.benchmarks": "benchmarks", "stat.models": "modelos", "stat.toolkits": "ferramentas",
     "proof.1": "Dados, benchmarks, modelos e ferramentas", "proof.2": "Filtre por tarefa, estado e data", "proof.3": "Acesso aberto, licença MIT",
     "media.caption": "Recursos de pesquisa em primeira pessoa",
@@ -246,7 +253,8 @@ const I18N = {
     "maintain.title": "Adicionar um recurso", "maintain.desc": "Falta um recurso? Abra uma breve issue com a fonte, o estado de acesso e notas de licença.", "maintain.add": "Adicionar recurso",
     "maintain.contributing": "Guia de contribuição", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Fluxo de manutenção",
     "summary.total": "Catálogo total", "summary.inscope": "No escopo", "summary.adjacent": "Adjacentes", "summary.open": "Abertos hoje", "summary.watch": "Lista de observação", "summary.audit": "Última auditoria",
-    "footer.tagline": "Licença MIT e de uso livre. Contribuições bem-vindas.",
+    "footer.tagline": "Licença MIT e de uso livre. Contribuições bem-vindas.", "footer.feed": "Feed de atualizações", "footer.cite": "Citar o atlas",
+    "share.copied": "Link do atlas copiado.", "share.failed": "Não foi possível compartilhar esta página.",
     "error.load": "Falha ao carregar o catálogo", updated: "Atualizado em {date}"
   }
 };
@@ -382,6 +390,11 @@ const els = {
   languageSwitcher: document.querySelector("#language-switcher"),
   languageMenu: document.querySelector("#language-menu"),
   languageCurrent: document.querySelector("#language-current"),
+  header: document.querySelector(".site-header"),
+  menuToggle: document.querySelector("#menu-toggle"),
+  primaryNavigation: document.querySelector("#primary-navigation"),
+  share: document.querySelector("#share-atlas"),
+  shareToast: document.querySelector("#share-toast"),
   milestoneBoard: document.querySelector("#milestone-board"),
   taskHotspots: document.querySelector("#task-hotspots"),
   modalityHotspots: document.querySelector("#modality-hotspots"),
@@ -483,6 +496,84 @@ function bindLanguageSwitcher() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       els.languageSwitcher.open = false;
+    }
+  });
+}
+
+function bindHeader() {
+  if (!els.header || !els.menuToggle || !els.primaryNavigation) return;
+
+  const closeMenu = () => {
+    els.header.classList.remove("nav-open");
+    els.menuToggle.setAttribute("aria-expanded", "false");
+  };
+
+  els.menuToggle.addEventListener("click", () => {
+    const open = !els.header.classList.contains("nav-open");
+    els.header.classList.toggle("nav-open", open);
+    els.menuToggle.setAttribute("aria-expanded", String(open));
+  });
+  els.primaryNavigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+  });
+  window.addEventListener("resize", () => {
+    if (window.matchMedia("(min-width: 1041px)").matches) closeMenu();
+  });
+}
+
+let shareToastTimer;
+
+function showShareToast(message) {
+  if (!els.shareToast) return;
+  window.clearTimeout(shareToastTimer);
+  els.shareToast.textContent = message;
+  els.shareToast.hidden = false;
+  shareToastTimer = window.setTimeout(() => {
+    els.shareToast.hidden = true;
+  }, 2600);
+}
+
+async function copyShareUrl(url) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(url);
+    return;
+  }
+
+  const field = document.createElement("textarea");
+  field.value = url;
+  field.setAttribute("readonly", "");
+  field.style.position = "fixed";
+  field.style.opacity = "0";
+  document.body.appendChild(field);
+  field.select();
+  const copied = document.execCommand("copy");
+  field.remove();
+  if (!copied) throw new Error("Copy failed");
+}
+
+function bindShare() {
+  if (!els.share) return;
+  els.share.addEventListener("click", async () => {
+    const url = window.location.href;
+    const data = {
+      title: "Awesome Egocentric Atlas",
+      text: state.data?.meta?.description || I18N.en["hero.lead"],
+      url
+    };
+
+    try {
+      if (navigator.share) {
+        try {
+          await navigator.share(data);
+          return;
+        } catch (error) {
+          if (error && error.name === "AbortError") return;
+        }
+      }
+      await copyShareUrl(url);
+      showShareToast(t("share.copied"));
+    } catch (error) {
+      showShareToast(t("share.failed"));
     }
   });
 }
@@ -818,10 +909,15 @@ function renderMilestones() {
       const kind = titleize(item.kind);
       const origin = item.origin ? `From ${item.origin}.` : "";
       const label = `${item.name}, ${item.date}, ${kind}. ${origin} ${item.note || ""}`.trim();
+      const image = item.image || "assets/awesome-egocentric-logo.png";
+      const webp = image.replace(/\.png$/i, ".webp");
       return `
         <a class="milestone-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
           <span class="milestone-card-media">
-            <img src="${escapeHtml(item.image || "assets/awesome-egocentric-logo.png")}" loading="lazy" decoding="async" alt="">
+            <picture>
+              ${webp !== image ? `<source srcset="${escapeHtml(webp)}" type="image/webp">` : ""}
+              <img src="${escapeHtml(image)}" loading="lazy" decoding="async" alt="">
+            </picture>
           </span>
           <span class="milestone-card-meta">
             <span class="chip milestone-card-date">${escapeHtml(item.date)}</span>
@@ -841,7 +937,7 @@ function renderMilestones() {
         <span class="milestone-era-title">${escapeHtml(era.title)}</span>
         <p class="milestone-era-copy">${escapeHtml(era.copy)}</p>
       </div>
-      <div class="milestone-cards">${cards}</div>
+      <div class="milestone-cards" data-count="${era.items.length}">${cards}</div>
     `;
     els.milestoneBoard.appendChild(section);
   });
@@ -882,9 +978,17 @@ function setupMotion() {
     ".maintenance-grid a"
   ];
   const targets = Array.from(document.querySelectorAll(selectors.join(",")));
+  const hashTarget = location.hash ? document.querySelector(location.hash) : null;
   targets.forEach((target, index) => {
     target.classList.add("reveal");
     target.style.setProperty("--reveal-delay", `${Math.min((index % 6) * 45, 180)}ms`);
+    const bounds = target.getBoundingClientRect();
+    if (
+      bounds.top < window.innerHeight * 0.94 ||
+      (hashTarget && (target.contains(hashTarget) || hashTarget.contains(target)))
+    ) {
+      target.classList.add("is-visible");
+    }
   });
 
   const observer = new IntersectionObserver((entries) => {
@@ -901,10 +1005,21 @@ function setupMotion() {
   });
 }
 
+function alignHashTarget() {
+  if (!location.hash) return;
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (!target) return;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+  });
+}
+
 async function init() {
   applyStaticI18n();
   buildLanguageSwitcher();
   bindLanguageSwitcher();
+  bindHeader();
+  bindShare();
   const response = await fetch("./site-data.json");
   state.data = await response.json();
   renderStats();
@@ -918,6 +1033,8 @@ async function init() {
   bindFilters();
   renderRows();
   setupMotion();
+  alignHashTarget();
+  window.addEventListener("hashchange", alignHashTarget);
 }
 
 init().catch((error) => {

@@ -104,12 +104,11 @@ img {
   grid-template-columns: minmax(260px, auto) minmax(0, 1fr) auto;
   align-items: center;
   gap: 18px;
-  width: min(1480px, calc(100% - 40px));
+  width: 100%;
   margin: 0 auto;
-  padding: 12px 0;
+  padding: 12px max(20px, calc((100% - 1480px) / 2));
   border-bottom: 1px solid rgba(204, 221, 225, 0.62);
-  background: rgba(248, 251, 251, 0.86);
-  backdrop-filter: blur(16px);
+  background: #f8fbfb;
 }
 
 .brand,
@@ -135,6 +134,16 @@ img {
 .brand span {
   min-width: 0;
   overflow-wrap: break-word;
+}
+
+.brand-name,
+.brand-full,
+.brand-short {
+  display: block;
+}
+
+.brand-short {
+  display: none;
 }
 
 .brand-logo {
@@ -191,8 +200,21 @@ img {
 
 .header-actions {
   display: flex;
+  gap: 8px;
   min-width: 0;
   justify-content: flex-end;
+}
+
+.menu-toggle {
+  display: none;
+  min-height: 42px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--slate);
+  font: 760 14px/1 inherit;
+  cursor: pointer;
 }
 
 .language-switcher {
@@ -317,8 +339,8 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(360px, 0.8fr) minmax(500px, 1.2fr);
-  gap: 48px;
+  grid-template-columns: minmax(500px, 0.96fr) minmax(560px, 1.04fr);
+  gap: 40px;
   align-items: center;
   width: min(1680px, calc(100vw - 24px));
   margin: 34px auto 42px;
@@ -327,7 +349,7 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(44px, 5.3vw, 72px);
+  font-size: 72px;
   line-height: 0.97;
   letter-spacing: 0;
 }
@@ -336,7 +358,7 @@ img {
   max-width: 660px;
   margin: 22px 0 0;
   color: var(--muted);
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: 21px;
   line-height: 1.5;
 }
 
@@ -357,9 +379,11 @@ img {
   background: var(--paper);
   color: var(--slate);
   font-size: 14px;
+  font-family: inherit;
   font-weight: 760;
   text-decoration: none;
   box-shadow: 0 8px 22px rgba(15, 42, 51, 0.07);
+  cursor: pointer;
   transition: border-color 180ms ease, color 180ms ease, transform 180ms var(--motion-ease), box-shadow 180ms ease;
 }
 
@@ -440,6 +464,10 @@ img {
   transform: translateZ(0);
 }
 
+.hero-media picture {
+  display: block;
+}
+
 .hero-media img {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -455,18 +483,15 @@ img {
 .motion-ready .reveal {
   opacity: 0;
   transform: translateY(14px);
-  filter: blur(5px);
   transition:
     opacity 560ms var(--motion-ease) var(--reveal-delay, 0ms),
-    transform 560ms var(--motion-ease) var(--reveal-delay, 0ms),
-    filter 560ms ease var(--reveal-delay, 0ms);
-  will-change: opacity, transform, filter;
+    transform 560ms var(--motion-ease) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
 }
 
 .motion-ready .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
-  filter: blur(0);
 }
 
 .motion-ready tbody tr.motion-row {
@@ -490,6 +515,7 @@ img {
 .split-section {
   width: min(1400px, calc(100vw - 24px));
   margin: 0 auto;
+  scroll-margin-top: 84px;
 }
 
 .visual-band {
@@ -504,6 +530,11 @@ img {
   border-radius: var(--radius);
   background: var(--paper);
   box-shadow: 0 14px 40px rgba(15, 42, 51, 0.08);
+}
+
+.visual-band picture,
+.figure-stack picture {
+  display: block;
 }
 
 .section,
@@ -521,7 +552,7 @@ img {
 
 h2 {
   margin: 0;
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: 44px;
   line-height: 1.05;
   letter-spacing: 0;
 }
@@ -960,7 +991,7 @@ tbody tr:hover {
 .milestone-era-range {
   display: block;
   color: var(--ink);
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: 40px;
   font-weight: 840;
   line-height: 1.12;
 }
@@ -985,16 +1016,15 @@ tbody tr:hover {
 
 .milestone-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 306px));
-  gap: 16px;
-  justify-content: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
   align-items: stretch;
 }
 
 .milestone-card {
   display: grid;
   grid-template-rows: auto auto auto auto 1fr;
-  min-height: 430px;
+  min-height: 408px;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -1024,20 +1054,46 @@ tbody tr:hover {
   min-width: 0;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  padding: 12px;
+  padding: 10px;
   border-bottom: 1px solid var(--soft);
   background: linear-gradient(180deg, #f6fbfb 0%, #eef7f7 100%);
 }
 
+.milestone-card-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .milestone-card-media img {
-  position: absolute;
-  inset: 12px;
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
+  width: 100%;
+  height: 100%;
   max-width: none;
   max-height: none;
   border-radius: 6px;
   object-fit: contain;
+}
+
+.milestone-cards[data-count="1"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.milestone-cards[data-count="1"] .milestone-card {
+  grid-template-columns: minmax(260px, 42%) minmax(0, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  min-height: 272px;
+}
+
+.milestone-cards[data-count="1"] .milestone-card-media {
+  grid-row: 1 / -1;
+  aspect-ratio: auto;
+  min-height: 270px;
+  border-right: 1px solid var(--soft);
+  border-bottom: 0;
+}
+
+.milestone-cards[data-count="2"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .milestone-card-meta {
@@ -1078,6 +1134,8 @@ tbody tr:hover {
   font-size: 12px;
   font-weight: 820;
   line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
   overflow-wrap: break-word;
 }
 
@@ -1226,6 +1284,40 @@ tbody tr:hover {
   font-weight: 820;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.footer-links a {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 780;
+  text-decoration: none;
+}
+
+.share-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  max-width: min(360px, calc(100% - 40px));
+  padding: 12px 14px;
+  border: 1px solid rgba(6, 120, 130, 0.32);
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 720;
+  box-shadow: var(--shadow);
+}
+
+.share-toast[hidden] {
+  display: none;
+}
+
 .footer-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1236,25 +1328,44 @@ tbody tr:hover {
 
 @media (max-width: 1040px) {
   .site-header {
-    position: static;
-    grid-template-columns: 1fr;
-    align-items: stretch;
-    gap: 12px;
-    padding: 12px 0 14px;
+    position: sticky;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 10px;
   }
 
   .nav-links {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
     justify-self: stretch;
     width: 100%;
   }
 
-  .header-actions {
-    justify-content: stretch;
+  .site-header.nav-open .nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .language-switcher,
+  .nav-links a {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-actions {
+    justify-content: flex-end;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .language-toggle {
-    width: 100%;
+    min-width: 132px;
   }
 
   .language-menu {
@@ -1273,6 +1384,14 @@ tbody tr:hover {
   .hero {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 40px;
   }
 
   .filters,
@@ -1315,13 +1434,16 @@ tbody tr:hover {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
 
+  .milestone-cards[data-count="1"] .milestone-card {
+    grid-template-columns: minmax(250px, 38%) minmax(0, 1fr);
+  }
+
   .stat-strip {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .site-header,
   .hero,
   .visual-band,
   .section,
@@ -1331,10 +1453,18 @@ tbody tr:hover {
   }
 
   .hero h1 {
-    font-size: clamp(42px, 14vw, 58px);
+    font-size: 44px;
+    line-height: 1.02;
   }
 
-  .actions,
+  h2 {
+    font-size: 34px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
   .button,
   .section-heading,
   .media-caption,
@@ -1345,10 +1475,44 @@ tbody tr:hover {
 
   .button {
     width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .hero h1 { order: 1; }
+  .hero .lead { order: 2; }
+  .hero .actions { order: 3; }
+  .hero .hero-media { order: 4; }
+  .hero .stat-strip { order: 5; }
+  .hero .hero-proof { order: 6; }
+
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
   }
 
   .brand {
-    align-items: flex-start;
+    align-items: center;
+  }
+
+  .brand-full {
+    display: none;
+  }
+
+  .brand-short {
+    display: block;
+    font-size: 14px;
   }
 
   .brand-logo {
@@ -1359,8 +1523,7 @@ tbody tr:hover {
     padding: 0 9px;
   }
 
-  .nav-links {
-    display: grid;
+  .site-header.nav-open .nav-links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     overflow: visible;
   }
@@ -1370,13 +1533,22 @@ tbody tr:hover {
     text-align: center;
   }
 
+  .language-label {
+    display: none;
+  }
+
+  .language-toggle {
+    min-width: 102px;
+  }
+
   .language-menu {
-    position: static;
-    margin-top: 8px;
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-top: 0;
     grid-template-columns: 1fr;
   }
 
-  .stat-strip,
   .filters,
   .navigator-grid,
   .lane-grid,
@@ -1385,8 +1557,35 @@ tbody tr:hover {
     grid-template-columns: 1fr;
   }
 
+  .stat-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-strip div:last-child {
+    grid-column: 1 / -1;
+  }
+
   .milestone-cards {
     grid-template-columns: 1fr;
+  }
+
+  .milestone-cards[data-count="1"],
+  .milestone-cards[data-count="2"] {
+    grid-template-columns: 1fr;
+  }
+
+  .milestone-cards[data-count="1"] .milestone-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
+    min-height: 0;
+  }
+
+  .milestone-cards[data-count="1"] .milestone-card-media {
+    grid-row: auto;
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--soft);
   }
 
   .milestone-era-head {
@@ -1481,5 +1680,13 @@ tbody tr:hover {
 
   .hero-proof {
     display: grid;
+  }
+
+  .site-footer {
+    gap: 16px;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 }

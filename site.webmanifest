@@ -1,0 +1,29 @@
+{
+  "name": "Awesome Egocentric Atlas",
+  "short_name": "Ego Atlas",
+  "description": "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f8fbfb",
+  "theme_color": "#067882",
+  "categories": [
+    "education",
+    "productivity",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "assets/awesome-egocentric-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

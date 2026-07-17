@@ -27,6 +27,8 @@ configs:
   - config_name: catalog
     data_files: awesome-egocentric-atlas.csv
     default: true
+  - config_name: papers
+    data_files: awesome-egocentric-papers.csv
 ---
 
 ## Use this dataset
@@ -38,11 +40,7 @@ ds = load_dataset("cy0307/awesome-egocentric-atlas", split="train")
 print(len(ds), "resources")
 print(ds[0])
 
-papers = load_dataset(
-    "csv",
-    data_files="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas/resolve/main/awesome-egocentric-papers.csv",
-    split="train",
-)
+papers = load_dataset("cy0307/awesome-egocentric-atlas", "papers", split="train")
 print(len(papers), "paper-linked resources")
 ```
 

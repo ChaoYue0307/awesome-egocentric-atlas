@@ -19,8 +19,8 @@
     <clipPath id="c1"><rect x="142" y="456.9" width="96" height="23.1" rx="8"/></clipPath>
     <clipPath id="c2"><rect x="382" y="442.9" width="96" height="37.1" rx="8"/></clipPath>
     <clipPath id="c3"><rect x="622" y="406.5" width="96" height="73.5" rx="8"/></clipPath>
-    <clipPath id="c4"><rect x="862" y="338.6" width="96" height="141.4" rx="8"/></clipPath>
-    <clipPath id="c5"><rect x="1102" y="212.6" width="96" height="267.4" rx="8"/></clipPath>
+    <clipPath id="c4"><rect x="862" y="337.9" width="96" height="142.1" rx="8"/></clipPath>
+    <clipPath id="c5"><rect x="1102" y="207.7" width="96" height="272.3" rx="8"/></clipPath>
     <style>
       .ink { fill: #14212b; }
       .kicker { font: 700 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #0b8f98; letter-spacing: .16em; }
@@ -55,7 +55,7 @@
     <rect x="502" y="145" width="14" height="14" rx="3" fill="#b8c2c9"/><text class="lg" x="523" y="157">collection</text>
   </g>
 
-  <!-- gridlines generated from live catalog max=382, axis_max=400, tick_step=100 -->
+  <!-- gridlines generated from live catalog max=389, axis_max=400, tick_step=100 -->
   <line class="grid" x1="110" y1="410" x2="1210" y2="410"/>
   <text class="gridlabel" x="100" y="414" text-anchor="end">100</text>
   <line class="grid" x1="110" y1="340" x2="1210" y2="340"/>
@@ -87,34 +87,34 @@
     <rect class="seg" x="622" y="406.5" width="96" height="0.7" fill="#b8c2c9"/>
   </g>
   <g clip-path="url(#c4)" filter="url(#shadow)">
-    <rect class="seg" x="862" y="442.9" width="96" height="37.1" fill="#0b8f98"/>
-    <rect class="seg" x="862" y="423.3" width="96" height="19.6" fill="#5b6b73"/>
-    <rect class="seg" x="862" y="344.9" width="96" height="78.4" fill="#ef9f24"/>
-    <rect class="seg" x="862" y="338.6" width="96" height="6.3" fill="#7a6ff0"/>
+    <rect class="seg" x="862" y="442.2" width="96" height="37.8" fill="#0b8f98"/>
+    <rect class="seg" x="862" y="422.6" width="96" height="19.6" fill="#5b6b73"/>
+    <rect class="seg" x="862" y="344.2" width="96" height="78.4" fill="#ef9f24"/>
+    <rect class="seg" x="862" y="337.9" width="96" height="6.3" fill="#7a6ff0"/>
   </g>
   <g clip-path="url(#c5)" filter="url(#shadow)">
-    <rect class="seg" x="1102" y="424" width="96" height="56" fill="#0b8f98"/>
-    <rect class="seg" x="1102" y="367.3" width="96" height="56.7" fill="#5b6b73"/>
-    <rect class="seg" x="1102" y="228" width="96" height="139.3" fill="#ef9f24"/>
-    <rect class="seg" x="1102" y="213.3" width="96" height="14.7" fill="#7a6ff0"/>
+    <rect class="seg" x="1102" y="421.2" width="96" height="58.8" fill="#0b8f98"/>
+    <rect class="seg" x="1102" y="363.1" width="96" height="58.1" fill="#5b6b73"/>
+    <rect class="seg" x="1102" y="223.1" width="96" height="140" fill="#ef9f24"/>
+    <rect class="seg" x="1102" y="208.4" width="96" height="14.7" fill="#7a6ff0"/>
   </g>
 
-  <polyline class="trend" points="190,456.9 430,442.9 670,406.5 910,338.6 1150,212.6"/>
-  <path class="proj" d="M1150 212.6 L1230 195.6" marker-end="url(#up)"/>
-  <text class="note" x="1210" y="174.6" text-anchor="middle">YTD</text>
+  <polyline class="trend" points="190,456.9 430,442.9 670,406.5 910,337.9 1150,207.7"/>
+  <path class="proj" d="M1150 207.7 L1230 190.7" marker-end="url(#up)"/>
+  <text class="note" x="1210" y="169.7" text-anchor="middle">YTD</text>
   <g>
     <circle cx="190" cy="456.9" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="430" cy="442.9" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
     <circle cx="670" cy="406.5" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="910" cy="338.6" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
-    <circle cx="1150" cy="212.6" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
+    <circle cx="910" cy="337.9" r="5.5" fill="#ffffff" stroke="#0f3b45" stroke-width="2.4"/>
+    <circle cx="1150" cy="207.7" r="6" fill="#ef9f24" stroke="#ffffff" stroke-width="2.4"/>
   </g>
 
   <text class="count" x="190" y="444.9" text-anchor="middle">33</text>
   <text class="count" x="430" y="430.9" text-anchor="middle">53</text>
   <text class="count" x="670" y="394.5" text-anchor="middle">105</text>
-  <text class="count" x="910" y="326.6" text-anchor="middle">202</text>
-  <text class="count" x="1150" y="200.6" text-anchor="middle">382</text>
+  <text class="count" x="910" y="325.9" text-anchor="middle">203</text>
+  <text class="count" x="1150" y="195.7" text-anchor="middle">389</text>
 
   <text class="era" x="190" y="510" text-anchor="middle">&#8804; 2018</text>
   <text class="anchor" x="190" y="531" text-anchor="middle">CMU-MMAC, GTEA</text>

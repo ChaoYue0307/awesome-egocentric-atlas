@@ -234,7 +234,8 @@ modality_families:
       cooking-video, egocentric-capture, egocentric-vr, generated-video, hmd-video,
       human-view-video, long-video, streaming-video, wrist-camera, lifelogging-video,
       synthetic-video, monocular-video, egocentric-observations, video-priors,
-      body-worn-camera, latent-video, bimanual-video, images, uav-video]
+      body-worn-camera, latent-video, bimanual-video, images, uav-video,
+      vehicle-camera-video]
 
   depth:
     label: Depth and RGB-D
