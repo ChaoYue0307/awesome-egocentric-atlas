@@ -4,7 +4,7 @@
   <id>https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml</id>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml" rel="self"/>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"/>
-  <updated>2026-07-17T00:00:00Z</updated>
+  <updated>2026-07-20T00:00:00Z</updated>
   <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
 <entry>
   <title>yyyyywv/egocentric</title>
@@ -95,12 +95,28 @@
   <summary>3,000+ proactive-service instances across 11 service categories and four temporal memory horizons, with the training-free EgoMemo agent combining multi-scale summaries, a semantic graph, and visual retrieval archives</summary>
 </entry>
 <entry>
+  <title>VideoTreeSearch</title>
+  <id>https://github.com/CeeZh/VTS</id>
+  <link href="https://github.com/CeeZh/VTS"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Self-correcting temporal-tree search agent for grounded long-video QA, with SFT and RL code, an 8B checkpoint, and released trajectories/evaluation data; gains 7.4 T-F1 on Haystack-Ego4D</summary>
+</entry>
+<entry>
   <title>Video-Action Generalization Gap / Temporal Ratio</title>
   <id>https://umishra.me/temporal-ratio/</id>
   <link href="https://umishra.me/temporal-ratio/"/>
   <updated>2026-07-01T00:00:00Z</updated>
   <category term="model"/>
   <summary>Systematic video-action model study introducing Temporal Ratio to measure reliance on future latent rollouts, plus inference-time adaptive guidance that narrows compositional OOD gaps on LIBERO and real-world robot tasks</summary>
+</entry>
+<entry>
+  <title>Verbose Industrial Egocentric Sample Series</title>
+  <id>https://huggingface.co/VerboseTechLabs</id>
+  <link href="https://huggingface.co/VerboseTechLabs"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="collection"/>
+  <summary>Six public industrial sample repositories totaling 53 first-person clips, 17,513 seconds (4.86 hours), and about 17.0 GB across textile, metal, electronics assembly, skilled commercial work, and manufacturing-unit operations</summary>
 </entry>
 <entry>
   <title>Verbose Household Cleaning Egocentric Video</title>
@@ -117,14 +133,6 @@
   <updated>2026-07-01T00:00:00Z</updated>
   <category term="dataset"/>
   <summary>11 head- or chest-mounted kitchen clips totaling 6,104 seconds (101.7 minutes) across cooking and chopping, distributed as an ungated 6.09 GB ZIP with clip-level metadata</summary>
-</entry>
-<entry>
-  <title>Verbose Clothing Industry Egocentric Video</title>
-  <id>https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric</id>
-  <link href="https://huggingface.co/datasets/VerboseTechLabs/clothing-industry-egocentric"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Placeholder repository for clothing-industry egocentric video; the current file tree contains only .gitattributes and a 27-byte README declaring CC-BY-4.0</summary>
 </entry>
 <entry>
   <title>VTM-Nav</title>
@@ -207,6 +215,14 @@
   <summary>Predictive-and-reactive tactile foundation model for dexterous manipulation that separates vision-language planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement</summary>
 </entry>
 <entry>
+  <title>Think at 5 Hz, Act at 20 Hz</title>
+  <id>https://arxiv.org/abs/2607.15621</id>
+  <link href="https://arxiv.org/abs/2607.15621"/>
+  <updated>2026-07-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Asynchronous driving VLA with a frozen 7B slow reasoner and fast action expert, producing fresh control every 50 ms and raising CARLA LangAuto-Short route completion from 37.0 to 94.0</summary>
+</entry>
+<entry>
   <title>The Moving Eye</title>
   <id>https://arxiv.org/abs/2607.02322</id>
   <link href="https://arxiv.org/abs/2607.02322"/>
@@ -229,21 +245,5 @@
   <updated>2026-07-01T00:00:00Z</updated>
   <category term="benchmark"/>
   <summary>Real-world human-demonstration benchmark synchronizing whole-hand tactile pressure, multi-granularity hand kinematics, object 6D states, language descriptions, and task phases, with TactiSkill transfer across single-hand and bimanual tasks</summary>
-</entry>
-<entry>
-  <title>TSR-Ego</title>
-  <id>https://arxiv.org/abs/2607.09169</id>
-  <link href="https://arxiv.org/abs/2607.09169"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Online egocentric 3D human-pose framework using causal temporal stereo features, temporal and joint self-attention, and fisheye deformable stereo cross-attention to recover occluded or truncated body joints</summary>
-</entry>
-<entry>
-  <title>TFP</title>
-  <id>https://arxiv.org/abs/2607.08283</id>
-  <link href="https://arxiv.org/abs/2607.08283"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Temporally Conditioned Memory-Fusion Policy with a 3.3B VLA backbone and event-sensitive episode belief, reporting 98.75% on LIBERO, 93.77% on LIBERO-plus, and up to 75% on MIKASA ShellGameTouch</summary>
 </entry>
 </feed>
