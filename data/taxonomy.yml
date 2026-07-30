@@ -49,7 +49,7 @@ task_families:
       egocentric-pretraining, egocentric-representation, mllm, multimodal-fusion,
       state-space-models, transfer-learning, weak-supervision, child-view-learning,
       multitask-learning, parameter-efficient-tuning, data-augmentation, egocentric-vision,
-      synthetic-data]
+      synthetic-data, data-curation, human-alignment]
 
   video-language:
     label: Video-language and captioning
@@ -88,7 +88,7 @@ task_families:
       action-reasoning, future-prediction, inference-strategy, intent-understanding,
       procedural-reasoning, structured-reasoning, neuro-symbolic-reasoning, state-transition-generation, trajectory-conditioning,
       goal-inference, long-horizon-reasoning, prompt-learning, high-stakes-egocentric-understanding,
-      physical-world-understanding, self-awareness]
+      physical-world-understanding, self-awareness, body-awareness, safety-reasoning]
 
   action-and-procedure:
     label: Action and procedure understanding
@@ -106,7 +106,8 @@ task_families:
       mistake-attribution, surgical-understanding, task-progress, object-state-change,
       action-selection, retail-understanding, human-behavior-understanding, industrial-egocentric-video,
       manipulation-understanding, progress-estimation, failure-understanding,
-      industrial-activity, procedural-learning]
+      industrial-activity, procedural-learning, event-detection, household-activity,
+      urban-understanding]
 
   hand-object-interaction:
     label: Hand-object interaction and contact
@@ -116,7 +117,7 @@ task_families:
       two-hand-pose, two-hand-segmentation, hand-forecasting, grasping, active-object-detection,
       active-object-segmentation, human-object-human-interaction, affordance, hoi, h2o,
       articulation-perception, hand-tracking, hoi-detection, hand-reconstruction,
-      3d-hand-reconstruction]
+      3d-hand-reconstruction, hand-pose-estimation, contact-reasoning]
 
   pose-and-body:
     label: Pose, body, and motion
@@ -147,13 +148,14 @@ task_families:
       digital-twin-evaluation, depth, egocentric-depth, reconstruction, egopat3d,
       3d-dialogue, 3d-scene-understanding, 3d-understanding, dynamic-scenes,
       view-synthesis, 3d-object-detection, surface-regression, articulated-objects,
-      semantic-mapping, 3d-spatial-reasoning]
+      semantic-mapping, 3d-spatial-reasoning, depth-estimation, camera-tracking]
 
   generation-and-world-models:
     label: Generation and world models
     aliases: [video-generation, world-modeling, action-conditioned-generation,
       egocentric-simulation, simulation, 3d-scene-generation, text-to-3d,
-      view-consistency, data-generation, world-action-models]
+      view-consistency, data-generation, world-action-models, world-action-model,
+      video-editing]
 
   grounding-localization:
     label: Grounding and localization
@@ -173,13 +175,16 @@ task_families:
       latent-action-learning, reinforcement-learning, contact-rich-manipulation, retargeting,
       digital-teleoperation, compositional-generalization, whole-body-control,
       human-robot-interaction, humanoid-robotics, multimodal-data-collection,
-      action-chunking, exploration, robot-control]
+      action-chunking, exploration, robot-control, failure-recovery,
+      human-to-robot-transfer, humanoid-manipulation, human-robot-collaboration,
+      vision-language-action]
 
   audio-and-social:
     label: Audio, speech, and social interaction
     aliases: [audio-visual, audio-visual-reasoning, sound-understanding, audio-event-recognition,
       audio-events, audio-triggered-capture, social, social-reasoning, first-person-interaction-recognition,
-      energy-efficient-smart-glasses, child-caregiver-interaction, multimodal-conversation]
+      energy-efficient-smart-glasses, child-caregiver-interaction, multimodal-conversation,
+      voice-type-classification, engagement-prediction]
 
   assistance-and-agents:
     label: Assistance and interactive agents
@@ -191,7 +196,9 @@ task_families:
       healthcare-assistance, procedural-assistance, proactive-assistance, real-time-assistance,
       remote-collaboration, situated-assistance, nutrition-estimation, medical-assistance,
       privacy, cognitive-state-aware-assistance, instruction-generation, health-ai,
-      wearable-assistants, visual-assistance, accessibility, assistive-robotics]
+      wearable-assistants, visual-assistance, accessibility, assistive-robotics,
+      context-aware-assistance, creativity-support, human-computer-interaction,
+      wearable-ai]
 
   ar-sensing-navigation:
     label: AR, wearable sensing, and navigation
@@ -201,12 +208,13 @@ task_families:
       360-video, mps, vrs-loading, driving, ar-wearables, avatar-rendering,
       edge-ai, egocentric-human-capture, gaze-analysis, on-device-perception,
       prototyping, relighting, visual-attention-prediction, affect-recognition,
-      personality-recognition]
+      personality-recognition, gaze-estimation, slam]
 
   skills-and-quality:
     label: Skill, proficiency, and quality
     aliases: [skill-assessment, action-quality, proficiency, skilled-activity,
-      cultural-heritage, esports-perception, motor-impairment-assessment]
+      cultural-heritage, esports-perception, motor-impairment-assessment,
+      child-development]
 
   evaluation-and-tooling:
     label: Evaluation, benchmarks, and tooling
@@ -218,7 +226,7 @@ task_families:
       streaming-video-understanding, zero-shot, multimodal-generalization, survey,
       data-conversion, data-selection, data-visualization, inference-runtime,
       action-evaluation, robot-deployment, test-time-scaling, backdoor-defense,
-      edge-inference, policy-stability, systems-optimization]
+      edge-inference, policy-stability, systems-optimization, streaming-video]
 
 # --- modality families ------------------------------------------------------
 modality_families:
@@ -235,7 +243,7 @@ modality_families:
       human-view-video, long-video, streaming-video, wrist-camera, lifelogging-video,
       synthetic-video, monocular-video, egocentric-observations, video-priors,
       body-worn-camera, latent-video, bimanual-video, images, uav-video,
-      vehicle-camera-video]
+      vehicle-camera-video, human-video, image, robot-video, wrist-video]
 
   depth:
     label: Depth and RGB-D
@@ -261,14 +269,15 @@ modality_families:
     aliases: [pose, 2d-pose, 3d-pose, 3d-hand-pose, 3d-human-pose, hand-pose, body-pose,
       human-pose, camera-pose, camera-poses, object-pose, full-body-mocap, hand-mocap,
       mocap, skeleton, keypoint-visibility, hand-trajectories, object-trajectories, 6dof, 3d-human-motion,
-      hand-skeleton, humanoid-motion, body-tracking]
+      hand-skeleton, humanoid-motion, body-tracking, gripper-pose]
 
   hand-object-geometry:
     label: Hand-object geometry and contact
     aliases: [hand, hands, contact, hand-masks, object-masks, object-boxes, hand-object-contact-masks,
       object-meshes, hand-meshes, hand-mesh, mesh, articulated-objects, 3d-objects, object-motion,
       tactile, pressure, force, glove-sensors, hand-object-contact,
-      hand-object-interaction, hand-object-motion, object-crops, objects]
+      hand-object-interaction, hand-object-motion, object-crops, objects,
+      3d-contact, hand-bounding-boxes]
 
   scene-3d:
     label: 3D scene and reconstruction
@@ -300,4 +309,4 @@ modality_families:
       logs, metadata, object-segmentation, temporal-localization, evaluation-logs,
       sensor-sidecars, semantic-masks, vr, dense-rewards, embodied-observations,
       latent-features, offline-demonstrations, synthetic-failures, visual-tokens,
-      visual-triggers]
+      visual-triggers, ar-headset, eeg, embodied-actions]

@@ -1,7 +1,7 @@
 meta:
   title: Awesome Egocentric Atlas
   description: "Awesome Egocentric Atlas is a catalog of egocentric AI resources for egocentric vision, embodied AI, robotics, VLA, world models, WMA, memory, AR/VR, and hand-object interaction."
-  last_major_audit: "2026-07-20"
+  last_major_audit: "2026-07-30"
   scope: Egocentric, first-person, wearable-camera, AR/VR headset, body/wrist camera, and ego-exo datasets, benchmarks, models, and tools.
   status_legend:
     open: Public download, public annotations, public code, or application-based access is clearly documented.
@@ -47,6 +47,340 @@ resources:
     license: "cc-by-nc-4.0"
     license_url: "https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample"
     verified_at: "2026-06-20"
+
+  # --- Full live scan additions (2026-07-30): arXiv, project, code, publisher, and Hugging Face sweep ---
+
+  - name: ReViV
+    kind: model
+    released: "2026-07"
+    venue: "ECCV 2026"
+    year: 2026
+    status: open
+    url: https://reviv4d.github.io/
+    project: https://reviv4d.github.io/
+    paper: https://arxiv.org/abs/2607.17790
+    code: https://github.com/lvsean/reviv4d
+    scale: "Unified feed-forward monocular egocentric 4D reconstruction of RGB, camera trajectory, gaze, body, hands, and depth; evaluated on HoloAssist, HOT3D, ARCTIC, Aria Digital Twin, TACO, and pretrained on more than 600 hours"
+    modalities: [egocentric-video, camera-pose, gaze, body-pose, hand-pose, depth]
+    tasks: [4d-reconstruction, camera-tracking, egocentric-3d-pose, gaze-estimation, depth-estimation]
+    created_by: "Xiaozhong Lyu, Gen Li, Zhiyin Qian, Xucong Zhang, Marc Pollefeys, and Siyu Tang"
+    license: "Apache-2.0 code; non-commercial checkpoint terms"
+    license_url: https://github.com/lvsean/reviv4d/blob/main/LICENSE
+    verified_at: "2026-07-30"
+    release_note: "The implementation and pretrained checkpoints are public. Code is Apache-2.0; checkpoint use follows the separate non-commercial terms linked by the repository."
+    citation_key: reviv_2026
+
+  - name: EgoRecovery
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.19745
+    paper: https://arxiv.org/abs/2607.19745
+    scale: "Co-training framework that aligns egocentric human failure-recovery demonstrations with a corrective-intent space and a small robot-data anchor; its collection protocol yields more than 10x as much valid recovery data per hour as robot teleoperation"
+    modalities: [egocentric-video, human-demonstrations, robot-actions]
+    tasks: [failure-recovery, robot-learning, imitation-learning, human-to-robot-transfer]
+    created_by: "Zuhao Ge, Yuchen Zhou, Weitao Zhou, Minglei Li, Xinyu Li, Chao Wu, Hanwen Zhao, Haotian Wang, Zuxuan Wu, Xiaosong Jia, and Yu-Gang Jiang"
+    verified_at: "2026-07-30"
+    release_note: "The paper is public, but no project page, code, human-recovery corpus, robot data, or reusable license was linked during this audit."
+    citation_key: egorecovery_2026
+
+  - name: Sidewalk Moments
+    kind: dataset
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.20903
+    paper: https://arxiv.org/abs/2607.20903
+    scale: "61 first-person YouTube city-walk videos segmented into more than 50,000 ten-second clips with video, temporally averaged image, audio, and text representations for human-aligned urban-engagement analysis"
+    modalities: [egocentric-video, audio, natural-language, image]
+    tasks: [urban-understanding, human-alignment, multimodal-representation, engagement-prediction]
+    created_by: "Liu Liu, Freya Huying Tan, and Fabio Duarte"
+    verified_at: "2026-07-30"
+    release_note: "The manuscript is under review at Scientific Reports. No public clip list, annotations, extracted features, code, or dataset license was linked."
+    citation_key: sidewalk_moments_2026
+
+  - name: CRAFT Wearable Creative AI
+    kind: toolkit
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.21394
+    paper: https://arxiv.org/abs/2607.21394
+    scale: "Context-aware smart-glasses creative-AI probe studied through nine writer interviews, co-design with 16 writers and researchers, and 24 real-world sessions with eight writers"
+    modalities: [smart-glasses, egocentric-video, natural-language]
+    tasks: [wearable-ai, context-aware-assistance, human-computer-interaction, creativity-support]
+    created_by: "Runze Cai, Yuxuan Huang, Lin-Ping Yuan, Kexin Xiang, David Hsu, Collier Nogues, Jussi Holopainen, and Shengdong Zhao"
+    verified_at: "2026-07-30"
+    release_note: "The arXiv record reports conditional PACM IMWUT acceptance pending minor revisions. No reusable prototype, study package, code, or license was linked, so the venue remains arXiv until final publication is verifiable."
+    citation_key: craft_wearable_ai_2026
+
+  - name: SHARE User-Centric AR SLAM
+    kind: toolkit
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.23901
+    paper: https://arxiv.org/abs/2607.23901
+    scale: "User-prioritized edge SLAM for commercial head-mounted AR and a ground robot in shared workspaces; reports 13.22 ms average AR latency, a 43.3% reduction, while maintaining sub-2-centimeter tracking"
+    modalities: [ar-headset, egocentric-video, robot-video, camera-pose]
+    tasks: [ar-vr, slam, human-robot-collaboration, localization]
+    created_by: "Tianyuan Du, Tianyi Hu, Hanting Ye, and Maria Gorlatova"
+    verified_at: "2026-07-30"
+    release_note: "The paper and user study are public, but no implementation, system traces, study data, or reusable license was linked."
+    citation_key: share_ar_slam_2026
+
+  - name: EgoPlay
+    kind: model
+    released: "2026-07"
+    venue: "SIGGRAPH Asia 2026"
+    year: 2026
+    status: partial
+    url: https://egoplay2026.github.io/egoplay/
+    project: https://egoplay2026.github.io/egoplay/
+    paper: https://arxiv.org/abs/2607.24560
+    scale: "Event-triggered egocentric video-to-video editing trained on 106K clip-prompt pairs, primarily from Ego4D, with positive, negative, and multi-event triggers plus event-aware evaluation"
+    modalities: [egocentric-video, natural-language, generated-video]
+    tasks: [video-editing, event-detection, video-generation, streaming-video]
+    created_by: "Jinjie Mai, Gordon Guocheng Qian, Willi Menapace, Arpit Sahni, Chaoyang Wang, Ashkan Mirzaei, Runjia Li, Sergey Tulyakov, Bernard Ghanem, Peter Wonka, and Rameen Abdal"
+    verified_at: "2026-07-30"
+    release_note: "The accepted SIGGRAPH Asia 2026 paper and project demonstrations are public. The linked benchmark repository was unavailable during this audit, and no training data, model weights, code, or reusable license could be verified."
+    citation_key: egoplay_2026
+
+  - name: Data Pyramid for Embodied Manipulation
+    kind: survey
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    scope: adjacent
+    url: https://jasper-aaa.github.io/embodied-data-pyramid/
+    project: https://jasper-aaa.github.io/embodied-data-pyramid/
+    paper: https://arxiv.org/abs/2607.24744
+    code: https://github.com/worldbench/awesome-embodied-data-pyramid
+    scale: "Survey and living catalog organizing real-robot, UMI, human egocentric and ego-exo, simulation, and general video data into a five-level embodied-manipulation data pyramid"
+    tasks: [survey, data-curation, robot-manipulation, embodied-ai]
+    created_by: "Yifan Ye, Yankai Fu, Yaoxu Lv, Bohan Hou, Jun Cen, Lingdong Kong, Duo Zheng, Tianxing Chen, Jiaming Liu, Ziang Cao, Yunfan Lou, Wei Chow, Xian Sun, Yingshuo Wang, Kuangzhi Ge, Xiaowei Chi, Xidong Zhang, Zhibo Pang, Yiwu Zhong, Sirui Han, Zhihe Lu, Weihao Yuan, Qifeng Chen, Michael Yu Wang, Yao Mu, Ziwei Liu, Jianfei Yang, Ping Luo, and Shanghang Zhang"
+    license: apache-2.0
+    license_url: https://github.com/worldbench/awesome-embodied-data-pyramid/blob/main/LICENSE
+    verified_at: "2026-07-30"
+    scope_note: "Broad embodied-manipulation survey in which egocentric and UMI resources are one major layer rather than the exclusive subject."
+    citation_key: embodied_data_pyramid_2026
+
+  - name: HiFi-UMI-2K
+    kind: dataset
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K
+    project: https://cloud.simpleai.tech/simple-world-lab/hifi-umi/
+    paper: https://arxiv.org/abs/2607.25895
+    data: https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K
+    scale: "2,000 hours of public robot-free manipulation demonstrations from a high-fidelity UMI rig with head stereo-inertial SLAM, native inter-gripper pose, microsecond GPIO synchronization, and two roughly 200-degree cameras per hand; reports 3 mm local end-effector accuracy"
+    modalities: [egocentric-video, stereo-video, wrist-video, camera-pose, gripper-pose, imu, robot-actions]
+    tasks: [robot-learning, imitation-learning, vision-language-action, world-action-model, human-to-robot-transfer]
+    created_by: "Simple AI; Yuteng Wei, Jinming Ma, Jiawei Wang, Weitao Zhou, Yushen Zuo, Ke Rui, Minglei Li, Jinhao Zhang, Zhikang Pan, Xiang Wang, Haoran Jia, Huan Du, Zicheng Zeng, Jun Ma, Guiyu Qin, Di Zhang, and Xiaofei Li"
+    released_by: "Simple World Lab"
+    license: cc-by-4.0
+    license_url: https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K/blob/main/README.md
+    verified_at: "2026-07-30"
+    release_note: "The ungated Hugging Face release is public under CC-BY-4.0. The paper distinguishes this 2,000-hour release from the larger internal corpus used in some experiments."
+    citation_key: hifi_umi_2026
+
+  - name: EgoSafe-Bench
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2607.26518
+    paper: https://arxiv.org/abs/2607.26518
+    scale: "12,000 safety-reasoning evaluation samples formed from 3,000 first-person mobile-captured clips and hierarchical QA chains spanning evidence anchoring, blind-spot deduction, intent inference, and causal consistency"
+    modalities: [egocentric-video, video-qa, natural-language]
+    tasks: [safety-reasoning, video-qa, causal-reasoning, benchmark]
+    created_by: "Yuyun Chen, Tianao Li, TianQuan Feng, Cen Chen, Huiping Zhuang, Hao Peng, and Ziqian Zeng"
+    verified_at: "2026-07-30"
+    release_note: "The paper describes a new benchmark, but no public clips, annotations, evaluation code, project page, or license was linked."
+    citation_key: egosafe_2026
+
+  - name: HumanCLAW-Bench
+    kind: benchmark
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    url: https://human-claw.github.io/
+    project: https://human-claw.github.io/
+    paper: https://arxiv.org/abs/2607.27180
+    code: https://github.com/Human-CLAW/HumanCLAW
+    scale: "1,218 long-horizon egocentric find-navigate-interact episodes across 41 indoor scenes, evaluating nine VLMs through atomic full-body skill commands; the best reported success rate is 16.8%"
+    modalities: [egocentric-video, body-pose, natural-language, embodied-actions]
+    tasks: [embodied-reasoning, navigation, interaction, body-awareness, benchmark]
+    created_by: "Siyao Li, Jiawei Gu, Shuai Liu, Kairui Hu, Zekun Li, Linjie Li, Chengcheng Tang, Po-Chen Wu, Ivan Shugurov, Lingni Ma, Michael Zollhoefer, Sizhe An, Abhay Mittal, Amy Zhao, Ranjay Krishna, Manling Li, Ziwei Liu, and Chuan Guo"
+    verified_at: "2026-07-30"
+    release_note: "The project and placeholder repository are public, but the repository says the code, benchmark, weights, and environment are still being prepared and declares no license."
+    citation_key: humanclaw_2026
+
+  - name: DDD Egocentric Stereo Manipulation Sample
+    kind: dataset
+    released: "2026-07"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/DDD-Cambodia/ego-centric-sample-dataset
+    data: https://huggingface.co/datasets/DDD-Cambodia/ego-centric-sample-dataset
+    scale: "Ten public LeRobot v2 episodes totaling about 2.37 GB with synchronized left/right egocentric video, high-frequency hand and head pose, and task/episode metadata"
+    modalities: [egocentric-video, stereo-video, hand-pose, head-pose, natural-language]
+    tasks: [robot-learning, imitation-learning, hand-object-interaction, sensor-fusion]
+    created_by: "Digital Divide Data Cambodia"
+    released_by: "DDD-Cambodia on Hugging Face"
+    license: cc-by-4.0
+    license_url: https://huggingface.co/datasets/DDD-Cambodia/ego-centric-sample-dataset/blob/main/README.md
+    verified_at: "2026-07-30"
+    citation_key: ddd_egocentric_sample_2026
+
+  - name: Showway Egocentric Origami Series
+    kind: collection
+    released: "2026-07"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/showway-ego/egocentric-origami-001
+    data: https://huggingface.co/showway-ego
+    scale: "Three public LeRobot v3 repositories with nine neck-mounted iPhone ultra-wide origami episodes, HaMeR-derived 3D hand joints, video, and human-reviewed narration"
+    modalities: [egocentric-video, hand-pose, natural-language]
+    tasks: [hand-object-interaction, procedure-understanding, imitation-learning, robot-learning]
+    created_by: "Showway Ego"
+    released_by: "showway-ego on Hugging Face"
+    license: apache-2.0
+    license_url: https://huggingface.co/datasets/showway-ego/egocentric-origami-001/blob/main/README.md
+    verified_at: "2026-07-30"
+    citation_key: showway_origami_2026
+
+  - name: EGXO Household Egocentric Video Evaluation
+    kind: dataset
+    released: "2026-07"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/egxodata/egxo-household-egocentric-video-evaluation
+    data: https://huggingface.co/datasets/egxodata/egxo-household-egocentric-video-evaluation
+    scale: "71 household-task videos totaling exactly 10 hours and about 43.4 GiB; six preview clips and task metadata are publicly visible while the complete media package requires a commercial data license"
+    modalities: [egocentric-video, natural-language, metadata]
+    tasks: [household-activity, procedure-understanding, robot-learning, hand-object-interaction]
+    created_by: "EGXO Data"
+    released_by: "egxodata on Hugging Face"
+    access: "public previews; complete media by commercial-license request"
+    license: other
+    license_url: https://huggingface.co/datasets/egxodata/egxo-household-egocentric-video-evaluation/blob/main/README.md
+    verified_at: "2026-07-30"
+    citation_key: egxo_household_2026
+
+  - name: Egocentric Hand Benchmark Annotations
+    kind: benchmark
+    released: "2026-07"
+    venue: "Hugging Face"
+    year: 2026
+    status: partial
+    url: https://huggingface.co/datasets/macrodata/egocentric-hand-benchmark
+    data: https://huggingface.co/datasets/macrodata/egocentric-hand-benchmark
+    derived_from: "EgoDaily and HOT3D"
+    scale: "100,427 public annotation rows: 95,002 EgoDaily hand boxes and 5,425 HOT3D virtual hand-crop camera records, distributed without the source RGB"
+    modalities: [hand-bounding-boxes, camera-pose, annotations]
+    tasks: [hand-detection, hand-tracking, hand-pose-estimation, benchmark]
+    created_by: "MacroData"
+    released_by: "macrodata on Hugging Face"
+    license: other
+    license_url: https://huggingface.co/datasets/macrodata/egocentric-hand-benchmark/blob/main/README.md
+    verified_at: "2026-07-30"
+    release_note: "Annotations are public, but source imagery is not redistributed and remains subject to EgoDaily and HOT3D access and license terms."
+    citation_key: egocentric_hand_benchmark_annotations_2026
+
+  - name: ChildLens
+    kind: dataset
+    released: "2026-04"
+    venue: "Behavior Research Methods 2026"
+    year: 2026
+    status: request
+    url: https://www.eva.mpg.de/comparative-cultural-psychology/technical-development/childlens/
+    project: https://www.eva.mpg.de/comparative-cultural-psychology/technical-development/childlens/
+    paper: https://doi.org/10.3758/s13428-026-02982-6
+    code: https://github.com/neleSuffo/ChildLens
+    data: https://doi.org/10.17617/4.fe
+    scale: "109 hours of vest-mounted 140-degree egocentric video and audio from 62 children aged 3 to 5 in their homes, with five location classes and 14 exhaustively annotated activity classes"
+    modalities: [egocentric-video, audio, natural-language, annotations]
+    tasks: [child-development, activity-recognition, temporal-localization, voice-type-classification]
+    created_by: "Nele-Pauline Suffo, Pierre-Etienne Martin, Anas Suffo, Daniel Haun, and Manuel Bohn"
+    access: "researcher request and privacy review through the Max Planck Institute"
+    license: other
+    license_url: https://www.eva.mpg.de/comparative-cultural-psychology/technical-development/childlens/
+    verified_at: "2026-07-30"
+    release_note: "The version of record and benchmark code are public. The child home recordings are available for research through DOI 10.17617/4.fe after a reviewed access request."
+    citation_key: childlens_2026
+
+  - name: HuMI
+    kind: dataset
+    released: "2026-02"
+    venue: "arXiv"
+    year: 2026
+    status: open
+    url: https://humanoid-manipulation-interface.github.io/
+    project: https://humanoid-manipulation-interface.github.io/
+    paper: https://arxiv.org/abs/2602.06643
+    code: https://github.com/Richard-coder-Nai/HuMI
+    data: https://huggingface.co/collections/Richard-Nai/humi
+    scale: "Portable robot-free whole-body demonstration interface and seven-dataset Hugging Face collection spanning five kneeling, squatting, tossing, walking, and bimanual tasks; reports 3x collection efficiency and 70% unseen-environment success"
+    modalities: [egocentric-video, wrist-video, body-pose, hand-pose, robot-actions]
+    tasks: [humanoid-manipulation, whole-body-control, imitation-learning, human-to-robot-transfer]
+    created_by: "Ruiqian Nai, Boyuan Zheng, Junming Zhao, Haodong Zhu, Sicong Dai, Zunhao Chen, Yihang Hu, Yingdong Hu, Tong Zhang, Chuan Wen, and Yang Gao"
+    license: "MIT code; CC-BY-4.0 datasets"
+    license_url: https://github.com/Richard-coder-Nai/HuMI/blob/main/LICENSE
+    verified_at: "2026-07-30"
+    release_note: "The MIT implementation and seven public Hugging Face data repositories are live. Dataset cards declare CC-BY-4.0."
+    citation_key: humi_2026
+
+  - name: ContactFlow
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://arxiv.org/abs/2607.26579
+    paper: https://arxiv.org/abs/2607.26579
+    scale: "Embodiment-agnostic video action conditioning through trajectories of 3D actor-object contact points, trained with human and robot interactions and evaluated on DROID and real tabletop tasks"
+    modalities: [human-video, robot-video, 3d-contact, generated-video]
+    tasks: [world-modeling, human-to-robot-transfer, contact-reasoning, robot-manipulation]
+    created_by: "Sami Azirar, Enrico Pallotta, Jan Nogga, Jurgen Gall, Sven Behnke, and Hermann Blum"
+    verified_at: "2026-07-30"
+    release_note: "The paper is public, but no project page, implementation, model weights, training package, or reusable license was linked."
+    scope_note: "Uses general human interaction and robot videos; human wearable or first-person capture is not required."
+    citation_key: contactflow_2026
+
+  - name: Robot-Factored World Models
+    kind: model
+    released: "2026-07"
+    venue: "arXiv"
+    year: 2026
+    status: watch
+    scope: adjacent
+    url: https://bjkim95.github.io/rofacto/
+    project: https://bjkim95.github.io/rofacto/
+    paper: https://arxiv.org/abs/2607.22535
+    code: https://github.com/bjkim95/rofacto
+    scale: "Action-conditioned world model that factors robot control and appearance into nominal trajectories and rendered robot geometry, evaluated on DROID and egocentric RoboCasa-GR1 with zero-shot embodiments and human-demo retargeting"
+    modalities: [robot-video, depth, robot-actions, generated-video]
+    tasks: [world-modeling, robot-manipulation, cross-embodiment-transfer, video-generation]
+    created_by: "Byungjun Kim, Taeksoo Kim, Hyunsoo Cha, and Hanbyul Joo"
+    verified_at: "2026-07-30"
+    release_note: "The project and repository are public, but the repository still says code coming soon and declares no license."
+    scope_note: "Robot-camera world model with an egocentric humanoid evaluation, not a human wearable-capture resource."
+    citation_key: robot_factored_world_models_2026
 
   # --- Full live scan additions (2026-07-20): arXiv, project, code, and Hugging Face sweep ---
 
@@ -6958,17 +7292,23 @@ resources:
   - name: EgoMemReason
     kind: benchmark
     released: "2026-05"
-    venue: "arXiv"
+    venue: "COLM 2026"
     year: 2026
-    status: watch
-    url: https://arxiv.org/abs/2605.09874
+    status: open
+    url: https://huggingface.co/datasets/Ted412/EgoMemReason
+    project: https://egomemreason.github.io/
     paper: https://arxiv.org/abs/2605.09874
-    derived_from: week-long egocentric video
-    scale: "500 questions across entity, event, and behavior memory; average 25.9 hours of memory backtracking"
+    code: https://github.com/Ziyang412/EgoMemReason
+    data: https://huggingface.co/datasets/Ted412/EgoMemReason
+    leaderboard: https://huggingface.co/spaces/Ted412/EgoMemReason
+    derived_from: EgoLife
+    scale: "500 public multiple-choice questions over week-long EgoLife video across entity, event, and behavior memory; average 5.1 evidence segments and 25.9 hours of memory backtracking"
     tasks: [long-horizon-memory, entity-memory, event-memory, behavior-memory, egocentric-video-reasoning]
     created_by: Ziyang Wang, Yue Zhang, Shoubin Yu, Ce Zhang, Zengqi Zhao, Jaehong Yoon, Hyunji Lee, Gedas Bertasius, Mohit Bansal
-    release_note: arXiv paper; verify public data/code release before benchmark use
-    verified_at: "2026-06-20"
+    license: cc-by-nc-4.0
+    license_url: https://huggingface.co/datasets/Ted412/EgoMemReason/blob/main/README.md
+    release_note: "Accepted at COLM 2026. Public annotations, evaluation code, and leaderboard are live; raw EgoLife frames remain under EgoLife's separate license. Version 1.1 reshuffled answer-option letters on 2026-07-13, so older downloads must be refreshed."
+    verified_at: "2026-07-30"
   - name: EgoClip
     kind: dataset
     released: "2022-06"
@@ -8868,15 +9208,20 @@ resources:
   - name: EgoBrain
     kind: dataset
     released: "2025-06"
-    venue: "arXiv"
+    venue: "ICLR 2026"
     year: 2025
-    status: watch
-    url: https://arxiv.org/abs/2506.01353
+    status: request
+    url: https://huggingface.co/datasets/ut-vision/EgoBrain
     paper: https://arxiv.org/abs/2506.01353
-    scale: "Synchronized EEG and egocentric video for human action understanding from minds and eyes"
+    data: https://huggingface.co/datasets/ut-vision/EgoBrain
+    scale: "Complete 1.6 TB release from 40 participants with synchronized 4K GoPro egocentric video, EEG, IMU, interval markers, and surveys for human action understanding"
+    modalities: [egocentric-video, eeg, imu, natural-language, annotations]
     tasks: [eeg, action-understanding, multimodal]
-    verified_at: "2026-06-20"
-    release_note: "Live source checked 2026-06-20; kept on watch until public artifacts, access terms, or reproducible release metadata are confirmed."
+    access: "manual Hugging Face approval with research, privacy, and non-redistribution terms"
+    license: cc-by-nc-4.0
+    license_url: https://huggingface.co/datasets/ut-vision/EgoBrain/blob/main/README.md
+    verified_at: "2026-07-30"
+    release_note: "Accepted at ICLR 2026. The complete 40-participant release was uploaded by 2026-07-05 and is available through a manually approved Hugging Face gate."
   - name: MM-Ego
     kind: model
     released: "2024-10"

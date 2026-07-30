@@ -20,7 +20,7 @@
 
 <p align="center"><strong>用于自我中心视觉、具身智能与机器人、视频语言、长上下文记忆、AR/VR 和手物交互的数据集、基准、模型与工具。</strong></p>
 
-<p align="center"><strong>793</strong> 自我中心资源 — 202 数据集 · 134 基准 · 412 模型 · 40 工具包</p>
+<p align="center"><strong>808</strong> 自我中心资源 — 208 数据集 · 137 基准 · 415 模型 · 42 工具包</p>
 
 ## 内容概览
 
