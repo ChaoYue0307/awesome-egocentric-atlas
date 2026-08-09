@@ -72,6 +72,9 @@ jobs:
             --commit-message "Sync from GitHub ${GITHUB_SHA}" \
             --delete ".github/**" \
             --delete "huggingface/**" \
+            --delete ".claude/**" \
+            --delete ".playwright-cli/**" \
+            --delete "output/**" \
             --exclude ".DS_Store" \
             --exclude "__pycache__/*"
 
