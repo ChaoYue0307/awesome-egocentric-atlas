@@ -4,8 +4,184 @@
   <id>https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml</id>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml" rel="self"/>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"/>
-  <updated>2026-07-30T00:00:00Z</updated>
+  <updated>2026-08-09T00:00:00Z</updated>
   <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
+<entry>
+  <title>VLAff / EgoAffordance</title>
+  <id>https://ojh6404.github.io/vlaff/</id>
+  <link href="https://ojh6404.github.io/vlaff/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>EgoAffordance contains 204K episodes with 5.6M visual affordances and 11.6M grasp and trajectory affordances; VLAff predicts heatmaps, grasp poses, and executable trajectories</summary>
+</entry>
+<entry>
+  <title>SoniSpeech</title>
+  <id>https://doi.org/10.7298/xjjr-9m85</id>
+  <link href="https://doi.org/10.7298/xjjr-9m85"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>34 hours and 18,000 voiced and silent utterances with synchronized ultrasound echoes, audio, and frontal video; 5,356 unique words and full phoneme coverage</summary>
+</entry>
+<entry>
+  <title>SmartRes</title>
+  <id>https://arxiv.org/abs/2608.01638</id>
+  <link href="https://arxiv.org/abs/2608.01638"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Dynamic pixel-space resolution routing for Ego4D and EgoIntention grounding, reducing visual tokens by up to 67%, retaining 86.4% of full-resolution performance, and reporting up to 1.66x faster inference</summary>
+</entry>
+<entry>
+  <title>SiMDex</title>
+  <id>https://lin-nie.github.io/SiMDex/</id>
+  <link href="https://lin-nie.github.io/SiMDex/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Similarity-based mining selects about 1.49M task-relevant samples from a pool of roughly 32M egocentric human samples and raises reported dexterous-manipulation success from 47.7% to 61.1% over equal-sized random sampling</summary>
+</entry>
+<entry>
+  <title>RoboReact</title>
+  <id>https://arxiv.org/abs/2608.03387</id>
+  <link href="https://arxiv.org/abs/2608.03387"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Agentic pipeline that generates egocentric RGB-D manipulation video from a single observation, extracts geometry-preserving keyframes, retargets them to humanoids, and refines execution through closed-loop VLM guidance</summary>
+</entry>
+<entry>
+  <title>RekaDaily-10k (raw)</title>
+  <id>https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw</id>
+  <link href="https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Incremental raw release currently containing 7,834 hours, 397,171 videos, 9,836 WebDataset shards, and about 70 TB of unscripted first-person daily-life footage from head-mounted and handheld phones</summary>
+</entry>
+<entry>
+  <title>ROCO IROS 2026 UMI Dataset</title>
+  <id>https://huggingface.co/datasets/rocochallenge2025/roco_iros2026_umi_dataset</id>
+  <link href="https://huggingface.co/datasets/rocochallenge2025/roco_iros2026_umi_dataset"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>4,928 LeRobot v3 episodes and 7,459,440 frames across five tasks at 30 fps, with stereo first-person video, four hand-camera streams, and 16D bimanual pose and gripper state/action</summary>
+</entry>
+<entry>
+  <title>Omega-0</title>
+  <id>https://arxiv.org/abs/2608.06375</id>
+  <link href="https://arxiv.org/abs/2608.06375"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Latent predictive whole-body world-action model supporting ego RGB plus exocentric RGB/depth; reports Omega-HOME with 40+ hours of synchronized household humanoid observations, motion, states, and action latents</summary>
+</entry>
+<entry>
+  <title>Nexdata 10,000-Hour Egocentric Video Dataset</title>
+  <id>https://huggingface.co/datasets/Nexdata-AI/10000-Hour-Egocentric-Video-Dataset</id>
+  <link href="https://huggingface.co/datasets/Nexdata-AI/10000-Hour-Egocentric-Video-Dataset"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Commercial card describes 10,000 hours across residential, retail, and office scenes with PICO 4 Ultra 4K stereo video, wrist and ankle IMU, 76-point full-body pose, and dense action annotations</summary>
+</entry>
+<entry>
+  <title>LAWM-3D</title>
+  <id>https://arxiv.org/abs/2608.05706</id>
+  <link href="https://arxiv.org/abs/2608.05706"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>3D-aware latent-action learning from multiview human video using invariant action tokenization, geometric foundation-model alignment, and RGB-D reconstruction for robot world-model pretraining</summary>
+</entry>
+<entry>
+  <title>JoyAI-RA 0.5</title>
+  <id>https://joyai-ra-05.github.io/</id>
+  <link href="https://joyai-ra-05.github.io/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Vision-Language-World-Action framework aligning action-free human egocentric video, simulation, and robot trajectories through latent and canonical action spaces for generalist manipulation</summary>
+</entry>
+<entry>
+  <title>HumynLabs Egocentric Sample Collection</title>
+  <id>https://huggingface.co/humyn-labs</id>
+  <link href="https://huggingface.co/humyn-labs"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="collection"/>
+  <summary>Five CC-BY-4.0 sample packs spanning synchronized head and dual-wrist video with IMU, APAC stereo and monocular labels, residential voice-over captions, and LATAM residential IMU</summary>
+</entry>
+<entry>
+  <title>HiResNets</title>
+  <id>https://arxiv.org/abs/2608.02140</id>
+  <link href="https://arxiv.org/abs/2608.02140"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Native Full-HD recognition architecture using foveal residual streams and log-polar read/write operations to preserve fine egocentric objects without quadratic feature-grid growth</summary>
+</entry>
+<entry>
+  <title>HOPE</title>
+  <id>https://subin6.github.io/page-hope</id>
+  <link href="https://subin6.github.io/page-hope"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Hand-centric video transformer that predicts temporally evolving per-vertex hand pressure and contact by unifying tactile-glove, planar-pressure, and contact supervision</summary>
+</entry>
+<entry>
+  <title>GST-Bench</title>
+  <id>https://arxiv.org/abs/2608.05747</id>
+  <link href="https://arxiv.org/abs/2608.05747"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Human-verified global spatial VQA derived from 6,790 minutes of synthetic video, mapping egocentric streams to unseen viewpoints and top-down scenes; the best reported zero-shot VLM scores 42.68 versus 79.08 for humans</summary>
+</entry>
+<entry>
+  <title>EventKitchen</title>
+  <id>https://arxiv.org/abs/2608.04865</id>
+  <link href="https://arxiv.org/abs/2608.04865"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>5.5 hours from 10 participants in 13 kitchens with egocentric stereo events, synchronized RGB, depth, and IMU, plus 10,762 action segments and 13,482 object boxes</summary>
+</entry>
+<entry>
+  <title>EgoSuite-Open10K</title>
+  <id>https://huggingface.co/datasets/xuejf/EgoSuite-Open10K</id>
+  <link href="https://huggingface.co/datasets/xuejf/EgoSuite-Open10K"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Announcement card describes 10,000 selected egocentric and wrist-view clips across six SKUs and seven scene groups, with hand pose, body pose, and semantic annotations</summary>
+</entry>
+<entry>
+  <title>EgoAfford</title>
+  <id>https://egoafford.github.io/</id>
+  <link href="https://egoafford.github.io/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>About 15.5K human-verified images from 2,000 generated multi-step scenes plus 102 real egocentric images across 26 tasks, with plans and role-specific affordance masks</summary>
+</entry>
+<entry>
+  <title>Ego500</title>
+  <id>https://huggingface.co/datasets/humanarchive/ego500</id>
+  <link href="https://huggingface.co/datasets/humanarchive/ego500"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Card reports 500 hours of first-person work video, more than 310,000 structured action annotations, 390 task-environment combinations, and 60+ environments</summary>
+</entry>
+<entry>
+  <title>Ego2Robot</title>
+  <id>https://www-ye.github.io/ego2robot_blog/</id>
+  <link href="https://www-ye.github.io/ego2robot_blog/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Pipeline converting curated and in-the-wild egocentric human manipulation video into 18,561 hours of robot-format data across 15 robot morphologies through retargeting, visual synthesis, and quality curation</summary>
+</entry>
+<entry>
+  <title>DreamTraj / MOVE</title>
+  <id>https://whathappen0.github.io/DreamTraj/</id>
+  <link href="https://whathappen0.github.io/DreamTraj/"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>MOVE provides 5,038 object-centric egocentric 6-DoF trajectories with fine-grained language; DreamTraj decodes trajectories from unrendered video-diffusion latents and reports 4.6x faster inference than generate-then-extract pipelines</summary>
+</entry>
+<entry>
+  <title>Assistant Placement Aria</title>
+  <id>https://arxiv.org/abs/2608.00652</id>
+  <link href="https://arxiv.org/abs/2608.00652"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Synthetic and real indoor scenes with 2D images, 3D point clouds, text descriptions, and annotations for panel placement, sitting suggestion, and TV placement</summary>
+</entry>
 <entry>
   <title>yyyyywv/egocentric</title>
   <id>https://huggingface.co/datasets/yyyyywv/egocentric</id>
@@ -69,181 +245,5 @@
   <updated>2026-07-01T00:00:00Z</updated>
   <category term="model"/>
   <summary>Test-time training framework that steers frozen world-action models from unlabeled raw human videos by adapting a lightweight memory through self-supervised video prediction and paired human-robot meta-training</summary>
-</entry>
-<entry>
-  <title>WALA</title>
-  <id>https://liujiahao2077.github.io/WALA.github.io</id>
-  <link href="https://liujiahao2077.github.io/WALA.github.io"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Learns executable latent actions jointly from action-labeled demonstrations and action-free human or robot videos using DINOv3 feature deltas, dense depth, and a trainable latent world model; reports 75.2% RoboCasa success</summary>
-</entry>
-<entry>
-  <title>VistaVLA</title>
-  <id>https://arxiv.org/abs/2607.12356</id>
-  <link href="https://arxiv.org/abs/2607.12356"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Grounds geometry- and semantics-aware 3D Gaussian primitives into compact VLA context tokens; reports 99% token reduction, +22.8% success over seven real tasks, and +30.0% over VLA-Adapter on OOD tasks</summary>
-</entry>
-<entry>
-  <title>Vinci2 / EgoServe</title>
-  <id>https://sitonggong.github.io/EgoServe-page/</id>
-  <link href="https://sitonggong.github.io/EgoServe-page/"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>3,000+ proactive-service instances across 11 service categories and four temporal memory horizons, with the training-free EgoMemo agent combining multi-scale summaries, a semantic graph, and visual retrieval archives</summary>
-</entry>
-<entry>
-  <title>VideoTreeSearch</title>
-  <id>https://github.com/CeeZh/VTS</id>
-  <link href="https://github.com/CeeZh/VTS"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Self-correcting temporal-tree search agent for grounded long-video QA, with SFT and RL code, an 8B checkpoint, and released trajectories/evaluation data; gains 7.4 T-F1 on Haystack-Ego4D</summary>
-</entry>
-<entry>
-  <title>Video-Action Generalization Gap / Temporal Ratio</title>
-  <id>https://umishra.me/temporal-ratio/</id>
-  <link href="https://umishra.me/temporal-ratio/"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Systematic video-action model study introducing Temporal Ratio to measure reliance on future latent rollouts, plus inference-time adaptive guidance that narrows compositional OOD gaps on LIBERO and real-world robot tasks</summary>
-</entry>
-<entry>
-  <title>Verbose Industrial Egocentric Sample Series</title>
-  <id>https://huggingface.co/VerboseTechLabs</id>
-  <link href="https://huggingface.co/VerboseTechLabs"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="collection"/>
-  <summary>Six public industrial sample repositories totaling 53 first-person clips, 17,513 seconds (4.86 hours), and about 17.0 GB across textile, metal, electronics assembly, skilled commercial work, and manufacturing-unit operations</summary>
-</entry>
-<entry>
-  <title>Verbose Household Cleaning Egocentric Video</title>
-  <id>https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric</id>
-  <link href="https://huggingface.co/datasets/VerboseTechLabs/household-cleaning-egocentric"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>12 head- or chest-mounted 1080p/30 fps cleaning clips totaling 6,259 seconds (104.3 minutes), distributed as an ungated 5.74 GB ZIP with audio and clip metadata across three sub-activities</summary>
-</entry>
-<entry>
-  <title>Verbose Cooking and Chopping Egocentric Video</title>
-  <id>https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric</id>
-  <link href="https://huggingface.co/datasets/VerboseTechLabs/cooking-chopping-egocentric"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>11 head- or chest-mounted kitchen clips totaling 6,104 seconds (101.7 minutes) across cooking and chopping, distributed as an ungated 6.09 GB ZIP with clip-level metadata</summary>
-</entry>
-<entry>
-  <title>VTM-Nav</title>
-  <id>https://arxiv.org/abs/2607.14514</id>
-  <link href="https://arxiv.org/abs/2607.14514"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Training-free cross-episode object-goal navigation with persistent room- and object-level visual-topological memory, coarse-to-fine retrieval, and a conservative execution guard, evaluated on HM3D v0.1/v0.2 and MP3D</summary>
-</entry>
-<entry>
-  <title>VSI-Super-Wild</title>
-  <id>https://vsi-super-wild.github.io/</id>
-  <link href="https://vsi-super-wild.github.io/"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>6,980 human-verified spatial QA pairs over 442 continuous panoramic in-the-wild videos totaling 284.52 hours across eight scene categories, including recordings longer than four hours and four observer-object-environment task families</summary>
-</entry>
-<entry>
-  <title>VLA-Corrector</title>
-  <id>https://arxiv.org/abs/2607.01804</id>
-  <link href="https://arxiv.org/abs/2607.01804"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Lightweight detect-and-correct inference layer for action-chunked VLA policies, using visual feature evolution to detect open-loop deviations and adapt action horizons</summary>
-</entry>
-<entry>
-  <title>VLA Models Review</title>
-  <id>https://arxiv.org/abs/2607.06706</id>
-  <link href="https://arxiv.org/abs/2607.06706"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="survey"/>
-  <summary>Survey of 183 VLA contributions from 2017-2026 across architectures, training recipes, action representations, bimanual coordination, UAV navigation/control, language grounding, memory, and world models</summary>
-</entry>
-<entry>
-  <title>VIABench</title>
-  <id>https://github.com/MCG-NJU/VIABench</id>
-  <link href="https://github.com/MCG-NJU/VIABench"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>First-person video benchmark recorded or shared by blind and visually impaired people, evaluating proactive navigation reminders, visual question answering, and vision-guided interaction in online and offline settings</summary>
-</entry>
-<entry>
-  <title>VEGAS</title>
-  <id>https://arxiv.org/abs/2607.08489</id>
-  <link href="https://arxiv.org/abs/2607.08489"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Training-free Video caption Evaluation via GAze Score metric plus an evaluation dataset of egocentric activities and instructional slides paired with synchronized gaze and reference captions; the abstract does not report the dataset size</summary>
-</entry>
-<entry>
-  <title>USA Egocentric</title>
-  <id>https://huggingface.co/datasets/Grably/usa-egocentric</id>
-  <link href="https://huggingface.co/datasets/Grably/usa-egocentric"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Three iPhone kitchen-manipulation episodes with normalized RGB videos, raw videos, camera calibration and trajectory files, MediaPipe and HaMeR hand outputs, action segments, contact/object tracks on the strongest run, review manifests, and quality reports</summary>
-</entry>
-<entry>
-  <title>UESF-Bench / SeekFollow-VLA</title>
-  <id>https://arxiv.org/abs/2607.13621</id>
-  <link href="https://arxiv.org/abs/2607.13621"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Unified language-guided human seeking and persistent following benchmark requiring semantic exploration, delayed identity grounding, phase switching, and recovery in single- and multi-person environments</summary>
-</entry>
-<entry>
-  <title>TrustVLA</title>
-  <id>https://arxiv.org/abs/2607.12571</id>
-  <link href="https://arxiv.org/abs/2607.12571"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Retraining-free defense that detects abnormal VLA evidence evolution, localizes compact visual-trigger regions by counterfactual score drop, and recovers observations through localized inpainting</summary>
-</entry>
-<entry>
-  <title>TouchWorld</title>
-  <id>https://arxiv.org/abs/2607.07287</id>
-  <link href="https://arxiv.org/abs/2607.07287"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Predictive-and-reactive tactile foundation model for dexterous manipulation that separates vision-language planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement</summary>
-</entry>
-<entry>
-  <title>Think at 5 Hz, Act at 20 Hz</title>
-  <id>https://arxiv.org/abs/2607.15621</id>
-  <link href="https://arxiv.org/abs/2607.15621"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Asynchronous driving VLA with a frozen 7B slow reasoner and fast action expert, producing fresh control every 50 ms and raising CARLA LangAuto-Short route completion from 37.0 to 94.0</summary>
-</entry>
-<entry>
-  <title>The Moving Eye</title>
-  <id>https://arxiv.org/abs/2607.02322</id>
-  <link href="https://arxiv.org/abs/2607.02322"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Hybrid dynamic data-collection strategy for VLA spatial generalization, using a dual-arm setup where one arm manipulates while the other acts as a moving environmental camera</summary>
-</entry>
-<entry>
-  <title>TeleDexter</title>
-  <id>https://bigai-dex.github.io/blog/teledexter/</id>
-  <link href="https://bigai-dex.github.io/blog/teledexter/"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Hand-object co-tracking controller trained with single-stage RL and transferred zero-shot across two dexterous hands; reports 75.2% average success over seven in-hand and tool-use tasks and uses 50 demonstrations per task for behavior cloning</summary>
-</entry>
-<entry>
-  <title>TactiDex</title>
-  <id>https://tactidex.github.io/</id>
-  <link href="https://tactidex.github.io/"/>
-  <updated>2026-07-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Real-world human-demonstration benchmark synchronizing whole-hand tactile pressure, multi-granularity hand kinematics, object 6D states, language descriptions, and task phases, with TactiSkill transfer across single-hand and bimanual tasks</summary>
 </entry>
 </feed>

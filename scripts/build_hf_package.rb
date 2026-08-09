@@ -50,7 +50,7 @@ end
 FileUtils.rm_rf(target)
 FileUtils.mkdir_p(target)
 
-exclude = Set.new(%w[.git .github huggingface])
+exclude = Set.new(%w[.git .github huggingface .claude .playwright-cli output])
 exclude << File.basename(target) if File.dirname(target) == root
 Dir.children(root).sort.each do |entry|
   next if exclude.include?(entry)
@@ -73,7 +73,7 @@ if github_readme.start_with?("---\n")
   exit 1
 end
 
-forbidden = %w[.git .github huggingface].select { |entry| File.exist?(File.join(target, entry)) }
+forbidden = exclude.select { |entry| File.exist?(File.join(target, entry)) }
 unless forbidden.empty?
   warn "Hugging Face package contains excluded path(s): #{forbidden.join(', ')}"
   exit 1
