@@ -20,7 +20,7 @@
 
 <p align="center"><strong>Datensätze, Benchmarks, Modelle und Werkzeuge für egozentrisches Sehen, verkörperte KI und Robotik, Video-Sprache, Langzeitgedächtnis, AR/VR und Hand-Objekt-Interaktion.</strong></p>
 
-<p align="center"><strong>837</strong> egozentrische Ressourcen — 220 Datensätze · 140 Benchmarks · 427 Modelle · 42 Toolkits</p>
+<p align="center"><strong>852</strong> egozentrische Ressourcen — 223 Datensätze · 142 Benchmarks · 435 Modelle · 43 Toolkits</p>
 
 ## Inhalt
 

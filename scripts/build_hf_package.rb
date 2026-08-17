@@ -26,6 +26,21 @@ def copy_entry(source, target)
   end
 end
 
+def size_category_for(row_count)
+  return "n<1K" if row_count < 1_000
+  return "1K<n<10K" if row_count < 10_000
+  return "10K<n<100K" if row_count < 100_000
+  return "100K<n<1M" if row_count < 1_000_000
+  return "1M<n<10M" if row_count < 10_000_000
+  return "10M<n<100M" if row_count < 100_000_000
+  return "100M<n<1B" if row_count < 1_000_000_000
+  return "1B<n<10B" if row_count < 10_000_000_000
+  return "10B<n<100B" if row_count < 100_000_000_000
+  return "100B<n<1T" if row_count < 1_000_000_000_000
+
+  "n>1T"
+end
+
 check = ARGV.include?("--check")
 target = if check
   File.join(Dir.tmpdir, "awesome-egocentric-hf-check")
@@ -65,6 +80,18 @@ File.write(File.join(target, "README.md"), header + github_readme, encoding: "UT
 hf_readme = File.read(File.join(target, "README.md"), encoding: "UTF-8")
 unless hf_readme.start_with?("---\n")
   warn "Hugging Face README is missing YAML front matter"
+  exit 1
+end
+
+front_matter = hf_readme.match(/\A---\n(.*?)\n---\n/m)&.captures&.first
+metadata = front_matter && YAML.safe_load(front_matter, permitted_classes: [], aliases: false)
+catalog_csv = File.join(target, "awesome-egocentric-atlas.csv")
+catalog_rows = CSV.foreach(catalog_csv, headers: true).count
+expected_size_category = size_category_for(catalog_rows)
+actual_size_categories = Array(metadata && metadata["size_categories"])
+unless actual_size_categories == [expected_size_category]
+  warn "Hugging Face size_categories mismatch for #{catalog_rows} rows: " \
+       "expected #{expected_size_category.inspect}, got #{actual_size_categories.inspect}"
   exit 1
 end
 

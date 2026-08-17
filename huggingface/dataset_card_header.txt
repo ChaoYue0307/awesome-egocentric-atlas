@@ -6,7 +6,7 @@ pretty_name: Awesome Egocentric Atlas
 task_categories:
   - robotics
 size_categories:
-  - "n<1K"
+  - "1K<n<10K"
 tags:
   - egocentric-vision
   - first-person-video
