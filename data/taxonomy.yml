@@ -90,7 +90,8 @@ task_families:
       procedural-reasoning, structured-reasoning, neuro-symbolic-reasoning, state-transition-generation, trajectory-conditioning,
       goal-inference, long-horizon-reasoning, prompt-learning, high-stakes-egocentric-understanding,
       physical-world-understanding, self-awareness, body-awareness, safety-reasoning,
-      physical-reasoning, execution-monitoring, failure-prediction, risk-recognition]
+      physical-reasoning, execution-monitoring, failure-prediction, risk-recognition,
+      long-tail-analysis]
 
   action-and-procedure:
     label: Action and procedure understanding
@@ -298,7 +299,7 @@ modality_families:
       tactile, pressure, force, glove-sensors, hand-object-contact,
       hand-object-interaction, hand-object-motion, object-crops, objects,
       3d-contact, hand-bounding-boxes, contact-annotations, contact-maps,
-      force-fields, object-mesh]
+      force-fields, object-mesh, contact-labels, hand-gesture]
 
   scene-3d:
     label: 3D scene and reconstruction
@@ -309,7 +310,7 @@ modality_families:
       scene-reconstruction, 3d-flow, 3d-assets, spatial-memory, maps, spatial-features,
       generated-3d, camera-calibration, camera-intrinsics, predicate-graphs,
       3d-gaussians, 3d-scene-tokens, 3d-tracks, 4d-memory,
-      local-3d-occupancy, semantic-map]
+      local-3d-occupancy, semantic-map, spatial-annotations]
 
   device-and-labels:
     label: Device formats and labels
@@ -333,6 +334,6 @@ modality_families:
       latent-features, offline-demonstrations, synthetic-failures, visual-tokens,
       visual-triggers, ar-headset, eeg, embodied-actions, clinical-labels,
       editing-pairs, hazard-labels, human-ratings, humanoid-state,
-      latent-visual-features, lerobot, memory-index, object-queries, pixel-goals,
+      latent-visual-features, video-features, lerobot, memory-index, object-queries, pixel-goals,
       robot-demonstrations, safety-labels, source-pointers, tool-trajectories,
-      urdf, virtual-reality]
+      urdf, virtual-reality, scene-segmentation]

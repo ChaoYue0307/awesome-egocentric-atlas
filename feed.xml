@@ -4,8 +4,16 @@
   <id>https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml</id>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml" rel="self"/>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"/>
-  <updated>2026-08-18T00:00:00Z</updated>
+  <updated>2026-08-23T00:00:00Z</updated>
   <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
+<entry>
+  <title>WorldRover-10M</title>
+  <id>https://arxiv.org/abs/2608.15659</id>
+  <link href="https://arxiv.org/abs/2608.15659"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Synthetic minute-scale world explorations rendered from first-person, third-person, and 360-degree views with RGB, metric depth, camera trajectories, action signals, optical flow, and long-range 2D/3D tracks</summary>
+</entry>
 <entry>
   <title>WNM-3D</title>
   <id>https://arxiv.org/abs/2608.07267</id>
@@ -13,6 +21,14 @@
   <updated>2026-08-01T00:00:00Z</updated>
   <category term="model"/>
   <summary>Continuous-VLN world navigation model conditioning future-view and action generation on 3D scene tokens reconstructed from monocular ego-view history, evaluated on GN-Bench</summary>
+</entry>
+<entry>
+  <title>Vision-Language Models for Egocentric Video</title>
+  <id>https://arxiv.org/abs/2608.18671</id>
+  <link href="https://arxiv.org/abs/2608.18671"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="survey"/>
+  <summary>Critical survey connecting egocentric VLMs across hand-object interaction, temporal reasoning, efficient clip selection, graph/object-centric reasoning, wearable assistance, and embodied AI</summary>
 </entry>
 <entry>
   <title>VideoNIG</title>
@@ -95,12 +111,36 @@
   <summary>Agentic pipeline that generates egocentric RGB-D manipulation video from a single observation, extracts geometry-preserving keyframes, retargets them to humanoids, and refines execution through closed-loop VLM guidance</summary>
 </entry>
 <entry>
+  <title>RoboLab-EgoX</title>
+  <id>https://huggingface.co/datasets/Voxel51/RoboLab-EgoX</id>
+  <link href="https://huggingface.co/datasets/Voxel51/RoboLab-EgoX"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>4,000 simulation episodes and six hours across 28 RoboLab tasks and 99 scenes, including 632 successes and 3,368 failures with wrist-view RGB-D, two exterior RGB-D views, calibration, arm telemetry, actions, and language</summary>
+</entry>
+<entry>
+  <title>RoboEdit</title>
+  <id>https://arxiv.org/abs/2608.18948</id>
+  <link href="https://arxiv.org/abs/2608.18948"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Edits human manipulation video into action-consistent robot video with aligned 3D states; the reported RoboEdit-14M corpus contains 174K paired videos, 14M frames, and seven robot embodiments</summary>
+</entry>
+<entry>
   <title>RekaDaily-10k (raw)</title>
   <id>https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw</id>
   <link href="https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw"/>
   <updated>2026-08-01T00:00:00Z</updated>
   <category term="dataset"/>
   <summary>Incremental raw release currently containing 7,834 hours, 397,171 videos, 9,836 WebDataset shards, and about 70 TB of unscripted first-person daily-life footage from head-mounted and handheld phones</summary>
+</entry>
+<entry>
+  <title>RealFactory-Ego-Data</title>
+  <id>https://huggingface.co/datasets/FlyBirdData/RealFactory-Ego-Data</id>
+  <link href="https://huggingface.co/datasets/FlyBirdData/RealFactory-Ego-Data"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Five head-mounted episodes totaling about 14 minutes on a live touchscreen production line, with RGB, 21-landmark hand pose, and frame-level action boundaries in LeRobot-compatible packages</summary>
 </entry>
 <entry>
   <title>ROCO IROS 2026 UMI Dataset</title>
@@ -151,12 +191,28 @@
   <summary>Commercial card describes 10,000 hours across residential, retail, and office scenes with PICO 4 Ultra 4K stereo video, wrist and ankle IMU, 76-point full-body pose, and dense action annotations</summary>
 </entry>
 <entry>
+  <title>NVIDIA Video-to-Data Robot Dexterity Dataset</title>
+  <id>https://huggingface.co/datasets/nvidia/video-to-data-robot-dexterity-task-library-and-dataset</id>
+  <link href="https://huggingface.co/datasets/nvidia/video-to-data-robot-dexterity-task-library-and-dataset"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>1,215 TACO-derived human motion sequences retargeted into 121,500 bimanual Sharpa robot episodes and 1,215 motion parquets, totaling 924.8 GB in Parquet and LeRobot v3 formats</summary>
+</entry>
+<entry>
   <title>MERIT</title>
   <id>https://choi-yeeun.github.io/MERIT/</id>
   <link href="https://choi-yeeun.github.io/MERIT/"/>
   <updated>2026-08-01T00:00:00Z</updated>
   <category term="model"/>
   <summary>Simple episodic memory with four retrieval keys per 30-second clip and query-time neighbor filtering; reports 71.2 accuracy on EgoLifeQA, 71.8 on LVBench, and 77.7 on Video-MME Long with a GPT-5 backbone</summary>
+</entry>
+<entry>
+  <title>Long-Tail Embodied Urban Navigation from In-the-Wild Videos</title>
+  <id>https://arxiv.org/abs/2608.16476</id>
+  <link href="https://arxiv.org/abs/2608.16476"/>
+  <updated>2026-08-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Automatically annotates web-scale in-the-wild egocentric videos with metric trajectories and structured navigation semantics, then trains a VLA policy while exposing rare perception-motion failure modes</summary>
 </entry>
 <entry>
   <title>LAWM-3D</title>
@@ -189,61 +245,5 @@
   <updated>2026-08-01T00:00:00Z</updated>
   <category term="dataset"/>
   <summary>Auto-gated 30-episode, 119.7 MiB early sample for cloth folding and organization, with wrist video, synchronized 6-axis raw IMU, and LeRobot v3 metadata but no action labels</summary>
-</entry>
-<entry>
-  <title>HumynLabs Egocentric Sample Collection</title>
-  <id>https://huggingface.co/humyn-labs</id>
-  <link href="https://huggingface.co/humyn-labs"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="collection"/>
-  <summary>Five CC-BY-4.0 sample packs spanning synchronized head and dual-wrist video with IMU, APAC stereo and monocular labels, residential voice-over captions, and LATAM residential IMU</summary>
-</entry>
-<entry>
-  <title>HumanoidVLN</title>
-  <id>https://humanoid-vln.github.io/</id>
-  <link href="https://humanoid-vln.github.io/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>NVIDIA Isaac Sim benchmark spanning four humanoid embodiments and 933 collision-aware reference episodes, each with one fine-grained and three stylistic coarse instructions, plus a 20-episode Unitree G1 sim-to-real pilot</summary>
-</entry>
-<entry>
-  <title>HiResNets</title>
-  <id>https://arxiv.org/abs/2608.02140</id>
-  <link href="https://arxiv.org/abs/2608.02140"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Native Full-HD recognition architecture using foveal residual streams and log-polar read/write operations to preserve fine egocentric objects without quadratic feature-grid growth</summary>
-</entry>
-<entry>
-  <title>HandEdit</title>
-  <id>https://handedit.github.io/</id>
-  <link href="https://handedit.github.io/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>300K+ egocentric clips and 200M+ human-to-robot editing instances from five source datasets, covering 26 embodiments split into 13 hand-only and 13 hand-arm configurations</summary>
-</entry>
-<entry>
-  <title>HOPE</title>
-  <id>https://subin6.github.io/page-hope</id>
-  <link href="https://subin6.github.io/page-hope"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Hand-centric video transformer that predicts temporally evolving per-vertex hand pressure and contact by unifying tactile-glove, planar-pressure, and contact supervision</summary>
-</entry>
-<entry>
-  <title>H2R-Bench</title>
-  <id>https://arxiv.org/abs/2608.13049</id>
-  <link href="https://arxiv.org/abs/2608.13049"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Human-to-robot video-generation benchmark covering 11 models, six manipulation families, two robot embodiments, and five dimensions spanning goals, actions, contact, embodiment, and visual quality</summary>
-</entry>
-<entry>
-  <title>GST-Bench</title>
-  <id>https://arxiv.org/abs/2608.05747</id>
-  <link href="https://arxiv.org/abs/2608.05747"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Human-verified global spatial VQA derived from 6,790 minutes of synthetic video, mapping egocentric streams to unseen viewpoints and top-down scenes; the best reported zero-shot VLM scores 42.68 versus 79.08 for humans</summary>
 </entry>
 </feed>
