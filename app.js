@@ -10,6 +10,18 @@ const LANGS = [
 
 const I18N = {
   en: {
+    "resource.creator": "Created by",
+    "resource.publisher": "Released by",
+    "resource.notes": "Access and release notes",
+    "resource.links": "links",
+    "asset.paper": "Paper",
+    "asset.project": "Project",
+    "asset.data": "Data",
+    "asset.code": "Code",
+    "asset.weights": "Weights",
+    "asset.benchmark": "Benchmark",
+    "asset.leaderboard": "Leaderboard",
+    "asset.mirror": "Mirror",
     skip: "Skip to catalog",
     "language.label": "Language",
     "nav.catalog": "Catalog", "nav.navigator": "Find", "nav.lanes": "Areas", "nav.access": "Access", "nav.readme": "README", "nav.milestones": "Milestones", "nav.menu": "Menu",
@@ -35,12 +47,24 @@ const I18N = {
     "access.title": "Access Status", "access.desc": "Check what is downloadable, request-only, benchmark-only, partial, or still unverified before planning experiments.",
     "maintain.title": "Add a Resource", "maintain.desc": "Missing a resource? Open a short issue with the source, access status, and license notes.", "maintain.add": "Add Resource",
     "maintain.contributing": "Contributing guide", "maintain.schema": "Resource schema", "maintain.status": "Status policy", "maintain.workflow": "Maintenance workflow",
-    "summary.total": "Total catalog", "summary.inscope": "In scope", "summary.adjacent": "Adjacent", "summary.open": "Open today", "summary.watch": "Watchlist", "summary.audit": "Last audit",
-    "footer.tagline": "MIT licensed and free to use. Contributions welcome.", "footer.feed": "Updates feed", "footer.cite": "Cite the atlas",
+    "summary.total": "Total catalog", "summary.inscope": "In scope", "summary.adjacent": "Adjacent", "summary.open": "Public at last check", "summary.watch": "Watchlist", "summary.audit": "Last broad audit",
+    "footer.tagline": "Catalog: MIT. Linked resources retain their own licenses.", "footer.feed": "Updates feed", "footer.cite": "Cite the atlas",
     "share.copied": "Atlas link copied.", "share.failed": "Unable to share this page.",
     "error.load": "Catalog failed to load", updated: "Updated {date}"
   },
   zh: {
+    "resource.creator": "创建者",
+    "resource.publisher": "发布者",
+    "resource.notes": "访问与发布说明",
+    "resource.links": "链接",
+    "asset.paper": "论文",
+    "asset.project": "项目",
+    "asset.data": "数据",
+    "asset.code": "代码",
+    "asset.weights": "权重",
+    "asset.benchmark": "评测",
+    "asset.leaderboard": "排行榜",
+    "asset.mirror": "镜像",
     skip: "跳到目录",
     "language.label": "语言",
     "nav.catalog": "目录", "nav.navigator": "查找", "nav.lanes": "方向", "nav.access": "可获取性", "nav.readme": "README", "nav.milestones": "里程碑", "nav.menu": "菜单",
@@ -66,12 +90,24 @@ const I18N = {
     "access.title": "获取状态", "access.desc": "规划实验前，先确认资源是可下载、需申请、仅基准、部分公开，还是尚待核实。",
     "maintain.title": "添加资源", "maintain.desc": "缺少资源？请提交简短 issue，并附上来源、获取状态和许可证说明。", "maintain.add": "添加资源",
     "maintain.contributing": "贡献指南", "maintain.schema": "资源结构", "maintain.status": "状态政策", "maintain.workflow": "维护流程",
-    "summary.total": "目录总数", "summary.inscope": "范围内", "summary.adjacent": "相邻", "summary.open": "今日可用", "summary.watch": "关注列表", "summary.audit": "上次审核",
-    "footer.tagline": "MIT 许可，免费使用，欢迎贡献。", "footer.feed": "更新订阅", "footer.cite": "引用图谱",
+    "summary.total": "目录总数", "summary.inscope": "范围内", "summary.adjacent": "相邻", "summary.open": "上次核验已公开", "summary.watch": "关注列表", "summary.audit": "上次全面核验",
+    "footer.tagline": "目录采用 MIT 许可，所链接资源各自适用其原许可。", "footer.feed": "更新订阅", "footer.cite": "引用图谱",
     "share.copied": "已复制图谱链接。", "share.failed": "无法分享此页面。",
     "error.load": "目录加载失败", updated: "更新于 {date}"
   },
   es: {
+    "resource.creator": "Creadores",
+    "resource.publisher": "Publicado por",
+    "resource.notes": "Acceso y publicación",
+    "resource.links": "enlaces",
+    "asset.paper": "Artículo",
+    "asset.project": "Proyecto",
+    "asset.data": "Datos",
+    "asset.code": "Código",
+    "asset.weights": "Pesos",
+    "asset.benchmark": "Benchmark",
+    "asset.leaderboard": "Clasificación",
+    "asset.mirror": "Espejo",
     skip: "Saltar al catálogo",
     "language.label": "Idioma",
     "nav.catalog": "Catálogo", "nav.navigator": "Buscar", "nav.lanes": "Áreas", "nav.access": "Acceso", "nav.readme": "README", "nav.milestones": "Hitos", "nav.menu": "Menú",
@@ -97,12 +133,24 @@ const I18N = {
     "access.title": "Estado de acceso", "access.desc": "Comprueba qué se puede descargar, qué requiere solicitud, qué es solo benchmark, parcial o aún no verificado antes de planificar experimentos.",
     "maintain.title": "Añadir un recurso", "maintain.desc": "¿Falta un recurso? Abre una breve incidencia con la fuente, el estado de acceso y las notas de licencia.", "maintain.add": "Añadir recurso",
     "maintain.contributing": "Guía de contribución", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Flujo de mantenimiento",
-    "summary.total": "Catálogo total", "summary.inscope": "En alcance", "summary.adjacent": "Adyacentes", "summary.open": "Abiertos hoy", "summary.watch": "Lista de seguimiento", "summary.audit": "Última revisión",
-    "footer.tagline": "Licencia MIT y de uso libre. Contribuciones bienvenidas.", "footer.feed": "Fuente de novedades", "footer.cite": "Citar el atlas",
+    "summary.total": "Catálogo total", "summary.inscope": "En alcance", "summary.adjacent": "Adyacentes", "summary.open": "Públicos al verificar", "summary.watch": "Lista de seguimiento", "summary.audit": "Última revisión general",
+    "footer.tagline": "Catálogo: MIT. Los recursos enlazados conservan sus propias licencias.", "footer.feed": "Fuente de novedades", "footer.cite": "Citar el atlas",
     "share.copied": "Enlace del atlas copiado.", "share.failed": "No se pudo compartir esta página.",
     "error.load": "No se pudo cargar el catálogo", updated: "Actualizado {date}"
   },
   fr: {
+    "resource.creator": "Créateurs",
+    "resource.publisher": "Publié par",
+    "resource.notes": "Accès et publication",
+    "resource.links": "liens",
+    "asset.paper": "Article",
+    "asset.project": "Projet",
+    "asset.data": "Données",
+    "asset.code": "Code",
+    "asset.weights": "Poids",
+    "asset.benchmark": "Benchmark",
+    "asset.leaderboard": "Classement",
+    "asset.mirror": "Miroir",
     skip: "Aller au catalogue",
     "language.label": "Langue",
     "nav.catalog": "Catalogue", "nav.navigator": "Trouver", "nav.lanes": "Axes", "nav.access": "Accès", "nav.readme": "README", "nav.milestones": "Jalons", "nav.menu": "Menu",
@@ -128,12 +176,24 @@ const I18N = {
     "access.title": "Statut d'accès", "access.desc": "Vérifiez ce qui est téléchargeable, sur demande, réservé aux benchmarks, partiel ou non vérifié avant de planifier vos expériences.",
     "maintain.title": "Ajouter une ressource", "maintain.desc": "Une ressource manque ? Ouvrez un court ticket avec la source, le statut d'accès et les notes de licence.", "maintain.add": "Ajouter une ressource",
     "maintain.contributing": "Guide de contribution", "maintain.schema": "Schéma des ressources", "maintain.status": "Politique des statuts", "maintain.workflow": "Flux de maintenance",
-    "summary.total": "Catalogue total", "summary.inscope": "Dans le périmètre", "summary.adjacent": "Adjacentes", "summary.open": "Ouvertes aujourd'hui", "summary.watch": "Liste de veille", "summary.audit": "Dernière révision",
-    "footer.tagline": "Licence MIT, libre d'utilisation. Contributions bienvenues.", "footer.feed": "Flux des mises à jour", "footer.cite": "Citer l'atlas",
+    "summary.total": "Catalogue total", "summary.inscope": "Dans le périmètre", "summary.adjacent": "Adjacentes", "summary.open": "Publics à la vérification", "summary.watch": "Liste de veille", "summary.audit": "Dernière révision générale",
+    "footer.tagline": "Catalogue : MIT. Les ressources liées conservent leurs propres licences.", "footer.feed": "Flux des mises à jour", "footer.cite": "Citer l'atlas",
     "share.copied": "Lien de l'atlas copié.", "share.failed": "Impossible de partager cette page.",
     "error.load": "Échec du chargement du catalogue", updated: "Mis à jour le {date}"
   },
   de: {
+    "resource.creator": "Erstellt von",
+    "resource.publisher": "Veröffentlicht von",
+    "resource.notes": "Zugang und Veröffentlichung",
+    "resource.links": "Links",
+    "asset.paper": "Paper",
+    "asset.project": "Projekt",
+    "asset.data": "Daten",
+    "asset.code": "Code",
+    "asset.weights": "Gewichte",
+    "asset.benchmark": "Benchmark",
+    "asset.leaderboard": "Rangliste",
+    "asset.mirror": "Spiegel",
     skip: "Zum Katalog springen",
     "language.label": "Sprache",
     "nav.catalog": "Katalog", "nav.navigator": "Finden", "nav.lanes": "Bereiche", "nav.access": "Zugang", "nav.readme": "README", "nav.milestones": "Meilensteine", "nav.menu": "Menü",
@@ -159,12 +219,24 @@ const I18N = {
     "access.title": "Zugriffsstatus", "access.desc": "Prüfe vor der Experimentplanung, was herunterladbar, anfragepflichtig, benchmark-only, teilweise offen oder noch ungeprüft ist.",
     "maintain.title": "Ressource hinzufügen", "maintain.desc": "Fehlt eine Ressource? Öffne ein kurzes Issue mit Quelle, Zugriffsstatus und Lizenzhinweisen.", "maintain.add": "Ressource hinzufügen",
     "maintain.contributing": "Beitragsleitfaden", "maintain.schema": "Ressourcenschema", "maintain.status": "Status-Richtlinie", "maintain.workflow": "Wartungsablauf",
-    "summary.total": "Gesamtkatalog", "summary.inscope": "Im Fokus", "summary.adjacent": "Angrenzend", "summary.open": "Heute offen", "summary.watch": "Beobachtungsliste", "summary.audit": "Letzte Prüfung",
-    "footer.tagline": "MIT-Lizenz, frei nutzbar. Beiträge willkommen.", "footer.feed": "Updates-Feed", "footer.cite": "Atlas zitieren",
+    "summary.total": "Gesamtkatalog", "summary.inscope": "Im Fokus", "summary.adjacent": "Angrenzend", "summary.open": "Bei Prüfung öffentlich", "summary.watch": "Beobachtungsliste", "summary.audit": "Letzte Gesamtprüfung",
+    "footer.tagline": "Katalog: MIT. Verlinkte Ressourcen haben eigene Lizenzen.", "footer.feed": "Updates-Feed", "footer.cite": "Atlas zitieren",
     "share.copied": "Atlas-Link kopiert.", "share.failed": "Diese Seite konnte nicht geteilt werden.",
     "error.load": "Katalog konnte nicht geladen werden", updated: "Aktualisiert am {date}"
   },
   ja: {
+    "resource.creator": "作成者",
+    "resource.publisher": "公開者",
+    "resource.notes": "アクセスと公開状況",
+    "resource.links": "リンク",
+    "asset.paper": "論文",
+    "asset.project": "プロジェクト",
+    "asset.data": "データ",
+    "asset.code": "コード",
+    "asset.weights": "重み",
+    "asset.benchmark": "評価",
+    "asset.leaderboard": "順位表",
+    "asset.mirror": "ミラー",
     skip: "カタログへスキップ",
     "language.label": "言語",
     "nav.catalog": "カタログ", "nav.navigator": "探す", "nav.lanes": "研究分野", "nav.access": "アクセス", "nav.readme": "README", "nav.milestones": "マイルストーン", "nav.menu": "メニュー",
@@ -190,12 +262,24 @@ const I18N = {
     "access.title": "アクセス状況", "access.desc": "実験を計画する前に、ダウンロード可、申請制、ベンチマークのみ、一部公開、未検証を確認できます。",
     "maintain.title": "資源を追加", "maintain.desc": "不足している資源は、出典・アクセス状況・ライセンス情報を添えて短い issue で知らせてください。", "maintain.add": "資源を追加",
     "maintain.contributing": "貢献ガイド", "maintain.schema": "資源スキーマ", "maintain.status": "状態ポリシー", "maintain.workflow": "メンテナンス手順",
-    "summary.total": "カタログ総数", "summary.inscope": "対象内", "summary.adjacent": "隣接", "summary.open": "本日公開", "summary.watch": "ウォッチリスト", "summary.audit": "最終確認",
-    "footer.tagline": "MIT ライセンス、自由に利用可能。貢献歓迎。", "footer.feed": "更新フィード", "footer.cite": "アトラスを引用",
+    "summary.total": "カタログ総数", "summary.inscope": "対象内", "summary.adjacent": "隣接", "summary.open": "確認時に公開済み", "summary.watch": "ウォッチリスト", "summary.audit": "最終全体確認",
+    "footer.tagline": "カタログは MIT。リンク先の資源には各自のライセンスが適用されます。", "footer.feed": "更新フィード", "footer.cite": "アトラスを引用",
     "share.copied": "アトラスのリンクをコピーしました。", "share.failed": "このページを共有できませんでした。",
     "error.load": "カタログの読み込みに失敗しました", updated: "更新日 {date}"
   },
   ko: {
+    "resource.creator": "제작자",
+    "resource.publisher": "공개자",
+    "resource.notes": "접근 및 공개 안내",
+    "resource.links": "링크",
+    "asset.paper": "논문",
+    "asset.project": "프로젝트",
+    "asset.data": "데이터",
+    "asset.code": "코드",
+    "asset.weights": "가중치",
+    "asset.benchmark": "평가",
+    "asset.leaderboard": "순위표",
+    "asset.mirror": "미러",
     skip: "카탈로그로 건너뛰기",
     "language.label": "언어",
     "nav.catalog": "카탈로그", "nav.navigator": "찾기", "nav.lanes": "연구 분야", "nav.access": "접근성", "nav.readme": "README", "nav.milestones": "이정표", "nav.menu": "메뉴",
@@ -221,12 +305,24 @@ const I18N = {
     "access.title": "접근 상태", "access.desc": "실험을 계획하기 전에 다운로드 가능, 신청 필요, 벤치마크 전용, 일부 공개, 미검증 상태를 확인하세요.",
     "maintain.title": "자원 추가", "maintain.desc": "빠진 자원이 있으면 출처, 접근 상태, 라이선스 메모를 담아 짧은 이슈로 알려주세요.", "maintain.add": "자원 추가",
     "maintain.contributing": "기여 가이드", "maintain.schema": "자원 스키마", "maintain.status": "상태 정책", "maintain.workflow": "유지보수 절차",
-    "summary.total": "전체 카탈로그", "summary.inscope": "범위 내", "summary.adjacent": "인접", "summary.open": "오늘 공개", "summary.watch": "관심 목록", "summary.audit": "최근 점검",
-    "footer.tagline": "MIT 라이선스, 자유롭게 사용하세요. 기여 환영.", "footer.feed": "업데이트 피드", "footer.cite": "아틀라스 인용",
+    "summary.total": "전체 카탈로그", "summary.inscope": "범위 내", "summary.adjacent": "인접", "summary.open": "확인 시 공개됨", "summary.watch": "관심 목록", "summary.audit": "최근 전체 점검",
+    "footer.tagline": "카탈로그는 MIT이며 링크된 자원에는 각각의 라이선스가 적용됩니다.", "footer.feed": "업데이트 피드", "footer.cite": "아틀라스 인용",
     "share.copied": "아틀라스 링크를 복사했습니다.", "share.failed": "이 페이지를 공유할 수 없습니다.",
     "error.load": "카탈로그를 불러오지 못했습니다", updated: "업데이트 {date}"
   },
   pt: {
+    "resource.creator": "Criado por",
+    "resource.publisher": "Publicado por",
+    "resource.notes": "Acesso e publicação",
+    "resource.links": "links",
+    "asset.paper": "Artigo",
+    "asset.project": "Projeto",
+    "asset.data": "Dados",
+    "asset.code": "Código",
+    "asset.weights": "Pesos",
+    "asset.benchmark": "Benchmark",
+    "asset.leaderboard": "Classificação",
+    "asset.mirror": "Espelho",
     skip: "Ir para o catálogo",
     "language.label": "Idioma",
     "nav.catalog": "Catálogo", "nav.navigator": "Encontrar", "nav.lanes": "Áreas", "nav.access": "Acesso", "nav.readme": "README", "nav.milestones": "Marcos", "nav.menu": "Menu",
@@ -252,8 +348,8 @@ const I18N = {
     "access.title": "Estado de acesso", "access.desc": "Verifique o que é baixável, exige solicitação, é só benchmark, é parcial ou ainda não verificado antes de planejar experimentos.",
     "maintain.title": "Adicionar um recurso", "maintain.desc": "Falta um recurso? Abra uma breve issue com a fonte, o estado de acesso e notas de licença.", "maintain.add": "Adicionar recurso",
     "maintain.contributing": "Guia de contribuição", "maintain.schema": "Esquema de recursos", "maintain.status": "Política de estados", "maintain.workflow": "Fluxo de manutenção",
-    "summary.total": "Catálogo total", "summary.inscope": "No escopo", "summary.adjacent": "Adjacentes", "summary.open": "Abertos hoje", "summary.watch": "Lista de observação", "summary.audit": "Última auditoria",
-    "footer.tagline": "Licença MIT e de uso livre. Contribuições bem-vindas.", "footer.feed": "Feed de atualizações", "footer.cite": "Citar o atlas",
+    "summary.total": "Catálogo total", "summary.inscope": "No escopo", "summary.adjacent": "Adjacentes", "summary.open": "Públicos na verificação", "summary.watch": "Lista de observação", "summary.audit": "Última auditoria geral",
+    "footer.tagline": "Catálogo: MIT. Os recursos vinculados mantêm suas próprias licenças.", "footer.feed": "Feed de atualizações", "footer.cite": "Citar o atlas",
     "share.copied": "Link do atlas copiado.", "share.failed": "Não foi possível compartilhar esta página.",
     "error.load": "Falha ao carregar o catálogo", updated: "Atualizado em {date}"
   }
@@ -613,7 +709,8 @@ function matchesLane(resource, laneId) {
 function searchableText(resource) {
   return [
     resource.name, resource.kind, resource.status, resource.released, resource.venue, resource.scale,
-    resource.access, resource.release_note,
+    resource.access, resource.release_note, resource.created_by, resource.released_by,
+    resource.license, resource.scope_note, resource.verified_at,
     ...asArray(resource.derived_from),
     ...(resource.tasks || []), ...(resource.modalities || []), ...(resource.task_families || [])
   ].join(" ").toLowerCase();
@@ -661,6 +758,17 @@ function statusHint(resource) {
   return resource.verified_at ? `${label} · checked ${resource.verified_at}` : label;
 }
 
+function resourceLinks(resource) {
+  const fields = ["paper", "project", "data", "code", "weights", "benchmark", "leaderboard", "mirror"];
+  const seen = new Set([resource.url]);
+  return fields.flatMap((field) => {
+    const url = resource[field];
+    if (!url || !/^https?:\/\//i.test(url) || seen.has(url)) return [];
+    seen.add(url);
+    return [`<a href="${escapeHtml(url)}">${escapeHtml(t(`asset.${field}`))}</a>`];
+  }).join(" ");
+}
+
 function renderRows() {
   const resources = filteredResources();
   const limit = rowLimit();
@@ -680,13 +788,20 @@ function renderRows() {
     const modalities = (resource.modalities || []).slice(0, 3).map(titleize).join(" / ");
     const sourceLine = [resource.venue, modalities, resource.license].filter(Boolean).join(" / ");
     const statusLine = statusHint(resource);
+    const creator = resource.created_by ? `<span class="resource-credit">${escapeHtml(t("resource.creator"))}: ${escapeHtml(resource.created_by)}</span>` : "";
+    const notes = [
+      resource.released_by && `${t("resource.publisher")}: ${resource.released_by}`,
+      resource.access, resource.release_note, resource.scope_note
+    ].filter(Boolean);
 
     row.innerHTML = `
       <td data-label="${escapeHtml(t("th.resource"))}">
         <div class="resource-name">
           <a href="${escapeHtml(resource.url)}">${escapeHtml(resource.name)}</a>
+          ${creator}
           <span>${escapeHtml(sourceLine)}</span>
         </div>
+        <nav class="resource-links" aria-label="${escapeHtml(resource.name)} ${escapeHtml(t("resource.links"))}">${resourceLinks(resource)}</nav>
       </td>
       <td data-label="${escapeHtml(t("th.kind"))}"><span class="chip">${escapeHtml(titleize(resource.kind))}</span></td>
       <td data-label="${escapeHtml(t("th.released"))}">${escapeHtml(compactReleased(resource))}</td>
@@ -696,6 +811,7 @@ function renderRows() {
       </td>
       <td data-label="${escapeHtml(t("th.signal"))}">
         <div>${escapeHtml(resource.scale || "")}</div>
+        ${notes.length ? `<details class="resource-notes"><summary>${escapeHtml(t("resource.notes"))}</summary>${notes.map((note) => `<p>${escapeHtml(note)}</p>`).join("")}</details>` : ""}
         <div class="task-tags">${tasks.map((task) => `<span class="chip">${escapeHtml(titleize(task))}</span>`).join("")}</div>
       </td>
     `;
@@ -808,7 +924,7 @@ function renderStats() {
   const { summary, meta } = state.data;
   setText("[data-stat='egocentric_resources']", summary.egocentric_resources);
   Object.entries(summary.kind_counts).forEach(([kind, value]) => setText(`[data-kind='${kind}']`, value));
-  document.querySelector("[data-updated]").textContent = fmt(t("updated"), { date: meta.last_major_audit });
+  document.querySelector("[data-updated]").textContent = fmt(t("updated"), { date: meta.last_updated || meta.last_major_audit });
 }
 
 function renderSummary() {

@@ -4,8 +4,144 @@
   <id>https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml</id>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/feed.xml" rel="self"/>
   <link href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"/>
-  <updated>2026-08-23T00:00:00Z</updated>
-  <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
+  <updated>2026-10-29T00:00:00Z</updated>
+  <subtitle>Resources ordered by first-publication month; access dates are recorded in the catalog.</subtitle>
+<entry>
+  <title>Xp-Teleop</title>
+  <id>https://huggingface.co/datasets/ropedia-ai/Xp-Teleop</id>
+  <link href="https://huggingface.co/datasets/ropedia-ai/Xp-Teleop"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>27 Unitree G1 humanoid episodes, 543 action segments, and 96,064 frames with clean head RGB, keypoints, masks, calibration, and IMU</summary>
+</entry>
+<entry>
+  <title>TouchScale</title>
+  <id>https://huggingface.co/datasets/2077AIDataFoundation/TouchScale</id>
+  <link href="https://huggingface.co/datasets/2077AIDataFoundation/TouchScale"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Current release: 100 hours, 15,324 episodes, 929 tasks, and 193 object meshes; synchronized head RGB-D, wrist RGB, and 880 tactile taxels per hand</summary>
+</entry>
+<entry>
+  <title>STOU</title>
+  <id>https://onedayoneyeah.github.io/safety-for-whom/</id>
+  <link href="https://onedayoneyeah.github.io/safety-for-whom/"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Paper: 2,902 video-audio/text safety queries; gated release: 1,952 instances over 713 source clips, separating harm understanding from refusal</summary>
+</entry>
+<entry>
+  <title>SOMA</title>
+  <id>https://arxiv.org/abs/2610.36384</id>
+  <link href="https://arxiv.org/abs/2610.36384"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>1,632 human-verified questions on body configuration, motion dynamics, and temporal reasoning from first-person video</summary>
+</entry>
+<entry>
+  <title>Ropedia W0</title>
+  <id>https://github.com/Ropedia/ropedia-w0</id>
+  <link href="https://github.com/Ropedia/ropedia-w0"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Camera-pose and skeleton-conditioned loco-manipulation world model trained with 10K human and 3K robot hours; 5B pre-trained and mid-trained checkpoints released</summary>
+</entry>
+<entry>
+  <title>ProactEgoMem</title>
+  <id>https://proactegomem.github.io/</id>
+  <link href="https://proactegomem.github.io/"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>300 daily-life and 100 scientific clips; 1,500 QA items testing proactive information capture, state tracking, and location tracking</summary>
+</entry>
+<entry>
+  <title>PWM / PWM-Bench</title>
+  <id>https://github.com/AIGeeksGroup/PWM</id>
+  <link href="https://github.com/AIGeeksGroup/PWM"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>150 first-person world-model customization tasks across indoor, outdoor, and Minecraft scenes; 300 paired support/test videos and 33,750 frames</summary>
+</entry>
+<entry>
+  <title>NextMe-800 / NextAct</title>
+  <id>https://kkkkawayi.github.io/nextme-800/</id>
+  <link href="https://kkkkawayi.github.io/nextme-800/"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>795 hours from one Aria wearer across a 126-day span, with 527 recordings on 114 recording days; gaze, audio, five-level captions, and a 1,500-point NextAct benchmark</summary>
+</entry>
+<entry>
+  <title>EgoVoice</title>
+  <id>https://egocentricvoice.github.io/</id>
+  <link href="https://egocentricvoice.github.io/"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Proactive spoken assistance from HoloAssist-derived video/audio streams, jointly evaluating speech timing and guidance content</summary>
+</entry>
+<entry>
+  <title>EgoExo-Next</title>
+  <id>https://huggingface.co/datasets/yutongli2024/EgoExo-Next</id>
+  <link href="https://huggingface.co/datasets/yutongli2024/EgoExo-Next"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>2,503 human-curated four-choice questions from six ego/ego-exo sources, testing visual next-state prediction and cross-view correspondence</summary>
+</entry>
+<entry>
+  <title>EgoDatasets</title>
+  <id>https://www.mdpi.com/2076-3417/16/20/10268</id>
+  <link href="https://www.mdpi.com/2076-3417/16/20/10268"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="survey"/>
+  <summary>Dataset-centric taxonomy of 96 resources from 2008-2026: 79 core egocentric/multiview datasets and 17 contextual exocentric datasets</summary>
+</entry>
+<entry>
+  <title>Ego-SpaCR / SpaC-MEM</title>
+  <id>https://github.com/joeliang0520/SAPCR-MEM</id>
+  <link href="https://github.com/joeliang0520/SAPCR-MEM"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>620 ScanNet video sessions, 95 task-oriented conversations, and 3,100 evaluation queries for spatially grounded conversational memory</summary>
+</entry>
+<entry>
+  <title>EMBER-Bench</title>
+  <id>https://zhaoalexgoat.github.io/EMBER-Bench/index.html</id>
+  <link href="https://zhaoalexgoat.github.io/EMBER-Bench/index.html"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>189 recorded household tasks and 699 history-dependent questions: 548 next-action predictions and 151 causal traceback questions</summary>
+</entry>
+<entry>
+  <title>Argus</title>
+  <id>https://github.com/Pantheon-Industries-Inc/argus</id>
+  <link href="https://github.com/Pantheon-Industries-Inc/argus"/>
+  <updated>2026-10-01T00:00:00Z</updated>
+  <category term="toolkit"/>
+  <summary>Dense video annotation and data-quality checks across LeRobot, MCAP, and video archives; publisher reports 3,546 audited human/robot episodes across nine datasets</summary>
+</entry>
+<entry>
+  <title>XPACE</title>
+  <id>https://xpeng-robotics.github.io/xpace/</id>
+  <link href="https://xpeng-robotics.github.io/xpace/"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Joint future-video and action modeling from heterogeneous human and robot experience, including simulated recoveries for policy improvement</summary>
+</entry>
+<entry>
+  <title>TempCloze</title>
+  <id>https://huggingface.co/datasets/CedPei/TempCloze</id>
+  <link href="https://huggingface.co/datasets/CedPei/TempCloze"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>1,521 videos from seven sources for selecting a missing middle clip; separates semantic plausibility, temporal alignment, and progression</summary>
+</entry>
+<entry>
+  <title>SlugTrails</title>
+  <id>https://github.com/Head-inthe-Cloud/SlugTrails</id>
+  <link href="https://github.com/Head-inthe-Cloud/SlugTrails"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="benchmark"/>
+  <summary>Aria recordings across three campus buildings and six floors, with CAD floor plans, survey-aligned trajectories, and single-frame, sweep, and walking-stream protocols</summary>
+</entry>
 <entry>
   <title>RekaDaily-10k (processed)</title>
   <id>https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed</id>
@@ -13,6 +149,38 @@
   <updated>2026-09-01T00:00:00Z</updated>
   <category term="dataset"/>
   <summary>Dataset card reports 6,373,064 clips and 10,200 hours; captions and question-answer exchanges are model-generated</summary>
+</entry>
+<entry>
+  <title>MINT / EgoPipeline</title>
+  <id>https://github.com/wuji-technology/wuji-ego-mint</id>
+  <link href="https://github.com/wuji-technology/wuji-ego-mint"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Joint world-space camera and two-hand trajectory prediction; public checkpoint, training/inference code, EgoPipeline, and non-video annotations covering 1,021 hours</summary>
+</entry>
+<entry>
+  <title>IronMind</title>
+  <id>https://xpeng-robotics.github.io/ironmind/</id>
+  <link href="https://xpeng-robotics.github.io/ironmind/"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Humanoid VLA pretraining on human ego video and robot data using camera-space actions; studies budgets from 250 to 10,000 hours</summary>
+</entry>
+<entry>
+  <title>HumanVerse-500 / lambda_0</title>
+  <id>https://arxiv.org/abs/2610.00438</id>
+  <link href="https://arxiv.org/abs/2610.00438"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Reported 500-hour wearable corpus synchronizing egocentric video with body and hand motion, used by the lambda_0 humanoid loco-manipulation policy</summary>
+</entry>
+<entry>
+  <title>HuRo</title>
+  <id>https://3587jjh.github.io/HuRo/</id>
+  <link href="https://3587jjh.github.io/HuRo/"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Reported 630K robotized episodes and 142M frames from five human egocentric sources; aligns rendered robot observations with retargeted actions</summary>
 </entry>
 <entry>
   <title>Gen-HumanEgo</title>
@@ -23,227 +191,59 @@
   <summary>Publisher reports 1,847.7 hours, 44,632 episodes, 10,257 tasks, six synchronized RGB cameras, reconstructed 3D hands, depth, and hierarchical annotations</summary>
 </entry>
 <entry>
-  <title>CapMem</title>
-  <id>https://arxiv.org/abs/2609.17688</id>
-  <link href="https://arxiv.org/abs/2609.17688"/>
+  <title>Eidon Tracker POV</title>
+  <id>https://huggingface.co/datasets/eidon-ai/tracker-pov</id>
+  <link href="https://huggingface.co/datasets/eidon-ai/tracker-pov"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>1,273.8 hours and 13,451 head-camera recordings from 27 contributors, paired with seven-slot upper-body IMU streams at 24 Hz</summary>
+</entry>
+<entry>
+  <title>Eidon Egocentric POV</title>
+  <id>https://huggingface.co/buckets/eidon-ai/egocentric-pov</id>
+  <link href="https://huggingface.co/buckets/eidon-ai/egocentric-pov"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>305.7 hours and 1,370 head-mounted video-only recordings from 37 contributors, without the Tracker POV IMU harness</summary>
+</entry>
+<entry>
+  <title>Eidon Capture and Playback Tools</title>
+  <id>https://eidonai.online/</id>
+  <link href="https://eidonai.online/"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="toolkit"/>
+  <summary>Public wearable IMU hardware/firmware, glove designs, and Eidon Sim for arm kinematics and video-synchronized trajectory playback</summary>
+</entry>
+<entry>
+  <title>EgoWild / EgoWild2Dex</title>
+  <id>https://arxiv.org/abs/2609.23755</id>
+  <link href="https://arxiv.org/abs/2609.23755"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="dataset"/>
+  <summary>Reported 538.9 hours, 179,049 episodes, 125,961 task descriptions, and 1,282 object categories from in-the-wild head-camera manipulation</summary>
+</entry>
+<entry>
+  <title>EgoTSR++ / SpatialLogic-Bench</title>
+  <id>https://arxiv.org/abs/2609.31751</id>
+  <link href="https://arxiv.org/abs/2609.31751"/>
+  <updated>2026-09-01T00:00:00Z</updated>
+  <category term="model"/>
+  <summary>Goal-conditioned progress reasoning from bidirectional state pairs, with order-robust comparisons and long-horizon failure/recovery evaluation</summary>
+</entry>
+<entry>
+  <title>EgoPathBench</title>
+  <id>https://huggingface.co/datasets/runder1/EgoPathBench</id>
+  <link href="https://huggingface.co/datasets/runder1/EgoPathBench"/>
   <updated>2026-09-01T00:00:00Z</updated>
   <category term="benchmark"/>
-  <summary>Paper reports 75 videos totaling 33.7 hours and 1,000 human-annotated multiple-choice questions across 16 scenarios</summary>
+  <summary>31,852 training, 1,345 validation, and 1,111 benchmark questions for traversability, waypoint routes, and intent-conditioned paths from first-person RGB</summary>
 </entry>
 <entry>
-  <title>WorldRover-10M</title>
-  <id>https://arxiv.org/abs/2608.15659</id>
-  <link href="https://arxiv.org/abs/2608.15659"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Synthetic minute-scale world explorations rendered from first-person, third-person, and 360-degree views with RGB, metric depth, camera trajectories, action signals, optical flow, and long-range 2D/3D tracks</summary>
-</entry>
-<entry>
-  <title>WNM-3D</title>
-  <id>https://arxiv.org/abs/2608.07267</id>
-  <link href="https://arxiv.org/abs/2608.07267"/>
-  <updated>2026-08-01T00:00:00Z</updated>
+  <title>Ego4WAM</title>
+  <id>https://arxiv.org/abs/2609.40341</id>
+  <link href="https://arxiv.org/abs/2609.40341"/>
+  <updated>2026-09-01T00:00:00Z</updated>
   <category term="model"/>
-  <summary>Continuous-VLN world navigation model conditioning future-view and action generation on 3D scene tokens reconstructed from monocular ego-view history, evaluated on GN-Bench</summary>
-</entry>
-<entry>
-  <title>Vision-Language Models for Egocentric Video</title>
-  <id>https://arxiv.org/abs/2608.18671</id>
-  <link href="https://arxiv.org/abs/2608.18671"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="survey"/>
-  <summary>Critical survey connecting egocentric VLMs across hand-object interaction, temporal reasoning, efficient clip selection, graph/object-centric reasoning, wearable assistance, and embodied AI</summary>
-</entry>
-<entry>
-  <title>VideoNIG</title>
-  <id>https://arxiv.org/abs/2608.08596</id>
-  <link href="https://arxiv.org/abs/2608.08596"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="benchmark"/>
-  <summary>Goal-oriented navigation-instruction benchmark with 60K simulated ego-view tour videos and 37K text- or image-goal prompts, evaluated by language, spatial-consistency, and navigation-execution tests</summary>
-</entry>
-<entry>
-  <title>VLAff / EgoAffordance</title>
-  <id>https://ojh6404.github.io/vlaff/</id>
-  <link href="https://ojh6404.github.io/vlaff/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>EgoAffordance contains 204K episodes with 5.6M visual affordances and 11.6M grasp and trajectory affordances; VLAff predicts heatmaps, grasp poses, and executable trajectories</summary>
-</entry>
-<entry>
-  <title>VITRA Egocentric Instruction Sidecars</title>
-  <id>https://huggingface.co/datasets/MIT-Media-Lab/vitra-instructions-qwen35-122b-egocentric-v1</id>
-  <link href="https://huggingface.co/datasets/MIT-Media-Lab/vitra-instructions-qwen35-122b-egocentric-v1"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>175,327 Qwen3.5-generated candidate hand-action instructions with 95,831 accepted rows across GigaHands, HOT3D, and OakInk2; 317 repository files retain exact source revisions and paths</summary>
-</entry>
-<entry>
-  <title>UniDataPro Egocentric Video Sample</title>
-  <id>https://huggingface.co/datasets/UniDataPro/egocentric-video</id>
-  <link href="https://huggingface.co/datasets/UniDataPro/egocentric-video"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Commercial card claims 4,050 hours across Pico VR, motion trackers, IMU, quaternion orientation, and ZED stereo capture; the public 2.33 GB repository contains one video, one metadata row, and one tracking file</summary>
-</entry>
-<entry>
-  <title>SoniSpeech</title>
-  <id>https://doi.org/10.7298/xjjr-9m85</id>
-  <link href="https://doi.org/10.7298/xjjr-9m85"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>34 hours and 18,000 voiced and silent utterances with synchronized ultrasound echoes, audio, and frontal video; 5,356 unique words and full phoneme coverage</summary>
-</entry>
-<entry>
-  <title>SmartRes</title>
-  <id>https://arxiv.org/abs/2608.01638</id>
-  <link href="https://arxiv.org/abs/2608.01638"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Dynamic pixel-space resolution routing for Ego4D and EgoIntention grounding, reducing visual tokens by up to 67%, retaining 86.4% of full-resolution performance, and reporting up to 1.66x faster inference</summary>
-</entry>
-<entry>
-  <title>SiMDex</title>
-  <id>https://lin-nie.github.io/SiMDex/</id>
-  <link href="https://lin-nie.github.io/SiMDex/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Similarity-based mining selects about 1.49M task-relevant samples from a pool of roughly 32M egocentric human samples and raises reported dexterous-manipulation success from 47.7% to 61.1% over equal-sized random sampling</summary>
-</entry>
-<entry>
-  <title>SLT 2026 SmartGlasses Challenge</title>
-  <id>https://aslp-lab.github.io/SmartGlasses/</id>
-  <link href="https://aslp-lab.github.io/SmartGlasses/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="challenge"/>
-  <summary>106.98 hours across 714 four-channel smart-glasses audio sessions: 518 dyadic sessions totaling 44.95 hours and 196 multi-party meetings totaling 62.03 hours</summary>
-</entry>
-<entry>
-  <title>SCOUT</title>
-  <id>https://arxiv.org/abs/2608.07959</id>
-  <link href="https://arxiv.org/abs/2608.07959"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Recovery-aware Chain-of-Tool-Thought agent for hours-to-days egocentric video, with adaptive region switching, uncertainty-prioritized UPS-GRPO, and turn-level temporal-alignment rewards</summary>
-</entry>
-<entry>
-  <title>RoboReact</title>
-  <id>https://arxiv.org/abs/2608.03387</id>
-  <link href="https://arxiv.org/abs/2608.03387"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Agentic pipeline that generates egocentric RGB-D manipulation video from a single observation, extracts geometry-preserving keyframes, retargets them to humanoids, and refines execution through closed-loop VLM guidance</summary>
-</entry>
-<entry>
-  <title>RoboLab-EgoX</title>
-  <id>https://huggingface.co/datasets/Voxel51/RoboLab-EgoX</id>
-  <link href="https://huggingface.co/datasets/Voxel51/RoboLab-EgoX"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>4,000 simulation episodes and six hours across 28 RoboLab tasks and 99 scenes, including 632 successes and 3,368 failures with wrist-view RGB-D, two exterior RGB-D views, calibration, arm telemetry, actions, and language</summary>
-</entry>
-<entry>
-  <title>RoboEdit</title>
-  <id>https://arxiv.org/abs/2608.18948</id>
-  <link href="https://arxiv.org/abs/2608.18948"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Edits human manipulation video into action-consistent robot video with aligned 3D states; the reported RoboEdit-14M corpus contains 174K paired videos, 14M frames, and seven robot embodiments</summary>
-</entry>
-<entry>
-  <title>RekaDaily-10k (raw)</title>
-  <id>https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw</id>
-  <link href="https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Publisher reports 10,865 hours, 412,050 videos, 11,127 WebDataset shards, and 80 TB of first-person footage from head-mounted and handheld phones; some recordings include synchronized IMU</summary>
-</entry>
-<entry>
-  <title>RealFactory-Ego-Data</title>
-  <id>https://huggingface.co/datasets/FlyBirdData/RealFactory-Ego-Data</id>
-  <link href="https://huggingface.co/datasets/FlyBirdData/RealFactory-Ego-Data"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Five head-mounted episodes totaling about 14 minutes on a live touchscreen production line, with RGB, 21-landmark hand pose, and frame-level action boundaries in LeRobot-compatible packages</summary>
-</entry>
-<entry>
-  <title>ROCO IROS 2026 UMI Dataset</title>
-  <id>https://huggingface.co/datasets/rocochallenge2025/roco_iros2026_umi_dataset</id>
-  <link href="https://huggingface.co/datasets/rocochallenge2025/roco_iros2026_umi_dataset"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>4,928 LeRobot v3 episodes and 7,459,440 frames across five tasks at 30 fps, with stereo first-person video, four hand-camera streams, and 16D bimanual pose and gripper state/action</summary>
-</entry>
-<entry>
-  <title>R4DSG</title>
-  <id>https://dualtransparency.github.io/R4DSG/</id>
-  <link href="https://dualtransparency.github.io/R4DSG/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Relative 4D scene-graph memory evaluated on 255 object questions from EgoLifeQA; reports a 6.7-point overall gain and a 12.5-point gain on when questions over EgoRAG-Text</summary>
-</entry>
-<entry>
-  <title>Proxemic Risk from Robot Ego Images</title>
-  <id>https://arxiv.org/abs/2608.12515</id>
-  <link href="https://arxiv.org/abs/2608.12515"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Four-level proxemic-danger classification study comparing InternVL, Qwen-VL, and SmolVLM under three prompts and two QLoRA rounds, with a separate person-localization analysis</summary>
-</entry>
-<entry>
-  <title>Omega-0</title>
-  <id>https://arxiv.org/abs/2608.06375</id>
-  <link href="https://arxiv.org/abs/2608.06375"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Latent predictive whole-body world-action model supporting ego RGB plus exocentric RGB/depth; reports Omega-HOME with 40+ hours of synchronized household humanoid observations, motion, states, and action latents</summary>
-</entry>
-<entry>
-  <title>OccPlanner</title>
-  <id>https://arxiv.org/abs/2608.14160</id>
-  <link href="https://arxiv.org/abs/2608.14160"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Pixel-goal diffusion planner conditioned on local 3D occupancy, with L3ROcc supervision reconstructed from monocular robot videos; reports 71.55% average success at 5-8 m versus 20.81% for NavDP</summary>
-</entry>
-<entry>
-  <title>Nexdata 10,000-Hour Egocentric Video Dataset</title>
-  <id>https://huggingface.co/datasets/Nexdata-AI/10000-Hour-Egocentric-Video-Dataset</id>
-  <link href="https://huggingface.co/datasets/Nexdata-AI/10000-Hour-Egocentric-Video-Dataset"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>Commercial card describes 10,000 hours across residential, retail, and office scenes with PICO 4 Ultra 4K stereo video, wrist and ankle IMU, 76-point full-body pose, and dense action annotations</summary>
-</entry>
-<entry>
-  <title>NVIDIA Video-to-Data Robot Dexterity Dataset</title>
-  <id>https://huggingface.co/datasets/nvidia/video-to-data-robot-dexterity-task-library-and-dataset</id>
-  <link href="https://huggingface.co/datasets/nvidia/video-to-data-robot-dexterity-task-library-and-dataset"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="dataset"/>
-  <summary>1,215 TACO-derived human motion sequences retargeted into 121,500 bimanual Sharpa robot episodes and 1,215 motion parquets, totaling 924.8 GB in Parquet and LeRobot v3 formats</summary>
-</entry>
-<entry>
-  <title>MERIT</title>
-  <id>https://choi-yeeun.github.io/MERIT/</id>
-  <link href="https://choi-yeeun.github.io/MERIT/"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Simple episodic memory with four retrieval keys per 30-second clip and query-time neighbor filtering; reports 71.2 accuracy on EgoLifeQA, 71.8 on LVBench, and 77.7 on Video-MME Long with a GPT-5 backbone</summary>
-</entry>
-<entry>
-  <title>Long-Tail Embodied Urban Navigation from In-the-Wild Videos</title>
-  <id>https://arxiv.org/abs/2608.16476</id>
-  <link href="https://arxiv.org/abs/2608.16476"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>Automatically annotates web-scale in-the-wild egocentric videos with metric trajectories and structured navigation semantics, then trains a VLA policy while exposing rare perception-motion failure modes</summary>
-</entry>
-<entry>
-  <title>LAWM-3D</title>
-  <id>https://arxiv.org/abs/2608.05706</id>
-  <link href="https://arxiv.org/abs/2608.05706"/>
-  <updated>2026-08-01T00:00:00Z</updated>
-  <category term="model"/>
-  <summary>3D-aware latent-action learning from multiview human video using invariant action tokenization, geometric foundation-model alignment, and RGB-D reconstruction for robot world-model pretraining</summary>
+  <summary>Controlled world-action-model study separating human-robot alignment, duration, task diversity, action labels, and training-stage effects</summary>
 </entry>
 </feed>

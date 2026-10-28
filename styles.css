@@ -723,6 +723,26 @@ tbody tr:hover {
   color: var(--teal);
 }
 
+.resource-credit {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.resource-links a { text-underline-offset: 3px; }
+.resource-notes { margin-top: 8px; font-size: 12px; }
+.resource-notes summary { cursor: pointer; color: var(--teal); }
+.resource-notes p { margin: 7px 0; overflow-wrap: anywhere; }
+
 .task-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1649,6 +1669,12 @@ tbody tr:hover {
     text-transform: uppercase;
   }
 
+  td > * {
+    grid-column: 2;
+    min-width: 0;
+    align-self: start;
+  }
+
   td > .chip {
     justify-self: start;
   }
@@ -1672,6 +1698,7 @@ tbody tr:hover {
 
   .task-tags {
     margin-top: 8px;
+    align-items: flex-start;
   }
 
   .status-row {

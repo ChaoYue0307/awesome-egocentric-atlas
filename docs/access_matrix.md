@@ -16,7 +16,30 @@ experiments before committing to a dataset. Columns:
 > means the data depends on another dataset's raw video. Always re-check the
 > official page before relying on a license for a paper.
 
-_Snapshot date: 2026-06-15._
+## Recent release checks
+
+**Checked 2026-10-29.** File-list and documentation checks, not full-corpus
+downloads. Creator attribution and detailed caveats are in the
+[October resource guide](updates/2026-10-29.md).
+
+| Resource | Public or gated assets | Important boundary | Status |
+| :--- | :--- | :--- | :--- |
+| [Open-AoE](https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h) | Full 2,000-hour release and code | Custom dataset terms; MANO-related assets have additional conditions | open |
+| [EgoHTR](https://huggingface.co/datasets/leggedrobotics/egohtr) | Gated dataset | Code still marked coming soon; privacy/access conditions apply | request |
+| [EgoWearBench](https://huggingface.co/datasets/facebook/wearable-ai) | Gated validation data for three tasks | 700 samples per task, not a verified count of unique videos | request |
+| [SG-Ego / GLEN](https://huggingface.co/datasets/francescapistilli/sg-ego) | Scene-graph annotations and code | Original video access remains separate | benchmark |
+| [VIABench](https://huggingface.co/datasets/MCG-NJU/VIABench) | Benchmark media and annotations | Repository still lacks a verified evaluator | partial |
+| [TouchScale](https://huggingface.co/datasets/2077AIDataFoundation/TouchScale) | Gated 100-hour subset | 500 hours is the announced total, not the checked release | partial |
+| [ProactEgoMem](https://huggingface.co/datasets/Meikel/ProactEgoMem) | Annotations and evaluation code | Source videos separate; no benchmark training, including dev data | benchmark |
+| [APM-Bench](https://huggingface.co/datasets/Jianguo-Huang11/APM-Bench) | Session videos | Evaluation annotations and code remain pending | partial |
+| [Ropedia W0](https://github.com/Ropedia/ropedia-w0) | 5B checkpoints and inference code | A14B, post-training and evaluation package remain pending | partial |
+| [EgoArgus](https://github.com/NYCU-NLP-Lab/EgoArgus) | Annotations and evaluation code | Release draft explicitly does not yet grant reuse rights | partial |
+
+## Historical reference
+
+**Checked 2026-06-15; not refreshed in the October update.** These rows are
+retained as a dated reference and may differ from later catalog checks. Prefer
+the newer `verified_at` record in the catalog and the current official source.
 
 | Resource | Data | Annotation | Code | Leaderboard | License | Status | Last verified |
 |---|---|---|---|---|---|---|---|
@@ -46,5 +69,5 @@ _Snapshot date: 2026-06-15._
 1. Open the resource's official page and confirm each column from primary sources.
 2. Mark anything you cannot confirm as `unknown` — never infer a license.
 3. Update the matching `verified_at` field in [`data/resources.yml`](../data/resources.yml)
-   and the snapshot/row dates here.
+   and the relevant row date here; leave dates for unchecked rows unchanged.
 4. Run `ruby scripts/validate_catalog.rb`.

@@ -14,7 +14,9 @@ machine-checked, so most mistakes are caught by the validator before review.
    [resource_schema.md](resource_schema.md). Reuse task/modality tokens from
    [taxonomy.md](taxonomy.md); add new tokens to [`data/taxonomy.yml`](../data/taxonomy.yml).
 4. **Add the README row** in the matching section, keeping the table format.
-5. Set `verified_at` to today.
+5. Set `verified_at` to the source-check date. Record the creator, release
+   organization/account, available assets, source dependencies, and missing assets.
+   Set `meta.last_updated` to the catalog revision date.
 6. Run `ruby scripts/build_artifacts.rb` to refresh generated counts, dates,
    CSV/JSON, and figure labels.
 
@@ -43,14 +45,16 @@ machine-checked, so most mistakes are caught by the validator before review.
 
 - The headline `resources-<N>` badge counts **egocentric** resources (scope is
   not `adjacent`).
-- Bump `meta.last_major_audit` in `data/resources.yml`, then run
-  `ruby scripts/build_artifacts.rb`. Do not edit the generated README date or
-  badge manually.
+- Update `meta.last_updated` for a catalog revision. Advance `meta.last_major_audit`
+  only after a broad audit, not after checking a few entries. Run
+  `ruby scripts/build_artifacts.rb` and `ruby scripts/build_readme_i18n.rb`;
+  do not edit generated dates or badges manually.
 
 ## Run local checks
 
 ```bash
 ruby scripts/validate_catalog.rb
+ruby scripts/test_catalog_artifacts.rb
 ruby scripts/build_artifacts.rb --check
 ruby scripts/build_readme_i18n.rb --check
 ruby scripts/build_hf_package.rb --check
@@ -78,5 +82,6 @@ to the temporary README. The GitHub README must stay metadata-free.
 - [ ] Scale numbers match the official source (not inflated).
 - [ ] Both `README.md` and `data/resources.yml` updated; `name` matches.
 - [ ] New task/modality tokens added to `data/taxonomy.yml`.
-- [ ] `meta.last_major_audit` updated if needed, then generated artifacts rebuilt.
+- [ ] `meta.last_updated` updated; `meta.last_major_audit` advanced only for a broad audit.
+- [ ] Generated artifacts and translated entry pages rebuilt.
 - [ ] `ruby scripts/validate_catalog.rb` and `ruby scripts/build_artifacts.rb --check` pass with no errors.

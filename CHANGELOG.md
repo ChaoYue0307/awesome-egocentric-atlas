@@ -3,6 +3,27 @@
 All notable changes to the Awesome Egocentric Atlas. Counts refer to egocentric
 resources (resources tagged `scope: adjacent` are listed separately).
 
+## Catalog expansion - 2026-10-29
+
+- Added 34 resources across human demonstrations, tactile and event sensing,
+  proactive memory, safety and spatial benchmarks, world models, annotation
+  pipelines, and surveys: 33 egocentric resources and one robot-only adjacent
+  release. See the [resource guide](docs/updates/2026-10-29.md) for creators,
+  release channels, and access notes.
+- Rechecked Open-AoE, EgoHTR, EgoWearBench, SG-Ego / GLEN, and VIABench against
+  their current official releases. Distinguished released subsets, gated files,
+  annotation-only packages, missing evaluation code, and future release plans.
+- Added capture/annotation and evaluation guides, with source dependencies,
+  privacy considerations, split leakage checks, and reporting checklists.
+- Made creator and publisher names searchable on the site; added direct paper,
+  data, code, and checkpoint links plus expandable release notes.
+- Preserved provenance and access fields in JSON/CSV exports. Separated the
+  latest catalog revision date from the last broad audit and individual checks.
+- Added regression tests for exports and date semantics. Refreshed generated
+  catalog statistics, figures, translated entry pages, and mirror artifacts.
+- Removed stale raster overrides so the site displays the current generated
+  SVG statistics; fixed mobile alignment of source links and release notes.
+
 ## Selected updates — 2026-10-29
 
 - Added GenRobot's Gen-HumanEgo, Reka AI's processed RekaDaily-10k release, EgoBrain-Mini, and the CapMem benchmark, including access, provenance, and annotation notes.

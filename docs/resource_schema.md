@@ -32,6 +32,7 @@ enforces the required fields and the format of the optional ones it understands.
 | `paper` | Paper/arXiv/OpenReview link. |
 | `project` | Project or dataset homepage. |
 | `code` | Code repository. |
+| `weights` | Released model checkpoints; separate from code and training data. |
 | `data` | Direct data/download link (e.g., Hugging Face, Zenodo DOI). |
 | `benchmark` | Benchmark/challenge page. |
 | `leaderboard` | Public leaderboard. |
@@ -54,7 +55,7 @@ enforces the required fields and the format of the optional ones it understands.
 | `created_by` | string | Authors/creators. |
 | `released_by` | string | Releasing org/channel. |
 | `publisher` | string | Hosting platform. |
-| `derived_from` | string | Parent dataset this is built on. |
+| `derived_from` | string or list of strings | Parent dataset(s); serialized with `; ` separators in CSV. |
 | `milestone_origin` | string | Short institution, lab, company, project, or consortium label shown on milestone cards when the entry has `milestone`. |
 
 ## Minimal example
@@ -75,7 +76,20 @@ enforces the required fields and the format of the optional ones it understands.
   citation_key: egonight_2025
 ```
 
-## Validation
+## Catalog dates and exports
+
+`meta.last_updated` is the date of the latest catalog revision.
+`meta.last_major_audit` is the last broad review and does not advance when only
+selected entries are checked. A resource's `verified_at` refers to its own
+source/access check, not an independently reproduced result.
+
+The JSON catalog and both CSV downloads preserve creator/releaser attribution,
+verification dates, source links, and access/release notes when recorded. An
+omitted `scope` is exported as `egocentric`; missing provenance is left blank,
+not inferred. `released` is the first public publication/release date, not the
+date the resource was added here.
+
+## Validation commands
 
 ```bash
 ruby scripts/validate_catalog.rb

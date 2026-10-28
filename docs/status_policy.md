@@ -6,7 +6,7 @@ not quality or importance. When in doubt, choose the more conservative status
 
 | Status | Use when | Typical evidence |
 |---|---|---|
-| `open` | Raw data, annotations, or code can be obtained today without approval, **or** access is application-based but clearly documented and routinely granted. | A working download link, a public Hugging Face/Zenodo/GitHub release, or a documented sign-up that anyone can complete. |
+| `open` | The advertised data, annotations, or code were publicly obtainable at the last check. It does not imply that every associated asset is released or commercially usable. | Public files or a working release/download channel, with the available asset identified in the access notes. |
 | `request` | A real project exists, but access needs a license, form, approval, or institutional agreement. | A license agreement page, an access request form, or an email-the-authors process. |
 | `benchmark` | The resource is primarily an evaluation suite, challenge, or label set over existing video rather than a new raw dataset. | A leaderboard/challenge page or QA/label release that depends on another dataset's raw video. |
 | `partial` | Only a subset, annotations, code, or sample is public; full raw data, license, or long-term hosting is unclear. | A released sample or annotation set but no full raw-video download, or an ambiguous mirror. |
@@ -14,13 +14,21 @@ not quality or importance. When in doubt, choose the more conservative status
 
 ## Decision guide
 
-1. **Can you download usable data or code right now (or via a clearly documented
-   application)?** → likely `open`.
-2. **Does access require a license/form/approval?** → `request`.
-3. **Is it mainly a benchmark/challenge/label set over someone else's video?** →
-   `benchmark`.
-4. **Is only part of it public, or is hosting/license unclear?** → `partial`.
-5. **Is it announced but not yet verifiably available?** → `watch`.
+1. **No usable release verified?** Use `watch`, even when a paper or demo exists.
+2. **A material part of the advertised release is missing, or reuse terms are
+   unresolved?** Use `partial` and name the missing assets. A partial release can
+   also have gated files; record that in `access`.
+3. **The dataset requires a license acceptance, form, or approval?** Use `request`,
+   including automatically approved forms.
+4. **Public evaluation annotations over separately obtained source videos?** Use
+   `benchmark` and identify those dependencies.
+5. **The described asset is otherwise publicly obtainable?** Use `open` and state
+   whether that means raw data, annotations, code, or weights.
+
+`kind` describes what a resource is; `status` describes its release. A resource
+with `kind: benchmark` can therefore have `status: request`, `partial`, or `watch`.
+The five labels are a compact summary, not a substitute for asset-level notes.
+Older records may retain earlier classifications until their next source check.
 
 ## Examples
 
@@ -28,7 +36,10 @@ not quality or importance. When in doubt, choose the more conservative status
 - **Ego4D** — public project, but downloads need a signed license → `request`.
 - **EgoSchema** — QA over Ego4D clips, used mainly for evaluation → `benchmark`.
 - **EgoLife** — EgoLifeQA is released but full capture/license is unclear → `partial`.
-- **EgoDex** — strong paper, but the official release path is unconfirmed → `watch`.
+- **TouchScale**: a gated 100-hour release from an advertised 500-hour collection
+  at its October 2026 check -> `partial`, with gating recorded separately.
+- **EgoVoice**: a paper and project page with a planned November release at its
+  October 2026 check -> `watch`.
 
 ## Re-checking
 

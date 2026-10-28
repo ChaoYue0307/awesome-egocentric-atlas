@@ -23,8 +23,9 @@ module CatalogArtifacts
   HF_HEADER = File.join(ROOT, "huggingface", "dataset_card_header.txt")
   MILESTONES_SVG = File.join(ROOT, "assets", "awesome-egocentric-milestones.svg")
 
-  CSV_COLUMNS = %w[name kind released venue status scope year url paper code license scale tasks modalities].freeze
-  PAPERS_CSV_COLUMNS = %w[name kind released venue status scope year paper url code license scale tasks modalities].freeze
+  PROVENANCE_COLUMNS = %w[created_by released_by verified_at project data weights benchmark leaderboard mirror license_url access access_url release_note scope_note derived_from].freeze
+  CSV_COLUMNS = (%w[name kind released venue status scope year url paper code license scale tasks modalities] + PROVENANCE_COLUMNS).freeze
+  PAPERS_CSV_COLUMNS = (%w[name kind released venue status scope year paper url code license scale tasks modalities] + PROVENANCE_COLUMNS).freeze
   STATUS_ORDER = %w[open watch partial benchmark request].freeze
   KIND_ORDER = %w[dataset benchmark model toolkit collection].freeze
 
@@ -106,6 +107,15 @@ module CatalogArtifacts
       "url" => entry["url"],
       "paper" => entry["paper"],
       "code" => entry["code"],
+      "project" => entry["project"],
+      "data" => entry["data"],
+      "weights" => entry["weights"],
+      "benchmark" => entry["benchmark"],
+      "leaderboard" => entry["leaderboard"],
+      "mirror" => entry["mirror"],
+      "created_by" => entry["created_by"],
+      "released_by" => entry["released_by"],
+      "scope_note" => entry["scope_note"],
       "derived_from" => entry["derived_from"],
       "scale" => entry["scale"],
       "tasks" => tasks,
@@ -114,6 +124,7 @@ module CatalogArtifacts
       "license" => entry["license"],
       "license_url" => entry["license_url"],
       "access" => entry["access"],
+      "access_url" => entry["access_url"],
       "release_note" => entry["release_note"],
       "verified_at" => entry["verified_at"]
     }.delete_if { |_key, value| value.nil? || value == [] }
@@ -194,6 +205,7 @@ module CatalogArtifacts
         "title" => catalog_data.fetch("meta").fetch("title"),
         "description" => catalog_data.fetch("meta").fetch("description"),
         "last_major_audit" => catalog_data.fetch("meta").fetch("last_major_audit"),
+        "last_updated" => catalog_data.fetch("meta").fetch("last_updated", catalog_data.fetch("meta").fetch("last_major_audit")),
         "status_legend" => catalog_data.fetch("meta").fetch("status_legend"),
         "github_url" => "https://github.com/ChaoYue0307/awesome-egocentric-atlas",
         "pages_url" => "https://chaoyue0307.github.io/awesome-egocentric-atlas/",
@@ -227,7 +239,7 @@ module CatalogArtifacts
   end
 
   def csv
-    csv_for(resources, CSV_COLUMNS)
+    csv_for(site_resources, CSV_COLUMNS)
   end
 
   def papers_csv
@@ -284,7 +296,7 @@ module CatalogArtifacts
     summary_data = payload.fetch("summary")
     text = content.dup
     replace_once!(text, %r{badge/resources-\d+-}, "badge/resources-#{summary_data.fetch('egocentric_resources')}-", "README resources badge")
-    replace_once!(text, /\*\*Updated:\*\*\s*\d{4}-\d{2}-\d{2}\./, "**Updated:** #{meta.fetch('last_major_audit')}.", "README updated date")
+    replace_once!(text, /\*\*Updated:\*\*\s*\d{4}-\d{2}-\d{2}\./, "**Updated:** #{meta.fetch('last_updated')}.", "README updated date")
     replace_once!(text, /^\| \d+ egocentric resources \| .+ \|$/, "| #{at_a_glance_sentence(summary_data)} |", "README at-a-glance row")
     replace_once!(
       text,
@@ -307,7 +319,7 @@ module CatalogArtifacts
 
       replace_once!(text, /(<dt data-kind="#{Regexp.escape(kind)}">)\d+(<\/dt>)/, "\\1#{kinds.fetch(kind, 0)}\\2", "index #{kind} stat")
     end
-    replace_once!(text, /(<span data-updated>Updated )\d{4}-\d{2}-\d{2}(<\/span>)/, "\\1#{meta.fetch('last_major_audit')}\\2", "index updated date")
+    replace_once!(text, /(<span data-updated>Updated )\d{4}-\d{2}-\d{2}(<\/span>)/, "\\1#{meta.fetch('last_updated')}\\2", "index updated date")
     replace_once!(
       text,
       /(<!-- SEO:START[^>]*-->).*?(<!-- SEO:END -->)/m,
@@ -332,7 +344,7 @@ module CatalogArtifacts
     image = "#{url}assets/awesome-egocentric-social-card.png"
     hf_csv = "#{meta.fetch('huggingface_url').chomp('/')}/resolve/main/awesome-egocentric-atlas.csv"
     site_json_url = "#{url}site-data.json"
-    audit_date = meta.fetch("last_major_audit")
+    audit_date = meta.fetch("last_updated")
     keywords = [
       "egocentric AI", "egocentric vision", "first-person video", "embodied AI",
       "robotics", "vision-language-action", "world models", "egocentric memory",
@@ -440,7 +452,7 @@ module CatalogArtifacts
 
   def sitemap_xml(payload = site_payload)
     url = payload.fetch("meta").fetch("pages_url")
-    audit_date = payload.fetch("meta").fetch("last_major_audit")
+    audit_date = payload.fetch("meta").fetch("last_updated")
     <<~XML
       <?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -475,7 +487,7 @@ module CatalogArtifacts
   def feed_xml(payload = site_payload)
     meta = payload.fetch("meta")
     url = meta.fetch("pages_url")
-    updated = "#{meta.fetch('last_major_audit')}T00:00:00Z"
+    updated = "#{meta.fetch('last_updated')}T00:00:00Z"
     entries = payload.fetch("resources")
       .sort_by { |entry| [entry["released"].to_s, entry["name"].to_s] }
       .reverse
@@ -501,7 +513,7 @@ module CatalogArtifacts
         <link href="#{html_escape(url)}feed.xml" rel="self"/>
         <link href="#{html_escape(url)}"/>
         <updated>#{updated}</updated>
-        <subtitle>Recently added egocentric AI resources, newest first.</subtitle>
+        <subtitle>Resources ordered by first-publication month; access dates are recorded in the catalog.</subtitle>
       #{entries.rstrip}
       </feed>
     XML
@@ -1274,6 +1286,12 @@ module CatalogArtifacts
         labels << (first[/\[([^\]]+)\]/, 1] || first.gsub(/<[^>]*>/, "").strip)
       end
     end
+    # The context table also cites foundational papers under their full titles.
+    # Count catalogued surveys there without requiring every citation to be an entry.
+    context = readme[/^## Surveys, Papers, and Context$.*?(?=^## Workshops and Challenges$)/m].to_s
+    resources.select { |entry| entry["kind"] == "survey" }.each do |entry|
+      labels << entry["name"] if context.include?("| [#{entry['name']}](")
+    end
     labels
   end
 
@@ -1295,5 +1313,37 @@ module CatalogArtifacts
         canonical_from_readme.include?(name) || Array(aliases[name]).any? { |label| labels.include?(label) }
       end
     }
+  end
+
+  def readme_table_errors(readme, entries = resources, aliases = readme_aliases)
+    errors = []
+    by_name = entries.map { |entry| [entry["name"], entry] }.to_h
+    aliases.each { |canonical, labels| Array(labels).each { |label| by_name[label] = by_name[canonical] } }
+    header = nil
+    readme.lines.each_with_index do |line, index|
+      unless line.start_with?("|")
+        header = nil
+        next
+      end
+      cells = line.strip.sub(/\A\|/, "").sub(/\|\z/, "").split(/(?<!\\)\|/, -1).map(&:strip)
+      if header.nil?
+        header = cells
+        next
+      end
+      if cells.length != header.length
+        errors << "README line #{index + 1}: #{cells.length} table cells, expected #{header.length}"
+        next
+      end
+      status_column = header.index("Status")
+      label = cells.first[/\[([^\]]+)\]/, 1] || cells.first
+      entry = by_name[label]
+      next unless status_column && entry
+
+      status = cells[status_column].delete("`")
+      if status != entry["status"]
+        errors << "README line #{index + 1}: #{label} status #{status.inspect} differs from catalog #{entry['status'].inspect}"
+      end
+    end
+    errors
   end
 end

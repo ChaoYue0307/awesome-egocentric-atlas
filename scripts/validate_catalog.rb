@@ -31,7 +31,7 @@ MIN_YEAR = 2000
 MAX_YEAR = Time.now.year + 1
 
 # Optional fields that, when present, must be http(s) URLs.
-URL_FIELDS = %w[paper project code data benchmark leaderboard mirror access_url license_url].freeze
+URL_FIELDS = %w[paper project code data weights benchmark leaderboard mirror access_url license_url].freeze
 # Optional fields that, when present, must point to files committed in this repo.
 LOCAL_ASSET_FIELDS = %w[milestone_image].freeze
 # Optional fields that, when present, must be YYYY-MM-DD dates.
@@ -84,6 +84,21 @@ meta = data["meta"]
 if meta.is_a?(Hash)
   REQUIRED_META_KEYS.each do |key|
     add(errors, "meta is missing #{key}") unless meta.key?(key)
+  end
+
+  %w[last_major_audit last_updated].each do |key|
+    next unless meta.key?(key)
+
+    value = meta[key].to_s
+    begin
+      raise ArgumentError unless DATE_RE.match?(value)
+      Date.iso8601(value)
+    rescue ArgumentError
+      add(errors, "meta.#{key} must be a valid YYYY-MM-DD date")
+    end
+  end
+  if meta["last_updated"] && meta["last_major_audit"] && meta["last_updated"].to_s < meta["last_major_audit"].to_s
+    add(errors, "meta.last_updated cannot precede meta.last_major_audit")
   end
 
   legend = meta["status_legend"]
@@ -255,12 +270,12 @@ else
 end
 
 if meta.is_a?(Hash) && meta["last_major_audit"]
-  audit_date = meta["last_major_audit"].to_s
+  audit_date = meta.fetch("last_updated", meta["last_major_audit"]).to_s
   updated_match = readme.match(/\*\*Updated:\*\*\s*(\d{4}-\d{2}-\d{2})/)
   if updated_match
     readme_date = updated_match[1]
     if readme_date != audit_date
-      add(errors, "README Updated date (#{readme_date}) does not match meta.last_major_audit (#{audit_date})")
+      add(errors, "README Updated date (#{readme_date}) does not match catalog update date (#{audit_date})")
     end
   else
     add(errors, "README is missing the **Updated:** date line")
@@ -268,6 +283,7 @@ if meta.is_a?(Hash) && meta["last_major_audit"]
 end
 
 coverage = CatalogArtifacts.readme_resource_consistency
+errors.concat(CatalogArtifacts.readme_table_errors(readme, resources))
 unless coverage["readme_missing_in_yaml"].empty?
   add(errors, "README resource labels missing from data/resources.yml: #{coverage['readme_missing_in_yaml'].join(', ')}")
 end

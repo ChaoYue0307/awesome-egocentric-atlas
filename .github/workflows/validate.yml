@@ -30,6 +30,9 @@ jobs:
       - name: Validate catalog and README links
         run: ruby scripts/validate_catalog.rb
 
+      - name: Test catalog exports
+        run: ruby scripts/test_catalog_artifacts.rb
+
       - name: Validate generated artifacts
         run: ruby scripts/build_artifacts.rb --check
 
