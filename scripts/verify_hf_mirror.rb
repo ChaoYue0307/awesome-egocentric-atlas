@@ -54,12 +54,17 @@ remote_summary = remote_site.fetch("summary")
   exit 1
 end
 
-local_date = local_site.fetch("meta").fetch("last_major_audit")
-remote_date = remote_site.fetch("meta").fetch("last_major_audit")
-if remote_date != local_date
-  warn "HF site-data audit date mismatch: local=#{local_date.inspect}, remote=#{remote_date.inspect}"
+local_meta = local_site.fetch("meta")
+remote_meta = remote_site.fetch("meta")
+%w[last_major_audit last_updated].each do |key|
+  local_date = local_meta.fetch(key, local_meta.fetch("last_major_audit"))
+  remote_date = remote_meta.fetch(key, remote_meta.fetch("last_major_audit"))
+  next if remote_date == local_date
+
+  warn "HF site-data #{key} mismatch: local=#{local_date.inspect}, remote=#{remote_date.inspect}"
   exit 1
 end
+local_date = local_meta.fetch("last_updated", local_meta.fetch("last_major_audit"))
 
 remote_readme = fetch_text("#{base}/README.md?download=1&ts=#{Time.now.to_i}")
 required = [
