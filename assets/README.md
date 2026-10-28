@@ -29,7 +29,7 @@ Prompt summary: a polished circular atlas mark combining wearable first-person g
 
 `awesome-egocentric-atlas-map.svg`, `awesome-egocentric-reader-route.svg`, and `awesome-egocentric-task-matrix.svg` are hand-authored overview figures used in the README. They keep exact labels deterministic and reviewable in Git.
 
-The README and GitHub Pages site embed high-resolution PNG exports of the SVG figures so downstream renderers show the same text layout everywhere:
+The README and GitHub Pages site use the generated SVGs directly for the atlas map, timeline, and access chart so their counts stay in sync. Other figures use high-resolution PNG exports:
 
 - `awesome-egocentric-atlas-map.png` — `5689 x 3244`
 - `awesome-egocentric-reader-route.png` — `3840 x 1380`

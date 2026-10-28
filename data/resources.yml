@@ -1030,15 +1030,94 @@ resources:
     status: open
     url: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw
     data: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw
-    scale: "Incremental raw release currently containing 7,834 hours, 397,171 videos, 9,836 WebDataset shards, and about 70 TB of unscripted first-person daily-life footage from head-mounted and handheld phones"
+    scale: "Publisher reports 10,865 hours, 412,050 videos, 11,127 WebDataset shards, and 80 TB of first-person footage from head-mounted and handheld phones; some recordings include synchronized IMU"
     modalities: [egocentric-video, video, metadata]
     tasks: [egocentric-pretraining, everyday-activity, action-understanding, robot-learning]
     created_by: "Reka AI and Claru"
     license: apache-2.0
     license_url: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw/blob/main/README.md
-    verified_at: "2026-08-09"
-    release_note: "The ungated raw media, browse/index metadata, and Apache-2.0 terms are public. The card identifies this as an incremental release and reports the current tranche rather than the eventual collection target."
+    verified_at: "2026-10-29"
+    release_note: "The publisher calls this the full release and notes additional recordings may be appended. Counts are from the dataset card and may change."
     citation_key: rekadaily_10k_raw_2026
+
+  - name: RekaDaily-10k (processed)
+    kind: dataset
+    released: "2026-09"
+    venue: "Hugging Face"
+    year: 2026
+    status: open
+    url: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed
+    data: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed
+    derived_from: RekaDaily-10k (raw)
+    scale: "Dataset card reports 6,373,064 clips and 10,200 hours; captions and question-answer exchanges are model-generated"
+    modalities: [egocentric-video, video, captions, metadata]
+    tasks: [egocentric-pretraining, everyday-activity, action-understanding, robot-learning]
+    created_by: "Reka AI and Claru"
+    released_by: "Reka AI on Hugging Face"
+    license: apache-2.0
+    license_url: https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed
+    verified_at: "2026-10-29"
+    release_note: "Publisher reports that captions and Q&A are model-generated and not human-verified. Clips link to their source recordings; counts can change as processing continues."
+    citation_key: rekadaily_10k_processed_2026
+
+  - name: Gen-HumanEgo
+    kind: dataset
+    released: "2026-09"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo
+    data: https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo
+    project: https://www.gen-robot.org/blog/gen-human-ego
+    scale: "Publisher reports 1,847.7 hours, 44,632 episodes, 10,257 tasks, six synchronized RGB cameras, reconstructed 3D hands, depth, and hierarchical annotations"
+    modalities: [egocentric-video, hand-pose, depth, action-labels]
+    tasks: [hand-object-interaction, robot-learning, human-demonstrations]
+    created_by: "GenRobot"
+    released_by: "GenRobot on Hugging Face"
+    access: "Hugging Face form; access automatically granted on submission"
+    license: cc-by-sa-4.0
+    license_url: https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo
+    verified_at: "2026-10-29"
+    release_note: "The dataset card describes model-derived hand, depth, and semantic signals; access requires submitting a form."
+    citation_key: gen_humanego_2026
+
+  - name: EgoBrain-Mini
+    kind: dataset
+    released: "2026-08"
+    venue: "Hugging Face"
+    year: 2026
+    status: request
+    url: https://huggingface.co/datasets/ut-vision/EgoBrain-Mini
+    data: https://huggingface.co/datasets/ut-vision/EgoBrain-Mini
+    paper: https://arxiv.org/abs/2506.01353
+    derived_from: EgoBrain
+    scale: "40 participants and 1,562 action segments with synchronized first-person video, EEG, IMU, and audio; released subset excludes original raw video"
+    modalities: [egocentric-video, audio, imu, eeg]
+    tasks: [action-recognition, sensor-fusion, everyday-activity]
+    created_by: "University of Tokyo and Microsoft Research Asia EgoBrain team"
+    released_by: "UT-Vision on Hugging Face"
+    access: "Hugging Face information-sharing agreement"
+    license: cc-by-nc-4.0
+    license_url: https://huggingface.co/datasets/ut-vision/EgoBrain-Mini
+    verified_at: "2026-10-29"
+    release_note: "All 40 subjects were announced on 2026-10-13. The release contains processed phase-2 video, not original raw video; IMU rates vary by subject."
+    citation_key: egobrain_mini_2026
+
+  - name: CapMem
+    kind: benchmark
+    released: "2026-09"
+    venue: "EMNLP 2026"
+    year: 2026
+    status: watch
+    url: https://arxiv.org/abs/2609.17688
+    paper: https://arxiv.org/abs/2609.17688
+    scale: "Paper reports 75 videos totaling 33.7 hours and 1,000 human-annotated multiple-choice questions across 16 scenarios"
+    modalities: [egocentric-video, captions]
+    tasks: [memory, qa, video-language]
+    created_by: "Dingli Liang and collaborators"
+    verified_at: "2026-10-29"
+    release_note: "Paper reports the benchmark; public data and evaluation-code availability remain unverified."
+    citation_key: capmem_2026
 
   - name: Stereo-550
     kind: dataset

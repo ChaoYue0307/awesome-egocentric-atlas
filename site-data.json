@@ -15,24 +15,24 @@
     "huggingface_url": "https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"
   },
   "summary": {
-    "total_resources": 1044,
-    "egocentric_resources": 866,
+    "total_resources": 1048,
+    "egocentric_resources": 870,
     "adjacent_resources": 178,
     "kind_counts": {
-      "benchmark": 142,
+      "benchmark": 143,
       "challenge": 2,
       "collection": 4,
-      "dataset": 229,
+      "dataset": 232,
       "model": 442,
       "survey": 4,
       "toolkit": 43
     },
     "status_counts": {
       "benchmark": 11,
-      "open": 212,
+      "open": 213,
       "partial": 33,
-      "request": 31,
-      "watch": 579
+      "request": 33,
+      "watch": 580
     }
   },
   "lanes": [
@@ -45,7 +45,7 @@
         "video-language",
         "generation-and-world-models"
       ],
-      "count": 245
+      "count": 247
     },
     {
       "id": "procedure-action",
@@ -55,7 +55,7 @@
         "action-and-procedure",
         "skills-and-quality"
       ],
-      "count": 260
+      "count": 262
     },
     {
       "id": "hands-3d",
@@ -68,7 +68,7 @@
         "detection-segmentation",
         "three-d-and-scene"
       ],
-      "count": 387
+      "count": 388
     },
     {
       "id": "memory-reasoning",
@@ -80,7 +80,7 @@
         "reasoning-intent-planning",
         "grounding-localization"
       ],
-      "count": 274
+      "count": 275
     },
     {
       "id": "robotics-vla",
@@ -89,7 +89,7 @@
       "families": [
         "robotics-and-vla"
       ],
-      "count": 243
+      "count": 245
     },
     {
       "id": "ar-wearables",
@@ -100,7 +100,7 @@
         "audio-and-social",
         "assistance-and-agents"
       ],
-      "count": 275
+      "count": 276
     }
   ],
   "milestones": [
@@ -2223,7 +2223,7 @@
       "status": "open",
       "scope": "egocentric",
       "url": "https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw",
-      "scale": "Incremental raw release currently containing 7,834 hours, 397,171 videos, 9,836 WebDataset shards, and about 70 TB of unscripted first-person daily-life footage from head-mounted and handheld phones",
+      "scale": "Publisher reports 10,865 hours, 412,050 videos, 11,127 WebDataset shards, and 80 TB of first-person footage from head-mounted and handheld phones; some recordings include synchronized IMU",
       "tasks": [
         "egocentric-pretraining",
         "everyday-activity",
@@ -2242,8 +2242,133 @@
       ],
       "license": "apache-2.0",
       "license_url": "https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw/blob/main/README.md",
-      "release_note": "The ungated raw media, browse/index metadata, and Apache-2.0 terms are public. The card identifies this as an incremental release and reports the current tranche rather than the eventual collection target.",
-      "verified_at": "2026-08-09"
+      "release_note": "The publisher calls this the full release and notes additional recordings may be appended. Counts are from the dataset card and may change.",
+      "verified_at": "2026-10-29"
+    },
+    {
+      "name": "RekaDaily-10k (processed)",
+      "kind": "dataset",
+      "released": "2026-09",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "open",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed",
+      "derived_from": "RekaDaily-10k (raw)",
+      "scale": "Dataset card reports 6,373,064 clips and 10,200 hours; captions and question-answer exchanges are model-generated",
+      "tasks": [
+        "egocentric-pretraining",
+        "everyday-activity",
+        "action-understanding",
+        "robot-learning"
+      ],
+      "task_families": [
+        "foundation-and-representation",
+        "action-and-procedure",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "video",
+        "captions",
+        "metadata"
+      ],
+      "license": "apache-2.0",
+      "license_url": "https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed",
+      "release_note": "Publisher reports that captions and Q&A are model-generated and not human-verified. Clips link to their source recordings; counts can change as processing continues.",
+      "verified_at": "2026-10-29"
+    },
+    {
+      "name": "Gen-HumanEgo",
+      "kind": "dataset",
+      "released": "2026-09",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo",
+      "scale": "Publisher reports 1,847.7 hours, 44,632 episodes, 10,257 tasks, six synchronized RGB cameras, reconstructed 3D hands, depth, and hierarchical annotations",
+      "tasks": [
+        "hand-object-interaction",
+        "robot-learning",
+        "human-demonstrations"
+      ],
+      "task_families": [
+        "hand-object-interaction",
+        "robotics-and-vla"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "hand-pose",
+        "depth",
+        "action-labels"
+      ],
+      "license": "cc-by-sa-4.0",
+      "license_url": "https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo",
+      "access": "Hugging Face form; access automatically granted on submission",
+      "release_note": "The dataset card describes model-derived hand, depth, and semantic signals; access requires submitting a form.",
+      "verified_at": "2026-10-29"
+    },
+    {
+      "name": "EgoBrain-Mini",
+      "kind": "dataset",
+      "released": "2026-08",
+      "venue": "Hugging Face",
+      "year": 2026,
+      "status": "request",
+      "scope": "egocentric",
+      "url": "https://huggingface.co/datasets/ut-vision/EgoBrain-Mini",
+      "paper": "https://arxiv.org/abs/2506.01353",
+      "derived_from": "EgoBrain",
+      "scale": "40 participants and 1,562 action segments with synchronized first-person video, EEG, IMU, and audio; released subset excludes original raw video",
+      "tasks": [
+        "action-recognition",
+        "sensor-fusion",
+        "everyday-activity"
+      ],
+      "task_families": [
+        "action-and-procedure",
+        "ar-sensing-navigation"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "audio",
+        "imu",
+        "eeg"
+      ],
+      "license": "cc-by-nc-4.0",
+      "license_url": "https://huggingface.co/datasets/ut-vision/EgoBrain-Mini",
+      "access": "Hugging Face information-sharing agreement",
+      "release_note": "All 40 subjects were announced on 2026-10-13. The release contains processed phase-2 video, not original raw video; IMU rates vary by subject.",
+      "verified_at": "2026-10-29"
+    },
+    {
+      "name": "CapMem",
+      "kind": "benchmark",
+      "released": "2026-09",
+      "venue": "EMNLP 2026",
+      "year": 2026,
+      "status": "watch",
+      "scope": "egocentric",
+      "url": "https://arxiv.org/abs/2609.17688",
+      "paper": "https://arxiv.org/abs/2609.17688",
+      "scale": "Paper reports 75 videos totaling 33.7 hours and 1,000 human-annotated multiple-choice questions across 16 scenarios",
+      "tasks": [
+        "memory",
+        "qa",
+        "video-language"
+      ],
+      "task_families": [
+        "memory-and-long-context",
+        "question-answering",
+        "video-language"
+      ],
+      "modalities": [
+        "egocentric-video",
+        "captions"
+      ],
+      "release_note": "Paper reports the benchmark; public data and evaluation-code availability remain unverified.",
+      "verified_at": "2026-10-29"
     },
     {
       "name": "Stereo-550",

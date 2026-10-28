@@ -33,20 +33,21 @@
   <a href="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml"><img alt="validate" src="https://github.com/ChaoYue0307/awesome-egocentric-atlas/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://chaoyue0307.github.io/awesome-egocentric-atlas/"><img alt="project site" src="https://img.shields.io/badge/site-GitHub%20Pages-067882"></a>
   <a href="https://huggingface.co/datasets/cy0307/awesome-egocentric-atlas"><img alt="Hugging Face mirror" src="https://img.shields.io/badge/Hugging%20Face-mirror-ffcc4d"></a>
-  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-866-0097A7"></a>
+  <a href="data/resources.yml"><img alt="resources" src="https://img.shields.io/badge/resources-870-0097A7"></a>
   <a href="README.md#dataset-atlas"><img alt="datasets" src="https://img.shields.io/badge/datasets-vision%20%7C%20robotics%20%7C%20memory-344054"></a>
   <a href="README.md#models-tools-and-baselines"><img alt="models and tools" src="https://img.shields.io/badge/models-and%20tools-F5A623"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-667085"></a>
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-22A06B"></a>
 </p>
 
-**Awesome Egocentric Atlas** is a practical catalog of egocentric (first-person) datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Every entry shows its public-access status, so you can tell at a glance what you can download today and what is still just a paper.
+**Awesome Egocentric Atlas** is a practical catalog of egocentric (first-person) datasets, benchmarks, models, and tools for egocentric vision, embodied AI and robotics, vision-language-action, world models, long-context memory, AR/VR, and hand-object interaction. Each entry summarizes its last-checked public-access status; consult the linked source for current access and licensing.
 
 **Updated:** 2026-08-23.
+**Selected release checks:** 2026-10-29. Individual verification dates appear in the catalog; availability may change.
 **Scope:** the main atlas is **human or animal first-person capture** from head, glasses, headset, body, wrist, handheld, or synchronized ego-exo rigs (where the ego view is central). Related but non-egocentric resources — robot-only datasets, multi-view robotic benchmarks, autonomous-driving 4D data, and general long-video reasoning — are listed separately under [Adjacent and Related Resources](#adjacent-and-related-resources) rather than in the main tables.
 
 <p align="center">
-  <img src="assets/awesome-egocentric-atlas-map.png" alt="Awesome Egocentric Atlas catalog overview" width="100%">
+  <img src="assets/awesome-egocentric-atlas-map.svg" alt="Awesome Egocentric Atlas catalog overview" width="100%">
 </p>
 
 ## Contents
@@ -85,14 +86,14 @@ Prefer a browsable view? The [interactive site](https://chaoyue0307.github.io/aw
 
 | Signal | What it means for readers |
 | :--- | :--- |
-| 866 egocentric resources | 229 datasets, 142 benchmarks, 442 models, and 43 toolkits, plus 4 collection hubs — across vision, robotics, memory, and AR. 178 related non-egocentric resources are listed separately. |
+| 870 egocentric resources | 232 datasets, 143 benchmarks, 442 models, and 43 toolkits, plus 4 collection hubs — across vision, robotics, memory, and AR. 178 related non-egocentric resources are listed separately. |
 | 6 research areas | Foundation video, procedure/action, hands and 3D, memory/reasoning, robotics/VLA, and AR/wearable sensing. |
 | 5 access states | `open`, `request`, `benchmark`, `partial`, and `watch` keep availability visible before you plan experiments. |
 | Machine-checked catalog | [`data/resources.yml`](data/resources.yml) is the source for type, year, status, URL, tasks, and provenance — and CI keeps the public artifacts in sync. |
 | Reader-first tables | Each entry is short enough to scan, then links out to the official page, paper, code, or dataset portal. |
 
 <p align="center">
-  <img src="assets/awesome-egocentric-timeline.png" alt="Egocentric resources by era" width="100%">
+  <img src="assets/awesome-egocentric-timeline.svg" alt="Egocentric resources by era" width="100%">
 </p>
 
 ## Milestones
@@ -139,6 +140,8 @@ Representative works to read first, from early egocentric activity datasets to r
 | Resource | Created / stewarded by | Release channel and access note |
 | :--- | :--- | :--- |
 | [Xperience-10M](https://huggingface.co/datasets/ropedia-ai/xperience-10m) | Ropedia | Released under `ropedia-ai` on Hugging Face. Full dataset uses controlled non-commercial access; the [sample](https://huggingface.co/datasets/ropedia-ai/xperience-10m-sample) is open, [HOMIE-toolkit](https://github.com/Ropedia/HOMIE-toolkit) loads/visualizes annotations, and [Xperience task baselines](https://huggingface.co/cy0307/ropedia-xperience-10m-task-baselines) provide a public evaluation artifact. |
+| [Gen-HumanEgo](https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo) | GenRobot | Released on Hugging Face under CC BY-SA 4.0; a form is required and access is automatically granted. Hand, depth, and semantic signals are model-derived. |
+| [RekaDaily-10k](https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw) | Reka AI and Claru | Reka AI releases raw recordings and [processed clips](https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed) on Hugging Face under Apache 2.0. Processed captions and Q&A are model-generated. |
 | [Ego4D](https://ego4d-data.org/) | Meta AI / Facebook AI with an international academic consortium | Official data portal with license-gated downloads and benchmark tasks. |
 | [Ego-Exo4D](https://ego-exo4d-data.org/) | Meta and academic partners across the Ego-Exo4D consortium | Official data portal with application/download tooling for synchronized ego-exo data. |
 | [EPIC-KITCHENS](https://epic-kitchens.github.io/) | University of Bristol-centered EPIC-KITCHENS team | Official challenge/dataset portal with public annotations and benchmark splits. |
@@ -154,10 +157,12 @@ Representative works to read first, from early egocentric activity datasets to r
 | `partial` | Some assets are public, but full raw data, license, or long-term availability is unclear. |
 | `watch` | Recent or important resource whose release state still needs verification. |
 
+An `open` entry can refer to released code or annotations rather than the complete underlying video. Check the linked source and catalog access notes before planning an experiment.
+
 For how each status is decided, see [docs/status_policy.md](docs/status_policy.md).
 
 <p align="center">
-  <img src="assets/awesome-egocentric-access-funnel.png" alt="Egocentric resources by access state" width="100%">
+  <img src="assets/awesome-egocentric-access-funnel.svg" alt="Egocentric resources by access state" width="100%">
 </p>
 
 ## Fast Task Map
@@ -200,7 +205,9 @@ Broad, large-scale first-person corpora that most egocentric pipelines pretrain 
 
 | Resource | Released | Venue | Scale / signal | Best for | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
-| [RekaDaily-10k (raw)](https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw) | 2026-08 | Hugging Face | Current incremental release: 7,834 hours, 397,171 unscripted first-person videos, 9,836 WebDataset shards, and about 70 TB | Large-scale daily-life pretraining, action understanding, and human-to-robot learning | open |
+| [RekaDaily-10k (raw)](https://huggingface.co/datasets/RekaAI/RekaDaily-10k-raw) | 2026-08 | Hugging Face | Publisher reports 10,865 hours, 412,050 videos, 11,127 shards, and 80 TB; some recordings include IMU | Daily-life pretraining and human-to-robot learning | open |
+| [RekaDaily-10k (processed)](https://huggingface.co/datasets/RekaAI/RekaDaily-10k-processed) | 2026-09 | Hugging Face | 6,373,064 clips and 10,200 hours reported; captions and Q&A are model-generated and not human-verified | Video-language training and action understanding | open |
+| [Gen-HumanEgo](https://huggingface.co/datasets/genrobot2025/Gen-HumanEgo) | 2026-09 | Hugging Face | 1,847.7 hours, 44,632 episodes, six synchronized cameras, reconstructed hands, depth, and hierarchical annotations; automatic form-based access | Human demonstrations and robot learning | request |
 | [Ego500](https://huggingface.co/datasets/humanarchive/ego500) | 2026-08 | Hugging Face | Announced 500-hour corpus with 310K+ structured action annotations across 390 task-environment combinations and 60+ environments; manual access and upload are still pending | Dense work-procedure, hand-state, and task-phase modeling | request |
 | [EgoSuite-Open100K](https://huggingface.co/collections/LightwheelAI/egosuite-open100k) | 2026-08 | Hugging Face | Gated EgoDemo, EgoStandard, and EgoPro buckets advertise 100K hours across head and head-plus-wrist lines with hand/body pose and semantics; 100K remains the collection target, while current manifests are the release truth | Large-scale controlled-access egocentric pretraining and VLA data | request |
 | [Stereo-550](https://huggingface.co/datasets/fpvlabs/stereo-550) | 2026-07 | Hugging Face | 550 hours per camera, 1,462 calibrated stereo sessions, 209,315 dense action segments, and synchronized 6-axis IMU for 1,271 sessions | Calibrated stereo HOI, dense video-language learning, and sensor fusion | open |
@@ -459,6 +466,7 @@ Fine-grained hand, object, contact, and 3D-pose datasets, including emerging eve
 | [THOR](https://arxiv.org/abs/2507.06442) | 2025-07 | arXiv | Thermal-guided adaptive RGB sampling for wearable hand-object monitoring, using about 3% of RGB frames while preserving activity segments | Low-power longitudinal hand-object activity recognition | watch |
 | [Egocentric HOI Detection](https://arxiv.org/abs/2506.14189) | 2025-06 | Expert Systems with Applications | New benchmark and method for detecting hand-object interactions in egocentric video | Egocentric hand-object interaction detection | open |
 | [EgoBrain](https://huggingface.co/datasets/ut-vision/EgoBrain) | 2025-06 | ICLR 2026 | Complete gated 1.6 TB release from 40 participants with synchronized 4K egocentric video, EEG, IMU, interval markers, and surveys | Brain-signal plus first-person action understanding | request |
+| [EgoBrain-Mini](https://huggingface.co/datasets/ut-vision/EgoBrain-Mini) | 2026-08 | Hugging Face | 40 participants and 1,562 segments with synchronized video, EEG, IMU, and audio; processed action subset, with variable IMU rates | Multimodal action understanding and sensor fusion | request |
 | [EventEgoHands](https://arxiv.org/abs/2505.19169) | 2025-05 | ICIP 2025 | Event-based egocentric 3D hand mesh reconstruction benchmark over N-HOT3D | Low-light and motion-blur hand reconstruction | watch |
 | [EgoEvGesture](https://arxiv.org/abs/2503.12419) | 2025-03 | arXiv | First large-scale egocentric event-camera gesture-recognition dataset with a head-motion-robust 7M-param model (62.7% unseen-subject accuracy) | Event-camera egocentric gesture recognition | watch |
 | [EgoCast](https://arxiv.org/abs/2412.02903) | 2024-12 | WACV 2025 | 3D pose forecasting from egocentric video and proprioceptive data on Ego-Exo4D / Aria Digital Twin | Future body-pose forecasting | watch |
@@ -709,6 +717,7 @@ Evaluation suites and label sets built on top of the raw datasets above.
 
 | Benchmark | Released | Venue | Built on | Tasks | Status |
 | :--- | :---: | :---: | :--- | :--- | :---: |
+| [CapMem](https://arxiv.org/abs/2609.17688) | 2026-09 | EMNLP 2026 | 75 videos, 33.7 hours, and 1,000 human-annotated questions across 16 scenarios; data release unverified | Caption-based episodic memory and long-video QA | watch |
 | [SLT 2026 SmartGlasses Challenge](https://aslp-lab.github.io/SmartGlasses/) | 2026-08 | IEEE SLT 2026 Challenge | 106.98 hours and 714 four-channel smart-glasses audio sessions released to registered participants | Timestamped speaker-attributed ASR and spoken-language understanding for dyadic dialogue and multi-party meetings | request |
 | [HandEdit](https://handedit.github.io/) | 2026-08 | arXiv | 300K+ clips and 200M+ editing instances from EgoDex, ARCTIC, OakInk2, HOI4D, and HO-Cap | URDF-conditioned human-to-robot hand/arm editing across 26 embodiments, with public data and evaluation code | open |
 | [H2R-Bench](https://arxiv.org/abs/2608.13049) | 2026-08 | arXiv | Egocentric human manipulation demonstrations paired with target robot embodiments | Five-dimension evaluation of 11 video generators across six manipulation families and two robot embodiments | watch |

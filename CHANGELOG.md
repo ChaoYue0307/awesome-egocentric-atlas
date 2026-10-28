@@ -3,6 +3,12 @@
 All notable changes to the Awesome Egocentric Atlas. Counts refer to egocentric
 resources (resources tagged `scope: adjacent` are listed separately).
 
+## Selected updates — 2026-10-29
+
+- Added GenRobot's Gen-HumanEgo, Reka AI's processed RekaDaily-10k release, EgoBrain-Mini, and the CapMem benchmark, including access, provenance, and annotation notes.
+- Updated RekaDaily-10k raw release figures from its dataset card.
+- Clarified that access states are last-checked summaries and may describe code or annotations rather than complete video.
+
 ## v1.0.0 — 2026-06-20
 
 First tagged release. **269 egocentric resources** (102 datasets, 69 benchmarks,
